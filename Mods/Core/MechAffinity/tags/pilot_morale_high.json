@@ -1,0 +1,7 @@
+{
+    "Name":  "pilot_morale_high",
+    "Important":  false,
+    "PlayerVisible":  true,
+    "FriendlyName":  "情绪高昂",
+    "Description":  "这个机师士气高涨，可以在战斗中更频繁地使用鼓舞类技能"
+}

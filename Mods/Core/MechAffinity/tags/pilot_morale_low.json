@@ -1,0 +1,7 @@
+{
+    "Name":  "pilot_morale_low",
+    "Important":  false,
+    "PlayerVisible":  true,
+    "FriendlyName":  "情绪低落",
+    "Description":  "这个机师士气低落，无法频繁使用鼓舞类技能"
+}

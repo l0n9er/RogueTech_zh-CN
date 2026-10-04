@@ -1,0 +1,7 @@
+{
+  "Name": "pilot_tunedCapacitors",
+  "Important": false,
+  "PlayerVisible": true,
+  "FriendlyName": "调校电容器",
+  "Description": "这名机师知道如何通过定制调校内部电容器，把粒子武器发挥到极致"
+}

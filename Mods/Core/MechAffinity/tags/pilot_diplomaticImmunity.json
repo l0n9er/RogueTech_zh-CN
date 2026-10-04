@@ -1,0 +1,7 @@
+{
+  "Name": "pilot_diplomaticImmunity",
+  "Important": false,
+  "PlayerVisible": true,
+  "FriendlyName": "外交豁免权",
+  "Description": "这名机师享有外交保护。"
+}

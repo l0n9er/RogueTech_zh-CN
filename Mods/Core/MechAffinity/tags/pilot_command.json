@@ -1,0 +1,7 @@
+{
+    "Name":  "pilot_command",
+    "Important":  false,
+    "PlayerVisible":  true,
+    "FriendlyName":  "领导经验",
+    "Description":  "这位机师有指挥机甲、舰船或其他军事单位的经验"
+}

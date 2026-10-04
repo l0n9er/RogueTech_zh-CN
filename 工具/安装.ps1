@@ -426,6 +426,20 @@ Step 18 "修复译文中的性别分支残留英文"
 RunTool 'fix-gender.ps1' @('-mods', (Join-Path $gameRoot 'Mods')) | Out-Null
 Ok "完成"
 
+# 机师个性 tooltip("罪犯"等)的文字来自 MDD 数据库的 Tag 表, 该表由 ModTek
+# 从各模组 tags\*.json 构建。这里把模组 tag 文件的 FriendlyName/Description
+# 就地汉化; 基础游戏独有、模组没有的 tag(如 pilot_criminal)另生成覆盖文件,
+# 由 ModTek 的 CustomTag 机制覆盖("Updated tag: xxx in MDDB")。
+Step 18 "汉化机师个性/亲和 tag 文本"
+RunTool 'apply-tags.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                           '-csv', $csvDst,
+                           '-backupRoot', (Join-Path $packRoot 'backup\Mods-tags')) | Out-Null
+RunTool 'apply-tagkeys.ps1' @('-csv', $csvDst) | Out-Null
+RunTool 'apply-basetags.ps1' @('-gameRoot', $gameRoot,
+                               '-csv', $csvDst,
+                               '-backupRoot', (Join-Path $packRoot 'backup\Mods-tagoverride')) | Out-Null
+Ok "完成"
+
 # ---------- 11) 控制字符与标点空格 ----------
 # 别名分隔符必须按文件类型区分: JSON 用半角逗号, CSV 用紧贴的 0x1F。
 # 写成 "[[OBJ <0x1F> {...}]]"(两侧带空格)会让游戏报 INVALID ALIAS,

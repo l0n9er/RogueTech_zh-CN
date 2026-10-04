@@ -1,0 +1,7 @@
+{
+    "Name":  "pilot_terminal",
+    "Important":  false,
+    "PlayerVisible":  true,
+    "FriendlyName": "绝症",
+    "Description":  "这位机师患有致命疾病或受过伤. 它的寿命是有限的."
+}
