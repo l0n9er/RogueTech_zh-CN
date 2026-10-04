@@ -56323,8 +56323,8 @@
       "Name": "RogueTech_Core.event_mw_barracksWorkout.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "After hearing that [[TGT_MW,{TGT_MW.Callsign}]] was involved in an accident, you stop by MedBay to visit the MechWarrior as {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:recover|Default:recovers}.\r\n\r\n\\\"Hi, Commander.\\\" {TGT_MW.Callsign} touches the bandage on {TGT_MW.DET} head. \\\"I was doing pull-ups on the wall shelf, and it came loose. The shelf above it came down, too. Right on my head.\\\"\r\n\r\nYou shake your head, frowning. \\\"You know those shelves aren't rated for your weight.\\\"\r\n\r\n{TGT_MW.Callsign} laughs. \\\"I wish I had a better option, Commander. There's just not enough room to roam right now.\\\"",
-        "CULTURE_ZH_CN": "听说[[TGT_MW,{TGT_MW.Callsign}]]出了事故后，你顺路去医疗舱探望这名机师，此时{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:recover|Default:recovers}。\n\n\"你好，指挥官。\"{TGT_MW.Callsign}碰了碰{TGT_MW.DET}头上的绷带。\"我在墙上的架子上做引体向上，它松了。上面那个架子也塌了下来。正好砸在我头上。\"\n\n你摇头皱眉。\"你知道那些架子撑不住你的体重。\"\n\n{TGT_MW.Callsign}笑了。\"我希望我有更好的选择，指挥官。现在实在没多少地方可以活动。\""
+        "CULTURE_EN_US": "After hearing that [[TGT_MW,{TGT_MW.Callsign}]] was involved in an accident, you stop by MedBay to visit the MechWarrior as {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:康复|Default:康复}.\r\n\r\n\\\"Hi, Commander.\\\" {TGT_MW.Callsign} touches the bandage on {TGT_MW.DET} head. \\\"I was doing pull-ups on the wall shelf, and it came loose. The shelf above it came down, too. Right on my head.\\\"\r\n\r\nYou shake your head, frowning. \\\"You know those shelves aren't rated for your weight.\\\"\r\n\r\n{TGT_MW.Callsign} laughs. \\\"I wish I had a better option, Commander. There's just not enough room to roam right now.\\\"",
+        "CULTURE_ZH_CN": "听说[[TGT_MW,{TGT_MW.Callsign}]]出了事故后，你顺路去医疗舱探望这名机师，此时{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:康复|Default:康复}。\n\n\"你好，指挥官。\"{TGT_MW.Callsign}碰了碰{TGT_MW.DET}头上的绷带。\"我在墙上的架子上做引体向上，它松了。上面那个架子也塌了下来。正好砸在我头上。\"\n\n你摇头皱眉。\"你知道那些架子撑不住你的体重。\"\n\n{TGT_MW.Callsign}笑了。\"我希望我有更好的选择，指挥官。现在实在没多少地方可以活动。\""
       }
     },
     {
@@ -56395,8 +56395,8 @@
       "Name": "RogueTech_Core.event_mw_beyondRepair.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Under a white sheet in the MedBay, [[TGT_MW,{TGT_MW.Callsign}]]'s lifeless body lies between you and Darius. \\\"By the time the MedTechs started operating, {TGT_MW.Callsign} was beyond repair, Commander. {TGT_MW.DET_C} injuries were exacerbated by {TGT_MW.DET} [[DM.BaseDescriptionDefs[LoreTBI],TBI]].\\\"\r\n\r\nYou pass a photo of {TGT_MW.Callsign}'s mother to the XO. \\\"Make sure you find her and any other next of kin. Inform them immediately.\\\"\r\n\r\nThe XO nods. \\\"There's more. I overheard [[SCN_MW,{SCN_MW.Callsign}]] talking like you got {TGT_MW.Callsign} killed. {SCN_MW.SUBJ_C} {SCN_MW.Gender?NonBinary:weren't|Default:wasn't} the only one. You need to get ahead of these rumors fast.\\\"\r\n\r\n\\\"{TGT_MW.Callsign} knew the risks. {TGT_MW.SUBJ_C} wanted back in the cockpit more than anything.\\\"\r\n\r\n\\\"You and I know that, but not everyone sees it that way. During the memorial service, you could take ownership of {TGT_MW.Callsign}'s death—appease your critics—but that won't exactly boost morale. Or you can commemorate {TGT_MW.Callsign}. That'll lift spirits, though {SCN_MW.Callsign} might take it the wrong way. It's your call, Commander.\\\"",
-        "CULTURE_ZH_CN": "在医疗舱的一张白床单下，[[TGT_MW,{TGT_MW.Callsign}]]没有生命的身体躺在你和达里乌斯之间。\"医疗技师开始手术时，{TGT_MW.Callsign}已经无可挽回，指挥官。{TGT_MW.DET_C}的伤势被{TGT_MW.DET}的[[DM.BaseDescriptionDefs[LoreTBI],创伤性脑损伤]]加重了。\"\n\n你把一张{TGT_MW.Callsign}母亲的照片递给执行官。\"务必找到她和其他近亲。立即通知他们。\"\n\n执行官点点头。\"还有。我无意中听到[[SCN_MW,{SCN_MW.Callsign}]]说，好像是你害死了{TGT_MW.Callsign}。{SCN_MW.SUBJ_C} {SCN_MW.Gender?NonBinary:weren't|Default:wasn't}唯一一个这么想的。你需要尽快压住这些谣言。\"\n\n\"{TGT_MW.Callsign}知道风险。{TGT_MW.SUBJ_C}比什么都想回到座舱里。\"\n\n\"你我都知道这一点，但不是所有人都这么看。在追悼会上，你可以为{TGT_MW.Callsign}的死承担责任——平息批评者——但那不会真正提振士气。或者你可以纪念{TGT_MW.Callsign}。那会鼓舞人心，尽管{SCN_MW.Callsign}可能会从不好的角度理解。由你决定，指挥官。\""
+        "CULTURE_EN_US": "Under a white sheet in the MedBay, [[TGT_MW,{TGT_MW.Callsign}]]'s lifeless body lies between you and Darius. \\\"By the time the MedTechs started operating, {TGT_MW.Callsign} was beyond repair, Commander. {TGT_MW.DET_C} injuries were exacerbated by {TGT_MW.DET} [[DM.BaseDescriptionDefs[LoreTBI],TBI]].\\\"\r\n\r\nYou pass a photo of {TGT_MW.Callsign}'s mother to the XO. \\\"Make sure you find her and any other next of kin. Inform them immediately.\\\"\r\n\r\nThe XO nods. \\\"There's more. I overheard [[SCN_MW,{SCN_MW.Callsign}]] talking like you got {TGT_MW.Callsign} killed. {SCN_MW.SUBJ_C} {SCN_MW.Gender?NonBinary:不是|Default:不是} the only one. You need to get ahead of these rumors fast.\\\"\r\n\r\n\\\"{TGT_MW.Callsign} knew the risks. {TGT_MW.SUBJ_C} wanted back in the cockpit more than anything.\\\"\r\n\r\n\\\"You and I know that, but not everyone sees it that way. During the memorial service, you could take ownership of {TGT_MW.Callsign}'s death—appease your critics—but that won't exactly boost morale. Or you can commemorate {TGT_MW.Callsign}. That'll lift spirits, though {SCN_MW.Callsign} might take it the wrong way. It's your call, Commander.\\\"",
+        "CULTURE_ZH_CN": "在医疗舱的一张白床单下，[[TGT_MW,{TGT_MW.Callsign}]]没有生命的身体躺在你和达里乌斯之间。\"医疗技师开始手术时，{TGT_MW.Callsign}已经无可挽回，指挥官。{TGT_MW.DET_C}的伤势被{TGT_MW.DET}的[[DM.BaseDescriptionDefs[LoreTBI],创伤性脑损伤]]加重了。\"\n\n你把一张{TGT_MW.Callsign}母亲的照片递给执行官。\"务必找到她和其他近亲。立即通知他们。\"\n\n执行官点点头。\"还有。我无意中听到[[SCN_MW,{SCN_MW.Callsign}]]说，好像是你害死了{TGT_MW.Callsign}。{SCN_MW.SUBJ_C} {SCN_MW.Gender?NonBinary:不是|Default:不是}唯一一个这么想的。你需要尽快压住这些谣言。\"\n\n\"{TGT_MW.Callsign}知道风险。{TGT_MW.SUBJ_C}比什么都想回到座舱里。\"\n\n\"你我都知道这一点，但不是所有人都这么看。在追悼会上，你可以为{TGT_MW.Callsign}的死承担责任——平息批评者——但那不会真正提振士气。或者你可以纪念{TGT_MW.Callsign}。那会鼓舞人心，尽管{SCN_MW.Callsign}可能会从不好的角度理解。由你决定，指挥官。\""
       }
     },
     {
@@ -56587,8 +56587,8 @@
       "Name": "RogueTech_Core.event_mw_canWeKeepIt.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "It wasn't your imagination after all. [[TGT_MW,{TGT_MW.Callsign}]] really has been hiding a kitten in {TGT_MW.DET} room, and now that they're both in front of you, the cat is making all sorts of noise at the indignity of being held up for inspection.\r\n\r\nYou fix {TGT_MW.Callsign} with a stern look until {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:start|Default:starts} talking.\r\n\r\n\\\"Commander, I found this cat in my bag after I came back from shore leave. I think she climbed in looking for food. I didn't have the heart to, you know…\\\"",
-        "CULTURE_ZH_CN": "原来不是你的错觉。[[TGT_MW,{TGT_MW.Callsign}]]确实在{TGT_MW.DET}房间里藏着一个小猫，如今她们俩都在你面前，而那只猫正因为被举起来检查这份屈辱而发出各种叫声。\n\n你板着脸盯着{TGT_MW.Callsign}，直到{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:start|Default:starts}开口。\n\n\"指挥官，我休假回来之后在包里发现了这只猫。我想她爬进去找吃的。我实在不忍心，你知道的……\""
+        "CULTURE_EN_US": "It wasn't your imagination after all. [[TGT_MW,{TGT_MW.Callsign}]] really has been hiding a kitten in {TGT_MW.DET} room, and now that they're both in front of you, the cat is making all sorts of noise at the indignity of being held up for inspection.\r\n\r\nYou fix {TGT_MW.Callsign} with a stern look until {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:开始|Default:开始} talking.\r\n\r\n\\\"Commander, I found this cat in my bag after I came back from shore leave. I think she climbed in looking for food. I didn't have the heart to, you know…\\\"",
+        "CULTURE_ZH_CN": "原来不是你的错觉。[[TGT_MW,{TGT_MW.Callsign}]]确实在{TGT_MW.DET}房间里藏着一个小猫，如今她们俩都在你面前，而那只猫正因为被举起来检查这份屈辱而发出各种叫声。\n\n你板着脸盯着{TGT_MW.Callsign}，直到{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:开始|Default:开始}开口。\n\n\"指挥官，我休假回来之后在包里发现了这只猫。我想她爬进去找吃的。我实在不忍心，你知道的……\""
       }
     },
     {
@@ -57219,8 +57219,8 @@
       "Name": "RogueTech_Core.event_mw_demoralized.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "[[SCN_MW,{SCN_MW.Callsign}]] approaches you on the mess deck. \\\"Commander, you know how [[TGT_MW,{TGT_MW.Callsign}]] is sidelined in MedBay? I've been visiting {TGT_MW.OBJ}, trying to keep {TGT_MW.DET} morale up and, well, {TGT_MW.SUBJ}{TGT_MW.Gender?NonBinary:'re|Default:'s} really messed up. {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:think|Default:thinks} the injury was {TGT_MW.DET} own fault. Maybe you could do something?\\\"\r\n\r\nResting a hand on {SCN_MW.Callsign} shoulder, you say, \\\"Thanks for letting me know, {SCN_MW.Callsign}. I'll see what I can do.\\\"",
-        "CULTURE_ZH_CN": "[[SCN_MW,{SCN_MW.Callsign}]]在食堂甲板上找到你。\"指挥官，你知道[[TGT_MW,{TGT_MW.Callsign}]]在医疗舱养伤吧？我一直去看望{TGT_MW.OBJ}，想给{TGT_MW.DET}打打气，而且，嗯，{TGT_MW.SUBJ}{TGT_MW.Gender?NonBinary:'re|Default:'s}伤得很重。{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:think|Default:thinks}这次受伤是{TGT_MW.DET}自己的错。也许你能做点什么？\"\n\n你把手搭在{SCN_MW.Callsign}肩上，说：\"谢谢你告诉我，{SCN_MW.Callsign}。我来看看能做什么。\""
+        "CULTURE_EN_US": "[[SCN_MW,{SCN_MW.Callsign}]] approaches you on the mess deck. \\\"Commander, you know how [[TGT_MW,{TGT_MW.Callsign}]] is sidelined in MedBay? I've been visiting {TGT_MW.OBJ}, trying to keep {TGT_MW.DET} morale up and, well, {TGT_MW.SUBJ}{TGT_MW.Gender?NonBinary:是|Default:是} really messed up. {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:想|Default:想} the injury was {TGT_MW.DET} own fault. Maybe you could do something?\\\"\r\n\r\nResting a hand on {SCN_MW.Callsign} shoulder, you say, \\\"Thanks for letting me know, {SCN_MW.Callsign}. I'll see what I can do.\\\"",
+        "CULTURE_ZH_CN": "[[SCN_MW,{SCN_MW.Callsign}]]在食堂甲板上找到你。\"指挥官，你知道[[TGT_MW,{TGT_MW.Callsign}]]在医疗舱养伤吧？我一直去看望{TGT_MW.OBJ}，想给{TGT_MW.DET}打打气，而且，嗯，{TGT_MW.SUBJ}{TGT_MW.Gender?NonBinary:是|Default:是}伤得很重。{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:想|Default:想}这次受伤是{TGT_MW.DET}自己的错。也许你能做点什么？\"\n\n你把手搭在{SCN_MW.Callsign}肩上，说：\"谢谢你告诉我，{SCN_MW.Callsign}。我来看看能做什么。\""
       }
     },
     {
@@ -57331,8 +57331,8 @@
       "Name": "RogueTech_Core.event_mw_dependableInformant.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "When a crowd of Mechwarriors return from shore leave, [[TGT_MW,{TGT_MW.Callsign}]] trots over to you and Darius, frowning.\r\n\r\n\\\"Commander, I was out drinking when a stranger offered to buy the next round. He started asking about our company, but I could tell that he already knew about us. About you.\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:pause|Default:pauses}, uncertain.\r\n\r\nDarius prods {TGT_MW.Obj}. \\\"Go on, you're not in trouble. Yet. Cut to the end.\\\"\r\n\r\n{TGT_MW.Callsign} clears {TGT_MW.Det} throat. \\\"He provided a method for secure communication and offered to pay for information about any more contracts we take in the system.\\\"",
-        "CULTURE_ZH_CN": "当一群机师结束休假回来时，[[TGT_MW,{TGT_MW.Callsign}]]皱着眉小跑到你和达里乌斯面前。\n\n\"指挥官，我在外面喝酒时，一个陌生人主动要请下一轮。他开始打听我们的公司，但我看得出来他其实已经了解我们了。了解你。\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:pause|Default:pauses}，有些不确定。\n\n达里乌斯催{TGT_MW.Obj}继续说。\"接着说，你没惹麻烦。暂时没有。直接说到结尾。\"\n\n{TGT_MW.Callsign}清了清{TGT_MW.Det}嗓子。\"他提供了一个安全通讯的方式，并提出为我们在这个星系接下来承接的任何合约情报付钱。\""
+        "CULTURE_EN_US": "When a crowd of Mechwarriors return from shore leave, [[TGT_MW,{TGT_MW.Callsign}]] trots over to you and Darius, frowning.\r\n\r\n\\\"Commander, I was out drinking when a stranger offered to buy the next round. He started asking about our company, but I could tell that he already knew about us. About you.\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:停顿|Default:停顿}, uncertain.\r\n\r\nDarius prods {TGT_MW.Obj}. \\\"Go on, you're not in trouble. Yet. Cut to the end.\\\"\r\n\r\n{TGT_MW.Callsign} clears {TGT_MW.Det} throat. \\\"He provided a method for secure communication and offered to pay for information about any more contracts we take in the system.\\\"",
+        "CULTURE_ZH_CN": "当一群机师结束休假回来时，[[TGT_MW,{TGT_MW.Callsign}]]皱着眉小跑到你和达里乌斯面前。\n\n\"指挥官，我在外面喝酒时，一个陌生人主动要请下一轮。他开始打听我们的公司，但我看得出来他其实已经了解我们了。了解你。\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:停顿|Default:停顿}，有些不确定。\n\n达里乌斯催{TGT_MW.Obj}继续说。\"接着说，你没惹麻烦。暂时没有。直接说到结尾。\"\n\n{TGT_MW.Callsign}清了清{TGT_MW.Det}嗓子。\"他提供了一个安全通讯的方式，并提出为我们在这个星系接下来承接的任何合约情报付钱。\""
       }
     },
     {
@@ -57475,8 +57475,8 @@
       "Name": "RogueTech_Core.event_mw_dishonestInformant.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "When {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:disembark|Default:disembarks} from the returning shore leave shuttle, [[TGT_MW,{TGT_MW.Callsign}]] trots right over to you and Darius.\r\n\r\n\\\"Commander, [[SCN_MW,{SCN_MW.Callsign}]] and I were out drinking and a local MechWarrior bought us a round. He starts asking about our company, but not like he's looking for a job. More like he wants to know about you.\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:pause|Default:pauses}, uncertain.\r\n\r\nDarius prods {TGT_MW.Obj}. \\\"Go on, you're not in trouble. Cut to the end.\\\"\r\n\r\n\\\"Well, he offered us money for information about any more work we do in the system. I blew him off and left, but {SCN_MW.Callsign} stayed.\\\"",
-        "CULTURE_ZH_CN": "当[[TGT_MW,{TGT_MW.Callsign}]]从休假归来的穿梭机上下来时，{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:disembark|Default:disembarks}后径直小跑到你和达里乌斯面前。\n\n\"指挥官，[[SCN_MW,{SCN_MW.Callsign}]]和我在外面喝酒，一个当地的机师请我们喝了一轮。他开始问起我们的公司，但不像是在找工作。更像是他想打听你。\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:pause|Default:pauses}，有些不确定。\n\n达里乌斯催{TGT_MW.Obj}继续说。\"接着说，你没惹麻烦。直接说到结尾。\"\n\n\"嗯，他给我们钱，要我们提供我们在这个星系做的任何后续工作的情报。我甩开他走了，但{SCN_MW.Callsign}留下了。\""
+        "CULTURE_EN_US": "When {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:下船|Default:下船} from the returning shore leave shuttle, [[TGT_MW,{TGT_MW.Callsign}]] trots right over to you and Darius.\r\n\r\n\\\"Commander, [[SCN_MW,{SCN_MW.Callsign}]] and I were out drinking and a local MechWarrior bought us a round. He starts asking about our company, but not like he's looking for a job. More like he wants to know about you.\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:停顿|Default:停顿}, uncertain.\r\n\r\nDarius prods {TGT_MW.Obj}. \\\"Go on, you're not in trouble. Cut to the end.\\\"\r\n\r\n\\\"Well, he offered us money for information about any more work we do in the system. I blew him off and left, but {SCN_MW.Callsign} stayed.\\\"",
+        "CULTURE_ZH_CN": "当[[TGT_MW,{TGT_MW.Callsign}]]从休假归来的穿梭机上下来时，{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:下船|Default:下船}后径直小跑到你和达里乌斯面前。\n\n\"指挥官，[[SCN_MW,{SCN_MW.Callsign}]]和我在外面喝酒，一个当地的机师请我们喝了一轮。他开始问起我们的公司，但不像是在找工作。更像是他想打听你。\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:停顿|Default:停顿}，有些不确定。\n\n达里乌斯催{TGT_MW.Obj}继续说。\"接着说，你没惹麻烦。直接说到结尾。\"\n\n\"嗯，他给我们钱，要我们提供我们在这个星系做的任何后续工作的情报。我甩开他走了，但{SCN_MW.Callsign}留下了。\""
       }
     },
     {
@@ -57627,8 +57627,8 @@
       "Name": "RogueTech_Core.event_mw_doctorsOrders.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "As you pass MedBay, you hear [[TGT_MW,{TGT_MW.Callsign}]] and [[SCN_MW,{SCN_MW.Callsign}]] shouting, followed by a loud metallic crash.\r\n\r\n\\\"Commander!\\\" {TGT_MW.Callsign} calls as you enter. \\\"How nice of you to join us!\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:rise|Default:rises} halfway out of bed, trailing a tangled rope of tubes and wires.\r\n\r\nThe senior doctor turns on you, flushed and angry. \\\"Commander, your MechWarriors refuse to follow their recovery regimen.\\\"\r\n\r\n{SCN_MW.Callsign} looks up from a nearby chair. \\\"C'mon, you old quack. Can't you see {TGT_MW.Callsign} is ready to get back out there?\\\"",
-        "CULTURE_ZH_CN": "你路过医疗舱时，听见[[TGT_MW,{TGT_MW.Callsign}]]和[[SCN_MW,{SCN_MW.Callsign}]]在大喊，接着是一声金属巨响。\n\n\"指挥官！\"你进去时{TGT_MW.Callsign}喊道。\"你能来加入我们真是太好了！\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:rise|Default:rises}着半坐起身，身上拖着一团缠绕的管线。\n\n资深医生转向你，满脸通红、怒气冲冲。\"指挥官，你的机师拒绝遵守康复规程。\"\n\n{SCN_MW.Callsign}从旁边的椅子上抬起头。\"得了吧，你这老庸医。你看不出{TGT_MW.Callsign}已经准备好回去上阵了吗？\""
+        "CULTURE_EN_US": "As you pass MedBay, you hear [[TGT_MW,{TGT_MW.Callsign}]] and [[SCN_MW,{SCN_MW.Callsign}]] shouting, followed by a loud metallic crash.\r\n\r\n\\\"Commander!\\\" {TGT_MW.Callsign} calls as you enter. \\\"How nice of you to join us!\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:起身|Default:起身} halfway out of bed, trailing a tangled rope of tubes and wires.\r\n\r\nThe senior doctor turns on you, flushed and angry. \\\"Commander, your MechWarriors refuse to follow their recovery regimen.\\\"\r\n\r\n{SCN_MW.Callsign} looks up from a nearby chair. \\\"C'mon, you old quack. Can't you see {TGT_MW.Callsign} is ready to get back out there?\\\"",
+        "CULTURE_ZH_CN": "你路过医疗舱时，听见[[TGT_MW,{TGT_MW.Callsign}]]和[[SCN_MW,{SCN_MW.Callsign}]]在大喊，接着是一声金属巨响。\n\n\"指挥官！\"你进去时{TGT_MW.Callsign}喊道。\"你能来加入我们真是太好了！\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:起身|Default:起身}着半坐起身，身上拖着一团缠绕的管线。\n\n资深医生转向你，满脸通红、怒气冲冲。\"指挥官，你的机师拒绝遵守康复规程。\"\n\n{SCN_MW.Callsign}从旁边的椅子上抬起头。\"得了吧，你这老庸医。你看不出{TGT_MW.Callsign}已经准备好回去上阵了吗？\""
       }
     },
     {
@@ -57659,7 +57659,7 @@
       "Name": "RogueTech_Core.event_mw_doctorsOrders.Name",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Order {TGT_MW.Callsign} to practice while {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:recover|Default:recovers}.",
+        "CULTURE_EN_US": "Order {TGT_MW.Callsign} to practice while {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:康复|Default:康复}.",
         "CULTURE_ZH_CN": "命令{TGT_MW.Callsign}在{TGT_MW.OBJ}恢复的时候进行练习."
       }
     },
@@ -57699,8 +57699,8 @@
       "Name": "RogueTech_Core.event_mw_doctorsOrders_Commander.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "As you're on your way to the MedBay for an evaluation, you hear [[TGT_MW,{TGT_MW.Callsign}]] and [[SCN_MW,{SCN_MW.Callsign}]] shouting, and then a loud metallic crash.\r\n\r\n\\\"Commander!\\\" {TGT_MW.Callsign} calls as you enter. \\\"How nice of you to join us!\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:rise|Default:rises} halfway out of bed, trailing a tangled rope of tubes and wires.\r\n\r\nThe senior doctor turns on you, flushed and angry. \\\"Commander, your MechWarriors refuse to follow their recovery regimen.\\\"\r\n\r\n{SCN_MW.Callsign} lounges in a nearby chair. \\\"How come you're running around the ship? You're hurt too!\\\"",
-        "CULTURE_ZH_CN": "在你前往医疗舱接受评估的路上，你听到[[TGT_MW,{TGT_MW.Callsign}]]和[[SCN_MW,{SCN_MW.Callsign}]]在大喊，接着是一声金属巨响。\n\n\"指挥官！\"你进去时{TGT_MW.Callsign}喊道。\"你能来加入我们真是太好了！\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:rise|Default:rises}着半坐起身，身上拖着一团缠绕的管线。\n\n资深医生转向你，满脸通红、怒气冲冲。\"指挥官，你的机师拒绝遵守康复规程。\"\n\n{SCN_MW.Callsign}懒洋洋地靠在旁边的椅子上。\"你怎么在船上到处跑？你也受伤了！\""
+        "CULTURE_EN_US": "As you're on your way to the MedBay for an evaluation, you hear [[TGT_MW,{TGT_MW.Callsign}]] and [[SCN_MW,{SCN_MW.Callsign}]] shouting, and then a loud metallic crash.\r\n\r\n\\\"Commander!\\\" {TGT_MW.Callsign} calls as you enter. \\\"How nice of you to join us!\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:起身|Default:起身} halfway out of bed, trailing a tangled rope of tubes and wires.\r\n\r\nThe senior doctor turns on you, flushed and angry. \\\"Commander, your MechWarriors refuse to follow their recovery regimen.\\\"\r\n\r\n{SCN_MW.Callsign} lounges in a nearby chair. \\\"How come you're running around the ship? You're hurt too!\\\"",
+        "CULTURE_ZH_CN": "在你前往医疗舱接受评估的路上，你听到[[TGT_MW,{TGT_MW.Callsign}]]和[[SCN_MW,{SCN_MW.Callsign}]]在大喊，接着是一声金属巨响。\n\n\"指挥官！\"你进去时{TGT_MW.Callsign}喊道。\"你能来加入我们真是太好了！\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:起身|Default:起身}着半坐起身，身上拖着一团缠绕的管线。\n\n资深医生转向你，满脸通红、怒气冲冲。\"指挥官，你的机师拒绝遵守康复规程。\"\n\n{SCN_MW.Callsign}懒洋洋地靠在旁边的椅子上。\"你怎么在船上到处跑？你也受伤了！\""
       }
     },
     {
@@ -57731,7 +57731,7 @@
       "Name": "RogueTech_Core.event_mw_doctorsOrders_Commander.Name",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Order {TGT_MW.Callsign} to practice while {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:recover|Default:recovers}.",
+        "CULTURE_EN_US": "Order {TGT_MW.Callsign} to practice while {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:康复|Default:康复}.",
         "CULTURE_ZH_CN": "命令{TGT_MW.Callsign}在{TGT_MW.OBJ}恢复的时候进行练习."
       }
     },
@@ -57883,8 +57883,8 @@
       "Name": "RogueTech_Core.event_mw_everybodyWins.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "In your quarters, Darius crosses his arms. \\\"You know, [[TGT_MW,{TGT_MW.Callsign}]] has been throwing these parties for the crew and I finally figured out how {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:were|Default:was} paying for them. {TGT_MW.SUBJ_C}{TGT_MW.Gender?NonBinary:'re|Default:'s} selling our small arms and—\\\"\r\n\r\n{TGT_MW.Callsign} bursts through the door. \\\"We don't even use those dusty rifles! The [[DM.BaseDescriptionDefs[LoreTCE],T.C.E.]] pays way more than standard market prices. I dump the guns and buy cheap but high quality replacements. A portion of the profits funds these little morale boosting events I've been hosting. Everybody wins!\\\"\r\n\r\n\\\"Were you waiting outside this <i>whole</i> time? Don't answer that.\\\" Darius shakes his head in disbelief. \\\"Look, if the outfit got a proper cut that'd be one thing, but that's up to the Commander.\\\"",
-        "CULTURE_ZH_CN": "在你的舱室里，达里乌斯抱起双臂。\"你知道，[[TGT_MW,{TGT_MW.Callsign}]]一直为船员办这些派对，我终于搞明白{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:were|Default:was}哪来的钱了。{TGT_MW.SUBJ_C}{TGT_MW.Gender?NonBinary:'re|Default:'s}在卖我们的轻武器，还有——\"\n\n{TGT_MW.Callsign}猛地推门冲进来。\"我们根本用不上那些落灰的步枪！[[DM.BaseDescriptionDefs[LoreTCE],T.C.E.]]出的价比标准市价高得多。我把枪脱手，再买进便宜但质优的替代品。利润的一部分用来资助我一直在办的那些提升士气的小活动。皆大欢喜！\"\n\n\"你在门外<i>一直</i>等着？别回答我。\"达里乌斯难以置信地摇摇头。\"听着，要是部队能从中抽成，那就是另一回事了，但那得看指挥官的意思。\""
+        "CULTURE_EN_US": "In your quarters, Darius crosses his arms. \\\"You know, [[TGT_MW,{TGT_MW.Callsign}]] has been throwing these parties for the crew and I finally figured out how {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是} paying for them. {TGT_MW.SUBJ_C}{TGT_MW.Gender?NonBinary:是|Default:是} selling our small arms and—\\\"\r\n\r\n{TGT_MW.Callsign} bursts through the door. \\\"We don't even use those dusty rifles! The [[DM.BaseDescriptionDefs[LoreTCE],T.C.E.]] pays way more than standard market prices. I dump the guns and buy cheap but high quality replacements. A portion of the profits funds these little morale boosting events I've been hosting. Everybody wins!\\\"\r\n\r\n\\\"Were you waiting outside this <i>whole</i> time? Don't answer that.\\\" Darius shakes his head in disbelief. \\\"Look, if the outfit got a proper cut that'd be one thing, but that's up to the Commander.\\\"",
+        "CULTURE_ZH_CN": "在你的舱室里，达里乌斯抱起双臂。\"你知道，[[TGT_MW,{TGT_MW.Callsign}]]一直为船员办这些派对，我终于搞明白{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是}哪来的钱了。{TGT_MW.SUBJ_C}{TGT_MW.Gender?NonBinary:是|Default:是}在卖我们的轻武器，还有——\"\n\n{TGT_MW.Callsign}猛地推门冲进来。\"我们根本用不上那些落灰的步枪！[[DM.BaseDescriptionDefs[LoreTCE],T.C.E.]]出的价比标准市价高得多。我把枪脱手，再买进便宜但质优的替代品。利润的一部分用来资助我一直在办的那些提升士气的小活动。皆大欢喜！\"\n\n\"你在门外<i>一直</i>等着？别回答我。\"达里乌斯难以置信地摇摇头。\"听着，要是部队能从中抽成，那就是另一回事了，但那得看指挥官的意思。\""
       }
     },
     {
@@ -57971,8 +57971,8 @@
       "Name": "RogueTech_Core.event_mw_fence_Pirate1_ac2.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Darius checks in from the planet's surface. \\\"Commander, while [[TGT_MW,{TGT_MW.Callsign}]] has been helping me gather supplies, {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they've} developed a connection within the local black market. For what it's worth, this contact is about as sketchy as you'd expect.\\\"\r\n\r\n\\\"Now {TGT_MW.Callsign}'s new friend is offering to sell us a [[DM.WeaponDefs[Weapon_Autocannon_RAC_2_Clan],{DM.WeaponDefs[Weapon_Autocannon_RAC_2_Clan].Description.Name}]]. At a discount, no questions asked. You know how it goes. What do you say?\\\"",
-        "CULTURE_ZH_CN": "达里乌斯从行星地表发来汇报。\"指挥官，在[[TGT_MW,{TGT_MW.Callsign}]]帮我收集补给期间，{TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they've}在当地黑市里搭上了一条线。就价值而言，这个联系人跟你想的一样可疑。\"\n\n\"现在{TGT_MW.Callsign}的新朋友提出要卖给我们一门[[DM.WeaponDefs[Weapon_Autocannon_RAC_2_Clan],{DM.WeaponDefs[Weapon_Autocannon_RAC_2_Clan].Description.Name}]]。打折卖，不问问题。你知道这套路。你怎么说？\""
+        "CULTURE_EN_US": "Darius checks in from the planet's surface. \\\"Commander, while [[TGT_MW,{TGT_MW.Callsign}]] has been helping me gather supplies, {TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们已经} developed a connection within the local black market. For what it's worth, this contact is about as sketchy as you'd expect.\\\"\r\n\r\n\\\"Now {TGT_MW.Callsign}'s new friend is offering to sell us a [[DM.WeaponDefs[Weapon_Autocannon_RAC_2_Clan],{DM.WeaponDefs[Weapon_Autocannon_RAC_2_Clan].Description.Name}]]. At a discount, no questions asked. You know how it goes. What do you say?\\\"",
+        "CULTURE_ZH_CN": "达里乌斯从行星地表发来汇报。\"指挥官，在[[TGT_MW,{TGT_MW.Callsign}]]帮我收集补给期间，{TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们已经}在当地黑市里搭上了一条线。就价值而言，这个联系人跟你想的一样可疑。\"\n\n\"现在{TGT_MW.Callsign}的新朋友提出要卖给我们一门[[DM.WeaponDefs[Weapon_Autocannon_RAC_2_Clan],{DM.WeaponDefs[Weapon_Autocannon_RAC_2_Clan].Description.Name}]]。打折卖，不问问题。你知道这套路。你怎么说？\""
       }
     },
     {
@@ -58051,8 +58051,8 @@
       "Name": "RogueTech_Core.event_mw_fence_Pirate2_srm4.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "A message arrives from Darius, who has gone planetside for a supply run. \\\"Commander, I brought [[TGT_MW,{TGT_MW.Callsign}]] along to assist me and {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they've} managed to strike up a relationship with a dealer in the local black market.\\\"\r\n\r\n\\\"This individual is offering to sell us a lightly-used [[DM.WeaponDefs[Weapon_SRM_4_Streak_Clan],{DM.WeaponDefs[Weapon_SRM_4_Streak_Clan].Description.Name}]]. It's a pretty good deal… what do you want to do?\\\"",
-        "CULTURE_ZH_CN": "达里乌斯发来一条消息，他下到行星表面采购补给去了。“指挥官，我把[[TGT_MW,{TGT_MW.Callsign}]]带在身边帮忙，{TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they've}已经和当地黑市的一位商人拉上了关系。”\r\n\r\n“这个人想卖给我们一件九成新的[[DM.WeaponDefs[Weapon_SRM_4_Streak_Clan],{DM.WeaponDefs[Weapon_SRM_4_Streak_Clan].Description.Name}]]。这买卖相当划算……你打算怎么办？”"
+        "CULTURE_EN_US": "A message arrives from Darius, who has gone planetside for a supply run. \\\"Commander, I brought [[TGT_MW,{TGT_MW.Callsign}]] along to assist me and {TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们已经} managed to strike up a relationship with a dealer in the local black market.\\\"\r\n\r\n\\\"This individual is offering to sell us a lightly-used [[DM.WeaponDefs[Weapon_SRM_4_Streak_Clan],{DM.WeaponDefs[Weapon_SRM_4_Streak_Clan].Description.Name}]]. It's a pretty good deal… what do you want to do?\\\"",
+        "CULTURE_ZH_CN": "达里乌斯发来一条消息，他下到行星表面采购补给去了。“指挥官，我把[[TGT_MW,{TGT_MW.Callsign}]]带在身边帮忙，{TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们已经}已经和当地黑市的一位商人拉上了关系。”\r\n\r\n“这个人想卖给我们一件九成新的[[DM.WeaponDefs[Weapon_SRM_4_Streak_Clan],{DM.WeaponDefs[Weapon_SRM_4_Streak_Clan].Description.Name}]]。这买卖相当划算……你打算怎么办？”"
       }
     },
     {
@@ -58139,8 +58139,8 @@
       "Name": "RogueTech_Core.event_mw_fence_Pirate3_largeLaser.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Darius calls up from a planetside supply run. \\\"Commander, [[TGT_MW,{TGT_MW.Callsign}]] tagged along to help me wrangle supplies. {TGT_MW.Gender?Male:He's|Female:She's|NonBinary:They've} managed to get involved with a broker in the local black market.\\\"\r\n\r\n\\\"Now this broker is offering to sell us a [[DM.WeaponDefs[Weapon_Laser_Reengineered_Large],{DM.WeaponDefs[Weapon_Laser_Reengineered_Large].Description.Name}]]. This is a serious deal with a pretty significant individual. What do you want to do?\\\"",
-        "CULTURE_ZH_CN": "达里乌斯在地表补给采购时联系你。\"指挥官，[[TGT_MW,{TGT_MW.Callsign}]]跟着来帮我张罗补给。{TGT_MW.Gender?Male:He's|Female:She's|NonBinary:They've}设法跟当地黑市的一位肩客搭上了关系。\"\n\n\"这位肩客提出要卖给我们一门[[DM.WeaponDefs[Weapon_Laser_Reengineered_Large],{DM.WeaponDefs[Weapon_Laser_Reengineered_Large].Description.Name}]]。这是一笔与一位相当有分量的人物做的正经交易。你想怎么做？\""
+        "CULTURE_EN_US": "Darius calls up from a planetside supply run. \\\"Commander, [[TGT_MW,{TGT_MW.Callsign}]] tagged along to help me wrangle supplies. {TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们已经} managed to get involved with a broker in the local black market.\\\"\r\n\r\n\\\"Now this broker is offering to sell us a [[DM.WeaponDefs[Weapon_Laser_Reengineered_Large],{DM.WeaponDefs[Weapon_Laser_Reengineered_Large].Description.Name}]]. This is a serious deal with a pretty significant individual. What do you want to do?\\\"",
+        "CULTURE_ZH_CN": "达里乌斯在地表补给采购时联系你。\"指挥官，[[TGT_MW,{TGT_MW.Callsign}]]跟着来帮我张罗补给。{TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们已经}设法跟当地黑市的一位肩客搭上了关系。\"\n\n\"这位肩客提出要卖给我们一门[[DM.WeaponDefs[Weapon_Laser_Reengineered_Large],{DM.WeaponDefs[Weapon_Laser_Reengineered_Large].Description.Name}]]。这是一笔与一位相当有分量的人物做的正经交易。你想怎么做？\""
       }
     },
     {
@@ -58579,8 +58579,8 @@
       "Name": "RogueTech_Core.event_mw_happyBirthday.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "You bump into [[TGT_MW,{TGT_MW.Callsign}]] in the corridor, and notice that {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:are|Default:is} in unusually high spirits. \\\"What's new?\\\" you ask {TGT_MW.OBJ}.\r\n\r\n{TGT_MW.Callsign} grins. \\\"I don't want to make too big a deal out of this, but… today's my birthday.\\\"",
-        "CULTURE_ZH_CN": "你在走廊里撞见[[TGT_MW,{TGT_MW.Callsign}]]，注意到{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:are|Default:is}情绪异常高涨。\"有什么新鲜事？\"你问{TGT_MW.OBJ}。\n\n{TGT_MW.Callsign}咧嘴一笑。\"我不想把这事搞得太隆重，不过……今天是我生日。\""
+        "CULTURE_EN_US": "You bump into [[TGT_MW,{TGT_MW.Callsign}]] in the corridor, and notice that {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是} in unusually high spirits. \\\"What's new?\\\" you ask {TGT_MW.OBJ}.\r\n\r\n{TGT_MW.Callsign} grins. \\\"I don't want to make too big a deal out of this, but… today's my birthday.\\\"",
+        "CULTURE_ZH_CN": "你在走廊里撞见[[TGT_MW,{TGT_MW.Callsign}]]，注意到{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是}情绪异常高涨。\"有什么新鲜事？\"你问{TGT_MW.OBJ}。\n\n{TGT_MW.Callsign}咧嘴一笑。\"我不想把这事搞得太隆重，不过……今天是我生日。\""
       }
     },
     {
@@ -59011,8 +59011,8 @@
       "Name": "RogueTech_Core.event_mw_jinxedAlbatross.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Even before you arrive at the morning briefing, you can hear Dr. Murad's raised voice. \\\"…So I told [[TGT_MW,{TGT_MW.Callsign}]] to leave engineering at once!\\\"\r\n\r\nYang grimaces. \\\"Yeah, and then {TGT_MW.Subj} showed up in the Mech Bay. It took a whole two minutes for one of my winches to fail.\\\"\r\n\r\nSumire rolls her eyes. \\\"Well, don't send {TGT_MW.Obj} to the bridge, Chief. You want the comms to short out again?\\\"\r\n\r\nFinally, Darius notices you standing in the doorway and explains. \\\"Commander, we have to do something about {TGT_MW.Callsign}. {TGT_MW.Subj_C}{TGT_MW.Gender?NonBinary:'re|Default:'s} a jinx.\\\"",
-        "CULTURE_ZH_CN": "你还没到晨间简报会，就能听见穆拉德博士提高的嗓门。\"……所以我让[[TGT_MW,{TGT_MW.Callsign}]]立刻离开工程部！\"\n\n杨苦着脸。\"是啊，然后{TGT_MW.Subj}就出现在机甲库。我的一台绞车只用了整整两分钟就坏了。\"\n\n苏米蕾翻了个白眼。\"那就别把{TGT_MW.Obj}派到舰桥去，总工。你想让通讯再短路一次吗？\"\n\n最后，达里乌斯注意到你站在门口，于是解释道。\"指挥官，我们得对{TGT_MW.Callsign}想想办法。{TGT_MW.Subj_C}{TGT_MW.Gender?NonBinary:'re|Default:'s}是个扫把星。\""
+        "CULTURE_EN_US": "Even before you arrive at the morning briefing, you can hear Dr. Murad's raised voice. \\\"…So I told [[TGT_MW,{TGT_MW.Callsign}]] to leave engineering at once!\\\"\r\n\r\nYang grimaces. \\\"Yeah, and then {TGT_MW.Subj} showed up in the Mech Bay. It took a whole two minutes for one of my winches to fail.\\\"\r\n\r\nSumire rolls her eyes. \\\"Well, don't send {TGT_MW.Obj} to the bridge, Chief. You want the comms to short out again?\\\"\r\n\r\nFinally, Darius notices you standing in the doorway and explains. \\\"Commander, we have to do something about {TGT_MW.Callsign}. {TGT_MW.Subj_C}{TGT_MW.Gender?NonBinary:是|Default:是} a jinx.\\\"",
+        "CULTURE_ZH_CN": "你还没到晨间简报会，就能听见穆拉德博士提高的嗓门。\"……所以我让[[TGT_MW,{TGT_MW.Callsign}]]立刻离开工程部！\"\n\n杨苦着脸。\"是啊，然后{TGT_MW.Subj}就出现在机甲库。我的一台绞车只用了整整两分钟就坏了。\"\n\n苏米蕾翻了个白眼。\"那就别把{TGT_MW.Obj}派到舰桥去，总工。你想让通讯再短路一次吗？\"\n\n最后，达里乌斯注意到你站在门口，于是解释道。\"指挥官，我们得对{TGT_MW.Callsign}想想办法。{TGT_MW.Subj_C}{TGT_MW.Gender?NonBinary:是|Default:是}是个扫把星。\""
       }
     },
     {
@@ -59123,8 +59123,8 @@
       "Name": "RogueTech_Core.event_mw_knockedDown_Freelancer.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:were|Default:was} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} back the darkness.",
-        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} 回击着黑暗。"
+        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} back the darkness.",
+        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} 回击着黑暗。"
       }
     },
     {
@@ -59243,8 +59243,8 @@
       "Name": "RogueTech_Core.event_mw_knockedDown_Gladiator.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:were|Default:was} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} back the darkness.",
-        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} 回击着黑暗。"
+        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} back the darkness.",
+        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} 回击着黑暗。"
       }
     },
     {
@@ -59363,8 +59363,8 @@
       "Name": "RogueTech_Core.event_mw_knockedDown_Mercenary.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:were|Default:was} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} back the darkness.",
-        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} 回击着黑暗。"
+        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} back the darkness.",
+        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} 回击着黑暗。"
       }
     },
     {
@@ -59483,8 +59483,8 @@
       "Name": "RogueTech_Core.event_mw_knockedDown_MerchantGuard.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:were|Default:was} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} back the darkness.",
-        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} 回击着黑暗。"
+        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} back the darkness.",
+        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} 回击着黑暗。"
       }
     },
     {
@@ -59603,8 +59603,8 @@
       "Name": "RogueTech_Core.event_mw_knockedDown_Pirate.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:were|Default:was} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} back the darkness.",
-        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} 回击着黑暗。"
+        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} back the darkness.",
+        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} 回击着黑暗。"
       }
     },
     {
@@ -59723,8 +59723,8 @@
       "Name": "RogueTech_Core.event_mw_knockedDown_Soldier.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:were|Default:was} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} back the darkness.",
-        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:fight|Default:fights} 回击着黑暗。"
+        "CULTURE_EN_US": "Another sleepless night finds you pacing the Mech Bay. The door opens and closes and you discover that [[TGT_MW,{TGT_MW.Callsign}]], who should be hooked up to a half-dozen machines in the MedBay, has entered the room.\r\n\r\nWithout noticing you, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:limp|Default:limps} painfully down the row of 'Mechs and stops. You realize {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} staring up at the 'Mech {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:是|Default:是} piloting when {TGT_MW.Subj} received those injuries.\r\n\r\nA shuddering, half-stifled sob wracks the MechWarrior's body. Fists clench as {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} back the darkness.",
+        "CULTURE_ZH_CN": "又一个不眠之夜，你在机库里踱步。门开了又关上，你发现 [[TGT_MW,{TGT_MW.Callsign}]]——本应躺在医疗舱里插着一堆管子的那位——走进了房间。\r\n\r\n{TGT_MW.Subj} 没注意到你，痛苦地{TGT_MW.Gender?NonBinary:跛行|Default:跛行}走过一排机甲，停下脚步。你意识到 {TGT_MW.Subj} 正抬头盯着 {TGT_MW.Subj} 受伤时所驾驶的那台机甲。\r\n\r\n一阵被强压住的抽泣颤抖着传遍这名机甲战士的身体。双拳攥紧，{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:战斗|Default:战斗} 回击着黑暗。"
       }
     },
     {
@@ -59939,8 +59939,8 @@
       "Name": "RogueTech_Core.event_mw_librarySelfImprovement.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "While browsing in the <i>Argo</i>'s library, you find [[TGT_MW,{TGT_MW.Callsign}]] with a pile of printed materials, Holovid chips, and datapads.\r\n\r\n\\\"Commander, I'm… well, I'm a bit lost, actually. I'm pretty new here, and I'd like to make myself as useful as possible.\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:gesture|Default:gestures} at the pile.\r\n\r\n\\\"Maybe if I could do more than just pull the trigger on my LRM, I might get more contract assignments. I, uh…\\\" {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:hesitate|Default:hesitates}. \\\"My folks depend on the money I send them, and I can't afford to be let go from another mercenary company. What do <i>you</i> think I should study?\\\"",
-        "CULTURE_ZH_CN": "在<i>阿戈</i>号的图书室里翻阅时，你发现[[TGT_MW,{TGT_MW.Callsign}]]面前堆着一堆印刷材料、全息芯片和数据板。\n\n\"指挥官，我……嗯，其实我有点迷茫。我在这里还算新人，我想让自己尽可能有用。\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:gesture|Default:gestures}着指了指那堆东西。\n\n\"也许如果我能做的不仅是在我的LRM上扣扳机，我就能拿到更多合约任务。我，呃……\"{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:hesitate|Default:hesitates}。\"我家里靠我寄回去的钱过活，我负担不起再从一家雇佣兵公司被扫地出门。你觉得我该学什么？\""
+        "CULTURE_EN_US": "While browsing in the <i>Argo</i>'s library, you find [[TGT_MW,{TGT_MW.Callsign}]] with a pile of printed materials, Holovid chips, and datapads.\r\n\r\n\\\"Commander, I'm… well, I'm a bit lost, actually. I'm pretty new here, and I'd like to make myself as useful as possible.\\\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:打手势|Default:打手势} at the pile.\r\n\r\n\\\"Maybe if I could do more than just pull the trigger on my LRM, I might get more contract assignments. I, uh…\\\" {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:犹豫|Default:犹豫}. \\\"My folks depend on the money I send them, and I can't afford to be let go from another mercenary company. What do <i>you</i> think I should study?\\\"",
+        "CULTURE_ZH_CN": "在<i>阿戈</i>号的图书室里翻阅时，你发现[[TGT_MW,{TGT_MW.Callsign}]]面前堆着一堆印刷材料、全息芯片和数据板。\n\n\"指挥官，我……嗯，其实我有点迷茫。我在这里还算新人，我想让自己尽可能有用。\"{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:打手势|Default:打手势}着指了指那堆东西。\n\n\"也许如果我能做的不仅是在我的LRM上扣扳机，我就能拿到更多合约任务。我，呃……\"{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:犹豫|Default:犹豫}。\"我家里靠我寄回去的钱过活，我负担不起再从一家雇佣兵公司被扫地出门。你觉得我该学什么？\""
       }
     },
     {
@@ -60539,7 +60539,7 @@
       "Name": "RogueTech_Core.event_mw_minorInfraction.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "An argument draws you into the mess hall. [[SCN_MW,{SCN_MW.Callsign}]] starts toward you, red-faced and scowling. \\\"Commander, I hate to bother you with this, but [[TGT_MW,{TGT_MW.Callsign}]] is slacking off again. We're supposed to <i>share</i> garbage detail, but <i>{TGT_MW.SUBJ}</i>–\\\"\r\n\r\n\\\"Share? You want me to <i>share</i>?! Commander, <i>this</i> asshole is the reason we're on cleanup duty in the first place! {SCN_MW.SUBJ_C} {SCN_MW.Gender?NonBinary:act|Default:acts} like {SCN_MW.SUBJ}{SCN_MW.Gender?NonBinary:'re|Default:'s} my boss! Just last week, {SCN_MW.SUBJ} filed <i>two dozen</i> complaints with the XO and got us <i>both</i> put on garbage detail! And {SCN_MW.SUBJ} did it over <i>nothing</i>!\\\"\r\n\r\n\\\"An infraction's an infraction.\\\" {SCN_MW.Callsign} sneers. \\\"If you stop messing up, I'll stop reporting you.\\\"",
+        "CULTURE_EN_US": "An argument draws you into the mess hall. [[SCN_MW,{SCN_MW.Callsign}]] starts toward you, red-faced and scowling. \\\"Commander, I hate to bother you with this, but [[TGT_MW,{TGT_MW.Callsign}]] is slacking off again. We're supposed to <i>share</i> garbage detail, but <i>{TGT_MW.SUBJ}</i>–\\\"\r\n\r\n\\\"Share? You want me to <i>share</i>?! Commander, <i>this</i> asshole is the reason we're on cleanup duty in the first place! {SCN_MW.SUBJ_C} {SCN_MW.Gender?NonBinary:act|Default:acts} like {SCN_MW.SUBJ}{SCN_MW.Gender?NonBinary:是|Default:是} my boss! Just last week, {SCN_MW.SUBJ} filed <i>two dozen</i> complaints with the XO and got us <i>both</i> put on garbage detail! And {SCN_MW.SUBJ} did it over <i>nothing</i>!\\\"\r\n\r\n\\\"An infraction's an infraction.\\\" {SCN_MW.Callsign} sneers. \\\"If you stop messing up, I'll stop reporting you.\\\"",
         "CULTURE_ZH_CN": "一阵争吵把你吸引进食堂。[[SCN_MW,{SCN_MW.Callsign}]]红着脸、皱着眉朝你走来。“指挥官，我不想拿这事烦你，但[[TGT_MW,{TGT_MW.Callsign}]]又在偷懒。垃圾清运本该<i>轮班</i>，可<i>{TGT_MW.SUBJ}</i>——”\n\n“轮班？你要我<i>轮班</i>？！指挥官，<i>这个</i>混蛋才是我们被罚清理垃圾的原因！{SCN_MW.SUBJ_C}{SCN_MW.Gender?NonBinary:装|Default:装}得好像{SCN_MW.SUBJ}{SCN_MW.Gender?NonBinary:是|Default:是}我领导似的！就在上周，{SCN_MW.SUBJ}向副官提交了<i>两打</i>投诉，害得我们<i>两个</i>都被罚清理垃圾！而且{SCN_MW.SUBJ}还是为了<i>屁大点事</i>！”\n\n“违规就是违规。”{SCN_MW.Callsign}冷笑。“你不出错，我就不举报你。”"
       }
     },
@@ -60651,7 +60651,7 @@
       "Name": "RogueTech_Core.event_mw_moonlighting_ac5.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} fiddling with a [[DM.WeaponDefs[Weapon_Autocannon_AC_5],stock AutoCannon]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \\\"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\\\"",
+        "CULTURE_EN_US": "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:是|Default:是} fiddling with a [[DM.WeaponDefs[Weapon_Autocannon_AC_5],stock AutoCannon]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \\\"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\\\"",
         "CULTURE_ZH_CN": "在一个无眠之夜漫步机甲库时，你撞见了[[TGT_MW,{TGT_MW.Callsign}]]。{TGT_MW.Subj_C}{TGT_MW.Gender?NonBinary:正|Default:正}在摆弄一门[[DM.WeaponDefs[Weapon_Autocannon_AC_5],标准自动炮]]，{TGT_MW.Obj}周围的甲板上散落着一堆乱七八糟的金属与线缆。\n\n你走近时，{TGT_MW.Callsign}抬起头，{TGT_MW.Det}脸上挂着不好意思的笑。“呃，你好，指挥官。我只是想调校一下这位美人，看能不能多榨出点性能。不过能不能帮我别让主管知道？这周他已经把我赶出去一次了。”"
       }
     },
@@ -60755,8 +60755,8 @@
       "Name": "RogueTech_Core.event_mw_moonlighting_LRM15.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} fiddling with a [[DM.WeaponDefs[Weapon_LRM_15],stock LRM]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \\\"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\\\"",
-        "CULTURE_ZH_CN": "在一个无眠的夜里，你漫步穿过机甲库，偶然撞见[[TGT_MW,{TGT_MW.Callsign}]]。{TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is}正摆弄着一具[[DM.WeaponDefs[Weapon_LRM_15],标准LRM]]。{TGT_MW.Obj}周围的甲板上散落着一堆杂乱的金属件和电线。\n\n你走近时，{TGT_MW.Callsign}抬起头，{TGT_MW.Det}脸上挂着窘迫的笑。\"呃，你好，指挥官。我只是想调校一下这小美人，也许让她再多发挥点性能。不过能帮我个忙，别让总工知道吗？这周他已经把我从这儿赶走一次了。\""
+        "CULTURE_EN_US": "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:是|Default:是} fiddling with a [[DM.WeaponDefs[Weapon_LRM_15],stock LRM]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \\\"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\\\"",
+        "CULTURE_ZH_CN": "在一个无眠的夜里，你漫步穿过机甲库，偶然撞见[[TGT_MW,{TGT_MW.Callsign}]]。{TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:是|Default:是}正摆弄着一具[[DM.WeaponDefs[Weapon_LRM_15],标准LRM]]。{TGT_MW.Obj}周围的甲板上散落着一堆杂乱的金属件和电线。\n\n你走近时，{TGT_MW.Callsign}抬起头，{TGT_MW.Det}脸上挂着窘迫的笑。\"呃，你好，指挥官。我只是想调校一下这小美人，也许让她再多发挥点性能。不过能帮我个忙，别让总工知道吗？这周他已经把我从这儿赶走一次了。\""
       }
     },
     {
@@ -60859,8 +60859,8 @@
       "Name": "RogueTech_Core.event_mw_moonlighting_MedLaser.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} fiddling with a [[DM.WeaponDefs[Weapon_Laser_Medium],stock Medium Laser]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \\\"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\\\"",
-        "CULTURE_ZH_CN": "在一个无眠的夜里，你漫步穿过机甲库，偶然撞见[[TGT_MW,{TGT_MW.Callsign}]]。{TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is}正摆弄着一门[[DM.WeaponDefs[Weapon_Laser_Medium],标准中型激光器]]。{TGT_MW.Obj}周围的甲板上散落着一堆杂乱的金属件和电线。\n\n你走近时，{TGT_MW.Callsign}抬起头，{TGT_MW.Det}脸上挂着窘迫的笑。\"呃，你好，指挥官。我只是想调校一下这小美人，也许让她再多发挥点性能。不过能帮我个忙，别让总工知道吗？这周他已经把我从这儿赶走一次了。\""
+        "CULTURE_EN_US": "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:是|Default:是} fiddling with a [[DM.WeaponDefs[Weapon_Laser_Medium],stock Medium Laser]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \\\"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\\\"",
+        "CULTURE_ZH_CN": "在一个无眠的夜里，你漫步穿过机甲库，偶然撞见[[TGT_MW,{TGT_MW.Callsign}]]。{TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:是|Default:是}正摆弄着一门[[DM.WeaponDefs[Weapon_Laser_Medium],标准中型激光器]]。{TGT_MW.Obj}周围的甲板上散落着一堆杂乱的金属件和电线。\n\n你走近时，{TGT_MW.Callsign}抬起头，{TGT_MW.Det}脸上挂着窘迫的笑。\"呃，你好，指挥官。我只是想调校一下这小美人，也许让她再多发挥点性能。不过能帮我个忙，别让总工知道吗？这周他已经把我从这儿赶走一次了。\""
       }
     },
     {
@@ -61099,8 +61099,8 @@
       "Name": "RogueTech_Core.event_mw_noGuarantees.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "In the MedBay, [[TGT_MW,{TGT_MW.Callsign}]] cradles an old photo. Stitches lace {TGT_MW.DET} temple. \\\"The MedTechs tell me this is my mother, but I can't remember her…\\\"\r\n\r\nA MedTech steps in. \\\"{TGT_MW.Gender?NonBinary:They've|Male:He's|Female:She's} developed a [[DM.BaseDescriptionDefs[LoreTBI],TBI]]. {TGT_MW.DET_C} next head injury will be fatal if we don't intervene. Retirement is the safest option, but the damage is done. While there are no guarantees, there is a chance of recovery if {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:are|Default:is} confined to bed rest, but it could take weeks or months.\\\"\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:sit|Default:sits} up, wincing. \\\"I don't need bed rest. I need to be in the cockpit. It's all I know, Commander.\\\"\r\n\r\n\\\"There is one more option.\\\" The MedTech hesitates. \\\"We could implant a Davion neurostimulator. The procedure poses a high risk—the <i>slightest</i> error will result in complete brain death—but if the neurostimulator is successfully implanted, {TGT_MW.SUBJ}'ll be combat ready within days.\\\"",
-        "CULTURE_ZH_CN": "在医疗舱里，[[TGT_MW,{TGT_MW.Callsign}]]抱着一张旧照片。{TGT_MW.DET}太阳穴上缝着线。\"医疗技师说这是我母亲，可我记不起她……\"\n\n一名医疗技师走进来。\"{TGT_MW.Gender?NonBinary:They've|Male:He's|Female:She's}患上了[[DM.BaseDescriptionDefs[LoreTBI],创伤性脑损伤]]。如果我们不干预，{TGT_MW.DET_C}下一次头部受伤将是致命的。退役是最安全的选择，但损伤已经造成。虽然无法保证，但如果{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:are|Default:is}卧床静养，有康复的可能，但可能要几周或几个月。\"\n\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:sit|Default:sits}起身，皱起眉。\"我不需要卧床静养。我需要回到座舱里。那是我唯一会做的事，指挥官。\"\n\n\"还有一个选项。\"医疗技师犹豫了一下。\"我们可以植入一个达维昂神经刺激器。手术风险极高——<i>最轻微</i>的失误都会导致完全脑死亡——但如果神经刺激器成功植入，{TGT_MW.SUBJ}几天内就能恢复战斗状态。\""
+        "CULTURE_EN_US": "In the MedBay, [[TGT_MW,{TGT_MW.Callsign}]] cradles an old photo. Stitches lace {TGT_MW.DET} temple. \\\"The MedTechs tell me this is my mother, but I can't remember her…\\\"\r\n\r\nA MedTech steps in. \\\"{TGT_MW.Gender?NonBinary:他们已经|Male:他是|Female:她是} developed a [[DM.BaseDescriptionDefs[LoreTBI],TBI]]. {TGT_MW.DET_C} next head injury will be fatal if we don't intervene. Retirement is the safest option, but the damage is done. While there are no guarantees, there is a chance of recovery if {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是} confined to bed rest, but it could take weeks or months.\\\"\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:坐下|Default:坐下} up, wincing. \\\"I don't need bed rest. I need to be in the cockpit. It's all I know, Commander.\\\"\r\n\r\n\\\"There is one more option.\\\" The MedTech hesitates. \\\"We could implant a Davion neurostimulator. The procedure poses a high risk—the <i>slightest</i> error will result in complete brain death—but if the neurostimulator is successfully implanted, {TGT_MW.SUBJ}'ll be combat ready within days.\\\"",
+        "CULTURE_ZH_CN": "在医疗舱里，[[TGT_MW,{TGT_MW.Callsign}]]抱着一张旧照片。{TGT_MW.DET}太阳穴上缝着线。\"医疗技师说这是我母亲，可我记不起她……\"\n\n一名医疗技师走进来。\"{TGT_MW.Gender?NonBinary:他们已经|Male:他是|Female:她是}患上了[[DM.BaseDescriptionDefs[LoreTBI],创伤性脑损伤]]。如果我们不干预，{TGT_MW.DET_C}下一次头部受伤将是致命的。退役是最安全的选择，但损伤已经造成。虽然无法保证，但如果{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是}卧床静养，有康复的可能，但可能要几周或几个月。\"\n\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:坐下|Default:坐下}起身，皱起眉。\"我不需要卧床静养。我需要回到座舱里。那是我唯一会做的事，指挥官。\"\n\n\"还有一个选项。\"医疗技师犹豫了一下。\"我们可以植入一个达维昂神经刺激器。手术风险极高——<i>最轻微</i>的失误都会导致完全脑死亡——但如果神经刺激器成功植入，{TGT_MW.SUBJ}几天内就能恢复战斗状态。\""
       }
     },
     {
@@ -61563,8 +61563,8 @@
       "Name": "RogueTech_Core.event_mw_plague_Rescue.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Darius has called a rare emergency meeting. \\\"Recently, we rescued a ship that was damaged as it departed a planet under quarantine. We hoped we'd avoided infection. We did not. Now [[TGT_MW,{TGT_MW.Callsign}]] has developed a highly contagious, potentially fatal disease.\\\"\r\n\r\nGrimly, he lays out the path ahead. \\\"We need to isolate an entire MedBay until {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:recover|Default:recovers}. I've also contacted the local authorities, and they've offered to sell us medication for ¢120,000. An extortionate price, but without it, we may find ourselves in the same position as the ship we rescued.\\\"\r\n\r\nSumire adds, \\\"I spoke to a friend at a pharmaceutical research lab, but this bug is beyond the scope of any of his experimental antivirals.\\\"",
-        "CULTURE_ZH_CN": "达里乌斯召开了一次罕见的紧急会议。\"最近，我们救了一艘在离开一颗被隔离的行星时受损的船。我们本以为躲过了感染。但没有。现在[[TGT_MW,{TGT_MW.Callsign}]]患上了一种高传染性、可能致命的疾病。\"\n\n他阴沉地道出前路。\"我们需要隔离一整间医疗舱，直到{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:recover|Default:recovers}。我也联系了当地当局，他们提出以12万C币卖给我们药物。这价格是敲诈，但没有它，我们可能落到跟那艘被我们救下的船一样的境地。\"\n\n苏米蕾补充道：\"我联系了一位在药物研究实验室的朋友，但这个病菌超出了他任何实验性抗病毒药物的范围。\""
+        "CULTURE_EN_US": "Darius has called a rare emergency meeting. \\\"Recently, we rescued a ship that was damaged as it departed a planet under quarantine. We hoped we'd avoided infection. We did not. Now [[TGT_MW,{TGT_MW.Callsign}]] has developed a highly contagious, potentially fatal disease.\\\"\r\n\r\nGrimly, he lays out the path ahead. \\\"We need to isolate an entire MedBay until {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:康复|Default:康复}. I've also contacted the local authorities, and they've offered to sell us medication for ¢120,000. An extortionate price, but without it, we may find ourselves in the same position as the ship we rescued.\\\"\r\n\r\nSumire adds, \\\"I spoke to a friend at a pharmaceutical research lab, but this bug is beyond the scope of any of his experimental antivirals.\\\"",
+        "CULTURE_ZH_CN": "达里乌斯召开了一次罕见的紧急会议。\"最近，我们救了一艘在离开一颗被隔离的行星时受损的船。我们本以为躲过了感染。但没有。现在[[TGT_MW,{TGT_MW.Callsign}]]患上了一种高传染性、可能致命的疾病。\"\n\n他阴沉地道出前路。\"我们需要隔离一整间医疗舱，直到{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:康复|Default:康复}。我也联系了当地当局，他们提出以12万C币卖给我们药物。这价格是敲诈，但没有它，我们可能落到跟那艘被我们救下的船一样的境地。\"\n\n苏米蕾补充道：\"我联系了一位在药物研究实验室的朋友，但这个病菌超出了他任何实验性抗病毒药物的范围。\""
       }
     },
     {
@@ -61611,8 +61611,8 @@
       "Name": "RogueTech_Core.event_mw_plague_ShoreLeave1.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Darius assembles the staff for an emergency meeting. \\\"[[TGT_MW,{TGT_MW.Callsign}]] has contracted a contagious, potentially fatal disease, likely from a recent shore leave excursion. We need to isolate an entire MedBay until {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:recover|Default:recovers}. I've also notified the local authorities. They believe we've encountered a local strain of Periphery Pox, and can provide targeted drugs for ¢80,000. A steep price, but probably necessary.\\\"\r\n\r\nSumire volunteers, \\\"I know somebody at a pharmaceutical research lab. They've been looking for somebody to test their new antivirals on. It'd be ¢200,000 to get in on the ground floor, but it would give us permanent access to the drug.\\\"",
-        "CULTURE_ZH_CN": "达里乌斯召集幕僚开紧急会议。\"[[TGT_MW,{TGT_MW.Callsign}]]染上了一种高传染性、可能致命的疾病，很可能来自最近一次上岸休假。我们需要隔离一整间医疗舱，直到{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:recover|Default:recovers}。我也通知了当地当局。他们认为我们遇到的是外缘痘的当地病毒株，可以提供针对性药物，要8万C币。价格陡峭，但大概必要。\"\n\n苏米蕾自告奋勇：\"我认识一个在药物研究实验室的人。他们一直在找人测试他们的新抗病毒药。花20万C币就能从最底层入手，但那会让我们永久获得这种药物的使用权。\""
+        "CULTURE_EN_US": "Darius assembles the staff for an emergency meeting. \\\"[[TGT_MW,{TGT_MW.Callsign}]] has contracted a contagious, potentially fatal disease, likely from a recent shore leave excursion. We need to isolate an entire MedBay until {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:康复|Default:康复}. I've also notified the local authorities. They believe we've encountered a local strain of Periphery Pox, and can provide targeted drugs for ¢80,000. A steep price, but probably necessary.\\\"\r\n\r\nSumire volunteers, \\\"I know somebody at a pharmaceutical research lab. They've been looking for somebody to test their new antivirals on. It'd be ¢200,000 to get in on the ground floor, but it would give us permanent access to the drug.\\\"",
+        "CULTURE_ZH_CN": "达里乌斯召集幕僚开紧急会议。\"[[TGT_MW,{TGT_MW.Callsign}]]染上了一种高传染性、可能致命的疾病，很可能来自最近一次上岸休假。我们需要隔离一整间医疗舱，直到{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:康复|Default:康复}。我也通知了当地当局。他们认为我们遇到的是外缘痘的当地病毒株，可以提供针对性药物，要8万C币。价格陡峭，但大概必要。\"\n\n苏米蕾自告奋勇：\"我认识一个在药物研究实验室的人。他们一直在找人测试他们的新抗病毒药。花20万C币就能从最底层入手，但那会让我们永久获得这种药物的使用权。\""
       }
     },
     {
@@ -61667,8 +61667,8 @@
       "Name": "RogueTech_Core.event_mw_plague_ShoreLeave2.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Another emergency meeting. Darius says, \\\"Commander, we're facing another outbreak of Periphery Pox. [[TGT_MW,{TGT_MW.Callsign}]] is the only one presenting symptoms so far.\\\"\r\n\r\nSumire says, \\\"Okay, so {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:get|Default:gets} {TGT_MW.Det} very own MedBay until {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:recover|Default:recovers}. We still have access to the Pox antivirals we invested in before, but the system authorities recommend that we supplement them with drugs particular to the local strain of the disease. That would run us ¢40,000.\\\"\r\n\r\nSumire's gaze goes distant. \\\"With hospital-grade facilities, the anti-viral research, and enough time and cash, we could develop a serum that would protect from <i>all</i> local strains.\\\"",
-        "CULTURE_ZH_CN": "又一次紧急会议。达里乌斯说：\"指挥官，我们面临又一次外缘痘爆发。[[TGT_MW,{TGT_MW.Callsign}]]是目前唯一出现症状的人。\"\n\n苏米蕾说：\"好，那{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:get|Default:gets}进{TGT_MW.Det}专属医疗舱，直到{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:recover|Default:recovers}。我们之前投入买下的痘病抗病毒药还能用，但星系当局建议我们补充针对当地病毒株的药物。那要花我们4万C币。\"\n\n苏米蕾的目光变得悠远。\"有了医院级设施、抗病毒研究，再加上足够的时间和资金，我们能研发出一种能防护<i>所有</i>当地病毒株的血清。\""
+        "CULTURE_EN_US": "Another emergency meeting. Darius says, \\\"Commander, we're facing another outbreak of Periphery Pox. [[TGT_MW,{TGT_MW.Callsign}]] is the only one presenting symptoms so far.\\\"\r\n\r\nSumire says, \\\"Okay, so {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:变得|Default:变得} {TGT_MW.Det} very own MedBay until {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:康复|Default:康复}. We still have access to the Pox antivirals we invested in before, but the system authorities recommend that we supplement them with drugs particular to the local strain of the disease. That would run us ¢40,000.\\\"\r\n\r\nSumire's gaze goes distant. \\\"With hospital-grade facilities, the anti-viral research, and enough time and cash, we could develop a serum that would protect from <i>all</i> local strains.\\\"",
+        "CULTURE_ZH_CN": "又一次紧急会议。达里乌斯说：\"指挥官，我们面临又一次外缘痘爆发。[[TGT_MW,{TGT_MW.Callsign}]]是目前唯一出现症状的人。\"\n\n苏米蕾说：\"好，那{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:变得|Default:变得}进{TGT_MW.Det}专属医疗舱，直到{TGT_MW.Subj} {TGT_MW.Gender?NonBinary:康复|Default:康复}。我们之前投入买下的痘病抗病毒药还能用，但星系当局建议我们补充针对当地病毒株的药物。那要花我们4万C币。\"\n\n苏米蕾的目光变得悠远。\"有了医院级设施、抗病毒研究，再加上足够的时间和资金，我们能研发出一种能防护<i>所有</i>当地病毒株的血清。\""
       }
     },
     {
@@ -61731,8 +61731,8 @@
       "Name": "RogueTech_Core.event_mw_powerInterlock.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "\\\"If we don't bypass the faulty interlock, we're looking at a 17% drop across the board!\\\" [[TGT_MW,{TGT_MW.Callsign}]] is animated, practically shouting, and you try to remember how you got drawn into this argument.\r\n\r\nApparently, with {TGT_MW.DET} technical background, {TGT_MW.Callsign} thinks {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:have|Default:has} identified a serious flaw in the <i>Argo</i>'s secondary power interlock.\r\n\r\nFor her part, Dr. Murad insists the interlock is working correctly. \\\"We're lucky it's only 17%! That isn't the interlock. These systems have just missed several centuries' worth of annual maintenance. Your plan would potentially expose the entire central core to an overload.\\\"\r\n\r\n\\\"Only if it doesn't work,\\\" {TGT_MW.Callsign} fires back.",
-        "CULTURE_ZH_CN": "\"如果我们不绕过那个有故障的联锁，我们会面临全面17%的下降！\"[[TGT_MW,{TGT_MW.Callsign}]]情绪激动，几乎是在喊，而你在努力回想自己是怎么被卷进这场争论的。\n\n显然，凭借{TGT_MW.DET}的技术背景，{TGT_MW.Callsign}认为{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:have|Default:has}在<i>阿戈</i>号的次级电力联锁中发现了一处严重缺陷。\n\n而穆拉德博士则坚持联锁运作正常。\"我们运气好，只是17%！那不是联锁的问题。这些系统只是错过了几个世纪的年度维护。你的方案可能会让整个中央核心暴露在过载之下。\"\n\n\"只会在它不生效的情况下，\"{TGT_MW.Callsign}回敬道。"
+        "CULTURE_EN_US": "\\\"If we don't bypass the faulty interlock, we're looking at a 17% drop across the board!\\\" [[TGT_MW,{TGT_MW.Callsign}]] is animated, practically shouting, and you try to remember how you got drawn into this argument.\r\n\r\nApparently, with {TGT_MW.DET} technical background, {TGT_MW.Callsign} thinks {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:有|Default:有} identified a serious flaw in the <i>Argo</i>'s secondary power interlock.\r\n\r\nFor her part, Dr. Murad insists the interlock is working correctly. \\\"We're lucky it's only 17%! That isn't the interlock. These systems have just missed several centuries' worth of annual maintenance. Your plan would potentially expose the entire central core to an overload.\\\"\r\n\r\n\\\"Only if it doesn't work,\\\" {TGT_MW.Callsign} fires back.",
+        "CULTURE_ZH_CN": "\"如果我们不绕过那个有故障的联锁，我们会面临全面17%的下降！\"[[TGT_MW,{TGT_MW.Callsign}]]情绪激动，几乎是在喊，而你在努力回想自己是怎么被卷进这场争论的。\n\n显然，凭借{TGT_MW.DET}的技术背景，{TGT_MW.Callsign}认为{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:有|Default:有}在<i>阿戈</i>号的次级电力联锁中发现了一处严重缺陷。\n\n而穆拉德博士则坚持联锁运作正常。\"我们运气好，只是17%！那不是联锁的问题。这些系统只是错过了几个世纪的年度维护。你的方案可能会让整个中央核心暴露在过载之下。\"\n\n\"只会在它不生效的情况下，\"{TGT_MW.Callsign}回敬道。"
       }
     },
     {
@@ -61779,8 +61779,8 @@
       "Name": "RogueTech_Core.event_mw_readingCorridor.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Rounding a corner in an unused corridor, you nearly trip over [[TGT_MW,{TGT_MW.Callsign}]]. The MechWarrior sits in a heap on the floor, nose-deep in a dog-eared, honest-to-goodness, paper book.\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:look|Default:looks} up. \\\"Oh, Commander, am I in your way? I needed to get out of the barracks. There's just no good place for me to read.\\\"\r\n\r\nYou gesture at the book and {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:hand|Default:hands} it over. While you idly flip its pages, {TGT_MW.Callsign} asks, \\\"I heard that there's a disrepaired library here in the <i>Argo</i>. Think we could get that online?\\\"",
-        "CULTURE_ZH_CN": "在一条闲置走廊拐过弯时，你差点绊到[[TGT_MW,{TGT_MW.Callsign}]]。这名机师蜷坐在地上，鼻子深深埋在一本卷了角的、真真正正的纸质书里。\n\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:look|Default:looks}起头。\"哦，指挥官，我挡你路了吗？我得离开兵营。实在没有好地方让我读书。\"\n\n你指了指那本书，{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:hand|Default:hands}把它递过来。你随手翻着书页时，{TGT_MW.Callsign}问道：\"我听说<i>阿戈</i>号上有一间失修的书库。你觉得我们能把它弄上线吗？\""
+        "CULTURE_EN_US": "Rounding a corner in an unused corridor, you nearly trip over [[TGT_MW,{TGT_MW.Callsign}]]. The MechWarrior sits in a heap on the floor, nose-deep in a dog-eared, honest-to-goodness, paper book.\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:看着|Default:看着} up. \\\"Oh, Commander, am I in your way? I needed to get out of the barracks. There's just no good place for me to read.\\\"\r\n\r\nYou gesture at the book and {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:递过|Default:递过} it over. While you idly flip its pages, {TGT_MW.Callsign} asks, \\\"I heard that there's a disrepaired library here in the <i>Argo</i>. Think we could get that online?\\\"",
+        "CULTURE_ZH_CN": "在一条闲置走廊拐过弯时，你差点绊到[[TGT_MW,{TGT_MW.Callsign}]]。这名机师蜷坐在地上，鼻子深深埋在一本卷了角的、真真正正的纸质书里。\n\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:看着|Default:看着}起头。\"哦，指挥官，我挡你路了吗？我得离开兵营。实在没有好地方让我读书。\"\n\n你指了指那本书，{TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:递过|Default:递过}把它递过来。你随手翻着书页时，{TGT_MW.Callsign}问道：\"我听说<i>阿戈</i>号上有一间失修的书库。你觉得我们能把它弄上线吗？\""
       }
     },
     {
@@ -61827,7 +61827,7 @@
       "Name": "RogueTech_Core.event_mw_readingCorridor.Name",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Ask about the economics book {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:are|Default:is} reading.",
+        "CULTURE_EN_US": "Ask about the economics book {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是} reading.",
         "CULTURE_ZH_CN": "问问{TGT_MW.OBJ}正在阅读的这本经济书."
       }
     },
@@ -61835,7 +61835,7 @@
       "Name": "RogueTech_Core.event_mw_readingCorridor.Name",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Ask about the history book {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:are|Default:is} reading.",
+        "CULTURE_EN_US": "Ask about the history book {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是} reading.",
         "CULTURE_ZH_CN": "问问{TGT_MW.OBJ}正在阅读的这本历史书."
       }
     },
@@ -61843,7 +61843,7 @@
       "Name": "RogueTech_Core.event_mw_readingCorridor.Name",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Ask about the science book {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:are|Default:is} reading.",
+        "CULTURE_EN_US": "Ask about the science book {TGT_MW.SUBJ} {TGT_MW.Gender?NonBinary:是|Default:是} reading.",
         "CULTURE_ZH_CN": "问问{TGT_MW.OBJ}正在阅读的这本科学书."
       }
     },
@@ -62115,8 +62115,8 @@
       "Name": "RogueTech_Core.event_mw_resignation.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Darius hands you a form. \\\"It's [[TGT_MW,{TGT_MW.Callsign}]]'s resignation. I tried to talk {TGT_MW.OBJ} out of it, but {TGT_MW.Gender?Male:he's|Female:she's|Default:they're} holding firm. {TGT_MW.SUBJ_C} said things around here have gotten really bad, and honestly {TGT_MW.Gender?Male:he's|Female:she's|Default:they're} right. Morale is in the crapper and I've had to break up too many fights recently. We've got to turn this around, Commander, or we'll keep losing people.\\\"",
-        "CULTURE_ZH_CN": "达里乌斯递给你一份表格。\"这是[[TGT_MW,{TGT_MW.Callsign}]]的辞呈。我试图劝{TGT_MW.OBJ}打消这个念头，但{TGT_MW.Gender?Male:he's|Female:she's|Default:they're}态度坚决。{TGT_MW.SUBJ_C}说这里的情况已经变得非常糟，老实说{TGT_MW.Gender?Male:he's|Female:she's|Default:they're}说得对。士气流到了谷底，最近我已经不得不拉开太多场斗殴了。我们得扭转局面，指挥官，否则人会一直走。\""
+        "CULTURE_EN_US": "Darius hands you a form. \\\"It's [[TGT_MW,{TGT_MW.Callsign}]]'s resignation. I tried to talk {TGT_MW.OBJ} out of it, but {TGT_MW.Gender?Male:他是|Female:她是|Default:他们是} holding firm. {TGT_MW.SUBJ_C} said things around here have gotten really bad, and honestly {TGT_MW.Gender?Male:他是|Female:她是|Default:他们是} right. Morale is in the crapper and I've had to break up too many fights recently. We've got to turn this around, Commander, or we'll keep losing people.\\\"",
+        "CULTURE_ZH_CN": "达里乌斯递给你一份表格。\"这是[[TGT_MW,{TGT_MW.Callsign}]]的辞呈。我试图劝{TGT_MW.OBJ}打消这个念头，但{TGT_MW.Gender?Male:他是|Female:她是|Default:他们是}态度坚决。{TGT_MW.SUBJ_C}说这里的情况已经变得非常糟，老实说{TGT_MW.Gender?Male:他是|Female:她是|Default:他们是}说得对。士气流到了谷底，最近我已经不得不拉开太多场斗殴了。我们得扭转局面，指挥官，否则人会一直走。\""
       }
     },
     {
@@ -63323,8 +63323,8 @@
       "Name": "RogueTech_Core.event_mw_warning_criminal.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "While in {TGT_SYSTEM.Name}, you get a message from the commander of another mercenary company passing through. After some formalities, the message gets straight to the point. \\\"My boys tell me you have [[TGT_MW,{TGT_MW.Callsign}]] on your crew. As one commander to another, I need to tell you {TGT_MW.Callsign} is not a good hire. To be blunt, {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're} a thief and a backstabber and only common decency had me leave {TGT_MW.OBJ} on a station instead of booting {TGT_MW.OBJ} through the airlock when I finally fired {TGT_MW.DET} ass. Be careful with your crew and keep in mind that a MechWarrior with a bad reputation can bring down the reputation of your whole outfit.\\\"",
-        "CULTURE_ZH_CN": "在{TGT_SYSTEM.Name}期间，你收到另一支路过的雇佣兵部队指挥官发来的消息。几句客套之后，消息直奔主题。“我的手下告诉我，你的队伍里有[[TGT_MW,{TGT_MW.Callsign}]]。作为指挥官对指挥官，我得告诉你，{TGT_MW.Callsign}不是个好雇员。直说吧，{TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're}是个小偷兼背后捅刀的家伙，我最后开除{TGT_MW.DET}混蛋的时候，纯粹是出于基本的体面，才把{TGT_MW.OBJ}留在空间站，而不是把{TGT_MW.OBJ}从气闸里踹出去。小心你的队伍，记住，一个名声不好的机甲战士会拖垮你整支部队的声誉。”"
+        "CULTURE_EN_US": "While in {TGT_SYSTEM.Name}, you get a message from the commander of another mercenary company passing through. After some formalities, the message gets straight to the point. \\\"My boys tell me you have [[TGT_MW,{TGT_MW.Callsign}]] on your crew. As one commander to another, I need to tell you {TGT_MW.Callsign} is not a good hire. To be blunt, {TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们是} a thief and a backstabber and only common decency had me leave {TGT_MW.OBJ} on a station instead of booting {TGT_MW.OBJ} through the airlock when I finally fired {TGT_MW.DET} ass. Be careful with your crew and keep in mind that a MechWarrior with a bad reputation can bring down the reputation of your whole outfit.\\\"",
+        "CULTURE_ZH_CN": "在{TGT_SYSTEM.Name}期间，你收到另一支路过的雇佣兵部队指挥官发来的消息。几句客套之后，消息直奔主题。“我的手下告诉我，你的队伍里有[[TGT_MW,{TGT_MW.Callsign}]]。作为指挥官对指挥官，我得告诉你，{TGT_MW.Callsign}不是个好雇员。直说吧，{TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们是}是个小偷兼背后捅刀的家伙，我最后开除{TGT_MW.DET}混蛋的时候，纯粹是出于基本的体面，才把{TGT_MW.OBJ}留在空间站，而不是把{TGT_MW.OBJ}从气闸里踹出去。小心你的队伍，记住，一个名声不好的机甲战士会拖垮你整支部队的声誉。”"
       }
     },
     {
@@ -63379,8 +63379,8 @@
       "Name": "RogueTech_Core.event_mw_warning_disgraced.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "While in {TGT_SYSTEM.Name}, you get a message from the commander of another mercenary company passing through. After some formalities, the message gets straight to the point. \\\"My boys tell me you have [[TGT_MW,{TGT_MW.Callsign}]] on your crew. As one commander to another, I need to tell you {TGT_MW.Callsign} is not a good hire. To be blunt, {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're} a thief and a backstabber and only common decency had me leave {TGT_MW.OBJ} on a station instead of booting {TGT_MW.OBJ} through the airlock when I finally fired {TGT_MW.DET} ass. Be careful with your crew and keep in mind that a MechWarrior with a bad reputation can bring down the reputation of your whole outfit.\\\"",
-        "CULTURE_ZH_CN": "在{TGT_SYSTEM.Name}期间，你收到另一支路过的雇佣兵部队指挥官发来的消息。几句客套之后，消息直奔主题。“我的手下告诉我，你的队伍里有[[TGT_MW,{TGT_MW.Callsign}]]。作为指挥官对指挥官，我得告诉你，{TGT_MW.Callsign}不是个好雇员。直说吧，{TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're}是个小偷兼背后捅刀的家伙，我最后开除{TGT_MW.DET}混蛋的时候，纯粹是出于基本的体面，才把{TGT_MW.OBJ}留在空间站，而不是把{TGT_MW.OBJ}从气闸里踹出去。小心你的队伍，记住，一个名声不好的机甲战士会拖垮你整支部队的声誉。”"
+        "CULTURE_EN_US": "While in {TGT_SYSTEM.Name}, you get a message from the commander of another mercenary company passing through. After some formalities, the message gets straight to the point. \\\"My boys tell me you have [[TGT_MW,{TGT_MW.Callsign}]] on your crew. As one commander to another, I need to tell you {TGT_MW.Callsign} is not a good hire. To be blunt, {TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们是} a thief and a backstabber and only common decency had me leave {TGT_MW.OBJ} on a station instead of booting {TGT_MW.OBJ} through the airlock when I finally fired {TGT_MW.DET} ass. Be careful with your crew and keep in mind that a MechWarrior with a bad reputation can bring down the reputation of your whole outfit.\\\"",
+        "CULTURE_ZH_CN": "在{TGT_SYSTEM.Name}期间，你收到另一支路过的雇佣兵部队指挥官发来的消息。几句客套之后，消息直奔主题。“我的手下告诉我，你的队伍里有[[TGT_MW,{TGT_MW.Callsign}]]。作为指挥官对指挥官，我得告诉你，{TGT_MW.Callsign}不是个好雇员。直说吧，{TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们是}是个小偷兼背后捅刀的家伙，我最后开除{TGT_MW.DET}混蛋的时候，纯粹是出于基本的体面，才把{TGT_MW.OBJ}留在空间站，而不是把{TGT_MW.OBJ}从气闸里踹出去。小心你的队伍，记住，一个名声不好的机甲战士会拖垮你整支部队的声誉。”"
       }
     },
     {
@@ -63435,8 +63435,8 @@
       "Name": "RogueTech_Core.event_mw_warning_rebellious.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "While in {TGT_SYSTEM.Name}, you get a message from the commander of another mercenary company passing through. After some formalities, the message gets straight to the point. \\\"My boys tell me you have [[TGT_MW,{TGT_MW.Callsign}]] on your crew. As one commander to another, I need to tell you {TGT_MW.Callsign} is not a good hire. To be blunt, {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're} a thief and a backstabber and only common decency had me leave {TGT_MW.OBJ} on a station instead of booting {TGT_MW.OBJ} through the airlock when I finally fired {TGT_MW.DET} ass. Be careful with your crew and keep in mind that a MechWarrior with a bad reputation can bring down the reputation of your whole outfit.\\\"",
-        "CULTURE_ZH_CN": "在{TGT_SYSTEM.Name}期间，你收到另一支路过的雇佣兵部队指挥官发来的消息。几句客套之后，消息直奔主题。“我的手下告诉我，你的队伍里有[[TGT_MW,{TGT_MW.Callsign}]]。作为指挥官对指挥官，我得告诉你，{TGT_MW.Callsign}不是个好雇员。直说吧，{TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're}是个小偷兼背后捅刀的家伙，我最后开除{TGT_MW.DET}混蛋的时候，纯粹是出于基本的体面，才把{TGT_MW.OBJ}留在空间站，而不是把{TGT_MW.OBJ}从气闸里踹出去。小心你的队伍，记住，一个名声不好的机甲战士会拖垮你整支部队的声誉。”"
+        "CULTURE_EN_US": "While in {TGT_SYSTEM.Name}, you get a message from the commander of another mercenary company passing through. After some formalities, the message gets straight to the point. \\\"My boys tell me you have [[TGT_MW,{TGT_MW.Callsign}]] on your crew. As one commander to another, I need to tell you {TGT_MW.Callsign} is not a good hire. To be blunt, {TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们是} a thief and a backstabber and only common decency had me leave {TGT_MW.OBJ} on a station instead of booting {TGT_MW.OBJ} through the airlock when I finally fired {TGT_MW.DET} ass. Be careful with your crew and keep in mind that a MechWarrior with a bad reputation can bring down the reputation of your whole outfit.\\\"",
+        "CULTURE_ZH_CN": "在{TGT_SYSTEM.Name}期间，你收到另一支路过的雇佣兵部队指挥官发来的消息。几句客套之后，消息直奔主题。“我的手下告诉我，你的队伍里有[[TGT_MW,{TGT_MW.Callsign}]]。作为指挥官对指挥官，我得告诉你，{TGT_MW.Callsign}不是个好雇员。直说吧，{TGT_MW.Gender?Male:他是|Female:她是|NonBinary:他们是}是个小偷兼背后捅刀的家伙，我最后开除{TGT_MW.DET}混蛋的时候，纯粹是出于基本的体面，才把{TGT_MW.OBJ}留在空间站，而不是把{TGT_MW.OBJ}从气闸里踹出去。小心你的队伍，记住，一个名声不好的机甲战士会拖垮你整支部队的声誉。”"
       }
     },
     {
@@ -67755,7 +67755,7 @@
       "Name": "RogueTech_Core.forcedevent_leopard_extension.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Banging noises draw you to the shared MechWarrior Barracks, where you find [[TGT_MW,{TGT_MW.Callsign}]] disassembling one of the Leopard's internal walls. There are already several panels neatly stacked beside {TGT_MW.OBJ}.\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:pause|Default:pauses}, then {TGT_MW.Gender?NonBinary:explain|Default:explains}. \\\"There's a few cubic meters of dead space back here. I'm making room so we can stretch without hitting the bunks.\\\"\r\n\r\nAs reasonable as this sounds, the banks aren't going to like you modifying their property.",
+        "CULTURE_EN_US": "Banging noises draw you to the shared MechWarrior Barracks, where you find [[TGT_MW,{TGT_MW.Callsign}]] disassembling one of the Leopard's internal walls. There are already several panels neatly stacked beside {TGT_MW.OBJ}.\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:停顿|Default:停顿}, then {TGT_MW.Gender?NonBinary:explain|Default:explains}. \\\"There's a few cubic meters of dead space back here. I'm making room so we can stretch without hitting the bunks.\\\"\r\n\r\nAs reasonable as this sounds, the banks aren't going to like you modifying their property.",
         "CULTURE_ZH_CN": "敲打声把你引到机甲战士共用营房，你发现[[TGT_MW,{TGT_MW.Callsign}]]正在拆解豹式的一面内墙。{TGT_MW.OBJ}身边已经整齐堆着几块板件。\n\n{TGT_MW.SUBJ_C}{TGT_MW.Gender?NonBinary:停顿|Default:停顿}了一下，然后{TGT_MW.Gender?NonBinary:解释|Default:解释}：“这后面有几立方米的死空间。我在腾地方，好让我们伸得开胳膊而不会撞到铺位。”\n\n听起来虽然合理，但银行方面可不会喜欢有人改动他们的财产。"
       }
     },

@@ -400,11 +400,18 @@ Step 18 "汉化装备分类显示名"
 RunTool 'apply-category-zh.ps1' @('-gameRoot', $gameRoot)
 Ok "完成"
 
-# ---------- 10b) 界面弹窗兜底键 ----------
+# ---------- 10b) 界面弹窗兜底键 + 性别分支 ----------
 # ArmorRepair / CustomUnits 的维修弹窗、载具报废提示等文本由 DLL 拼接后
 # 走总表查表, 表中缺键就显示英文。这里补齐这些键。
 Step 18 "补充界面弹窗兜底键"
-RunTool 'apply-uikeys.ps1' @('-csv', $csvDst)
+RunTool 'apply-uikeys.ps1' @('-csv', $csvDst) | Out-Null
+RunTool 'apply-pronouns.ps1' @('-csv', $csvDst) | Out-Null
+Ok "完成"
+
+# 译文里的 {角色.Gender?分支:值} 若留着英文动词, 句子里会半英半中
+# (例: "He acts 起来就像 he's 我的老板似的")。中文无动词变位, 两分支同值。
+Step 18 "修复译文中的性别分支残留英文"
+RunTool 'fix-gender.ps1' @('-mods', (Join-Path $gameRoot 'Mods')) | Out-Null
 Ok "完成"
 
 # ---------- 11) 控制字符与标点空格 ----------
