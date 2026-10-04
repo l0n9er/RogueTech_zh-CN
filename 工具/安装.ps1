@@ -407,9 +407,13 @@ Ok "完成"
 # ---------- 10b) 界面弹窗兜底键 + 性别分支 ----------
 # ArmorRepair / CustomUnits 的维修弹窗、载具报废提示等文本由 DLL 拼接后
 # 走总表查表, 表中缺键就显示英文。这里补齐这些键。
-Step 19 "补充界面弹窗兜底键"
+# MissionControl 的 contractTypeBuilds\*\common.jsonc 定义的任务目标
+# Title / ProgressFormat 同样走总表查表(与原版 objective 同机制), 缺键则
+# 显示英文(如 "DEFECTOR MUST SURVIVE AND REACH THE EVAC ZONE")。
+Step 19 "补充界面弹窗与任务目标兜底键"
 RunTool 'apply-uikeys.ps1' @('-csv', $csvDst) | Out-Null
 RunTool 'apply-pronouns.ps1' @('-csv', $csvDst) | Out-Null
+RunTool 'apply-mckeys.ps1' @('-csv', $csvDst) | Out-Null
 Ok "完成"
 
 # 载具的 Details 由 DLL 在运行时拼好(含 "#武器:" 段)后整段查表, 因此必须把
