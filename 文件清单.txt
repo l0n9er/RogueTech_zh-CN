@@ -15,11 +15,12 @@ BattleTech_Data\StreamingAssets\font                中文字形字体（Unity �
                                                     17 MB，缺了中文会显示成方框）
 BattleTech_Data\StreamingAssets\data\VersionManifest.csv  游戏资源清单（2.2 MB）
 
-【汉化 DLL】（共 25 个，出自月光石头的《BATTLETECH 汉化工具》）
+【汉化 DLL】（共 26 个，出自月光石头的《BATTLETECH 汉化工具》）
   BattleTech_Data\Managed\Assembly-CSharp.dll              游戏主程序集
   BattleTech_Data\Managed\battletech_core.dll
   Mods\Core\Abilifier\Abilifier.dll
   Mods\Core\CustomAmmoCategories\*.dll                     4 个
+  Mods\Core\CustomActivatableEquipment\CustomActivatableEquipment.dll
   Mods\Core\CustomComponents\CustomComponents.dll
   Mods\Core\CustomFilters\CustomFilters.dll
   Mods\Core\CustomSalvage\CustomSalvage.dll
@@ -40,7 +41,7 @@ BattleTech_Data\StreamingAssets\data\VersionManifest.csv  游戏资源清单（2
 安装.bat                             一键安装（双击即可）
 还原.bat                             一键还原（双击即可，用最新备份按目录结构覆盖回游戏）
 工具\安装.ps1                        安装脚本：自动找游戏目录、先备份再覆盖、
-                                     备份保留原目录结构，游戏在运行则拒绝执行，共 16 个步骤
+                                     备份保留原目录结构，游戏在运行则拒绝执行，共 25 个步骤
                                      含写入模组本地化表与数据文件、禁用启动器文件校验
 工具\还原.ps1                        还原脚本：把 backup\<时间戳>\ 按相对路径覆盖回游戏
 

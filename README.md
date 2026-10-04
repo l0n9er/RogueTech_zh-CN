@@ -302,7 +302,7 @@ RtCache\                          启动器缓存副本
 
 **本补丁所使用的主要汉化 DLL 均出自其手**——包括 `Assembly-CSharp.dll`、
 `MechAffinity.dll`、`CustomAmmoCategories.dll`、`CustomUnits.dll`、
-`StrategicOperations.dll`、`IRTweaks.dll` 等共 25 个程序集。这些 DLL 通过
+`StrategicOperations.dll`、`IRTweaks.dll` 等共 26 个程序集。这些 DLL 通过
 反编译修改硬编码字符串实现界面汉化，是本补丁无法自行完成的部分
 （本项目仅做文本表与数据文件层面的汉化）。
 

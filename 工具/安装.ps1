@@ -145,6 +145,7 @@ $dllList = @(
     'Mods\Core\CustomAmmoCategories\CustomAmmoCategories.dll',
     'Mods\Core\CustomAmmoCategories\CustomAmmoCategoriesHelper.dll',
     'Mods\Core\CustomAmmoCategories\CustomAmmoCategoriesPrivate.dll',
+    'Mods\Core\CustomActivatableEquipment\CustomActivatableEquipment.dll',
     'Mods\Core\CustomComponents\CustomComponents.dll',
     'Mods\Core\CustomFilters\CustomFilters.dll',
     'Mods\Core\CustomSalvage\CustomSalvage.dll',
