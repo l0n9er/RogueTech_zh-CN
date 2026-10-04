@@ -1,5 +1,8 @@
 ﻿param(
-    [string]$gameRoot = ""
+    [string]$gameRoot = "",
+    # 可选: 月光石头新版汉化包的数据目录(…\battletech-trans\resources\data)。
+    # 指定后会从中增量合并本包缺少的条目(主要是运行时拼接的载具整段描述)。
+    [string]$moonstone = ""
 )
 $ErrorActionPreference = 'Stop'
 $enc = New-Object Text.UTF8Encoding $false
@@ -407,6 +410,15 @@ Step 18 "补充界面弹窗兜底键"
 RunTool 'apply-uikeys.ps1' @('-csv', $csvDst) | Out-Null
 RunTool 'apply-pronouns.ps1' @('-csv', $csvDst) | Out-Null
 Ok "完成"
+
+# 载具的 Details 由 DLL 在运行时拼好(含 "#武器:" 段)后整段查表, 因此必须把
+# "整段描述" 作为 key 收录。这些条目来自月光石头新版汉化包, 随包分发总表已含;
+# 若用户把包放在工具同机目录, 也可用 -moonstone 指定源目录做增量合并。
+if (-not [string]::IsNullOrWhiteSpace($moonstone)) {
+    Step 18 "合并月光石头新版条目"
+    RunTool 'merge-moonstone.ps1' @('-source', $moonstone, '-csv', $csvDst) | Out-Null
+    Ok "完成"
+}
 
 # 译文里的 {角色.Gender?分支:值} 若留着英文动词, 句子里会半英半中
 # (例: "He acts 起来就像 he's 我的老板似的")。中文无动词变位, 两分支同值。
