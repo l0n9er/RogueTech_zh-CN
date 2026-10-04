@@ -2,7 +2,7 @@
   "Description": {
     "Id": "background_career_flight_school",
     "Name": "飞行学校教官",
-    "Details": "你生来就是为了飞！\n特质：[[DM.BaseDescriptionDefs[QuirkDisgraced]  声名狼藉]]，[[DM.BaseDescriptionDefs[QuirkBrave]  勇敢]]\n单位：随机 [[DM.BaseDescriptionDefs[LoreLAM]  陆空机甲]] 或随机 [[DM.BaseDescriptionDefs[LoreVTOL]  VTOL]]",
+    "Details": "你生来就是为了飞！\n特质：[[DM.BaseDescriptionDefs[QuirkDisgraced],声名狼藉]]，[[DM.BaseDescriptionDefs[QuirkBrave],勇敢]]\n单位：随机 [[DM.BaseDescriptionDefs[LoreLAM],陆空机甲]] 或随机 [[DM.BaseDescriptionDefs[LoreVTOL],VTOL]]",
     "Icon": "envTxrHrld_startMercenary",
     "Cost": 0,
     "Rarity": 0,

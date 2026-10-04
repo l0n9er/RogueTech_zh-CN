@@ -251,7 +251,7 @@
       "Name": "RogueTech_Backgrounds.background_ancestry_Periphery.Details",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "You were born and raised in the [[DM.BaseDescriptionDefs[LorePeriphery], Periphery]].",
+        "CULTURE_EN_US": "You were born and raised in the [[DM.BaseDescriptionDefs[LorePeriphery],Periphery]].",
         "CULTURE_ZH_CN": "你出生并成长于[[DM.BaseDescriptionDefs[LorePeriphery],外缘]]。"
       }
     },

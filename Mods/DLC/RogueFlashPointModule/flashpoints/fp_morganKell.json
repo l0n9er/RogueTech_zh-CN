@@ -38,6 +38,6 @@
   "RewardCollectionID": "itemCollection_loot_FP_generic_SLDF",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "你不会相信，但摩根·凯尔——[[DM.BaseDescriptionDefs[LoreKellHounds]  凯尔猎犬]]的<i>那位</i>[[DM.BaseDescriptionDefs[LoreMorganKell]  摩根·凯尔]]——想请我们干活。这种邀约你可不会拒绝。",
+  "FlashpointShortDescription": "你不会相信，但摩根·凯尔——[[DM.BaseDescriptionDefs[LoreKellHounds],凯尔猎犬]]的<i>那位</i>[[DM.BaseDescriptionDefs[LoreMorganKell],摩根·凯尔]]——想请我们干活。这种邀约你可不会拒绝。",
   "FlashpointDescriberCastDefId": "castDef_DariusDefault"
 }

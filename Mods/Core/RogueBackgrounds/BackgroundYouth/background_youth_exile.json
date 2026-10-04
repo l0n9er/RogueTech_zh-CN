@@ -2,7 +2,7 @@
   "Description": {
     "Id": "background_youth_exile",
     "Name": "历史",
-    "Details": "很久以前，你常读那些很久以前的故事。\n特性：[[DM.BaseDescriptionDefs[QuirkBookish]  书呆子]]、[[DM.BaseDescriptionDefs[QuirkLosTech]  失落科技经验]]",
+    "Details": "很久以前，你常读那些很久以前的故事。\n特性：[[DM.BaseDescriptionDefs[QuirkBookish],书呆子]]、[[DM.BaseDescriptionDefs[QuirkLosTech],失落科技经验]]",
     "Icon": "uixTxrLogo_backgroundExiled",
     "Cost": 0,
     "Rarity": 0,
@@ -55,6 +55,6 @@
   "UIOrdering": 0,
   "OptionName": "历史",
   "OptionMusicTrigger": "",
-  "OptionDescription": "你曾是你家族中大有前途的年轻继承人，却犯下了不可饶恕的过错，被判终身流放。\n\n你带着家族祖传的[[DM.BaseDescriptionDefs[LoreAncestralBlackjack]  黑杰克]]偷偷离开，出发去寻找属于自己的新生活。\n\n+1 [[DM.BaseDescriptionDefs[StatMechWarriorGunnery]  射击]]，+1 [[DM.BaseDescriptionDefs[StatMechWarriorTactics]  战术]]",
+  "OptionDescription": "你曾是你家族中大有前途的年轻继承人，却犯下了不可饶恕的过错，被判终身流放。\n\n你带着家族祖传的[[DM.BaseDescriptionDefs[LoreAncestralBlackjack],黑杰克]]偷偷离开，出发去寻找属于自己的新生活。\n\n+1 [[DM.BaseDescriptionDefs[StatMechWarriorGunnery],射击]]，+1 [[DM.BaseDescriptionDefs[StatMechWarriorTactics],战术]]",
   "BioDescription": "你始终回望过去，或许已近成癖。任何一段历史时期——无论是前太空时代，还是近至战火时代——总能激起你的兴趣。尽管你并未在该领域受过正规教育，你对某些时代的了解甚至堪与最权威的历史学家比肩。\n"
 }

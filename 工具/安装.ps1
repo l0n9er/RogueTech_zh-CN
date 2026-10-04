@@ -400,11 +400,20 @@ Step 18 "汉化装备分类显示名"
 RunTool 'apply-category-zh.ps1' @('-gameRoot', $gameRoot)
 Ok "完成"
 
+# ---------- 10b) 界面弹窗兜底键 ----------
+# ArmorRepair / CustomUnits 的维修弹窗、载具报废提示等文本由 DLL 拼接后
+# 走总表查表, 表中缺键就显示英文。这里补齐这些键。
+Step 18 "补充界面弹窗兜底键"
+RunTool 'apply-uikeys.ps1' @('-csv', $csvDst)
+Ok "完成"
+
 # ---------- 11) 控制字符与标点空格 ----------
+# 别名分隔符必须按文件类型区分: JSON 用半角逗号, CSV 用紧贴的 0x1F。
+# 写成 "[[OBJ <0x1F> {...}]]"(两侧带空格)会让游戏报 INVALID ALIAS,
+# 界面回退显示"错误"(日志 output_log.txt 可见 "INVALID ALIAS SCN_MW ...")。
 Step 19 "清理控制字符、标点空格与插值占位符"
 RunTool 'fix-ctl.ps1' @('-gameRoot', $gameRoot) | Out-Null
 RunTool 'cleanup.ps1' @('-gameRoot', $gameRoot) | Out-Null
-# [[OBJ ， {OBJ.Field}]] 里的全角逗号会让游戏报 INVALID ALIAS 并显示"错误"
 RunTool 'fix-interp-punct.ps1' @('-csv', $csvDst)
 Ok "完成"
 

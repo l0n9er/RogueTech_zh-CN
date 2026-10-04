@@ -2,7 +2,7 @@
   "Description": {
     "Id": "background_career_merchant_guard",
     "Name": "非常合法的商人",
-    "Details": "香蕉摊里永远有钱可赚。\n特性：[[DM.BaseDescriptionDefs[QuirkDishonest]  不诚实]]、[[DM.BaseDescriptionDefs[QuirkMerchant]  商人]]\n装备：3 百万 [[DM.BaseDescriptionDefs[LoreCBill]  C-Bill]]（或等值当地货币）",
+    "Details": "香蕉摊里永远有钱可赚。\n特性：[[DM.BaseDescriptionDefs[QuirkDishonest],不诚实]]、[[DM.BaseDescriptionDefs[QuirkMerchant],商人]]\n装备：3 百万 [[DM.BaseDescriptionDefs[LoreCBill],C-Bill]]（或等值当地货币）",
     "Icon": "envTxrHrld_startMerchantGuard",
     "Cost": 0,
     "Rarity": 0,
@@ -63,7 +63,7 @@
   "UIOrdering": 5,
   "OptionName": "非常合法的商人",
   "OptionMusicTrigger": "",
-  "OptionDescription": "你受雇于一家小型贸易行会，为其商队在内层星域与外围地区之间跑贸易时提供安保。生活大体平淡，但你得以在偶尔与海盗和不配合的地方政府的冲突中派上机甲战士的用场。\n\n+1 [[DM.BaseDescriptionDefs[StatMechWarriorPiloting]  驾驶]]",
-  "Intro": "在为前往[[DM.BaseDescriptionDefs[LoreAuriganReach]  奥里根边区]]边缘一处小型前哨的车队护航时，你遭到海盗袭击并被弃之等死。拉朱恰好正在访问首府城市，接收到了你的求救信号。救出你之后，他邀请你加入[[DM.BaseDescriptionDefs[LoreHouseArano]  阿然诺家族]]皇家卫队。\n\n就这样，你与旧日的导师重逢，为[[DM.BaseDescriptionDefs[LoreKameaArano]  卡美娅·阿然诺女士]]加冕当天的守卫任务保养你的祖传[[DM.BaseDescriptionDefs[LoreAncestralBlackjack]  二十一点]]……",
+  "OptionDescription": "你受雇于一家小型贸易行会，为其商队在内层星域与外围地区之间跑贸易时提供安保。生活大体平淡，但你得以在偶尔与海盗和不配合的地方政府的冲突中派上机甲战士的用场。\n\n+1 [[DM.BaseDescriptionDefs[StatMechWarriorPiloting],驾驶]]",
+  "Intro": "在为前往[[DM.BaseDescriptionDefs[LoreAuriganReach],奥里根边区]]边缘一处小型前哨的车队护航时，你遭到海盗袭击并被弃之等死。拉朱恰好正在访问首府城市，接收到了你的求救信号。救出你之后，他邀请你加入[[DM.BaseDescriptionDefs[LoreHouseArano],阿然诺家族]]皇家卫队。\n\n就这样，你与旧日的导师重逢，为[[DM.BaseDescriptionDefs[LoreKameaArano],卡美娅·阿然诺女士]]加冕当天的守卫任务保养你的祖传[[DM.BaseDescriptionDefs[LoreAncestralBlackjack],二十一点]]……",
   "BioDescription": "你大部分时间都在搞某种骗局。见鬼，连机师训练都算是场愉快的意外。可惜当你试图用D币付钱给你当时的莱兰导师时，他并不太高兴。等这一切都算了结（其实没了结）之后，你离开（逃离）了，奔向前程更光明的去处，这里撒点钱、那里撒点钱来润滑车轮，一路买到了一个小雇佣兵公司的头把交椅。人们怎么说来着？战争就是生意？\n"
 }

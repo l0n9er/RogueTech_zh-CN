@@ -2,7 +2,7 @@
   "Description": {
     "Id": "background_ancestry_FRR",
     "Name": "蛇夫座",
-    "Details": "你出生并成长于[[DM.Factions[faction_Rasalhague]  自由拉沙尔哈格共和国]]。",
+    "Details": "你出生并成长于[[DM.Factions[faction_Rasalhague],自由拉沙尔哈格共和国]]。",
     "Icon": "uixTxrLogo_Rasalhague",
     "Cost": 0,
     "Rarity": 0,

@@ -2,7 +2,7 @@
   "Description": {
     "Id": "background_career_infantry",
     "Name": "战斗装甲步兵",
-    "Details": "对战斗装甲机师来说，战争总能带来收入。\n特质：[[DM.BaseDescriptionDefs[QuirkBrave]  勇敢]]，[[DM.BaseDescriptionDefs[QuirkDependable]  可靠]]。\n单位：随机 [[DM.BaseDescriptionDefs[ConceptBattleArmor]  战斗装甲]] 小队\n装备：各式战斗装甲武器",
+    "Details": "对战斗装甲机师来说，战争总能带来收入。\n特质：[[DM.BaseDescriptionDefs[QuirkBrave],勇敢]]，[[DM.BaseDescriptionDefs[QuirkDependable],可靠]]。\n单位：随机 [[DM.BaseDescriptionDefs[ConceptBattleArmor],战斗装甲]] 小队\n装备：各式战斗装甲武器",
     "Icon": "envTxrHrld_startSoldier",
     "Cost": 0,
     "Rarity": 0,
@@ -64,7 +64,7 @@
   "UIOrdering": 0,
   "OptionName": "战斗装甲步兵",
   "OptionMusicTrigger": "",
-  "OptionDescription": "前途未卜的你前往 [[DM.BaseDescriptionDefs[LoreCoromodir]  Coromodir]]——[[DM.BaseDescriptionDefs[LoreAuriganCoalition]  Aurigan Coalition]] 的首都，并加入了联盟军队。你很快在军阶中步步高升，以可靠的机甲战士之名崭露头角。士兵的生活并不光鲜，却正合你意。\r\n\r\n+1 [[DM.BaseDescriptionDefs[StatMechWarriorGunnery]  Gunnery]]",
-  "Intro": "在一次不幸的任务中，你被困在敌后，与小队失去了联系。拉朱恰好正在附近巡逻，他发起了一场大胆的营救。当发现救出的正是你之后，他把你带进了[[DM.BaseDescriptionDefs[LoreHouseArano]  阿然诺家族]]皇家卫队。\n\n就这样，你与旧日的导师重逢，为[[DM.BaseDescriptionDefs[LoreKameaArano]  卡美娅·阿然诺女士]]加冕当天的守卫任务保养你的祖传[[DM.BaseDescriptionDefs[LoreAncestralBlackjack]  二十一点]]……",
+  "OptionDescription": "前途未卜的你前往 [[DM.BaseDescriptionDefs[LoreCoromodir],Coromodir]]——[[DM.BaseDescriptionDefs[LoreAuriganCoalition],Aurigan Coalition]] 的首都，并加入了联盟军队。你很快在军阶中步步高升，以可靠的机甲战士之名崭露头角。士兵的生活并不光鲜，却正合你意。\r\n\r\n+1 [[DM.BaseDescriptionDefs[StatMechWarriorGunnery],Gunnery]]",
+  "Intro": "在一次不幸的任务中，你被困在敌后，与小队失去了联系。拉朱恰好正在附近巡逻，他发起了一场大胆的营救。当发现救出的正是你之后，他把你带进了[[DM.BaseDescriptionDefs[LoreHouseArano],阿然诺家族]]皇家卫队。\n\n就这样，你与旧日的导师重逢，为[[DM.BaseDescriptionDefs[LoreKameaArano],卡美娅·阿然诺女士]]加冕当天的守卫任务保养你的祖传[[DM.BaseDescriptionDefs[LoreAncestralBlackjack],二十一点]]……",
   "BioDescription": "在一次除你之外全队几乎全灭的灾难性任务之后，你收拾残部从头开始。作为一名孤身的战斗服士兵并不容易，但你有足够的经验与胆魄为自己挣下名声，并把一家公司拉了起来。\n"
 }

@@ -2,7 +2,7 @@
   "Description": {
     "Id": "background_ancestry_Davion",
     "Name": "戴维恩",
-    "Details": "你出生并成长于[[DM.Factions[faction_Davion]  联邦太阳]]。",
+    "Details": "你出生并成长于[[DM.Factions[faction_Davion],联邦太阳]]。",
     "Icon": "uixTxrLogo_Davion",
     "Cost": 0,
     "Rarity": 0,
@@ -62,6 +62,6 @@
   "UIOrdering": 1,
   "OptionName": "恒星联邦（戴维恩）",
   "OptionMusicTrigger": "davion",
-  "OptionDescription": "出身于[[DM.Factions[faction_Davion]  联邦太阳]]的机师往往比太空中其他区域的同行拥有更精湛的技能和更好的装备。他们常把自己视为正义的战士与自由的捍卫者——有时过于如此。\n\n尽管在[[DM.BaseDescriptionDefs[LoreFirstSuccessionWar]  第一次继承战争]]中几乎被[[DM.Factions[faction_Kurita]  龙尼斯联合体]]灭国，这个由著名的[[DM.BaseDescriptionDefs[LoreHouseDavion]  达维昂家族]]统治的君主立宪国如今可以说是五大[[DM.BaseDescriptionDefs[LoreSuccessorState]  继承国]]中最强大的。凭借高超的军事行动与巧妙的外交，达维昂家族在过去两个世纪里大幅增加了其控制的星系数量。",
+  "OptionDescription": "出身于[[DM.Factions[faction_Davion],联邦太阳]]的机师往往比太空中其他区域的同行拥有更精湛的技能和更好的装备。他们常把自己视为正义的战士与自由的捍卫者——有时过于如此。\n\n尽管在[[DM.BaseDescriptionDefs[LoreFirstSuccessionWar],第一次继承战争]]中几乎被[[DM.Factions[faction_Kurita],龙尼斯联合体]]灭国，这个由著名的[[DM.BaseDescriptionDefs[LoreHouseDavion],达维昂家族]]统治的君主立宪国如今可以说是五大[[DM.BaseDescriptionDefs[LoreSuccessorState],继承国]]中最强大的。凭借高超的军事行动与巧妙的外交，达维昂家族在过去两个世纪里大幅增加了其控制的星系数量。",
   "BioDescription": "你出生并成长于联邦。来自联邦太阳国的机甲战士往往比太空其他地区的同行拥有更精炼的技能与更好的装备。他们常把自己视为正义的战士与自由的捍卫者——有时甚至过头。\n"
 }

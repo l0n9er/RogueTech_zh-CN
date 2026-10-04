@@ -2,7 +2,7 @@
   "Description": {
     "Id": "background_career_soldier",
     "Name": "入伍机甲战士",
-    "Details": "战争。战争从未改变。但老天，我们真希望它会变。\n特性：[[DM.BaseDescriptionDefs[QuirkBrave]  勇敢]]、[[DM.BaseDescriptionDefs[QuirkMilitary]  退伍军人]]\n装备：各式 [[DM.BaseDescriptionDefs[StarterBundleSoldier]  失落科技武器]]",
+    "Details": "战争。战争从未改变。但老天，我们真希望它会变。\n特性：[[DM.BaseDescriptionDefs[QuirkBrave],勇敢]]、[[DM.BaseDescriptionDefs[QuirkMilitary],退伍军人]]\n装备：各式 [[DM.BaseDescriptionDefs[StarterBundleSoldier],失落科技武器]]",
     "Icon": "envTxrHrld_startSoldier",
     "Cost": 0,
     "Rarity": 0,
@@ -64,7 +64,7 @@
   "UIOrdering": 0,
   "OptionName": "入伍机甲战士",
   "OptionMusicTrigger": "",
-  "OptionDescription": "前途未卜的你前往 [[DM.BaseDescriptionDefs[LoreCoromodir]  Coromodir]]——[[DM.BaseDescriptionDefs[LoreAuriganCoalition]  Aurigan Coalition]] 的首都，并加入了联盟军队。你很快在军阶中步步高升，以可靠的机甲战士之名崭露头角。士兵的生活并不光鲜，却正合你意。\r\n\r\n+1 [[DM.BaseDescriptionDefs[StatMechWarriorGunnery]  Gunnery]]",
-  "Intro": "在一次不幸的任务中，你被困在敌后，与小队失去了联系。拉朱恰好正在附近巡逻，他发起了一场大胆的营救。当发现救出的正是你之后，他把你带进了[[DM.BaseDescriptionDefs[LoreHouseArano]  阿然诺家族]]皇家卫队。\n\n就这样，你与旧日的导师重逢，为[[DM.BaseDescriptionDefs[LoreKameaArano]  卡美娅·阿然诺女士]]加冕当天的守卫任务保养你的祖传[[DM.BaseDescriptionDefs[LoreAncestralBlackjack]  二十一点]]……",
+  "OptionDescription": "前途未卜的你前往 [[DM.BaseDescriptionDefs[LoreCoromodir],Coromodir]]——[[DM.BaseDescriptionDefs[LoreAuriganCoalition],Aurigan Coalition]] 的首都，并加入了联盟军队。你很快在军阶中步步高升，以可靠的机甲战士之名崭露头角。士兵的生活并不光鲜，却正合你意。\r\n\r\n+1 [[DM.BaseDescriptionDefs[StatMechWarriorGunnery],Gunnery]]",
+  "Intro": "在一次不幸的任务中，你被困在敌后，与小队失去了联系。拉朱恰好正在附近巡逻，他发起了一场大胆的营救。当发现救出的正是你之后，他把你带进了[[DM.BaseDescriptionDefs[LoreHouseArano],阿然诺家族]]皇家卫队。\n\n就这样，你与旧日的导师重逢，为[[DM.BaseDescriptionDefs[LoreKameaArano],卡美娅·阿然诺女士]]加冕当天的守卫任务保养你的祖传[[DM.BaseDescriptionDefs[LoreAncestralBlackjack],二十一点]]……",
   "BioDescription": "你一到成年就报名加入了当地民兵。虽说并不光鲜，但士兵的生活对你来说正合适。然而几年之后事情开始变糟，你在一场对当地海盗的艰苦战役中筋疲力尽——那些海盗的武装明显比情报所声称的更重。你硬撑了下来，但发誓再也不会参与任何自己无法掌控的行动，于是在远离那个你曾称之为家的微小光点的地方，建立了自己的雇佣兵公司。\n"
 }

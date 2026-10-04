@@ -2,7 +2,7 @@
   "Description": {
     "Id": "background_career_protomech",
     "Name": "ProtoMech Test Subject",
-    "Details": "它们是机甲！但要<i>小一号</i>！\n特性：[[DM.BaseDescriptionDefs[QuirkMechWarrior]  机甲战士]]、[[DM.BaseDescriptionDefs[QuirkNeuralImplants]  神经植入体]]\n单位：随机 [[DM.BaseDescriptionDefs[ConceptProtoMech]  原型机甲]]",
+    "Details": "它们是机甲！但要<i>小一号</i>！\n特性：[[DM.BaseDescriptionDefs[QuirkMechWarrior],机甲战士]]、[[DM.BaseDescriptionDefs[QuirkNeuralImplants],神经植入体]]\n单位：随机 [[DM.BaseDescriptionDefs[ConceptProtoMech],原型机甲]]",
     "Icon": "envTxrHrld_startMercenary",
     "Cost": 0,
     "Rarity": 0,

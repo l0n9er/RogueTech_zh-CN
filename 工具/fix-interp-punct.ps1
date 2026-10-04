@@ -36,6 +36,7 @@ if (-not [IO.File]::Exists($csv)) {
 $t = [IO.File]::ReadAllText($csv, [Text.Encoding]::UTF8)
 $fw = [char]0xFF0C   # 全角逗号
 $spc = [char]32
+$FS = [string][char]31   # 0x1F 单元分隔符 —— [[对象<0x1F>显示名]] 的正确分隔符
 
 $rxSpan = [regex]('\[\[[^\[\]\r\n]*(\[[^\[\]\r\n]*\][^\[\]\r\n]*)*\]\]')
 $out = New-Object System.Text.StringBuilder
@@ -65,10 +66,10 @@ foreach ($m in $rxSpan.Matches($t)) {
             }
             if ($isAfterObj) {
                 while ($res.Length -gt 0 -and $res[$res.Length-1] -eq $spc) { [void]$res.Remove($res.Length-1, 1) }
-                # 关键: 删除全角逗号后必须补一个【半角空格】。
-                # 游戏语法是 [[对象[目标] 显示名]], ] 与显示名之间要有空格分隔;
-                # 只删逗号不补空格会变成 ]显示名, 同样无法解析(显示"错误")。
-                [void]$res.Append($spc)
+                # 关键: 删掉全角逗号后必须补 0x1F(单元分隔符), 而不是空格。
+                # 官方 dev/de-DE/fr-FR/ru-RU 该位置一律是 "]" + 0x1F + 显示名,
+                # 补成空格会让游戏解析失败并回退显示"错误"。
+                [void]$res.Append($FS)
                 $fixed++
                 $i++
                 while ($i -lt $n -and $span[$i] -eq $spc) { $i++ }
@@ -83,12 +84,12 @@ foreach ($m in $rxSpan.Matches($t)) {
 [void]$out.Append($t.Substring($pos, $t.Length - $pos))
 $new = $out.ToString()
 
-# 兜底: 确保 [[前缀[目标] 与后续文本之间有空格([[前缀[目标]显示名]] -> 补空格)
-$rxSep = New-Object System.Text.RegularExpressions.Regex ('(\[\[[A-Za-z_][A-Za-z0-9_.]*\[[^\]]+\])([^ \]\r\n])')
+# 兜底: [[前缀[目标]显示名]] 缺 0x1F -> 补 0x1F(不是空格!)
+$rxSep = New-Object System.Text.RegularExpressions.Regex ('(\[\[[A-Za-z_][A-Za-z0-9_.*]*\[[^\]]+\])(?=[^\x1f \]\r\n\[])')
 $sepN = $rxSep.Matches($new).Count
 if ($sepN -gt 0) {
-    $new = $rxSep.Replace($new, '$1 $2')
-    Write-Host ("补充空格分隔 " + $sepN + " 处")
+    $new = $rxSep.Replace($new, ('$1' + $FS))
+    Write-Host ("补充 0x1F 分隔 " + $sepN + " 处")
 }
 
 if ($fixed -gt 0 -or $sepN -gt 0) {
