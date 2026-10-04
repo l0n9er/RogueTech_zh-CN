@@ -17,7 +17,7 @@ try {
 } catch { }
 
 function Say($m)  { Write-Host $m }
-function Step($n, $m) { Write-Host ""; Write-Host ("[" + $n + "/21] " + $m) }
+function Step($n, $m) { Write-Host ""; Write-Host ("[" + $n + "/25] " + $m) }
 function Ok($m)   { Write-Host ("      " + $m) }
 function Warn($m) { Write-Host ("      警告: " + $m) -ForegroundColor Yellow }
 
@@ -406,7 +406,7 @@ Ok "完成"
 # ---------- 10b) 界面弹窗兜底键 + 性别分支 ----------
 # ArmorRepair / CustomUnits 的维修弹窗、载具报废提示等文本由 DLL 拼接后
 # 走总表查表, 表中缺键就显示英文。这里补齐这些键。
-Step 18 "补充界面弹窗兜底键"
+Step 19 "补充界面弹窗兜底键"
 RunTool 'apply-uikeys.ps1' @('-csv', $csvDst) | Out-Null
 RunTool 'apply-pronouns.ps1' @('-csv', $csvDst) | Out-Null
 Ok "完成"
@@ -415,14 +415,14 @@ Ok "完成"
 # "整段描述" 作为 key 收录。这些条目来自月光石头新版汉化包, 随包分发总表已含;
 # 若用户把包放在工具同机目录, 也可用 -moonstone 指定源目录做增量合并。
 if (-not [string]::IsNullOrWhiteSpace($moonstone)) {
-    Step 18 "合并月光石头新版条目"
+    Step 20 "合并月光石头新版条目"
     RunTool 'merge-moonstone.ps1' @('-source', $moonstone, '-csv', $csvDst) | Out-Null
     Ok "完成"
 }
 
 # 译文里的 {角色.Gender?分支:值} 若留着英文动词, 句子里会半英半中
 # (例: "He acts 起来就像 he's 我的老板似的")。中文无动词变位, 两分支同值。
-Step 18 "修复译文中的性别分支残留英文"
+Step 21 "修复译文中的性别分支残留英文"
 RunTool 'fix-gender.ps1' @('-mods', (Join-Path $gameRoot 'Mods')) | Out-Null
 Ok "完成"
 
@@ -430,7 +430,7 @@ Ok "完成"
 # 从各模组 tags\*.json 构建。这里把模组 tag 文件的 FriendlyName/Description
 # 就地汉化; 基础游戏独有、模组没有的 tag(如 pilot_criminal)另生成覆盖文件,
 # 由 ModTek 的 CustomTag 机制覆盖("Updated tag: xxx in MDDB")。
-Step 18 "汉化机师个性/亲和 tag 文本"
+Step 22 "汉化机师个性/亲和 tag 文本"
 RunTool 'apply-tags.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-csv', $csvDst,
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-tags')) | Out-Null
@@ -444,21 +444,21 @@ Ok "完成"
 # 别名分隔符必须按文件类型区分: JSON 用半角逗号, CSV 用紧贴的 0x1F。
 # 写成 "[[OBJ <0x1F> {...}]]"(两侧带空格)会让游戏报 INVALID ALIAS,
 # 界面回退显示"错误"(日志 output_log.txt 可见 "INVALID ALIAS SCN_MW ...")。
-Step 19 "清理控制字符、标点空格与插值占位符"
+Step 23 "清理控制字符、标点空格与插值占位符"
 RunTool 'fix-ctl.ps1' @('-gameRoot', $gameRoot) | Out-Null
 RunTool 'cleanup.ps1' @('-gameRoot', $gameRoot) | Out-Null
 RunTool 'fix-interp-punct.ps1' @('-csv', $csvDst)
 Ok "完成"
 
 # ---------- 11) 术语归一化与格式修复 ----------
-Step 20 "术语归一化与格式修复"
+Step 24 "术语归一化与格式修复"
 RunTool 'apply-norm.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-norm'))
 RunTool 'norm-csv.ps1' @('-csv', $csvDst)
 Ok "完成"
 
 # ---------- 12) 校验 ----------
-Step 21 "校验"
+Step 25 "校验"
 $zhs2 = @(Get-ChildItem (Join-Path $gameRoot "Mods") -Recurse -File -Force -ErrorAction SilentlyContinue |
           Where-Object { $_.Name -like "*.zhbak*" })
 if ($zhs2.Count -gt 0) { Warn ("仍有 " + $zhs2.Count + " 个 .zhbak 留在 Mods 下") }
