@@ -1,10 +1,10 @@
 {
     "ID": "faction_Kurita",
     "Name": "天龙联合体",
-    "ShortName": "Kurita",
-    "Description": "The Draconis Combine is one of the five Successor States of the Star League, located coreward and spinward of Terra. Ruled by House Kurita, the Combine has always been aggressively expansionist—the head of the Combine was the first of the Council Lords to declare himself the new ruler of the collapsing Star League. Regularly in conflicts along its borders with all its neighbors, the Combine is a highly structured, militaristic society, with rulership in the hands of the Coordinator, the commander-in-chief of the Draconis military. The Combine's culture is heavily influenced by the Japanese roots of the ruling family—despite the minority status of those with Japanese ancestry—as this cultural heritage is imposed from above by the predominantly Japanese ruling class. The current leader of the Combine is Coordinator Takashi Kurita.",
-    "Demonym": "Kuritan",
-    "Government": "Combine",
+    "ShortName": "天龙",
+    "Description": "龙脉联合体是星际联盟五个继承国之一，位于地球朝核心与朝旋臂方向的一侧。它由 Kurita 家族统治，历来极具扩张性——联合体的首领是议会领主中第一个自立为崩溃中的星际联盟新统治者的人。联合体与其所有邻国的边境上冲突不断，是一个高度结构化、军事化的社会，统治权掌握在协调官手中，他同时也是龙脉军队的总司令。联合体的文化深受统治家族日本血统的影响——尽管具日本血统者实为少数——因为这一文化传统是由以日本人为主的统治阶层自上而下强加的。联合体现任领袖是协调官 Takashi Kurita。",
+    "Demonym": "天龙人",
+    "Government": "联合体",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 0.25,
     "ReputationStatements": [
-        "Despicable as you are, House Kurita can still find a use for your services. Attend, Commander: your betters have need of you.",
-        "You work for pay, do you not? House Kurita has plenty of money for you, mercenary. Simply be quick and efficient about it—we have little time for your kind.",
-        "You are not of our blood, mercenary, but your skills are robust enough. We would grant you money and renown if you aided us.",
-        "House Kurita respects your martial prowess, mercenary. Aid us, and we will ensure you are well paid for your efforts.",
-        "Once again, the Draconis Combine requires your assistance, mercenary. You have served us well in the past, so we would like to entrust you with this mission.",
-        "My friend, you know we bring you only the contracts worthy of your talents. So it is that I offer you this—and payment that you will find is more than fair.",
-        "I apologize for disturbing you, my friend, but the Draconis Combine once again needs your help. Undertake this task for us, and I will see that you are richly rewarded."
+        "尽管你令人厌恶，但栗田家族仍然可以为你的服务找到用处. 注意，指挥官: 你的上级需要你.",
+        "你是为钱干活的，对吧？库瑞塔家族有的是钱给你，雇佣兵。只要干得利落高效——我们没工夫应付你这种人。",
+        "你不是我们一族，佣兵，但你的技巧是够强劲的. 如果你协助我们，我们可以为你提供金钱和声望.",
+        "栗田家族十分敬重你的武力，佣兵. 加入我们，我们保证你能得到丰厚的报酬.",
+        "再一次，天龙联合体需要你的帮助，佣兵. 你过去为我们提供了很好的服务，因此，我们希望将此任务委托给你.",
+        "我的朋友，你知道我们只会把配得上你才干的合约交给你。因此，我把这份合约和一笔你会认为相当公道的报酬交给你。",
+        "我很抱歉打扰你，我的朋友，但天龙联合体再次需要你的帮助. 为我们承担这个任务，我会保证你能收到丰厚的报酬."
     ],
     "MissionSuccessStatements": [
-        "The Draconis Combine is pleased with your fervor, Commander. Your skills in battle are precisely the sort that young cadets could learn from."
+        "天龙联合体对你的热忱表示赞赏，指挥官. 你的作战技艺正是年轻的军校生可以学习的典范."
     ],
     "GoodFaithFailureStatements": [
-        "While your retreat would be grounds for censure in one of our soldiers, we understand that a mercenary life is more… complicated. We hope it will not become a habit, however."
+        "虽然你的撤退若发生在我们自己的士兵身上会招致谴责，但我们理解雇佣兵的生活更为……复杂。不过我们希望这不会成为习惯。"
     ],
     "BadFaithFailureStatements": [
-        "Your performance was an embarrassment, Commander. The Draconis Combine expects more of their mercenaries. Keep this up, and we may not offer you any contracts at all!"
+        "指挥官，你的表现令人难堪. 天龙联合体对他们的佣兵期待更大. 如果你继续保持这种状态，那我们可能根本不会给你任何合约!"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_KuritaDefaultCommander",
     "DefaultRepresentativeCastDefId": "castDef_KuritaRepDefault",

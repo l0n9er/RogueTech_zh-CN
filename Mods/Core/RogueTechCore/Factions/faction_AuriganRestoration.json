@@ -1,10 +1,10 @@
 {
     "ID": "faction_AuriganRestoration",
     "Name": "御夫座联盟",
-    "ShortName": "the Coalition",
-    "Description": "The Arano Restoration is the remnant of the former Aurigan Coalition, driven from power by the treachery of Santiago Espinosa. Those still loyal to the Arano family fled into the Rimward Frontier, the expanse of unsettled systems adjoining the Magistracy of Canopus. Many noble houses of the Aurigan Directorate harbor sympathies for the Restoration and its cause: returning the Arano monarchy to power.",
-    "Demonym": "Coalition",
-    "Government": "Coalition",
+    "ShortName": "联盟",
+    "Description": "阿拉诺光复会是前御夫座联盟的残余势力，因圣地亚哥·埃斯皮诺萨的背叛而被驱逐. 那些仍效忠于阿拉诺家族的人逃到了缘向边地，一处紧贴着船底自治区，广袤而动荡的星系. 御夫座理事会的许多贵族家族对光复会及其事业——恢复阿拉诺王室的统治——心怀同情.",
+    "Demonym": "联盟成员",
+    "Government": "联盟",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 2,
     "ReputationStatements": [
-        "Where did we go wrong? What turned you against us? Was it money? Power? We can offer those. As far as you've drifted from us, we still know your value as a mercenary. Please, accept this offer and aid us.",
-        "I mourn our friendship of old, Commander. I don't know what led you away from us, but for the sake of our old allegiance, the Restoration offers you this contract. Please… come back to us.",
-        "Comrade, the Restoration would like to call upon you again. You served adequately in the past, and we entrust you with this contract in the hope that you can show us some of that old fire you once had.",
-        "I know you've already done so much for us, but we need your skills, Commander. With this, we gain a great advantage for the Restoration—and you gain a payday, like always.",
-        "Commander, the Restoration's fortunes rest upon your shoulders. Should you aid us in this task, both of us will be enriched by the outcomes. I hope you have the time to help us, and are willing to do so.",
-        "My friend, the time is here once again: House Arano needs help, and you're the best positioned to lend it to us. We appreciate everything you've done for us, and as such we are prepared to reward you generously for your service.",
-        "We've come a long way together, old friend, but I fear I have yet another favor to ask of you. Our fortunes are married together—aid us, and we will aid you, as it's always been. We would not ask this of a lesser ally."
+        "我们哪里做错了吗? 是什么让你背叛了我们? 是钱? 权? 我们都可以给你. 哪怕你已经背离了我们，我们仍然了解你作为一个雇佣兵的价值. 求你了，接受这份要约帮助我们.",
+        "我为昔日的友谊而哀悼，指挥官。我不知道是什么让你离开了我们，但看在旧日情谊的份上，复国军向你提供这份合约。求你……回到我们身边。",
+        "同志，光复会希望再次征召你. 你过去的服务相当好，我们将这份合约委托于你，希望你能让我们看到一些你曾拥有的那份斗志.",
+        "我知道你已为我们做了太多，但我们需要你的本事，指挥官。接下这个，复国军便能占得大优势——而你也照例能拿到一笔进账。",
+        "指挥官，光复会的命运落在了你的肩上. 如果你在这项任务中协助我们，那我们双方就都能从结果中受益. 我希望你能有时间来帮我们，也有意愿来帮我们.",
+        "我的朋友，这一时刻又来了: 阿拉诺家族需要帮助，你是最适合向我们提供帮助的人. 我们欣赏你为我们所做的一切，因此我们准备好好奖赏你的工作.",
+        "我们一起走了很长的路，老朋友，但恐怕我又得请你帮个忙。我们的命运早已绑在一起——你助我们，我们便助你，一如既往。这种请求我们不会向次一等的盟友提出。"
     ],
     "MissionSuccessStatements": [
-        "Excellent work, Commander. I was right to put my faith in you. You're a critical part of the Restoration effort."
+        "干得漂亮，指挥官。我把信任托付给你是对的。你是复国事业的关键一环。"
     ],
     "GoodFaithFailureStatements": [
-        "It wasn't a total wash, but it sure wasn't a roaring success, either. I understand that not every mission is going to be a gold-star victory, but I hope this isn't an indication of future performance."
+        "这次任务算不上彻底失败，但也绝对不是大获成功。我明白不是每次任务都能拿满星凯旋，但我希望这并不预示着今后的表现。"
     ],
     "BadFaithFailureStatements": [
-        "I'm sorry to learn your mission was a failure, Commander. I hope that occurrences like this will be rare. If they're not, you'll probably be out of 'Mechs before too long."
+        "得知你的任务失败，我很难过，指挥官。我希望这类事情会很少发生。如果不幸不是，你恐怕很快就会没有机甲可用了。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_KameaDefault",
     "DefaultRepresentativeCastDefId": "castDef_KameaDefault",

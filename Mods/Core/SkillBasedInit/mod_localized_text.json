@@ -3,7 +3,7 @@
 "FLOATIE_KNOCKDOWN" : "击倒! 主动权 -{0}",
 "FLOATIE_CALLED_SHOT_NOW" : "精准射击! 主动权 -{0}",
 "FLOATIE_CALLED_SHOT_LATER" : "精准射击! 下回合主动权 -{0}",
-"FLOATIE_VIGILANCE" : "警戒状态! 下回合主动权 +{0}!",
+"FLOATIE_VIGILANCE" : "警戒状态! 下回合主动权 +{0}!"
 	},
 	"MechBay" : {
 "MECHBAY_TONNAGE" : "<b>基础</b>: {0} (<i>由吨位决定</i>)",
@@ -14,7 +14,7 @@
 "MECHBAY_TOTAL" : "<b>总计</b>: {0}",
 "MECHBAY_RANDOM" : "<space=2em><color=#FF0000>{0} 至 {1} 随机</color> (<i>受战术技能影响而降低</i>)",
 "MECHBAY_EXPECTED_NO_PILOT" : "<b>预计阶段</b>: {0}",
-"MECHBAY_EXPECTED" : "<b>预计阶段</b>: {0} 至 {1}",
+"MECHBAY_EXPECTED" : "<b>预计阶段</b>: {0} 至 {1}"
 	},
 	"Tooltip" : {
 "TOOLTIP_TITLE_INITIATIVE" : "主动权",
@@ -33,6 +33,6 @@
 "TOOLTIP_VIGILANCE" : "<color=#00FF00>{0} 警戒状态</color>",
 "TOOLTIP_RANDOM" : "\\n随机 => <color=#FF0000>{0} 至 {1}</color><i>(受战术技能影响而降低)</i>",
 "TOOLTIP_EXPECTED" : "<b>预计阶段</b>: {0} 至 {1}",
-"TOOLTIP_HOVER" : "<i>在机甲实验室和部署界面中，将光标悬停在主动权上以查看详情.</i>",
+"TOOLTIP_HOVER" : "<i>在机甲实验室和部署界面中，将光标悬停在主动权上以查看详情.</i>"
 	}
 }

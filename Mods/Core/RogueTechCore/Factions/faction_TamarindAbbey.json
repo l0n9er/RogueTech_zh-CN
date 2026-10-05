@@ -1,10 +1,10 @@
 {
     "ID": "faction_TamarindAbbey",
-    "Name": "Duchy of Tamarind-Abbey",
-    "ShortName": "Tamarind-Abbey",
-    "Description": "The Duchy of Tamarind was originally a province of the Free Worlds League. It seceded from the League during the Word of Blake Jihad, and would later combine with the Abbey District to form the Duchy of Tamarind-Abbey, an independent state.",
-    "Demonym": "Tamarind-Abbey",
-    "Government": "Duchy",
+    "Name": "塔马林德-阿比公国",
+    "ShortName": "塔马林德-阿比",
+    "Description": "塔马林德公国原本是自由世界联盟的一个省。它在布雷克之言圣战期间脱离联盟，后来与阿比区合并，成为独立国家塔马林德-阿比公国。",
+    "Demonym": "塔马林德-阿比人",
+    "Government": "公国",
     "Allies": [],
     "Enemies": [
         "Steiner",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1,
     "ReputationStatements": [
-        "I don't know why we bother offering you contracts, to be perfectly honest. It's obvious you're not a friend to the Duchy of Tamarind-Abbey. Regardless, we find ourselves in desperate times, so we have to scrape the bottom of the barrel.",
-        "Greetings, mercenary. Lowly and despicable though you may be, you may yet serve our interests. Finish this job, and we may look upon you with more favor than you likely deserve.",
-        "The Duchy of Tamarind-Abbey has a use for mercenaries like you, Commander. I think you'll be interested in the attached contract. Hopefully we can come to a mutually beneficial agreement.",
-        "The Duchy of Tamarind-Abbey would like to offer you a choice contract, Commander. As the leader of a respected mercenary company, you should find the terms both fair and equitable, I think.",
-        "Commander, I hope this message finds you well. The people of the Duchy of Tamarind-Abbey would like to extend a contract to you, owing to our respect for your skills. Please consider it carefully.",
-        "Greetings, my friend. This contract is not one we would offer to a lesser mercenary, but you've proven your loyalty, prowess, and dedication to the ideals of the Free Worlds League. I hope you'll accept our offer.",
-        "We both know the score, Commander. House Marik relies on you like you're one of our own, and you've always been happy to help us out. I hope you can see fit to agree this time as well—this is a job too important for lesser warriors."
+        "说实话，我不知道我们何必费心给你合约。显然，你不是塔玛林-修道院公国的朋友。尽管如此，我们眼下处境艰难，只能到桶底去刮渣了。",
+        "你好，佣兵. 虽然你们也许卑微又令人厌恶，但你还是能为我们的利益服务. 完成这项工作，我们或许会高看你一些.",
+        "塔玛林-修道院公国用得上你这样的雇佣兵，指挥官。我想你会对随附的合约感兴趣。希望我们能达成互利协议。",
+        "塔玛林-修道院公国想向你提供一份精选合约，指挥官。作为一支受尊敬的雇佣兵公司的首领，我想你会认为条款既公道又公平。",
+        "指挥官，希望你收到这条消息时一切安好。塔玛林-修道院公国的人民想把这份合约交给你，这是出于我们对你能力的尊重。请仔细考虑。",
+        "你好，我的朋友. 这份合约不是我们会提供给普通雇佣兵的，但你已经证明了你的忠诚、能力，以及对自由世界联盟理想的奉献. 我希望你会接受我们的邀请.",
+        "指挥官，你我都清楚局势。马里克家族把你当作自家人一样倚重，而你也一直乐于相助。希望你这次也能答应——这项任务不是普通战士能够胜任的。"
     ],
     "MissionSuccessStatements": [
-        "Top-tier work, Commander—The Duchy is very happy with your performance. Keep it up, and I'll make sure a lot more work comes your way."
+        "一流的活儿，指挥官——公国对你的表现非常满意。继续保持，我保证会有更多工作找上你。"
     ],
     "GoodFaithFailureStatements": [
-        "The Duchy of Tamarind-Abbey understands that sacrifice on the battlefield doesn't always translate to victory. You've made a fine effort, even if it failed. Just another lesson for the next battle."
+        "塔马林德-阿比公国明白，战场上的牺牲并不总能换来胜利。你已经付出了出色的努力，即便它失败了。这不过是下一场战斗的又一条教训。"
     ],
     "BadFaithFailureStatements": [
-        "We are deeply disappointed in your performance, Commander. Your efforts on the battlefield were those of a raw cadet, not the leader of a mercenary company."
+        "我们对你的表现深感失望，指挥官。你在战场上的作为像个新兵，而不是一名佣兵团的领袖。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_TamarindAbbey",
     "DefaultRepresentativeCastDefId": "castDef_TamarindAbbey",

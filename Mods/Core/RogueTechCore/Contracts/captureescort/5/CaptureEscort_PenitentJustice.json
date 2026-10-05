@@ -512,7 +512,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "The convoy is waiting for us.",
+          "words": "车队正在等我们。",
           "wordsColor": {
             "r": 1,
             "g": 1,

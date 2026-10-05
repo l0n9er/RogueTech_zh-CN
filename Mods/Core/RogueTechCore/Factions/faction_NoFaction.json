@@ -1,10 +1,10 @@
 {
     "ID": "faction_NoFaction",
     "Name": "废弃",
-    "ShortName": "Abandoned",
-    "Description": "This world has been abandoned, and only a remnant population exists here, with no real government.",
-    "Demonym": "Abandoned",
-    "Government": "Abandoned",
+    "ShortName": "废弃",
+    "Description": "这颗星球已经被遗弃，在这里只有少量的剩余人口，也没有一个真正意义上的政府.",
+    "Demonym": "废弃居民",
+    "Government": "废弃",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1,
     "ReputationStatements": [
-        "We've got a need for a mercenary to help us out with a little problem. I hope you're up for the task, Commander.",
-        "We've got a need for a mercenary to help us out with a little problem. I hope you're up for the task, Commander.",
-        "We've got a need for a mercenary to help us out with a little problem. I hope you're up for the task, Commander.",
-        "We've got a need for a mercenary to help us out with a little problem. I hope you're up for the task, Commander.",
-        "We've got a need for a mercenary to help us out with a little problem. I hope you're up for the task, Commander.",
-        "We've got a need for a mercenary to help us out with a little problem. I hope you're up for the task, Commander.",
-        "We've got a need for a mercenary to help us out with a little problem. I hope you're up for the task, Commander."
+        "我们需要一个佣兵来帮忙解决一些小问题. 我希望你已经准备好接受这个任务，指挥官.",
+        "我们需要一个佣兵来帮忙解决一些小问题. 我希望你已经准备好接受这个任务，指挥官.",
+        "我们需要一个佣兵来帮忙解决一些小问题. 我希望你已经准备好接受这个任务，指挥官.",
+        "我们需要一个佣兵来帮忙解决一些小问题. 我希望你已经准备好接受这个任务，指挥官.",
+        "我们需要一个佣兵来帮忙解决一些小问题. 我希望你已经准备好接受这个任务，指挥官.",
+        "我们需要一个佣兵来帮忙解决一些小问题. 我希望你已经准备好接受这个任务，指挥官.",
+        "我们需要一个佣兵来帮忙解决一些小问题. 我希望你已经准备好接受这个任务，指挥官."
     ],
     "MissionSuccessStatements": [
-        "Well done, Commander. We obviously placed our faith in the right mercenary company. We'll let you know if we have any other work for you."
+        "干得好，指挥官。我们显然把信任交给了正确的佣兵团。如果还有活我们通知你。"
     ],
     "GoodFaithFailureStatements": [
-        "You win some, you lose some. Sometimes it's in between. I'm disappointed you couldn't complete the contract, but at least you gave it your best shot."
+        "有输有赢。有时介于两者之间。我很失望你没能完成合约，但至少你尽力了。"
     ],
     "BadFaithFailureStatements": [
-        "For somebody who came so highly recommended, you let us down pretty hard. Thanks for nothing, I guess."
+        "对于一个被强烈推荐的人来说，你却让我们很失望. 算我自讨没趣，我猜."
     ],
     "DefaultCombatLeaderCastDefId": "castDef_None",
     "DefaultRepresentativeCastDefId": "castDef_FactionRepDefault",

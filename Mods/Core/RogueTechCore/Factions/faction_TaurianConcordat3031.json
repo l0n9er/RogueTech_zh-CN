@@ -1,10 +1,10 @@
 {
     "ID": "faction_TaurianConcordat3031",
     "Name": "金牛协约国",
-    "ShortName": "the Taurians",
-    "Description": "The Taurian Concordat is one of the largest Periphery states, located rimward of Terra, beyond the Federated Suns. Founded and ruled by House Calderon, the Concordat prides itself on its independence, freedom, and stability. The Concordat is wealthy, well educated, and well armed for a Periphery state. The Taurians defend their independence fiercely against Inner Sphere aggression, particularly by the Federated Suns; they perceive House Davion's reputation as a protector of liberties as unwarranted and even hypocritical, and they have a long history of conflict with the much larger Successor State. The current ruler of the Concordat is Protector Thomas Calderon.",
-    "Demonym": "Taurian",
-    "Government": "Concordat",
+    "ShortName": "金牛人",
+    "Description": "陶里安协约国是最大的外围地区国家之一，位于地球朝外围方向的一侧、联邦太阳国之外。协约国由卡尔德隆家族创建并统治，以其独立、自由与稳定为傲。就外围地区国家而言，协约国富庶、教育水平高且军备精良。陶里安人顽强捍卫自身独立，抵御内层星域的侵略，尤其是联邦太阳国的侵犯；他们认为戴维恩家族“自由守护者”的名声毫无根据，甚至虚伪，并且与这个强大得多的继承国有着悠久的冲突历史。协约国现任统治者是护国公托马斯·卡尔德隆。",
+    "Demonym": "金牛人",
+    "Government": "协约国",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1.5,
     "ReputationStatements": [
-        "In an earlier era, House Calderon would have had you killed rather than offer you a contract. Unfortunately, we don't live in that earlier era—and also, we need a disposable soldier. Accept or not; I don't care.",
-        "I dislike your kind, mercenary. But it seems that desperate times force compromises on all of us. Bear that in mind should you accept this contract: we offer it to you only because we have no other choice. Tread carefully.",
-        "Greetings, Commander. This is a standard contract, and we expect you to be able to complete it with competence. Try to look grateful, if you accept it.",
-        "This contract may be of interest to you, Commander. The Taurian Concordat believes it within your ability to complete, and in times like these, we are willing to pay you well to see it done. Please let us know.",
-        "Hello, mercenary. The Taurian Concordat values our relationship, and so we would like to offer you first right of refusal on this contract. The job is simple, and the pay adequate. We know it to be within your capabilities as well.",
-        "My friend, I've got good news: House Calderon needs your help, and we've got plenty of money to pay for that help. We know you've got the skills to see this job done, and any help would be appreciated by my superiors.",
-        "House Calderon would once again like to call upon you, our faithful janissary, ready to wage war in our name wherever we ask. Once more we ask you to join the fray on our behalf—and as always, we value your loyalty."
+        "换作早年间，卡尔德隆家族会直接杀了你，而非向你提供合约。可惜我们不在那个年代——况且，我们需要一个用完即弃的兵。接不接随你，我不在乎。",
+        "我不喜欢你这样子，佣兵. 但似乎非常时期迫使我们所有人妥协. 你接下这份合约的时候要记住: 我们给你是因为我们别无选择. 谨慎行事.",
+        "你好，指挥官. 这是一份标准合约，我们期待你胜任它. 如果你接受了这个任务，我们会感激你.",
+        "这份合约也许能引起你的兴趣，指挥官. 金牛协约国相信它是你力所能及的，值此非常时期，我们愿意支付丰厚报酬以确保任务完成. 敬候回复.",
+        "你好，佣兵. 金牛协约国看重我们之间的关系，所以我们赋予你这份合约的优先权. 这活很简单，同时报酬也合适. 我们也知道这个任务在你的能力范围之内.",
+        "我的朋友，有个好消息: 卡尔德隆家族需要你的协助，而我们资金充裕足以支付酬劳. 我们深知你具备完成这项任务所需的实力，你的任何帮助都将获得我方高层的高度认可.",
+        "卡尔德隆家族再次相召，我们忠诚的禁卫军，随时准备听凭我们号令、以我们的名义开战。我们再一次请你代我们投身战阵——而一如既往，我们珍视你的忠诚。"
     ],
     "MissionSuccessStatements": [
-        "Good job, Commander. The Taurian Concordat thanks you for your service. It's always refreshing to deal with a true professional when one hires mercenaries."
+        "干得漂亮，指挥官。金牛座协约感谢你的效力。雇雇佣兵时能碰上真正的专业人士，总是让人耳目一新。"
     ],
     "GoodFaithFailureStatements": [
-        "Out here in the Periphery, it's always a life-or-death struggle for mercenaries. That's why I appreciate your efforts to complete the mission, even if you couldn't manage it."
+        "在外围地区，对雇佣兵来说永远是生死攸关的搏杀。所以即便你没能完成任务，我依然感谢你为此付出的努力。"
     ],
     "BadFaithFailureStatements": [
-        "I've hired raw cadets that have performed better than your company, Commander. In the future, you'd best operate at a higher level, or we might not be willing to offer you contracts aside from garrison duty."
+        "指挥官，我雇来的生瓜蛋子新兵表现都比你的队伍强。以后你最好拿出更高的水准，否则除了驻防任务，我们可能就不愿再给你合约了。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_TaurianDefaultCommander",
     "DefaultRepresentativeCastDefId": "castDef_TaurianRepDefault",

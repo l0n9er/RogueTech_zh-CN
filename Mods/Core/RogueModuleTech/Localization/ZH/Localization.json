@@ -14356,7 +14356,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "+ 60 Melee Dmg.",
-        "CULTURE_ZH_CN": "+60 Dmg."
+        "CULTURE_ZH_CN": "+60 近战伤害"
       }
     },
     {
@@ -14500,7 +14500,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "+ 60 Melee Dmg.",
-        "CULTURE_ZH_CN": "+60 Dmg."
+        "CULTURE_ZH_CN": "+60 近战伤害"
       }
     },
     {
@@ -124556,7 +124556,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "ArtemisV x1",
-        "CULTURE_ZH_CN": "Artemis x1"
+        "CULTURE_ZH_CN": "Artemis V x1"
       }
     },
     {
@@ -124564,7 +124564,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "ArtemisV x1",
-        "CULTURE_ZH_CN": "Artemis x1"
+        "CULTURE_ZH_CN": "Artemis V x1"
       }
     },
     {

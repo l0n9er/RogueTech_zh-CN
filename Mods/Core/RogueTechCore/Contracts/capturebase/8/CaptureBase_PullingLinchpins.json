@@ -599,7 +599,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "Dropship inbound for landing!",
+          "words": "运输舰正在进场着陆！",
           "wordsColor": {
             "r": 1,
             "g": 1,

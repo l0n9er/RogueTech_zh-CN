@@ -624,7 +624,7 @@
       "overrideDialogueBucketId": "DialogBucketDef_Universal_HostilesInbound",
       "dialogueContent": [
         {
-          "words": "We've got company!",
+          "words": "有客人来了！",
           "wordsColor": {
             "r": 1,
             "g": 1,

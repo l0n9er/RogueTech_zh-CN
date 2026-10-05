@@ -1,10 +1,10 @@
 {
   "ID": "faction_INVALID_UNSET",
   "Name": "当地海盗组织",
-  "ShortName": "the pirates",
-  "Description": "The unsettled and abandoned systems of the Rimward Frontier are a haven for pirates—both in-system predators and renegade JumpShip captains who transport pirate DropShips from one system to another, taking a cut of any illicit profits.",
-  "Demonym": "pirate",
-  "Government": "gang",
+  "ShortName": "海盗",
+  "Description": "外围边陲那些无人定居、被遗弃的星系是海盗的天堂——既有星系内的掠夺者，也有叛逃的跳跃船船长，他们把海盗空投艇从一个星系运到另一个星系，从中抽取非法利润的分成。",
+  "Demonym": "海盗",
+  "Government": "帮派",
   "Allies": [],
   "Enemies": [
     "FederatedCommonwealth",
@@ -81,22 +81,22 @@
   ],
   "Presence": 1,
   "ReputationStatements": [
-    "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-    "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-    "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-    "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-    "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-    "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-    "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose."
+    "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+    "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+    "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+    "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+    "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+    "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+    "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西."
   ],
   "MissionSuccessStatements": [
-    "That went well. Real well. Seems like we did the right thing in calling you in, mercenary. Glad to see we both came out ahead today."
+    "进展顺利. 非常顺利. 看来请你出手是正确的决定，雇佣兵. 很高兴看到我们今天都获益匪浅."
   ],
   "GoodFaithFailureStatements": [
-    "You didn't get the job done like we wanted, but you tried. And I like that kind of guts, even if I'm not entirely happy with the result."
+    "你没能按我们希望的那样完成，但你尽力了。我欣赏这种胆气，即使我对结果并不完全满意。"
   ],
   "BadFaithFailureStatements": [
-    "For someone with your hardware, I expected better things. You let us down, Commander—and I'm gonna be sure to tell everyone I know not to count on you in the future."
+    "以你手上的硬件条件，我本以为你能做得更好。你让我们失望了，指挥官——我保证会告诉我认识的每一个人，以后别再指望你。"
   ],
   "DefaultCombatLeaderCastDefId": "castDef_PirateDefaultCommander",
   "DefaultRepresentativeCastDefId": "castDef_PirateDefault",

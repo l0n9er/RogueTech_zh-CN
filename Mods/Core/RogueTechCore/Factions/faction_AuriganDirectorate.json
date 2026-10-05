@@ -1,10 +1,10 @@
 {
     "ID": "faction_AuriganDirectorate",
     "Name": "御夫座理事会",
-    "ShortName": "the Directorate",
-    "Description": "The Aurigan Directorate replaced the Aurigan Coalition when Santiago Espinosa, adviser to the High Lady Kamea Arano, betrayed her and led a coup against her government. In the years since that coup, Director Espinosa has solidified his hold on the systems of the Directorate, binding the Founding Families to his cause with a mixture of promises and threats. His rule is oppressive and militaristic, with individual liberties sacrificed to the cause of security and stability.",
-    "Demonym": "Directorate",
-    "Government": "Directorate",
+    "ShortName": "理事会",
+    "Description": "圣地亚哥·埃斯皮诺萨，至高领主卡梅娅·阿拉诺的顾问，背叛了她，发动政变推翻了她的政府. 于是，御夫座理事会取代了御夫座联盟. 政变后的这些年里，督政官埃斯皮诺萨巩固了他在理事会星系的权力，恩威并施地将创始家族绑上了自己的战车. 他的统治是高压的军国主义统治，个人自由为安全与稳定而牺牲.",
+    "Demonym": "理事会成员",
+    "Government": "理事会",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 2,
     "ReputationStatements": [
-        "You are a villain and a scoundrel, and you are unworthy of even the slightest consideration. Even so, our own forces are greatly weakened at this moment—so we're willing to entertain employing you.",
-        "Desperate times call for desperate measures. We wouldn't be asking to hire you unless we had no other choice. Hopefully you can help us.",
-        "Times are changing, Commander. There is a need in the Directorate for one of your skills. Contracts like this one will pave a way for your future, through us. That future need not be dark.",
-        "A rising tide lifts all ships, Commander. House Espinosa is rising quite quickly. Continue to work for us, and we'll ensure you continue to be a prominent figure in the Reach.",
-        "I must say, at this rate I'll soon be calling you a friend, Commander. The Directorate's fortunes are rosy, thanks in no small part to you. Let's continue our relationship, shall we?",
-        "Our influence spreads, as do our garrisons. Your help has been invaluable in this, Commander—and we would like to offer you more work, providing you are not already overwhelmed. Let us know soon, please.",
-        "My friend, I hope this missive finds you well. House Espinosa trusts and values MechWarriors such as yourself and those of your company. This contract is one for only our most esteemed allies, and I do hope you will accept it."
+        "你是个恶棍、无赖，连一丁点尊重都不配。即便如此，我方此刻兵力大损——所以我们才愿意考虑雇佣你。",
+        "非常时期需要非常措施. 除非我们别无选择，否则我们不会要求雇佣你. 希望你能帮到我们.",
+        "时代变了，指挥官. 理事会需要一个你那样技艺的人. 这样的合约会为你的未来铺好路，通过我们. 那样的未来不会昏暗.",
+        "好风凭借力，指挥官. 埃斯皮诺萨家族正飞快地崛起. 继续为我们工作，我们就会保证你成为远邦的头面人物.",
+        "我得说，照这样下去，我很快就可以称呼你为朋友了，指挥官. 理事会的前景一片大好，这在很大程度上要归功于你. 让我们继续我们的关系，好吗?",
+        "我们的影响力与驻军一同扩张。此事上你的帮助居功至伟，指挥官——我们想再提供些活儿给你，只要你别太忙不过来。请尽快告知。",
+        "我的朋友，希望收到这封信时你一切顺利身体安康. 埃斯皮诺萨家族信任你和你公司的那些机甲战士，也重视你们. 这份合约只寄给我们最尊敬的盟友，我真心希望你能接受它."
     ],
     "MissionSuccessStatements": [
-        "Good work, commander. You continue to impress me. House Espinosa - no, all Aurigan people - are in your debt."
+        "干得好，指挥官。你一次次让我刮目相看。埃斯皮诺萨家族——不，全体奥里根人都欠你一份情。"
     ],
     "GoodFaithFailureStatements": [
-        "Not all battles are so easy to win. Fear not, commander, this is but one minor setback that can be corrected."
+        "并非所有战斗都那么容易取胜。别担心，指挥官，这只是一次小小的挫折，可以纠正。"
     ],
     "BadFaithFailureStatements": [
-        "You disappoint me, commander. For the sake of your company, I would hope that this does not become a habit."
+        "你让我失望了，指挥官。为了你的公司着想，我希望这不会成为习惯。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_DirectorateDefaultCommander",
     "DefaultRepresentativeCastDefId": "castDef_EspinosaDefault",

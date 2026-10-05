@@ -1,10 +1,10 @@
 {
     "ID": "faction_Marik",
     "Name": "自由世界联盟",
-    "ShortName": "Marik",
-    "Description": "The Free Worlds League is one of the five Successor States of the Star League, located rimward and anti-spinward of Terra. Ruled by House Marik, the League was, with the Capellan Confederation, one of the original signatories of the treaties that would eventually form the Star League. After the fall of the Star League, the Free Worlds League granted broad control over its economy and government to the commander of its military, the Captain-General. The League is known for being a powerful mercantile state, but the Succession Wars have nearly destroyed its economy. The current ruler of the League is Captain-General Janos Marik.",
-    "Demonym": "Marik",
-    "Government": "League",
+    "ShortName": "自由世界",
+    "Description": "自由世界联盟是星际联盟五大继承国之一，位于地球的(银河)缘向(即南方)和反旋向(即西方). 马里克家族统治的联盟和卡佩拉联邦一样，都是最早签署建立星际联盟条约的成员国之一. 在星际联盟崩溃后，自由世界联盟将经济和政府的广泛控制权交给了军队的最高指挥官——总司令. 联盟以强大的商业实力著称，但继承战争几乎摧毁了它的经济. 联盟现任统治者是总司令亚诺斯·马里克.",
+    "Demonym": "自由世界人",
+    "Government": "联盟",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1,
     "ReputationStatements": [
-        "I don't know why we bother offering you contracts, to be perfectly honest. It's obvious you're not a friend to the Free Worlds League. Regardless, we find ourselves in desperate times, so we have to scrape the bottom of the barrel.",
-        "Greetings, mercenary. Lowly and despicable though you may be, you may yet serve our interests. Finish this job, and we may look upon you with more favor than you likely deserve.",
-        "The Free Worlds League has a use for mercenaries like you, Commander. I think you'll be interested in the attached contract. Hopefully we can come to a mutually beneficial agreement.",
-        "The Free Worlds League would like to offer you a choice contract, Commander. As the leader of a respected mercenary company, you should find the terms both fair and equitable, I think.",
-        "Commander, I hope this message finds you well. The people of the Free Worlds League would like to extend a contract to you, owing to our respect for your skills. Please consider it carefully.",
-        "Greetings, my friend. This contract is not one we would offer to a lesser mercenary, but you've proven your loyalty, prowess, and dedication to the ideals of the Free Worlds League. I hope you'll accept our offer.",
-        "We both know the score, Commander. House Marik relies on you like you're one of our own, and you've always been happy to help us out. I hope you can see fit to agree this time as well—this is a job too important for lesser warriors."
+        "老实说，我不清楚为什么我们会费心向你提供合约. 显然你并不是自由世界联盟的朋友. 无论如何，我们正处于非常时期，所以我们只能使出最后一招.",
+        "你好，佣兵. 虽然你们也许卑微又令人厌恶，但你还是能为我们的利益服务. 完成这项工作，我们或许会高看你一些.",
+        "自由世界联盟会用到像你这样的佣兵，指挥官. 我想你会对附上的合约感兴趣的. 希望我们双方能达成互利的协议.",
+        "自由世界联盟乐意给你提供一份优质合约，指挥官. 作为可敬的佣兵公司的领导人，我想你应该会发现这条款既公平又公正.",
+        "指挥官，希望你一切安好. 自由世界联盟的人民愿意向你提供一份合约，以表达我们对你能力的尊重. 请好好考虑一下.",
+        "你好，我的朋友. 这份合约不是我们会提供给普通雇佣兵的，但你已经证明了你的忠诚、能力，以及对自由世界联盟理想的奉献. 我希望你会接受我们的邀请.",
+        "指挥官，你我都清楚局势。马里克家族把你当作自家人一样倚重，而你也一直乐于相助。希望你这次也能答应——这项任务不是普通战士能够胜任的。"
     ],
     "MissionSuccessStatements": [
-        "Top-tier work, Commander—House Marik is very happy with your performance. Keep it up, and I'll make sure a lot more work comes your way."
+        "顶级表现，指挥官——马里克家族对你的成绩非常满意。继续保持，我会确保更多活找上你。"
     ],
     "GoodFaithFailureStatements": [
-        "The Free Worlds League understands that sacrifice on the battlefield doesn't always translate to victory. You've made a fine effort, even if it failed. Just another lesson for the next battle."
+        "自由世界联盟明白，战场上的牺牲并不总能换来胜利。你已经付出了可贵的努力，即便最终失败。这不过是下一场战斗的又一课。"
     ],
     "BadFaithFailureStatements": [
-        "We are deeply disappointed in your performance, Commander. Your efforts on the battlefield were those of a raw cadet, not the leader of a mercenary company."
+        "我们对你的表现深感失望，指挥官。你在战场上的作为像个新兵，而不是一名佣兵团的领袖。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_MarikDefaultCommander",
     "DefaultRepresentativeCastDefId": "castDef_MarikRepDefault",

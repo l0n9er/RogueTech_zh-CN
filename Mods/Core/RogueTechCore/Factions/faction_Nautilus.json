@@ -1,32 +1,32 @@
 {
   "ID": "faction_Nautilus",
   "Name": "鹦鹉螺基地防御力量",
-  "ShortName": "Nautilus Base Defenses",
-  "Description": "The Star League Defense Force (SLDF) was the largest military force in human history, with over 100 million soldiers serving in 486 divisions at its peak. The SLDF suffered horrific losses opposing Stefan Amaris in the Amaris Civil War.",
-  "Demonym": "Nautilus",
-  "Government": "Nautilus",
+  "ShortName": "鸦鸦螺基地防御力量",
+  "Description": "星际联盟防卫军(SLDF)是人类历史上规模最大的军队，在鼎盛时期有超过1亿的士兵在486个师服役. 在阿玛里斯内战中，SLDF因对抗斯蒂芬·阿玛里斯而蒙受了惨重的损失.",
+  "Demonym": "鸦鸦螺基地人员",
+  "Government": "鸦鸦螺基地",
   "Allies": [
     "MercenaryReviewBoard"
   ],
   "Enemies": [],
   "Presence": 0.1,
   "ReputationStatements": [
-    "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-    "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-    "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-    "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-    "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-    "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-    "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us."
+    "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+    "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+    "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+    "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+    "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+    "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+    "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你."
   ],
   "MissionSuccessStatements": [
-    "Excellent work, Commander. I was right to put my faith in you. You're a critical part of the Restoration effort."
+    "干得漂亮，指挥官。我把信任托付给你是对的。你是复国事业的关键一环。"
   ],
   "GoodFaithFailureStatements": [
-    "It seems apparent that while you failed to achieve our goals, you engaged the enemy for as long as you were able. Better luck next time, Commander. May the Spirit of Blake be with you."
+    "这看起来似乎很显然，虽然你没有达成我们的目标，但已经尽你所能来和敌人交战了. 希望你下次能走运一些，指挥官. 希望布雷克的精神与你同在."
   ],
   "BadFaithFailureStatements": [
-    "Far be it for a simple organization like Comstar to reprimand you in matters of warfare, Commander, but… Your performance on that operation was positively abysmal. We roundly condemn your inadequacies."
+    "像康星这样简单的组织本不该在战争事务上责备你，指挥官，但是……你在那次行动中的表现简直糟糕透顶。我们严厉谴责你的无能。"
   ],
   "DefaultCombatLeaderCastDefId": "castDef_SE06_SLDFArmoryComputerDefault",
   "DefaultRepresentativeCastDefId": "castDef_SE06_SLDFArmoryComputerDefault",

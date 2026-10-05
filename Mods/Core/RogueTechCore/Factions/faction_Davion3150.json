@@ -1,10 +1,10 @@
 {
     "ID": "faction_Davion3150",
     "Name": "恒星联邦",
-    "ShortName": "Davion",
-    "Description": "The Federated Suns is one of the five Successor States of the Star League, located rimward and spinward of Terra. Ruled by House Davion, the Federation is the most powerful of the five, and the people of the Federation pride themselves on their self-proclaimed role as defenders of justice and liberty. The Federation is quite capable of ruthless, decisive action, though, and its idealism readily gives way to pragmatism when called for. The current ruler of the Federation, Prince Hanse Davion, is an experienced and unconventional military commander. The Federation's alliance with the Lyran Commonwealth effectively ended the Third Succession War.",
-    "Demonym": "Davion",
-    "Government": "Federation",
+    "ShortName": "恒星联邦",
+    "Description": "联邦太阳国是星际联盟的五个继承国之一，位于地球的外缘方向与顺旋方向。它由达维昂家族统治，是五国中最强大的一个，其人民也以自封的正义与自由捍卫者自居而自豪。不过，这个联邦同样能采取无情而果断的行动，必要时其理想主义也会让位于务实。联邦现任统治者汉斯·达维昂亲王是一位经验丰富、不循常规的军事指挥官。联邦与莱兰联邦的结盟实质上终结了第三次继承战争。",
+    "Demonym": "恒星联邦人",
+    "Government": "联邦",
     "Allies": [],
     "Enemies": [
         "Steiner",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1,
     "ReputationStatements": [
-        "We have a job for you, Mercenary scum. As distasteful as that is to us.",
-        "Mercenary though you may be, you seem effective enough. House Davion has need of your skills, Commander.",
-        "Greetings, Commander. House Davion requires aid from someone outside of our own forces. Hopefully you can help us.",
-        "House Davion requires mercenaries of skill, Commander, and you fit the bill nicely. With luck, we will both profit from this arrangement.",
-        "You have served us well in the past, Commander. We value this relationship, and would like to preserve it.",
-        "Greetings, Commander. Once again, House Davion requires your services. Should you be successful, we will both profit.",
-        "Honored friend! Your acts in service to House Davion have not been forgotten. In light of this, we present you with this choice contract."
+        "我们这里有一份工作给你，佣兵渣滓. 尽管这让我们感到很不愉快.",
+        "也许你只是个佣兵，但似乎挺能干. 戴维恩家族需要你的才能，指挥官.",
+        "你好，指挥官. 戴维恩家族需要一些我军以外的人提供帮助. 希望你能帮到我们.",
+        "戴维恩家族需要专业的雇佣兵，指挥官，你正好符合我们的要求. 如果运气好，我们双方能从这一安排中达成双赢.",
+        "你在过去为我们提供了良好的服务，指挥官. 我们很重视这段关系，并希望能保持它.",
+        "你好，指挥官. 再一次，戴维恩家族需要你的服务. 只要你能完成这个任务，那我们都能从中获益.",
+        "尊敬的朋友! 戴维恩家族不会忘记你为家族所做的一切. 为此，我们向你提出这份优质的合约."
     ],
     "MissionSuccessStatements": [
-        "Excellent performance, Commander. The Federated Suns are pleased with what you have accomplished and the skill you've evidenced. Expect our payment in full!"
+        "表现出色，指挥官。联邦太阳国对您的成就与展现出的技艺十分满意。报酬将足额奉上！"
     ],
     "GoodFaithFailureStatements": [
-        "Well, let it never be said House Davion does not believe in charity. Obviously, your skills could not be equivalent to our own regular armies—so we do not blame you for your inability to complete the contract."
+        "嗯，可别让人说戴维恩家族不信慈善。显然，你的本领无法与我们正规军相提并论——所以我们不怪你没能完成合约。"
     ],
     "BadFaithFailureStatements": [
-        "Come now, mercenary—did you even try to complete the contract, or did you believe we'd pay you for your own inadequacies? Such a dismal performance cannot be rewarded, only reprimanded."
+        "得了吧，雇佣兵——你到底有没有尽力去履行合约，还是以为我们会为你自己的无能付钱？如此糟糕的表现得不到奖赏，只能受到训斥。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_DavionDefaultCommander",
     "DefaultRepresentativeCastDefId": "castDef_DavionRepDefault",

@@ -1,10 +1,10 @@
 {
     "ID": "faction_Valkyrate3031",
     "Name": "大女武神国度",
-    "ShortName": "Valkyrate",
-    "Description": "The union of two breakaway factions from the Oberon Confederation, namely Butte Hold and Morgraine's Valkyrate in 3028 created the Greater Valkyrate, a Pirate Kingdom that kept the Oberon Confederation in check as their strong antagonist. It was notable for emphasizing the dominance of women over men.",
-    "Demonym": "Valkyrian",
-    "Government": "Valkyrate",
+    "ShortName": "女武神国",
+    "Description": "3028年，奥伯龙邦联中两个分离派系——比特霍尔德与莫格雷恩的女武神领——合并，创建了“大女武神领”。这个海盗王国作为其强势对手，牵制着奥伯龙邦联。它因强调女性对男性的主导而引人注目。",
+    "Demonym": "女武神人",
+    "Government": "女武神国",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 0.1,
     "ReputationStatements": [
-        "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-        "Mercenary, we got a Job for you and Money to waste. Do this and you will be compensated above your station.",
-        "Welcome Mercenary, we got another Job that requires attention, take it and dont dare to fail us now.",
-        "Still hungry for Money i see. We got something that needs be shot up.",
-        "We got a nice Raid planned and need something gone, do this, and we share in the Riches.",
-        "Ahh You're back for more? We always got someone to kill and places to plunder, will you join us?",
-        "Welcome Friend, join us on this Raid and share in the Booty."
+        "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+        "雇佣兵，我们有一份工作要交给你，也有花不完的钱. 完成这项任务，你将获得远超你身份应得的报酬.",
+        "欢迎你，雇佣兵. 我们又有一项需要处理的工作，接下它，千万别让我们失望.",
+        "看来你还想赚钱. 我们有点东西需要被轰掉.",
+        "我们计划了一次不错的劫掠，需要清除掉一些东西. 干完这票，咱们共享财富.",
+        "啊哈，你又回来找活儿干了? 我们总有杀不完的人和抢不完的地方，你会加入我们吗?",
+        "欢迎你，朋友. 加入我们这次劫掠，分享战利品吧."
     ],
     "MissionSuccessStatements": [
-        "Well done Mercenary, you are almost worth the money we spent on you."
+        "干得不错，雇佣兵，你差不多值回我们花在你身上的钱了."
     ],
     "GoodFaithFailureStatements": [
-        "At least you got the Job done. Learn from this before we have to kill you ourself."
+        "至少你把活儿干完了. 在我们不得不亲手宰了你之前，从这件事里学点教训."
     ],
     "BadFaithFailureStatements": [
-        "You DARED to fail us? Begone, before i kill you myself!."
+        "你竟敢让我们失望? 滚开，趁我还没亲手杀了你!"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_Valkyrate",
     "DefaultRepresentativeCastDefId": "castDef_Valkyrate",

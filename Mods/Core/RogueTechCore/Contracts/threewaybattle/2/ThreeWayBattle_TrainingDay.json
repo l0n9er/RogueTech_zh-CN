@@ -1839,7 +1839,7 @@
           "revealRadius": -1
         },
         {
-          "words": "<i>HELL YES!</i>",
+          "words": "<i>太棒了！</i>",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1871,7 +1871,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Let's move out!",
+          "words": "我们出发！",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1896,7 +1896,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "We are <i>such bad asses!</i>",
+          "words": "我们<i>真是太猛了！</i>",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1912,7 +1912,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Seriously bad-assed!",
+          "words": "真是太猛了！",
           "wordsColor": {
             "r": 1,
             "g": 1,

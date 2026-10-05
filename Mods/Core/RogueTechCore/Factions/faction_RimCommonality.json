@@ -1,10 +1,10 @@
 {
     "ID": "faction_RimCommonality",
     "Name": "边缘共同圈",
-    "ShortName": "Rim Commonality",
-    "Description": "During the Jihad, the Rim Commonality declared independence from the League on the 13th of April 3075 The Rim Commonality cited the historic Camlann versus Free Worlds ruling as precedent, barring entry to all high-ranking Free Worlds League representatives and breaking away from the League.",
-    "Demonym": "Rim Commonality",
-    "Government": "Commonality",
+    "ShortName": "边缘共同体",
+    "Description": "在圣战期间，边缘共同体于3075年4月13日宣布脱离联盟独立。边缘共同体援引卡姆兰诉自由世界案的裁决为先例，禁止所有自由世界联盟高级代表入境，并脱离联盟。",
+    "Demonym": "边缘共同体人",
+    "Government": "共同体",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1,
     "ReputationStatements": [
-        "I don't know why we bother offering you contracts, to be perfectly honest. It's obvious you're not a friend to the Rim Commonality. Regardless, we find ourselves in desperate times, so we have to scrape the bottom of the barrel.",
-        "Greetings, mercenary. Lowly and despicable though you may be, you may yet serve our interests. Finish this job, and we may look upon you with more favor than you likely deserve.",
-        "The Rim Commonality has a use for mercenaries like you, Commander. I think you'll be interested in the attached contract. Hopefully we can come to a mutually beneficial agreement.",
-        "The Rim Commonality would like to offer you a choice contract, Commander. As the leader of a respected mercenary company, you should find the terms both fair and equitable, I think.",
-        "Commander, I hope this message finds you well. The people of the Rim Commonality would like to extend a contract to you, owing to our respect for your skills. Please consider it carefully.",
-        "Greetings, my friend. This contract is not one we would offer to a lesser mercenary, but you've proven your loyalty, prowess, and dedication to the ideals of the Rim Commonality. I hope you'll accept our offer.",
-        "We both know the score, Commander. The Commonality relies on you like you're one of our own, and you've always been happy to help us out. I hope you can see fit to agree this time as well—this is a job too important for lesser warriors."
+        "说实话，我不知道我们何必费心给你合约。显然，你不是边疆共同体的朋友。尽管如此，我们眼下处境艰难，只能到桶底去刮渣了。",
+        "你好，佣兵. 虽然你们也许卑微又令人厌恶，但你还是能为我们的利益服务. 完成这项工作，我们或许会高看你一些.",
+        "边疆共同体用得上你这样的雇佣兵，指挥官。我想你会对随附的合约感兴趣。希望我们能达成互利协议。",
+        "边疆共同体想向你提供一份精选合约，指挥官。作为一支受尊敬的雇佣兵公司的首领，我想你会认为条款既公道又公平。",
+        "指挥官，希望你收到这条消息时一切安好。边疆共同体的人民想把这份合约交给你，这是出于我们对你能力的尊重。请仔细考虑。",
+        "你好，我的朋友。这份合约不是我们会交给普通雇佣兵的，但你已经证明了自己对边疆共同体理念的忠诚、实力与投入。希望你接受我们的提议。",
+        "你我都清楚局势，指挥官。共同体把你当作自家人一样倚重，而你也一直乐于相助。希望你这次也能答应——这项任务不是普通战士能够胜任的。"
     ],
     "MissionSuccessStatements": [
-        "Top-tier work, Commander—The Commonality is very happy with your performance. Keep it up, and I'll make sure a lot more work comes your way."
+        "一流的活儿，指挥官——共同体对你的表现非常满意。继续保持，我保证会有更多工作找上你。"
     ],
     "GoodFaithFailureStatements": [
-        "The Rim Commonality understands that sacrifice on the battlefield doesn't always translate to victory. You've made a fine effort, even if it failed. Just another lesson for the next battle."
+        "边缘共同体明白，战场上的牺牲并不总能换来胜利。你已经付出了出色的努力，即便它失败了。这不过是下一场战斗的又一条教训。"
     ],
     "BadFaithFailureStatements": [
-        "We are deeply disappointed in your performance, Commander. Your efforts on the battlefield were those of a raw cadet, not the leader of a mercenary company."
+        "我们对你的表现深感失望，指挥官。你在战场上的作为像个新兵，而不是一名佣兵团的领袖。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_RimCommonality",
     "DefaultRepresentativeCastDefId": "castDef_RimCommonality",

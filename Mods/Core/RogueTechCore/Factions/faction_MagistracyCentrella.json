@@ -1,10 +1,10 @@
 {
   "ID": "faction_MagistracyCentrella",
   "Name": "船底自治区",
-  "ShortName": "the Magistracy",
-  "Description": "Lady Centrella represents The Magistracy of Canopus, a large Periphery state, located rimwards and anti-spinwards of Terra, just beyond the Free Worlds League. Founded explicitly as a matriarchy, the Magistracy is ruled by a Magestrix, a position open only to women, and usually held by a member of the founding Centrella family. Independent since the fall of the Star League, the Magistracy has remained mostly untouched by the Succession Wars, except by the overall collapse of trade and travel. The Magistracy is famed for its social and cultural freedom, with no consensual behavior forbidden by law or custom. The current ruler of the Magistracy is the Magestrix Kyalla Centrella, who harbors a deep grudge against the Inner Sphere, and the Free Worlds League in particular.",
-  "Demonym": "Canopian",
-  "Government": "Magistracy",
+  "ShortName": "船底自治区",
+  "Description": "琴特雷拉女士代表了船底自治区，这是个较大的外围国家，位于地球的银河缘向(南方)和反旋向(西方)，就在自由世界联盟下方. 船底自治区明确作为母系社会创立，由女导师统治，这一职位仅向女性开放，通常由创始家族琴特雷拉家族成员把持. 自治区在星际联盟消亡后独立，除了贸易和航行的全面崩溃外，自治区大体上并未受到继承战争的波及. 自治区以其社会与文化上的自由，自愿行为不受法律或习俗禁止而闻名，自治区现任统治者女导师基娅拉·琴特雷拉，对内天体，特别是自由世界联盟报以极深的敌意.",
+  "Demonym": "船底自治区人",
+  "Government": "自治区",
   "Allies": [
     "AuriganRestoration",
     "Marik",
@@ -18,22 +18,22 @@
   ],
   "Presence": 1.5,
   "ReputationStatements": [
-    "I don't know why we bother with you, Mercenary. Perhaps my superiors are desperate. Regardless, they've seen fit to offer you this contract against my better judgement, Accept it or don't, it doesn't matter to me.",
-    "You may be a disgrace and a scoundrel, but you're one of the only mercenaries in the area. Apparently the Magistracy has seen fit to offer you this contract despite my protests. Don't make us regret this.",
-    "Commander, there's a task I need handled. While your reputation is not as positive as it could be, you're convenient and the price is right. Do this and we'll look favorably on you in the future.",
-    "Commander, I hope you are in good health, This contract may interest you - it fits your skills and the strengths of your company. With any luck, we'll both get what we want out of this job.",
-    "Greetings, Commander. I have a task that you are well suited to perform. Accomplish this, and I'll personally ensure my superiors know about your skills.",
-    "I hope you're well, my friend. We in the Magistracy needs your help once again. This contract may interest you - especially the bottom line. I think you'll find our conservation more than fair.",
-    "I wouldn't entrust this contract to any lesser mercenaries, Commander. You and yours are the only ones I believe are capable of handling this task. As always, I'll ensure you are richly rewarded for your hard work."
+    "我不知道为什么我们双方会为你费心，佣兵. 或许我的上级已经绝望了. 无论如何，虽然我有不同看法，但他们觉得给你合约是最合适的，无论你接不接受，对我都没有什么影响.",
+    "虽然你是个丢人现眼的流氓无赖，可还是这片区域唯一的一家佣兵. 显然自治区不顾我的反对，觉得适合给你这份合约. 可别让我们后悔.",
+    "指挥官，我需要处理一项任务. 虽然你的声望还不是很正面，但你正好方便而且价格也不错. 完成这项任务，未来我们会看好你.",
+    "指挥官，希望你一切安好. 这份合约你或许感兴趣--它非常适合你的能力和贵公司的实力. 运气好的话，我们双方都能各取所需.",
+    "你好，指挥官. 我有一项任务非常适合由你来完成. 若能成功，我会亲自确保我的上级知晓你的才能.",
+    "希望你安康，我的朋友. 身处自治区的我们再一次需要你的帮助. 这份合约也许能引起你的兴趣--特别是底价. 我想你会发现我们的保护条款非常非常公平.",
+    "指挥官，我不会把这份合约托付给任何不那么厉害的佣兵. 我相信只有你和你的人才有能力应对这项任务. 一如既往，我保证你的努力工作会得到丰厚的回报."
   ],
   "MissionSuccessStatements": [
-    "Your performance was exemplary, Commander. I'll be certain to ensure the upper echelons of Magistracy high command hear about your skills."
+    "你的表现堪称典范，指挥官。我一定会确保治安官辖区最高指挥部的上层听到你的本领。"
   ],
   "GoodFaithFailureStatements": [
-    "Despite your failure, I'll ensure that high command understands that you fought as hard as you were able. There's always next time, Commander."
+    "尽管你失败了，我会确保最高指挥部明白你已经竭尽全力作战。总还有下一次，指挥官。"
   ],
   "BadFaithFailureStatements": [
-    "Understand that we hired you with an expectation of - if not success - at least decent effort. You've shown neither, and I'm going to ensure my superiors hear about it, Commander."
+    "希望你能明白，我们雇你时，期待的是——就算不能成功——至少也得有像样的努力。你两者都没做到，而我会确保我的上级知道这件事，指挥官。"
   ],
   "DefaultCombatLeaderCastDefId": "castDef_CentrellaDefault",
   "DefaultRepresentativeCastDefId": "castDef_CentrellaDefault",

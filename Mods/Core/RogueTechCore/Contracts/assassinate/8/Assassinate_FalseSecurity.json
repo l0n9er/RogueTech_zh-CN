@@ -452,7 +452,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "Target destroyed, Commander.",
+          "words": "目标已摧毁，指挥官。",
           "wordsColor": {
             "r": 1,
             "g": 1,

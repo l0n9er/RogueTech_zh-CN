@@ -1,10 +1,10 @@
 {
     "ID": "faction_Liao",
     "Name": "卡佩拉联邦",
-    "ShortName": "Liao",
-    "Description": "The Capellan Confederation is one of the five Successor States of the Star League, located rimward of Terra. Ruled by House Liao, the Confederation is the smallest and newest of the Successor States and often the loser in conflicts against the other powers of the Inner Sphere. It is an authoritarian police state, with philosophical origins in a text known as the Korvin Doctrine, which argues for total subservience of the individual to the state. Citizens of the Confederation must earn their position and the benefits of citizenship through service to their community. The current ruler of the Confederation is Chancellor Maximilian Liao, a shrewd planner and master manipulator.",
-    "Demonym": "Capellan",
-    "Government": "Confederation",
+    "ShortName": "卡佩拉",
+    "Description": "卡佩拉联邦是星际联盟五大继承国之一，位于地球的(银河)缘向(即南方). 廖氏家族统治的卡佩拉联邦是继承国中最小和最年轻的国家，在与内天体其它强国的冲突中常常处于不利地位. 这是个专制的警察国家，其哲学基础源于名为《科尔文主义》的理论，该理论主张个体应完全服从国家. 联邦公民必须通过为社区服务来赢得地位和公民权的福利. 联邦现任统治者总理大臣马克西米利安·廖是一位精明的策划者和操纵大师.",
+    "Demonym": "卡佩拉人",
+    "Government": "邦联",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1.5,
     "ReputationStatements": [
-        "In desperate times, even the mighty must resort to hiring those such as you. This is a kindness we do to you, mercenary: you serve your betters.",
-        "We would not offer you this contract unless we had no other choice, mercenary. As it stands, this is simple: we have a task, and you need money. Accept or don't, it's your choice.",
-        "The Capellan Confederation has need of your unit, mercenary. And you have need of our money, I assume. I think this will benefit both of us.",
-        "There are few mercenaries House Liao trusts with tasks like this, Commander. Make certain our faith is not misplaced. We can both profit from this.",
-        "Hello, Commander. The Capellan Confederation would like your assistance with a particular matter. In exchange, we will ensure you are well rewarded.",
-        "I'm glad you're well, my friend. Once again, House Liao would like to call upon your prowess. Undertake this task for us, and we will pay you the highest possible rates. I assure you, this is not a contract for lesser warriors.",
-        "My old friend, I hope this message finds you well. If you have the time, the Capellan Confederation would once again like to retain your services."
+        "非常时期必须采取非常措施，哪怕雇佣那些像你这样的佣兵. 这是我们对你的善意，佣兵: 为你的上级服务.",
+        "除非我们别无选择，不然我们不会给你这份合约，佣兵. 就目前来说，这很简单: 我们有一个任务，而你需要钱. 接不接受，由你决定.",
+        "卡佩拉联邦需要你的佣兵部队. 而我认为，你需要我们的钱. 我想我们都能从中获益.",
+        "指挥官，能让廖氏家族信任地托付这种任务的佣兵可不多. 请确保我们的信任没有错误地托付. 我们都能从中获益.",
+        "你好，指挥官. 卡佩拉联邦希望你能在一件特别的事项上予以协助. 作为交换，我们会保证你能得到丰厚的报酬.",
+        "很高兴你一切安好，我的朋友. 廖氏家族再次希望借助你的能力. 接受这项任务，我们会向你支付尽可能高的酬劳. 我向你保证，这可不是给普通战士的合约.",
+        "我的老朋友，我希望收到这个消息的时候你一切顺利身体安康. 如果你有时间，卡佩拉联邦希望能再一次得到你的服务."
     ],
     "MissionSuccessStatements": [
-        "House Liao has always believed in one thing, Commander: victory at any cost. It seems you also understand this vital lesson. We are pleased you've performed so well."
+        "指挥官，廖家始终信奉一件事：不惜一切代价取胜。看来你也深谙这一要义。我们对你的出色表现很满意。"
     ],
     "GoodFaithFailureStatements": [
-        "Loss on the battlefield is not always failure. Losses teach us to improve and better ourselves. You fought well, Commander, even if you did not prevail. Learn from this lesson and do better next time."
+        "在战场上失利并不完全意味着失败. 失利教会我们改善和提升自己. 你打得不错，指挥官，即使你没有取得胜利. 引以为戒，在下次任务中做得更好."
     ],
     "BadFaithFailureStatements": [
-        "If you cannot accomplish the missions we lay before you, Commander, we will find another mercenary who can! Consider this a warning to perform better—or be replaced."
+        "指挥官，如果你无法完成我们交给你的任务，我们会另找一位能完成的雇佣兵！把这当作一次警告：要么干得更好，要么被替换。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_LiaoDefaultCommander",
     "DefaultRepresentativeCastDefId": "castDef_LiaoRepDefault",

@@ -1,10 +1,10 @@
 {
     "ID": "faction_Steiner",
     "Name": "天琴共同体",
-    "ShortName": "Steiner",
-    "Description": "The Lyran Commonwealth is one of the five Successor States of the Star League, located coreward and anti-spinward of Terra. Ruled by House Steiner, the Commonwealth is the wealthiest of the five, with an entrenched and powerful noble class. The focus on pedigree and prestige among the nobility has often resulted in less-than-brilliant officers being elevated to high command, to the detriment of the Commonwealth's military strength. Much of the Commonwealth's success comes from the vast resources located within its borders. The current ruler of the Commonwealth is Archon Katrina Steiner, notable for her peace proposal that, in allying the Commonwealth with the Federated Suns, effectively ended the Third Succession War.",
-    "Demonym": "Lyran",
-    "Government": "Commonwealth",
+    "ShortName": "天琴",
+    "Description": "莱兰联邦是星盟五大继承国之一，位于地球的核心方向与反旋臂方向。由斯坦纳家族统治的莱兰联邦是五国中最富有的，拥有根深蒂固而强大的贵族阶层。贵族间对血统与声望的重视，常导致才具平庸的军官被提拔至高位，损害了联邦的军事实力。联邦的诸多成就大多来自其疆域内的庞大资源。联邦现任统治者是大公卡特里娜·斯坦纳，她以那份和平提案闻名——该提案使联邦与联邦太阳结盟，实际上终结了第三次继承战争。",
+    "Demonym": "天琴人",
+    "Government": "联邦",
     "Allies": [],
     "Enemies": [
         "Marik",
@@ -143,22 +143,22 @@
     ],
     "Presence": 0.25,
     "ReputationStatements": [
-        "You know the rule of war, don't you? 'Money can buy anything except honor.' While you have none of the latter, we have plenty of the former. Fight like the dog of war you are, and we may overlook your past transgressions.",
-        "You know what I love best about mercenaries? You're willing to wade into battle when it's too dangerous for us to risk our own soldiers. So take the job, MechWarrior—fight and die for money, as is your role.",
-        "Beggars can't be choosers, and neither can the frugal. This contract is a budget affair best suited to scoundrels such as yourself. No matter what your failings, you are willing to fight for money, yes? We can provide money.",
-        "Hail, Commander. House Steiner has an operation we think you'll find interesting as well as lucrative. I'll be certain to recommend you to my superiors if you perform well.",
-        "Your reputation precedes you, Commander. Your talents are always valued by the Lyran Commonwealth—and we reward those we value with money commensurate with their skills and loyalty.",
-        "I hope you are in fine health, Commander. The Lyran Commonwealth has been pleased with your prior service, and we think this contract might be best suited for an expert like you. As always, we offer the highest rates.",
-        "My friend! House Steiner sends you wishes of good health and full coffers. Once again, we would like to call upon your services—and as ever, we appreciate your loyalty and will show our gratitude in your pay."
+        "你知道战争的规则，不是吗?“金钱可以买到任何东西，除了荣誉.”虽然你没有后者，但前者我们有很多. 像战争猛犬一样战斗，我们可以忽略你过去的罪过.",
+        "你知道我最喜欢雇佣兵哪一点吗？当战斗危险到我们不敢拿自己的士兵冒险时，你们却愿意涉险参战。所以接下这份工作吧，机甲战士——为了钱战斗、为了钱送命，这就是你们的职责。",
+        "叫花子没得选，节俭的人也没得选. 这份合约的预算很适合你这样的无赖. 不管你有什么缺点，你都愿意为钱而战，对不? 我们能提供钱.",
+        "你好指挥官. 施泰纳家族这里有一项任务，我们认为你会感兴趣而且有利可图. 如果你表现好的话，我一定会把你推荐给我的上级.",
+        "你的名声早已传开，指挥官。天琴共同体始终重视你的才能——而我们会用与你能力和忠诚相称的金钱回报受重视的人。",
+        "希望你身体安康，指挥官. 天琴共同体非常满意你之前的服务，我们认为这份合约也许非常适合你这样的专家. 一如既往，我们会提供最高的报酬.",
+        "我的朋友！施泰纳家族祝你身体健康、财库充盈。我们再次想请你效力——一如既往地感谢你的忠诚，并会用报酬表达谢意。"
     ],
     "MissionSuccessStatements": [
-        "Large coffers pay for larger victories—and you have been instrumental in ensuring that our winning streak is intact. Excellent work, mercenary. House Steiner is pleased."
+        "更大的金库换来更大的胜利——而你在确保我们连胜不败上起到了关键作用。干得漂亮，雇佣兵。施泰纳家族很满意。"
     ],
     "GoodFaithFailureStatements": [
-        "The Lyran Commonwealth didn't get where it is by accepting victory or defeat as inevitable, but by continuing to fight after a loss. I hope you'll do the same, Commander. While you were defeated, you acquitted yourself well."
+        "莱兰联邦不是靠把胜利或失败视为必然才有今天的地位，而是靠在失败之后继续战斗。我希望你也能如此，指挥官。你虽然战败，但表现可圈可点。"
     ],
     "BadFaithFailureStatements": [
-        "House Steiner has no place for cowards or failures, Commander. Ensure your future efforts are more robust, or the Lyran Commonwealth will be no friend to you."
+        "指挥官，施泰纳家族没有胆小鬼或失败者的位置. 确保你未来的成绩更加强劲，不然天琴共同体不会同你交好."
     ],
     "DefaultCombatLeaderCastDefId": "castDef_SteinerDefaultCommander",
     "DefaultRepresentativeCastDefId": "castDef_SteinerRepDefault",

@@ -1692,7 +1692,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Watch out for reinforcements.",
+          "words": "小心增援部队。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1765,7 +1765,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Let's wrap this up.",
+          "words": "结束这场战斗吧。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2159,7 +2159,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Thanks.",
+          "words": "谢谢。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2175,7 +2175,7 @@
           "revealRadius": -1
         },
         {
-          "words": "We are counting on you.",
+          "words": "我们就指望你了。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2791,7 +2791,7 @@
           "revealRadius": -1
         },
         {
-          "words": "These guys look like trouble.",
+          "words": "这些家伙看起来来者不善。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2807,7 +2807,7 @@
           "revealRadius": -1
         },
         {
-          "words": "I hate parties.",
+          "words": "我讨厌派对。",
           "wordsColor": {
             "r": 1,
             "g": 1,

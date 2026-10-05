@@ -1,10 +1,10 @@
 {
     "ID": "faction_CalderonProtectorate",
     "Name": "卡尔德隆保护国",
-    "ShortName": "Calderon Protectorate",
-    "Description": "The Calderon Protectorate is a small Periphery state located spinward of the Taurian Concordat. The Protectorate began as a collection of small settlements newly-colonized by the Taurian Concordat, an effort which started with the Far Lookers movement and was backed by Concordat financial interests",
-    "Demonym": "Calderon",
-    "Government": "Protectorate",
+    "ShortName": "卡尔德隆保护国",
+    "Description": "卡尔德隆保护国是位于陶里安协约国旋臂方向的一个小型外缘国家。保护国最初是一批由陶里安协约国新殖民的小型定居点，这项努力始于\"远望者\"运动，并得到协约国金融利益方的支持",
+    "Demonym": "卡尔德隆人",
+    "Government": "保护国",
     "Allies": [],
     "Enemies": [
         "Steiner",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1.5,
     "ReputationStatements": [
-        "In an earlier era, House Calderon would have had you killed rather than offer you a contract. Unfortunately, we don't live in that earlier era—and also, we need a disposable soldier. Accept or not; I don't care.",
-        "I dislike your kind, mercenary. But it seems that desperate times force compromises on all of us. Bear that in mind should you accept this contract: we offer it to you only because we have no other choice. Tread carefully.",
-        "Greetings, Commander. This is a standard contract, and we expect you to be able to complete it with competence. Try to look grateful, if you accept it.",
-        "This contract may be of interest to you, Commander. The Calderon Protectorate believes it within your ability to complete, and in times like these, we are willing to pay you well to see it done. Please let us know.",
-        "Hello, mercenary. The Calderon Protectorate values our relationship, and so we would like to offer you first right of refusal on this contract. The job is simple, and the pay adequate. We know it to be within your capabilities as well.",
-        "My friend, I've got good news: House Calderon needs your help, and we've got plenty of money to pay for that help. We know you've got the skills to see this job done, and any help would be appreciated by my superiors.",
-        "House Calderon would once again like to call upon you, our faithful janissary, ready to wage war in our name wherever we ask. Once more we ask you to join the fray on our behalf—and as always, we value your loyalty."
+        "换作早年间，卡尔德隆家族会直接杀了你，而非向你提供合约。可惜我们不在那个年代——况且，我们需要一个用完即弃的兵。接不接随你，我不在乎。",
+        "我不喜欢你这样子，佣兵. 但似乎非常时期迫使我们所有人妥协. 你接下这份合约的时候要记住: 我们给你是因为我们别无选择. 谨慎行事.",
+        "你好，指挥官. 这是一份标准合约，我们期待你胜任它. 如果你接受了这个任务，我们会感激你.",
+        "这份合约或许会让你感兴趣，指挥官。卡尔德隆保护国相信你有力完成，而在这样的世道，我们愿意出重金把它办成。请告知我们。",
+        "你好，雇佣兵。卡尔德隆保护国珍视我们的关系，因此想给你这份合约的优先拒绝权。活儿简单，报酬也过得去，我们也知道这在你的能力范围内。",
+        "我的朋友，有个好消息: 卡尔德隆家族需要你的协助，而我们资金充裕足以支付酬劳. 我们深知你具备完成这项任务所需的实力，你的任何帮助都将获得我方高层的高度认可.",
+        "卡尔德隆家族再次相召，我们忠诚的禁卫军，随时准备听凭我们号令、以我们的名义开战。我们再一次请你代我们投身战阵——而一如既往，我们珍视你的忠诚。"
     ],
     "MissionSuccessStatements": [
-        "Good job, Commander. The Calderon Protectorate thanks you for your service. It's always refreshing to deal with a true professional when one hires mercenaries."
+        "干得好，指挥官。卡尔德隆保护国感谢你的效力。雇雇佣兵时能碰上一个真正的专业人士，总是令人神清气爽。"
     ],
     "GoodFaithFailureStatements": [
-        "Out here in the Periphery, it's always a life-or-death struggle for mercenaries. That's why I appreciate your efforts to complete the mission, even if you couldn't manage it."
+        "在外围地区，对雇佣兵来说永远是生死攸关的搏杀。所以即便你没能完成任务，我依然感谢你为此付出的努力。"
     ],
     "BadFaithFailureStatements": [
-        "I've hired raw cadets that have performed better than your company, Commander. In the future, you'd best operate at a higher level, or we might not be willing to offer you contracts aside from garrison duty."
+        "指挥官，我雇来的生瓜蛋子新兵表现都比你的队伍强。以后你最好拿出更高的水准，否则除了驻防任务，我们可能就不愿再给你合约了。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_CalderonProtectorate",
     "DefaultRepresentativeCastDefId": "castDef_CalderonProtectorate",

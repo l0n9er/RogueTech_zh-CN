@@ -1,10 +1,10 @@
 {
   "ID": "faction_MercenaryReviewBoard",
   "Name": "雇佣兵评审委员会",
-  "ShortName": "the MRB",
-  "Description": "The Mercenary Review Board was founded by ComStar to allow ComStar agents to serve as brokers for mercenary companies seeking work.",
-  "Demonym": "MRB",
-  "Government": "Board",
+  "ShortName": "雇佣兵评审会",
+  "Description": "雇佣兵评审委员会是由通讯之星创办的，目的是让通讯之星的代理人为寻求工作的雇佣兵公司充当经纪人.",
+  "Demonym": "雇佣兵评审会成员",
+  "Government": "委员会",
   "Allies": [],
   "Enemies": [
     "FederatedCommonwealth",
@@ -64,22 +64,22 @@
   ],
   "Presence": 0,
   "ReputationStatements": [
-    "We don't usually contract mercenaries directly, Commander, but this is a special case. The rates and hazards are commensurate with your experience and MechWarriors. We hope to hear from you soon.",
-    "We don't usually contract mercenaries directly, Commander, but this is a special case. The rates and hazards are commensurate with your experience and MechWarriors. We hope to hear from you soon.",
-    "We don't usually contract mercenaries directly, Commander, but this is a special case. The rates and hazards are commensurate with your experience and MechWarriors. We hope to hear from you soon.",
-    "We don't usually contract mercenaries directly, Commander, but this is a special case. The rates and hazards are commensurate with your experience and MechWarriors. We hope to hear from you soon.",
-    "We don't usually contract mercenaries directly, Commander, but this is a special case. The rates and hazards are commensurate with your experience and MechWarriors. We hope to hear from you soon.",
-    "We don't usually contract mercenaries directly, Commander, but this is a special case. The rates and hazards are commensurate with your experience and MechWarriors. We hope to hear from you soon.",
-    "We don't usually contract mercenaries directly, Commander, but this is a special case. The rates and hazards are commensurate with your experience and MechWarriors. We hope to hear from you soon."
+    "我们通常不直接联系佣兵，指挥官，但这个是特殊情况. 这个任务的风险和报酬都与你的经验和机甲战士相称. 我们希望能尽快得到你的答复.",
+    "我们通常不直接联系佣兵，指挥官，但这个是特殊情况. 这个任务的风险和报酬都与你的经验和机甲战士相称. 我们希望能尽快得到你的答复.",
+    "我们通常不直接联系佣兵，指挥官，但这个是特殊情况. 这个任务的风险和报酬都与你的经验和机甲战士相称. 我们希望能尽快得到你的答复.",
+    "我们通常不直接联系佣兵，指挥官，但这个是特殊情况. 这个任务的风险和报酬都与你的经验和机甲战士相称. 我们希望能尽快得到你的答复.",
+    "我们通常不直接联系佣兵，指挥官，但这个是特殊情况. 这个任务的风险和报酬都与你的经验和机甲战士相称. 我们希望能尽快得到你的答复.",
+    "我们通常不直接联系佣兵，指挥官，但这个是特殊情况. 这个任务的风险和报酬都与你的经验和机甲战士相称. 我们希望能尽快得到你的答复.",
+    "我们通常不直接联系佣兵，指挥官，但这个是特殊情况. 这个任务的风险和报酬都与你的经验和机甲战士相称. 我们希望能尽快得到你的答复."
   ],
   "MissionSuccessStatements": [
-    "Well done, Commander. We obviously placed our faith in the right mercenary company. We'll let you know if we have any other work for you."
+    "干得好，指挥官。我们显然把信任交给了正确的佣兵团。如果还有活我们通知你。"
   ],
   "GoodFaithFailureStatements": [
-    "You win some, you lose some. Sometimes it's in between. I'm disappointed you couldn't complete the contract, but at least you gave it your best shot."
+    "有输有赢。有时介于两者之间。我很失望你没能完成合约，但至少你尽力了。"
   ],
   "BadFaithFailureStatements": [
-    "For somebody who came so highly recommended, you let us down pretty hard. Thanks for nothing, I guess."
+    "对于一个被强烈推荐的人来说，你却让我们很失望. 算我自讨没趣，我猜."
   ],
   "DefaultCombatLeaderCastDefId": "castDef_None",
   "DefaultRepresentativeCastDefId": "castDef_FactionRepDefault",

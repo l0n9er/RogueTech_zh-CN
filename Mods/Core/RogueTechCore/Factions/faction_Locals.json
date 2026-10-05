@@ -1,10 +1,10 @@
 {
     "ID": "faction_Locals",
     "Name": "行星政府",
-    "ShortName": "the Locals",
-    "Description": "This world is independently ruled by a planetary government, unaffiliated with any of the interstellar states of the Inner Sphere or the Periphery.",
-    "Demonym": "Local Government",
-    "Government": "state",
+    "ShortName": "当地政府",
+    "Description": "这个星球由当地政府独立统治，不属于内天体或外围的任何跨星际国家.",
+    "Demonym": "当地人",
+    "Government": "国家",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1,
     "ReputationStatements": [
-        "We've heard you're a competent mercenary. We've been having some trouble lately, and if you could resolve it for us, we'll ensure you're paid well. If not, so be it.",
-        "We've heard you're a competent mercenary. We've been having some trouble lately, and if you could resolve it for us, we'll ensure you're paid well. If not, so be it.",
-        "We've heard you're a competent mercenary. We've been having some trouble lately, and if you could resolve it for us, we'll ensure you're paid well. If not, so be it.",
-        "We've heard you're a competent mercenary. We've been having some trouble lately, and if you could resolve it for us, we'll ensure you're paid well. If not, so be it.",
-        "We've heard you're a competent mercenary. We've been having some trouble lately, and if you could resolve it for us, we'll ensure you're paid well. If not, so be it.",
-        "We've heard you're a competent mercenary. We've been having some trouble lately, and if you could resolve it for us, we'll ensure you're paid well. If not, so be it.",
-        "We've heard you're a competent mercenary. We've been having some trouble lately, and if you could resolve it for us, we'll ensure you're paid well. If not, so be it."
+        "我们听说你是一名相当能干的雇佣兵. 我们最近遇到了一些麻烦，如果你能帮我们解决的话，我们保证你能得到丰厚的报酬. 如果不能，那就算了.",
+        "我们听说你是一名相当能干的雇佣兵. 我们最近遇到了一些麻烦，如果你能帮我们解决的话，我们保证你能得到丰厚的报酬. 如果不能，那就算了.",
+        "我们听说你是一名相当能干的雇佣兵. 我们最近遇到了一些麻烦，如果你能帮我们解决的话，我们保证你能得到丰厚的报酬. 如果不能，那就算了.",
+        "我们听说你是一名相当能干的雇佣兵. 我们最近遇到了一些麻烦，如果你能帮我们解决的话，我们保证你能得到丰厚的报酬. 如果不能，那就算了.",
+        "我们听说你是一名相当能干的雇佣兵. 我们最近遇到了一些麻烦，如果你能帮我们解决的话，我们保证你能得到丰厚的报酬. 如果不能，那就算了.",
+        "我们听说你是一名相当能干的雇佣兵. 我们最近遇到了一些麻烦，如果你能帮我们解决的话，我们保证你能得到丰厚的报酬. 如果不能，那就算了.",
+        "我们听说你是一名相当能干的雇佣兵. 我们最近遇到了一些麻烦，如果你能帮我们解决的话，我们保证你能得到丰厚的报酬. 如果不能，那就算了."
     ],
     "MissionSuccessStatements": [
-        "Well done, Commander. We obviously placed our faith in the right mercenary company. We'll let you know if we have any other work for you."
+        "干得好，指挥官。我们显然把信任交给了正确的佣兵团。如果还有活我们通知你。"
     ],
     "GoodFaithFailureStatements": [
-        "You win some, you lose some. Sometimes it's in between. I'm disappointed you couldn't complete the contract, but at least you gave it your best shot."
+        "有输有赢。有时介于两者之间。我很失望你没能完成合约，但至少你尽力了。"
     ],
     "BadFaithFailureStatements": [
-        "For somebody who came so highly recommended, you let us down pretty hard. Thanks for nothing, I guess."
+        "对于一个被强烈推荐的人来说，你却让我们很失望. 算我自讨没趣，我猜."
     ],
     "DefaultCombatLeaderCastDefId": "castDef_LocalsDefault",
     "DefaultRepresentativeCastDefId": "castDef_LocalsDefault",

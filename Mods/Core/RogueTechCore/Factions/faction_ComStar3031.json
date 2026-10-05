@@ -1,10 +1,10 @@
 {
     "ID": "faction_ComStar3031",
     "Name": "通讯之星",
-    "ShortName": "ComStar",
-    "Description": "ComStar, the institution and religion, grew out of the Star League Department of Communications, as reenvisioned by Jerome Blake, Minister of Communications. ComStar is transnational, beholden to none of the Successor States, and its priesthood exclusively controls access to the only means of faster-than-light communications, the HyperPulse Generators. ComStar facilities and personnel are sacrosanct, a status enforced aggressively by the institution; offending statesâ€”even entire Successor Statesâ€”can find themselves cut off from the rest of the Inner Sphere, unable to communicate or trade. The current head of ComStar is Primus Julian Tiepolo.",
-    "Demonym": "ComStar",
-    "Government": "Corporation",
+    "ShortName": "通讯之星",
+    "Description": "通讯之星(ComStar)，作为一个机构与宗教，脱胎于星际联盟通讯部，由时任通讯部长杰罗姆·布雷克重新构想而创立. 通讯之星是跨国组织，不对任何继承国效忠，其教士阶层独掌着唯一超光速通讯手段——超脉冲发生器的使用权. 通讯之星的设施与人员神圣不可侵犯，这一地位由该机构极力维护; 冒犯它的国家——甚至是整个继承国——都可能发现自己被内天体其余部分隔绝，无法通讯与贸易. 通讯之星目前的领袖是首席主教朱利安·蒂耶波洛.",
+    "Demonym": "通讯之星成员",
+    "Government": "公司",
     "Allies": [],
     "Enemies": [
         "FederatedCommonwealth",
@@ -143,22 +143,22 @@
     ],
     "Presence": 0.1,
     "ReputationStatements": [
-        "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-        "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-        "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-        "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-        "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-        "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us.",
-        "Even ComStar occasionally requires the services of mercenaries, Commander. We will look highly upon you, should you aid us."
+        "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+        "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+        "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+        "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+        "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+        "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你.",
+        "即使是通讯之星偶尔也需要雇佣兵的服务，指挥官. 如果你帮助我们，我们就会高看你."
     ],
     "MissionSuccessStatements": [
-        "ComStar congratulates you on your successful mission, mercenary. We are pleased you've been able to assist us so thoroughly."
+        "康星祝贺你任务成功，佣兵。我们很高兴你能如此彻底地协助我们。"
     ],
     "GoodFaithFailureStatements": [
-        "It seems apparent that while you failed to achieve our goals, you engaged the enemy for as long as you were able. Better luck next time, Commander. May the Spirit of Blake be with you."
+        "这看起来似乎很显然，虽然你没有达成我们的目标，但已经尽你所能来和敌人交战了. 希望你下次能走运一些，指挥官. 希望布雷克的精神与你同在."
     ],
     "BadFaithFailureStatements": [
-        "Far be it from a simple organization like ComStar to reprimand you in matters of warfare, Commander, butâ€¦ your performance on that operation was positively abysmal. We roundly condemn your inadequacies."
+        "像通讯之星这样简单的组织本不该在作战事务上斥责你，指挥官，但……你在那次行动中的表现实在糟糕透顶。我们对你的无能予以严正谴责。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_ComStarDefault",
     "DefaultRepresentativeCastDefId": "castDef_ComStarDefault",

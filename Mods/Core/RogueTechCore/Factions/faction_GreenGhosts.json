@@ -1,10 +1,10 @@
 {
     "ID": "faction_GreenGhosts",
     "Name": "绿幽灵",
-    "ShortName": "Green Ghosts",
-    "Description": "The so-called Green Ghosts are an enigmatic and highly unusual warband. They began raiding the Lyran (coreward and anti-spinward) periphery border, i.e. the general area of the former Rim Worlds Republic, in 3060 and continued their operations at least through 3089.",
-    "Demonym": "Green Ghosts",
-    "Government": "gang",
+    "ShortName": "绿幽灵",
+    "Description": "所谓绿幽灵是一支神秘而极不寻常的作战团体。他们于3060年开始劫掠莱兰（核心方向与反旋臂方向）外缘边界，即前边缘世界共和国的大致区域，其行动至少持续到3089年。",
+    "Demonym": "绿幽灵",
+    "Government": "帮派",
     "Allies": [],
     "Enemies": [
         "Steiner",
@@ -143,22 +143,22 @@
     ],
     "Presence": 1,
     "ReputationStatements": [
-        "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-        "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-        "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-        "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-        "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-        "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose.",
-        "You wanna get paid, don't you? Take this job, and we all end up with more money. You've nothing to lose."
+        "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+        "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+        "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+        "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+        "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+        "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西.",
+        "你想拿报酬，对吧? 接下这个任务，我们都会赚得更多. 你不会损失任何东西."
     ],
     "MissionSuccessStatements": [
-        "That went well. Real well. Seems like we did the right thing in calling you in, mercenary. Glad to see we both came out ahead today."
+        "进展顺利. 非常顺利. 看来请你出手是正确的决定，雇佣兵. 很高兴看到我们今天都获益匪浅."
     ],
     "GoodFaithFailureStatements": [
-        "You didn't get the job done like we wanted, but you tried. And I like that kind of guts, even if I'm not entirely happy with the result."
+        "你没能按我们希望的那样完成，但你尽力了。我欣赏这种胆气，即使我对结果并不完全满意。"
     ],
     "BadFaithFailureStatements": [
-        "For someone with your hardware, I expected better things. You let us down, Commander—and I'm gonna be sure to tell everyone I know not to count on you in the future."
+        "以你手上的硬件条件，我本以为你能做得更好。你让我们失望了，指挥官——我保证会告诉我认识的每一个人，以后别再指望你。"
     ],
     "DefaultCombatLeaderCastDefId": "castDef_GreenGhosts",
     "DefaultRepresentativeCastDefId": "castDef_GreenGhosts",

@@ -1535,7 +1535,7 @@
           "revealRadius": -1
         },
         {
-          "words": "The pay should be good.",
+          "words": "报酬应该不错。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1551,7 +1551,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Look out for other teams.",
+          "words": "小心其他队伍。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1576,7 +1576,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "Great work Commander",
+          "words": "干得漂亮，指挥官！",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1608,7 +1608,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Looking sharp.",
+          "words": "状态不错。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1665,7 +1665,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "That flew away from us.",
+          "words": "它从我们身边飞走了。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1954,7 +1954,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "Test Wave Two: Launching",
+          "words": "测试波次二：发射",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1986,7 +1986,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Launching.",
+          "words": "发射。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2002,7 +2002,7 @@
           "revealRadius": -1
         },
         {
-          "words": "Launching",
+          "words": "发射",
           "wordsColor": {
             "r": 1,
             "g": 1,
