@@ -12,6 +12,7 @@
 param(
     [string]$mods = "",
     [string]$csv = "",
+    [string]$extraPairs = "",
     [string]$backupRoot = "",
     [switch]$DryRun
 )
@@ -23,6 +24,7 @@ if ([string]::IsNullOrWhiteSpace($mods)) {
     $mods = Join-Path $gr 'Mods'
 }
 if ([string]::IsNullOrWhiteSpace($csv)) { $csv = Join-Path $packRoot 'strings_zh-CN.csv' }
+if ([string]::IsNullOrWhiteSpace($extraPairs)) { $extraPairs = Join-Path $PSScriptRoot 'dict-tags.tsv' }
 if (-not [IO.File]::Exists($csv)) { Write-Host (" 找不到翻译总表: " + $csv) -ForegroundColor Yellow; exit 1 }
 if ([string]::IsNullOrWhiteSpace($backupRoot)) { $backupRoot = Join-Path $packRoot 'backup\Mods-tags' }
 
@@ -43,6 +45,14 @@ foreach ($l in [IO.File]::ReadLines($csv, [Text.Encoding]::UTF8)) {
     if ($p -lt 1) { continue }
     $k = $l.Substring(0, $p)
     if (-not $dict.ContainsKey($k)) { $dict[$k] = $l.Substring($p + 1) }
+}
+if ([IO.File]::Exists($extraPairs)) {
+    foreach ($l in [IO.File]::ReadLines($extraPairs, [Text.Encoding]::UTF8)) {
+        $p = $l.IndexOf([char]9)
+        if ($p -lt 1) { continue }
+        $k = Normalize $l.Substring(0, $p)
+        if (-not $dict.ContainsKey($k)) { $dict[$k] = $l.Substring($p + 1) }
+    }
 }
 Write-Host ("总表键: " + $dict.Count)
 

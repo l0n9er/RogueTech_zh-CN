@@ -653,6 +653,7 @@ Ok "完成"
 Step 22 "汉化机师个性/亲和 tag 文本"
 RunTool 'apply-tags.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-csv', $csvDst,
+                           '-extraPairs', (Join-Path $PSScriptRoot 'dict-tags.tsv'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-tags')) | Out-Null
 RunTool 'apply-tagkeys.ps1' @('-csv', $csvDst) | Out-Null
 RunTool 'apply-basetags.ps1' @('-gameRoot', $gameRoot,
