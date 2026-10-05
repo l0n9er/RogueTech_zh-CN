@@ -1,6 +1,6 @@
 # BATTLETECH / RogueTech 简体中文补丁
 
-给 **BATTLETECH**（含全部 DLC）与 **RogueTech** 大型模组包使用的简体中文汉化补丁。**目前仅支持 Steam 版**（GOG 版的程序集与 Steam 版不通用）。
+给 **BATTLETECH**（含全部 DLC）与 **RogueTech** 大型模组包使用的简体中文汉化补丁，兼容 Steam 与 GOG 版。
 
 面向已经装好 RogueTech 的玩家：解压、双击 `安装.bat`、重启游戏即可。
 
@@ -17,7 +17,7 @@
 
 | 内容 | 说明 |
 |---|---|
-| 翻译总表 | `strings_zh-CN.csv`，61,788 行 / 61,415 键 |
+| 翻译总表 | `strings_zh-CN.csv`，65,310 行 / 64,933 键 |
 | 机甲 / 战车 / 战甲 | 名称、描述、角色定位（Details / YangsThoughts / StockRole） |
 | MechAffinity | 亲和面板的名称与描述 |
 | 各模组本地化表 | 战斗、合约、事件、星图等 |
@@ -28,7 +28,7 @@
 | **游戏本体状态说明** | 士气、技师点、伤势等 simGameStatDesc 模板 |
 | **模组状态说明** | 40 余个模组自带的合约报酬、声望、维护费用等结果模板 |
 | **装备特性名与说明** | Quirk 特性名、BonusDescriptions 的特性标签 |
-| **界面硬编码文字** | 25 个汉化 DLL（机库、改装、合约等界面标签） |
+| **界面硬编码文字** | Steam/GOG 两套 `Assembly-CSharp.dll` 与 25 个通用汉化 DLL（机库、改装、合约等界面标签） |
 | **战斗浮动提示** | 8 个模组的 mod_localized_text（热量/关机/受伤检定、战斗台词） |
 | **难度设置菜单** | IRTweaks 的难度选项名与说明、CustomFilters 库存页签 |
 | **角色创建背景** | 出身与经历的选项名、说明与开场剧情 |
@@ -39,7 +39,7 @@
 术语以 **官方中文术语表**（terms-13908.json，2,952 条）与项目自建术语表为准，
 并做过全表一致性归一（如 混战→近战、载具→车辆、驾驶员→机师）。
 
-> **关于汉化 DLL**：补丁内含 25 个汉化程序集（`Assembly-CSharp.dll`、
+> **关于汉化 DLL**：补丁内含 Steam/GOG 两套 `Assembly-CSharp.dll`，以及 25 个通用汉化程序集（
 > `MechAffinity.dll`、`CustomUnits.dll`、`StrategicOperations.dll` 等），
 > 用于汉化游戏界面中硬编码的文字。**这些 DLL 出自月光石头的
 > 《BATTLETECH 汉化工具》**，详见下方"致谢"章节。
@@ -50,9 +50,9 @@
 
 ### 前置条件
 
-- 已安装 **BATTLETECH**（**Steam 版**）与 **RogueTech** 模组包
-  > 注意：补丁内含的汉化 DLL 只有 Steam 版。GOG 版与 Steam 版的程序集
-  > 不通用，直接套用会导致游戏无法启动，因此本补丁**目前只支持 Steam 版**。
+- 已安装 **BATTLETECH**（Steam 或 GOG 版）与 **RogueTech** 模组包
+  > 安装开始时会要求明确选择 Steam 或 GOG 版本；也可手动使用
+  > `-edition Steam` 或 `-edition GOG` 指定。
 - Windows + PowerShell 5.1（系统自带）
 - **游戏必须完全退出**（游戏运行时会占用模组文件，无法替换）
 
@@ -64,8 +64,10 @@
 
 3. **双击 `安装.bat`**
 
-   脚本会自动完成 16 个步骤。安装耗时约 **2~3 分钟**，请等它跑完再关窗口。
-   其中第 6 步会把 RogueTech 启动器的 `SafeLaunchDisabled` 改为 `true`，
+   脚本会显示 6 个安装阶段，内部共 25 个子步骤（第 20 步是可选的月光石头词条合并）。安装耗时约 **2~3 分钟**，请等它跑完再关窗口。
+   安装开始前会检查包内文件和工具是否齐全；关键步骤失败会立即停止，
+   不会继续显示“安装完成”。详细输出保存在本次 `backup\时间戳\install.log`。
+   安装开始时会先要求选择 Steam/GOG 版本；第 6 步会把 RogueTech 启动器的 `SafeLaunchDisabled` 改为 `true`，
    跳过它的模组文件哈希校验 —— 否则启动器会把汉化判为"篡改"并用英文
    原版覆盖回去，这是汉化"装了没效果"的主要原因。
 
@@ -94,9 +96,9 @@ powershell -File "工具\安装.ps1" -gameRoot "D:\Steam\steamapps\common\BATTLE
 1. 写入翻译总表
 2. 写入 MechAffinity 亲和数据
 3. 写入模组本地化表与数据文件
-4. 写入汉化 DLL（25 个，界面文字）
-5. 清理遗留的 `.zhbak` 备份文件
-6. 禁用 RogueTech 启动器的文件校验（防止汉化被覆盖）
+4. 写入汉化 DLL、字体与资源清单
+5. 清理遗留的 `.zhbak` 与 faction 备份目录
+6. 禁用 RogueTech 启动器的文件校验，并移出旧的 ModTek 缓存
 7. 汉化数据字段（Details / YangsThoughts / StockRole）
 8. 补译装备特性说明（BonusDescriptions）
 9. 汉化游戏本体与模组的状态说明模板（simGameStatDesc）
@@ -109,9 +111,16 @@ powershell -File "工具\安装.ps1" -gameRoot "D:\Steam\steamapps\common\BATTLE
 16. 汉化合约名、闪点简报与地图名
 17. 补译 Quirk 特性显示名
 18. 汉化装备分类显示名
-19. 清理控制字符、标点空格与插值占位符
-20. 术语归一化与格式修复
-21. 校验
+19. 补充界面弹窗与任务目标兜底键
+20. （可选）合并月光石头新版条目
+21. 修复译文中的性别分支残留英文
+22. 汉化机师个性与亲和 tag 文本
+23. 清理控制字符、标点空格与插值占位符
+24. 术语归一化与格式修复
+25. 校验模组备份、翻译总表与注册表标识符
+
+如果安装过程中断，已经生成的备份会保留在对应时间戳目录；修复问题后可以重新运行安装，
+也可以用 `还原.bat` 还原最近一次完整备份。安装产生的 ModTek 缓存备份不会被还原脚本写回游戏。
 
 **安全设计：**
 
@@ -176,7 +185,7 @@ Mods_Core_RogueTechCore_Localization.json
 
 - **运行时动态拼接的文本**（如把两个数值拼成一句话）。
 - 少量**隐藏占位符**（`Hidden TimerObjective` 之类），玩家正常情况下看不到。
-- 极少数第三方 DLL 中未覆盖到的字符串——本补丁已收录 25 个汉化 DLL
+- 极少数第三方 DLL 中未覆盖到的字符串——本补丁已收录 26 个汉化 DLL
   覆盖主要界面，但若有遗漏，欢迎提交截图反馈。
 
 另外，以下几类名称**有意保留英文原文**，属设计选择而非遗漏：
@@ -199,7 +208,7 @@ A：按顺序排查：① 确认装完后**重启过游戏**；② 检查是否�
 
 **Q：安装脚本会覆盖我游戏里的 DLL 吗？**
 
-A：会。安装脚本第 4 步会替换 25 个汉化 DLL（含 `Assembly-CSharp.dll`）。
+A：会。安装脚本第 4 步会替换 26 个汉化 DLL（含 `Assembly-CSharp.dll`）。
 覆盖前会自动备份到 `backup\<时间戳>\`，可随时回滚。如果你已经装过
 月光石头的汉化工具，本补丁的 DLL 与之同源，不会造成冲突。
 
@@ -215,6 +224,11 @@ A：完全退出游戏（含 RogueLauncher、Steam 的启动进程），再重�
 **Q：安装脚本说"找不到游戏目录"？**
 
 A：用 `-gameRoot` 参数手动指定，见上方"关于游戏路径"。
+
+**Q：GOG 版如何安装？**
+
+A：双击 `安装.bat` 后选择 `[2] GOG`。也可以手动运行：
+`powershell -File "工具\安装.ps1" -edition GOG -gameRoot "你的游戏目录"`。
 
 **Q：可以用 MO/ModTek 的模组形式加载吗？**
 
@@ -234,11 +248,11 @@ strings_zh-CN.csv                  翻译总表（游戏真正读取的文件）
 汉化说明-内容分布与机制.md          汉化内容的位置分类、生效通道、覆盖率与踩坑记录
 文件清单.txt                       完整文件列表
 BattleTech_Data\Managed\          游戏主程序集（Assembly-CSharp.dll 等 2 个）
-Mods\                             已汉化的模组数据 + 汉化 DLL（整套 25 个）
+Mods\                             已汉化的模组数据 + 汉化 DLL（整套 26 个）
 RtCache\                          启动器缓存副本
 可选-模组形式\                     把汉化做成 ModTek 模组（可选）
 工具\                             安装脚本（一般无需手动运行）
-  ├─ 安装.ps1                     主安装脚本（16 步）
+  ├─ 安装.ps1                     主安装脚本（6 个阶段、25 个子步骤，第 20 步可选）
   ├─ 还原.ps1                     按备份还原
   ├─ find-game.ps1                游戏目录自动探测
   ├─ fold-apply.ps1               数据字段汉化（Details / YangsThoughts / StockRole）
@@ -259,7 +273,7 @@ RtCache\                          启动器缓存副本
   └─ dict-*.tsv                   各字段中英对照词典（9 个）
 ```
 
-> 包内的 25 个汉化 DLL 按原始相对路径存放，安装脚本会逐个写入游戏对应位置。
+> 安装包内含 26 个安装用汉化 DLL，另附一份 GOG 专用 `Assembly-CSharp.dll`；安装脚本会按版本选择后写入游戏对应位置。
 
 ---
 
@@ -356,7 +370,7 @@ https://creativecommons.org/publicdomain/zero/1.0/legalcode.zh-Hans
 
 - BATTLETECH 游戏本体与 DLC 的原始文本 —— © Harebrained Schemes / Paradox Interactive
 - RogueTech 模组包及各子模组数据 —— © RogueTech 开发团队及各子模组作者
-- 月光石头《BATTLETECH 汉化工具》的 25 个汉化 DLL 及约 450 条译文 —— © 月光石头
+- 月光石头《BATTLETECH 汉化工具》的 26 个汉化 DLL 及约 450 条译文 —— © 月光石头
 - 其余第三方模组文件（`MechAffinity.dll` 界面标签替换、各模组 `Localization.json`、
   `terms-13908.json` 术语表等）—— 版权归各自原作者
 

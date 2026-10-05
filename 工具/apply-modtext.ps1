@@ -68,6 +68,12 @@ function Esc([string]$s) {
 }
 
 $enc = New-Object Text.UTF8Encoding $false
+$ser = $null
+if (-not $DryRun) {
+    Add-Type -AssemblyName System.Web.Extensions
+    $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+    $ser.MaxJsonLength = [int]::MaxValue
+}
 $stats = @{ files = 0; changed = 0; repl = 0 }
 $script:map = $map
 $script:stats = $stats
@@ -127,9 +133,6 @@ foreach ($f in $files) {
         # 自带的解析器容忍, .NET 严格解析器不容忍。校验前先去掉尾逗号,
         # 只验证"我们改写的内容"没有破坏结构。
         $probe = [regex]::Replace($new, ',(\s*[}\]])', '$1')
-        Add-Type -AssemblyName System.Web.Extensions
-        $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
-        $ser.MaxJsonLength = [int]::MaxValue
         try { [void]$ser.DeserializeObject($probe) } catch { Write-Host (" 跳过(JSON 无效): " + $f.Name + " @ " + (Split-Path $f.DirectoryName -Leaf)); continue }
         $rel = $f.FullName.Substring($mods.Length).TrimStart($BS)
         $bak = Join-Path $backupRoot $rel

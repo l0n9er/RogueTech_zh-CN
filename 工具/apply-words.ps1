@@ -39,6 +39,12 @@ $sr.Close()
 Write-Host ("对照表: " + $map.Count + " 条")
 
 $enc = New-Object Text.UTF8Encoding $false
+$ser = $null
+if (-not $DryRun) {
+    Add-Type -AssemblyName System.Web.Extensions
+    $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+    $ser.MaxJsonLength = [int]::MaxValue
+}
 $stats = @{ files = 0; changed = 0; repl = 0 }
 $script:map = $map
 $script:stats = $stats
@@ -77,9 +83,6 @@ foreach ($f in $files) {
     })
     if ($new -eq $orig) { continue }
     if (-not $DryRun) {
-        Add-Type -AssemblyName System.Web.Extensions
-        $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
-        $ser.MaxJsonLength = [int]::MaxValue
         try { [void]$ser.DeserializeObject($new) } catch { Write-Host ("跳过(JSON 无效): " + $f.Name); continue }
         $rel = $f.FullName.Substring($mods.Length).TrimStart($BS)
         $bak = Join-Path $backupRoot $rel

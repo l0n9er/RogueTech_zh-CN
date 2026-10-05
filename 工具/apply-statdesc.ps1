@@ -56,6 +56,12 @@ $sr.Close()
 Write-Host ("statdesc pairs: " + $map.Count)
 
 $enc = New-Object Text.UTF8Encoding $false
+$ser = $null
+if (-not $DryRun) {
+    Add-Type -AssemblyName System.Web.Extensions
+    $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+    $ser.MaxJsonLength = [int]::MaxValue
+}
 $stats = @{ files = 0; changed = 0; repl = 0 }
 $fields = @('setResult','positiveResult','negativeResult','temporalSetResult','temporalPositiveResult','temporalNegativeResult','infinitiveSetResult','infinitivePositiveResult','infinitiveNegativeResult')
 $rx = [regex]('("(?:' + ($fields -join '|') + ')"\s*:\s*")((?:[^"\\]|\\.)*)(")')
@@ -77,9 +83,6 @@ foreach ($fp in $targets) {
     })
     if ($new -eq $orig) { continue }
     if (-not $DryRun) {
-        Add-Type -AssemblyName System.Web.Extensions
-        $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
-        $ser.MaxJsonLength = [int]::MaxValue
         try { [void]$ser.DeserializeObject($new) } catch { Write-Host (" skip(invalid JSON): " + (Split-Path $fp -Leaf)); continue }
         # 模组文件可能同名(如 IBLS_MechbayUpkeepModifier 在多个模组里都有),
         # 备份按"相对游戏根目录"存放, 避免相互覆盖

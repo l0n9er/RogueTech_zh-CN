@@ -78,6 +78,12 @@ $needles = @(
 # 标点类规则(空格+标点 / 标点+空格 / 重复标点)无法用 Contains, 单独用轻量正则
 $filePunctRx = [regex]'(\s+[，。、：；！？”》）】《]|[，。、：；！？“（【《]\s+(?=\S)|([，。、；：？])\1|！{4,})'
 $encNoBom = New-Object Text.UTF8Encoding $false
+$ser = $null
+if (-not $DryRun) {
+    Add-Type -AssemblyName System.Web.Extensions
+    $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+    $ser.MaxJsonLength = [int]::MaxValue
+}
 $auditEnc = New-Object Text.UTF8Encoding $true
 if ([string]::IsNullOrWhiteSpace($audit)) {
     $ad = Join-Path $packRoot 'backup'
@@ -158,9 +164,6 @@ foreach ($f in $files) {
     $new = $fieldRx.Replace($orig, $eval)
     if ($new -eq $orig) { continue }
     if (-not $DryRun) {
-        Add-Type -AssemblyName System.Web.Extensions
-        $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
-        $ser.MaxJsonLength = [int]::MaxValue
         try { [void]$ser.DeserializeObject($new) } catch { Write-Host ('跳过(JSON 无效): ' + $script:rel); $stats.skip++; continue }
         $bak = Join-Path $backupRoot $script:rel
         $d = Split-Path $bak -Parent

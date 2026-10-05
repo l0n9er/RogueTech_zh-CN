@@ -40,10 +40,11 @@ if ([string]::IsNullOrWhiteSpace($gameRoot)) {
 }
 
 # ---------- 游戏运行中则拒绝 ----------
-$proc = Get-Process -Name BattleTech -ErrorAction SilentlyContinue
+$proc = @(Get-Process -Name BattleTech,RogueLauncher -ErrorAction SilentlyContinue)
 if ($proc) {
     Write-Host ""
-    Write-Host (" 检测到游戏正在运行（PID " + $proc.Id + "）。") -ForegroundColor Yellow
+    $pids = [string]::Join(', ', @($proc | ForEach-Object { $_.Name + ':' + $_.Id }))
+    Write-Host (" 检测到游戏或启动器正在运行（" + $pids + "）。") -ForegroundColor Yellow
     Write-Host " 请先完全退出游戏，再运行还原。" -ForegroundColor Yellow
     Write-Host ""
     exit 1
@@ -100,9 +101,10 @@ Say " Steam 的\"验证游戏文件完整性\"或重新解压 RogueTech。"
 Say ""
 
 # ---------- 执行还原: 按备份内相对路径覆盖回游戏目录 ----------
-# 备份结构: backup\<时间戳>\<相对游戏根的路径> (zhbak 除外, 它不属于覆盖范围)
+# 备份结构: backup\<时间戳>\<相对游戏根的路径>。
+# zhbak、bakdirs、modtek-cache 是安装过程的辅助备份，不应写回游戏目录。
 $files = Get-ChildItem $stampDir -Recurse -File -Force |
-         Where-Object { $_.FullName -notmatch '\\zhbak\\' }
+         Where-Object { $_.FullName -notmatch '\\(zhbak|bakdirs|modtek-cache)\\' }
 if ($files.Count -eq 0) {
     Warn "该备份内没有可还原的文件。"
     exit 1

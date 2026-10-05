@@ -79,15 +79,18 @@ $files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
     -not $bad
 }
 $enc = New-Object Text.UTF8Encoding $false
+$ser = $null
+if (-not $DryRun) {
+    Add-Type -AssemblyName System.Web.Extensions
+    $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+    $ser.MaxJsonLength = [int]::MaxValue
+}
 foreach ($f in $files) {
     $stats.files++
     $orig = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)
     $new = $rx.Replace($orig, $eval)
     if ($new -eq $orig) { continue }
     if (-not $DryRun) {
-        Add-Type -AssemblyName System.Web.Extensions
-        $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
-        $ser.MaxJsonLength = [int]::MaxValue
         [void]$ser.DeserializeObject($new)
         $rel = $f.FullName.Substring($mods.Length).TrimStart($BS)
         $bak = Join-Path $backupRoot $rel

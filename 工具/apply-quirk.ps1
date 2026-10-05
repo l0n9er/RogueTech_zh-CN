@@ -40,6 +40,12 @@ $sr.Close()
 Write-Host ("quirk pairs: " + $map.Count)
 
 $enc = New-Object Text.UTF8Encoding $false
+$ser = $null
+if (-not $DryRun) {
+    Add-Type -AssemblyName System.Web.Extensions
+    $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+    $ser.MaxJsonLength = [int]::MaxValue
+}
 $stats = @{ files = 0; changed = 0; repl = 0 }
 # One "Name" line with its value, used only while inside the Description block.
 $nameLine = New-Object System.Text.RegularExpressions.Regex ('^(\s*"Name"\s*:\s*")((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)(")(\s*,?\s*)$')
@@ -86,9 +92,6 @@ foreach ($f in $files) {
     $orig = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)
     if ($new -eq $orig) { continue }
     if (-not $DryRun) {
-        Add-Type -AssemblyName System.Web.Extensions
-        $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
-        $ser.MaxJsonLength = [int]::MaxValue
         try { [void]$ser.DeserializeObject($new) } catch { Write-Host (" skip(invalid JSON): " + $f.Name); continue }
         $rel = $f.FullName.Substring($mods.Length).TrimStart($BS)
         $bak = Join-Path $backupRoot $rel

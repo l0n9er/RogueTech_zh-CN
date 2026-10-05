@@ -31,6 +31,8 @@ while (-not $sr.EndOfStream) {
 $sr.Close()
 Write-Host ("映射条目: " + $map.Count)
 if (-not (Test-Path $bakDir)) { [void][IO.Directory]::CreateDirectory($bakDir) }
+$ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+$ser.MaxJsonLength = [int]::MaxValue
 $repl = 0; $bad = 0
 foreach ($f in [IO.Directory]::GetFiles($dir, '*.json')) {
     $orig = [IO.File]::ReadAllText($f, [Text.Encoding]::UTF8)
@@ -42,9 +44,6 @@ foreach ($f in [IO.Directory]::GetFiles($dir, '*.json')) {
     if ($t -ne $orig) {
         $bak = Join-Path $bakDir ([IO.Path]::GetFileName($f))
         if (-not (Test-Path $bak)) { [IO.File]::WriteAllText($bak, $orig, $enc) }
-        Add-Type -AssemblyName System.Web.Extensions
-        $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
-        $ser.MaxJsonLength = [int]::MaxValue
         try { [void]$ser.DeserializeObject($t) } catch { $bad++; Write-Host ("JSON 校验失败，跳过: " + $f); continue }
         [IO.File]::WriteAllText($f, $t, $enc)
     }

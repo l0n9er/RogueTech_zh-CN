@@ -1,11 +1,35 @@
 ﻿param(
     [string]$gameRoot = "",
+    # 必须明确指定 Steam 或 GOG；未指定时由脚本提示选择。
+    [string]$edition = '',
     # 可选: 月光石头新版汉化包的数据目录(…\battletech-trans\resources\data)。
     # 指定后会从中增量合并本包缺少的条目(主要是运行时拼接的载具整段描述)。
     [string]$moonstone = ""
 )
 $ErrorActionPreference = 'Stop'
 $enc = New-Object Text.UTF8Encoding $false
+$totalSteps = 25
+$groupTotal = 6
+$stepGroup = @{
+    1 = 1; 2 = 1; 3 = 1; 4 = 1
+    5 = 2; 6 = 2
+    7 = 3; 8 = 3; 9 = 3; 10 = 3; 11 = 3; 12 = 3; 13 = 3; 14 = 3; 15 = 3; 16 = 3; 17 = 3; 18 = 3; 19 = 3; 20 = 3
+    21 = 4; 22 = 4
+    23 = 5; 24 = 5
+    25 = 6
+}
+$groupTitle = @{
+    1 = '基础资源安装'
+    2 = '清理旧备份与启动环境'
+    3 = '数据、文本与界面汉化'
+    4 = '运行时文本与标签修复'
+    5 = '格式、标点与术语修复'
+    6 = '最终校验'
+}
+$script:currentStep = '准备'
+$script:lastGroup = 0
+$script:installLog = $null
+$script:installerPath = $PSCommandPath
 
 # 控制台输出编码: PS 5.1 默认按控制台当前代码页输出中文, 若与窗口代码页
 # 不一致会乱码。这里显式采用系统默认(GBK/936), 与 安装.bat 的 chcp 936 一致。
@@ -16,10 +40,54 @@ try {
     }
 } catch { }
 
-function Say($m)  { Write-Host $m }
-function Step($n, $m) { Write-Host ""; Write-Host ("[" + $n + "/25] " + $m) }
-function Ok($m)   { Write-Host ("      " + $m) }
-function Warn($m) { Write-Host ("      警告: " + $m) -ForegroundColor Yellow }
+function LogLine($m) {
+    if (-not [string]::IsNullOrWhiteSpace($script:installLog)) {
+        Add-Content -LiteralPath $script:installLog -Value ([string]$m) -Encoding UTF8
+    }
+}
+function Say($m)  { Write-Host $m; LogLine $m }
+function Step($n, $m) {
+    $group = $stepGroup[[int]$n]
+    if ($group -ne $script:lastGroup) {
+        $script:lastGroup = $group
+        $heading = "[阶段 " + $group + "/" + $groupTotal + "] " + $groupTitle[$group]
+        Write-Host ""
+        Write-Host $heading -ForegroundColor Cyan
+        LogLine $heading
+    }
+    $script:currentStep = ("阶段 " + $group + "/" + $groupTotal + " · 子步骤 " + $n + "/" + $totalSteps + " · " + $m)
+    Write-Host ("  · " + $m)
+    LogLine ("  · " + $m)
+}
+function OptionalStep($n, $m) {
+    $group = $stepGroup[[int]$n]
+    if ($group -ne $script:lastGroup) {
+        $script:lastGroup = $group
+        $heading = "[阶段 " + $group + "/" + $groupTotal + "] " + $groupTitle[$group]
+        Write-Host ""
+        Write-Host $heading -ForegroundColor Cyan
+        LogLine $heading
+    }
+    $script:currentStep = ("阶段 " + $group + "/" + $groupTotal + " · 子步骤 " + $n + "/" + $totalSteps + " · 扩展 · " + $m)
+    Write-Host ("  · [扩展] " + $m)
+    LogLine ("  · [扩展] " + $m)
+}
+function Ok($m)   { Write-Host ("      " + $m); LogLine ("      " + $m) }
+function Warn($m) { Write-Host ("      警告: " + $m) -ForegroundColor Yellow; LogLine ("警告: " + $m) }
+
+trap {
+    $msg = $_.Exception.Message
+    Write-Host ""
+    Write-Host (" 安装在 " + $script:currentStep + " 失败: " + $msg) -ForegroundColor Red
+    if (-not [string]::IsNullOrWhiteSpace($script:installLog)) {
+        LogLine ("失败: " + $script:currentStep + " :: " + $msg)
+        Write-Host (" 详细日志: " + $script:installLog) -ForegroundColor Yellow
+    }
+    if (-not [string]::IsNullOrWhiteSpace($backupDir)) {
+        Write-Host (" 已生成的备份仍保留在: " + $backupDir) -ForegroundColor Yellow
+    }
+    exit 1
+}
 
 # ---------- 定位游戏目录 ----------
 $userSpecified = -not [string]::IsNullOrWhiteSpace($gameRoot)
@@ -43,6 +111,8 @@ if (-not $userSpecified) {
         exit 1
     }
 }
+$gameRoot = [IO.Path]::GetFullPath(([string]$gameRoot).Trim())
+if ($gameRoot.Length -gt 3) { $gameRoot = $gameRoot.TrimEnd('\') }
 
 Say "================================================"
 Say " BATTLETECH / RogueTech 简体中文补丁 安装"
@@ -50,10 +120,11 @@ Say "================================================"
 Say (" 游戏目录: " + $gameRoot)
 
 # ---------- 游戏运行中则拒绝 ----------
-$proc = Get-Process -Name BattleTech -ErrorAction SilentlyContinue
+$proc = @(Get-Process -Name BattleTech,RogueLauncher -ErrorAction SilentlyContinue)
 if ($proc) {
     Write-Host ""
-    Write-Host (" 检测到游戏正在运行（PID " + $proc.Id + "）。") -ForegroundColor Yellow
+    $pids = [string]::Join(', ', @($proc | ForEach-Object { $_.Name + ':' + $_.Id }))
+    Write-Host (" 检测到游戏或启动器正在运行（" + $pids + "）。") -ForegroundColor Yellow
     Write-Host " 请先完全退出游戏，再重新运行本安装。" -ForegroundColor Yellow
     Write-Host ""
     exit 1
@@ -63,80 +134,14 @@ $packRoot = Split-Path $PSScriptRoot -Parent
 $stamp = (Get-Date).ToString("yyyyMMdd-HHmmss")
 $backupDir = Join-Path $packRoot ("backup\" + $stamp)
 [void][IO.Directory]::CreateDirectory($backupDir)
+$script:installLog = Join-Path $backupDir 'install.log'
+[Diagnostics.Stopwatch]$script:installTimer = [Diagnostics.Stopwatch]::StartNew()
+[IO.File]::WriteAllText($script:installLog, ("安装开始: " + (Get-Date -Format 'yyyy-MM-dd HH:mm:ss') + "`r`n"), $enc)
 Say (" 备份目录: backup\" + $stamp)
+Say (" 安装日志: backup\" + $stamp + "\install.log")
 
-function BackupAndCopy($src, $dst, $label) {
-    if (-not [IO.File]::Exists($src)) { Warn ("包内缺少文件，已跳过: " + $label); return $false }
-    if ([IO.File]::Exists($dst)) {
-        # 备份保留原目录结构(相对游戏根), 一键还原时直接按相对路径覆盖回去
-        $rel = $dst.Substring($gameRoot.Length).TrimStart('\')
-        $bak = Join-Path $backupDir $rel
-        $bakParent = Split-Path $bak -Parent
-        if (-not [IO.Directory]::Exists($bakParent)) { [void][IO.Directory]::CreateDirectory($bakParent) }
-        [IO.File]::Copy($dst, $bak, $true)
-    }
-    $dir = Split-Path $dst -Parent
-    if (-not [IO.Directory]::Exists($dir)) { [void][IO.Directory]::CreateDirectory($dir) }
-    [IO.File]::Copy($src, $dst, $true)
-    return $true
-}
-
-# 工具脚本统一调用方式(带失败提示，不中断整体安装)
-function RunTool($script, $extraArgs) {
-    $sp = Join-Path $PSScriptRoot $script
-    if (-not (Test-Path $sp)) { Warn ($script + " 不存在，已跳过"); return }
-    $arg = @('-NoProfile','-ExecutionPolicy','Bypass','-File', $sp) + $extraArgs
-    & powershell @arg
-    if ($LASTEXITCODE -ne 0) { Warn ($script + " 返回码 " + $LASTEXITCODE) }
-}
-
-# ---------- 1) 翻译总表 ----------
-Step 1 "写入翻译总表"
-$csvName = "strings_zh-CN.csv"
-$csvDst = Join-Path $gameRoot "BattleTech_Data\StreamingAssets\data\localization\$csvName"
-if (BackupAndCopy (Join-Path $packRoot $csvName) $csvDst "翻译总表") {
-    $n = ([IO.File]::ReadAllText($csvDst, [Text.Encoding]::UTF8) -split "`r`n").Count
-    Ok ("已写入，" + $n + " 行")
-}
-
-# ---------- 2) 亲和数据 ----------
-Step 2 "写入 MechAffinity 亲和数据"
-$affSrc = Join-Path $packRoot "Mods\Core\MechAffinity\AffinityDefs"
-if ([IO.Directory]::Exists($affSrc)) {
-    $cnt = 0
-    foreach ($f in [IO.Directory]::GetFiles($affSrc, "*.json")) {
-        $dst = Join-Path $gameRoot ("Mods\Core\MechAffinity\AffinityDefs\" + [IO.Path]::GetFileName($f))
-        if (BackupAndCopy $f $dst "亲和数据") { $cnt++ }
-    }
-    Ok ("" + $cnt + " 个文件")
-} else { Warn "包内缺少亲和数据目录，已跳过" }
-
-# ---------- 3) 本地化表与其余模组数据 ----------
-# 包内 Mods\ 下还有各模组的 Localization.json（CULTURE_ZH_CN 译文）与
-# CustomLocalization 的 mod.json 等数据文件。这些译文只存在于包内 ——
-# 安装脚本的词典（dict-all.tsv）不带它们：fold-apply 只处理
-# Details/YangsThoughts/StockRole 三种字段，且显式排除 Localization 目录。
-# 若不复制，界面里的一大批装备、技能、背景说明仍会是英文。
-# DLL 由下一步按固定清单处理，这里跳过 *.dll 避免重复写入。
-Step 3 "写入模组本地化表与数据文件"
-$dataSrc = Join-Path $packRoot "Mods"
-$dataCnt = 0
-$dataSkip = 0
-if ([IO.Directory]::Exists($dataSrc)) {
-    foreach ($f in [IO.Directory]::GetFiles($dataSrc, "*", [IO.SearchOption]::AllDirectories)) {
-        $rel = $f.Substring($dataSrc.Length).TrimStart('\')
-        if ($rel -like "*.dll") { continue }
-        $dst = Join-Path $gameRoot ("Mods\" + $rel)
-        if (BackupAndCopy $f $dst $rel) { $dataCnt++ } else { $dataSkip++ }
-    }
-    if ($dataSkip -gt 0) { Warn ("有 " + $dataSkip + " 个数据文件写入失败，已跳过") }
-    Ok ("" + $dataCnt + " 个文件")
-} else { Warn "包内缺少 Mods 目录，已跳过" }
-
-# ---------- 4) 汉化 DLL ----------
-# 这些 DLL 出自月光石头的《BATTLETECH 汉化工具》，通过反编译修改硬编码
-# 字符串实现界面汉化。包内按原始相对路径存放，逐个体替换。
-Step 4 "写入汉化 DLL（界面文字）"
+# 汉化 DLL 与非 DLL 资源的固定清单。先定义清单，再做一次完整预检查，
+# 确保任何游戏文件被覆盖前就能发现安装包不完整。
 $dllList = @(
     'BattleTech_Data\Managed\Assembly-CSharp.dll',
     'BattleTech_Data\Managed\battletech_core.dll',
@@ -165,28 +170,200 @@ $dllList = @(
     'Mods\Core\TisButAScratch\TisButAScratch.dll',
     'Mods\WarTechIIC\WarTechIIC.dll'
 )
-# 非 DLL 的汉化必需资源（不在 Mods\ 下，第 3 步覆盖不到）：
-#   font                  —— Unity 资源包，中文字形字体，缺了中文会显示成方框
-#   VersionManifest.csv   —— 游戏资源清单，登记资源加载
 $assetList = @(
     'BattleTech_Data\StreamingAssets\font',
     'BattleTech_Data\StreamingAssets\data\VersionManifest.csv'
 )
-$dllCnt = 0
-$dllSkip = 0
-foreach ($rel in $dllList) {
-    $s = Join-Path $packRoot $rel
-    $d = Join-Path $gameRoot $rel
-    if (BackupAndCopy $s $d $rel) { $dllCnt++ } else { $dllSkip++ }
+$steamAssemblyRel = 'BattleTech_Data\Managed\Assembly-CSharp.dll'
+$gogAssemblyRel = '版本\GOG\BattleTech_Data\Managed\Assembly-CSharp.dll'
+
+function BackupAndCopy($src, $dst, $label) {
+    if ([IO.File]::Exists($src)) {
+        if ([IO.Directory]::Exists($dst)) { throw ("目标路径类型冲突（需要文件）: " + $label + " -> " + $dst) }
+        if ([IO.File]::Exists($dst)) {
+            # 备份保留原目录结构(相对游戏根), 一键还原时直接按相对路径覆盖回去
+            $rel = $dst.Substring($gameRoot.Length).TrimStart('\')
+            $bak = Join-Path $backupDir $rel
+            $bakParent = Split-Path $bak -Parent
+            if (-not [IO.Directory]::Exists($bakParent)) { [void][IO.Directory]::CreateDirectory($bakParent) }
+            [IO.File]::Copy($dst, $bak, $true)
+        }
+        $dir = Split-Path $dst -Parent
+        if (-not [IO.Directory]::Exists($dir)) { [void][IO.Directory]::CreateDirectory($dir) }
+        [IO.File]::Copy($src, $dst, $true)
+        return $true
+    }
+    if ([IO.Directory]::Exists($src)) {
+        if ([IO.File]::Exists($dst)) { throw ("目标路径类型冲突（需要目录）: " + $label + " -> " + $dst) }
+        # 目录资源（如 Unity font）按文件逐个备份和复制，保持还原脚本可识别的路径。
+        if ([IO.Directory]::Exists($dst)) {
+            foreach ($old in [IO.Directory]::GetFiles($dst, '*', [IO.SearchOption]::AllDirectories)) {
+                $rel = $old.Substring($gameRoot.Length).TrimStart('\')
+                $bak = Join-Path $backupDir $rel
+                $bakParent = Split-Path $bak -Parent
+                if (-not [IO.Directory]::Exists($bakParent)) { [void][IO.Directory]::CreateDirectory($bakParent) }
+                [IO.File]::Copy($old, $bak, $true)
+            }
+        }
+        foreach ($item in [IO.Directory]::GetFiles($src, '*', [IO.SearchOption]::AllDirectories)) {
+            $rel = $item.Substring($src.Length).TrimStart('\')
+            $target = Join-Path $dst $rel
+            $targetParent = Split-Path $target -Parent
+            if (-not [IO.Directory]::Exists($targetParent)) { [void][IO.Directory]::CreateDirectory($targetParent) }
+            [IO.File]::Copy($item, $target, $true)
+        }
+        return $true
+    }
+    throw ("包内缺少必需文件或目录: " + $label + " -> " + $src)
 }
-if ($dllSkip -gt 0) { Warn ("有 " + $dllSkip + " 个 DLL 包内缺失，已跳过") }
-Ok ("已写入 " + $dllCnt + " 个 DLL")
+
+# 工具脚本统一调用方式。关键工具失败时立即停止，避免留下“看似完成”的半套安装。
+function RunTool($script, $extraArgs) {
+    $sp = Join-Path $PSScriptRoot $script
+    if (-not (Test-Path $sp)) { throw ("缺少安装工具: " + $script) }
+    $arg = @('-NoProfile','-ExecutionPolicy','Bypass','-File', $sp) + $extraArgs
+    Write-Host ("      正在处理: " + $script + " ...") -ForegroundColor DarkGray
+    LogLine ((Get-Date -Format 'HH:mm:ss') + " RUN " + $script)
+    $timer = [Diagnostics.Stopwatch]::StartNew()
+    $output = @(& powershell @arg 2>&1)
+    $rc = $LASTEXITCODE
+    $timer.Stop()
+    foreach ($line in $output) {
+        $text = [string]$line
+        if (-not [string]::IsNullOrWhiteSpace($text)) { Write-Host ("      " + $text); LogLine $text }
+    }
+    LogLine ((Get-Date -Format 'HH:mm:ss') + " DONE " + $script + " " + [math]::Round($timer.Elapsed.TotalSeconds, 1) + "s")
+    if ($rc -ne 0) { throw ($script + " 返回码 " + $rc) }
+}
+
+function AssertPackageInputs {
+    $missing = New-Object 'System.Collections.Generic.List[string]'
+    $mustExist = @(
+        @{ Path = (Join-Path $packRoot 'strings_zh-CN.csv'); Type = 'Leaf' },
+        @{ Path = (Join-Path $packRoot 'Mods'); Type = 'Container' }
+    )
+    foreach ($item in $mustExist) {
+        if (-not (Test-Path -LiteralPath $item.Path -PathType $item.Type)) {
+            [void]$missing.Add($item.Path)
+        }
+    }
+    foreach ($rel in ($dllList + $assetList)) {
+        $p = Join-Path $packRoot $rel
+        # 资源清单既可能是单文件（当前 font 就是文件），也可能是目录。
+        # 先按实际包内类型判断；不存在时统一按 Leaf 检查并报告缺失。
+        $type = if ([IO.Directory]::Exists($p)) { 'Container' } else { 'Leaf' }
+        if (-not (Test-Path -LiteralPath $p -PathType $type)) {
+            [void]$missing.Add($p)
+        }
+    }
+    $gogAssembly = Join-Path $packRoot $gogAssemblyRel
+    if (-not (Test-Path -LiteralPath $gogAssembly -PathType Leaf)) {
+        [void]$missing.Add($gogAssembly)
+    }
+    $body = [IO.File]::ReadAllText($script:installerPath, [Text.Encoding]::UTF8)
+    $refs = [regex]::Matches($body, "'([^']+\.(?:ps1|tsv))'") | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
+    foreach ($rel in $refs) {
+        $p = Join-Path $PSScriptRoot $rel
+        if (-not (Test-Path -LiteralPath $p)) { [void]$missing.Add($p) }
+    }
+    if ($missing.Count -gt 0) {
+        throw ("安装包缺少 " + $missing.Count + " 个必需文件:`r`n  " + [string]::Join("`r`n  ", $missing))
+    }
+    Ok "安装包预检查通过"
+}
+
+function ResolveGameEdition {
+    $steamAssembly = Join-Path $packRoot $steamAssemblyRel
+    $gogAssembly = Join-Path $packRoot $gogAssemblyRel
+    $selected = ([string]$edition).Trim()
+    if ([string]::IsNullOrWhiteSpace($selected)) {
+        Write-Host ""
+        Write-Host "请选择游戏版本：" -ForegroundColor Cyan
+        Write-Host "  [1] Steam"
+        Write-Host "  [2] GOG"
+        $answer = (Read-Host "请输入 1 或 2").Trim()
+        if ($answer -eq '1') { $selected = 'Steam' }
+        elseif ($answer -eq '2') { $selected = 'GOG' }
+        else { throw "版本选择无效，请重新运行并选择 Steam 或 GOG。" }
+    }
+    if ($selected -notin @('Steam','GOG')) {
+        throw ("版本参数无效: " + $selected + "。请使用 -edition Steam 或 -edition GOG。")
+    }
+    $script:gameEdition = $selected
+    $script:selectedAssembly = if ($selected -eq 'GOG') { $gogAssembly } else { $steamAssembly }
+    Say (" 已选择游戏版本: " + $selected)
+}
+
+AssertPackageInputs
+ResolveGameEdition
+
+# ---------- 1) 翻译总表 ----------
+Step 1 "写入翻译总表"
+$csvName = "strings_zh-CN.csv"
+$csvDst = Join-Path $gameRoot "BattleTech_Data\StreamingAssets\data\localization\$csvName"
+if (BackupAndCopy (Join-Path $packRoot $csvName) $csvDst "翻译总表") {
+    $n = @([IO.File]::ReadAllLines($csvDst, [Text.Encoding]::UTF8)).Count
+    Ok ("已写入，" + $n + " 行")
+}
+
+# ---------- 2) 亲和数据 ----------
+Step 2 "写入 MechAffinity 亲和数据"
+$affSrc = Join-Path $packRoot "Mods\Core\MechAffinity\AffinityDefs"
+if ([IO.Directory]::Exists($affSrc)) {
+    $cnt = 0
+    foreach ($f in [IO.Directory]::GetFiles($affSrc, "*.json")) {
+        $dst = Join-Path $gameRoot ("Mods\Core\MechAffinity\AffinityDefs\" + [IO.Path]::GetFileName($f))
+        if (BackupAndCopy $f $dst "亲和数据") { $cnt++ }
+    }
+    Ok ("" + $cnt + " 个文件")
+} else { throw "包内缺少亲和数据目录: $affSrc" }
+
+# ---------- 3) 本地化表与其余模组数据 ----------
+# 包内 Mods\ 下还有各模组的 Localization.json（CULTURE_ZH_CN 译文）与
+# CustomLocalization 的 mod.json 等数据文件。这些译文只存在于包内 ——
+# 安装脚本的词典（dict-all.tsv）不带它们：fold-apply 只处理
+# Details/YangsThoughts/StockRole 三种字段，且显式排除 Localization 目录。
+# 若不复制，界面里的一大批装备、技能、背景说明仍会是英文。
+# DLL 由下一步按固定清单处理，这里跳过 *.dll 避免重复写入。
+Step 3 "写入模组本地化表与数据文件"
+$dataSrc = Join-Path $packRoot "Mods"
+$dataCnt = 0
+if ([IO.Directory]::Exists($dataSrc)) {
+    foreach ($f in [IO.Directory]::GetFiles($dataSrc, "*", [IO.SearchOption]::AllDirectories)) {
+        $rel = $f.Substring($dataSrc.Length).TrimStart('\')
+        if ($rel -like "*.dll") { continue }
+        # 工具运行时生成的备份目录不能随包复制进游戏。ModTek 会按文件名
+        # 识别其中的 .json.bak，并把它们再次当作正式定义加载，造成重复键。
+        if ($rel -match '(^|\\)_bak_faction(\\|$)' -or $rel -like "*.json.bak") { continue }
+        $dst = Join-Path $gameRoot ("Mods\" + $rel)
+        [void](BackupAndCopy $f $dst $rel)
+        $dataCnt++
+        if (($dataCnt % 100) -eq 0) { Write-Host ("      已处理 " + $dataCnt + " 个数据文件...") -ForegroundColor DarkGray }
+    }
+    Ok ("" + $dataCnt + " 个文件")
+} else { Warn "包内缺少 Mods 目录，已跳过" }
+
+# ---------- 4) 汉化 DLL ----------
+# 这些 DLL 出自月光石头的《BATTLETECH 汉化工具》，通过反编译修改硬编码
+# 字符串实现界面汉化。Assembly-CSharp.dll 按用户选择的 Steam/GOG 版本替换，
+# 其余 DLL 按原始相对路径逐个替换。
+Step 4 "写入汉化 DLL（界面文字）"
+$dllCnt = 0
+foreach ($rel in $dllList) {
+    $s = if ($rel -eq $steamAssemblyRel) { $script:selectedAssembly } else { Join-Path $packRoot $rel }
+    $d = Join-Path $gameRoot $rel
+    [void](BackupAndCopy $s $d $rel)
+    $dllCnt++
+    if (($dllCnt % 10) -eq 0) { Write-Host ("      已处理 " + $dllCnt + " 个 DLL...") -ForegroundColor DarkGray }
+}
+Ok ("已写入 " + $dllCnt + " 个 DLL（" + $script:gameEdition + " 版）")
 
 $assetCnt = 0
 foreach ($rel in $assetList) {
     $s = Join-Path $packRoot $rel
     $d = Join-Path $gameRoot $rel
-    if (BackupAndCopy $s $d $rel) { $assetCnt++ } else { Warn ("包内缺少资源，已跳过: " + $rel) }
+    [void](BackupAndCopy $s $d $rel)
+    $assetCnt++
 }
 Ok ("已写入 " + $assetCnt + " 个汉化资源（字体 / 资源清单）")
 
@@ -209,11 +386,35 @@ else {
     Ok ("已移出 " + $zhs.Count + " 个文件")
 }
 
-# ---------- 6) 禁用启动器安全检查 ----------
+# 早期汉化工具把 FactionDef 的原文件备份到 Mods 内的 _bak_faction。
+# ModTek 会把其中的 .json.bak 仍按 FactionDef 加载，造成重复键并卡死读档。
+$badBakDirs = @(Get-ChildItem (Join-Path $gameRoot "Mods") -Recurse -Directory -Force -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -eq '_bak_faction' })
+if ($badBakDirs.Count -eq 0) { Ok "无遗留的 faction 备份目录" }
+else {
+    foreach ($bd in $badBakDirs) {
+        $rel = $bd.FullName.Substring($gameRoot.Length).TrimStart("\")
+        $dst = Join-Path $backupDir ("bakdirs\" + $rel)
+        $parent = Split-Path $dst -Parent
+        if (-not [IO.Directory]::Exists($parent)) { [void][IO.Directory]::CreateDirectory($parent) }
+        Move-Item -LiteralPath $bd.FullName -Destination $dst -Force
+    }
+    Ok ("已移出 " + $badBakDirs.Count + " 个 faction 备份目录")
+}
+
+# ---------- 6) 禁用启动器安全检查并清理 ModTek 缓存 ----------
 # RogueLauncher 启动游戏前会做哈希校验，把汉化过的文件判为 "file tamper
 # detected" 并用缓存里的英文原版覆盖回 Mods（实测一次启动 7400+ 条），
 # 汉化因此大面积失效。把 SafeLaunchDisabled 设为 true 可跳过该覆盖。
-Step 6 "禁用 RogueTech 启动器的文件校验（防止汉化被覆盖）"
+# 同时移出旧缓存，避免 ModTek 继续使用安装前的定义索引。
+Step 6 "禁用启动器校验并重建 ModTek 缓存"
+$modtekCache = Join-Path $gameRoot "Mods\.modtek\Cache"
+if (Test-Path -LiteralPath $modtekCache) {
+    $cacheBackup = Join-Path $backupDir 'modtek-cache'
+    if (Test-Path -LiteralPath $cacheBackup) { Remove-Item -LiteralPath $cacheBackup -Recurse -Force }
+    Move-Item -LiteralPath $modtekCache -Destination $cacheBackup -Force
+    Ok "已移出旧 ModTek 缓存，游戏下次启动时会重建"
+} else { Ok "未发现 ModTek 缓存，跳过清理" }
 RunTool 'fix-launcher-safe.ps1' @('-backupRoot', $backupDir)
 Ok "完成"
 
@@ -420,9 +621,12 @@ Ok "完成"
 # "整段描述" 作为 key 收录。这些条目来自月光石头新版汉化包, 随包分发总表已含;
 # 若用户把包放在工具同机目录, 也可用 -moonstone 指定源目录做增量合并。
 if (-not [string]::IsNullOrWhiteSpace($moonstone)) {
-    Step 20 "合并月光石头新版条目"
+    OptionalStep 20 "合并月光石头新版条目"
     RunTool 'merge-moonstone.ps1' @('-source', $moonstone, '-csv', $csvDst) | Out-Null
     Ok "完成"
+} else {
+    OptionalStep 20 "跳过月光石头新版条目（未指定 -moonstone）"
+    Ok "未执行"
 }
 
 # 译文里的 {角色.Gender?分支:值} 若留着英文动词, 句子里会半英半中
@@ -468,7 +672,7 @@ $zhs2 = @(Get-ChildItem (Join-Path $gameRoot "Mods") -Recurse -File -Force -Erro
           Where-Object { $_.Name -like "*.zhbak*" })
 if ($zhs2.Count -gt 0) { Warn ("仍有 " + $zhs2.Count + " 个 .zhbak 留在 Mods 下") }
 else { Ok "Mods 下无遗留备份文件" }
-$csvLine = ([IO.File]::ReadAllText($csvDst, [Text.Encoding]::UTF8) -split "`r`n").Count
+$csvLine = @([IO.File]::ReadAllLines($csvDst, [Text.Encoding]::UTF8)).Count
 Ok ("翻译总表: " + $csvLine + " 行")
 
 # 注册表标识符校验: 单位类型名(UnitTypes_*.json 的 Name)是内部标识符, 绝不能被汉化
@@ -484,4 +688,8 @@ Say ""
 Say "================================================"
 Say " 安装完成，请重新启动游戏。"
 Say (" 如需回滚，备份在: backup\" + $stamp)
+if ($null -ne $script:installTimer) {
+    $script:installTimer.Stop()
+    Say (" 总耗时: " + [math]::Round($script:installTimer.Elapsed.TotalMinutes, 1) + " 分钟")
+}
 Say "================================================"

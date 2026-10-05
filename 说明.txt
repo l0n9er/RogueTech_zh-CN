@@ -1,5 +1,5 @@
 ﻿========================================
- BATTLETECH + RogueTech 简体中文补丁  v26
+ BATTLETECH + RogueTech 简体中文补丁  v27
 ========================================
 
 
@@ -8,11 +8,11 @@
 RogueTech 模组（含 BATTLETECH 本体）的简体中文补丁。
 术语以官方中文表与项目术语表（terms-13908.json）为准。
 
-  · 翻译总表 strings_zh-CN.csv：61,788 行 / 61,415 键
+  · 翻译总表 strings_zh-CN.csv：65,310 行 / 64,933 键
   · 机甲、战车、战甲的名称与描述（Details / YangsThoughts / StockRole）
   · MechAffinity 亲和面板（名称与描述）
   · 各模组的本地化表、装备分类显示名、AI 能力与特征说明
-  · 25 个汉化 DLL 的界面文字（Assembly-CSharp / MechAffinity / CustomUnits 等）
+  · Steam/GOG 两套 Assembly-CSharp.dll，以及 25 个通用汉化 DLL 的界面文字
 
 【关于汉化 DLL 与致谢】
 
@@ -34,9 +34,10 @@ Streak MRM、QS 弹药、布雷克圣言会对话与安杜瑞恩公国合约文�
 
 2. 双击 安装.bat
    安装脚本会自动：
-     · 识别游戏目录（读取 RogueTech 启动器设置 / Steam 注册表 / 常见安装位置）
-       若自动识别失败，可用参数手动指定：
-         powershell -File "工具\安装.ps1" -gameRoot "D:\Steam\steamapps\common\BATTLETECH"
+      · 识别游戏目录（读取 RogueTech 启动器设置 / Steam 注册表 / 常见安装位置）
+      · 要求选择 Steam/GOG 版本，并写入对应的 Assembly-CSharp.dll
+        也可用参数直接指定：
+          powershell -File "工具\安装.ps1" -edition GOG -gameRoot "D:\Steam\steamapps\common\BATTLETECH"
      · 覆盖前把原文件备份到 backup\<时间戳>\（保留原目录结构，方便还原）
      · 写入各模组的本地化表 Localization.json（CULTURE_ZH_CN 译文）等数据文件
      · 自动禁用 RogueTech 启动器的文件校验（SafeLaunchDisabled=true）
@@ -47,6 +48,9 @@ Streak MRM、QS 弹药、布雷克圣言会对话与安杜瑞恩公国合约文�
    （模组数据只在启动时读取，装完必须重启）
 
 安装耗时约 3~4 分钟，请耐心等待脚本跑完。
+安装开始前会检查包内文件和工具是否齐全；关键步骤失败会立即停止，
+详细输出保存在 backup\时间戳\install.log。安装时会移出旧的 ModTek 缓存，
+让游戏下次启动时重新建立定义索引。
 
 
 【更新与回滚】
@@ -79,9 +83,10 @@ Streak MRM、QS 弹药、布雷克圣言会对话与安杜瑞恩公国合约文�
    检查 <启动器目录>\RtLauncherSettings.xml 中
    <SafeLaunchDisabled> 是否为 true。是 false 就重跑 安装.bat。
 
-4. 是不是装了 GOG 版 DLL？
-   本包只兼容 Steam 版。若游戏从 GOG 购买，用本包会导致游戏打不开，
-   需改用 GOG 版 DLL。
+4. Steam/GOG 版本是否选对？
+   安装开始前会显示选择菜单。若选错，重新运行并选择正确版本，或手动运行：
+     powershell -File "工具\安装.ps1" -edition GOG -gameRoot "你的游戏目录"
+   Steam 版则把 GOG 改为 Steam。两版 Assembly-CSharp.dll 不能混用。
 
 5. 游戏或 RogueTech 更新过？
    更新会覆盖汉化文件，重跑 安装.bat 即可。
@@ -91,8 +96,9 @@ Streak MRM、QS 弹药、布雷克圣言会对话与安杜瑞恩公国合约文�
 
 【已知未汉化的部分】
 
-· 对话 / 战斗字幕（words 字段）—— 已译约 35%，主要是高频语音；
-  剩余多为低频长句（详见 汉化说明-内容分布与机制.md 第三节）
+· 对话 / 战斗字幕（words 字段）——当前包内 4,215 条出现均已译为中文，
+  去重后 1,319 条中没有可识别的英文字幕漏译；游戏目录中未随包覆盖的新增模组
+  文件仍可能保留英文，详见 汉化说明-内容分布与机制.md 第三节。
 · 部分插件 DLL 里硬编码的界面文字（这类文字不查翻译总表，需逐个改二进制）
 · 运行时现算再拼接的文本（如把两个数值拼成一句话）
 · 任务标题中的少数模板（含 {TEAM_TAR.FactionDef.Demonym} 一类占位符，
@@ -138,7 +144,7 @@ LICENSE 与 README.md 的"许可"一节：
 
   · BATTLETECH 游戏本体与 DLC 文本 —— Harebrained Schemes / Paradox
   · RogueTech 模组包及各子模组数据 —— RogueTech 开发团队及子模组作者
-  · 月光石头《BATTLETECH 汉化工具》的 25 个汉化 DLL、中文字体
+  · 月光石头《BATTLETECH 汉化工具》的 26 个汉化 DLL、中文字体
     （StreamingAssets\font）、VersionManifest.csv、行动代号词表
     （CodeWords\mod_localized_text.json）及约 450 条译文
 
