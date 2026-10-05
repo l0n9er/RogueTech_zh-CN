@@ -31,6 +31,9 @@ while (-not $sr.EndOfStream) {
 $sr.Close()
 Write-Host ("映射条目: " + $map.Count)
 if (-not (Test-Path $bakDir)) { [void][IO.Directory]::CreateDirectory($bakDir) }
+# JavaScriptSerializer 属于 System.Web.Extensions；PowerShell 7 不会默认加载
+# 该程序集，必须显式加载，否则分类汉化阶段会在初始化校验器时直接中断。
+Add-Type -AssemblyName System.Web.Extensions
 $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
 $ser.MaxJsonLength = [int]::MaxValue
 $repl = 0; $bad = 0
