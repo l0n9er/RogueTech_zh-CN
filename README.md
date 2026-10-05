@@ -258,7 +258,8 @@ RtCache\                          启动器缓存副本
   ├─ fold-apply.ps1               数据字段汉化（Details / YangsThoughts / StockRole）
   ├─ apply-words.ps1              对话与战斗字幕
   ├─ apply-bonus.ps1              装备特性说明（Short / Long / Full）
-  ├─ apply-fields.ps1             通用字段补译（title / description / UIName / 合约简报）
+  ├─ apply-fields.ps1             通用字段补译（title / description / UIName / 合约简报；
+                                   含 Quicsell 事件 Name / Details）
   ├─ apply-statdesc.ps1           游戏本体状态说明模板
   ├─ apply-quirk.ps1              Quirk 特性显示名
   ├─ apply-category-zh.ps1        装备分类显示名汉化
@@ -270,7 +271,7 @@ RtCache\                          启动器缓存副本
   ├─ fix-launcher-safe.ps1        禁用启动器哈希校验
   ├─ qa-check.ps1                 汉化质量自检
   ├─ 打包.ps1                     重新生成发布 zip
-  └─ dict-*.tsv                   各字段中英对照词典（9 个）
+  └─ dict-*.tsv                   各字段中英对照词典（含 Quicsell 事件词典）
 ```
 
 > 安装包内含 26 个安装用汉化 DLL，另附一份 GOG 专用 `Assembly-CSharp.dll`；安装脚本会按版本选择后写入游戏对应位置。

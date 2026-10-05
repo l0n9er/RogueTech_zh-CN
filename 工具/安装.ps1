@@ -482,6 +482,17 @@ foreach ($pair in @(
                                      '-backupRoot', (Join-Path $packRoot 'backup\Mods-fields'))
     }
 }
+# Quicsell 可选模组的 backgroundEvent 直接显示 Name/Details 字段，
+# 不经过 strings_zh-CN.csv。限定路径，避免把其它模组的内部 Name 改成中文。
+$eventDict = Join-Path $PSScriptRoot 'dict-events.tsv'
+if ([IO.File]::Exists($eventDict)) {
+    RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                 '-pairs', $eventDict,
+                                 '-fields', 'Name,Details',
+                                 '-pathLike', 'Optionals\Quicsell\backgroundEvent',
+                                 '-JsonValue',
+                                 '-backupRoot', (Join-Path $packRoot 'backup\Mods-events'))
+}
 # 个别模组 mod.json 的 description 是玩家可见的设置说明, 需 -IncludeModJson 放行
 $descExtra = Join-Path $PSScriptRoot 'dict-desc-extra.tsv'
 if ([IO.File]::Exists($descExtra)) {
