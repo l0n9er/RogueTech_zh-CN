@@ -119,6 +119,10 @@ powershell -File "工具\安装.ps1" -gameRoot "D:\Steam\steamapps\common\BATTLE
 24. 术语归一化与格式修复
 25. 校验模组备份、翻译总表与注册表标识符
 
+数据字段步骤会同时处理词典能完整命中的值，以及“基础描述后追加 Quirk/装甲限制”等
+动态后缀的前缀命中；后缀会原样保留。实际游戏目录中新装模组仍可能包含尚未收录的
+Details、事件对白或环境说明，需以安装后的扫描报告为准。
+
 如果安装过程中断，已经生成的备份会保留在对应时间戳目录；修复问题后可以重新运行安装，
 也可以用 `还原.bat` 还原最近一次完整备份。安装产生的 ModTek 缓存备份不会被还原脚本写回游戏。
 
@@ -255,7 +259,7 @@ RtCache\                          启动器缓存副本
   ├─ 安装.ps1                     主安装脚本（6 个阶段、25 个子步骤，第 20 步可选）
   ├─ 还原.ps1                     按备份还原
   ├─ find-game.ps1                游戏目录自动探测
-  ├─ fold-apply.ps1               数据字段汉化（Details / YangsThoughts / StockRole）
+  ├─ fold-apply.ps1               数据字段汉化（含 Details 前缀匹配与元数据清理）
   ├─ apply-words.ps1              对话与战斗字幕
   ├─ apply-voicepacks.ps1         额外 MWSphere 语音包说明汉化（存在时自动处理）
   ├─ apply-bonus.ps1              装备特性说明（Short / Long / Full）

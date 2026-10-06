@@ -62,6 +62,38 @@ foreach ($l in $rawLines) {
     if ($fk.Length -gt 12 -and -not $fold.ContainsKey($fk)) { $fold[$fk] = $v }
 }
 $script:metaPattern = (($metaSuffixes | ForEach-Object { [regex]::Escape($_) }) -join '|')
+
+# 已有词典中的机甲描述常会在末尾追加 Quirk、装甲限制等动态文本。
+# 按规范化前缀建索引，在本轮扫描中替换已知译文的开头，避免再次遍历 Mods。
+$prefixMap = @{}
+$prefixSeen = New-Object 'System.Collections.Generic.HashSet[string]'
+foreach ($entry in $exact.GetEnumerator()) {
+    $ek = [string]$entry.Key
+    $ev = [string]$entry.Value
+    if ($ek.Length -lt 20 -or $ek -match '[\u3400-\u9fff]' -or $ev -notmatch '[\u3400-\u9fff]') { continue }
+    $en = Fold $ek
+    if ($en.Length -lt 20 -or $prefixSeen.Contains($en)) { continue }
+    [void]$prefixSeen.Add($en)
+    $ep = $en.Substring(0, [Math]::Min(24, $en.Length))
+    if (-not $prefixMap.ContainsKey($ep)) {
+        $prefixMap[$ep] = New-Object 'System.Collections.Generic.List[object]'
+    }
+    [void]$prefixMap[$ep].Add([pscustomobject]@{ Key = $ek; Norm = $en; Value = $ev })
+}
+Write-Host ("prefix entries: " + $prefixSeen.Count)
+
+function FlexiblePrefixPattern([string]$s) {
+    $sb = New-Object Text.StringBuilder
+    $inWs = $false
+    foreach ($ch in $s.ToCharArray()) {
+        if ([char]::IsWhiteSpace($ch)) {
+            if (-not $inWs) { [void]$sb.Append('\s+'); $inWs = $true }
+        } else {
+            [void]$sb.Append([regex]::Escape([string]$ch)); $inWs = $false
+        }
+    }
+    return '^' + $sb.ToString()
+}
 Write-Host ("dict exact: " + $exact.Count + "   folded: " + $fold.Count + "   metadata: " + $metaSuffixes.Count)
 
 function Unesc([string]$s) {
@@ -75,8 +107,8 @@ function Esc([string]$s) {
     return $t.Replace("`n", $BS + 'n').Replace("`r", $BS + 'r').Replace("`t", $BS + 't')
 }
 
-$script:exact = $exact; $script:fold = $fold
-$stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; cleaned = 0 }
+$script:exact = $exact; $script:fold = $fold; $script:prefixMap = $prefixMap
+$stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; viaPrefix = 0; cleaned = 0 }
 $missList = New-Object 'System.Collections.Generic.List[string]'
 $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     param($m)
@@ -103,6 +135,29 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     if ($null -eq $zh) {
         $fk = Fold $val
         if ($script:fold.ContainsKey($fk)) { $zh = $script:fold[$fk]; $stats.viaFold++ }
+    }
+    if ($null -eq $zh) {
+        $normVal = Fold $val
+        if ($normVal.Length -ge 24) {
+            $prefix = $normVal.Substring(0, 24)
+            if ($script:prefixMap.ContainsKey($prefix)) {
+                foreach ($entry in ($script:prefixMap[$prefix] | Sort-Object { $_.Norm.Length } -Descending)) {
+                    if (-not $normVal.StartsWith($entry.Norm, [StringComparison]::Ordinal)) { continue }
+                    $newVal = $null
+                    if ($val.StartsWith($entry.Key, [StringComparison]::Ordinal)) {
+                        $newVal = $entry.Value + $val.Substring($entry.Key.Length)
+                    } else {
+                        $pattern = FlexiblePrefixPattern $entry.Key
+                        $mm = [regex]::Match($val, $pattern, [Text.RegularExpressions.RegexOptions]::Singleline)
+                        if ($mm.Success) { $newVal = $entry.Value + $val.Substring($mm.Length) }
+                    }
+                    if ($null -ne $newVal -and $newVal -ne $val) {
+                        $stats.repl++; $stats.viaPrefix++
+                        return '"' + $fld + '": "' + (Esc $newVal) + '"'
+                    }
+                }
+            }
+        }
     }
     if ($null -eq $zh -or [string]::IsNullOrWhiteSpace($zh)) {
         $stats.miss++
@@ -150,7 +205,7 @@ foreach ($f in $files) {
         $stats.changed++
     }
 }
-$line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " miss=" + $stats.miss
+$line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " viaPrefix=" + $stats.viaPrefix + " miss=" + $stats.miss
 Write-Host $line
 # 报告写到包内 backup 目录(不污染游戏目录, 便于排查)
 $reportDir = Join-Path $packRoot 'backup'
