@@ -449,6 +449,10 @@
               "{side}": "left",
               "{location}": "left arm"
             },
+            "CULTURE_ZH_CN": {
+              "{side}": "左",
+              "{location}": "左臂"
+            },
             "CULTURE_RU_RU": {
               "{сторона}": "лев.",
               "{location}": "левая рука"
@@ -458,6 +462,10 @@
             "CULTURE_EN_US": {
               "{side}": "left",
               "{location}": "left leg"
+            },
+            "CULTURE_ZH_CN": {
+              "{side}": "左",
+              "{location}": "左腿"
             },
             "CULTURE_RU_RU": {
               "{сторона}": "лев.",
@@ -469,6 +477,10 @@
               "{side}": "left",
               "{location}": "left torso"
             },
+            "CULTURE_ZH_CN": {
+              "{side}": "左",
+              "{location}": "左侧躯干"
+            },
             "CULTURE_RU_RU": {
               "{сторона}": "лев.",
               "{location}": "левый полуторс"
@@ -478,6 +490,10 @@
             "CULTURE_EN_US": {
               "{side}": "right",
               "{location}": "right arm"
+            },
+            "CULTURE_ZH_CN": {
+              "{side}": "右",
+              "{location}": "右臂"
             },
             "CULTURE_RU_RU": {
               "{сторона}": "прав.",
@@ -489,6 +505,10 @@
               "{side}": "right",
               "{location}": "right leg"
             },
+            "CULTURE_ZH_CN": {
+              "{side}": "右",
+              "{location}": "右腿"
+            },
             "CULTURE_RU_RU": {
               "{сторона}": "прав.",
               "{location}": "правая нога"
@@ -498,6 +518,10 @@
             "CULTURE_EN_US": {
               "{side}": "right",
               "{location}": "right torso"
+            },
+            "CULTURE_ZH_CN": {
+              "{side}": "右",
+              "{location}": "右侧躯干"
             },
             "CULTURE_RU_RU": {
               "{сторона}": "прав.",
@@ -509,6 +533,10 @@
               "{side}": "center",
               "{location}": "center torso"
             },
+            "CULTURE_ZH_CN": {
+              "{side}": "中央",
+              "{location}": "中央躯干"
+            },
             "CULTURE_RU_RU": {
               "{сторона}": "цент.",
               "{location}": "центр торса"
@@ -518,6 +546,10 @@
             "CULTURE_EN_US": {
               "{side}": "head",
               "{location}": "head"
+            },
+            "CULTURE_ZH_CN": {
+              "{side}": "头部",
+              "{location}": "头部"
             },
             "CULTURE_RU_RU": {
               "{сторона}": "голов.",

@@ -343,6 +343,11 @@ if ([IO.Directory]::Exists($dataSrc)) {
     Ok ("" + $dataCnt + " 个文件")
 } else { Warn "包内缺少 Mods 目录，已跳过" }
 
+# 用户额外安装的 MWSphere 语音包不在发布包内；若存在则仅补写 credits 的
+# CULTURE_ZH_CN，并将原文件纳入本次备份。没有该语音包时安全跳过。
+RunTool 'apply-voicepacks.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                 '-backupRoot', $backupDir)
+
 # ---------- 4) 汉化 DLL ----------
 # 这些 DLL 出自月光石头的《BATTLETECH 汉化工具》，通过反编译修改硬编码
 # 字符串实现界面汉化。Assembly-CSharp.dll 按用户选择的 Steam/GOG 版本替换，
