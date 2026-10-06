@@ -38,6 +38,17 @@ while (-not $sr.EndOfStream) {
 $sr.Close()
 Write-Host ("对照表: " + $map.Count + " 条")
 
+# 为同一句对白的换行/多余空格变体建立归一化索引。
+# 部分额外模组把同一段 words 写成 `\r`、`\n` 或真实换行，
+# 不应因此重复维护多份完全相同的译文。
+$normMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+foreach ($entry in $map.GetEnumerator()) {
+    $nk = [regex]::Replace([string]$entry.Key, '\\r|\\n|\r|\n|\s+', ' ').Trim()
+    if (-not [string]::IsNullOrWhiteSpace($nk) -and -not $normMap.ContainsKey($nk)) {
+        $normMap[$nk] = $entry.Value
+    }
+}
+
 $enc = New-Object Text.UTF8Encoding $false
 $ser = $null
 if (-not $DryRun) {
@@ -47,6 +58,7 @@ if (-not $DryRun) {
 }
 $stats = @{ files = 0; changed = 0; repl = 0 }
 $script:map = $map
+$script:normMap = $normMap
 $script:stats = $stats
 
 # 匹配 "words": "..."  (处理转义)
@@ -57,7 +69,10 @@ function Unesc([string]$s) {
     return $t
 }
 
-$excl = @($BS + '.modtek' + $BS, 'ModSaves')
+$excl = @(
+    ($BS + '.modtek' + $BS)
+    'ModSaves'
+)
 $files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
     $p = $_.FullName; $bad = $false
     foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true } }
@@ -73,8 +88,23 @@ foreach ($f in $files) {
         param($m)
         $val = Unesc $m.Groups[1].Value
         if ($val -match '[\u4e00-\u9fff]') { return $m.Value }   # 已译
-        if (-not $script:map.ContainsKey($val)) { return $m.Value }
-        $zh = $script:map[$val]
+        $lookup = $val
+        if (-not $script:map.ContainsKey($lookup)) {
+            # 部分模组在 words 原文末尾多留空格；对白显示不应受此影响。
+            $trimmed = $val.Trim()
+            if ($script:map.ContainsKey($trimmed)) {
+                $lookup = $trimmed
+            } else {
+                $nk = [regex]::Replace($val, '\\r|\\n|\r|\n|\s+', ' ').Trim()
+                if (-not $script:normMap.ContainsKey($nk)) { return $m.Value }
+                $zh = $script:normMap[$nk]
+                $script:stats.repl++
+                $e = $zh.Replace($BS, $BS + $BS).Replace('"', $BS + '"')
+                $e = $e.Replace("`n", $BS + 'n').Replace("`r", $BS + 'r').Replace("`t", $BS + 't')
+                return '"words": "' + $e + '"'
+            }
+        }
+        $zh = $script:map[$lookup]
         $script:stats.repl++
         # 重新转义
         $e = $zh.Replace($BS, $BS + $BS).Replace('"', $BS + '"')

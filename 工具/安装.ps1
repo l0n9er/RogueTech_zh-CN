@@ -471,7 +471,6 @@ foreach ($pair in @(
     @{ f = 'title';       d = 'dict-title.tsv' },
     @{ f = 'description'; d = 'dict-desc.tsv' },
     @{ f = 'UIName';      d = 'dict-uiname.tsv' },
-    @{ f = 'shortDescription,longDescription,ShortDesc'; d = 'dict-brief.tsv' }
     @{ f = 'ErrorMessage'; d = 'dict-errmsg.tsv' }
 )) {
     $dict = Join-Path $PSScriptRoot $pair.d
@@ -481,6 +480,16 @@ foreach ($pair in @(
                                      '-fields', $pair.f,
                                      '-backupRoot', (Join-Path $packRoot 'backup\Mods-fields'))
     }
+}
+# dict-brief.tsv 的译文保留 JSON 转义形式（其中的 \n 是真正的换行），
+# 必须使用 -JsonValue，避免旧版本把反斜杠翻倍成游戏可见的“\N”。
+$briefDict = Join-Path $PSScriptRoot 'dict-brief.tsv'
+if ([IO.File]::Exists($briefDict)) {
+    RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                 '-pairs', $briefDict,
+                                 '-fields', 'shortDescription,longDescription,ShortDesc',
+                                 '-JsonValue',
+                                 '-backupRoot', (Join-Path $packRoot 'backup\Mods-fields'))
 }
 # Quicsell 可选模组的 backgroundEvent 直接显示 Name/Details 字段，
 # 不经过 strings_zh-CN.csv。限定路径，避免把其它模组的内部 Name 改成中文。
@@ -676,6 +685,8 @@ Step 24 "术语归一化与格式修复"
 RunTool 'apply-norm.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-norm'))
 RunTool 'norm-csv.ps1' @('-csv', $csvDst)
+RunTool 'clean-metadata.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                               '-backupRoot', (Join-Path $packRoot 'backup\Mods-metadata'))
 Ok "完成"
 
 # ---------- 12) 校验 ----------

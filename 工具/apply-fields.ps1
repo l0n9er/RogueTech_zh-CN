@@ -64,7 +64,10 @@ $script:map = $map
 $script:stats = $stats
 $script:jsonValue = $JsonValue.IsPresent
 
-$excl = @($BS + '.modtek' + $BS, 'ModSaves')
+$excl = @(
+    ($BS + '.modtek' + $BS)
+    'ModSaves'
+)
 $files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
     $p = $_.FullName; $bad = $false
     foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true } }
@@ -94,6 +97,14 @@ foreach ($f in $files) {
         param($m)
         $fld = $m.Groups[1].Value
         $val = Unesc $m.Groups[2].Value
+        # JsonValue 词典中的 \n/\r 等本来就是 JSON 转义。旧版安装曾把
+        # 反斜杠再次翻倍，导致游戏把换行显示成“\N”字样；这里先修正这类
+        # 已含中文的字段，再执行常规英文查表。
+        if ($script:jsonValue -and $m.Groups[2].Value -match '\\\\[nrt]' -and $val -match '\\[nrt]') {
+            $e = $val.Replace('"', $BS + '"')
+            $script:stats.repl++
+            return '"' + $fld + '": "' + $e + '"'
+        }
         if ($val -match '[\u4e00-\u9fff]') { return $m.Value }
         if (-not $script:map.ContainsKey($val)) { return $m.Value }
         $zh = $script:map[$val]

@@ -1820,7 +1820,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This should be a turkey shoot. Move up, make contact, and take the convoy out.",
-        "CULTURE_ZH_CN": "这应该就是一场猎杀火鸡一样简单的任务. 行动起来进行接触，然后消灭车队."
+        "CULTURE_ZH_CN": "这应该就是一场猎杀火鸡一样简单的任务. 行动起来，接敌，然后消灭车队."
       }
     },
     {
@@ -88380,7 +88380,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Move up to this area and make contact, and then engage and destroy them.",
-        "CULTURE_ZH_CN": "前进到这一地区进行接触，然后与之交战并消灭他们."
+        "CULTURE_ZH_CN": "推进到这片区域，接敌后与之交战并消灭他们."
       }
     },
     {

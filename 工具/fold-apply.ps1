@@ -21,18 +21,48 @@ $BS = [string][char]92
 $exact = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 function Fold([string]$s) { return ([regex]::Replace(($s -replace "`r`n", "`n"), '[\s]+', ' ')).Trim() }
 $fold = New-Object 'System.Collections.Generic.Dictionary[string,string]'
-$sr = New-Object IO.StreamReader($dict, [Text.Encoding]::UTF8)
-while (-not $sr.EndOfStream) {
-    $l = $sr.ReadLine(); if ([string]::IsNullOrWhiteSpace($l)) { continue }
+$metaSuffixes = New-Object 'System.Collections.Generic.HashSet[string]'
+# 先收集第三列中的元数据标记；部分旧行把标记直接粘在第二列末尾，
+# 只有预扫描整张表后才能同时识别两种格式。
+$rawLines = [IO.File]::ReadAllLines($dict, [Text.Encoding]::UTF8)
+foreach ($raw in $rawLines) {
+    $parts = $raw.Split([char]9)
+    if ($parts.Count -ge 3) {
+        foreach ($tag in $parts[2..($parts.Count - 1)]) {
+            if ($tag -match '^[A-Za-z][A-Za-z0-9_-]*$') { [void]$metaSuffixes.Add($tag) }
+        }
+    }
+}
+foreach ($l in $rawLines) {
+    if ([string]::IsNullOrWhiteSpace($l)) { continue }
     $i = $l.IndexOf("`t"); if ($i -lt 1) { continue }
     $k = ($l.Substring(0, $i) -replace (($BS + $BS) + 'n'), "`r`n")
-    $v = ($l.Substring($i + 1) -replace (($BS + $BS) + 'n'), "`r`n")
+    # dict-all.tsv 的第三列是来源/语言元数据（如 ZH、Components），
+    # 只能把第二列当作译文；过去把整行剩余内容当译文，导致元数据写进游戏。
+    $rest = $l.Substring($i + 1)
+    $j = $rest.IndexOf("`t")
+    if ($j -ge 0) {
+        $tail = $rest.Substring($j + 1)
+        # 少数历史导出行把正文中的制表符拆成了多列；若第二列仍是英文、
+        # 后续列才出现中文，整行不是可安全用于字段替换的键值对，跳过。
+        if ($tail -match '[\u4e00-\u9fff]' -and $rest.Substring(0, $j) -notmatch '[\u4e00-\u9fff]') { continue }
+        $rest = $rest.Substring(0, $j)
+    } else {
+        # 兼容“译文ZH”/“译文Components”这类历史粘连行。
+        foreach ($tag in ($metaSuffixes | Sort-Object Length -Descending)) {
+            if ($rest.Length -gt $tag.Length -and $rest.EndsWith($tag, [StringComparison]::Ordinal)) {
+                $rest = $rest.Substring(0, $rest.Length - $tag.Length)
+                break
+            }
+        }
+    }
+    $v = ($rest -replace (($BS + $BS) + 'n'), "`r`n")
     if (-not $exact.ContainsKey($k)) { $exact[$k] = $v }
     $fk = Fold $k
     if ($fk.Length -gt 12 -and -not $fold.ContainsKey($fk)) { $fold[$fk] = $v }
 }
-$sr.Close()
-Write-Host ("dict exact: " + $exact.Count + "   folded: " + $fold.Count)
+$script:metaPattern = (($metaSuffixes | ForEach-Object { [regex]::Escape($_) }) -join '|')
+Write-Host ("dict exact: " + $exact.Count + "   folded: " + $fold.Count + "   metadata: " + $metaSuffixes.Count)
 
 function Unesc([string]$s) {
     $t = [regex]::Replace($s, ($BS + $BS + 'u([0-9a-fA-F]{4})'), [System.Text.RegularExpressions.MatchEvaluator]{ param($mm) [char][int]("0x" + $mm.Groups[1].Value) })
@@ -46,14 +76,28 @@ function Esc([string]$s) {
 }
 
 $script:exact = $exact; $script:fold = $fold
-$stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0 }
+$stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; cleaned = 0 }
 $missList = New-Object 'System.Collections.Generic.List[string]'
 $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     param($m)
     $fld = $m.Groups[1].Value
     $val = Unesc $m.Groups[2].Value
+    # 清理旧版本安装时已经写入字段的词典元数据污染（例如“。 ZH”）。
+    # 只处理词典第三列实际出现过的标记，并要求标记位于文本末尾。
+    $cleaned = $false
+    if ($script:metaPattern.Length -gt 0 -and $val -match '[\u4e00-\u9fff]') {
+        # 历史词典既有“译文 ZH”也有“译文ZH”两种粘连形式；两者都要清理。
+        # 元数据只允许出现在字符串末尾，因此不会误伤正文中的同名词。
+        $clean = [regex]::Replace($val, '[\s]*(?:' + $script:metaPattern + ')[\s]*$', '')
+        if ($clean -ne $val) { $val = $clean; $stats.cleaned++; $cleaned = $true }
+    }
     if ([string]::IsNullOrWhiteSpace($val)) { return $m.Value }
-    if ($val -match '[\u4e00-\u9fff]') { return $m.Value }
+    if ($cleaned) {
+        $m2 = '"' + $fld + '": "' + (Esc $val) + '"'
+        if ($m2 -ne $m.Value) { $stats.repl++ }
+        return $m2
+    }
+    if ($val -match '[\u4e00-\u9fff]' -and -not $cleaned) { return $m.Value }
     $zh = $null
     if ($script:exact.ContainsKey($val)) { $zh = $script:exact[$val] }
     if ($null -eq $zh) {
@@ -71,7 +115,12 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     return $m2
 }
 $rx = [regex]('"(Details|YangsThoughts|StockRole)"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"')
-$excl = @($BS + '.modtek' + $BS, 'ModSaves', 'Localization', 'localization')
+$excl = @(
+    ($BS + '.modtek' + $BS)
+    'ModSaves'
+    'Localization'
+    'localization'
+)
 $files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
     $p = $_.FullName; $bad = $false
     foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true } }
@@ -101,7 +150,7 @@ foreach ($f in $files) {
         $stats.changed++
     }
 }
-$line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " viaFold=" + $stats.viaFold + " miss=" + $stats.miss
+$line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " miss=" + $stats.miss
 Write-Host $line
 # 报告写到包内 backup 目录(不污染游戏目录, 便于排查)
 $reportDir = Join-Path $packRoot 'backup'
