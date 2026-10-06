@@ -618,6 +618,16 @@ if ([IO.File]::Exists($quirkDict)) {
                                 '-pairs', $quirkDict,
                                 '-backupRoot', (Join-Path $packRoot 'backup\Mods-quirk'))
 }
+# RogueMunitions 的状态效果 Description.Name 直接显示在战斗浮动提示中，
+# 不经过 Details/CSV；限定到该模组，避免全局替换其它定义中的内部 Name。
+$effectDict = Join-Path $PSScriptRoot 'dict-effect.tsv'
+if ([IO.File]::Exists($effectDict)) {
+    RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                 '-pairs', $effectDict,
+                                 '-fields', 'Name',
+                                 '-pathLike', 'Core\RogueMunitions',
+                                 '-backupRoot', (Join-Path $packRoot 'backup\Mods-effects'))
+}
 Ok "完成"
 
 # ---------- 10) 装备分类显示名 ----------
