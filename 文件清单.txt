@@ -58,6 +58,7 @@ BattleTech_Data\StreamingAssets\data\VersionManifest.csv  游戏资源清单（2
 工具\dict-title.tsv                  任务标题中英对照表（21 条）
 工具\dict-desc.tsv                   目标描述中英对照表（39 条）
 工具\dict-uiname.tsv                 物品界面名对照表（37 条）
+工具\dict-quicsell.tsv               Quicsell 单发火炮显示名与状态效果名对照表（6 条）
 工具\dict-brief.tsv                  合约简报对照表（1,257 条）
                                      shortDescription / longDescription / ShortDesc
                                      这三个字段此前完全遗漏，合约界面会整段显示英文

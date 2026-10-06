@@ -481,6 +481,16 @@ foreach ($pair in @(
                                      '-backupRoot', (Join-Path $packRoot 'backup\Mods-fields'))
     }
 }
+# Quicsell 武器定义的 Description.Name 与状态效果名直接显示在装备详情中，
+# 不经过 CSV。限定到三个单发火炮定义，避免把其它模组的内部 Name 当作显示名。
+$qsDict = Join-Path $PSScriptRoot 'dict-quicsell.tsv'
+if ([IO.File]::Exists($qsDict)) {
+    RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                 '-pairs', $qsDict,
+                                 '-fields', 'Name',
+                                 '-pathLike', 'Optionals\Quicsell\Weapons\Weapon_Artillery_LongTom_Oneshot_Quicsell.json,Optionals\Quicsell\Weapons\Weapon_Artillery_Sniper_Oneshot_Quicsell.json,Optionals\Quicsell\Weapons\Weapon_Artillery_Thumper_Oneshot_Quicsell.json',
+                                 '-backupRoot', (Join-Path $packRoot 'backup\Mods-quicsell'))
+}
 # dict-brief.tsv 的译文保留 JSON 转义形式（其中的 \n 是真正的换行），
 # 必须使用 -JsonValue，避免旧版本把反斜杠翻倍成游戏可见的“\N”。
 $briefDict = Join-Path $PSScriptRoot 'dict-brief.tsv'
