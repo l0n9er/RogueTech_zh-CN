@@ -19,7 +19,8 @@ $files = Get-ChildItem $packRoot -Recurse -File -Force | Where-Object {
     foreach ($d in $excludeDirs) {
         if ($rel -eq $d -or $rel.StartsWith($d + '\')) { return $false }
     }
-    # 排除 .zhbak / 临时产物
+    # 排除人工审校工作簿、.zhbak / 临时产物
+    if ($_.Name -eq '对白本土化审校_第一批.xlsx') { return $false }
     if ($_.Name -like '*.zhbak*') { return $false }
     return $true
 }
