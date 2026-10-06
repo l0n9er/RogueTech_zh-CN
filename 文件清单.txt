@@ -54,6 +54,7 @@ BattleTech_Data\StreamingAssets\data\VersionManifest.csv  游戏资源清单（2
 工具\dict-bonus.tsv                  装备特性说明中英对照表（746 条）
 工具\apply-words.ps1                 对话/战斗字幕汉化（就地改写 words 字段）
 工具\dict-words.tsv                  对话台词中英对照表（6,642 行，去重后读取 6,546 条映射）
+工具\apply-voicepacks.ps1            检测额外 MWSphere 语音包并补写中文 credits
 工具\apply-fields.ps1                通用字段补译（title / description / UIName）
 工具\dict-title.tsv                  任务标题中英对照表（21 条）
 工具\dict-desc.tsv                   目标描述中英对照表（39 条）

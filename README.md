@@ -257,6 +257,7 @@ RtCache\                          启动器缓存副本
   ├─ find-game.ps1                游戏目录自动探测
   ├─ fold-apply.ps1               数据字段汉化（Details / YangsThoughts / StockRole）
   ├─ apply-words.ps1              对话与战斗字幕
+  ├─ apply-voicepacks.ps1         额外 MWSphere 语音包说明汉化（存在时自动处理）
   ├─ apply-bonus.ps1              装备特性说明（Short / Long / Full）
   ├─ apply-fields.ps1             通用字段补译（title / description / UIName / 合约简报；
                                    含 Quicsell 事件 Name / Details）

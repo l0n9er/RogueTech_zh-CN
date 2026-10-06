@@ -155,6 +155,7 @@ LICENSE 与 README.md 的"许可"一节：
 如需单独排查问题，可用：
 
   工具\qa-check.ps1          汉化质量自检（标点、术语、未译文本等）
+  工具\apply-voicepacks.ps1  检测额外 MWSphere 语音包并补写中文说明
   工具\check-registry.ps1    注册表标识符校验（单位类型被误译会自动还原）
   工具\fix-launcher-safe.ps1 禁用启动器文件校验（防止汉化被覆盖）
   工具\fix-interp-punct.ps1  修复占位符内标点（"错误"文本的根因）
