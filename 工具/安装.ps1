@@ -491,6 +491,26 @@ if ([IO.File]::Exists($qsDict)) {
                                  '-pathLike', 'Optionals\Quicsell\Weapons\Weapon_Artillery_LongTom_Oneshot_Quicsell.json,Optionals\Quicsell\Weapons\Weapon_Artillery_Sniper_Oneshot_Quicsell.json,Optionals\Quicsell\Weapons\Weapon_Artillery_Thumper_Oneshot_Quicsell.json',
                                  '-backupRoot', (Join-Path $packRoot 'backup\Mods-quicsell'))
 }
+# QuicksellCustoms 的机甲详情与 YangsThoughts 直接来自 JSON，必须就地补译。
+$qscDetailsDict = Join-Path $PSScriptRoot 'dict-quicksellcustoms.tsv'
+if ([IO.File]::Exists($qscDetailsDict)) {
+    RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                 '-pairs', $qscDetailsDict,
+                                 '-fields', 'Details,YangsThoughts',
+                                 '-pathLike', 'Optionals\QuicksellCustoms',
+                                 '-JsonValue',
+                                 '-backupRoot', (Join-Path $packRoot 'backup\Mods-quicksellcustoms'))
+}
+# QuicksellCustoms 的装备、状态效果、模式和 StockRole 显示字段直接来自 JSON，
+# 不经过总表。只限定该模组，避免改写其它模组的内部 Name 标识符。
+$qscDisplayDict = Join-Path $PSScriptRoot 'dict-quicksellcustoms-display.tsv'
+if ([IO.File]::Exists($qscDisplayDict)) {
+    RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                 '-pairs', $qscDisplayDict,
+                                 '-fields', 'Name,UIName,StockRole',
+                                 '-pathLike', 'Optionals\QuicksellCustoms',
+                                 '-backupRoot', (Join-Path $packRoot 'backup\Mods-quicksellcustoms-display'))
+}
 # dict-brief.tsv 的译文保留 JSON 转义形式（其中的 \n 是真正的换行），
 # 必须使用 -JsonValue，避免旧版本把反斜杠翻倍成游戏可见的“\N”。
 $briefDict = Join-Path $PSScriptRoot 'dict-brief.tsv'
