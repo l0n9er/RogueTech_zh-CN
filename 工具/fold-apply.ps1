@@ -5,6 +5,7 @@
     [string]$csv = "",
     [string]$fragments = "",
     [string]$extraDict = "",
+    [string]$fileList = "",
     [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
@@ -217,11 +218,15 @@ $excl = @(
     'Localization'
     'localization'
 )
-$files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
-    $p = $_.FullName; $bad = $false
-    foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true } }
-    if ($_.Name -in @('mod.json', 'modstate.json')) { $bad = $true }
-    -not $bad
+if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
+    $files = Get-Content -Encoding UTF8 $fileList | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | ForEach-Object { Get-Item -LiteralPath $_ } | Where-Object { $_.Extension -eq '.json' }
+} else {
+    $files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
+        $p = $_.FullName; $bad = $false
+        foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true } }
+        if ($_.Name -in @('mod.json', 'modstate.json')) { $bad = $true }
+        -not $bad
+    }
 }
 $enc = New-Object Text.UTF8Encoding $false
 $ser = $null
