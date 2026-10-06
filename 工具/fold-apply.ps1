@@ -3,6 +3,8 @@
     [string]$mods = "",
     [string]$backupRoot = "",
     [string]$csv = "",
+    [string]$fragments = "",
+    [string]$extraDict = "",
     [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
@@ -15,6 +17,7 @@ if ([string]::IsNullOrWhiteSpace($mods)) {
 }
 if ([string]::IsNullOrWhiteSpace($backupRoot)) { $backupRoot = Join-Path $packRoot 'backup\Mods-defs' }
 if ([string]::IsNullOrWhiteSpace($csv)) { $csv = Join-Path $packRoot 'strings_zh-CN.csv' }
+if ([string]::IsNullOrWhiteSpace($fragments)) { $fragments = Join-Path $PSScriptRoot 'dict-fragments.tsv' }
 $BS = [string][char]92
 
 # --- 字典：精确键 + 空白折叠键 两套 ---
@@ -24,7 +27,11 @@ $fold = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 $metaSuffixes = New-Object 'System.Collections.Generic.HashSet[string]'
 # 先收集第三列中的元数据标记；部分旧行把标记直接粘在第二列末尾，
 # 只有预扫描整张表后才能同时识别两种格式。
-$rawLines = [IO.File]::ReadAllLines($dict, [Text.Encoding]::UTF8)
+$dictFiles = @($dict)
+if (-not [string]::IsNullOrWhiteSpace($extraDict) -and [IO.File]::Exists($extraDict)) {
+    $dictFiles += $extraDict
+}
+$rawLines = foreach ($df in $dictFiles) { [IO.File]::ReadAllLines($df, [Text.Encoding]::UTF8) }
 foreach ($raw in $rawLines) {
     $parts = $raw.Split([char]9)
     if ($parts.Count -ge 3) {
@@ -62,6 +69,18 @@ foreach ($l in $rawLines) {
     if ($fk.Length -gt 12 -and -not $fold.ContainsKey($fk)) { $fold[$fk] = $v }
 }
 $script:metaPattern = (($metaSuffixes | ForEach-Object { [regex]::Escape($_) }) -join '|')
+
+# 已审校的短术语/名称片段，用于补全整段描述中的残留英文。
+$fragmentMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+if ([IO.File]::Exists($fragments)) {
+    foreach ($fl in [IO.File]::ReadAllLines($fragments, [Text.Encoding]::UTF8)) {
+        $fp = $fl.Split([char]9)
+        if ($fp.Count -ge 2 -and $fp[0].Length -ge 4 -and $fp[1] -match '[\u3400-\u9fff]' -and -not $fragmentMap.ContainsKey($fp[0])) {
+            $fragmentMap[$fp[0]] = $fp[1]
+        }
+    }
+}
+Write-Host ("fragments: " + $fragmentMap.Count)
 
 # 已有词典中的机甲描述常会在末尾追加 Quirk、装甲限制等动态文本。
 # 按规范化前缀建索引，在本轮扫描中替换已知译文的开头，避免再次遍历 Mods。
@@ -107,8 +126,25 @@ function Esc([string]$s) {
     return $t.Replace("`n", $BS + 'n').Replace("`r", $BS + 'r').Replace("`t", $BS + 't')
 }
 
+function ApplyFragments([string]$s) {
+    if ([string]::IsNullOrWhiteSpace($s) -or $script:fragmentMap.Count -eq 0 -or $s -notmatch '[A-Za-z]') { return $s }
+    $saved = New-Object 'System.Collections.Generic.List[string]'
+    $protected = [regex]::Replace($s, '<[^>]*>|\[\[[\s\S]*?\]\]|\{[^{}]*\}', [Text.RegularExpressions.MatchEvaluator]{
+        param($m) $i = $saved.Count; [void]$saved.Add($m.Value); return ('__FRAG' + $i + '__')
+    })
+    foreach ($key in ($script:fragmentMap.Keys | Sort-Object Length -Descending)) {
+        if ($protected.IndexOf($key, [StringComparison]::Ordinal) -ge 0) {
+            $protected = $protected.Replace($key, $script:fragmentMap[$key])
+        }
+    }
+    return [regex]::Replace($protected, '__FRAG(\d+)__', [Text.RegularExpressions.MatchEvaluator]{
+        param($m) $saved[[int]$m.Groups[1].Value]
+    })
+}
+
 $script:exact = $exact; $script:fold = $fold; $script:prefixMap = $prefixMap
-$stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; viaPrefix = 0; cleaned = 0 }
+$script:fragmentMap = $fragmentMap
+$stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; viaPrefix = 0; viaFragment = 0; cleaned = 0 }
 $missList = New-Object 'System.Collections.Generic.List[string]'
 $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     param($m)
@@ -128,6 +164,11 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         $m2 = '"' + $fld + '": "' + (Esc $val) + '"'
         if ($m2 -ne $m.Value) { $stats.repl++ }
         return $m2
+    }
+    $fragmentVal = ApplyFragments $val
+    if ($fragmentVal -ne $val) {
+        $stats.repl++; $stats.viaFragment++
+        return '"' + $fld + '": "' + (Esc $fragmentVal) + '"'
     }
     if ($val -match '[\u4e00-\u9fff]' -and -not $cleaned) { return $m.Value }
     $zh = $null
@@ -205,7 +246,7 @@ foreach ($f in $files) {
         $stats.changed++
     }
 }
-$line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " viaPrefix=" + $stats.viaPrefix + " miss=" + $stats.miss
+$line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " viaPrefix=" + $stats.viaPrefix + " viaFragment=" + $stats.viaFragment + " miss=" + $stats.miss
 Write-Host $line
 # 报告写到包内 backup 目录(不污染游戏目录, 便于排查)
 $reportDir = Join-Path $packRoot 'backup'
