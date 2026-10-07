@@ -567,6 +567,10 @@ if ([IO.File]::Exists($eventDict)) {
                                  '-JsonValue',
                                  '-backupRoot', (Join-Path $packRoot 'backup\Mods-events'))
 }
+# 自动从各模组 Localization/ZH 表覆盖所有事件正文、标题和选项，
+# 解决人工事件词典只覆盖少量条目导致同类英文漏翻的问题。
+RunTool 'apply-event-localization.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                         '-backupRoot', (Join-Path $packRoot 'backup\Mods-events-auto'))
 # 个别模组 mod.json 的 description 是玩家可见的设置说明, 需 -IncludeModJson 放行
 $descExtra = Join-Path $PSScriptRoot 'dict-desc-extra.tsv'
 if ([IO.File]::Exists($descExtra)) {
