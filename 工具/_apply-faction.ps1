@@ -60,6 +60,21 @@ foreach ($file in Get-ChildItem -LiteralPath $FactionDir -Filter '*.json' -File)
         }
     }
 
+    # 数组解析对带 HTML 标签的个别旧定义可能出现边界差异；
+    # 再按原始 JSON 字符串做一次兜底，确保词典命中项不漏翻。
+    foreach ($entry in $map.GetEnumerator()) {
+        $oldLiteral = ConvertTo-SourceJsonString ([string]$entry.Key)
+        if ($updated.IndexOf($oldLiteral, [StringComparison]::Ordinal) -lt 0) { continue }
+        $newLiteral = ConvertTo-SourceJsonString ([string]$entry.Value)
+        $pos = 0
+        while (($hit = $updated.IndexOf($oldLiteral, $pos, [StringComparison]::Ordinal)) -ge 0) {
+            $fileReplacements++
+            $matched++
+            $pos = $hit + $newLiteral.Length
+        }
+        $updated = $updated.Replace($oldLiteral, $newLiteral)
+    }
+
     if ($fileReplacements -eq 0) { continue }
     $filesChanged++
     $replacements += $fileReplacements
