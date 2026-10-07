@@ -418,15 +418,28 @@ else {
 # RogueLauncher 启动游戏前会做哈希校验，把汉化过的文件判为 "file tamper
 # detected" 并用缓存里的英文原版覆盖回 Mods（实测一次启动 7400+ 条），
 # 汉化因此大面积失效。把 SafeLaunchDisabled 设为 true 可跳过该覆盖。
-# 同时移出旧缓存，避免 ModTek 继续使用安装前的定义索引。
+# 同时移出 ModTek 的定义数据库与静态缓存。仅清 Cache 不会刷新
+# .modtek\Database 中的 MetadataDatabase.db/database_cache.json，旧存档事件与
+# 机师定义会继续从旧数据库读取，导致磁盘 JSON 已中文但界面仍显示英文。
 Step 6 "禁用启动器校验并重建 ModTek 缓存"
-$modtekCache = Join-Path $gameRoot "Mods\.modtek\Cache"
-if (Test-Path -LiteralPath $modtekCache) {
-    $cacheBackup = Join-Path $backupDir 'modtek-cache'
-    if (Test-Path -LiteralPath $cacheBackup) { Remove-Item -LiteralPath $cacheBackup -Recurse -Force }
-    Move-Item -LiteralPath $modtekCache -Destination $cacheBackup -Force
-    Ok "已移出旧 ModTek 缓存，游戏下次启动时会重建"
-} else { Ok "未发现 ModTek 缓存，跳过清理" }
+$modtekRoot = Join-Path $gameRoot "Mods\.modtek"
+$movedModtekState = 0
+foreach ($stateName in @('Cache', 'Database')) {
+    $statePath = Join-Path $modtekRoot $stateName
+    if (-not (Test-Path -LiteralPath $statePath)) { continue }
+    $stateBackup = Join-Path $backupDir (Join-Path 'modtek-state' $stateName)
+    $stateBackupParent = Split-Path -Parent $stateBackup
+    if (-not (Test-Path -LiteralPath $stateBackupParent)) {
+        [void][IO.Directory]::CreateDirectory($stateBackupParent)
+    }
+    if (Test-Path -LiteralPath $stateBackup) {
+        $stateBackup = Join-Path $backupDir (Join-Path 'modtek-state' ($stateName + '-' + (Get-Date -Format 'HHmmss')))
+    }
+    Move-Item -LiteralPath $statePath -Destination $stateBackup -Force
+    $movedModtekState++
+    Ok ("已备份并移出 ModTek " + $stateName + "，游戏下次启动时会重建")
+}
+if ($movedModtekState -eq 0) { Ok "未发现 ModTek Cache/Database，跳过清理" }
 RunTool 'fix-launcher-safe.ps1' @('-backupRoot', $backupDir)
 Ok "完成"
 
@@ -543,14 +556,14 @@ if ([IO.File]::Exists($briefDict)) {
                                  '-JsonValue',
                                  '-backupRoot', (Join-Path $packRoot 'backup\Mods-fields'))
 }
-# Quicsell 可选模组的 backgroundEvent 直接显示 Name/Details 字段，
-# 不经过 strings_zh-CN.csv。限定路径，避免把其它模组的内部 Name 改成中文。
+# 事件及背景事件直接读取 JSON 的 Description.Name/Details 与选项 Name/Details，
+# 不经过 strings_zh-CN.csv。限定事件目录，避免把其它模组的内部 Name 改成中文。
 $eventDict = Join-Path $PSScriptRoot 'dict-events.tsv'
 if ([IO.File]::Exists($eventDict)) {
     RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                  '-pairs', $eventDict,
                                  '-fields', 'Name,Details',
-                                 '-pathLike', 'Optionals\Quicsell\backgroundEvent,Core\RogueTechCore\Argo\events',
+                                 '-pathLike', 'events,backgroundEvent',
                                  '-JsonValue',
                                  '-backupRoot', (Join-Path $packRoot 'backup\Mods-events'))
 }
