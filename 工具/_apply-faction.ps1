@@ -46,9 +46,15 @@ foreach ($file in Get-ChildItem -LiteralPath $FactionDir -Filter '*.json' -File)
         $arr = $json.$field
         if ($null -eq $arr) { continue }
         foreach ($statement in @($arr)) {
-            $key = [string]$statement
+            # 游戏数据中少数条目带有尾随空格；词典按规范化文本保存，匹配时统一去除首尾空白。
+            $rawStatement = [string]$statement
+            $key = $rawStatement.Trim()
             if (-not $map.ContainsKey($key)) { continue }
-            $oldLiteral = ConvertTo-SourceJsonString $key
+            # 替换时优先保留源文件中的尾随空格，避免 JSON 字符串中空格导致漏匹配。
+            $oldLiteral = ConvertTo-SourceJsonString $rawStatement
+            if ($updated.IndexOf($oldLiteral, [StringComparison]::Ordinal) -lt 0) {
+                $oldLiteral = ConvertTo-SourceJsonString $key
+            }
             $newLiteral = ConvertTo-SourceJsonString $map[$key]
             $pos = 0
             while (($hit = $updated.IndexOf($oldLiteral, $pos, [StringComparison]::Ordinal)) -ge 0) {
