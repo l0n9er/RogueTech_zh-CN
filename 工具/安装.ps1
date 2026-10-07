@@ -610,8 +610,8 @@ Ok "完成"
 
 # ---------- 9g) 角色创建背景与合约结束评价 ----------
 # RogueBackgrounds 的 OptionName/OptionDescription/Intro 是角色创建界面里
-# 背景选项的标题与说明; 各派系 faction_*.json 的 MissionSuccessStatement /
-# GoodFaithFailureStatement / BadFaithFailureStatement 是任务结束时雇主对
+# 背景选项的标题与说明; 各派系 faction_*.json 的 MissionSuccessStatements /
+# GoodFaithFailureStatements / BadFaithFailureStatements 是任务结束时雇主对
 # 你的评价。两类都是直接显示 JSON 里的字符串。
 # 译文取自各模组 Localization/ZH 表(已是 JSON 转义形式, 含 0x1F 占位符),
 # 所以用 -JsonValue 避免二次转义。
@@ -626,6 +626,17 @@ if ([IO.File]::Exists($bgDict)) {
                                  '-backupRoot', (Join-Path $packRoot 'backup\Mods-bg'))
 }
 Ok "完成"
+
+# FactionDef 的评价文本使用数组字段（MissionSuccessStatements 等），
+# 通用字段替换器无法处理；必须用专用数组处理器。备份放到包外，
+# 避免 .bak 被 ModTek 当成正式定义加载。
+$factionDict = Join-Path $PSScriptRoot 'faction_tr_all_merged.tsv'
+$factionDir = Join-Path $gameRoot 'Mods\Core\RogueTechCore\Factions'
+if ([IO.File]::Exists($factionDict) -and [IO.Directory]::Exists($factionDir)) {
+    RunTool '_apply-faction.ps1' @('-Pairs', $factionDict,
+                                   '-FactionDir', $factionDir,
+                                   '-BackupRoot', (Join-Path $packRoot 'backup\Mods-faction'))
+}
 
 # ---------- 9h) 合约名、闪点简报、地图名与其它零散显示字段 ----------
 # contractName 是合约列表里显示的合约名; FlashpointShortDescription 是闪点

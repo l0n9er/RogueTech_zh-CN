@@ -1,6 +1,7 @@
 ﻿param(
     [string]$Pairs = 'D:\RT\汉化包\工具\faction_tr_all_merged.tsv',
     [string]$FactionDir = 'D:\RT\汉化包\Mods\Core\RogueTechCore\Factions',
+    [string]$BackupRoot = '',
     [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
@@ -17,7 +18,12 @@ foreach ($line in [IO.File]::ReadLines($Pairs, [Text.Encoding]::UTF8)) {
 }
 
 $fields = @('ReputationStatements', 'MissionSuccessStatements', 'GoodFaithFailureStatements', 'BadFaithFailureStatements')
-$backupDir = Join-Path $FactionDir '_bak_faction'
+if ([string]::IsNullOrWhiteSpace($BackupRoot)) {
+    # 兼容手工调用：未指定外部备份目录时仍使用旧位置。
+    $backupDir = Join-Path $FactionDir '_bak_faction'
+} else {
+    $backupDir = $BackupRoot
+}
 $utf8 = New-Object Text.UTF8Encoding $false
 $filesChanged = 0
 $replacements = 0
