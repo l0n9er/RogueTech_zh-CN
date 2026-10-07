@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$PackageRoot = 'D:\\RT\\汉化包',
     [switch]$DryRun
 )

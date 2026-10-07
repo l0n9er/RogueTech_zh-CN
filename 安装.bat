@@ -1,5 +1,5 @@
 @echo off
-chcp 936 >nul
+chcp 65001 >nul
 title BATTLETECH / RogueTech ¼òÌåÖÐÎÄ²¹¶¡
 cd /d "%~dp0"
 

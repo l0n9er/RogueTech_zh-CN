@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$GameMods = 'D:\\soft\\steam\\steamapps\\common\\BATTLETECH\\Mods',
     [string]$PackageRoot = 'D:\\RT\\汉化包',
     [switch]$DryRun

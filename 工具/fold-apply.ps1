@@ -296,6 +296,9 @@ if (-not $DryRun) {
 foreach ($f in $files) {
     $stats.files++
     $orig = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)
+    # 大量 Mod JSON 只有配置/内部数据，没有可处理的详情字段；先做字面量
+    # 预筛，避免对这些文件运行包含长前缀匹配的字段正则。
+    if ($orig -notmatch '"(Details|YangsThoughts|StockRole)"\s*:') { continue }
     $new = $rx.Replace($orig, $eval)
     if ($new -eq $orig) { continue }
     if (-not $DryRun) {

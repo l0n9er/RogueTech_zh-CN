@@ -32,13 +32,12 @@ $script:installLog = $null
 $script:installerPath = $PSCommandPath
 $script:modsJsonFileList = ''
 
-# 控制台输出编码: PS 5.1 默认按控制台当前代码页输出中文, 若与窗口代码页
-# 不一致会乱码。这里显式采用系统默认(GBK/936), 与 安装.bat 的 chcp 936 一致。
+# 控制台与子 PowerShell 输出统一采用 UTF-8，避免中文工具输出在父进程中乱码。
+
 try {
-    $cp = [Console]::OutputEncoding.CodePage
-    if ($cp -ne 936 -and $cp -ne 65001) {
-        [Console]::OutputEncoding = [Text.Encoding]::GetEncoding(936)
-    }
+    [Console]::OutputEncoding = [Text.Encoding]::UTF8
+    [Console]::InputEncoding = [Text.Encoding]::UTF8
+    [Console]::TreatControlCAsInput = $false
 } catch { }
 
 function LogLine($m) {

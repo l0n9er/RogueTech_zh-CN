@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$mods = "",
     [string]$backupRoot = "",
     [string]$fileList = ""

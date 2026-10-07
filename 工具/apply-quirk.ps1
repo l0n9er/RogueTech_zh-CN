@@ -1,4 +1,4 @@
-# Translate the Description.Name display field of Quirk_*.json definitions.
+﻿# Translate the Description.Name display field of Quirk_*.json definitions.
 #
 # Quirk records carry their human-readable name in Description.Name (the "Name"
 # at the top level of other files is an internal identifier that must never be

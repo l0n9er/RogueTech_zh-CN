@@ -1,4 +1,4 @@
-# Apply Chinese translations to the base-game simGameStatDesc templates.
+﻿# Apply Chinese translations to the base-game simGameStatDesc templates.
 #
 # Background: simGameStatDesc/*.json stores Result templates directly in JSON;
 # the game does not route them through strings_zh-CN.csv, so the only way to
