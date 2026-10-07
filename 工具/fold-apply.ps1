@@ -41,6 +41,32 @@ function Test-CorruptDictionaryValue([string]$text) {
 $exact = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 function Fold([string]$s) { return ([regex]::Replace(($s -replace "`r`n", "`n"), '[\s]+', ' ')).Trim() }
 $fold = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+$csvExact = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+$csvPrefix = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+function CsvKey([string]$s) {
+    $t = $s.ToLowerInvariant()
+    $t = $t.Replace("`r`n", 'newline').Replace("`n", 'newline').Replace("`r", 'newline')
+    $t = [regex]::Replace($t, '<[^>]*>', '')
+    $t = $t.Replace(',', '^').Replace('.', '*')
+    $t = [regex]::Replace($t, '["''`]', '')
+    return [regex]::Replace($t, '\s+', '')
+}
+if ([IO.File]::Exists($csv)) {
+    foreach ($line in [IO.File]::ReadLines($csv, [Text.Encoding]::UTF8)) {
+        $comma = $line.IndexOf(',')
+        if ($comma -lt 1) { continue }
+        $key = $line.Substring(0, $comma)
+        $value = $line.Substring($comma + 1)
+        if (-not $csvExact.ContainsKey($key)) { $csvExact[$key] = $value }
+        # 详情末尾可能已被旧版本部分汉化（例如仅 Quirk 行为中文），
+        # 但正文开头仍与 CSV 英文键一致。记录稳定前缀用于整段替换。
+        if ($key.Length -ge 240) {
+            $prefix = $key.Substring(0, 240)
+            if (-not $csvPrefix.ContainsKey($prefix)) { $csvPrefix[$prefix] = $value }
+            else { $csvPrefix[$prefix] = '' }
+        }
+    }
+}
 $metaSuffixes = New-Object 'System.Collections.Generic.HashSet[string]'
 # 先收集第三列中的元数据标记；部分旧行把标记直接粘在第二列末尾，
 # 只有预扫描整张表后才能同时识别两种格式。
@@ -161,7 +187,7 @@ function ApplyFragments([string]$s) {
     })
 }
 
-$script:exact = $exact; $script:fold = $fold; $script:prefixMap = $prefixMap
+$script:exact = $exact; $script:fold = $fold; $script:prefixMap = $prefixMap; $script:csvExact = $csvExact; $script:csvPrefix = $csvPrefix
 $script:fragmentMap = $fragmentMap
 $stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; viaPrefix = 0; viaFragment = 0; cleaned = 0 }
 $missList = New-Object 'System.Collections.Generic.List[string]'
@@ -189,13 +215,27 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         $stats.repl++; $stats.viaFragment++
         return '"' + $fld + '": "' + (Esc $fragmentVal) + '"'
     }
-    if ($val -match '[\u4e00-\u9fff]' -and -not $cleaned) { return $m.Value }
     $zh = $null
+    # 某些定义的 Details 只有 Quirk / 费用等动态尾段已被汉化，正文仍是英文。
+    # 完全匹配的源文或 CSV squash 键仍可安全替换为完整译文，因此在跳过混合字段前先查表。
     if ($script:exact.ContainsKey($val)) { $zh = $script:exact[$val] }
     if ($null -eq $zh) {
         $fk = Fold $val
         if ($script:fold.ContainsKey($fk)) { $zh = $script:fold[$fk]; $stats.viaFold++ }
     }
+    if ($null -eq $zh -and $script:csvExact.Count -gt 0) {
+        $ck = CsvKey $val
+        if ($script:csvExact.ContainsKey($ck)) { $zh = $script:csvExact[$ck] }
+    }
+    if ($null -eq $zh -and $script:csvPrefix.Count -gt 0) {
+        $ck = CsvKey $val
+        if ($ck.Length -ge 240) {
+            $cp = $ck.Substring(0, 240)
+            if ($script:csvPrefix.ContainsKey($cp) -and -not [string]::IsNullOrWhiteSpace($script:csvPrefix[$cp])) { $zh = $script:csvPrefix[$cp] }
+        }
+    }
+    # 部分汉化文本没有精确词条时保持原样，避免前缀匹配覆盖现有译文或造成重复。
+    if ($null -eq $zh -and $val -match '[\u4e00-\u9fff]' -and -not $cleaned) { return $m.Value }
     if ($null -eq $zh) {
         $normVal = Fold $val
         if ($normVal.Length -ge 24) {

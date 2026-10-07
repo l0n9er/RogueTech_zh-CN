@@ -4,6 +4,7 @@
     [string]$fields = "words",
     [string]$backupRoot = "",
     [string]$pathLike = "",
+    [string]$csv = "",
     [switch]$IncludeModJson,
     [switch]$JsonValue,
     [switch]$DryRun
@@ -33,6 +34,15 @@ if ([string]::IsNullOrWhiteSpace($backupRoot)) { $backupRoot = Join-Path $packRo
 if (-not [IO.File]::Exists($pairs)) { Write-Host (" 找不到对照表: " + $pairs) -ForegroundColor Yellow; exit 1 }
 
 $map = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+$csvMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+function CsvKey([string]$s) {
+    $t = $s.ToLowerInvariant()
+    $t = $t.Replace("`r`n", 'newline').Replace("`n", 'newline').Replace("`r", 'newline')
+    $t = [regex]::Replace($t, '<[^>]*>', '')
+    $t = $t.Replace(',', '^').Replace('.', '*')
+    $t = [regex]::Replace($t, '["''`]', '')
+    return [regex]::Replace($t, '\s+', '')
+}
 $sr = New-Object IO.StreamReader($pairs, [Text.Encoding]::UTF8)
 while (-not $sr.EndOfStream) {
     $l = $sr.ReadLine()
@@ -42,6 +52,14 @@ while (-not $sr.EndOfStream) {
     if (-not $map.ContainsKey($k)) { $map[$k] = $v }
 }
 $sr.Close()
+if (-not [string]::IsNullOrWhiteSpace($csv) -and [IO.File]::Exists($csv)) {
+    foreach ($line in [IO.File]::ReadLines($csv, [Text.Encoding]::UTF8)) {
+        $comma = $line.IndexOf(',')
+        if ($comma -lt 1) { continue }
+        $key = $line.Substring(0, $comma)
+        if (-not $csvMap.ContainsKey($key)) { $csvMap[$key] = $line.Substring($comma + 1) }
+    }
+}
 Write-Host ("对照表: " + $map.Count + " 条  字段: " + $fields)
 
 # 构造字段正则: "(words|title|description)"\s*:\s*"..."
@@ -61,6 +79,7 @@ if (-not $DryRun) {
 }
 $stats = @{ files = 0; changed = 0; repl = 0 }
 $script:map = $map
+$script:csvMap = $csvMap
 $script:stats = $stats
 $script:jsonValue = $JsonValue.IsPresent
 
@@ -106,8 +125,13 @@ foreach ($f in $files) {
             return '"' + $fld + '": "' + $e + '"'
         }
         if ($val -match '[\u4e00-\u9fff]') { return $m.Value }
-        if (-not $script:map.ContainsKey($val)) { return $m.Value }
-        $zh = $script:map[$val]
+        $zh = $null
+        if ($script:map.ContainsKey($val)) { $zh = $script:map[$val] }
+        if ($null -eq $zh -and $script:csvMap.Count -gt 0) {
+            $ck = CsvKey $val
+            if ($script:csvMap.ContainsKey($ck)) { $zh = $script:csvMap[$ck] }
+        }
+        if ($null -eq $zh) { return $m.Value }
         $script:stats.repl++
         if ($script:jsonValue) {
             # 译文已是 JSON 转义形式, 只需处理双引号(不能翻倍反斜杠,

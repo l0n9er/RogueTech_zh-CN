@@ -427,6 +427,7 @@ Ok "完成"
 Step 7 "汉化数据字段（Details / YangsThoughts / StockRole）"
 RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-pairs', (Join-Path $PSScriptRoot 'dict-all.tsv'),
+                           '-extraDict', (Join-Path $PSScriptRoot 'dict-details-direct.tsv'),
                            '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-defs'))
 Ok "完成"
@@ -483,6 +484,7 @@ foreach ($pair in @(
         RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                      '-pairs', $dict,
                                      '-fields', $pair.f,
+                                     '-csv', $csvDst,
                                      '-backupRoot', (Join-Path $packRoot 'backup\Mods-fields'))
     }
 }
