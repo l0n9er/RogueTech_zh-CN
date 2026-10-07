@@ -535,7 +535,7 @@ if ([IO.File]::Exists($eventDict)) {
     RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                  '-pairs', $eventDict,
                                  '-fields', 'Name,Details',
-                                 '-pathLike', 'Optionals\Quicsell\backgroundEvent',
+                                 '-pathLike', 'Optionals\Quicsell\backgroundEvent,Core\RogueTechCore\Argo\events',
                                  '-JsonValue',
                                  '-backupRoot', (Join-Path $packRoot 'backup\Mods-events'))
 }
