@@ -84,6 +84,7 @@ foreach ($raw in $rawLines) {
         }
     }
 }
+$metaSuffixesByLength = @($metaSuffixes | Sort-Object Length -Descending)
 foreach ($l in $rawLines) {
     if ([string]::IsNullOrWhiteSpace($l)) { continue }
     $i = $l.IndexOf("`t"); if ($i -lt 1) { continue }
@@ -100,7 +101,7 @@ foreach ($l in $rawLines) {
         $rest = $rest.Substring(0, $j)
     } else {
         # 兼容“译文ZH”/“译文Components”这类历史粘连行。
-        foreach ($tag in ($metaSuffixes | Sort-Object Length -Descending)) {
+        foreach ($tag in $metaSuffixesByLength) {
             if ($rest.Length -gt $tag.Length -and $rest.EndsWith($tag, [StringComparison]::Ordinal)) {
                 $rest = $rest.Substring(0, $rest.Length - $tag.Length)
                 break
@@ -125,6 +126,7 @@ if ([IO.File]::Exists($fragments)) {
         }
     }
 }
+$fragmentKeys = @($fragmentMap.Keys | Sort-Object Length -Descending)
 Write-Host ("fragments: " + $fragmentMap.Count)
 
 # 已有词典中的机甲描述常会在末尾追加 Quirk、装甲限制等动态文本。
@@ -143,6 +145,9 @@ foreach ($entry in $exact.GetEnumerator()) {
         $prefixMap[$ep] = New-Object 'System.Collections.Generic.List[object]'
     }
     [void]$prefixMap[$ep].Add([pscustomobject]@{ Key = $ek; Norm = $en; Value = $ev })
+}
+foreach ($prefix in @($prefixMap.Keys)) {
+    $prefixMap[$prefix] = @($prefixMap[$prefix] | Sort-Object { $_.Norm.Length } -Descending)
 }
 Write-Host ("prefix entries: " + $prefixSeen.Count)
 
@@ -177,7 +182,7 @@ function ApplyFragments([string]$s) {
     $protected = [regex]::Replace($s, '<[^>]*>|\[\[[\s\S]*?\]\]|\{[^{}]*\}', [Text.RegularExpressions.MatchEvaluator]{
         param($m) $i = $saved.Count; [void]$saved.Add($m.Value); return ('__FRAG' + $i + '__')
     })
-    foreach ($key in ($script:fragmentMap.Keys | Sort-Object Length -Descending)) {
+    foreach ($key in $script:fragmentKeys) {
         if ($protected.IndexOf($key, [StringComparison]::Ordinal) -ge 0) {
             $protected = $protected.Replace($key, $script:fragmentMap[$key])
         }
@@ -188,7 +193,7 @@ function ApplyFragments([string]$s) {
 }
 
 $script:exact = $exact; $script:fold = $fold; $script:prefixMap = $prefixMap; $script:csvExact = $csvExact; $script:csvPrefix = $csvPrefix
-$script:fragmentMap = $fragmentMap
+$script:fragmentMap = $fragmentMap; $script:fragmentKeys = $fragmentKeys
 $stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; viaPrefix = 0; viaFragment = 0; cleaned = 0 }
 $missList = New-Object 'System.Collections.Generic.List[string]'
 $eval = [System.Text.RegularExpressions.MatchEvaluator]{
@@ -235,13 +240,15 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         }
     }
     # 部分汉化文本没有精确词条时保持原样，避免前缀匹配覆盖现有译文或造成重复。
-    if ($null -eq $zh -and $val -match '[\u4e00-\u9fff]' -and -not $cleaned) { return $m.Value }
+    # 但含中文的混合详情仍需继续尝试前缀匹配：旧版本可能只翻译了动态尾段，
+    # 这类字段若提前返回，就会永久保留“英文正文 + 中文尾段”。
+    $mixedValue = ($val -match '[\u4e00-\u9fff]' -and -not $cleaned)
     if ($null -eq $zh) {
         $normVal = Fold $val
         if ($normVal.Length -ge 24) {
             $prefix = $normVal.Substring(0, 24)
             if ($script:prefixMap.ContainsKey($prefix)) {
-                foreach ($entry in ($script:prefixMap[$prefix] | Sort-Object { $_.Norm.Length } -Descending)) {
+                foreach ($entry in $script:prefixMap[$prefix]) {
                     if (-not $normVal.StartsWith($entry.Norm, [StringComparison]::Ordinal)) { continue }
                     $newVal = $null
                     if ($val.StartsWith($entry.Key, [StringComparison]::Ordinal)) {
@@ -260,6 +267,7 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         }
     }
     if ($null -eq $zh -or [string]::IsNullOrWhiteSpace($zh)) {
+        if ($mixedValue) { return $m.Value }
         $stats.miss++
         if ($missList.Count -lt 20000) { $missList.Add($fld + "`t" + ($val -replace "`r?`n", ($BS + 'n'))) }
         return $m.Value
@@ -277,7 +285,12 @@ $excl = @(
     'localization'
 )
 if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
-    $files = Get-Content -Encoding UTF8 $fileList | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | ForEach-Object { Get-Item -LiteralPath $_ } | Where-Object { $_.Extension -eq '.json' }
+    $files = Get-Content -Encoding UTF8 $fileList | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | ForEach-Object {
+        $p = $_; $bad = $false
+        foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true; break } }
+        if ([IO.Path]::GetFileName($p) -in @('mod.json', 'modstate.json')) { $bad = $true }
+        if (-not $bad -and [IO.Path]::GetExtension($p) -eq '.json') { Get-Item -LiteralPath $p }
+    }
 } else {
     $files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
         $p = $_.FullName; $bad = $false

@@ -13,7 +13,8 @@ if ([string]::IsNullOrWhiteSpace($mods)) {
 }
 if ([string]::IsNullOrWhiteSpace($backupRoot)) { $backupRoot = Join-Path $packRoot 'backup\Mods-metadata' }
 $enc = New-Object Text.UTF8Encoding $false
-$tags = 'ZH|Components|ambushconvoy|RogueTechCore|CustomSalvage|CustomActivatableEquipment|CustomPilotProgression|Localization|Base|CAC|CU|AIM|DE|RU'
+$tagList = @('ZH','Components','ambushconvoy','RogueTechCore','CustomSalvage','CustomActivatableEquipment','CustomPilotProgression','Localization','Base','CAC','CU','AIM','DE','RU')
+$tags = ($tagList | ForEach-Object { [regex]::Escape($_) }) -join '|'
 $rx = [regex]'"(Details|YangsThoughts|StockRole)"\s*:\s*"((?:[^"\\]|\\.)*)"'
 $stats = @{ files = 0; changed = 0; cleaned = 0 }
 $metadataFiles = if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
@@ -22,7 +23,14 @@ $metadataFiles = if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]
 foreach ($f in $metadataFiles) {
     $stats.files++
     $orig = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)
-    if ($orig -notmatch '[\u4e00-\u9fff].*(?:ZH|Components|ambushconvoy)"') { continue }
+    # 先用字面量筛选候选文件；绝大多数 JSON 不含中文或元数据后缀，
+    # 不必为它们运行字段正则替换。
+    if ($orig.IndexOf([char]0x4e00) -lt 0) { continue }
+    $tagCandidate = $false
+    foreach ($tag in $tagList) {
+        if ($orig.IndexOf($tag, [StringComparison]::Ordinal) -ge 0) { $tagCandidate = $true; break }
+    }
+    if (-not $tagCandidate) { continue }
     $new = $rx.Replace($orig, {
         param($m)
         $v = $m.Groups[2].Value
