@@ -87,7 +87,7 @@ foreach ($raw in $rawLines) {
 foreach ($l in $rawLines) {
     if ([string]::IsNullOrWhiteSpace($l)) { continue }
     $i = $l.IndexOf("`t"); if ($i -lt 1) { continue }
-    $k = ($l.Substring(0, $i) -replace (($BS + $BS) + 'n'), "`r`n")
+    $k = ($l.Substring(0, $i)).Replace($BS + 'n', "`n")
     # dict-all.tsv 的第三列是来源/语言元数据（如 ZH、Components），
     # 只能把第二列当作译文；过去把整行剩余内容当译文，导致元数据写进游戏。
     $rest = $l.Substring($i + 1)
@@ -107,7 +107,7 @@ foreach ($l in $rawLines) {
             }
         }
     }
-    $v = ($rest -replace (($BS + $BS) + 'n'), "`r`n")
+    $v = ($rest).Replace($BS + 'n', "`n")
     if (Test-CorruptDictionaryValue $v) { $skippedCorrupt++; continue }
     if (-not $exact.ContainsKey($k)) { $exact[$k] = $v }
     $fk = Fold $k
