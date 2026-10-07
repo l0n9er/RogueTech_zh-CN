@@ -30,6 +30,7 @@ $script:currentStep = '准备'
 $script:lastGroup = 0
 $script:installLog = $null
 $script:installerPath = $PSCommandPath
+$script:modsJsonFileList = ''
 
 # 控制台输出编码: PS 5.1 默认按控制台当前代码页输出中文, 若与窗口代码页
 # 不一致会乱码。这里显式采用系统默认(GBK/936), 与 安装.bat 的 chcp 936 一致。
@@ -222,6 +223,13 @@ function RunTool($script, $extraArgs) {
     $sp = Join-Path $PSScriptRoot $script
     if (-not (Test-Path $sp)) { throw ("缺少安装工具: " + $script) }
     $arg = @('-NoProfile','-ExecutionPolicy','Bypass','-File', $sp) + $extraArgs
+    # 这些工具本来各自递归枚举 Mods。复用安装时生成的文件清单，避免每个
+    # 子进程都重新遍历数万文件；工具仍保留自身字段与路径过滤规则。
+    $indexedTools = @('fold-apply.ps1','apply-fields.ps1','apply-words.ps1','apply-norm.ps1','apply-tags.ps1','clean-metadata.ps1')
+    if ($script -in $indexedTools -and -not [string]::IsNullOrWhiteSpace($script:modsJsonFileList) -and
+        -not ($extraArgs -contains '-fileList')) {
+        $arg += @('-fileList', $script:modsJsonFileList)
+    }
     Write-Host ("      正在处理: " + $script + " ...") -ForegroundColor DarkGray
     LogLine ((Get-Date -Format 'HH:mm:ss') + " RUN " + $script)
     $timer = [Diagnostics.Stopwatch]::StartNew()
@@ -422,6 +430,14 @@ if (Test-Path -LiteralPath $modtekCache) {
 } else { Ok "未发现 ModTek 缓存，跳过清理" }
 RunTool 'fix-launcher-safe.ps1' @('-backupRoot', $backupDir)
 Ok "完成"
+
+# 建立本次安装的 Mods JSON 文件索引，供多个字段处理器复用。
+$script:modsJsonFileList = Join-Path $backupDir 'mods-json-files.txt'
+$modsRootForIndex = Join-Path $gameRoot 'Mods'
+$jsonPaths = Get-ChildItem $modsRootForIndex -Recurse -File -Filter '*.json' -ErrorAction SilentlyContinue |
+             ForEach-Object { $_.FullName }
+[IO.File]::WriteAllLines($script:modsJsonFileList, [string[]]$jsonPaths, (New-Object Text.UTF8Encoding $false))
+Ok ("已建立 JSON 文件索引：" + $jsonPaths.Count + " 个文件")
 
 # ---------- 7) 数据字段汉化 ----------
 Step 7 "汉化数据字段（Details / YangsThoughts / StockRole）"

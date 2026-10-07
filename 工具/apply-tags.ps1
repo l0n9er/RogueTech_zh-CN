@@ -14,6 +14,7 @@ param(
     [string]$csv = "",
     [string]$extraPairs = "",
     [string]$backupRoot = "",
+    [string]$fileList = "",
     [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
@@ -58,7 +59,10 @@ Write-Host ("总表键: " + $dict.Count)
 
 # 收集 tag 定义文件
 $targets = New-Object System.Collections.ArrayList
-foreach ($f in (Get-ChildItem $mods -Recurse -Filter '*.json' -File -ErrorAction SilentlyContinue)) {
+$tagFiles = if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
+    Get-Content -Encoding UTF8 $fileList | Where-Object { $_ } | ForEach-Object { [pscustomobject]@{ FullName = $_; Name = [IO.Path]::GetFileName($_); Extension = [IO.Path]::GetExtension($_) } }
+} else { Get-ChildItem $mods -Recurse -Filter '*.json' -File -ErrorAction SilentlyContinue }
+foreach ($f in $tagFiles) {
     if ($f.FullName -like '*\.modtek\*') { continue }
     if ($f.Name -in @('mod.json', 'modstate.json')) { continue }
     try { $t = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8) } catch { continue }

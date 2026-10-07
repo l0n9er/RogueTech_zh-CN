@@ -2,6 +2,7 @@
     [string]$mods = "",
     [string]$backupRoot = "",
     [string]$audit = "",
+    [string]$fileList = "",
     [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
@@ -143,7 +144,10 @@ $fldList = @('words','Details','YangsThoughts','StockRole','levelName','decripti
 $flds = [string]::Join('|', $fldList)
 $fieldRx = [regex]('"(' + $flds + ')"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"')
 $excl = @($BS + '.modtek' + $BS, 'ModSaves', $BS + 'unitTypes' + $BS)
-$files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
+$allFiles = if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
+    Get-Content -Encoding UTF8 $fileList | Where-Object { $_ } | ForEach-Object { [pscustomobject]@{ FullName = $_; Name = [IO.Path]::GetFileName($_); Extension = [IO.Path]::GetExtension($_) } }
+} else { Get-ChildItem $mods -Recurse -File -Filter '*.json' }
+$files = $allFiles | Where-Object {
     $p = $_.FullName; $bad = $false
     foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true } }
     -not $bad

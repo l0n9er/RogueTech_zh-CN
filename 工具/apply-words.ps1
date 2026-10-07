@@ -10,6 +10,7 @@ param(
     [string]$mods = "",
     [string]$pairs = "",
     [string]$backupRoot = "",
+    [string]$fileList = "",
     [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
@@ -73,7 +74,10 @@ $excl = @(
     ($BS + '.modtek' + $BS)
     'ModSaves'
 )
-$files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
+$allFiles = if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
+    Get-Content -Encoding UTF8 $fileList | Where-Object { $_ } | ForEach-Object { [pscustomobject]@{ FullName = $_; Name = [IO.Path]::GetFileName($_); Extension = [IO.Path]::GetExtension($_) } }
+} else { Get-ChildItem $mods -Recurse -File -Filter '*.json' }
+$files = $allFiles | Where-Object {
     $p = $_.FullName; $bad = $false
     foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true } }
     if ($_.Name -in @('mod.json', 'modstate.json')) { $bad = $true }

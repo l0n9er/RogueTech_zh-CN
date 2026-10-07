@@ -1,6 +1,7 @@
 param(
     [string]$mods = "",
-    [string]$backupRoot = ""
+    [string]$backupRoot = "",
+    [string]$fileList = ""
 )
 $ErrorActionPreference = 'Stop'
 $BS = [string][char]92
@@ -15,7 +16,10 @@ $enc = New-Object Text.UTF8Encoding $false
 $tags = 'ZH|Components|ambushconvoy|RogueTechCore|CustomSalvage|CustomActivatableEquipment|CustomPilotProgression|Localization|Base|CAC|CU|AIM|DE|RU'
 $rx = [regex]'"(Details|YangsThoughts|StockRole)"\s*:\s*"((?:[^"\\]|\\.)*)"'
 $stats = @{ files = 0; changed = 0; cleaned = 0 }
-foreach ($f in (Get-ChildItem $mods -Recurse -File -Filter '*.json' -Force -ErrorAction SilentlyContinue)) {
+$metadataFiles = if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
+    Get-Content -Encoding UTF8 $fileList | Where-Object { $_ } | ForEach-Object { [pscustomobject]@{ FullName = $_; Name = [IO.Path]::GetFileName($_); Extension = [IO.Path]::GetExtension($_) } }
+} else { Get-ChildItem $mods -Recurse -File -Filter '*.json' -Force -ErrorAction SilentlyContinue }
+foreach ($f in $metadataFiles) {
     $stats.files++
     $orig = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)
     if ($orig -notmatch '[\u4e00-\u9fff].*(?:ZH|Components|ambushconvoy)"') { continue }
