@@ -21,6 +21,22 @@ if ([string]::IsNullOrWhiteSpace($csv)) { $csv = Join-Path $packRoot 'strings_zh
 if ([string]::IsNullOrWhiteSpace($fragments)) { $fragments = Join-Path $PSScriptRoot 'dict-fragments.tsv' }
 $BS = [string][char]92
 
+# 防止半翻译结果再次写入游戏：这类译文通常只把英文连接词替换成中文，
+# 其余句子仍保持英文（例如“movement 以 a crawl”）。
+$corruptSpacePattern = '[A-Za-z]{2,}\s+(在|或|和|是|以|的|该|至|与|将|拥有|配备|一台)\s+[A-Za-z]{2,}'
+$corruptInsidePattern = '[A-Za-z]+(在|或|和|是|以|的|该|至|与|将|拥有|配备|一台)[A-Za-z]+'
+$corruptTagPattern = '<\/?[^>]*[\u4e00-\u9fff][^>]*>'
+function Test-CorruptDictionaryValue([string]$text) {
+    if ([string]::IsNullOrWhiteSpace($text)) { return $false }
+    if ($text -match $corruptTagPattern -or $text -match '<col或|</颜色>|</col或>') { return $true }
+    $latin = ([regex]::Matches($text, '[A-Za-z]')).Count
+    $han = ([regex]::Matches($text, '[\u4e00-\u9fff]')).Count
+    $ratio = $han / [Math]::Max(1, ($latin + $han))
+    $space = ([regex]::Matches($text, $corruptSpacePattern)).Count
+    $inside = ([regex]::Matches($text, $corruptInsidePattern)).Count
+    return (($ratio -lt 0.35 -and ($space -ge 1 -or $inside -ge 1)) -or ($space -ge 2) -or ($inside -ge 3))
+}
+
 # --- 字典：精确键 + 空白折叠键 两套 ---
 $exact = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 function Fold([string]$s) { return ([regex]::Replace(($s -replace "`r`n", "`n"), '[\s]+', ' ')).Trim() }
@@ -33,6 +49,7 @@ if (-not [string]::IsNullOrWhiteSpace($extraDict) -and [IO.File]::Exists($extraD
     $dictFiles += $extraDict
 }
 $rawLines = foreach ($df in $dictFiles) { [IO.File]::ReadAllLines($df, [Text.Encoding]::UTF8) }
+$skippedCorrupt = 0
 foreach ($raw in $rawLines) {
     $parts = $raw.Split([char]9)
     if ($parts.Count -ge 3) {
@@ -65,6 +82,7 @@ foreach ($l in $rawLines) {
         }
     }
     $v = ($rest -replace (($BS + $BS) + 'n'), "`r`n")
+    if (Test-CorruptDictionaryValue $v) { $skippedCorrupt++; continue }
     if (-not $exact.ContainsKey($k)) { $exact[$k] = $v }
     $fk = Fold $k
     if ($fk.Length -gt 12 -and -not $fold.ContainsKey($fk)) { $fold[$fk] = $v }
@@ -241,7 +259,14 @@ foreach ($f in $files) {
     $new = $rx.Replace($orig, $eval)
     if ($new -eq $orig) { continue }
     if (-not $DryRun) {
-        [void]$ser.DeserializeObject($new)
+        # JavaScriptSerializer 在部分 PowerShell 7 环境会因 System.Web 版本冲突
+        # 抛出 WebResourceAttribute 加载错误；写入前改用内置 JSON 解析器兜底验证。
+        try {
+            [void]$ser.DeserializeObject($new)
+        } catch {
+            try { $null = $new | ConvertFrom-Json -Depth 100 -ErrorAction Stop }
+            catch { throw }
+        }
         $rel = $f.FullName.Substring($mods.Length).TrimStart($BS)
         $bak = Join-Path $backupRoot $rel
         $d = Split-Path $bak -Parent
@@ -251,7 +276,7 @@ foreach ($f in $files) {
         $stats.changed++
     }
 }
-$line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " viaPrefix=" + $stats.viaPrefix + " viaFragment=" + $stats.viaFragment + " miss=" + $stats.miss
+$line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " viaPrefix=" + $stats.viaPrefix + " viaFragment=" + $stats.viaFragment + " miss=" + $stats.miss + " skippedCorrupt=" + $skippedCorrupt
 Write-Host $line
 # 报告写到包内 backup 目录(不污染游戏目录, 便于排查)
 $reportDir = Join-Path $packRoot 'backup'
