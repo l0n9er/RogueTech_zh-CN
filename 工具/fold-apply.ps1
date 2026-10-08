@@ -129,6 +129,32 @@ if ([IO.File]::Exists($fragments)) {
 $fragmentKeys = @($fragmentMap.Keys | Sort-Object Length -Descending)
 Write-Host ("fragments: " + $fragmentMap.Count)
 
+# 修复旧版本留下的“英文正文 + 中文片段”污染。先建立唯一的反向片段表，
+# 只有混合文本在完整匹配失败时才用它恢复英文候选键。
+$reverseFragmentMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+$reverseAmbiguous = New-Object 'System.Collections.Generic.HashSet[string]'
+foreach ($entry in $fragmentMap.GetEnumerator()) {
+    $en = [string]$entry.Key
+    $zh = [string]$entry.Value
+    if ($zh.Length -lt 2 -or $reverseAmbiguous.Contains($zh)) { continue }
+    if ($reverseFragmentMap.ContainsKey($zh)) {
+        if ($reverseFragmentMap[$zh] -ne $en) {
+            [void]$reverseFragmentMap.Remove($zh)
+            [void]$reverseAmbiguous.Add($zh)
+        }
+    } else {
+        $reverseFragmentMap[$zh] = $en
+    }
+}
+$reverseFragmentKeys = @($reverseFragmentMap.Keys | Sort-Object Length -Descending)
+function ReverseFragments([string]$s) {
+    if ([string]::IsNullOrWhiteSpace($s) -or $s -notmatch '[\u4e00-\u9fff]') { return $s }
+    foreach ($key in $script:reverseFragmentKeys) {
+        $s = $s.Replace($key, $script:reverseFragmentMap[$key])
+    }
+    return $s
+}
+
 # 已有词典中的机甲描述常会在末尾追加 Quirk、装甲限制等动态文本。
 # 按规范化前缀建索引，在本轮扫描中替换已知译文的开头，避免再次遍历 Mods。
 $prefixMap = @{}
@@ -194,6 +220,7 @@ function ApplyFragments([string]$s) {
 
 $script:exact = $exact; $script:fold = $fold; $script:prefixMap = $prefixMap; $script:csvExact = $csvExact; $script:csvPrefix = $csvPrefix
 $script:fragmentMap = $fragmentMap; $script:fragmentKeys = $fragmentKeys
+$script:reverseFragmentMap = $reverseFragmentMap; $script:reverseFragmentKeys = $reverseFragmentKeys
 $stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; viaPrefix = 0; viaFragment = 0; cleaned = 0 }
 $missList = New-Object 'System.Collections.Generic.List[string]'
 $eval = [System.Text.RegularExpressions.MatchEvaluator]{
@@ -215,56 +242,68 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         if ($m2 -ne $m.Value) { $stats.repl++ }
         return $m2
     }
-    $fragmentVal = ApplyFragments $val
-    if ($fragmentVal -ne $val) {
-        $stats.repl++; $stats.viaFragment++
-        return '"' + $fld + '": "' + (Esc $fragmentVal) + '"'
-    }
     $zh = $null
-    # 某些定义的 Details 只有 Quirk / 费用等动态尾段已被汉化，正文仍是英文。
-    # 完全匹配的源文或 CSV squash 键仍可安全替换为完整译文，因此在跳过混合字段前先查表。
-    if ($script:exact.ContainsKey($val)) { $zh = $script:exact[$val] }
-    if ($null -eq $zh) {
-        $fk = Fold $val
-        if ($script:fold.ContainsKey($fk)) { $zh = $script:fold[$fk]; $stats.viaFold++ }
-    }
-    if ($null -eq $zh -and $script:csvExact.Count -gt 0) {
-        $ck = CsvKey $val
-        if ($script:csvExact.ContainsKey($ck)) { $zh = $script:csvExact[$ck] }
-    }
-    if ($null -eq $zh -and $script:csvPrefix.Count -gt 0) {
-        $ck = CsvKey $val
-        if ($ck.Length -ge 240) {
-            $cp = $ck.Substring(0, 240)
-            if ($script:csvPrefix.ContainsKey($cp) -and -not [string]::IsNullOrWhiteSpace($script:csvPrefix[$cp])) { $zh = $script:csvPrefix[$cp] }
-        }
-    }
-    # 部分汉化文本没有精确词条时保持原样，避免前缀匹配覆盖现有译文或造成重复。
-    # 但含中文的混合详情仍需继续尝试前缀匹配：旧版本可能只翻译了动态尾段，
-    # 这类字段若提前返回，就会永久保留“英文正文 + 中文尾段”。
     $mixedValue = ($val -match '[\u4e00-\u9fff]' -and -not $cleaned)
-    if ($null -eq $zh) {
-        $normVal = Fold $val
-        if ($normVal.Length -ge 24) {
-            $prefix = $normVal.Substring(0, 24)
-            if ($script:prefixMap.ContainsKey($prefix)) {
-                foreach ($entry in $script:prefixMap[$prefix]) {
-                    if (-not $normVal.StartsWith($entry.Norm, [StringComparison]::Ordinal)) { continue }
-                    $newVal = $null
-                    if ($val.StartsWith($entry.Key, [StringComparison]::Ordinal)) {
-                        $newVal = $entry.Value + $val.Substring($entry.Key.Length)
-                    } else {
-                        $pattern = FlexiblePrefixPattern $entry.Key
-                        $mm = [regex]::Match($val, $pattern, [Text.RegularExpressions.RegexOptions]::Singleline)
-                        if ($mm.Success) { $newVal = $entry.Value + $val.Substring($mm.Length) }
-                    }
-                    if ($null -ne $newVal -and $newVal -ne $val) {
-                        $stats.repl++; $stats.viaPrefix++
-                        return '"' + $fld + '": "' + (Esc $newVal) + '"'
+    $candidates = New-Object 'System.Collections.Generic.List[string]'
+    if ($mixedValue) {
+        $reversed = ReverseFragments $val
+        if ($reversed -ne $val) { [void]$candidates.Add($reversed) }
+    }
+    [void]$candidates.Add($val)
+    foreach ($candidate in $candidates) {
+        if ($script:exact.ContainsKey($candidate)) { $zh = $script:exact[$candidate] }
+        if ($null -eq $zh) {
+            $fk = Fold $candidate
+            if ($script:fold.ContainsKey($fk)) { $zh = $script:fold[$fk]; $stats.viaFold++ }
+        }
+        if ($null -eq $zh -and $script:csvExact.Count -gt 0) {
+            $ck = CsvKey $candidate
+            if ($script:csvExact.ContainsKey($ck)) { $zh = $script:csvExact[$ck] }
+        }
+        if ($null -eq $zh -and $script:csvPrefix.Count -gt 0) {
+            $ck = CsvKey $candidate
+            if ($ck.Length -ge 240) {
+                $cp = $ck.Substring(0, 240)
+                if ($script:csvPrefix.ContainsKey($cp) -and -not [string]::IsNullOrWhiteSpace($script:csvPrefix[$cp])) { $zh = $script:csvPrefix[$cp] }
+            }
+        }
+        if ($null -eq $zh) {
+            $normVal = Fold $candidate
+            if ($normVal.Length -ge 24) {
+                $prefix = $normVal.Substring(0, 24)
+                if ($script:prefixMap.ContainsKey($prefix)) {
+                    foreach ($entry in $script:prefixMap[$prefix]) {
+                        if (-not $normVal.StartsWith($entry.Norm, [StringComparison]::Ordinal)) { continue }
+                        $newVal = $null
+                        if ($candidate.StartsWith($entry.Key, [StringComparison]::Ordinal)) {
+                            $newVal = $entry.Value + $candidate.Substring($entry.Key.Length)
+                        } else {
+                            $pattern = FlexiblePrefixPattern $entry.Key
+                            $mm = [regex]::Match($candidate, $pattern, [Text.RegularExpressions.RegexOptions]::Singleline)
+                            if ($mm.Success) { $newVal = $entry.Value + $candidate.Substring($mm.Length) }
+                        }
+                        if ($null -ne $newVal -and $newVal -ne $candidate) {
+                            $zh = $newVal
+                            $stats.viaPrefix++
+                            break
+                        }
                     }
                 }
             }
         }
+        if ($null -ne $zh -and -not [string]::IsNullOrWhiteSpace($zh)) { break }
+    }
+    if ($null -ne $zh -and -not [string]::IsNullOrWhiteSpace($zh)) {
+        $m2 = '"' + $fld + '": "' + (Esc $zh) + '"'
+        if ($m2 -ne $m.Value) { $stats.repl++ }
+        return $m2
+    }
+    # 完整词条无法命中时，才允许用片段补译；这类结果可能仍是混合文本，
+    # 但不会遮蔽后续完整词条，也不会破坏已有完整中文字段。
+    $fragmentVal = ApplyFragments $val
+    if ($fragmentVal -ne $val) {
+        $stats.repl++; $stats.viaFragment++
+        return '"' + $fld + '": "' + (Esc $fragmentVal) + '"'
     }
     if ($null -eq $zh -or [string]::IsNullOrWhiteSpace($zh)) {
         if ($mixedValue) { return $m.Value }
