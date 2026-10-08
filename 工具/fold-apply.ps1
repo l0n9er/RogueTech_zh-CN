@@ -4,6 +4,7 @@
     [string]$backupRoot = "",
     [string]$csv = "",
     [string]$fragments = "",
+    [string]$repairDict = "",
     [string]$extraDict = "",
     [string]$fileList = "",
     [switch]$DryRun
@@ -19,6 +20,7 @@ if ([string]::IsNullOrWhiteSpace($mods)) {
 if ([string]::IsNullOrWhiteSpace($backupRoot)) { $backupRoot = Join-Path $packRoot 'backup\Mods-defs' }
 if ([string]::IsNullOrWhiteSpace($csv)) { $csv = Join-Path $packRoot 'strings_zh-CN.csv' }
 if ([string]::IsNullOrWhiteSpace($fragments)) { $fragments = Join-Path $PSScriptRoot 'dict-fragments.tsv' }
+if ([string]::IsNullOrWhiteSpace($repairDict)) { $repairDict = Join-Path $PSScriptRoot 'dict-repair.tsv' }
 $BS = [string][char]92
 
 # 防止半翻译结果再次写入游戏：这类译文通常只把英文连接词替换成中文，
@@ -129,6 +131,21 @@ if ([IO.File]::Exists($fragments)) {
 $fragmentKeys = @($fragmentMap.Keys | Sort-Object Length -Descending)
 Write-Host ("fragments: " + $fragmentMap.Count)
 
+# 旧版词典中已有一批“英文正文 + 中文词片段”的结果，游戏文件里可能已经
+# 写入这些坏值，无法再通过原始英文键命中。这个覆盖表按坏值直接恢复到
+# 历史审校过的完整译文，优先于常规词典查找。
+$repairMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+if ([IO.File]::Exists($repairDict)) {
+    foreach ($rl in [IO.File]::ReadAllLines($repairDict, [Text.Encoding]::UTF8)) {
+        $rp = $rl.Split([char]9, 2)
+        if ($rp.Count -lt 2 -or [string]::IsNullOrWhiteSpace($rp[0])) { continue }
+        $rk = $rp[0].Replace($BS + 'n', "`n").Replace($BS + 'r', "`r").Replace($BS + 't', "`t")
+        $rv = $rp[1].Replace($BS + 'n', "`n").Replace($BS + 'r', "`r").Replace($BS + 't', "`t")
+        if (-not $repairMap.ContainsKey($rk)) { $repairMap[$rk] = $rv }
+    }
+}
+Write-Host ("repair entries: " + $repairMap.Count)
+
 # 修复旧版本留下的“英文正文 + 中文片段”污染。先建立唯一的反向片段表，
 # 只有混合文本在完整匹配失败时才用它恢复英文候选键。
 $reverseFragmentMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
@@ -219,7 +236,7 @@ function ApplyFragments([string]$s) {
 }
 
 $script:exact = $exact; $script:fold = $fold; $script:prefixMap = $prefixMap; $script:csvExact = $csvExact; $script:csvPrefix = $csvPrefix
-$script:fragmentMap = $fragmentMap; $script:fragmentKeys = $fragmentKeys
+$script:fragmentMap = $fragmentMap; $script:fragmentKeys = $fragmentKeys; $script:repairMap = $repairMap
 $script:reverseFragmentMap = $reverseFragmentMap; $script:reverseFragmentKeys = $reverseFragmentKeys
 $stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; viaPrefix = 0; viaFragment = 0; cleaned = 0 }
 $missList = New-Object 'System.Collections.Generic.List[string]'
@@ -237,6 +254,13 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         if ($clean -ne $val) { $val = $clean; $stats.cleaned++; $cleaned = $true }
     }
     if ([string]::IsNullOrWhiteSpace($val)) { return $m.Value }
+    if ($script:repairMap.ContainsKey($val)) {
+        $rv = $script:repairMap[$val]
+        if ($rv -ne $val) {
+            $stats.repl++
+            return '"' + $fld + '": "' + (Esc $rv) + '"'
+        }
+    }
     if ($cleaned) {
         $m2 = '"' + $fld + '": "' + (Esc $val) + '"'
         if ($m2 -ne $m.Value) { $stats.repl++ }
