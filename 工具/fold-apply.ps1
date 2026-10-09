@@ -5,7 +5,7 @@
     [string]$csv = "",
     [string]$fragments = "",
     [string]$repairDict = "",
-    [string]$extraDict = "",
+    [string[]]$extraDict = @(),
     [string]$fileList = "",
     [switch]$DryRun
 )
@@ -75,8 +75,8 @@ $metaSuffixes = New-Object 'System.Collections.Generic.HashSet[string]'
 # 先收集第三列中的元数据标记；部分旧行把标记直接粘在第二列末尾，
 # 只有预扫描整张表后才能同时识别两种格式。
 $dictFiles = @($dict)
-if (-not [string]::IsNullOrWhiteSpace($extraDict) -and [IO.File]::Exists($extraDict)) {
-    $dictFiles += $extraDict
+foreach ($extra in @($extraDict)) {
+    if (-not [string]::IsNullOrWhiteSpace($extra) -and [IO.File]::Exists($extra)) { $dictFiles += $extra }
 }
 $rawLines = foreach ($df in $dictFiles) { [IO.File]::ReadAllLines($df, [Text.Encoding]::UTF8) }
 $skippedCorrupt = 0
@@ -89,6 +89,20 @@ foreach ($raw in $rawLines) {
     }
 }
 $metaSuffixesByLength = @($metaSuffixes | Sort-Object Length -Descending)
+$dictQuality = New-Object 'System.Collections.Generic.Dictionary[string,int]'
+function TranslationQuality([string]$key, [string]$value) {
+    if ([string]::IsNullOrWhiteSpace($value)) { return -100000 }
+    if (Test-CorruptDictionaryValue $value) { return -100000 }
+    $keyHan = ([regex]::Matches($key, '[\u3400-\u9fff]')).Count
+    $han = ([regex]::Matches($value, '[\u3400-\u9fff]')).Count
+    $latin = ([regex]::Matches($value, '[A-Za-z]')).Count
+    # 英文长键的英文原文不是译文；保留原文只会让安装器把英文重新写回游戏。
+    if ($keyHan -eq 0 -and $han -eq 0 -and $key.Length -ge 24) { return -90000 }
+    $score = $han * 10
+    if ($value -ne $key) { $score += 100 }
+    if ($han -gt 0 -and $latin -gt 0) { $score += 10 }
+    return $score
+}
 foreach ($l in $rawLines) {
     if ([string]::IsNullOrWhiteSpace($l)) { continue }
     $i = $l.IndexOf("`t"); if ($i -lt 1) { continue }
@@ -114,7 +128,14 @@ foreach ($l in $rawLines) {
     }
     $v = ($rest).Replace($BS + 'n', "`n")
     if (Test-CorruptDictionaryValue $v) { $skippedCorrupt++; continue }
-    if (-not $exact.ContainsKey($k)) { $exact[$k] = $v }
+    $q = TranslationQuality $k $v
+    if ($q -le -90000) { continue }
+    # 同一个英文键可能同时存在“英文原文”“半翻译”“完整中文”多条记录。
+    # 不再采用首条记录，按质量分数选择完整译文。
+    if (-not $dictQuality.ContainsKey($k) -or $q -gt $dictQuality[$k]) {
+        $exact[$k] = $v
+        $dictQuality[$k] = $q
+    }
     $fk = Fold $k
     if ($fk.Length -gt 12 -and -not $fold.ContainsKey($fk)) { $fold[$fk] = $v }
 }
@@ -278,7 +299,7 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     [void]$candidates.Add($val)
     foreach ($candidate in $candidates) {
         if ($script:exact.ContainsKey($candidate)) { $zh = $script:exact[$candidate] }
-        if ($null -eq $zh) {
+    if ($null -eq $zh) {
             $fk = Fold $candidate
             if ($script:fold.ContainsKey($fk)) { $zh = $script:fold[$fk]; $stats.viaFold++ }
         }
@@ -324,12 +345,18 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         if ($m2 -ne $m.Value) { $stats.repl++ }
         return $m2
     }
-    # 完整词条无法命中时，才允许用片段补译；这类结果可能仍是混合文本，
-    # 但不会遮蔽后续完整词条，也不会破坏已有完整中文字段。
-    $fragmentVal = ApplyFragments $val
-    if ($fragmentVal -ne $val) {
-        $stats.repl++; $stats.viaFragment++
-        return '"' + $fld + '": "' + (Esc $fragmentVal) + '"'
+    # 完整词条无法命中时，不再对长段落做片段替换。
+    # 旧逻辑把英文正文中的零散词替换成中文，产生“英文正文 + 中文片段”
+    # 的污染（机甲/武器详情最明显）。短字段仍允许使用片段词典，避免
+    # StockRole 等简短显示值失去已有术语翻译。
+    $englishWords = ([regex]::Matches($val, '\b[A-Za-z]{3,}\b')).Count
+    $allowFragment = ($val.Length -lt 160 -or $englishWords -lt 8)
+    if ($allowFragment) {
+        $fragmentVal = ApplyFragments $val
+        if ($fragmentVal -ne $val) {
+            $stats.repl++; $stats.viaFragment++
+            return '"' + $fld + '": "' + (Esc $fragmentVal) + '"'
+        }
     }
     if ($null -eq $zh -or [string]::IsNullOrWhiteSpace($zh)) {
         if ($mixedValue) { return $m.Value }
@@ -385,7 +412,7 @@ foreach ($f in $files) {
         try {
             [void]$ser.DeserializeObject($new)
         } catch {
-            try { $null = $new | ConvertFrom-Json -Depth 100 -ErrorAction Stop }
+            try { $null = $new | ConvertFrom-Json -ErrorAction Stop }
             catch { throw }
         }
         $rel = $f.FullName.Substring($mods.Length).TrimStart($BS)

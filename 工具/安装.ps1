@@ -270,6 +270,8 @@ function AssertPackageInputs {
     $body = [IO.File]::ReadAllText($script:installerPath, [Text.Encoding]::UTF8)
     $refs = [regex]::Matches($body, "'([^']+\.(?:ps1|tsv))'") | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
     foreach ($rel in $refs) {
+        # 这些是安装过程生成到 backup 的报告名，不是包内输入词典。
+        if ($rel -in @('unit-fields-qa.tsv','mods-json-files.txt','coverage-summary.txt')) { continue }
         $p = Join-Path $PSScriptRoot $rel
         if (-not (Test-Path -LiteralPath $p)) { [void]$missing.Add($p) }
     }
@@ -443,6 +445,14 @@ if ($movedModtekState -eq 0) { Ok "未发现 ModTek Cache/Database，跳过清�
 RunTool 'fix-launcher-safe.ps1' @('-backupRoot', $backupDir)
 Ok "完成"
 
+# 旧版本曾把 CSV 的 0x1F 分隔符直接写入 JSON Details，造成大量载具/机甲
+# 定义无法解析；所有后续词典处理器都会静默跳过这类文件。必须在建立索引
+# 和汉化前统一修复裸控制字符，确保全量定义都进入同一处理流程。
+Step 6 "修复 JSON 裸控制字符"
+RunTool 'sanitize-json.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                             '-backupRoot', (Join-Path $backupDir 'json-sanitize'))
+Ok "完成"
+
 # 建立本次安装的 Mods JSON 文件索引，供多个字段处理器复用。
 $script:modsJsonFileList = Join-Path $backupDir 'mods-json-files.txt'
 $modsRootForIndex = Join-Path $gameRoot 'Mods'
@@ -454,10 +464,13 @@ Ok ("已建立 JSON 文件索引：" + $jsonPaths.Count + " 个文件")
 # ---------- 7) 数据字段汉化 ----------
 Step 7 "汉化数据字段（Details / YangsThoughts / StockRole）"
 RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                           '-pairs', (Join-Path $PSScriptRoot 'dict-all.tsv'),
-                           '-extraDict', (Join-Path $PSScriptRoot 'dict-details-direct.tsv'),
+                           '-dict', (Join-Path $PSScriptRoot 'dict-all.tsv'),
+                           '-extraDict', (Join-Path $PSScriptRoot 'dict-runtime-extra.tsv'),
                            '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-defs'))
+Ok "完成"
+RunTool 'normalize-unit-terms.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                    '-backupRoot', (Join-Path $packRoot 'backup\Mods-unit-terms'))
 Ok "完成"
 
 # ---------- 8) 装备特性说明汉化 ----------
@@ -798,6 +811,15 @@ Ok ("翻译总表: " + $csvLine + " 行")
 if ($LASTEXITCODE -ne 0) {
     Warn "检测到标识符被汉化（已自动还原），详见 backup\registry-check.txt"
 } else { Ok "注册表标识符正常" }
+
+# 全量单位字段审计：不再只看抽样型号。无效 JSON、长英文详情中的中文
+# 插入污染、字面换行和裸控制字符都必须进入报告；其中格式问题直接阻止
+# 安装宣称成功，避免处理器静默跳过后仍显示“安装完成”。
+$qaUnit = Join-Path $PSScriptRoot 'qa-unit-fields.ps1'
+if ([IO.File]::Exists($qaUnit)) {
+    & powershell -NoProfile -ExecutionPolicy Bypass -File $qaUnit -mods (Join-Path $gameRoot 'Mods') -out (Join-Path $backupDir 'unit-fields-qa.tsv')
+    if ($LASTEXITCODE -ne 0) { throw "单位字段全量校验失败，详见 backup\$stamp\unit-fields-qa.tsv" }
+}
 
 Say ""
 Say "================================================"
