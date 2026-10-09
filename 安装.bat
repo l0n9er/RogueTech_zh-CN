@@ -1,5 +1,5 @@
 @echo off
-chcp 65001 >nul
+chcp 936 >nul
 title BATTLETECH / RogueTech 简体中文补丁
 cd /d "%~dp0"
 
@@ -33,4 +33,4 @@ if "%RC%"=="0" (
     echo  [失败] 安装未完成（返回码 %RC%）。请查看窗口中的错误和 install.log。
 )
 echo.
-pause
+pause
