@@ -777,6 +777,8 @@ RunTool 'apply-norm.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
 RunTool 'norm-csv.ps1' @('-csv', $csvDst)
 RunTool 'clean-metadata.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                '-backupRoot', (Join-Path $packRoot 'backup\Mods-metadata'))
+RunTool 'fix-literal-newlines.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                    '-backupRoot', (Join-Path $backupDir 'literal-newlines'))
 Ok "完成"
 
 # ---------- 12) 校验 ----------

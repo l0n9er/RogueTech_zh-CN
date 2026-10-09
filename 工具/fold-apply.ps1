@@ -58,7 +58,9 @@ if ([IO.File]::Exists($csv)) {
         $comma = $line.IndexOf(',')
         if ($comma -lt 1) { continue }
         $key = $line.Substring(0, $comma)
-        $value = $line.Substring($comma + 1)
+        # CSV 译文里的字面量 \\n 表示换行；先还原为真实换行，再由 Esc
+        # 编成 JSON 的单层转义，避免游戏界面显示字面量 "\\n"。
+        $value = $line.Substring($comma + 1).Replace($BS + 'n', "`n").Replace($BS + 'r', "`r")
         if (-not $csvExact.ContainsKey($key)) { $csvExact[$key] = $value }
         # 详情末尾可能已被旧版本部分汉化（例如仅 Quirk 行为中文），
         # 但正文开头仍与 CSV 英文键一致。记录稳定前缀用于整段替换。
