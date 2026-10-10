@@ -8805,3 +8805,1992 @@ The Gladiator is a commissioned 黑骑士 refit, carrying 2 prototype 等离子�
 Being developed in 3147 by the 球体共和国, this variant is based on the LMT-2R. The 2R is an experimental Drone Command Unit.	球体共和国于 3147 年开发这一型号，设计基于 LMT-2R。2R 是一台实验型无人机指挥单元。	Residual-WholeField
 Built around a 360-rated XL引擎, the 兰斯洛特 LNC25-01M is armed with a duo of ER Large Lasers and a Rocketstorm battery.	兰斯洛特 LNC25-01M 围绕 360 级 XL 引擎建造，装备一对增程大型激光器和一组火箭风暴电池。	Residual-WholeField
 A close range variant, the Turkina E is equipped with six 锁定式SRM-6's and a HAG 40	作为近距离型号，Turkina E 装备六具锁定式 SRM-6 和一门 HAG/40。	Residual-WholeField
+The Kamakiri mounts three weapon systems mounted in the front of the VTOL - a single Tiegart Particle Projection Cannon and a pair of Telos ThunderShot 雷电10 Missile Launchers. The Kamakiri Attack VTOL was 开发 at the end of the thirty-first century by Yan Manufacturing of New Samarkand as a result of their growing success in the military aerospace market. Dubbed as resembling a praying mantis, the Kamakiri was an immediate success; the Draconis Combine Mustered Soldiery personnel responsible for supervising the first 车辆 trial watched for just two minutes before approving the Kamakiri for purchase. Moving as fast as many reconnaissance and strike platforms in service with the DCMS already thanks to the DAV 155 XL extra light 引擎, the original specification 装甲 installed by Yan was replaced with seven tons of StarGuard Aurora Reflective at the request of the DCMS, who wanted to improve the Kamakari's protection against energy weapons, although the nature of the Reflective 装甲 didn't offer any additional protection against the flak commonly directed at VTOLs.
+
+<b><color=#ffcc00>生物群系限制: 该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动: 7/11 格 / 210/330 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 反射涂层
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       175     30
+<b>左侧</b>         140     30
+<b>右侧</b>       140     30
+<b>后方</b>        100     30
+
+<b>总计</b>      580    150</color>
+
+<color=#ff0000>怪癖: 精准 Weapon - Wingmounted</color>	Kamakiri 在垂直起降机前部安装三套武器系统：一门 Tiegart 粒子投射炮和一对 Telos ThunderShot 雷电 10 导弹发射器。Kamakiri 攻击型垂直起降机由新萨马尔坎德的 Yan 制造公司在 31 世纪末开发，源于该公司在军用航空市场上的持续成功。它因外形酷似螳螂而得名，并迅速取得成功；负责监督首次车辆试验的龙帝国武装部队人员仅观察两分钟便批准采购。DAV 155 XL 超轻引擎使其速度可媲美龙帝国武装部队现役的许多侦察和突击平台。应龙帝国要求，Yan 安装的标准装甲被七吨 StarGuard Aurora 反射装甲替代，以提高对能量武器的防护；但反射装甲无法额外抵御通常针对垂直起降机的高射炮火。
+
+<b><color=#ffcc00>生物群系限制: 该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动: 7/11 格 / 210/330 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 反射涂层
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       175     30
+<b>左侧</b>         140     30
+<b>右侧</b>       140     30
+<b>后方</b>        100     30
+
+<b>总计</b>      580    150</color>
+
+<color=#ff0000>怪癖: 精准 武器-翼下挂载</color>	Goal-WholeField
+Based on the Infantry Variant this Maxim variant has twin C3 master computers and a 守护者ECM suite. The 装甲 and weaponry remain identical to the Infantry variant. Originally 生产 by Maxim Transport Industries, before a series of scandals led to its closure in 3039, the fast and heavily armed Maxim quickly became the model example of a transport throughout the Inner Sphere. Still 生产 via different companies, the Maxim is still heavily used by many units as their principal APC. It has proven itself popular both to unit commanders, who respect its firepower, speed and ability to carry a full platoon of infantry, and to the troops it carries, who respect its roomy, comfortable infantry bay. 
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     25
+<b>左侧</b>         140     25
+<b>右侧</b>       140     25
+<b>后方</b>        105     25
+<b>炮塔</b>      140     25
+
+<b>总计</b>      695    125</color>
+
+<color=#ff0000>怪癖: 坚固</color>	这一 Maxim 分型基于步兵运输型，装备两台 C3 主机计算机和守护者 ECM 套件，装甲与武器配置与步兵型相同。Maxim 最初由 Maxim 运输工业公司生产，3039 年一系列丑闻导致公司关闭；这款速度快、武装强的运输车很快成为内层星域运输工具的典范。此后虽由不同公司继续生产，Maxim 仍被许多部队广泛使用。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     25
+<b>左侧</b>         140     25
+<b>右侧</b>       140     25
+<b>后方</b>        105     25
+<b>炮塔</b>      140     25
+
+<b>总计</b>      695    125</color>
+
+<color=#ff0000>怪癖: 坚固</color>	Goal-WholeField
+The Pollux ADA 重型坦克 was a dedicated air defense 火炮 vehicle designed to serve as a component of the 泰拉霸权's planetary defense forces. Armed with a Sniper火炮 Piece and a LB 10-X Autocannon, the Pollux carried 3 tons of ammunition for each weapon.A turret mounted 中型激光 and forward facing 小型脉冲激光 gave the tank some token means of close-in self-defense. Also protecting the tank is 6 tons of 铁纤维装甲 装甲 giving its hull modest strength ward off light attacks as its escorts take out would be attackers. Powering the vehicle is a GM 225-rated standard Fusion 引擎, giving the vehicle modest speeds to keep with typical vehicle formation and heavy 'Mechs
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     40
+<b>左侧</b>         130     40
+<b>右侧</b>       130     40
+<b>后方</b>        115     40
+<b>炮塔</b>      170     40
+
+<b>总计</b>      715    200</color>
+
+<color=#ff0000>特性：防空瞄准系统</color>	Pollux ADA 重型坦克是专门的防空火炮车辆，作为泰拉霸权行星防御部队的一部分服役。它装备 Sniper 火炮和 LB 10-X 自动炮，每种武器各携带 3 吨弹药。炮塔上的中型激光和车体前向的小型脉冲激光提供有限的近距离自卫能力，6 吨装甲和其他设备进一步保护车辆。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     40
+<b>左侧</b>         130     40
+<b>右侧</b>       130     40
+<b>后方</b>        115     40
+<b>炮塔</b>      170     40
+
+<b>总计</b>      715    200</color>
+
+<color=#ff0000>特性：防空瞄准系统</color>	Goal-WholeField
+This variant of the JES I Tactical Missile Carrier replaces the standard 引擎 with a larger 165-rated model. This increases the speed of the JES by 50%. Joint Equipment System’s first 车辆 since the 氏族入侵 overtook its main plant on Alshain. The JES I is a close-in fighting 车辆 for primary escort and defense. The 车辆 is considered by many to be underpowered with its 15-rating fusion 引擎 and under装甲ed for its size. The 车辆’s glaring flaws were due to JES’s lack of capital to fund better equipment. However, the 车辆 proved to be popular among Periphery nations and so the 车辆’s production continued well into the 3130s
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       120     25
+<b>左侧</b>          70     25
+<b>右侧</b>        70     25
+<b>后方</b>         50     25
+<b>炮塔</b>       60     25
+
+<b>总计</b>      370    125</color>
+
+<color=#ff0000>怪癖: 改进的 定位 - Medium</color>	JES I 战术导弹运输车的这一分型以更大的 165 级引擎取代标准引擎，使 JES 速度提高 50%。这是联合装备系统在氏族入侵占领其 Alshain 主工厂后的首款车辆。JES I 是用于近距离战斗、护航和防御的车辆；许多人认为它动力不足，因为 15 级聚变引擎相对于车体尺寸过小，装甲也不够。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       120     25
+<b>左侧</b>          70     25
+<b>右侧</b>        70     25
+<b>后方</b>         50     25
+<b>炮塔</b>       60     25
+
+<b>总计</b>      370    125</color>
+
+<color=#ff0000>怪癖: 改进的 定位 - Medium</color>	Goal-WholeField
+Based on the King Crab, and built in the same factory that first 生产 the Mackie, the Vanquisher has a legendary pedigree. The Vanquisher has its genesis in the development of reverse engineered 改进的 C3 Computers. Once the 布雷克圣言会 had perfected their version of C3i, Cameron St. Jamais contacted Skobel 机甲Works and contracted them to produce a '机甲 that would showcase the features of the new system. The Vanquisher was the result of that request. In order to allow it to carry as heavy a payload as possible without sacrificing durability, the '机甲 is built on a Hollis Alteration Mark VI Endo Steel that carries a Vlar 300 fusion 引擎, which propels the '机甲 to a top speed of 54 km/h. The Vanquisher is protected by nineteen and a half tons of 装甲 with CASE in both side torsos to protect the '机甲 from going down in an ammunition explosion.
+
+<b><color=#e62e00>怪癖: 稳定</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.2</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	Vanquisher 以 King Crab 为基础，并在最初生产 Mackie 的同一工厂制造，拥有传奇血统。它源自改进型 C3 计算机的逆向工程开发。布雷克圣言会完善 C3i 版本后，Cameron St. Jamais 联系 Skobel 机甲工厂，委托其制造一台能够展示新系统特性的机甲，Vanquisher 由此诞生。
+
+<b><color=#e62e00>怪癖: 稳定</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.2</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 上部, 右侧 上部</color>	Goal-WholeField
+The Hephaestus 侦察坦克 is an 全向Vehicle produced exclusively by 氏族地狱马. All variants of the Hephaestus incorporate a sizable infantry bay as well as an 主动探头 to locate hidden units. A support variant introduced in 3064, the Hephaestus A mounts an LRM-15 in its turret along with an Artemis IV Fire Control System. A single ton of ammunition does not allow for a high rate of fire for an extended period of time. Supplementing the missile launcher is a single ER Small Laser.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       100     15
+<b>左侧</b>         100     15
+<b>右侧</b>       100     15
+<b>后方</b>         90     15
+<b>炮塔</b>       90     15
+
+<b>总计</b>      480     75</color>
+
+<color=#ff0000>特性：导弹干扰器</color>
+
+<color=#ffcc00> 全向 Vehicle</color>
+
+<color=#ffcc00> Can carry 1 战斗装甲 Squads. Has firing ports.</color>	Hephaestus 侦察坦克是地狱之马氏族专属生产的全能车辆，所有分型都设有大型步兵舱和主动探头。A 型是 3064 年推出的支援型，装备 LRM-15 及远程支援设备。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       100     15
+<b>左侧</b>         100     15
+<b>右侧</b>       100     15
+<b>后方</b>         90     15
+<b>炮塔</b>       90     15
+
+<b>总计</b>      480     75</color>
+
+<color=#ff0000>特性：导弹干扰器</color>
+
+<color=#ffcc00> 全向 Vehicle</color>
+
+<color=#ffcc00> Can carry 1 战斗装甲 Squads. Has firing ports.</color>	Goal-WholeField
+Conceived as a heavy MBT, the 75 ton Alke was 设计ed to operate as part of a combined arms Nova. Powered by a 300 rated 引擎, the OmniTank can reach speeds of 60kph whilst carrying 12 tons of armour; with 33.5 tons of podspace for various configurations. Mostly found in the 地狱马 Touman, only the Coyotes have adopted the Alke; using it to replace their older Mars 坦克s. The Alke Alpha configuration is armed with a pair of ER Large Lasers and an Artemis IV enhanced LRM-20. For closer ranges it carries 7 Heavy Machine Guns.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       300     40
+<b>左侧</b>         230     40
+<b>右侧</b>       230     40
+<b>后方</b>        195     40
+<b>炮塔</b>      230     40
+
+<b>总计</b>      1185    200</color>
+
+<color=#ff0000>怪癖: 主战坦克</color>
+
+<color=#ffcc00> Omni 车辆</color>	Alke 是 75 吨重型主战坦克，设计用于联合兵种星群。300 级引擎使它在携带 12 吨装甲和 33.5 吨模块舱空间时仍能达到 60 公里/小时。它主要服役于地狱之马氏族，郊狼氏族用它替代老式 Mars 坦克。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       300     40
+<b>左侧</b>         230     40
+<b>右侧</b>       230     40
+<b>后方</b>        195     40
+<b>炮塔</b>      230     40
+
+<b>总计</b>      1185    200</color>
+
+<color=#ff0000>怪癖: 主战坦克</color>
+
+<color=#ffcc00> Omni 车辆</color>	Goal-WholeField
+The SM Tank Destroyer was 设计ed as a speedy infighter by scientists from 氏族新星猫. The machine is a cheap and effective combat 车辆. The 车辆 has unique 'glass' dual cockpits on the front of the 车辆 that are functionally identical while mounting a smaller anti-infantry turret just behind its left side cockpit. The 车辆's unique split cockpit 设计 allows the cockpit modules to eject from the 车辆. Due to its appearance, the SM1 was dubbed the 'Suicide Machine' by its first pilots because they felt overexposed with the 坦克's all ferro-glass cockpit.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 弹道强化装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       120     25
+<b>左侧</b>         100     25
+<b>右侧</b>       100     25
+<b>后方</b>         80     25
+<b>炮塔</b>      100     25
+
+<b>总计</b>      500    125</color>
+
+<color=#ff0000>怪癖: 稳定 Weapons</color>	SM 坦克歼击车由新星猫氏族科学家设计为高速近战车辆，价格低廉且作战有效。它采用独特的玻璃式双驾驶舱和小型反步兵炮塔，能够在城市环境快速转向并摧毁目标。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 弹道强化装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       120     25
+<b>左侧</b>         100     25
+<b>右侧</b>       100     25
+<b>后方</b>         80     25
+<b>炮塔</b>      100     25
+
+<b>总计</b>      500    125</color>
+
+<color=#ff0000>怪癖: 稳定 Weapons</color>	Goal-WholeField
+First appearing in 3056, the Palisade Defense Tank is a 60-ton defensive 坦克 found throughout the wealthier parts of the Periphery. Based on an older 坦克 设计 dating back to the Succession Wars, the Palisade is 设计ed as a multi-role 坦克 capable of engaging 机甲s or Vehicles. Capable of speeds of 60 km/h, the Palisade (MRM) is powered by a 240-rated Fuel Cell and carries 12 tons of 装甲. The main gun is an LB-10X, with a MRM-20 supporting this at shorter ranges. An MG provides some limited anti-infantry capabilities.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       260     30
+<b>左侧</b>         185     30
+<b>右侧</b>       185     30
+<b>后方</b>        150     30
+<b>炮塔</b>      195     30
+
+<b>总计</b>      975    150</color>
+
+<color=#ff0000>怪癖: 主战坦克</color>	Palisade 防御坦克于 3056 年首次出现，是 60 吨防御车辆，常见于边疆富裕地区。它源自继承战争时期的旧式坦克设计，可作为多用途坦克与机甲或车辆交战。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       260     30
+<b>左侧</b>         185     30
+<b>右侧</b>       185     30
+<b>后方</b>        150     30
+<b>炮塔</b>      195     30
+
+<b>总计</b>      975    150</color>
+
+<color=#ff0000>怪癖: 主战坦克</color>	Goal-WholeField
+The Ostscout was 设计ed as a pure recon Battle机甲 by Ostmann Industries. To that end, it was built entirely around gathering data and getting out of trouble, tasks for which it is exceptional; the Ostscout is quick enough to escape most traps, and very few other 设计s can match it in terms of speed and maneuverability. Produced by Krupp Armament Works, the 10CS Ostscout saves weight through the use of an XL引擎 and an XL gyro, which gives up durability for more combat payload weight, allowing the '机甲 to jump up to 300 米 through the use of ten Rawlings 45i improved jump jets. The 10CS also carries an improved C3 computer to communicate with similarly equipped units and carries two 多元光学 ER 中型激光器 for defensive combat capabilities.
+
+<b><color=#e62e00>怪癖: 改进的 Sensors</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	Ostscout 由 Ostmann Industries 设计为纯侦察战斗机甲，完全围绕收集数据和脱离险境打造；它速度足够快，能逃离大多数陷阱，其他设计很少能在速度和机动性上与之匹敌。Krupp 军备工厂生产的 10CS 型通过 XL 引擎和 XL 陀螺仪减重，以耐久性换取更高机动性。
+
+<b><color=#e62e00>怪癖: 改进的 Sensors</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 下部, 右侧 下部</color>	Goal-WholeField
+The Carnivore Assault Tank is a post-Jihad design produced by Clan Wolf as part their efforts to rebuild their touman.  After its introduction, it would be traded to neighboring Clans and even Inner Sphere powers for additional supplies and equipment. The Carnivore was designed with lessons learned from the modern battlefield of the Jihad. A 守护者ECM Suite is meant to handle the Inner Sphere's usage of advanced electronic equipment. Unlike many previous Clan designs it is heavily armored.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 装甲 (C)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       330     40
+<b>左侧</b>         230     40
+<b>右侧</b>       230     40
+<b>后方</b>        210     40
+<b>炮塔</b>      260     40
+
+<b>总计</b>      1260    200</color>
+
+<color=#ff0000>特性：主战坦克</color>	Carnivore 突击坦克是圣战后的狼氏族设计，用于重建部队；它吸收现代战场经验，配备守护者 ECM 和厚重装甲，并在问世后被交易给邻近氏族和内层星域势力。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 装甲 (C)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       330     40
+<b>左侧</b>         230     40
+<b>右侧</b>       230     40
+<b>后方</b>        210     40
+<b>炮塔</b>      260     40
+
+<b>总计</b>      1260    200</color>
+
+<color=#ff0000>特性：主战坦克</color>	Goal-WholeField
+The Chalchiuhtotolin is a vehicle produced by 玉鹰氏族 during the post-Jihad era in response to the need for an urban 战斗车辆. The vehicle's strange name can be attributed to Clan Merchant Factor Daniel. The tank is powered by a 230-rated Fusion 引擎, which is capable of propelling the vehicle up to 86 km/h. The tank's weaponry was designed to be as accurate as possible as a means of minimizing damage to property and civilians when performing its urban enforcement duties. 
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       230     25
+<b>左侧</b>         155     25
+<b>右侧</b>       155     25
+<b>后方</b>        100     25
+<b>炮塔</b>      135     25
+
+<b>总计</b>      775    125</color>
+
+<color=#ff0000>特性：Off Roader</color>	Chalchiuhtotolin 是玉鹰氏族在圣战后生产的城市战斗车辆，名称源自氏族商贸官 Daniel。它采用 230 级聚变引擎，专门为城市街区机动作战和近距离支援设计。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       230     25
+<b>左侧</b>         155     25
+<b>右侧</b>       155     25
+<b>后方</b>        100     25
+<b>炮塔</b>      135     25
+
+<b>总计</b>      775    125</color>
+
+<color=#ff0000>特性：Off Roader</color>	Goal-WholeField
+The Bandit is a 50-ton combat hovercraft, first seen in use by the Wolf’s Dragoons. Designed by the Blackwell Industries technicians who survived the Jihad's opening salvo on Outreach, the 'Warthog' trades the standard 引擎 for an XL引擎. 重型铁纤维装甲 装甲 improves the Bandit's protection, particularly the 装甲传动 System that improves the durability of the hoverskirt. A turret-mounted Machine Gun and Large 变速脉冲激光 are the only weapons carried.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       225     25
+<b>左侧</b>         165     25
+<b>右侧</b>       165     25
+<b>后方</b>        170     25
+<b>炮塔</b>      180     25
+
+<b>总计</b>      905    125</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>
+
+<color=#ffcc00> 全向 Vehicle</color>	Bandit 是 50 吨级战斗悬浮车，最早由狼之龙骑兵投入使用。由在 Outreach 遭受圣战初期攻击后幸存的 Blackwell Industries 技术人员设计，Warthog 以 XL 引擎取代标准引擎。重型铁纤维装甲提高 Bandit 的防护，尤其增强装甲传动系统和悬浮裙的耐久性；炮塔机枪和大型变速脉冲激光提供主要火力。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       225     25
+<b>左侧</b>         165     25
+<b>右侧</b>       165     25
+<b>后方</b>        170     25
+<b>炮塔</b>      180     25
+
+<b>总计</b>      905    125</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>
+
+<color=#ffcc00> 全向 Vehicle</color>	Goal-WholeField
+After Clan Hell's Horses forces' invaded the Rasalhague Dominion during Operation Noyan in 3147, the Mastodon was designed and signified a large change from their previous reliance on a mix of Executioner variants as the mainstay of their army. The Mastodon's performance after its introduction makes it inevitable that it will be at the forefront of many campaigns to come. The heavily reinforced 结构 resists both weapons fire and the standard wear and tear that accompanies most campaigns. The B configuration carries an LB 20-X Autocannon in the left arm and a combination of two Streak SRM-4 launchers and four Medium Pulse Lasers in the right. A single Streak LRM-20 launcher in the right torso is also mounted.
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.18</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Mastodon 在诺扬行动后设计，用于替代地狱之马氏族过去依赖的 Executioner 各型，标志着军队主力的重大变化。它采用强化结构，能够承受武器火力和长期战役磨损，服役表现使其必将参加未来许多战役。
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.18</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Goal-WholeField
+The 蜈蚣侦察车 was produced by Gienah Combat Vehicles & Red Devil Industries in 3053. The vehicle is intended for reconnaissance ahead of its command unit, spotting hidden units. Introduced during the FedCom Civil War in 3067, this customer-ordered variant was first provided to the 7th Donegal Guards's 装甲 Brigade. This variant replaces the vehicle's 中型激光器 in favor of a TAG. The vehicle has increased 装甲 protection and receives a 守护者ECM for added defense.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 反射涂层
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>        70     10
+<b>左侧</b>          70     10
+<b>右侧</b>        70     10
+<b>后方</b>         70     10
+<b>炮塔</b>       40     10
+
+<b>总计</b>      320     50</color>
+
+<color=#ff0000>特性：灵巧</color>	蜈蚣侦察车由 Gienah 战斗车辆公司与 Red Devil 工业公司于 3053 年生产。该车辆用于在指挥单位前方侦察并发现隐藏单位。这个客户定制型号于 3067 年联邦内战期间推出，最初交付给多内加尔近卫军第七装甲旅。该型号以 TAG 取代车辆原有的中型激光器，并增加装甲防护和守护者 ECM 以强化防御。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 反射涂层
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>        70     10
+<b>左侧</b>          70     10
+<b>右侧</b>        70     10
+<b>后方</b>         70     10
+<b>炮塔</b>       40     10
+
+<b>总计</b>      320     50</color>
+
+<color=#ff0000>特性：灵巧</color>	Goal-WholeField
+Designed as an 全向 vehicle, the Schiltron uses modular weapon ports similar to those used on 全向Mechs allowing it to be quickly reconfigured for a variety of mission parameters. Carrying only 10 tons of 装甲, the Schiltron is forced to stay well out of the line of fire, something that a top speed of 54 km/h does not always make possible. The base chassis carries a C3 Computer, as well as a 守护者ECM Suite.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       230     40
+<b>左侧</b>         160     40
+<b>右侧</b>       160     40
+<b>后方</b>         90     40
+<b>炮塔</b>      200     40
+
+<b>总计</b>      840    200</color>
+
+<color=#ff0000>特性：泰克铁康TC7000</color>
+
+<color=#ffcc00> 全向 Vehicle</color>	作为全向车辆，希尔特隆采用类似全向机甲的模块化武器接口，可以根据任务需求快速重新配置。它仅携带 10 吨装甲，因此必须尽量远离火线，而 54 公里/小时的最高速度并不总能做到这一点。基础底盘配备 C3 计算机和守护者 ECM 套件。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       230     40
+<b>左侧</b>         160     40
+<b>右侧</b>       160     40
+<b>后方</b>         90     40
+<b>炮塔</b>      200     40
+
+<b>总计</b>      840    200</color>
+
+<color=#ff0000>特性：泰克铁康TC7000</color>
+
+<color=#ffcc00> 全向 车辆</color>	Goal-WholeField
+Taking a cue from the Inner Sphere Hetzer and Saladin 设计s, the 地狱马 Atropos is a fast assault hovercraft 设计ed to deliver a UAC/20 round into a target at speed. Powered by a 165 rated Fusion Core, the Atropos is capable of reaching over 120kph. Armed with a hull mounted UAC/20 and paired Light and Heavy Machine Guns in the 坦克s turret, the Atropos is 设计ed to dance rings around slower Inner Sphere 机甲s or Tanks.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       200     25
+<b>左侧</b>         160     25
+<b>右侧</b>       160     25
+<b>后方</b>        110     25
+<b>炮塔</b>      125     25
+
+<b>总计</b>      755    125</color>
+
+<color=#ff0000>怪癖: 精准 Weapon - MG</color>	Atropos 参考内层星域 Hetzer 和 Saladin 设计，是一台高速突击悬浮车，能够高速向目标发射 UAC/20。165 级聚变核心使其速度超过 120 公里/小时；车体安装 UAC/20，一对轻型武器提供近距离支援。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       200     25
+<b>左侧</b>         160     25
+<b>右侧</b>       160     25
+<b>后方</b>        110     25
+<b>炮塔</b>      125     25
+
+<b>总计</b>      755    125</color>
+
+<color=#ff0000>怪癖: 精准 Weapon - MG</color>	Goal-WholeField
+After Clan Hell's Horses forces' invaded the Rasalhague Dominion during Operation Noyan in 3147, the Mastodon was designed and signified a large change from their previous reliance on a mix of Executioner variants as the mainstay of their army. The Mastodon's performance after its introduction makes it inevitable that it will be at the forefront of many campaigns to come. The heavily reinforced 结构 resists both weapons fire and the standard wear and tear that accompanies most campaigns. The C configuration tends to overheat easily due to its four ER 中型激光器, three Plasma Cannons and ER PPC. The 'Mech also sports a Gauss Rifle for longer range engagements.
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.18</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Mastodon 在诺扬行动后设计，用于替代地狱之马氏族过去依赖的 Executioner 各型，标志着军队主力的重大变化。它采用强化结构，能够承受武器火力和长期战役磨损。
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.18</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Goal-WholeField
+Created for the Terran Hegemony and the Star League Defence Force in 2605, the Washington MBT is a 45 ton tank designed to emphasis firepower and 装甲 over speed or other features. With a top speed of 65 kph, the Washinton has 9 tons of 铁纤维装甲 装甲 and is armed with an LB-10X AC. A pair of Medium Pulse Lasers serve as backup weapons.
+
+<b><color=#ffcc00>Biome Restrictions: None.</color></b>
+
+<b><color=#ffcc00>Movement: 4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>Front</b>       200     25
+<b>Left</b>         160     25
+<b>Right</b>       160     25
+<b>Rear</b>        125     25
+<b>Turret</b>      160     25
+
+<b>Total</b>      805    125</color>
+
+<color=#ff0000>特性：Main Battle Tank</color>	Washington 是为 Terran Hegemony 和星盟国防军于 2605 年制造的 45 吨主战坦克，优先追求火力与装甲而牺牲速度。最高速度 65 公里/小时，配备 9 吨铁纤维装甲和多种中远程武器。
+
+<b><color=#ffcc00>Biome Restrictions: None.</color></b>
+
+<b><color=#ffcc00>Movement: 4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>Front</b>       200     25
+<b>Left</b>         160     25
+<b>Right</b>       160     25
+<b>Rear</b>        125     25
+<b>Turret</b>      160     25
+
+<b>Total</b>      805    125</color>
+
+<color=#ff0000>特性：Main Battle Tank</color>	Goal-WholeField
+A Nova Cat 设计, the 50 ton Huntsman was 设计ed for Operation Revival and the invasion of the Inner Sphere; first entering production in 3049. An Omni机甲, the Huntsman is built around a 250-rated XL引擎 with an Endo Steel Skeleton and 铁纤维装甲 装甲 giving the Omni机甲, 21.5 tons of pod space. 5 Jump Jets are fixed to the chassis, giving the Huntsman additional flexibility. The Huntsman H is armed with a pair of ER Large Lasers. 4 Heavy 中型激光s and a Heavy Small Laser provide additional firepower at close range. 守护者ECM protects the Huntsman, while a 定位 Computer improves the accuracy of the Lasers. An 主动探头 allows it to scout.
+
+<b><color=#e62e00>怪癖: 稳定</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	Huntsman 是 Nova Cat 设计的 50 吨全能机甲，为复兴行动和入侵内层星域而设计，于 3049 年投产。它采用 250 级 XL 引擎、Endo Steel 骨架和铁纤维装甲，拥有 21.5 吨模块舱空间，并固定安装 5 台跳跃喷射器。
+
+<b><color=#e62e00>怪癖: 稳定</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	Goal-WholeField
+The Cavalry Infiltrator uses advanced technology to deploy battle 装甲 into combat at blistering speed. Featuring a Jet booster, 守护者ECM, 隐身装甲 and a pair of Magshots in a Chin 炮塔 it's the envy of many Inner Sphere forces. Cal-Boeing however has no plans to sell it outside the Federated Suns.
+
+<b><color=#ffcc00>生物群系限制：该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：10/15 格 / 300/450 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 车辆潜行装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       100     18
+<b>左侧</b>          80     18
+<b>右侧</b>        80     18
+<b>后方</b>         80     18
+<b>炮塔</b>       15     18
+
+<b>总计</b>      355     90</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>
+
+<color=#ffcc00> Can carry 1 战斗装甲 Squads.</color>	Cavalry Infiltrator 使用先进技术以极高速度将战斗装甲投入战场。喷气助推器、守护者 ECM、隐身装甲和下颌炮塔中的一对 Magshot 使它成为许多内层星域部队羡慕的装备。
+
+<b><color=#ffcc00>生物群系限制：该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：10/15 格 / 300/450 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 车辆潜行装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       100     18
+<b>左侧</b>          80     18
+<b>右侧</b>        80     18
+<b>后方</b>         80     18
+<b>炮塔</b>       15     18
+
+<b>总计</b>      355     90</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>
+
+<color=#ffcc00> Can carry 1 战斗装甲 Squads.</color>	Goal-WholeField
+The Ostscout was 设计ed as a pure recon Battle机甲 by Ostmann Industries. To that end, it was built entirely around gathering data and getting out of trouble, tasks for which it is exceptional; the Ostscout is quick enough to escape most traps, and very few other 设计s can match it in terms of speed and maneuverability. The 9CS is a complete upgrade of the original 设计 incorporating an endo steel chassis and 铁纤维装甲 装甲. With the weight savings a 比格犬主动探头, 守护者ECM and TAG were added and armament has been increased to a pair of ER 中型激光s and an ER Small Laser.
+
+<b><color=#e62e00>怪癖: 改进的 Sensors</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	Ostscout 由 Ostmann Industries 设计为纯侦察战斗机甲，完全围绕收集数据和脱离险境打造；它速度足够快，能逃离大多数陷阱，并以 XL 引擎和 XL 陀螺仪换取高机动性。
+
+<b><color=#e62e00>怪癖: 改进的 Sensors</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	Goal-WholeField
+A generic medium weight APC, the Sleipnir is a common sight across the Inner Sphere and the Periphery. Armed with a pair of 中型激光s and a pair of Machine Guns, the Sleipnir can provide adequate support for the troops it carries.
+
+<b><color=#ffcc00>生物群系限制：该单位因使用内燃机，无法在月球或火星生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 轻型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       135     25
+<b>左侧</b>         115     25
+<b>右侧</b>       115     25
+<b>后方</b>        100     25
+<b>炮塔</b>      120     25
+
+<b>总计</b>      585    125</color>
+
+<color=#ff0000>特性：通信增强</color>
+
+<color=#ffcc00> Can carry 1 战斗装甲 Squads. Has firing ports.</color>	Sleipnir 是一种通用中型装甲运兵车，在内层星域和边疆十分常见。它装备两门中型激光和两挺机枪，能够为搭载的部队提供充分支援。
+
+<b><color=#ffcc00>生物群系限制：该单位因使用内燃机，无法在月球或火星生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 轻型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       135     25
+<b>左侧</b>         115     25
+<b>右侧</b>       115     25
+<b>后方</b>        100     25
+<b>炮塔</b>      120     25
+
+<b>总计</b>      585    125</color>
+
+<color=#ff0000>特性：通信增强</color>
+
+<color=#ffcc00> Can carry 1 战斗装甲 Squads. Has firing ports.</color>	Goal-WholeField
+The 大型脉冲激光, 中型脉冲激光, and two ER 中型激光s give the White Flame WHF-3B an all-energy configuration for its offensive weaponry. This gives it the ability to operate far from supply for extended periods, but the damage rate is rather low when compared to other '机甲s of a similar size. Its strength is undoubtedly its speed, which it can use to harass enemies and keep from taking too many hits. The -3B is as protected by its jump jets that can propel it up to 150 米 as by its fifteen tons of 装甲. A C3i Computer allows it to share targeting telemetry with other similarly equipped units.
+
+<b><color=#e62e00>怪癖: 改进的 定位 - Medium</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.1</color></b>	White Flame WHF-3B 采用大型脉冲激光、中型脉冲激光和两门增程中型激光组成的全能量武器配置，可长期远离补给作战，但伤害率低于同吨位机甲。它的优势是速度，能够骚扰敌人并减少受击。
+
+<b><color=#e62e00>怪癖: 改进的 定位 - Medium</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.1</color></b>	Goal-WholeField
+A Jihad era upgrade of the Succession Wars Partisan, the Partisan Air Defense Tank (Cell) upgrades the original ICE 引擎 to a Fuel Cell. The free weight is used to mount a C3 slave and upgrade the Autocannons to a pair of AC/2’s and a pair of LB-10X’s. AMS and heavier 装甲 rounds out the design.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       175     40
+<b>左侧</b>         130     40
+<b>右侧</b>       130     40
+<b>后方</b>        110     40
+<b>炮塔</b>      175     40
+
+<b>总计</b>      720    200</color>
+
+<color=#ff0000>特性：防空瞄准系统</color>	这是继承战争时期 Partisan 的圣战升级型，将原有内燃机换成燃料电池，并利用节省重量安装 C3 从属设备，将自动炮升级为两门 AC/2 和两门 LB-10X；AMS 与更厚装甲完善设计。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       175     40
+<b>左侧</b>         130     40
+<b>右侧</b>       130     40
+<b>后方</b>        110     40
+<b>炮塔</b>      175     40
+
+<b>总计</b>      720    200</color>
+
+<color=#ff0000>特性：防空瞄准系统</color>	Goal-WholeField
+A Light Clan 全向Mech, the 30 ton Kit Fox was introduced in 2890 by 云蛇氏族. Favouring a mix of fire power and 装甲 over speed, the Kit Fox is powered by a 180 XL引擎 and features a mix of Endo Steel and Ferro Fibrous; giving it 16 tons of pod space. The Kit Fox C-EWR is s an emergency refit developed by the Invading Clans to improve the Mechs combat effectiveness. The standard AMS's are reduced to a single system and the A-Pods removed. An additional pair of Machine Guns and a pair of 中型脉冲激光s are added along with a Flamer.
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>部署成本倍率：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Kit Fox 是 30 吨轻型氏族全能机甲，由云蛇氏族于 2890 年推出。它重视火力和装甲而非速度，由 180 级 XL 引擎驱动，Endo Steel 与 Ferro Fibrous 组合提供 16 吨模块舱空间。
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>部署成本倍率：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Goal-WholeField
+Conceptualised as a long range support platform, the Pendragon was a result of House Davion’s Jihad era MUSE programs. A 95-ton mech, the Pendragon is built around a 380-rated XL引擎 and is loosely based on the Templar Omni机甲. The Pendragon PDR-1R is the first production model and unlike the original prototype is entirely built with Inner Sphere technology. A pair of Extended Range LRM-15’s provide extreme range firepower, while an ER PPC and a trio of ER 中型激光s provide closer ranged firepower.
+
+<b><color=#e62e00>怪癖: 改进的 定位 - 长</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.17</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	Pendragon 是戴维翁家族圣战时代 MUSE 计划的远程支援平台，重 95 吨，采用 380 级 XL 引擎，设计参考 Templar 全能机甲。PDR-1R 是首个量产型，完全使用内层星域技术；两组增程 LRM-15 提供远程火力，ER PPC 和三门增程中型激光负责补充攻击。
+
+<b><color=#e62e00>怪癖: 改进的 定位 - 长</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.17</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 上部, 右侧 上部</color>	Goal-WholeField
+This field refit of the 3063 MRM-20 version drops 1 ton of ammo for an Apollo Fire Control System. The ER 中型激光, 守护者ECM Suite and a C3 slave are retained. The Pegasus is a popular recon unit, due to its good speed, decent 装甲, and respectable firepower. 
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       140     20
+<b>左侧</b>         100     20
+<b>右侧</b>       100     20
+<b>后方</b>         55     20
+<b>炮塔</b>      100     20
+
+<b>总计</b>      495    100</color>
+
+<color=#ff0000>特性：通信增强</color>	这是 3063 年 MRM-20 型的战地改装，牺牲一吨弹药换装 Apollo 火控系统；增程中型激光、守护者 ECM 套件和 C3 从属设备得以保留。Pegasus 速度快、装甲尚可、火力可靠，因此成为受欢迎的侦察单位。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       140     20
+<b>左侧</b>         100     20
+<b>右侧</b>       100     20
+<b>后方</b>         55     20
+<b>炮塔</b>      100     20
+
+<b>总计</b>      495    100</color>
+
+<color=#ff0000>特性：通信增强</color>	Goal-WholeField
+The Pegasus is a popular recon unit, due to its good speed, decent 装甲, and respectable firepower. It can be found in almost all militaries, having been introduced in the First Succession War and continuously updated ever since.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> Vehicle Stealth 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       155     20
+<b>左侧</b>         115     20
+<b>右侧</b>       115     20
+<b>后方</b>         80     20
+<b>炮塔</b>      125     20
+
+<b>总计</b>      590    100</color>
+
+<color=#ff0000>怪癖: 热成像瞄具</color>	Pegasus 是广受欢迎的侦察单位，速度快、装甲尚可且火力可靠。它自第一次继承战争问世后不断更新，几乎在所有军队中都能见到。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> Vehicle Stealth 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       155     20
+<b>左侧</b>         115     20
+<b>右侧</b>       115     20
+<b>后方</b>         80     20
+<b>炮塔</b>      125     20
+
+<b>总计</b>      590    100</color>
+
+<color=#ff0000>怪癖: 热成像瞄具</color>	Goal-WholeField
+Conceptualised as a long range support platform, the Pendragon was a result of House Davion’s Jihad era MUSE programs. A 95-ton mech, the Pendragon is built around a 285-rated XL引擎 and is loosely based on the Templar Omni机甲. The Pendragon PDR-1X is the original MUSE prototype utilising a mix of Clan and IS technology. A pair of Extended Range LRM-20’s provide extreme range firepower, while an ER PPC and a trio of Clan ER 中型激光s provide closer ranged firepower.
+
+<b><color=#e62e00>怪癖: 改进的 定位 - 长</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.19</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	潘德拉贡被设想为远程支援平台，是戴维翁家族圣战时代 MUSE 计划的成果。这台 95 吨机甲围绕 285 级 XL 引擎建造，设计上参考了圣骑士全向机甲。潘德拉贡 PDR-1X 是最初的 MUSE 原型，混合采用氏族与内层圈技术。一对增程 LRM-20 提供极远程火力，而一门增程 PPC 和三门氏族增程中型激光器负责近距离火力。
+
+<b><color=#e62e00>怪癖: 改进的 定位 - 长</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.19</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 上臂, 右侧 上臂</color>	Goal-WholeField
+The Pegasus is a popular recon unit, due to its good speed, decent 装甲, and respectable firepower. It can be found in almost all militaries, having been introduced in the First Succession War and continuously updated ever since.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       135     20
+<b>左侧</b>          95     20
+<b>右侧</b>        95     20
+<b>后方</b>         80     20
+<b>炮塔</b>      100     20
+
+<b>总计</b>      505    100</color>
+
+<color=#ff0000>怪癖: 热成像瞄具</color>	天马凭借良好的速度、尚可的装甲和可靠的火力，成为广受欢迎的侦察单位。它几乎存在于所有军队中，自第一次继承战争期间问世以来一直持续更新。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       135     20
+<b>左侧</b>          95     20
+<b>右侧</b>        95     20
+<b>后方</b>         80     20
+<b>炮塔</b>      100     20
+
+<b>总计</b>      505    100</color>
+
+<color=#ff0000>怪癖: 热成像瞄具</color>	Goal-WholeField
+A Light Clan 全向Mech, the 30 ton Kit Fox was introduced in 2890 by 云蛇氏族. Favouring a mix of fire power and 装甲 over speed, the Kit Fox is powered by a 180 XL引擎 and features a mix of Endo Steel and Ferro Fibrous; giving it 16 tons of pod space. The Kit Fox A-EWR is s an emergency refit developed by the Invading Clans to improve the Mechs combat effectiveness. The standard Gauss Rifle is swapped for an LB-10X with a pair of Flamers and a 小型脉冲激光 added to handle enemy infantry.
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>部署成本倍率：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	轻型氏族全向机甲小狐于 2890 年由云蛇氏族推出，重 30 吨。小狐重视火力和装甲的结合而非速度，采用 180 级 XL 引擎，并结合内骨骼钢和铁纤维装甲，提供 16 吨吊舱空间。小狐 A-EWR 是入侵氏族开发的紧急改装，用于提升机甲战斗效能。它以 LB-10X 替换标准高斯步枪，并增加一对火焰喷射器和一门小型脉冲激光器，用于对付敌方步兵。
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>部署成本倍率：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Goal-WholeField
+The 5W variant of the Goliath is armed with two 等离子步枪s which not only inflict damage on their targets but heat as well. The 5W is also armed with three 中型激光s for close combat. The '机甲 has a 守护者ECM Suite which is needed to properly use its sixteen and a half tons of Stealth 装甲. Additionally, the '机甲 has a 小型驾驶舱 that is cramped and makes the '机甲 harder to pilot but saves valuable weight. The '机甲 also has an 改进的 C3 computer, allowing it to share targeting telemetry with similarly equipped units.
+
+<b><color=#e62e00>怪癖: Multi Trac</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.14</color></b>	Goliath 5W 配备两门等离子步枪，既能伤害目标又能使其升温；三门中型激光用于近战。机甲还装备守护者 ECM 套件，以提高生存能力。
+
+<b><color=#e62e00>怪癖: Multi Trac</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.14</color></b>	Goal-WholeField
+Developed in the later years of the Jihad by the Jade Falcons, the Flamberge was based on an older experiment involving 部分机翼 technology. A 70 ton 全向Mech, the Flamberge is built around a 280-rated XL引擎 and an Endo Steel chassis with 13.5 tons of 装甲. 11 DHS are installed as standard, as are a pair of SRM-6's with 35 tons of podspace rounding out the design. The Flamberge Prime is armed with 2 ATM-6's and 4 中型脉冲激光s with 6 改进型跳跃推进器 boosting the designs mobility.
+
+<b><color=#e62e00>特性：瞄准增强—中程</color></b>
+
+<b><color=#e62e00>部署成本倍率：1.11</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Flamberge 由玉鹰氏族在圣战后期开发，源自采用部分机翼技术的早期实验。它是一台 70 吨全能机甲，采用 280 级 XL 引擎、Endo Steel 骨架和 13.5 吨装甲，标准配置含 11 台双重散热器、一对 SRM-6 和 35 吨模块舱。
+
+<b><color=#e62e00>特性：瞄准增强—中程</color></b>
+
+<b><color=#e62e00>部署成本倍率：1.11</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Goal-WholeField
+Not designed for traditional combat, the Carrier is a force multiplier. Designed to support allies from range, the Carrier can hang back behind friendly lines where its lack of 装甲 isn't a concern.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       140     40
+<b>左侧</b>         120     40
+<b>右侧</b>       120     40
+<b>后方</b>        100     40
+<b>炮塔</b>      120     40
+
+<b>总计</b>      600    200</color>
+
+<color=#ff0000>特性：瞄准增强—远程</color>	Carrier 不是为传统战斗设计的，而是一台力量倍增器。它用于从远距离支援盟友，可以停留在友军战线后方，不必担心装甲薄弱。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       140     40
+<b>左侧</b>         120     40
+<b>右侧</b>       120     40
+<b>后方</b>        100     40
+<b>炮塔</b>      120     40
+
+<b>总计</b>      600    200</color>
+
+<color=#ff0000>特性：瞄准增强—远程</color>	Goal-WholeField
+First 生产 in 2948, the Ice Ferret is a medium scout Omni机甲 often employed as a head hunter or strike unit. A 45 ton Clan Omni机甲, the Ice Ferret is powered by a 360-rated XL引擎 and has 9.5 tons of pod space thanks to a combination of Endo Steel, an XL引擎 and 铁纤维装甲. The Ice Ferret IFR-T is armed with an 改进的 Heavy Large Laser, an ER 中型激光 and an SRM-4. An 主动探头 improves the Ice Ferrets scout capabilities and a Supercharger boosts its speed.
+
+<b><color=#e62e00>怪癖: 改进的 Sensors</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	Ice Ferret 于 2948 年首次投产，是常用于猎杀和突击任务的中型侦察全能机甲。45 吨的氏族全能机甲由 360 级 XL 引擎驱动，Endo Steel、XL 引擎和铁纤维装甲组合提供 9.5 吨模块舱空间；IFR-T 配备改进型重型大型激光、增程中型激光和 SRM-4，主动探头提升侦察能力。
+
+<b><color=#e62e00>怪癖: 改进的 Sensors</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	Goal-WholeField
+A unique Franken机甲 created by the Tooth of Ymir Mercenary unit, the 100 ton Schwerer Gustav was built from parts sourced from a variety of destroyed mechs and grafted onto the remains of a salvaged Annihilator. Powered by a 400-rated XL引擎, the Schwerer Gustav mounts a 重击者火炮 Piece, with a 二元激光 and a Clan RAC/5 for close range combat. Intended as a Command 机甲, a 指挥控制台 is mounted in the head and a 血猎犬主动探头 in the Center Torso. 
+
+<b><color=#e62e00>怪癖: 易于维护</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.2</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Upper</color>	Schwerer Gustav 是 Tooth of Ymir 佣兵部队制造的独特拼装机甲，重 100 吨，由多台被摧毁机甲的零件拼接到回收的 Annihilator 残骸上。它由 400 级 XL 引擎驱动，装备重击者火炮、二元激光和氏族 RAC/5，用于近距离战斗；作为指挥机甲，头部安装指挥控制台。
+
+<b><color=#e62e00>怪癖: 易于维护</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.2</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 下部, 右侧 上部</color>	Goal-WholeField
+A Regulan design built to emulate the Lyran Berzerker, the Neandertal is an 80 ton Battlemech designed around two concepts – speed and close combat. A 400-rated XL引擎 paired with TSM helps achieve the first objective, while a massive Hatchet makes the Neanderthal deadly in close quarters. The Neanderthal NTL-UG is armed with a pair of Large Lasers and a Large Pulse Laser. A pair of Small Pulse Lasers provide some close range firepower, while Guardian ECM rounds out the mech.
+
+<b><color=#e62e00>特性：扰乱</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.14</color></b>	尼安德特人是雷古拉设计、用于仿制天琴狂战士的 80 吨战斗机甲，围绕速度和近战两大理念打造。400 级 XL 引擎配合 TSM 实现高速目标，巨型战斧则使尼安德特人在近距离极其致命。尼安德特 NTL-UG 装备一对大型激光器和一门大型脉冲激光器；一对小型脉冲激光器提供近距离火力，守护者 ECM 套件则完善机甲配置。
+
+<b><color=#e62e00>特性：扰乱</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.14</color></b>	Goal-WholeField
+Introduced during the Jihad, this variant is a revision of the Predator's weaponry and 装甲. The '机甲's 装甲 has been replaced with 铁纤维装甲 装甲 for slightly increased protection. Its LB-X Class autocannons have been replaced by a pair of Class 20 超突击高斯 Rifles with 4 tons of ammunition split between the two torsos. While two ER Small Lasers have been retained, its ER Mediums have been exchanged for pair of 中型脉冲激光s.
+
+<b><color=#e62e00>怪癖: 高级光学系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.14</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	这是圣战期间推出的 Predator 武器与装甲改进型。机甲装甲换成铁纤维装甲以略微提升防护；LB-X 自动炮替换为两支 20 级超突击高斯步枪，四吨弹药分置于两侧躯干。两门 ER 小型激光得以保留，ER 中型激光则改为两门中型脉冲激光。
+
+<b><color=#e62e00>怪癖: 高级光学系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.14</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 下部, 右侧 下部</color>	Goal-WholeField
+This configuration mounts a powerful 重击者火炮 Cannon and carries three tons of ammunition. The Scapha Hover坦克 is a thirty-second century Hover 全向车辆 which was originally exclusively 生产 for the Armed Forces of the 球体共和国. Built by Grumman Industries on Terra in 3123, the Scapha was 设计ed with the best technologies of its time. It would go on to serve in multiple roles in the RAF due to its flexibility and firepower. The 设计 was highly popular in the service of the RAF well into the fall of most the Republic's Prefectures to invading forces after 3132. While part of many Republic Standing Guard units, the Scapha was noted for delaying the fall of many Republic worlds. 设计 as a fast and flexible 坦克, the Scapha is powered by a Strand 265-rated Extra-Extralight Fusion 引擎, giving excess speed. Despite the cost of the 引擎 and its bulkiness, the Scapha has thirteen tons of pod space for weapons and equipment. Protecting its 装甲ed hide is 7.5 tons of Grumman CRR Reflective 装甲 which dampens the damage caused by energy weapons.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 11/17 格 / 330/510 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 反射涂层
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     20
+<b>左侧</b>         105     20
+<b>右侧</b>       105     20
+<b>后方</b>        100     20
+<b>炮塔</b>      160     20
+
+<b>总计</b>      640    100</color>
+
+<color=#ff0000>怪癖: Variable Range 定位</color>
+
+<color=#ffcc00> Omni 车辆</color>	该配置安装一门威力强大的重击者火炮，并携带三吨弹药。Scapha 气垫坦克是三十二世纪的全向气垫车辆，最初专为球体共和国武装部队生产。3123 年，Grumman 工业公司在 Terra 建造了 Scapha，采用当时最先进的技术。凭借灵活性和火力，它后来在共和国空军中承担多种任务。直到 3132 年入侵势力攻陷共和国大部分总督区后很久，这一设计仍在空军服役并广受欢迎。Scapha 曾属于许多共和国常备卫队，以拖延多个共和国世界的陷落而闻名。Scapha 作为快速灵活的坦克设计，采用 Strand 265 级超超轻聚变引擎，拥有过剩的速度。尽管引擎昂贵且体积庞大，Scapha 仍有 13 吨吊舱空间用于武器和设备。保护其装甲外壳的是 7.5 吨 Grumman CRR 反射装甲，可削弱能量武器造成的伤害。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 11/17 格 / 330/510 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 反射涂层
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     20
+<b>左侧</b>         105     20
+<b>右侧</b>       105     20
+<b>后方</b>        100     20
+<b>炮塔</b>      160     20
+
+<b>总计</b>      640    100</color>
+
+<color=#ff0000>怪癖: 可变射程瞄准</color>
+
+<color=#ffcc00> Omni 车辆</color>	Goal-WholeField
+The Lineholder was the first Battle机甲 设计 to come from Kressly Warworks. The Lineholder is 设计ed around a set of `Common Sense Rules` for '机甲 设计. This approach has 生产 a '机甲 with a good ground speed and respectable amount of 装甲 and firepower. The '机甲 has a top speed of 86.4 km/h, allowing it to keep up with all but the fastest light and medium '机甲s. The Lineholder also carries ten tons of 装甲 protection and has fourteen heat sinks. Its mix of off-the-shelf weapons and equipment makes the Lineholder a reliable '机甲 that is easy to repair and is dependable in battle. However, the ultimate selling point for the Lineholder, especially to its target audience of small units and minor nobles, is value and price. In the first year of sales, the Lineholder was historically successful compared with other 55-ton Battle机甲s. For minor factions able to afford brand new Battle机甲s, the Lineholder has become the garrison machine of choice.
+
+<b><color=#e62e00>怪癖: 易于维护</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	Lineholder 是 Kressly Warworks 推出的第一款战斗机甲设计。它围绕机甲设计的“常识规则”打造，最终拥有良好的地面速度、可观的装甲和火力。最高速度为 86.4 公里/小时，除了最快的轻型和中型机甲外都能跟上。Lineholder 还拥有 10 吨装甲和 14 台散热器。现成武器与设备的组合使它可靠、易修理，并能在战斗中稳定发挥。然而，对小型部队和低阶贵族等目标客户而言，Lineholder 最具吸引力的卖点是价格和性价比。上市第一年，它相较其他 55 吨战斗机甲取得了历史性的成功。对于买得起全新战斗机甲的小型派系，Lineholder 已成为首选驻军机甲。
+
+<b><color=#e62e00>怪癖: 易于维护</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 下臂, 右侧 下臂</color>	Goal-WholeField
+The Skulker Wheeled Scout is the much larger cousin of the Swift Wind scout car and originally based on the Heavy APC 设计. Due to it being larger than any scout car, it can act as a mobile communication outpost. With its advanced sensor suite which is tied to both its communication and targeting systems, it can navigate with only its sensors. While hot environments would normally wreak havoc upon its advanced electronics, the heat sinks from its 中型激光 cool the sensors while the laser is not in use. This allows it to operate in even the hottest environments where other scout 车辆s cannot. The Skulker comes with four and a half tons of 装甲 as standard. 
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> Vehicle Stealth 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>        90     10
+<b>左侧</b>          90     10
+<b>右侧</b>        90     10
+<b>后方</b>         90     10
+
+<b>总计</b>      360     40</color>
+
+<color=#ff0000>怪癖: 改进的 Sensors</color>	轮式潜行侦察车是迅风侦察车的大型近亲，最初以重型装甲输送车为基础。由于体型大于任何侦察车，它可以充当机动通信前哨。先进的传感器套件同时连接通信系统和瞄准系统，因此车辆仅凭传感器就能导航。在高温环境中，先进电子设备通常会受到严重影响；但中型激光器的散热器会在激光器未使用时为传感器降温，使它能在其他侦察车辆无法工作的极端高温环境中行动。潜行者标准配备四吨半装甲。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 车辆隐身装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>        90     10
+<b>左侧</b>          90     10
+<b>右侧</b>        90     10
+<b>后方</b>         90     10
+
+<b>总计</b>      360     40</color>
+
+<color=#ff0000>怪癖: 改进的 Sensors</color>	Goal-WholeField
+The most common alternate configuration mounts an Ultra AC/20 in the turret, while its front is packed with two 中型激光器 and one ER Small Laser. It also mounts a C3 slave module. When the Federated Commonwealth was looking for 全向Vehicle designs, 星团工业 quickly gathered a design team and released a prototype in record time. Officially it fulfilled all requirements, but unofficially 星团工业 had greased all the right palms. With every version able to deliver an awesome amount of firepower while being extremely fast for a 重型坦克, the Manteuffel is a serious tank to consider.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       235     35
+<b>左侧</b>         200     35
+<b>右侧</b>       200     35
+<b>后方</b>        125     35
+<b>炮塔</b>      225     35
+
+<b>总计</b>      985    175</color>
+
+<color=#ff0000>特性：主战坦克</color>
+
+<color=#ffcc00> 全向 Vehicle</color>	最常见的替代配置在炮塔安装一门 Ultra AC/20，车体前部则塞入两门中型激光器和一门增程小型激光器，同时安装 C3 从机模块。当联邦共和国寻找全向车辆设计时，星团工业迅速组建设计团队，并在创纪录时间内推出原型机。官方说法是它满足了全部要求，私下里则是星团工业打通了所有关键关系。每个型号都能提供惊人的火力，同时对重型坦克而言速度极快，因此曼托伊费尔是一款不容忽视的坦克。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       235     35
+<b>左侧</b>         200     35
+<b>右侧</b>       200     35
+<b>后方</b>        125     35
+<b>炮塔</b>      225     35
+
+<b>总计</b>      985    175</color>
+
+<color=#ff0000>特性：主战坦克</color>
+
+<color=#ffcc00> 全向 车辆</color>	Goal-WholeField
+The light assault 'Mech of the Celestial series of 全向Mechs, the Seraph is somewhat slow for its weight, but it attempts to make up for that with the inclusion of Triple-Strength Myomer that enables the 'Mech to speed up to 64 km/h when it runs hot. Like the other Celestials, the Seraph makes use of a light fusion 引擎 and a small cockpit, though other newer technologies are present only in its weaponry. As with the other Celestials, a C3i Computer is included. This variant uses a Heavy PPC to deliver a strong punch, and a Plasma Rifle to deal both damage and heat. An ER 中型激光器 and a Medium Pulse Laser provide close support, while the Target Acquisition Gear threatens opponents with homing 火炮. A Targeting Computer helps these weapons find their mark, and Improved Jump Jets allow the Seraph Dominus to move up to a hundred fifty 米 at a time.
+
+<b><color=#e62e00>特性：Improved Sensors</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.1</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	作为天体系列全向机甲中的轻型突击机甲，Seraph 以其吨位而言略显缓慢，但配备三倍强度肌肉组织，过热运行时速度可提升至 64 公里/小时。和其他天体机甲一样，Seraph 使用轻型聚变引擎和小型驾驶舱，其他新技术则主要体现在武器上。它同样配备 C3i 计算机。本型号使用重型 PPC 提供强力打击，并以等离子步枪同时造成伤害和热量；增程中型激光器和中型脉冲激光器提供近距离支援，目标捕获设备则用制导火炮威胁敌人。瞄准计算机帮助武器命中目标，改进型跳跃喷射器让 Seraph Dominus 一次最多移动 150 米。
+
+<b><color=#e62e00>特性：改进型传感器</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.1</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Goal-WholeField
+Created to dominate the battlefield, the 160 ton Mulligan Mobile Assault Platform was designed to engage enemies at every conceivable range. An Arrow IV and a pair of LRM-10s make up the vehicles long range firepower, while 6 中型激光器, an AC/20 and a UAC/5 provide closer range fire power. 4 Streak SRM-2s finish off any survivors. Despite its battlefield success, the Mulligan only ever saw limited production and finally died out during the chaos of the succession wars.
+
+<b><color=#ffcc00>聚变：Expensive 引擎 that works in a Vacuum.</color></b>
+
+<b><color=#ffcc00>Biome Restrictions: None.</color></b>
+
+<b><color=#ffcc00>Movement: 2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>Front</b>       335    112
+<b>Left</b>         260    112
+<b>Right</b>       260    112
+<b>Rear</b>        210    112
+<b>Turret</b>      260    112
+
+<b>Total</b>      1325    560</color>
+
+<color=#ff0000>特性：Main Battle Tank</color>	Mulligan 机动突击平台重 160 吨，设计目标是统治战场，在所有可想象的距离上与敌人交战。箭 IV 和两具 LRM-10 构成车辆的远程火力；六门中型激光器、一门 AC/20 和一门 UAC/5 提供近距离火力，四具 Streak SRM-2 用于消灭残敌。尽管在战场上表现成功，Mulligan 始终只进行有限生产，最终在继承战争的混乱中绝迹。
+
+<b><color=#ffcc00>聚变：Expensive 引擎 that works in a Vacuum.</color></b>
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       335    112
+<b>左侧</b>         260    112
+<b>右侧</b>       260    112
+<b>后方</b>        210    112
+<b>炮塔</b>      260    112
+
+<b>总计</b>      1325    560</color>
+
+<color=#ff0000>特性：主战坦克</color>	Goal-WholeField
+The SM Tank Destroyer was 设计ed as a speedy infighter by scientists from 氏族新星猫. The machine is a cheap and effective combat 车辆. The 车辆 has unique 'glass' dual cockpits on the front of the 车辆 that are functionally identical while mounting a smaller anti-infantry turret just behind its left side cockpit. The 车辆's unique split cockpit 设计 allows the cockpit modules to eject from the 车辆. Due to its appearance, the SM1 was dubbed the 'Suicide Machine' by its first pilots because they felt overexposed with the 坦克's all ferro-glass cockpit.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       230     25
+<b>左侧</b>         150     25
+<b>右侧</b>       150     25
+<b>后方</b>        100     25
+<b>炮塔</b>      125     25
+
+<b>总计</b>      755    125</color>
+
+<color=#ff0000>怪癖: 稳定 Weapons</color>	SM 坦克歼击车由氏族新星猫的科学家设计，是一款高速近战车辆。它造价低廉且战斗效率出色。车体前部设有独特的玻璃双驾驶舱，功能完全相同；左侧驾驶舱后方还安装了一座较小的反步兵炮塔。这种独特的分离式驾驶舱设计允许驾驶舱模块从车辆中弹射。由于外形特殊，首批驾驶员认为全铁磁玻璃驾驶舱让自己暴露过度，因此将 SM1 称为“自杀机器”。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       230     25
+<b>左侧</b>         150     25
+<b>右侧</b>       150     25
+<b>后方</b>        100     25
+<b>炮塔</b>      125     25
+
+<b>总计</b>      755    125</color>
+
+<color=#ff0000>怪癖: 稳定 武器s</color>	Goal-WholeField
+The Shrike is outfitted with a powerful 定位 Computer that allows it to bring accurate firepower to bear on the battlefield. It has a hard-hitting armament that gives the '机甲 a powerful sting in combat at most ranges. A 长 Bow LRM-10-rack allows pilots to engage enemies at long range, and two Type 9 超级自动炮/5s are effective against even other assault-class '机甲s. Lastly, two Series 2b ER Large Lasers provide a fairly powerful punch should the other weapon systems deplete their ammunition. The 设计 owes its large weapon capacity to due use to its Endo Steel construction and its large 380-rated Extra-Light Fusion 引擎. Engineers enhanced the 设计 by adding a 部分机翼, giving the Shrike extra jump capacity as well as additional cooling abilities under normal atmospheric conditions.
+
+<b><color=#e62e00>怪癖: Command 机甲</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.23</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower</color>	伯劳装备一台强大的定位计算机，能够在战场上实施精准火力。它的武器配置火力强劲，在大多数距离都能给予敌人有力打击。长弓 LRM-10 发射器让驾驶员可以攻击远距离目标，两门 Type 9 超级自动加农炮/5 甚至能有效对付其他突击级机甲。最后，两门 Series 2b 增程大型激光器在其他武器弹药耗尽时仍能提供相当强的火力。该设计采用内骨骼钢结构，并使用大型 380 级超轻聚变引擎，因此拥有宽裕的武器载荷。工程师又加入部分机翼，在正常大气条件下同时提升伯劳的跳跃能力和散热能力。
+
+<b><color=#e62e00>怪癖: 指挥机甲</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.23</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 下臂</color>	Goal-WholeField
+The Shandra Advanced Scout Vehicle is a light 战斗车辆 created in the last decades of the thirty-first century and used well into the next century. The 车辆 began to be 生产 in 3087 by Brigadier Corporation on Oliver and became highly popular with many of the Inner Sphere nations, which began to adopt Combined Arms doctrine for their militaries. Due to their popularity, they would be among forefront of scout missions, where it’s been known for different factions using these 车辆s to clash during this time period.
+
+<b><color=#ffcc00>生物群系限制: 该单位因使用内燃机，无法在月球或火星生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       140     15
+<b>左侧</b>          75     15
+<b>右侧</b>        75     15
+<b>后方</b>         50     15
+
+<b>总计</b>      340     60</color>
+
+<color=#ff0000>怪癖: Off Roader</color>	Shandra 高级侦察车是一种轻型战斗车辆，于三十一世纪最后几十年诞生，并一直服役到下个世纪。该车辆由 Brigadier 公司于 3087 年在 Oliver 开始生产，随后受到许多内层圈国家欢迎，这些国家开始在军队中采用合成兵种 doctrine。由于广受欢迎，它们成为侦察任务的前锋；在这一时期，不同派系经常使用这些车辆发生冲突。
+
+<b><color=#ffcc00>生物群系限制: 该单位因使用内燃机，无法在月球或火星生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       140     15
+<b>左侧</b>          75     15
+<b>右侧</b>        75     15
+<b>后方</b>         50     15
+
+<b>总计</b>      340     60</color>
+
+<color=#ff0000>怪癖: 越野</color>	Goal-WholeField
+The Winston 战斗车辆 was a 球体共和国 frontline combat 车辆 that began production in 3085. The Winston is a fire support type 坦克 which generally uses its long range weaponry to hit its opponent. The 车辆's principle long range weapons include a pair of turret mounted 15-tubed 长 Range Missile Launchers and pair of Light PPCs. The Light PPCs are guided by a 定位 Computer mounted in the hull of the 坦克. In close combat, the 车辆 must rely on its front mounted 6-tubed Streak 短 Range Missile Launcher.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 重型铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       345     35
+<b>左侧</b>         285     35
+<b>右侧</b>       285     35
+<b>后方</b>        185     35
+<b>炮塔</b>      300     35
+
+<b>总计</b>      1400    175</color>
+
+<color=#ff0000>怪癖: 改进的 定位 - 长</color>	温斯顿战斗车辆是球体共和国的一线战斗车辆，始于 3085 年生产。温斯顿属于火力支援型坦克，通常依靠远程武器打击敌人。其主要远程武器包括炮塔上的两具 15 管远程导弹发射器和两门轻型 PPC。轻型 PPC 由安装在坦克车体内的定位计算机引导。近距离作战时，车辆必须依靠前置的 6 管 Streak 短程导弹发射器。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 重型铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       345     35
+<b>左侧</b>         285     35
+<b>右侧</b>       285     35
+<b>后方</b>        185     35
+<b>炮塔</b>      300     35
+
+<b>总计</b>      1400    175</color>
+
+<color=#ff0000>怪癖: 改进的 定位 - 长</color>	Goal-WholeField
+The Carnivore Assault Tank is a post-Jihad design produced by Clan Wolf as part their efforts to rebuild their touman.  After its introduction, it would be traded to neighboring Clans and even Inner Sphere powers for additional supplies and equipment. The Carnivore was designed with lessons learned from the modern battlefield of the Jihad. A 守护者ECM Suite is meant to handle the Inner Sphere's usage of advanced electronic equipment. Unlike many previous Clan designs it is heavily armored.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 装甲 (C)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       315     40
+<b>左侧</b>         230     40
+<b>右侧</b>       230     40
+<b>后方</b>        210     40
+<b>炮塔</b>      260     40
+
+<b>总计</b>      1245    200</color>
+
+<color=#ff0000>特性：主战坦克</color>	食肉兽突击坦克是圣战后的设计，由狼氏族为重建其军团而生产。推出后，它被交换给邻近氏族甚至内层圈势力，以换取额外补给和装备。食肉兽吸收了圣战现代战场的经验进行设计，守护者 ECM 套件用于应对内层圈对先进电子设备的使用。与许多早期氏族设计不同，它拥有厚重装甲。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 装甲 (C)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       315     40
+<b>左侧</b>         230     40
+<b>右侧</b>       230     40
+<b>后方</b>        210     40
+<b>炮塔</b>      260     40
+
+<b>总计</b>      1245    200</color>
+
+<color=#ff0000>特性：主战坦克</color>	Goal-WholeField
+The Chalchiuhtotolin is a vehicle produced by 玉鹰氏族 during the post-Jihad era in response to the need for an urban 战斗车辆. The vehicle's strange name can be attributed to Clan Merchant Factor Daniel. The tank is powered by a 230-rated Fusion 引擎, which is capable of propelling the vehicle up to 86 km/h. The tank's weaponry was designed to be as accurate as possible as a means of minimizing damage to property and civilians when performing its urban enforcement duties. 
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       235     25
+<b>左侧</b>         155     25
+<b>右侧</b>       155     25
+<b>后方</b>        100     25
+<b>炮塔</b>      135     25
+
+<b>总计</b>      780    125</color>
+
+<color=#ff0000>特性：Off Roader</color>	Chalchiuhtotolin 是玉鹰氏族在圣战后时期为满足城市战斗车辆需求而生产的车辆。这个奇特的名字源自氏族商人丹尼尔。坦克由 230 级聚变引擎驱动，最高速度可达 86 公里/小时。其武器经过精确性设计，旨在执行城市执法任务时尽量减少对财产和平民的伤害。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       235     25
+<b>左侧</b>         155     25
+<b>右侧</b>       155     25
+<b>后方</b>        100     25
+<b>炮塔</b>      135     25
+
+<b>总计</b>      780    125</color>
+
+<color=#ff0000>特性：越野</color>	Goal-WholeField
+The Bandit is a 50-ton combat hovercraft, first seen in use by the Wolf’s Dragoons. Designed by the Blackwell Industries technicians who survived the Jihad's opening salvo on Outreach, the 'Warthog' trades the standard 引擎 for an XL引擎. 重型铁纤维装甲 装甲 improves the Bandit's protection, particularly the 装甲传动 System that improves the durability of the hoverskirt. A turret-mounted Machine Gun and Large 变速脉冲激光 are the only weapons carried.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       220     25
+<b>左侧</b>         160     25
+<b>右侧</b>       160     25
+<b>后方</b>        160     25
+<b>炮塔</b>      180     25
+
+<b>总计</b>      880    125</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>
+
+<color=#ffcc00> 全向 Vehicle</color>	强盗是一种 50 吨级战斗气垫船，最早由狼之龙骑兵使用。它由 Blackwell 工业公司在 Outreach 遭受圣战初期袭击后幸存的技术人员设计，“疣猪”以 XL 引擎取代标准引擎。重型铁纤维装甲提高了强盗的防护，尤其是装甲传动系统增强了裙边的耐久性。它仅装备一挺安装于炮塔的机枪和一门大型变速脉冲激光器。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       220     25
+<b>左侧</b>         160     25
+<b>右侧</b>       160     25
+<b>后方</b>        160     25
+<b>炮塔</b>      180     25
+
+<b>总计</b>      880    125</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>
+
+<color=#ffcc00> 全向 车辆</color>	Goal-WholeField
+The Morningstar City Command Vehicle is 设计ed to coordinate battles that take place within urban centers. Though it was ostensibly created to coordinate defensive operations in said areas, it has proven equally adept at going on the offensive. The Morningstar is built around a C3 computer that can coordinate friendly units. Four tons of cargo space let's it ferry infantry into the battle.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       215     30
+<b>左侧</b>         150     30
+<b>右侧</b>       150     30
+<b>后方</b>        100     30
+<b>炮塔</b>      130     30
+
+<b>总计</b>      745    150</color>
+
+<color=#ff0000>怪癖: 主战坦克</color>
+
+<color=#ffcc00> Can carry 1 Battle 装甲 Squads. Has firing ports.</color>	晨星城市指挥车旨在协调城市中心内的战斗。它表面上是为协调防御行动而制造，却同样擅长发动进攻。晨星围绕一台能够协调友军单位的 C3 计算机构建，并拥有四吨货舱空间，可以运送步兵参战。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       215     30
+<b>左侧</b>         150     30
+<b>右侧</b>       150     30
+<b>后方</b>        100     30
+<b>炮塔</b>      130     30
+
+<b>总计</b>      745    150</color>
+
+<color=#ff0000>怪癖: 主战坦克</color>
+
+<color=#ffcc00> 可搭载 1 个战斗装甲小队，并设有射击孔。</color>	Goal-WholeField
+An offshoot of the Nike APC, the Nike Tank is 设计ed to escort it's APC cousin in combat. Powered by the same 250 rated XL引擎, the Nike Tank replaces the infantry bay and weapons with a UAC/10, 2 锁定式SRM-4's, 2 ER 中型激光s and 2 HMG's. An ECM suite rounds out the 车辆s load out. Like the original model, it is mainly found in the 地狱马 touman or rarely with the Snow Ravens.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       215     25
+<b>左侧</b>         175     25
+<b>右侧</b>       175     25
+<b>后方</b>        150     25
+<b>炮塔</b>      200     25
+
+<b>总计</b>      915    125</color>
+
+<color=#ff0000>怪癖: 增强型防火设备</color>
+
+<color=#ffcc00> Can carry 1 Battle 装甲 Squads. Has firing ports.</color>	Nike 坦克是 Nike 装甲输送车的衍生型号，设计用于在战斗中护送其 APC 近亲。它采用相同的 250 级 XL 引擎，以一门 UAC/10、两具锁定式 SRM-4、两门增程中型激光器和两挺重型机枪取代步兵舱及原有武器，另配 ECM 套件。与原始型号一样，它主要出现在地狱马氏族军团中，偶尔也会由雪鸦氏族使用。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       215     25
+<b>左侧</b>         175     25
+<b>右侧</b>       175     25
+<b>后方</b>        150     25
+<b>炮塔</b>      200     25
+
+<b>总计</b>      915    125</color>
+
+<color=#ff0000>怪癖: 增强型防火设备</color>
+
+<color=#ffcc00> 可搭载 1 个战斗装甲小队，并设有射击孔。</color>	Goal-WholeField
+Designed as an 全向 vehicle, the Schiltron uses modular weapon ports similar to those used on 全向Mechs allowing it to be quickly reconfigured for a variety of mission parameters. Carrying only 10 tons of 装甲, the Schiltron is forced to stay well out of the line of fire, something that a top speed of 54 km/h does not always make possible. The base chassis carries a C3 Computer, as well as a 守护者ECM Suite.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       255     40
+<b>左侧</b>         180     40
+<b>右侧</b>       180     40
+<b>后方</b>        125     40
+<b>炮塔</b>      225     40
+
+<b>总计</b>      965    200</color>
+
+<color=#ff0000>特性：泰克铁康TC7000</color>
+
+<color=#ffcc00> 全向 Vehicle</color>	作为全向车辆，希尔特隆采用类似全向机甲的模块化武器接口，可以根据任务需求快速重新配置。它仅携带 10 吨装甲，因此必须尽量远离火线，而 54 公里/小时的最高速度并不总能做到这一点。基础底盘配备 C3 计算机和守护者 ECM 套件。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       255     40
+<b>左侧</b>         180     40
+<b>右侧</b>       180     40
+<b>后方</b>        125     40
+<b>炮塔</b>      225     40
+
+<b>总计</b>      965    200</color>
+
+<color=#ff0000>特性：泰克铁康TC7000</color>
+
+<color=#ffcc00> 全向 车辆</color>	Goal-WholeField
+One of the 瓦伊宁工程与打捞队’s more curious creations, the Ion Raptor is a hand built marque of battlemechs built with salvage from the Clan front lines. First debuting in 3053, the original Ion Raptor was built from the remains of a Masakari and a Crab. 设计 in collaboration with Sea Fox merchants, the Ion Raptor 5R is a return to VEST’s roots. Each 5R is hand built to order, mostly for select Solaris stables. 设计 to succeed in the Arena and on the battlefield, the 5R is armed with a pair of ER Large Lasers for ranged combat while 4 IHML’s surprise anyone who closes in. 4 Streak LRM-5’s support the ER Lasers, but can engage targets at close range if required.
+
+<b><color=#e62e00>怪癖: 战斗计算机</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.1</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	离子猛禽是瓦伊宁工程与打捞队最奇特的作品之一，是使用氏族前线战场残骸手工制造的战斗机甲品牌。原型于 3053 年首次亮相，由 Masakari 和 Crab 的残骸拼装而成。与海狐商人合作设计的离子猛禽 5R 回归了 VEST 的根基。每台 5R 都按订单手工制造，主要供精选的 Solaris 马厩使用。5R 旨在竞技场和战场上都取得成功，远程作战装备一对增程大型激光器，近身敌人则会遭到四门 IHML 的突袭；四具 Streak LRM-5 支援增程激光器，必要时也可攻击近距离目标。
+
+<b><color=#e62e00>怪癖: 战斗计算机</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.1</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 上臂, 右侧 上臂</color>	Goal-WholeField
+Developed by Rileys Rangers as an in house attack helicopter, the Trask proved successful enough that large quantities were sold to the Canopian armed forces and other mercenary groups. A 30 ton VTOL, the Trask can reach speeds of 160kph, thanks to its 160 rated XL引擎; while 5 tons of heavy 铁纤维装甲 装甲 provide heavy protection. The Trask TSK-01 is armed with a 中型X脉冲激光 Laser and a pair of 锁定式SRM-6's.
+
+<b><color=#ffcc00>生物群系限制: 该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动: 10/15 格 / 300/450 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 重型铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       150     15
+<b>左侧</b>         120     15
+<b>右侧</b>       120     15
+<b>后方</b>         95     15
+
+<b>总计</b>      500     75</color>
+
+<color=#ff0000>怪癖: 改进的 定位 - Medium</color>	Trask 是 Riley 游骑兵开发的内部攻击直升机，表现足够成功，随后大量出售给 Canopus 武装部队和其他佣兵组织。这架 30 吨垂直起降机由 160 级 XL 引擎驱动，速度可达 160 公里/小时；五吨重型铁纤维装甲提供强力防护。Trask TSK-01 装备一门中型 X 脉冲激光器和两具锁定式 SRM-6。
+
+<b><color=#ffcc00>生物群系限制: 该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动: 10/15 格 / 300/450 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 重型铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       150     15
+<b>左侧</b>         120     15
+<b>右侧</b>       120     15
+<b>后方</b>         95     15
+
+<b>总计</b>      500     75</color>
+
+<color=#ff0000>怪癖: 改进的 定位 - 中程</color>	Goal-WholeField
+The Challenger 主战坦克 was designed to combat the threat the Clans posed to the Inner Sphere. The Challenger was a joint effort between 卡隆工业 and 通用汽车; rather than possibly losing out on lucrative contracts trying to outdo one another, the two corporations teamed up to create a main battle tank that could stand up to a BattleMech. The tank was produced on Kirklin, Kathil, and Salem.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       320     45
+<b>左侧</b>         260     45
+<b>右侧</b>       260     45
+<b>后方</b>        180     45
+<b>炮塔</b>      300     45
+
+<b>总计</b>      1320    225</color>
+
+<color=#ff0000>特性：主战坦克</color>	挑战者主战坦克旨在应对氏族对内层圈构成的威胁。它由 Kallon 工业和通用汽车联合开发；两家公司没有为了争夺高利润合同彼此竞争，而是合作制造出一款能够与战斗机甲抗衡的主战坦克。该坦克在 Kirklin、Kathil 和 Salem 生产。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       320     45
+<b>左侧</b>         260     45
+<b>右侧</b>       260     45
+<b>后方</b>        180     45
+<b>炮塔</b>      300     45
+
+<b>总计</b>      1320    225</color>
+
+<color=#ff0000>特性：主战坦克</color>	Goal-WholeField
+The Hellspawn was 设计ed in response to a call from the Federated Commonwealth for a modern, highly mobile, fire-support Battle机甲. The Hellspawn is built on an Endo Steel chassis and a 270 XL引擎 that gives it a top speed of 97.2 km/h. For protection, the Hellspawn is equipped with a 守护者ECM Suite and has six and a half tons of 装甲 that is barely adequate when compared to other medium '机甲s. This 3081 variant carries a Light PPC and ER 中型激光 in each arm. It's also equipped with a 守护者ECM Suite, 比格犬主动探头, and TAG. The Hellspawn-10SR also carries eight 改进的 Jump Jets, allowing for 240 meter jumps. 
+
+<b><color=#e62e00>怪癖: 改进的 Cooling Jacket - Missile</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.03</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	地狱犬的设计源于联邦共和国对现代、高机动性火力支援战斗机甲的需求。它采用内骨骼钢底盘和 270 级 XL 引擎，最高速度可达 97.2 公里/小时。为提供防护，地狱犬配备守护者 ECM 套件和六吨半装甲，与其他中型机甲相比仅勉强够用。3081 年型号在双臂各安装一门轻型 PPC 和一门增程中型激光器，同时配备守护者 ECM 套件、比格犬主动探头和 TAG。地狱犬 10SR 还安装八具改进型跳跃喷射器，可进行 240 米跳跃。
+
+<b><color=#e62e00>怪癖: 改进的 冷却夹套—导弹</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.03</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 下臂, 右侧 下臂</color>	Goal-WholeField
+Conceived as a long-range infantry support 机甲, the ill-fated Jackrabbit entered prototyping mere weeks before the Amaris Coup. Mass 生产 without regard for its 设计 flaws, the 25 ton Jackrabbit suffered from anaemic firepower and poor 装甲; resulting in a bad reputation and the eventual extinction of the 设计. Powered by a 150-rated Fusion 引擎, the Jackrabbit carries 3.5 tons of 铁纤维装甲 装甲 and has a top speed of 97 km/h. An endosteel skeleton allows the Jackrabbit JKR-9W to carry a Light AC/5 and a 锁定式SRM-2, both with a single ton of ammo. An ER 中型激光 rounds out the weapons.
+
+<b><color=#e62e00>怪癖: Nimble</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 0.98</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	兔跃者被设想为远程步兵支援机甲，却在 Amaris 政变前几周才开始原型制造。它不顾设计缺陷而进行量产，导致这台 25 吨机甲火力贫弱、装甲糟糕，最终声名狼藉并绝迹。兔跃者由 150 级聚变引擎驱动，携带 3.5 吨铁纤维装甲，最高速度 97 公里/小时。内骨骼钢框架让 Jackrabbit JKR-9W 能携带一门轻型 AC/5 和一具锁定式 SRM-2，各自配备一吨弹药；一门增程中型激光器完善武器配置。
+
+<b><color=#e62e00>怪癖: 灵巧</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 0.98</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 下臂, 右侧 下臂</color>	Goal-WholeField
+The Axel 重型坦克 is based on the popular Rommel design, but uses an internal combustion 引擎. To make room for the 引擎, the tank is only protected by ten and a half tons of 装甲. The internal combustion 引擎 also reduces the top speed of the tank to 54 km/h. The tank was produced by engineers working for the 自由蛇夫座共和国.
+
+<b><color=#ffcc00>生物群系限制：该单位因使用内燃机，无法在月球或火星生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       225     35
+<b>左侧</b>         185     35
+<b>右侧</b>       185     35
+<b>后方</b>        120     35
+<b>炮塔</b>      190     35
+
+<b>总计</b>      905    175</color>
+
+<color=#ff0000>特性：主战坦克</color>	阿克塞尔重型坦克基于广受欢迎的罗梅尔设计，但采用内燃机。为了给引擎腾出空间，坦克仅由十吨半装甲保护。内燃机也将坦克最高速度降低至 54 公里/小时。该坦克由自由蛇夫座共和国的工程师制造。
+
+<b><color=#ffcc00>生物群系限制：该单位因使用内燃机，无法在月球或火星生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       225     35
+<b>左侧</b>         185     35
+<b>右侧</b>       185     35
+<b>后方</b>        120     35
+<b>炮塔</b>      190     35
+
+<b>总计</b>      905    175</color>
+
+<color=#ff0000>特性：主战坦克</color>	Goal-WholeField
+A post-Jihad variant 生产 by Krupp Armament Works for the 球体共和国 in 3084, the production model 8R was based on the prototype SDR-8X that used during the liberation of Terra. Built on an Endo Steel chassis and powered by a smaller 210 Light Fusion 引擎 - while its ground speed was reduced, the SDR-8R's ten Pitban LFT-20X 改进的 Jump Jets gave it amazing maneuverability. Carrying ten double heat sinks allowed the 8R to fire its twin 多元光学 ER 中型激光s and jump without fear of overheating. Boasting a very different look, the re设计ed 8R was also notable for being one of the first Spiders to include an ejection system.
+
+<b><color=#e62e00>怪癖: Nimble</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 0.99</color></b>	这是 Krupp 武器公司的圣战后型号，于 3084 年为球体共和国生产。量产型 8R 基于解放 Terra 时使用的原型 SDR-8X。它采用内骨骼钢底盘和较小的 210 级轻型聚变引擎；虽然地面速度降低，但十具 Pitban LFT-20X 改进型跳跃喷射器赋予 SDR-8R 惊人的机动性。十台双重散热器让 8R 能够发射两门多元光学增程中型激光器并进行跳跃，而不用担心过热。重新设计的 8R 外形截然不同，也是最早配备弹射系统的蜘蛛型号之一。
+
+<b><color=#e62e00>怪癖: 灵巧</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 0.99</color></b>	Goal-WholeField
+A Nova Cat 设计, the 50 ton Huntsman was 设计ed for Operation Revival and the invasion of the Inner Sphere; first entering production in 3049. An Omni机甲, the Huntsman is built around a 250-rated XL引擎 with an Endo Steel Skeleton and 铁纤维装甲 装甲 giving the Omni机甲, 21.5 tons of pod space. 5 Jump Jets are fixed to the chassis, giving the Huntsman additional flexibility. The Huntsman E is armed with a trio of ER 中型脉冲激光s. A 小型脉冲激光 and a pair of 锁定式SRM-6’s provide additional firepower at close range. A 可伸缩刀刃 is a nasty surprise should enemies close distance with the Huntsman.
+
+<b><color=#e62e00>怪癖: 稳定</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	猎手是氏族新星猫的设计，重 50 吨，为复兴行动和入侵内层圈而开发，于 3049 年开始生产。作为全向机甲，猎手围绕 250 级 XL 引擎建造，结合内骨骼钢框架和铁纤维装甲，为全向机甲提供 21.5 吨吊舱空间。底盘固定五具跳跃喷射器，进一步提升灵活性。猎手 E 型装备三门增程中型脉冲激光器，一门小型脉冲激光器和一对锁定式 SRM-6 提供近距离火力；敌人若靠近猎手，还会遭遇可伸缩刀刃。
+
+<b><color=#e62e00>怪癖: 稳定</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	Goal-WholeField
+A Jihad era upgrade of the Succession Wars Partisan, the Partisan Air Defense Tank (Cell) upgrades the original ICE 引擎 to a Fuel Cell. The free weight is used to mount a C3 slave and upgrade the Autocannons to a pair of AC/2’s and a pair of LB-10X’s. AMS and heavier 装甲 rounds out the design.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       200     40
+<b>左侧</b>         145     40
+<b>右侧</b>       145     40
+<b>后方</b>        100     40
+<b>炮塔</b>      150     40
+
+<b>总计</b>      740    200</color>
+
+<color=#ff0000>特性：防空瞄准系统</color>	这是继承战争时期党卫军防空坦克的圣战时代升级型。党卫军防空坦克（燃料电池）将原有内燃机升级为燃料电池，并利用节省的重量安装 C3 从机，将自动加农炮升级为一对 AC/2 和一对 LB-10X。AMS 与更厚的装甲完善了设计。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       200     40
+<b>左侧</b>         145     40
+<b>右侧</b>       145     40
+<b>后方</b>        100     40
+<b>炮塔</b>      150     40
+
+<b>总计</b>      740    200</color>
+
+<color=#ff0000>特性：防空瞄准系统</color>	Goal-WholeField
+ComStar refit of their vintage stockpile of Thors. Removing the 中型激光s, the Thor is left with only the 重击者火炮 Piece and 40 rounds of Ammunition. The 车辆 is enhanced with a C3i network computer to allow better communication with its Lance, in case an enemy unit gets too close.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       165     30
+<b>左侧</b>         115     30
+<b>右侧</b>       115     30
+<b>后方</b>        115     30
+<b>炮塔</b>      140     30
+
+<b>总计</b>      650    150</color>
+
+<color=#ff0000>怪癖: 精准 Weapon - Ballistics</color>	这是 ComStar 对库存老式雷神机甲的改装型号。拆除中型激光器后，雷神只剩下一门重击者火炮和 40 发弹药。车辆增装 C3i 网络计算机，以便与所属长机保持更好通信，防止敌方单位过度接近。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       165     30
+<b>左侧</b>         115     30
+<b>右侧</b>       115     30
+<b>后方</b>        115     30
+<b>炮塔</b>      140     30
+
+<b>总计</b>      650    150</color>
+
+<color=#ff0000>怪癖: 精准 武器 - 弹道</color>	Goal-WholeField
+Taking a cue from 玉鹰氏族’s Thor II, introduced during the previous decade, Nova Cat scientists removed the original Shadow Cat’s fixed jump jets to free valuable mass. Most of the remaining tonnage was allotted for pod space, enhancing the ’机甲’s flexibility, while the remainder maximized 装甲 coverage to see the Clan’s precious Omni机甲s and its warriors home safely. The Shadow Cat III B configuration is a Fast Striker that features a ER 中型激光 retains the original Shadow Cat jump capability in removable omnipod Jump Jets 
+
+<b><color=#e62e00>怪癖: 窄/低调</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	受到玉鹰氏族十年前推出的雷神 II 启发，新星猫科学家拆除了原影猫的固定跳跃喷射器，以释放宝贵重量。剩余吨位大多分配给吊舱空间，提升机甲的灵活性，其余部分则用于最大化装甲覆盖，确保珍贵的全向机甲和战士安全返航。影猫 III B 配置是一款快速突击型，配备增程中型激光器，并通过可拆卸全向吊舱跳跃喷射器保留原影猫的跳跃能力。
+
+<b><color=#e62e00>怪癖: 窄/低调</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	Goal-WholeField
+The '机甲's most prominent weapon is the TSEMP磁脉冲炮, which enable it to potentially disable an opponent. The cannon is backed up by a MML-3 and a single ER 中型激光器, and to fulfill its infantry support role, the '机甲 carries three heavy machine guns. The '机甲 is powered by a GM 210-rated extralight fusion 引擎, which gives it enough speed to keep up with most combat 车辆s. The '机甲's hull is protected by six and a half tons of standard 装甲 and standard CASE is protects ammunition stored in the left torso.
+
+<b><color=#e62e00>怪癖: 改进的 Communications</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.03</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper</color>	机甲最突出的武器是 TSEMP 磁脉冲炮，有可能使敌人失去行动能力。该火炮由一具 MML-3 和一门增程中型激光器支援；为执行步兵支援任务，机甲还携带三挺重型机枪。它由 GM 210 级超轻聚变引擎驱动，速度足以跟上大多数战斗车辆。机体由六吨半标准装甲保护，左侧躯干储存的弹药由标准 CASE 防护。
+
+<b><color=#e62e00>怪癖: 改进的 通信系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.03</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 上臂</color>	Goal-WholeField
+Developed in the later years of the Jihad by the Jade Falcons, the Flamberge was based on an older experiment involving 部分机翼 technology. A 70 ton 全向Mech, the Flamberge is built around a 280-rated XL引擎 and an Endo Steel chassis with 13.5 tons of 装甲. 11 DHS are installed as standard, as are a pair of SRM-6's with 35 tons of podspace rounding out the design. The Flamberge A is armed with an ER PPC and a 大型脉冲激光 with 5 改进型跳跃推进器 boosting the designs mobility and 4 extra DHS offsetting the increased heat load.
+
+<b><color=#e62e00>特性：瞄准增强—中程</color></b>
+
+<b><color=#e62e00>部署成本倍率：1.11</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	火焰剑由玉鹰氏族在圣战后期开发，基于一项涉及部分机翼技术的早期实验。作为 70 吨全向机甲，火焰剑围绕 280 级 XL 引擎和内骨骼钢底盘建造，配备 13.5 吨装甲。标准配置为 11 台双重散热器、两具 SRM-6 发射器和 35 吨吊舱空间。A 型装备一门增程 PPC 和一门大型脉冲激光器，五具改进型跳跃喷射器提升机动性，另有四台双重散热器抵消额外热负荷。
+
+<b><color=#e62e00>特性：瞄准增强—中程</color></b>
+
+<b><color=#e62e00>部署成本倍率：1.11</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Goal-WholeField
+The '机甲's Primary Configuration weaponry includes a Class 5 转管自动炮 and an ER Small Laser found in the right arm. The Autocannon has two tons of ammunition is found in its right torso with CASE II. In its left arm is a single Large 变速脉冲激光. The Prime uses some advanced electronics to give it an advantage on the battlefield; these include a C3 boosted slave to increase its accuracy in combat, and an Angel ECM Suite, which gives the '机甲 some considerable electronic warfare capacities.
+
+<b><color=#e62e00>怪癖: Variable Range 定位</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	主要配置的武器包括右臂的一门 5 级转管自动炮和一门增程小型激光器。自动加农炮的两吨弹药存放在右侧躯干，并由 CASE II 保护。左臂安装一门大型变速脉冲激光器。Prime 型使用先进电子设备获得战场优势，包括由 C3 增强的从机以提高作战精度，以及赋予机甲强大电子战能力的天使 ECM 套件。
+
+<b><color=#e62e00>怪癖: 可变射程瞄准</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	Goal-WholeField
+A proposed Dark Age overhaul of the classic Phoenix Hawk, the PHX-99 is a unique take on the standard Phoenix Hawk. Emphasizing 装甲 over mobility, the PHX-99 is coated in Hardened 装甲, reinforced by a Heavy Duty Gyro and Modular 装甲. To fit this in, the 引擎 has been downgraded to a 50-rated Fusion Core, forcing the 机甲 to rely on a pair of 改进的 Jump Jets for mobility. Armed with a Large X-Pulse Laser, a pair of ER 中型激光器 and a pair of ER Small Lasers, the PHX-99 is considered a failed prototype for a reason.
+
+<b><color=#e62e00>怪癖: 改进的 Communications</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>	PHX-99 是经典凤凰鹰的黑暗时代改造方案，对标准凤凰鹰进行了独特重制。PHX-99 强调装甲而非机动性，覆盖强化装甲，并由重型陀螺仪和模块化装甲加固。为容纳这些设备，引擎降级为 50 级聚变核心，迫使机甲依靠一对改进型跳跃喷射器机动。它装备一门大型 X 脉冲激光器、一对增程中型激光器和一对增程小型激光器，被视为失败原型并非没有原因。
+
+<b><color=#e62e00>怪癖: 改进的 通信系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>	Goal-WholeField
+The light assault 'Mech of the Celestial series of OmniMechs, the Seraph is somewhat slow for its weight, but it attempts to make up for that with the inclusion of Triple-Strength Myomer that enables the 'Mech to speed up to 64 km/h when it runs hot. Like the other Celestials, the Seraph makes use of a light fusion 引擎 and a small cockpit, though other newer technologies are present only in its weaponry. As with the other Celestials, a C3i Computer is included. The Seraph E uses two experimental 雷电20s, though it only has enough ammunition to fire each about nine times. Backing these up is a 短管PPC.	作为天体系列全向机甲中的轻型突击机甲，Seraph 以其吨位而言略显缓慢，但配备三倍强度肌肉组织，过热运行时速度可提升至 64 公里/小时。和其他天体机甲一样，Seraph 使用轻型聚变引擎和小型驾驶舱，其他新技术则主要体现在武器上，并配备 C3i 计算机。Seraph E 使用两门实验型雷电 20，但弹药只够每门发射约九次，此外还装备一门短管 PPC。	Goal-WholeField
+The Raven X is a Capellan experimental refit of the Raven-3L upgrading nearly every portion of the 设计. The X3X electronics have been upgraded to an Angel ECM and 血猎犬主动探头, additionally the right arm 中型激光器 have been replaced with upgraded X-Pulse models and the SRM6 has been removed in favor of an Apollo Guided MRM 20 system.  These upgrades come at the cost of the traditional Tag laser and Narc beacon launcher but the result is a capable striker and scout.
+
+<b><color=#e62e00>怪癖: 改进的 Jammer</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	Raven X 是卡佩兰对 Raven-3L 的实验性改装，几乎升级了设计的每个部分。X3X 电子设备升级为天使 ECM 和血猎犬主动探头，右臂中型激光器替换为升级型 X 脉冲型号，SRM-6 则被拆除并换成 Apollo 制导 MRM-20 系统。这些升级牺牲了传统 TAG 激光器和 Narc 信标发射器，却造就了一台能力出色的突击和侦察机甲。
+
+<b><color=#e62e00>怪癖: 改进的 干扰器</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 上臂, 右侧 上臂</color>	Goal-WholeField
+A Light Clan 全向Mech, the 30 ton Kit Fox was introduced in 2890 by Clan Cloud Cobra. Favouring a mix of firepower and 装甲 over speed, the Kit Fox is powered by a 180 XL引擎 and features a mix of Endo Steel and 铁纤维装甲; giving it 16 tons of pod space. The Kit Fox T is armed with an ER Large Laser and a PAC/4. An ER 中型激光器 and a Streak SRM-4 make up the close range firepower, with a Supercharger and an Active Probe filling the rest of the available pod space.
+
+<b><color=#e62e00>特性：Narrow/Low Profile</color></b>
+
+<b><color=#e62e00>部署费用倍率：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	轻型氏族全向机甲小狐于 2890 年由云蛇氏族推出，重 30 吨。小狐重视火力和装甲的结合而非速度，采用 180 级 XL 引擎，并结合内骨骼钢和铁纤维装甲，提供 16 吨吊舱空间。小狐 T 型装备一门增程大型激光器和一门 PAC/4；一门增程中型激光器和一具 Streak SRM-4 提供近距离火力，增压器和主动探头则填补剩余吊舱空间。
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>部署费用倍率：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Goal-WholeField
+Not designed for traditional combat, the Carrier is a force multiplier. Designed to support allies from range, the Carrier can hang back behind friendly lines where its lack of 装甲 isn't a concern.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> Hardened
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>        95     40
+<b>左侧</b>          80     40
+<b>右侧</b>        80     40
+<b>后方</b>         70     40
+<b>炮塔</b>       85     40
+
+<b>总计</b>      410    200</color>
+
+<color=#ff0000>特性：瞄准增强—远程</color>	运输车并非为传统战斗设计，而是一种力量倍增器。它旨在从远处支援盟友，可以躲在己方防线后方，不必担心装甲薄弱。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 强化装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>        95     40
+<b>左侧</b>          80     40
+<b>右侧</b>        80     40
+<b>后方</b>         70     40
+<b>炮塔</b>       85     40
+
+<b>总计</b>      410    200</color>
+
+<color=#ff0000>特性：瞄准增强—远程</color>	Goal-WholeField
+Designed as a replacement to the Timber Wolf, the 65 ton Linebacker entered production in 3052. Built around a 390-rated XL引擎, the Linebacker’s faster speed enables it to keep up with lighter star mates in running battles, something the Timber Wolf struggled to do. A combination of 铁纤维装甲 装甲 and Endo Steel give the 全向Mech 17.5 tons of free pod space. The Linebacker LBK-G is armed with a pair of Improved Heavy Large Lasers augmented by a 瞄准计算机. 3 additional DHS, a pair of SRM-2’s and a Supercharger fill the remaining tonnage.
+
+<b><color=#e62e00>部署成本倍率：1.1.</color></b>	Linebacker 旨在替代 Timber Wolf，65 吨的它于 3052 年投产。它围绕 390 级 XL 引擎建造，较快速度让它能在机动作战中跟上较轻的星团友机，而 Timber Wolf 很难做到这一点。铁纤维装甲与内骨骼钢的组合为全向机甲提供 17.5 吨可用吊舱空间。Linebacker LBK-G 装备一对改进型重型大型激光器，并由瞄准计算机增强；三台额外双重散热器、一对 SRM-2 和一台增压器填补剩余吨位。
+
+<b><color=#e62e00>部署成本倍率：1.1.</color></b>	Goal-WholeField
+Not designed for traditional combat, the Carrier is a force multiplier. Designed to support allies from range, the Carrier can hang back behind friendly lines where its lack of 装甲 isn't a concern.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       120     40
+<b>左侧</b>         110     40
+<b>右侧</b>       110     40
+<b>后方</b>         85     40
+<b>炮塔</b>      100     40
+
+<b>总计</b>      525    200</color>
+
+<color=#ff0000>特性：瞄准增强—远程</color>	运输车并非为传统战斗设计，而是一种力量倍增器。它旨在从远处支援盟友，可以躲在己方防线后方，不必担心装甲薄弱。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       120     40
+<b>左侧</b>         110     40
+<b>右侧</b>       110     40
+<b>后方</b>         85     40
+<b>炮塔</b>      100     40
+
+<b>总计</b>      525    200</color>
+
+<color=#ff0000>特性：瞄准增强—远程</color>	Goal-WholeField
+The slowest Tank class, but carrying the heaviest 装甲 and biggest weapons. Carrying an array of ranged weapons, the Assault Tank is 设计ed to smash targets at range.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> Vehicle Stealth 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       275     40
+<b>左侧</b>         250     40
+<b>右侧</b>       250     40
+<b>后方</b>        200     40
+<b>炮塔</b>      235     40
+
+<b>总计</b>      1210    200</color>
+
+<color=#ff0000>怪癖: 改进的 Sensors</color>	它是速度最慢的坦克级单位，却拥有最厚重的装甲和最大的武器。突击坦克携带一系列远程武器，专门用于从远处摧毁目标。
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 车辆隐身装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       275     40
+<b>左侧</b>         250     40
+<b>右侧</b>       250     40
+<b>后方</b>        200     40
+<b>炮塔</b>      235     40
+
+<b>总计</b>      1210    200</color>
+
+<color=#ff0000>怪癖: 改进的 Sensors</color>	Goal-WholeField
+A fast unit, the Light VTOL is not designed for protracted combat. Packing a small, but potent array of weapons, this Light VTOL can kill an enemy unit under the right circumstances.
+
+<b><color=#ffcc00>生物群系限制：该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：7/11 格 / 210/330 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       105     15
+<b>左侧</b>          90     15
+<b>右侧</b>        90     15
+<b>后方</b>         50     15
+
+<b>总计</b>      350     75</color>
+
+<color=#ff0000>特性：瞄准增强—中程</color>	轻型垂直起降机速度很快，不适合持久战。它携带的武器数量不多却十分强力，在适当情况下能够击杀敌方单位。
+
+<b><color=#ffcc00>生物群系限制：该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：7/11 格 / 210/330 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       105     15
+<b>左侧</b>          90     15
+<b>右侧</b>        90     15
+<b>后方</b>         50     15
+
+<b>总计</b>      350     75</color>
+
+<color=#ff0000>特性：瞄准增强—中程</color>	Goal-WholeField
+This Vanquisher variant uses a Compact 引擎 and 紧凑型陀螺仪 to improve survivability. The 机甲Warrior piloting it is forced into a 小型驾驶舱, which allows the head to carry a 重型火焰喷射器 and fuel. Each arm carries a 等离子步枪 and ER Flamer, which are backed up by a Snub Nose PPC and two 小型 VSP 激光s. A 比格犬主动探头 allows the 7U to find hidden enemy units, and a 远程传感器投放器 is also fitted. This variant also carries sixteen double heat sinks to dissipate the heat generated by the weapons, but it is also equipped with 三重肌纤维束 to turn a liability (excess heat) into a strength.	该 Vanquisher 型号使用紧凑引擎和紧凑型陀螺仪提高生存力。驾驶它的机甲战士被迫使用小型驾驶舱，从而让头部能够携带重型火焰喷射器和燃料。双臂各有一把等离子步枪和一门增程火焰喷射器，并由一门短管 PPC 和两门小型 VSP 激光器支援。比格犬主动探头帮助 7U 找到隐藏敌军，同时还安装了远程传感器投放器。该型号还携带 16 台双重散热器消散武器热量，并配备三重肌纤维束，将过热这一缺点转化为优势。	Goal-WholeField
