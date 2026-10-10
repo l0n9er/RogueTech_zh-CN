@@ -1,75 +1,318 @@
+AMS	反导弹系统
+AMS Ammo	反导弹系统弹药
+ATM	ATM系统
+ATM Missiles	ATM导弹
+Active Probe	主动探测器
+Actuator Enhancement System	作动器增强系统
 AddOn	附加组件
 Advanced MASC	高级 MASC
+Advanced UAV	高级无人机
+Advanced Warfare Systems	高级战争系统
+Advanced Zoom	高级缩放
+Aircraft Weapon	飞行器武器
 Apollo Heavy MRM Ammo	阿波罗重型 MRM 弹药
 Apollo MRM Ammo	阿波罗 MRM 弹药
+Area Sensors	区域传感器
+Armor	装甲
+ArmorMod	装甲改装
+ArrowIV	箭IV
+ArrowIV Missiles	箭IV导弹
+ArtemisIV Ammo	阿尔忒弥斯IV弹药
 Articulated Jump Jets	铰接式跳跃喷射器
+Artillery Ammo	炮兵弹药
+Artillery cannon	火炮
+AutoCannon	自动炮
+AutoCannon Shells	自动炮弹
+BA Mechanical Jump Booster	战甲机械跳跃助推器
 BA Off Board TAG	战甲离板 TAG
+Battle Armor Ammo	战甲弹药
+Battle Armor Demolition Charges	战甲爆破炸药
+Battle Armor Harjel	战甲HarJel
+Battle Armor Jump Jet	战甲跳跃喷射器
 Battle Armor Linked	战甲联动
+Battle Armor Motive System	战甲机动系统
 Battle Armor Sensor Dispenser	战甲传感器投放器
 Battle Armor VTOL System	战甲 VTOL 系统
+Battle Computer AA	战斗计算机：防空
 Battle Computer Artemis	战斗计算机：阿尔忒弥斯
+Battle Computer Ballistic	战斗计算机：弹道
 Battle Computer Cluster	战斗计算机：集束
+Battle Computer Convergence	战斗计算机：弹道汇聚
+Battle Computer Crit	战斗计算机：暴击
+Battle Computer Energy	战斗计算机：能量
+Battle Computer Evasion	战斗计算机：闪避
+Battle Computer Extreme Range	战斗计算机：极远射程
+Battle Computer Gunnery	战斗计算机：射击
+Battle Computer Guts	战斗计算机：坚毅
 Battle Computer Headshot	战斗计算机：爆头
+Battle Computer Heat	战斗计算机：热量
+Battle Computer Indirect	战斗计算机：间接射击
+Battle Computer Jam	战斗计算机：卡壳
+Battle Computer Long Range	战斗计算机：远程
+Battle Computer Medium Range	战斗计算机：中程
+Battle Computer Minimum Range	战斗计算机：最小射程
+Battle Computer Missiles	战斗计算机：导弹
 Battle Computer MultiTrac	战斗计算机：多目标追踪
+Battle Computer Optics	战斗计算机：光学
 Battle Computer Orssos	战斗计算机：奥索斯
+Battle Computer Piloting	战斗计算机：驾驶
+Battle Computer Range	战斗计算机：射程
+Battle Computer Recoil	战斗计算机：后坐力
+Battle Computer Short Range	战斗计算机：近程
 Battle Computer Snafu	战斗计算机：混乱
 Battle Computer Sniper	战斗计算机：狙击
+Battle Computer Tactics	战斗计算机：战术
 BattleArmor Bay	战甲舱
 BattleArmor Wingmount	战甲翼挂架
+Bay Weapon Ammo	舱载武器弹药
+Binary Laser	二元激光
+Blue Shield Project	蓝盾计划
+Bolt On Weapon	外挂武器
+BoltOn Weapon	外挂武器
+Bombast Laser	Bombast激光
 Booster Pack	助推包
+C3 Equipment	C3装备
+CASE	CASE防爆系统
+CASE II	CASE II防爆系统
+Chemical Laser	化学激光
+Chemical Laser Fuel	化学激光燃料
+Clan LRM	氏族LRM
+Clan LRM Missiles	氏族LRM导弹
+Clan SRM	氏族SRM
+Clan SRM Rockets	氏族SRM火箭
+Cockpit	驾驶舱
+Combat Shield	战斗护盾
+Combat Shotgun	战斗霰弹枪
+CoolShot	冷却射击
+Coolant Pod	冷却剂舱
+Cooling System	冷却系统
 Cruise Missile	巡航导弹
 Cursed Battle Computer	诅咒战斗计算机
 Directional Jump Jets	定向跳跃喷射器
+Electronic Countermeasure Suite	电子对抗套件
+Emergency Coolant	紧急冷却剂
+Engine Cooling	引擎冷却
+Engine Core	引擎核心
+Engine Part	引擎部件
+Engine Shielding	引擎屏蔽
+Engine Slots	引擎槽位
+Enhanced LRM	增强型LRM
 Experimental PPC	实验型 PPC
+Extended LRM	增程LRM
+Extended Range Laser	增程激光
+Extended Range PPC	增程粒子加农炮
+Extended Range Pulse Laser	增程脉冲激光
+External Ammo Flamer	外置火焰喷射器弹药
+FCS	火控系统
+Flamer Fuel	火焰喷射器燃料
+Flare	诱饵弹
+Follow The Leader Missile	跟随领弹导弹
+Foot Actuator	足部作动器
 Fusillade Missiles	齐射导弹
+Gauss Rifle	高斯步枪
 Gauss Shot	磁轨炮弹
+Gyro	陀螺仪
+HPCS	高性能冷却系统
+HV AutoCannon	HV自动炮
+HV AutoCannon Shells	HV自动炮弹
+Hand Actuator	手部作动器
+Hand Grenade	手榴弹
+Hand Held Weapon	手持武器
 HarJel II Self Repair	HarJel II 自修复
 HarJel III Self Repair	HarJel III 自修复
 HarJel Self Repair	HarJel 自修复
+Heatbank	蓄热器
+Heatsink	散热器
+Heavy Gauss Shot	重型高斯炮弹
+Heavy Laser	重型激光
 Heavy MRM	重型 MRM
 Heavy MRM Rockets	重型 MRM 火箭
+Heavy PPC	重型粒子加农炮
 Helical Railgun	螺旋电磁炮
 Helical Railgun Shot	螺旋电磁炮弹
-iATM Missiles	iATM 导弹
-iNARC Beacons	iNARC 信标
+Hip	髋部作动器
+Hyper-Assault Gauss	超强突击高斯炮
+Hyper-Assault Gauss Shot	超强突击高斯炮弹
+Improved Anti-Air Gear	改进型防空装备
+Improved Jump Jets	改进型跳跃喷射器
 Industrial Ammo	工业弹药
 Industrial Equipment	工业设备
+Industrial TSM	工业三倍肌肉纤维
 Industrial Weapon	工业武器
 Integral Chassis Systems	一体化底盘系统
+Internal Ammo Flamer	内置火焰喷射器弹药
+Internal Weapons Bay	内置武器舱
+Jammer	干扰器
+Jump Booster	跳跃助推器
+Jump Jet	跳跃喷射器
+LAM Booster Pack	LAM助推包
+LAM Infantry Compartment Bay	LAM步兵舱
+LAMS	激光反导系统
+LB-X AutoCannon	LB-X自动炮
+LB-X AutoCannon Shells	LB-X自动炮弹
+LRM	远程导弹
+LRM Missiles	LRM导弹
+Land Air Mech Armor	陆空机甲装甲
+Land Air Mech Engine	陆空机甲引擎
+Land Air Mech Flight Systems	陆空机甲飞行系统
+Land Air Mech Structure	陆空机甲结构
+Land Air Mech Turbine	陆空机甲涡轮
+Land Air Mech Wing Mount	陆空机甲翼挂架
+Laser	激光
+Leg Jump Jets	腿部跳跃喷射器
 Legs Actuator Adaptive Core	腿部作动器自适应核心
 Legs Actuator Enhancement System	腿部作动器增强系统
+Life Support	生命维持系统
+Light AutoCannon	轻型自动炮
+Light Gauss Shot	轻型高斯炮弹
+Light Jump Jets	轻型跳跃喷射器
+Light PPC	轻型粒子加农炮
 LinkedArmor	联动护甲
+Listen Kill Missiles	监听杀伤导弹
+Lower Arm Actuator	下臂作动器
+Lower Leg Actuator	小腿作动器
+MASC	MASC系统
+MML	混合导弹发射器
+MMS	多用途导弹系统
+MMS Rockets	MMS 火箭
+MRM	中程导弹
+MRM Rockets	MRM火箭
+Machinegun	机枪
+Machinegun Ammo	机枪弹药
 Magnothermic Plasma Conduit	磁热等离子导管
+Magshot	磁射炮
 Mass Driver	质量投射器
 Mass Driver Ammo	质量投射器弹药
+Mech Trait	机甲特性
+Mechanical Jump Systems	机械跳跃系统
+Mechwarrior	机甲战士
+Melee Spikes	近战尖刺
+Melee Upgrades	近战升级
 Melee Weapon	近战武器
-MMS Rockets	MMS 火箭
+Mimetic Stealth	拟态隐形
+Modular Armor	模块化装甲
+Modular Rear Armor	模块化后部装甲
+Mortar Ammo	迫击炮弹药
+Multi-Tracker	多目标追踪器
+NARC	NARC系统
+NARC Beacons	NARC信标
+NightVision	夜视系统
 Nitro	硝基燃料
+Off Board TAG	离板TAG
+OmniMech Hand	全能机甲手部
 OmniMech Hand QS	全能机甲手部快速互换
+OmniMech Lower	全能机甲下部
 OmniMech Lower QS	全能机甲下部快速互换
+PHI Network	PHI网络
+PPC	粒子加农炮
+PPC Capacitor	粒子加农炮电容器
+Paramedic Equipment	医护设备
+Partial Wing System	部分翼系统
+Patchwork Materials	拼接装甲材料
+Plasma Cannon	等离子加农炮
+Plasma Cannon Ammo	等离子加农炮弹药
 Plasma Railgun	等离子电磁炮
 Plasma Railgun Shot	等离子电磁炮弹
 Pod	吊舱
+Power Armor Gear	动力装甲装备
+Protective Padding	防护衬垫
+ProtoMech AC	原型机甲自动炮
 ProtoMech Actuators	原型机甲作动器
+ProtoMech Ammo	原型机甲弹药
 ProtoMech Heat Sink	原型机甲散热器
 ProtoMech Jump Jet	原型机甲跳跃喷射器
 ProtoMech LBX	原型机甲 LBX
 ProtoMech LRM	原型机甲 LRM
 ProtoMech Melee	原型机甲近战
 ProtoMech SRM	原型机甲 SRM
+ProtoMech Weapon	原型机甲武器
+Pulse Laser	脉冲激光
+Pulse Module	脉冲模块
 Quad Actuator Enhancement System	四足作动器增强系统
-Railgun Shot	电磁炮弹
+Quad Turret	四足炮塔
+Quirk	特性
+RAPLBGR	RAPLBGR系统
 RAPLBGR Shot	RAPLBGR 炮弹
+Railgun	电磁炮
+Railgun Shot	电磁炮弹
+Recoil Damper	后坐力阻尼器
+Remote Drone Command Console	远程无人机指挥台
+Rengineered Laser	重构激光
+Retractable Blade	伸缩刀刃
+Rifle	步枪
+Rifle Ammo	步枪弹药
+Rocket Launcher	火箭发射器
+Rotary AutoCannon	旋转自动炮
+Rotary AutoCannon Shells	旋转自动炮弹
 Rotary LRM	旋转 LRM
 Rotary PPC	旋转 PPC
+SRM	短程导弹
+SRM Rockets	SRM火箭
+Searchlight	探照灯
+Sensor Ping	传感器脉冲
+Sensor Stealth	传感器隐形
+Sensor Stealth Armor Mod	传感器隐形装甲改装
+Sensors	传感器
+Shoulder	肩部作动器
+Silver Bullet Gauss	银弹高斯炮
+Snubnose PPC	短管粒子加农炮
+Specialist Equipment	特种设备
+Squad Cockpit	小队驾驶舱
+Squad Engine Core	小队引擎核心
+Squad Engine Type	小队引擎类型
+Squad Specialist Equipment	小队特种设备
+Squad Systems	小队系统
 Squad UAV Equipment	小队无人机装备
 SquadFiller	小队填充
+Standard Jump Jets	标准跳跃喷射器
 Stealth Engine	隐身引擎
+Stealth X	隐形X系统
+Streak LRM	连发LRM
+Streak LRM Missiles	连发LRM导弹
+Streak MML	连发混合导弹
+Streak MRM	连发MRM
+Streak SRM	连发SRM
+Streak SRM Rockets	连发SRM火箭
+Structure	结构
 StructureMod	结构改装
+Suicide weapon	自毁武器
+Super-Cooled Myomer	超冷肌肉纤维
+Supercharger	增压器
+Superheavy Frame	超重型框架
 Superheavy Jump Jet	超重型跳跃喷射器
 Superheavy Rotary AutoCannon	超重型旋转自动炮
 Superheavy Rotary AutoCannon Shells	超重型旋转自动炮弹
+Support Weapon	支援武器
+Support Weapon Ammo	支援武器弹药
+TAG	TAG系统
+TSEMP	TSEMP系统
+Targeting Computer	瞄准计算机
+Taser Gauss	电击高斯炮
+Taser Shells	电击炮弹
+Thermal Exchanger	热交换器
 Thermal Mass	热质量
 Thermal Overload System	热过载系统
+Thermal Vision	热成像
+Thunderbolt	雷霆导弹
+Thunderbolt Missiles	雷霆导弹弹药
+Triple Strength Myomer	三倍肌肉纤维
 TrooperWeight	步兵负重
+Turret System	炮塔系统
+Turreted AMS	炮塔式反导弹系统
+UAV Compartment	无人机舱
+Ultra AutoCannon	超级自动炮
+Ultra AutoCannon Shells	超级自动炮弹
 Ultralight Mech Weapons	超轻型机甲武器
+Upper Arm Actuator	上臂作动器
+Upper Leg Actuator	大腿作动器
+Variable Speed Pulse Laser	变速脉冲激光
+Vibro Sword	振动剑
+Virtual Reality Piloting Pod	虚拟现实驾驶舱
+Void Signature System	虚空特征系统
+Weapon Attachment	武器附件
+X-Pulse Laser	X脉冲激光
+iATM	iATM系统
+iATM Missiles	iATM 导弹
+iNARC	iNARC系统
+iNARC Beacons	iNARC 信标
+mortar	迫击炮

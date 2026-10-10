@@ -170,6 +170,13 @@ $dllList = @(
     'Mods\Core\TisButAScratch\TisButAScratch.dll',
     'Mods\WarTechIIC\WarTechIIC.dll'
 )
+# 某些整合包会额外安装 ArmorRepair / LewdableTanks。它们把维修弹窗与
+# #Weapons: 直接写在 DLL 字符串中，若目标机存在对应模组则一并覆盖修复版；
+# 没有这些模组时安全跳过，不把可选依赖变成安装前置条件。
+$optionalPatchedDllList = @(
+    'Mods\Options\ArmorRepair\ArmorRepair.dll',
+    'Mods\Core\LewdableTanks\LewdableTanks.dll'
+)
 $assetList = @(
     'BattleTech_Data\StreamingAssets\font',
     'BattleTech_Data\StreamingAssets\data\VersionManifest.csv'
@@ -240,6 +247,19 @@ function RunTool($script, $extraArgs) {
         if (-not [string]::IsNullOrWhiteSpace($text)) { Write-Host ("      " + $text); LogLine $text }
     }
     LogLine ((Get-Date -Format 'HH:mm:ss') + " DONE " + $script + " " + [math]::Round($timer.Elapsed.TotalSeconds, 1) + "s")
+    if ($rc -ne 0) { throw ($script + " 返回码 " + $rc) }
+}
+function RunPythonTool($script, $extraArgs) {
+    $sp = Join-Path $PSScriptRoot $script
+    if (-not (Test-Path $sp)) { throw ("缺少安装工具: " + $script) }
+    Write-Host ("      正在处理: " + $script + " ...") -ForegroundColor DarkGray
+    LogLine ((Get-Date -Format 'HH:mm:ss') + " RUN " + $script)
+    $output = @(& python $sp @extraArgs 2>&1)
+    $rc = $LASTEXITCODE
+    foreach ($line in $output) {
+        $text = [string]$line
+        if (-not [string]::IsNullOrWhiteSpace($text)) { Write-Host ("      " + $text); LogLine $text }
+    }
     if ($rc -ne 0) { throw ($script + " 返回码 " + $rc) }
 }
 
@@ -371,6 +391,19 @@ foreach ($rel in $dllList) {
     if (($dllCnt % 10) -eq 0) { Write-Host ("      已处理 " + $dllCnt + " 个 DLL...") -ForegroundColor DarkGray }
 }
 Ok ("已写入 " + $dllCnt + " 个 DLL（" + $script:gameEdition + " 版）")
+$optionalDllCnt = 0
+foreach ($rel in $optionalPatchedDllList) {
+    $s = Join-Path $packRoot $rel
+    $d = Join-Path $gameRoot $rel
+    if (-not [IO.File]::Exists($s)) { continue }
+    if (-not [IO.File]::Exists($d)) {
+        Warn ("目标未安装可选模组，跳过: " + $rel)
+        continue
+    }
+    [void](BackupAndCopy $s $d $rel)
+    $optionalDllCnt++
+}
+if ($optionalDllCnt -gt 0) { Ok ("已写入 " + $optionalDllCnt + " 个可选运行时修复 DLL") }
 
 $assetCnt = 0
 foreach ($rel in $assetList) {
@@ -794,6 +827,11 @@ RunTool 'clean-metadata.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                '-backupRoot', (Join-Path $packRoot 'backup\Mods-metadata'))
 RunTool 'fix-literal-newlines.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                     '-backupRoot', (Join-Path $backupDir 'literal-newlines'))
+# 运行时整段条目由 CSV 查表，不会经过 JSON 字段 QA；安装到目标 CSV 后再做一次
+# 结构化修复，防止包内条目被旧版本覆盖或换行被压平。
+RunPythonTool 'repair-runtime-csv.py' @('--csv', $csvDst)
+RunPythonTool 'qa-runtime-csv.py' @('--csv', $csvDst,
+                                   '--out', (Join-Path $backupDir 'runtime-csv-qa.txt'))
 Ok "完成"
 
 # ---------- 12) 校验 ----------
