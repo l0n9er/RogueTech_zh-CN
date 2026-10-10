@@ -465,7 +465,9 @@ Ok ("已建立 JSON 文件索引：" + $jsonPaths.Count + " 个文件")
 Step 7 "汉化数据字段（Details / YangsThoughts / StockRole）"
 RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-dict', (Join-Path $PSScriptRoot 'dict-all.tsv'),
-                           '-extraDict', (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'),
+                           '-extraDict', (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'), (Join-Path $PSScriptRoot 'dict-unit-llm.tsv'),
+                           # 整段 LLM 译文必须参与安装；否则后续安装会重新
+                           # 用旧的半翻译词典覆盖已经修好的 Details。
                            '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-defs'))
 Ok "完成"

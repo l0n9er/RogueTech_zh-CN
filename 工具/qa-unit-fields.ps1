@@ -9,7 +9,11 @@ $parent=Split-Path $out -Parent
 if (!(Test-Path $parent)) {[IO.Directory]::CreateDirectory($parent)|Out-Null}
 $rows=New-Object 'System.Collections.Generic.List[string]'; [void]$rows.Add("Status`tFile`tField`tSample")
 $stats=@{scanned=0;invalid=0;english=0;sentence=0;contaminated=0;mojibake=0;literalNewline=0;newline=0;control=0;markup=0;placeholder=0}
-$sentenceRx=[regex]::new('\bPowered\s+by\b|\bis\s+armed\s+with\b|\bwas\s+designed\b|\bThis\s+(?:variant|unit|configuration)\b|\bThe\s+[A-Za-z][-A-Za-z ]{2,80}\s+is\b|\band\s+a\s+pair\s+of\b|\b(?:Left|Right)\s+(?:Lower|Upper)\b',[Text.RegularExpressions.RegexOptions]::IgnoreCase)
+$script:sentencePattern='\bPowered\s+by\b|\bis\s+armed\s+with\b|\bwas\s+designed\b|\bThis\s+(?:variant|unit|configuration)\b|\bThe\s+[A-Za-z0-9][-A-Za-z0-9 ]{1,80}\s+is\b|\band\s+a\s+pair\s+of\b|\b(?:Left|Right)\s+(?:Lower|Upper)\b'
+# 固定句式之外，还要拦截任意连续英文长短语。旧规则遗漏了
+# “A loadout mainly seen ...”以及带数字型号的“The HAR-111 is ...”，
+# 导致安装后仍出现整句英文却被报告为通过。
+$script:longEnglishPattern='(?:(?:\b[A-Za-z][A-Za-z0-9/-]*\b)\s+){4}\b[A-Za-z][A-Za-z0-9/-]*\b'
 $wordRx=[regex]::new('\b[A-Za-z]{3,}\b'); $hanRx=[regex]::new('[\u3400-\u9fff]'); $tagRx=[regex]::new('</?\s*[A-Za-z][^>]*>')
 function Add-Row([string]$s,[string]$f,[string]$k,[string]$v) { $x=($v -replace "`r?`n",' ' -replace "`t",' '); if($x.Length -gt 240){$x=$x.Substring(0,240)+'...'}; [void]$rows.Add(($s+"`t"+$f+"`t"+$k+"`t"+$x)) }
 function Inspect([string]$f,[string]$k,[string]$v) {
@@ -18,7 +22,7 @@ function Inspect([string]$f,[string]$k,[string]$v) {
  if($v -match '[\x00-\x08\x0B\x0C\x0E-\x1F]'){$stats.control++;Add-Row 'CONTROL' $f $k $v}
  if($v -match '\\n'){$stats.literalNewline++;Add-Row 'LITERAL_NEWLINE' $f $k $v}
  if($v -match '(?:`r`n|`n)[ \t]+|[ \t]+(?:`r`n|`n)|(?:`r`n|`n){3,}'){$stats.newline++;Add-Row 'NEWLINE_SHAPE' $f $k $v}
- $sent=$sentenceRx.IsMatch($v); if($sent){$stats.sentence++;Add-Row 'ENGLISH_SENTENCE' $f $k $v}
+ $sent=($v -match $script:sentencePattern) -or ($han -gt 0 -and $v -match '(?:(?:\b[A-Za-z][A-Za-z0-9/-]*\b)\s+){4}\b[A-Za-z][A-Za-z0-9/-]*\b'); if($sent){$stats.sentence++;Add-Row 'ENGLISH_SENTENCE' $f $k $v}
  if($en -ge 10 -and $han -eq 0 -and !$AllowEnglishNameOnly){$stats.english++;Add-Row 'ENGLISH' $f $k $v}
  # 只将高置信度英文句法与中文共存判为混杂；型号、厂商和武器专名中的英文词不单独报错。
  if($han -gt 0 -and $sent){$stats.contaminated++;Add-Row 'CONTAMINATED' $f $k $v}
