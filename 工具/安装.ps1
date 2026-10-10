@@ -465,7 +465,7 @@ Ok ("已建立 JSON 文件索引：" + $jsonPaths.Count + " 个文件")
 Step 7 "汉化数据字段（Details / YangsThoughts / StockRole）"
 RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-dict', (Join-Path $PSScriptRoot 'dict-all.tsv'),
-                           '-extraDict', (Join-Path $PSScriptRoot 'dict-runtime-extra.tsv'),
+                           '-extraDict', (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'),
                            '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-defs'))
 Ok "完成"

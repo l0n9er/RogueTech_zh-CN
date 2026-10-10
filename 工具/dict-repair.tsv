@@ -2144,3 +2144,1282 @@ This pilot is annoyed from sleeping on the floor. Hotbunking sucks.	由于被迫
 The personal ride of MechWarrior Jenny Templeton of the Chesterton Reserves. This custom variant of the Catapult C1, the \n\n<b><color=#e62e00>Quirk: 精准武器 - 导弹</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>	切斯特顿预备役的机甲战士珍妮·坦普尔顿的专属座驾. 这台基于Catapult C1型的定制型号拥有以下特性: \n\n<b><color=#e62e00>特质: 精准武器 - 导弹</color></b>\n\n<b><color=#e62e00>部署费用倍率: 1.11</color></b>\n\n<color=#FFEF00>手臂驱动器限制: 左上臂、右上臂</color>
 Created by 氏族新星猫 after the success of the Shoden, the Joust was designed to be a well-rounded medium tank. With a wide mix of weapons, the Joust is a versatile design, capable of handling a multitude of roles and missions. Additionally, the Joust has eight tons of ferro-fibrous armor, double that of the similar Ares tank, enhancing the Joust's survivability.\n\n<b><color=#ffcc00>生物群系限制：无。</color></b>\n\n<b><color=#ffcc00>移动：5/8 hexes / 150/240 meters.</color></b>\n\n<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)\n<b>结构：</b> Structure\n<b>数值       A        S  </b>\n<b>前方</b>       220     20\n<b>左侧</b>         160     20\n<b>右侧</b>       160     20\n<b>后方</b>        100     20\n<b>炮塔</b>      165     20\n\n<b>总计</b>      805    100</color>\n\n<color=#ff0000>特性：精准武器 - 机枪</color>	由新星猫氏族在Shoden成功后创建  Joust被设计为一种全面的中型坦克. 凭借广泛的武器组合  Joust是一种多用途设计  能够处理多种角色和任务. 此外  Joust拥有八吨铁纤维装甲  是类似Ares坦克的两倍  增强了Joust的生存能力. \n\n<b><color=#ffcc00>环境限制: 无. </color></b>\n<b><color=#ffcc00>移动: 5/8格 / 150/240米. </color></b>\n<color=#ffcc00><b>装甲: </b>铁纤维(氏族)\n<b>结构: </b>结构\n<b>数值      装甲      结构</b>\n<b>正面</b>      200          20\n<b>左侧</b>      170          20\n<b>右侧</b>      170          20\n<b>后方</b>      100          20\n<b>炮塔</b>      170          20\n\n<b>总计</b>      810          100</color>\n\n<color=#ff0000>特质: 精准武器 - 机枪</color>\n#武器: \n  1x 大型增程激光(氏族)\n  1x 重机枪阵列(氏族)\n  1x MTR/4(氏族)
 This variant removes the standard weaponry and replaces it with a single Large Re-engineered Laser. It's protected by Ballistic-加固装甲.\n\n<b><color=#e62e00>Quirk: Nimble</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>	该变体移除了标准武器配置，替换为一门大型再设计激光，并由弹道强化装甲提供防护. \n\n<b><color=#e62e00>特质: 灵巧</color></b>\n\n<b><color=#e62e00>部署费用倍率: 0.99</color></b>
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated Fusion Core, the Marauder II MAD-6C is armed with a trio of ER PPC’s and a pair of ER 中型激光s. \n\n<b><color=#e62e00>特性：窄小低矮轮廓</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：Left Lower, Right Lower</color>	掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。MAD-6C 由一台额定 300 的聚变核心驱动，装备三门增程粒子加农炮和两门中型激光。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左下臂、右下臂</color>	MAD-6C-Recovered
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated Fusion Core, the Marauder II MAD-6C is armed with a trio of ER PPC’s and a pair of ER 中型激光s. <b><color=#e62e00>部署费用倍率：1.18.</color></b>	掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。MAD-6C 由一台额定 300 的聚变核心驱动，装备三门增程粒子加农炮和两门中型激光。<b><color=#e62e00>投放费用倍率：1.18</color></b>	MAD-6C-Recovered
+雷鸟由新星猫氏族制造，用于替代重型战斗装甲。它于 3080 年代中期开始研发，目的是填补氏族前线元素战斗装甲日益枯竭的缺口。\n\n<b><color=#e62e00>特性：Well Designed</color></b>\n\n<b><color=#e62e00>部署费用倍率：0.952</color></b>\n\n<b><color=#2aad3b>可安装全向单位，can melee，不可群袭。</b></color>	雷鸟由新星猫氏族制造，用于替代重型战斗装甲。它于 3080 年代中期开始研发，目的是填补氏族前线元素战斗装甲日益枯竭的缺口。\n\n<b><color=#e62e00>特性：设计精良</color></b>\n\n<b><color=#e62e00>部署费用倍率：0.952</color></b>\n\n<b><color=#2aad3b>可搭载全能单位，可近战，不可群袭。</b></color>	Full-C-Recovered
+托罗于2546年生产，是金牛座协约的第一款战斗机甲设计。它以缴获的萤火虫为基础，是一款远程支援机甲，装有一门粒子加农炮和一对LRM-5，带两吨弹药和10个单散热器。最后一座托罗工厂于2598年被入侵的星际联盟部队拆毁，生产直到布莱克之词圣战才恢复。\n\n<b><color=#e62e00>特性：易于维护</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.05</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左下臂</color>	托罗于2546年生产，是金牛座协约的第一款战斗机甲设计。它以缴获的萤火虫为基础，是一款远程支援机甲，装有一门粒子加农炮和一对LRM-5，带两吨弹药和10个单散热器。最后一座托罗工厂于2598年被入侵的星际联盟部队拆毁，生产直到布莱克之词圣战才恢复。\n\n<b><color=#e62e00>特性：易于维护</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.98</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左下</color>	Full-C-Recovered
+The Dart was built when the Federated Commonwealth was looking for Battle机甲s that were not ammunition dependent. The '机甲 was built with an all energy weapon arsenal on an extremely high-speed chassis. The '机甲 is capable of speeds of up to 151 km/h and is 装甲ed with three and a half tons of 装甲. The '机甲, while lightly armed, is an exceptional recon '机甲 and also works well in a guerrilla force where its use of energy weapons allows it to operate independently.\n\n<b><color=#e62e00>怪癖: 延长躯干扭转</color></b>\n\n<b><color=#e62e00>掉落成本乘数: 0.98</color></b>	联邦合众国寻找不依赖弹药的战斗机甲时，Dart 应运而生。这台机甲以极高速底盘搭载全能量武器配置，最高速度可达 151 公里/小时，并装有三吨半装甲。虽然武装较轻，Dart 却是出色的侦察机甲；它的能量武器使其能够独立行动，在游击部队中同样表现出色。\n\n<b><color=#e62e00>特性：扩展躯干扭转</color></b>\n\n<b><color=#e62e00>部署费用倍率：0.98</color></b>	Full-C-Recovered
+The Hellspawn was 设计ed in response to a call from the Federated Commonwealth for a modern, highly mobile, fire-support Battle机甲. The Hellspawn is built on an Endo Steel chassis and a 270 XL引擎 that gives it a top speed of 97.2 km/h. For protection, the Hellspawn is equipped with a 守护者ECM Suite and has six and a half tons of 装甲 that is barely adequate when compared to other medium '机甲s. To enhance the '机甲's mobility it has six jump jets. The 8E is a variant aimed at increasing the '机甲's long range effectiveness. Two of the 中型脉冲激光s have been traded for lighter ER 中型激光s and an Artemis IV system has been added to the LRMs.\n\n<b><color=#e62e00>怪癖: 改进的 Cooling Jacket - Missile</color></b>\n\n<b><color=#e62e00>掉落成本乘数: 1.03</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	Hellspawn 的设计源于联邦合众国对现代化、高机动火力支援战斗机甲的需求。Hellspawn 采用内骨钢底盘和一台 270 型 XL 引擎，最高速度可达 97.2 公里/小时。为提供防护，Hellspawn 配备 Guardian ECM 套件，并装有六吨半装甲；与其他中型机甲相比，这样的防护仅算勉强够用。为了增强机甲机动性，它装有六具跳跃喷射器。8E 型号旨在提高机甲的远程作战效能：其中两门中型脉冲激光器替换为更轻的 ER 中型激光器，LRM 则加装了 Artemis IV 系统。\n\n<b><color=#e62e00>特性：改进型冷却套 - 导弹</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.03</color></b>\n\n<color=#FFEF00>手臂执行器限制：左下，右下</color>	Full-C-Recovered
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated 轻型引擎, the Marauder II MAD-4K is armed with a Gauss Rifle, paired Heavy PPC’s and ER Small Lasers. \n\n<b><color=#e62e00>特性：窄小低矮轮廓</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左下臂, 右下臂</color>	这套定制改装以经过大幅改造的 -5S 为基础，把激光换成了一门增程粒子加农炮和两门中型脉冲激光，并把 SRM-6 发射器换成了连发型号。<b><color=#e62e00>特性：坚固</color></b>  <b><color=#e62e00>投放费用倍率：1.17</color></b>  <color=#FFEF00>手臂驱动器限制：左臂下部</color>	Full-C-Recovered
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated Fusion Core, the Marauder II MAD-5W is armed with a Heavy PPC and a pair of Snub Nose PPC’s. C3i and 改进型跳跃推进器 round out the variant. \n\n<b><color=#e62e00>特性：窄小低矮轮廓</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左下臂, 右下臂</color>	于 3053 年推出的这款 1-M 子改型，用一吨 SRM 弹药、一吨纳克弹药和一台双散热器换取了一座指挥控制台。<b><color=#e62e00>特性：防空瞄准</color></b>  <b><color=#e62e00>投放费用倍率：1.11</color></b>  <color=#FFEF00>手臂驱动器限制：左下臂、右下臂</color>	Full-C-Recovered
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated Fusion Core, the Marauder II MAD-6D is armed with a RAC/5, paired Snub Nose and Light PPC’s. 改进型跳跃推进器 add additional mobility. \n\n<b><color=#e62e00>特性：窄小低矮轮廓</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左下臂, 右下臂</color>	于 3053 年推出的这款 1-M 子改型，用一吨 SRM 弹药、一吨纳克弹药和一台双散热器换取了一座指挥控制台。<b><color=#e62e00>特性：防空瞄准</color></b>  <b><color=#e62e00>投放费用倍率：1.11</color></b>  <color=#FFEF00>手臂驱动器限制：左下臂、右下臂</color>	Full-C-Recovered
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 400 XL引擎, the Marauder II MAD-6M is armed with an ER PPC and paired Large and 中型X脉冲激光 Lasers. 守护者ECM rounds out the variant. \n\n<b><color=#e62e00>特性：窄小低矮轮廓</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左下臂, 右下臂</color>	这套定制改装以经过大幅改造的 -5S 为基础，把激光换成了一门增程粒子加农炮和两门中型脉冲激光，并把 SRM-6 发射器换成了连发型号。<b><color=#e62e00>特性：坚固</color></b>  <b><color=#e62e00>投放费用倍率：1.17</color></b>  <color=#FFEF00>手臂驱动器限制：左臂下部</color>	Full-C-Recovered
+The heaviest of the three Spectral LAMs to be 设计ed by the 布雷克圣言会, the Waneta was 生产 from factories on both Terra and Gibson.\n\n<b><color=#e62e00>怪癖: Land Air 机甲</color></b>\n\n<b><color=#e62e00>掉落成本乘数: 1.05</color></b>	由布莱克之言设计的三台幽灵 LAM 中最重的一台，Waneta 在 Terra 和 Gibson 两地的工厂生产。\n\n<b><color=#e62e00>特性：陆空机甲</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.05</color></b>	Full-C-Recovered
+Not 设计ed for traditional combat, the Carrier is a force multiplier. 设计 to support allies from range, the Carrier can hang back behind friendly lines where its lack of 装甲 isn't a concern.\n\n<b><color=#ffcc00>生物群系限制: 无.</color></b>\n\n<b><color=#ffcc00>移动: 2/3 格 / 60/90 米.</color></b>\n\n<color=#ffcc00><b>装甲:</b> 铁纤维装甲\n<b>结构:</b> 结构\n<b>数值       A        S  </b>\n<b>前方</b>       120     40\n<b>左侧</b>         120     40\n<b>右侧</b>       120     40\n<b>后方</b>        100     40\n<b>炮塔</b>      120     40\n\n<b>总计</b>      580    200</color>\n\n<color=#ff0000>怪癖: 改进的 定位 - 长</color>	Carrier并非为传统战斗而设计，而是一台力量倍增器。它被设计用来从远距离支援盟友，可以躲在己方战线后方，不必担心装甲薄弱的问题。\n\n<b><color=#ffcc00>生物群系限制：无。</color></b>\n\n<b><color=#ffcc00>移动：2/3格 / 60/90米。</color></b>\n\n<color=#ffcc00><b>装甲：</b>铁磁纤维装甲\n<b>结构：</b>结构\n<b>数值       A        S  </b>\n<b>前方</b>       120     40\n<b>左侧</b>       120     40\n<b>右侧</b>       120     40\n<b>后方</b>       100     40\n<b>炮塔</b>      120     40\n\n<b>总计</b>      580    200</color>\n\n<color=#ff0000>特性：改良瞄准 - 远程</color>	Full-C-Recovered
+Not 设计ed for traditional combat, the Carrier is a force multiplier. 设计 to support allies from range, the Carrier can hang back behind friendly lines where its lack of 装甲 isn't a concern.\n\n<b><color=#ffcc00>生物群系限制: 无.</color></b>\n\n<b><color=#ffcc00>移动: 3/5 格 / 90/150 米.</color></b>\n\n<color=#ffcc00><b>装甲:</b> 铁纤维装甲\n<b>结构:</b> 结构\n<b>数值       A        S  </b>\n<b>前方</b>       175     30\n<b>左侧</b>         130     30\n<b>右侧</b>       130     30\n<b>后方</b>        100     30\n\n<b>总计</b>      535    120</color>\n\n<color=#ff0000>怪癖: 窄/低调</color>	Carrier并非为传统战斗而设计，而是一台力量倍增器。它被设计用来从远距离支援盟友，可以躲在己方战线后方，不必担心装甲薄弱的问题。\n\n<b><color=#ffcc00>生物群系限制：无。</color></b>\n\n<b><color=#ffcc00>移动：3/5格 / 90/150米。</color></b>\n\n<color=#ffcc00><b>装甲：</b>铁磁纤维装甲\n<b>结构：</b>结构\n<b>数值       A        S  </b>\n<b>前方</b>       175     30\n<b>左侧</b>         130     30\n<b>右侧</b>       130     30\n<b>后方</b>        100     30\n\n<b>总计</b>      535    120</color>\n\n<color=#ff0000>特性：狭窄/低矮轮廓</color>	Full-C-Recovered
+This 布雷克圣言会 variant was first spotted in 3069, this Demon 坦克 trades the turreted Gauss Rifle for a forward mounted 重型高斯步枪 with two tons of ammunition. The lasers are upgraded to Extended Range and the missile launcher is traded for a Streak version. The 车辆 is also equipped with a 定位 Computer, C3i system, and fitted with an Extra-Light Fusion 引擎 to allow it to carry the HGR. The standard 装甲 has also been replaced with 铁纤维装甲 装甲. The Demon was originally created by the SLDF as its standard fighting 车辆 in 2716. A match for any light or medium Battle机甲, the Demon had good maneuverability and was protected by ten tons of slab 装甲, most of it concentrated in its front. Due to the nature of its powerful main weapon the Demon was often used in ambush attacks and fought in pairs instead of the usual four-车辆 lance. The 车辆's main disadvantage was its lack of speed, which made it vulnerable to faster '机甲s and other 车辆s able to maneuver around and engage its weaker rear 装甲.\n\n<b><color=#ffcc00>生物群系限制: 无.</color></b>\n\n<b><color=#ffcc00>移动: 4/6 格 / 120/180 米.</color></b>\n\n<color=#ffcc00><b>装甲:</b> 重型铁纤维装甲\n<b>结构:</b> 结构\n<b>数值       A        S  </b>\n<b>前方</b>       260     30\n<b>左侧</b>         160     30\n<b>右侧</b>       160     30\n<b>后方</b>        120     30\n\n<b>总计</b>      700    120</color>\n\n<color=#ff0000>怪癖: 主战坦克</color>	这款 2721 年的 SLDF 型号以两具朝前的中型激光和两具额外散热器，取代了短程火箭发射器与 CASE。车体前弧另装有侧射中型激光。然而这样一来，除炮塔上的高斯步枪外，车辆其余侧面便失去武装。需要指出的是，该型号除防御阵地外极少部署。恶魔最初由 SLDF 于 2716 年打造，作为其标准战斗车辆。恶魔足以与任何轻型或中型战斗机甲匹敌，机动性良好，并由十吨厚板装甲保护，其中大部分集中在正面。凭借其强大主武器的特性，恶魔常用于伏击作战，并以两车编组行动，而非通常的四车小队。该车辆的主要缺点是速度不足，使其容易遭到更快的机甲和其他车辆绕过，攻击其较为薄弱的背部装甲。\n\n<b><color=#ffcc00>生物群系限制：无。</color></b>\n\n<b><color=#ffcc00>移动力：4/6 格 / 120/180 米。</color></b>\n\n<color=#ffcc00><b>装甲：</b>标准装甲\n<b>结构：</b>标准结构\n<b>数值       A        S  </b>\n<b>正面</b>       260     30\n<b>左面</b>         155     30\n<b>右面</b>       155     30\n<b>背面</b>        110     30\n<b>炮塔</b>      160     30\n\n<b>合计</b>      840    150</color>\n\n<color=#ff0000>特性：主战坦克</color>	Full-C-Recovered
+The Moltke 主战坦克 was created for the Duchy of Andurien. The Duchy commissioned Brooks Inc. to create the 坦克 to enable the Duchy's military to fill its military gaps, without relying on outside sources for equipment and parts. The 坦克 is based on the Age of War Augustus A-3 Tank. The 坦克 began production in 3076, and has since been dispersed among the League forces on station in the Duchy. Outside parties have inquired to Brooks for purchasing the 坦克 for their forces.\n\n<b><color=#ffcc00>生物群系限制: 无.</color></b>\n\n<b><color=#ffcc00>移动: 4/6 格 / 120/180 米.</color></b>\n\n<color=#ffcc00><b>装甲:</b> 重型铁纤维装甲\n<b>结构:</b> 结构\n<b>数值       A        S  </b>\n<b>前方</b>       350     40\n<b>左侧</b>         245     40\n<b>右侧</b>       245     40\n<b>后方</b>        160     40\n<b>炮塔</b>      260     40\n\n<b>总计</b>      1260    200</color>\n\n<color=#ff0000>怪癖: Variable Range 定位</color>	莫尔特克主战坦克是为安杜里恩公国打造的。公国委托布鲁克斯公司研发该坦克，以弥补本国军队的装备缺口，避免依赖外部来源获取装备和零部件。该坦克以战争年代的奥古斯都A-3型坦克为基础，于3076年开始投产，此后陆续配发给驻扎在公国的联盟军部队。外部势力也曾向布鲁克斯公司询价，希望为自己的部队采购该坦克。\n\n<b><color=#ffcc00>生物群系限制：无。</color></b>\n\n<b><color=#ffcc00>移动：4/6格 / 120/180米。</color></b>\n\n<color=#ffcc00><b>装甲：</b>重型铁磁纤维装甲\n<b>结构：</b>结构\n<b>数值       A        S  </b>\n<b>前方</b>       350     40\n<b>左侧</b>         245     40\n<b>右侧</b>       245     40\n<b>后方</b>        160     40\n<b>炮塔</b>      260     40\n\n<b>总计</b>      1260    200</color>\n\n<color=#ff0000>特性：可变距离瞄准</color>	Full-C-Recovered
+This 3068 version of the Rhino drops the LRM-10 and replaces it with a SRM 2 and a pair of 中型激光s.\n\n<b><color=#ffcc00>生物群系限制：无。</color></b>\n\n<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>\n\n<color=#ffcc00><b>装甲：</b> 装甲\n<b>结构：</b> 结构\n<b>数值       A        S  </b>\n<b>前方</b>       345     40\n<b>左侧</b>         275     40\n<b>右侧</b>       275     40\n<b>后方</b>        200     40\n<b>炮塔</b>      310     40\n\n<b>总计</b>      1405    200</color>\n\n<color=#ff0000>特性：瞄准增强—远程</color>	这款 2835 年型的犀牛拆掉了 LRM-10，换成一具 SRM-6 和两具喷火器。\n\n<b><color=#ffcc00>生物群系限制：无。</color></b>\n\n<b><color=#ffcc00>移动力：3/5 格 / 90/150 米。</color></b>\n\n<color=#ffcc00><b>装甲：</b>标准装甲\n<b>结构：</b>标准结构\n<b>数值       A        S  </b>\n<b>正面</b>       345     40\n<b>左面</b>         275     40\n<b>右面</b>       275     40\n<b>背面</b>        200     40\n<b>炮塔</b>      310     40\n\n<b>合计</b>      1405    200</color>\n\n<color=#ff0000>特性：改良瞄准 - 远程</color>	Full-C-Recovered
+刺客的设计目标是抗衡黄蜂与毒刺等轻型侦察机甲，但它的重量翻倍、速度更快、跳跃距离更远、装甲更厚、火力强得多。The 99 Version Mounts Additional Stealth Tech.\n\n<b><color=#e62e00>特性：易于维护</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右下臂</color>	机密\n\n<b><color=#e62e00>特质: 强化腿部</color></b>\n\n<b><color=#e62e00>投放成本倍率: 1.1</color></b>\n\n<color=#FFEF00>手臂驱动器限制: 右下</color>	Full-C-Recovered
+The K config is equipped with a Rotary AC/2 and ton of ammunition in the right arm while the left arm carries a single ER Large Pulse Laser. Additional protection comes from a Laser Anti Missile System.   \n\n<b><color=#e62e00>特性：Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.01</color></b>\n\n<color=#FFEF00>手臂驱动器限制：Omni</color>	K 配置的右臂配备旋转 AC/2 和大量弹药，而左臂则携带单个 ER 大型脉冲激光器。激光反导弹系统提供额外的保护。   \n\n<b><color=#e62e00>怪癖：窄/低调</color></b>\n\n<b><color=#e62e00>下降成本乘数：1.01</color></b>\n\n<color=#FFEF00>手臂执行器限制：全方位</color>	Full-C-Recovered
+Originally 开发 by 氏族火狒狒 during the Golden Century, the 20-ton Howler is a light support mech. Built around a 140-rated Fusion Core the Howler HWR-6 uses a combination of 铁纤维装甲 装甲 and Endo Steel; allowing the 机甲 to carry a pair of SRM-6’s with 2 tons of ammo in a shoulder 炮塔.\n\n<b><color=#e62e00>怪癖: 延长躯干扭转</color></b>\n\n<b><color=#e62e00>掉落成本乘数: 0.97</color></b>	20吨的嚎叫者最初由火沸部族在黄金世纪期间开发，是一台轻型支援机甲。嚎叫者HWR-1围绕一具额定140的聚变核心打造，采用铁纤维装甲与内骨架的组合，从而得以携带3具LRM-5与3吨弹药。\n\n<b><color=#e62e00>特性：扩展躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>	Full-C-Recovered
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated 轻型引擎, the Marauder II MAD-6S is armed with a Gauss Rifle, paired ER PPC’s and 中型脉冲激光s. AMS and an ER Small Laser round out the design.  \n\n<b><color=#e62e00>特性：窄小低矮轮廓</color></b>\n\n<b><color=#e62e00>部署费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左下臂, 右下臂</color>	这套定制改装以经过大幅改造的 -5S 为基础，把激光换成了一门增程粒子加农炮和两门中型脉冲激光，并把 SRM-6 发射器换成了连发型号。<b><color=#e62e00>特性：坚固</color></b>  <b><color=#e62e00>投放费用倍率：1.17</color></b>  <color=#FFEF00>手臂驱动器限制：左臂下部</color>	Full-C-Recovered
+The Ogre heavy battle 装甲 has a physically intimidating appearance, largely due to the twin 重型战斗爪 used as weapons and Tvastar's choice to use an unusually wide frame for the suit. Despite that appearance, the Ogre isn't well-suited to fighting conventional infantry, but the heavy 装甲 and weapons mounted on the Ogre allows it to attack enemy 装甲, and actions in certain early battles saw the Ogre gain a reputation for tearing 坦克s in half - a reputation that was rather fanciful, but did serve to enhance the Ogre's reputation. The Ogre has since been exported outside the Regulan Fiefs by Tvastar, with the Duchy of Andurien and the Lyran Commonwealth both ordering large production runs.\n\n<b><color=#e62e00>怪癖: Distracting</color></b>\n\n<b><color=#e62e00>掉落成本乘数: 0.892</color></b>\n\n<b><color=#2aad3b>Can mount Omni units, 可以近战, 不能群聚.</b></color>	食人魔重型战斗装甲外形极具压迫感，主要归功于用作武器的一对重型战斗爪，以及特瓦斯塔为装甲服选用的异常宽大框架。尽管外表威猛，食人魔并不擅长对付普通步兵；不过，其厚重装甲与所搭载的武器足以攻击敌方装甲单位。在早期几场战斗中，食人魔曾因把坦克撕成两半而声名大噪——这种说法颇为夸张，却确实进一步提升了它的名声。此后，特瓦斯塔将食人魔出口到雷古兰封地以外，安杜里恩公国和莱拉联邦都订购了大批产品。\n\n<b><color=#e62e00>特性：扰乱</color></b>\n\n<b><color=#e62e00>部署费用倍率：0.892</color></b>\n\n<b><color=#2aad3b>可搭载全能单位，可近战，不可被攀附。</b></color>	Full-C-Recovered
+雷鸟由新星猫氏族制造，用于替代重型战斗装甲。它于 3080 年代中期开始研发，目的是填补氏族前线元素战斗装甲日益枯竭的缺口。\n\n<b><color=#e62e00>特性：Well Designed</color></b>\n\n<b><color=#e62e00>部署费用倍率：0.955</color></b>\n\n<b><color=#2aad3b>可安装全向单位，can melee，不可群袭。</b></color>	雷鸟由新星猫氏族制造，用于替代重型战斗装甲。它于 3080 年代中期开始研发，目的是填补氏族前线元素战斗装甲日益枯竭的缺口。\n\n<b><color=#e62e00>特性：设计精良</color></b>\n\n<b><color=#e62e00>部署费用倍率：0.955</color></b>\n\n<b><color=#2aad3b>可搭载全能单位，可近战，不可群袭。</b></color>	Full-C-Recovered
+
+This configuration is principally armed with a pair of shoulder mounted LRM-15 launchers with four tons ammunition. For close-range fighting, the '机甲 utilizes a pair of SRM-6 launchers with an accompanying small pulse laser in each arm. For added protection, the '机甲 is fitted with an ECM suite.	这套配置的主要武器是肩部的一对 LRM-15 发射器，并配有 4 吨弹药。近距离作战时，这台机甲使用一对 SRM-6 发射器，双臂还各装有一门小型脉冲激光。为增强防护，机体另配 ECM 套件。	Remediated-LLM
+The Argus is first and foremost a close combat 'Mech. For this reason, the Argus carries a 转管自动炮/5 and a pair of ER 中型激光s for close combat. The Argus has a single Machine Gun to defend itself against infantry attacks, and an  LRM-10 launcher  provides the Argus with some long range striking capabilities. The 转管自动炮/5 and the ER 中型激光s are linked to an advanced 瞄准计算机 which makes them extremely accurate. 	阿古斯首先是一台近距离格斗机甲，因此配备一门旋转自动炮/5和一对 ER 中型激光。它还装有一挺机枪，用于抵御步兵攻击；LRM-10 发射器则赋予它一定的远程打击能力。旋转自动炮/5和 ER 中型激光连接至先进瞄准计算机，因此精度极高。	Remediated-LLM
+This variant is as if a later Marauder 设计 was meshed with the base variant of the Bandersnatch. As to if it is an upgrade or not, I leave for you to decide.	这个型号仿佛将后期的掠夺者设计与班德斯纳奇的基础型号融合在一起。它究竟算不算升级，就留给你来判断。	Remediated-LLM
+The Basilisk ProtoMech was designed and built by 云蛇氏族 to support their Elemental and OmniMech forces. Unlike most second generation Protos, the Basilisk has a relatively low top speed. The Basilisk mounts a 'Mech sized ER 中型激光. Paired with the laser is a three tube LRM launcher used to soften up targets as the Basilisk unit closes. The only problem with this is the severely limited ammunition supply.	巴西利斯克原型机甲由钢爪氏族设计并制造，用于支援其元素战士与 OmniMech 部队。与大多数第二代原型机甲不同，巴西利斯克的最高速度相对较低。它搭载一门与普通机甲同规格的 ER 中型激光，并以一具三联装 LRM 发射器配合攻击，在巴西利斯克接近目标时先行削弱敌人。其主要缺点是弹药储量严重不足。	Remediated-LLM
+The late 3050s and early 3060s saw the Absorption of 伯洛克氏族 by 星蝰氏族. After the proof of collusion with the Bandit Caste, most Burrocks were eager to be rid of the taint of corruption. The Star Adders read this as a desire to join a more powerful Clan, so they were surprised when many former Burrocks clung to that identity. In order to appeal to them, the Star Adder leadership authorized a new BattleMech to honor them. The Burrock is a fast heavy 'Mech with incredible short-range firepower. Though its XL engine leaves it somewhat vulnerable, the Burrock is protected by twelve and a half tons of armor.	3050 年代末至 3060 年代初，星蝰氏族吞并了土匪氏族。土匪阶级与其勾结的证据曝光后，大多数布洛克人都急于摆脱腐败污名。星蝰氏族将此理解为他们希望加入更强大的氏族，因此当许多前布洛克人仍坚持原有身份时，星蝰氏族颇感意外。为争取他们的支持，星蝰氏族领导层批准制造一款新战斗机甲以纪念他们。布洛克是一台速度较快的重型机甲，近距离火力惊人。尽管 XL 引擎令它略显脆弱，12.5 吨装甲仍为其提供了可靠防护。	Remediated-LLM
+This variant is built using a Hollis Marik III Endo Steel chassis and powered by a Magna 260 extralight engine, using the saved weight to make the C2 a dedicated long range 'Mech. The primary weapons are two Federated LRM-15 launchers mated to an Artemis IV fire control system. The 中型激光s have been replaced with two Defiance Shredder LB-X Autocannon/2s. While this makes the Catapult vulnerable to close range attacks, it also makes it extremely deadly at long range.	该型号采用 Hollis Marik III Endo Steel 底盘，并由 Magna 260 超轻型引擎驱动；节省出的重量使 C2 成为专精远程作战的机甲。主武器是两具联邦 LRM-15 发射器，并配有 Artemis IV 火控系统。中型激光被两门 Defiance Shredder LB-X 自动炮/2取代。虽然这种改装使弹射者更容易受到近战攻击，却也让它在远距离极具杀伤力。	Remediated-LLM
+This variant of the Centurion, introduced in 3062, is inspired by the CN9-D and uses the same engine and chassis. The 'Mech uses MASC to allow it bursts of speed reaching up to 129.6 km/h while the weapons compliment has been completely removed. In their place the 'Mechs primary weapon is a 转管自动炮/5, backed up by two ER medium lasers. To direct this firepower, the 'Mech uses an advanced 瞄准计算机 and the 'Mech carries a C3 Slave unit to allow it to share targeting data with its lance mates.	这款百夫长改型于 3062 年推出，设计灵感来自 CN9-D，并沿用相同的引擎和底盘。机体使用 MASC 突进，短时间内最高速度可达 129.6 公里/小时；与此同时，原有武器配置被完全拆除。取而代之的是一门旋转自动炮/5作为主武器，并由两门 ER 中型激光支援。机体使用先进瞄准计算机引导火力，并搭载 C3 从属单元，以便与同一长机队的友军共享目标数据。	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-6C is armed with an ER Large Laser and a pair of ER Small Lasers. A 瞄准计算机 enhances the Laser’s accuracy while AMS defends against incoming missiles.
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.05</color></b>	猎鹰 FLC-6C 是为星盟国防军统一战争后的需求而设计的侦察兼反步兵机甲。作为一台 30 吨级轻型机甲，它搭载 180 级聚变核心。FLC-6C 配备一门 ER 大型激光和一对 ER 小型激光；瞄准计算机提高激光精度，AMS 则用于拦截来袭导弹。
+
+<b><color=#e62e00>特性：狭窄型装甲</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.03</color></b>	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-6C is armed with an ER Large Laser and a pair of ER Small Lasers. A 瞄准计算机 enhances the Laser’s accuracy while AMS defends against incoming missiles.	猎鹰 FLC-6C 是为星盟国防军统一战争后的需求而设计的侦察兼反步兵机甲。作为一台 30 吨级轻型机甲，它搭载 180 级聚变核心。FLC-6C 配备一门 ER 大型激光和一对 ER 小型激光；瞄准计算机提高激光精度，AMS 则用于拦截来袭导弹。	Remediated-LLM
+Another long-range configuration of the Firestarter, the G configuration mounts an LB-X Autocannon/5. For close combat, the 'Mech carries three 中型激光s and a pair of Flamers that allow the Firestarter to start fires to create smoke to cover its movement.	这是火蜥蜴的另一种远程配置：G 型安装一门 LB-X 自动炮/5。近距离作战时，机甲配备三门中型激光和一对火焰喷射器；火焰喷射器能够点燃地面，并制造烟幕掩护机体移动。	Remediated-LLM
+The Great Turtle was designed as an experiment in MechWarrior safety. With the recovery of the Helm Memory Core, weapons technology had advanced more in the twenty years between the Fourth Succession War and the 氏族入侵 than it had in the previous three hundred years. One effect of these advances in weapons was the dramatic reduction in a MechWarrior's life expectancy. Many weapons could destroy a 'Mech's head, engine, or gyro with one shot, leaving the MechWarrior dead or wounded. VEST took the concept of MechWarrior protection to an extreme. The Great Turtle uses a quad chassis to hold the maximum amount of armor possible. The Great Turtle's armor weighs 40 tons, as much as a Clint BattleMech. For more protection the VEST engineers used experimental 加固装甲 that effectively provides twice as much protection as standard armor. This means that the Great Turtle can take staggering amounts of damage without worrying the pilot. Enemies who target the 'Mech's head looking for a clean kill will be disappointed. The Hardened armor can withstand a Gauss rifle hit, but more importantly, the Great Turtle uses a 躯干挂载 Cockpit to provide extra protection for the pilot. Using a standard engine reduces the possibility of an engine explosion, and a compact gyro further increases longevity.	巨龟最初是为测试机甲战士安全性而设计的实验机。Helm 记忆核心重见天日后，从第四次继承战争到“圣战”之间的 20 年里，武器技术取得的进步超过此前 300 年的总和。这些进步也大幅缩短了机甲战士的预期寿命：许多武器一击便能摧毁机甲头部、引擎或陀螺仪，令驾驶员死亡或重伤。VEST 将保护机甲战士的理念发挥到极致。巨龟采用四足底盘，以容纳尽可能多的装甲；其装甲重达 40 吨，与一台 Clint 战斗机甲相当。VEST 工程师还试用了实验性加固装甲，使其防护能力实际上达到标准装甲的两倍。因此，巨龟能够承受惊人的伤害，让驾驶员无需担忧。瞄准机甲头部、企图一击毙命的敌人会失望而归。强化装甲甚至能够抵挡高斯步枪的命中；更重要的是，巨龟使用生存型驾驶舱，为驾驶员提供额外保护。标准引擎降低了引擎爆炸的可能性，紧凑型陀螺仪则进一步延长了机体寿命。	Remediated-LLM
+A variant of the 6S developed in 3067 for the Com Guards only to also fall into hands of the 布雷克圣言会, the 6CS used an Endo Steel frame and was powered by an extralight engine. The 'Mech's primary weapons were an ER PPC and an Artemis IV-enabled LRM-15 launcher. The 6CS carries two ER medium lasers for short range engagements, and has an advanced electronics warfare suite, consisting of a 守护者ECM Suite and a C3i computer, to allow it to share targeting telemetry with friendly units.	6CS 是 6S 的改型，最初于 3067 年为 Com Guard 开发，后来也落入圣殿骑士团之手。它采用 Endo Steel 框架，并由超轻型引擎驱动。主武器为一门 ER PPC 和一具配备 Artemis IV 的 LRM-15 发射器；两门 ER 中型激光用于短程交战。先进电子战套件由 Guardian ECM 和 C3i 计算机组成，可与友军共享目标遥测数据。	Remediated-LLM
+灰熊是鬼熊氏族科学家在三十世纪开发的战斗机甲。遗憾的是，该设计在任何方面都不出众，因此从未在氏族的图曼中占据一席之地。Thirteen tons of 装甲 are mounted on an Endo Steel frame. Jump jets are mounted so that the Grizzly can leap up to 120 米 at a time. Aside from the 'jack of all trades, master of none' moniker, the Grizzly is also poorly engineered. Slagged 装甲 tends to get stuck in joints and weapons, while the actuators are difficult to repair in their own right.	灰熊是一台笨重的机甲，设计于 20 世纪 80 年代的资源战争期间。它在各方面都显得平庸，因此从未在机甲设计史上占据重要地位。机体采用 Endo Steel 框架，装有 13 吨装甲；跳跃喷射器可使灰熊一次跃进 120 米。除了“样样通、样样松”这一绰号之外，灰熊的工程设计也相当糟糕：熔渣装甲容易卡进关节和武器机构，执行器本身也很难维修。	Remediated-LLM
+Designed in 2499 for the 泰拉霸权 and later the SLDF, the Guillotine served as a heavy raider; using a combination of speed and Jump Jets to out manoeuvre opponents. The Guillotine 8D is armed with a pair of ER Large Lasers and a quartet of ER 中型激光s, backed up by a 锁定式SRM-6 for close range engagements. 	断头台于 2499 年为泰拉霸权设计，后来也由星盟国防军使用。它是一款重型突袭机甲，利用速度与跳跃喷射器机动，绕开对手。断头台 8D 配备一对 ER 大型激光和四门 ER 中型激光，并以一具 Streak SRM-6 发射器支援近距离交战。	Remediated-LLM
+The Hunchback C is the antithesis of the 驼背 IIC used by other Clans, combining toughness and great ground speed with the heavy firepower of its autocannon. Piloted by Star Commander Matthew Wayne, of the Clan Ghost Bear's Seventh Phalanx. Disgraced after losing his OmniMech and from an insignificant Bloodhouse, he saw it as his only resort to take charge of a Hunchback of Lyran origins. However, heavy modifications to the 'Mech and his unrelenting desire to redeem himself led to him eventually being adopted by Delta Galaxy's Seventy-Third Battle Cluster, before he finally was killed while clearing Blakists during a glorious charge at Fell's Fort.	驼背 C 与其他氏族使用的巨型驼背 IIC 截然相反，兼具坚固耐用、地面速度出色和自动炮火力强大等特点。它由幽灵熊氏族第七方阵的星队指挥官 Matthew Wayne 驾驶。失去自己的 OmniMech、又因出身于不起眼的血宅而蒙羞后，他认为驾驶一台源自莱茵同盟的驼背是唯一出路。然而，他对机甲进行的大幅改造，加上始终不渝的自我救赎之志，最终使他获准加入三角星系第七十三战斗集群。后来，他在费尔堡的一次英勇冲锋中清剿圣战军时阵亡。	Remediated-LLM
+The Lao Hu is capable of engaging an enemy at most any range. For long-range combat, the Lao Hu has a Martell ER Large Laser and a Zeus LRM-15 launcher, giving the '机甲 a powerful long range punch. For close combat, the Lao Hu has a devastating Shengli LB-X Autocannon/20 which is capable of firing both solid rounds for 装甲 penetration and cluster rounds allowing it to find holes in already damaged 装甲 and for anti-aircraft use.	老虎能够在几乎任何距离与敌人交战。远程作战时，它配备 Martell ER 大型激光和一具 Zeus LRM-15 发射器，具有强大的远程打击能力。近战时，老虎使用威力惊人的 Shengli LB-X 自动炮/20：既可发射实心弹穿透装甲，也可发射集束弹，利用已受损装甲上的缺口；此外还能用于防空。	Remediated-LLM
+A recent upgrade of the Lineholder, this variant of the 'Mech carries a pair of 转管自动炮/2s in place of the two LRM-5 launchers and the four 中型激光s. The LH8 also carries an ER Large Laser in place of the Large Laser. Nicknamed the Linebreaker, this variant was designed for the Federated Suns. Following the commencement of the Jihad, however, production ceased.	这是 Lineholder 的近期升级型，以一对旋转自动炮/2取代两具 LRM-5 发射器和四门中型激光。LH8 还以一门 ER 大型激光替换原有大型激光。该型号绰号“破线者”，专为联邦太阳设计。不过，圣战爆发后生产便停止了。	Remediated-LLM
+This variant, based on the IIC 4, was 生产 by Clan Wolf on New Oslo and Satalice, though the latter fell to Clan Ghost Bear. Instead of heavy lasers, it mounts an ATM 3 in each arm, along with a ton of ammunition for each instead of the additional heat sinks of the previous variant.	该型号以 IIC 4 为基础，由狼氏族在新奥斯陆和萨塔利斯制造，后者后来落入幽灵熊氏族之手。它没有采用重型激光，而是在每条手臂各安装一具 ATM-3 发射器，并为每具发射器配备 1 吨弹药；相较上一型号，这一配置取消了额外散热器。	Remediated-LLM
+As with the 战锤 IIC, the 掠夺者 IIC is ten-tons heavier than its Inner Sphere progenitor, pushing it into the assault weight class, but otherwise the design usually matches the original's ground speed. Though both designs carry over ten tons of armor, the 掠夺者 IIC's use of more advanced ferro-fibrous plating gives it superior protection, with an endo steel frame freeing up weight. While structurally the 掠夺者 IIC appears to offer little advantage over the LosTech refitted Marauders introduced by the Successor States, the blatant superiority of Clan weaponry allows the design to pound its opponents to pieces in short order.	与战锤 IIC 一样，掠夺者 IIC 比其内层星域原型重 10 吨，因此归入突击级别；除此之外，它通常仍保持原型的地面速度。两种设计都配备超过 10 吨装甲，而掠夺者 IIC 采用更先进的 Ferro-Fibrous 装甲，防护能力更强；Endo Steel 框架则腾出了额外重量。单从结构上看，掠夺者 IIC 相较继承国推出的 Lostech 翻新掠夺者优势有限，但氏族武器的明显优势足以让它迅速将对手轰成碎片。	Remediated-LLM
+A first generation BattleMech, the 50 ton Phoenix was the first native BattleMech to be built by the Rim Worlds Republic. Built with primitive components and powered by a 240-rated Fusion Core, the Phoenix 1KT is a Retrotech design produced by WRI Inc. The 1KT carries a 雷电10 and a pair of SRM-2’s.	第一代战斗机甲，重50吨的凤凰是边疆世界共和国制造的第一款本土战斗机甲。它采用原始部件，由额定功率240的聚变核心驱动。凤凰1KT是WRI公司的复古科技设计，装备一门雷电10和一对SRM-2。	Remediated-LLM
+This configuration sports 改进型跳跃推进器 that allow the Preta to jump up to 240 meters. Offensively, it uses two pairs of arm-mounted ER 中型激光s guided by a 瞄准计算机. An extra pair of heat sinks keeps the heat buildup null.	该配置配备改进型跳跃推进器，使普瑞塔能够跳跃至240米。武器方面，它使用两对安装于手臂的增程中型激光，并由瞄准计算机辅助引导。额外的一对散热器可抑制热量累积。	Remediated-LLM
+The Infernus variant is a mobile sniper and a capable light 'Mech killer. Six Jump Jets catapult the 'Mech up to 180 meters at a leap. A Heavy PPC gives the Preta B a respectable punch. It is supplemented by an ER 中型激光.	地狱火型是机动狙击配置，也是出色的轻型机甲杀手。六具跳跃推进器可使机甲一次跳跃180米。重型粒子加农炮为普瑞塔B提供了可靠的火力，另有一门增程中型激光作为补充。	Remediated-LLM
+The Preta C is a scout variant with its 比格犬主动探头 and TAG. A 等离子步枪 is effective against all types of units. In close, the Comminus variant can call upon an ER Small Laser and two 中型脉冲激光s.	普瑞塔C是侦察配置，配备比格犬主动探头和TAG。等离子步枪能够有效对付各种单位。近距离作战时，康米努斯配置还可使用一门增程小型激光和两门中型脉冲激光。	Remediated-LLM
+This variant is a capable knife fighter. Six Jump Jets give it a maximum jumping distance of 180 meters. A 短管PPC deals damage at long range, but is more powerful up close. A pair of 中型脉冲激光s are highly accurate, as are the twin 小型脉冲激光s that are so devastating against infantry.	该配置擅长近距离缠斗。六具跳跃推进器使最大跳跃距离达到180米。短管粒子加农炮可在远距离造成伤害，近距离威力更强；一对中型脉冲激光精度很高，双联小型脉冲激光对步兵也极具杀伤力。	Remediated-LLM
+The primary variant, the Invictus, is armed with an incredibly accurate 可伸缩刀刃 for close combat. It also uses a Light PPC and a 短管PPC that deals more damage as the 'Mech closes with its opponent. The Invictus sports an anti-missile system for further defensive capabilities.	主力配置“无敌”装备了精度极高的可伸缩刀刃，适合近战。它还使用一门轻型粒子加农炮和一门短管粒子加农炮，后者会在机甲接近敌人时造成更高伤害。无敌配置另有反导系统，进一步增强防御能力。	Remediated-LLM
+This configuration uses a Plasma Rifle for its main weapon. This is backed up by a single ER Small Laser and a trio of Small Pulse Lasers.	该配置以等离子步枪为主武器，辅以一门增程小型激光和三门小型脉冲激光。	Remediated-LLM
+This variant developed in 3068 replaces the 守护者ECM suite with an Improved C3 Computer. The 中型脉冲激光s have been replaced with two ER 中型激光s.	该变体于3068年研发，以改进型C3计算机取代守护者ECM套件；原有的中型脉冲激光则替换为两门增程中型激光。	Remediated-LLM
+One of the first mass production QuadMechs, the 55 ton Scorpion entered production in 2570 as an infantry support unit. Shunned by most MechWarriors due to its notoriously unstable gait, the Scorpion would nevertheless see uninterrupted use throughout the Succession Wars and beyond. The Scorpion 12K is powered by a 330-rated XL Engine giving it a top speed of 97 km/h. A Snub Nose PPC, MML-9 and an ER 中型激光 form the Mechs weapons load. A C3 Master unit allows the Mech to command C3 equipped lances.	蝎子是最早量产的四足机甲之一。55吨的蝎子于2570年投入生产，作为步兵支援单位。由于步态极不稳定，它遭到许多机师嫌弃，但在继承战争及之后仍持续服役。蝎子12K由额定功率330的XL引擎驱动，最高速度达97公里/小时，武器包括短管粒子加农炮、MML-9和一门增程中型激光；C3主机可让它指挥配备C3的长枪。	Remediated-LLM
+One of the first mass production QuadMechs, the 55 ton Scorpion entered production in 2570 as an infantry support unit. Shunned by most MechWarriors due to its notoriously unstable gait, the Scorpion would nevertheless see uninterrupted use throughout the Succession Wars and beyond. The Scorpion 1TB is powered by a 330-rated Light Fusion Engine giving it a top speed of 97 km/h. A pair of Light PPCs and an MML-9 form the Mechs weapons load. MASC provides improved speed for short periods.	蝎子是最早量产的四足机甲之一。55吨的蝎子于2570年投入生产，作为步兵支援单位。由于步态极不稳定，它遭到许多机师嫌弃，但在继承战争及之后仍持续服役。蝎子1TB由额定功率330的轻型聚变引擎驱动，最高速度达97公里/小时，装备两门轻型粒子加农炮和一门MML-9。MASC可在短时间内提升速度。	Remediated-LLM
+Based on the Golden Age Storm Giant, the Scylla is an updated model developed by the Steel Vipers as a second line Battlemech. A 100-ton mech with a 400-rated XL Engine, the Scylla SCY-2 is armed with a pair of HAG-20’s. A 小型脉冲激光, a pair of 中型脉冲激光s and a pair of ER 中型激光s deter opponents from closing range with the Scylla.	斯库拉基于黄金时代的风暴巨人，是钢铁蝰蛇氏族为二线部队开发的改进型战斗机甲。100吨的斯库拉SCY-2配备额定功率400的XL引擎和两门HAG-20。另有一门小型脉冲激光、两门中型脉冲激光和两门增程中型激光，用于阻止敌人接近。	Remediated-LLM
+This variant was produced by Defiance after it was lost to 布雷克圣言会 during the Jihad. Built on the same chassis as the 3L, the 5WB removes the weapons and adds a ton of armor. It uses a 轻型引擎 for power, allowing it to mount a pair of 轻型自动炮/5s that are fed from a single, one-ton ammunition bin. Three ER 中型激光s back up the autocannon.	该变体由蔑视武器公司生产，源于圣战期间被布雷克圣言会夺取的设计。它采用与3L相同的底盘，拆除原有武器并增加一吨装甲。轻型引擎为一对轻型自动炮/5提供动力，弹药来自一个一吨弹药箱；三门增程中型激光为自动炮提供支援。	Remediated-LLM
+This variant, introduced during the Jihad, uses advanced technology. Major changes to allow more equipment include the introduction of a Light Fusion Engine and a Heavy Duty Gyro. This new configuration allowed for a slight increase in the 'Mech's armor protection, with help from Light Ferro-Fibrous armor. All of the 'Mech's original weaponry is removed and replaced. The left arm now has a Large 变速脉冲激光 with a pair of Magshots. In the right arm, there are a pair of ER 中型激光s. The left torso has retained its CASE protection to keep the 'Mech safe in the event of a Magshot ammunition explosion. 	该变体于圣战期间推出，采用先进技术。为容纳更多设备，它换装轻型聚变引擎和重型陀螺仪，并略微提高装甲防护。轻型铁纤维装甲进一步降低重量。机甲原有武器全部拆除并替换：左臂装备一门大型变速脉冲激光和一对Magshot；右臂装备两门增程中型激光。	Remediated-LLM
+This configuration is apparently intended for space operations. Each arm carries an Arc Welder, a 中型脉冲激光 and an ER 中型激光. Two ER Small Lasers are in the right and left torso, while a single ER PPC is installed in the left torso. Seven 改进型跳跃推进器 and a series of Articulated Jump Jets provide mobility in the depths of space, with two tons of 液体储罐 that doubles as a Cooling Pod for increased stability. To maintain grip on spacecraft, the Septimecia US has talons on each leg.	该配置显然用于太空作战。每条手臂装备一台电弧焊机、一门中型脉冲激光和一门增程中型激光；左右躯干各有两门增程小型激光，左躯干另装一门增程粒子加农炮。七具改进型跳跃推进器和一组关节式跳跃推进器提供太空机动能力，两吨液体储罐兼作冷却舱以提高稳定性。为在飞船表面保持抓附，塞普蒂米西亚US的每条腿都装有爪。	Remediated-LLM
+The light assault 'Mech of the Celestial series of OmniMechs, the Seraph is somewhat slow for its weight, but it attempts to make up for that with the inclusion of Triple-Strength Myomer that enables the 'Mech to speed up to 64 km/h when it runs hot. Like the other Celestials, the Seraph makes use of a light fusion engine and a small cockpit, though other newer technologies are present only in its weaponry. As with the other Celestials, a C3i Computer is included. This variant uses a Heavy PPC to deliver a strong punch, and a 等离子步枪 to deal both damage and heat. An ER 中型激光 and a 中型脉冲激光 provide close support, while the 目标捕获装置 threatens opponents with homing artillery. A 瞄准计算机 helps these weapons find their mark, and 改进型跳跃推进器 allow the Seraph Dominus to move up to a hundred fifty meters at a time.	作为天界系列全向机甲中的轻型突击机甲，圣像的重量相对较慢，但通过三重肌纤维束弥补速度不足；高热运行时，机甲最高速度可达64公里/小时。与其他天界机甲一样，圣像采用轻型聚变引擎和小型驾驶舱，其他新技术主要集中在武器系统，并配备C3i计算机。该配置还装备一门重型粒子加农炮。	Remediated-LLM
+The light assault 'Mech of the Celestial series of OmniMechs, the Seraph is somewhat slow for its weight, but it attempts to make up for that with the inclusion of Triple-Strength Myomer that enables the 'Mech to speed up to 64 km/h when it runs hot. Like the other Celestials, the Seraph makes use of a light fusion engine and a small cockpit, though other newer technologies are present only in its weaponry. As with the other Celestials, a C3i Computer is included. Though the Comminus variant is quite powerful against conventional units, it sacrifices little firepower against other 'Mechs. An MRM 40 is useful against either type of opponent, though it is more difficult to aim than other weapons. A Heavy PPC and two ER 中型激光s work well against hardened targets. A 等离子步枪 deals heavy damage against enemy units, but is especially potent against infantry. Also heavily damaging to unarmored troops are the pair of Flamers. To protect the Seraph C from enemy electronics, it mounts a 守护者ECM Suite.	作为天界系列全向机甲中的轻型突击机甲，圣像的重量相对较慢，但通过三重肌纤维束弥补速度不足；高热运行时，机甲最高速度可达64公里/小时。与其他天界机甲一样，圣像采用轻型聚变引擎和小型驾驶舱，并配备C3i计算机。康米努斯配置还强化了近距离武器。	Remediated-LLM
+The light assault 'Mech of the Celestial series of OmniMechs, the Seraph is somewhat slow for its weight, but it attempts to make up for that with the inclusion of Triple-Strength Myomer that enables the 'Mech to speed up to 64 km/h when it runs hot. Like the other Celestials, the Seraph makes use of a light fusion engine and a small cockpit, though other newer technologies are present only in its weaponry. As with the other Celestials, a C3i Computer is included. The Seraph D is best at medium to long range, as it carries two Heavy PPCs and one Light PPC. Like the Dominus variant, the Luminos can jump up to 150 meters using improved jump jets that enable it to get into a good sniping position. Three 中型脉冲激光s and a Small Laser are used defensively in the event an enemy units gets inside the minimum range of the PPCs. A Flamer provides effective anti-infantry defense.	作为天界系列全向机甲中的轻型突击机甲，圣像的重量相对较慢，但通过三重肌纤维束弥补速度不足；高热运行时，机甲最高速度可达64公里/小时。与其他天界机甲一样，圣像采用轻型聚变引擎和小型驾驶舱，并配备C3i计算机。圣像D最擅长中距离作战。	Remediated-LLM
+The light assault 'Mech of the Celestial series of OmniMechs, the Seraph is somewhat slow for its weight, but it attempts to make up for that with the inclusion of Triple-Strength Myomer that enables the 'Mech to speed up to 64 km/h when it runs hot. Like the other Celestials, the Seraph makes use of a light fusion engine and a small cockpit, though other newer technologies are present only in its weaponry. As with the other Celestials, a C3i Computer is included. The Seraph S carries three Streak LRM-10s backed up by two Clan-made 大型脉冲激光s and 中型脉冲激光s. How these weapons, particularly the experimental Streak LRM systems, were acquired by the Blakists isn't known. Three Jump Jets give the Caelestis some more maneuverability.	作为天界系列全向机甲中的轻型突击机甲，圣像的重量相对较慢，但通过三重肌纤维束弥补速度不足；高热运行时，机甲最高速度可达64公里/小时。与其他天界机甲一样，圣像采用轻型聚变引擎和小型驾驶舱，并配备C3i计算机。圣像S装备三门Streak导弹发射器。	Remediated-LLM
+Based on the lighter Shadow Cat OmniMech, the Shadow Cat II is a heavy 玉鹰氏族 fire-support BattleMech. The Shadow Cat II features a HAG/20 in the right arm, an LRM10 in each side torso, and an ER 中型激光 in the right torso. Maintaining the spirit of the original Shadow Cat, the Shadow Cat II mobility, the battlemech is also equipped with six jump jets.	暗影猫II基于较轻的暗影猫全向机甲，是玉鹰氏族的重型火力支援战斗机甲。右臂装备HAG/20，两侧躯干各有一门LRM-10，右躯干另有一门增程中型激光。延续原版暗影猫的机动性，暗影猫II还配备六具跳跃推进器。	Remediated-LLM
+Based on the lighter Shadow Cat OmniMech, the Shadow Cat II is a heavy 玉鹰氏族 fire-support BattleMech. An Experimental Technology variant fielded in 3077, the Shadow Cat II 2 replaces the HAG with an ER Large and ER 中型脉冲激光, both fitted with 激光绝缘体 Shields. As with many Jihad-era Falcon experiments, the weight freed up by the removal of the HAG and its ammo was used to allow the Shadow Cat II 2 to mount a 'Mech scale 部分机翼 to enhance its jump distance. The Shadow Cat II 2 variant retains the LRM-10 launchers and ER 中型激光 of the first variant.	暗影猫II基于较轻的暗影猫全向机甲，是玉鹰氏族的重型火力支援战斗机甲。3077年部署的实验技术变体暗影猫II 2以一门增程大型激光和一门增程中型脉冲激光替换HAG，并为两者加装激光绝缘护盾。拆除HAG及其弹药后腾出的重量用于安装机甲级部分机翼，以提升跳跃距离。该变体保留LRM-10。	Remediated-LLM
+
+Debuted in 3144 on the Tennessee Valley Arena and piloted by Marie Costa, the most striking piece of technology this machine features is a ����ź�ϵͳ followed by the Clan-spec ����άװ�� that replaced its original Capellan-style Starshield ����װ�� and its eleven ˫ɢ����. In the weapons section, a single MML-9 launcher appears where once there were twin MML-3s, while the mech losses the Light PPCs in favor of more ER ���ͼ���s (now three). Missing is Beagle active probe while an Improved Narc Missile Beacon	这台机甲于 3144 年在田纳西河谷竞技场首次亮相，由 Marie Costa 驾驶。它最引人注目的技术是虚空信号系统，随后将原本的卡佩兰式 Starshield 隐形装甲替换为氏族规格的 Ferro-Fibrous 装甲，并配备 11 台双重散热器。武器方面，原先的两具 MML-3 发射器被一具 MML-9 发射器取代；轻型 PPC 被更多 ER 中型激光取代，如今共有 3 门。Beagle 主动探测器被拆除，但增加了改进型 Narc 导弹信标。	Remediated-LLM
+Debuting in 3055, the Anvil is an FWL ���� ���ed to work with the light Hammer fire support ����. A heavy brawler, the Anvil is a 60-ton mech with a 300-rated Fusion Core and an Endo Steel chassis. The Anvil ANV-5Q is armed with a pair of �������弤��s and a pair of ���ͼ���s. A �ػ���ECM Suite distorts enemy sensors.	铁砧于 3055 年首次亮相，是自由世界联盟设计、用于配合轻型战锤火力支援机甲的型号。作为重型近战机甲，它重 60 吨，搭载 300 级聚变核心和 Endo Steel 底盘。铁砧 ANV-5Q 配备一对中型 X-Pulse 激光和一对中型激光，Guardian ECM 套件则会干扰敌方传感器。	Remediated-LLM
+ΪSLDF��ͳһս��֮����ƣ���ӥ�����������ּ淴�������ס���Ϊ30�����ͻ��ף���ӥ��һ��180���۱����������The Falcon FLC-5P is armed with a �������弤�� and a pair of ER ���ͼ���s. A ��׼����� enhances the Laser��s accuracy while the inclusion of MASC boosts the Falcon��s speed.	猎鹰是为星盟国防军统一战争后的需求设计的侦察兼反步兵机甲。作为一台 30 吨级轻型机甲，它搭载 180 级聚变核心。猎鹰 FLC-5P 配备一门中型脉冲激光和一对 ER 中型激光；瞄准计算机提高激光精度，MASC 则提升猎鹰的速度。	Remediated-LLM
+ΪSLDF��ͳһս��֮����ƣ���ӥ�����������ּ淴�������ס���Ϊ30�����ͻ��ף���ӥ��һ��180���۱����������The Falcon FLC-6C is armed with an ER Large Laser and a pair of ER Small Lasers. A ��׼����� enhances the Laser��s accuracy while AMS defends against incoming missiles.  <b><color=#e62e00>���ԣ�խС�Ͱ�����</color></b>  <b><color=#e62e00>������ñ��ʣ�1.05</color></b>	猎鹰是为星盟国防军统一战争后的需求设计的侦察兼反步兵机甲。作为一台 30 吨级轻型机甲，它搭载 180 级聚变核心。猎鹰 FLC-6C 配备一门 ER 大型激光和一对 ER 小型激光；瞄准计算机提高激光精度，AMS 则用于拦截来袭导弹。
+
+<b><color=#e62e00>特性：狭窄型装甲</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.05</color></b>	Remediated-LLM
+The Gorgon is a heavy fire support unit that often anchors ProtoMech Points. Developed in the 3060s, this variant is designed for close-quarters combat. The long-range weaponry is dropped, for additional װ��, Jump Jets, and a �������弤��.	戈尔贡是一种重型火力支援单位，通常作为原型机甲小队的核心。该型号于 3060 年代研发，专为近距离战斗设计。它拆除了远程武器，腾出空间增加装甲、跳跃喷射器和一门中型 X-Pulse 激光。	Remediated-LLM
+The Gorgon is a heavy fire support unit that often anchors ProtoMech Points. This variant utilizes short-range missiles in place of its laser weaponry, and mount a more powerful ����.	戈尔贡是一种重型火力支援单位，通常作为原型机甲小队的核心。该型号以短程导弹替换激光武器，并安装了更强大的引擎。	Remediated-LLM
+Jointly ���� by the Federated Commonwealth and the Draconis Combine, the 85 ton Gunslinger entered production in 3053. Powered by a 255-rated XL����, the customised Gunslinger 1ERD-Jared is armed with a pair of LRM-15��s. 4 ���ͼ���s, a pair of ����ʽSRM-4��s and a Small Laser add additional firepower at close ranges. A �ػ���ECM Suite and a �ȸ�Ȯ����̽ͷ enhance the ����s capabilities.	枪手由联邦共和联邦与龙辰联合设计，85 吨级枪手于 3053 年投入生产。定制型枪手 1ERD-Jared 搭载 255 级 XL 引擎，装备一对 LRM-15 发射器。4 门中型激光、一对 Streak SRM-4 发射器和一门小型激光为近距离战斗提供额外火力。Guardian ECM 套件和 Beagle 主动探测器进一步增强了机甲能力。	Remediated-LLM
+The Hellspawn was ���ed in response to a call from the Federated Commonwealth for a modern, highly mobile, fire-support Battle����. The Hellspawn is built on an Endo Steel chassis and a 270 XL���� that gives it a top speed of 97.2 km/h. For protection, the Hellspawn is equipped with a �ػ���ECM Suite and has six and a half tons of װ�� that is barely adequate when compared to other medium '����s. To enhance the '����'s mobility it has six Rawlings 80 jump jets that allow the '���� to jump up to one hundred and eighty ��. The Hellspawn has two LRM-10 launchers which make the '���� capable of providing long range fire support. For close combat, the Hellspawn has three �������弤��s.	地狱之子是应联邦共和联邦要求设计的现代化、高机动火力支援战斗机甲。它采用 Endo Steel 底盘和 270 级 XL 引擎，最高速度可达 97.2 公里/小时。为提高防护，机体配备 Guardian ECM 套件和 6.5 吨装甲；与其他中型机甲相比，这一装甲量仅勉强够用。六具 Rawlings 80 跳跃喷射器可让它一次跳跃 180 米，从而增强机动性。两具 LRM-10 发射器使地狱之子能够提供远程火力支援；近战时则使用三门中型 X-Pulse 激光。	Remediated-LLM
+Produced by Maverick Industries after Operations Serpent and Bulldog, the TsarBomba is an attempt to improve the flexibility and survivability of ���� units. Noting the loss of many Arrow IV equipped units and the slaughter of their crews during Clan breakthroughs, the Maverick Industries ��� teams looked for ways to improve the situation. With a license to produce the Hollander BZK-F3 already secured, it was decided to produce an upgraded model that utilised an XL���� to mount the Arrow IV launcher. Modern ���� tactics called for the deployment of anti-air and anti-mech units to protect the precious assets, so Maverick only mounted a С�����弤�� on the mech, augmented by a TAG; so that the Hollander could handle infantry infiltrators and spot for either its own launcher or the rest of its lancemates. The ���s speed was judged sufficient for it to evade other threats that might threaten the mech, especially with its װ�� unable to stand up to much punishment.	沙皇炸弹由 Maverick Industries 在“巨蛇行动”和“斗牛犬行动”之后生产，旨在提高远程火力单位的灵活性与生存能力。氏族突破期间，大量装备 Arrow IV 的单位损失惨重，乘员也遭到屠杀，Maverick Industries 的工程团队因此寻找改进方案。在取得生产 Hollander BZK-F3 的许可后，他们决定推出升级型号，使用 XL 引擎搭载 Arrow IV 发射器。现代远程火力战术要求部署防空与反机甲单位保护这些珍贵资产，因此 Maverick 仅为机体安装一门中型脉冲激光，并辅以 TAG；这样 Hollander 既能应对渗透的步兵，也能为自身发射器或长机队友标定目标。该机甲的速度足以躲避其他威胁，尤其是在装甲无法承受太多打击的情况下。	Remediated-LLM
+A Nova Cat design, the 50 ton Huntsman was designed for Operation Revival and the invasion of the Inner Sphere; first entering production in 3049. An ȫ��Mech, the Huntsman is built around a 250-rated XL���� with an Endo Steel Skeleton and ����άװ�� װ�� giving the ȫ��Mech, 21.5 tons of pod space. 5 Jump Jets are fixed to the chassis, giving the Huntsman additional flexibility. The Huntsman H is armed with a pair of ER Large Lasers. 4 Heavy ���ͼ���s and a Heavy Small Laser provide additional firepower at close range. �ػ���ECM protects the Huntsman, while a ��׼����� improves the accuracy of the Lasers. An ����̽ͷ allows it to scout.	猎人是 Nova Cat 设计的一款 50 吨机甲，为复兴行动及入侵内层星域而开发，并于 3049 年开始投产。这是一台 OmniMech，采用 250 级 XL 引擎、Endo Steel 骨架和 Ferro-Fibrous 装甲，提供 21.5 吨模块舱容量。底盘固定安装 5 具跳跃喷射器，使猎人拥有更强的战术灵活性。H 型配备一对 ER 大型激光，4 门重型中型激光和一门重型小型激光则补充近距离火力。Guardian ECM 保护猎人，瞄准计算机提高激光精度，Beagle 主动探测器则用于侦察。	Remediated-LLM
+Intended to serve as a medium assault unit, the Hydra carries heavy װ�� and a decent weapon suite. A 3067 design, this variant was designed as a fire support ProtoMech. It is solely armed with a single torso-mounted LRM-6 Launcher.	九头蛇定位为中型突击单位，拥有厚重装甲和不错的武器配置。这款 3067 年设计的型号专为火力支援原型机甲任务打造，唯一武器是安装在躯干上的一具 LRM-6 发射器。	Remediated-LLM
+One of the earliest second generation ȫ��Mech designs, the Kingfisher debuted in 2887 and is reputed to have influenced all subsequent Clan Assault ȫ��Mech designs. A 90-ton mech powered by a 360-rated Fusion ����, the Kingfisher has 24 tons of podspace provided by a combination of ����άװ�� װ�� and an Endo Steel skeleton. The Kingfisher E is armed with an ATM-12 and a �������弤��. At closer ranges, the E can bring to bear 5 �������弤��s.	翠鸟是最早的第二代 OmniMech 设计之一，于 2887 年首次亮相，据称影响了后来所有氏族突击 OmniMech 的设计。它是一台 90 吨级机甲，搭载 360 级聚变引擎，并通过 Ferro-Fibrous 装甲与 Endo Steel 骨架的组合获得 24 吨模块舱容量。翠鸟 E 型配备一具 ATM-12 和一门中型 X-Pulse 激光；近距离时，还可使用 5 门中型 X-Pulse 激光。	Remediated-LLM
+Custom built from discarded Locust wrecks, the Koto is a 25-ton mech built exclusively for the Solaris 7 arenas by Omnitech Industries. Sharing the same basic shape as it's parent ��� the Koto is extensively rebuilt with an Endo Steel skeleton, ����άװ�� װ��, double heat sinks and an XL����. Weighing 5 tons heavier then the Locust, the Koto has a significantly heavier weapons array; built for annihilating opponents in the arena. The Koto 3A is armed with a �������弤��, 2 ���ͼ���s and a Small Laser.	Koto 由废弃的蝗虫残骸定制组装而成，是 Omnitech Industries 专为 Solaris 7 竞技场打造的 25 吨级机甲。它沿用了母型的基本外形，但经过大幅重建，采用 Endo Steel 骨架、Ferro-Fibrous 装甲、双重散热器和 XL 引擎。Koto 比蝗虫重 5 吨，武器配置也强得多，专门用于在竞技场歼灭对手。Koto 3A 配备一门中型 X-Pulse 激光、两门中型激光和一门小型激光。	Remediated-LLM
+Designed as a replacement to the Timber Wolf, the 65 ton Linebacker entered production in 3052. Built around a 390-rated XL����, the Linebacker��s faster speed enables it to keep up with lighter star mates in running battles, something the Timber Wolf struggled to do. A combination of ����άװ�� װ�� and Endo Steel give the ȫ��Mech 17.5 tons of free pod space. The Linebacker LBK-H is armed with a pair of Heavy Large Lasers. 6 Jump Jets, 2 ER ���ͼ���s and an ER Small Laser make up the rest of the ȫ��s equipment.
+
+<b><color=#e62e00>����ɱ����ʣ�1.1.</color></b>	Linebacker 作为 Timber Wolf 的替代型号，于 3052 年投入生产。这台 65 吨级机甲围绕 390 级 XL 引擎构建，更高的速度使它能在机动作战中跟上较轻的星队友，而这是 Timber Wolf 难以做到的。Ferro-Fibrous 装甲与 Endo Steel 结构为这台 OmniMech 提供 17.5 吨可用模块舱空间。Linebacker LBK-H 配备一对重型大型激光，另有 6 具跳跃喷射器、2 门 ER 中型激光和一门 ER 小型激光。
+
+<b><color=#e62e00>部署费用倍率：1.1。</color></b>	Remediated-LLM
+The Lineholder was the first Battle���� ��� to come from Kressly Warworks. The Lineholder is ���ed around a set of `Common Sense Rules` for '���� ���. This approach has ���� a '���� with a good ground speed and respectable amount of װ�� and firepower. The '���� has a top speed of 86.4 km/h, allowing it to keep up with all but the fastest light and medium '����s. The Lineholder also carries ten tons of װ�� protection and has fourteen heat sinks. Its mix of off-the-shelf weapons and equipment makes the Lineholder a reliable '���� that is easy to repair and is dependable in battle. However, the ultimate selling point for the Lineholder, especially to its target audience of small units and minor nobles, is value and price. In the first year of sales, the Lineholder was historically successful compared with other 55-ton BattleMechs. For minor factions able to afford brand new BattleMechs, the Lineholder has become the garrison machine of choice.	Lineholder 是 Kressly Warworks 推出的第一款战斗机甲设计。它遵循一套名为“常识规则”的机甲设计原则，因此兼具良好的地面速度、可观的装甲与火力。Lineholder 最高速度为 86.4 公里/小时，除最快的轻型和中型机甲外，均能与之并驾齐驱。它还配备 10 吨装甲和 14 台散热器。现成武器与设备的组合使 Lineholder 可靠、易于维修，并适合持续作战。对小型部队和小贵族而言，它最大的卖点是价格实惠。上市首年，Lineholder 相较其他 55 吨级战斗机甲取得了显著成功；对于买得起全新战斗机甲的小型派系来说，它已成为首选驻防机甲。	Remediated-LLM
+Debuting in 3052, the Mantis is a light mech ���ed for the ���� arenas on Solaris VII. A 30-ton ����, the Mantis is powered by a 270-rated XL����, giving it the speed to outrun or out-maneuver almost any other ����. The Mantis MTS-L is armed with 4 �������弤��s and a Lance. A Supercharger increases the MTS-L��s speed and TSM adds to it��s close quarters punch.
+
+<b><color=#e62e00>����ɱ�����: 0.97.</color></b>	螳螂于 3052 年首次亮相，是为 Solaris VII 竞技场设计的轻型机甲。它重 30 吨，搭载 270 级 XL 引擎，速度足以甩开或机动压制几乎所有其他机甲。螳螂 MTS-L 配备 4 门中型 X-Pulse 激光和一把长矛。增压器提升 MTS-L 的速度，TSM 则增强其近距离打击能力。
+
+<b><color=#e62e00>部署费用倍率：0.97。</color></b>	Remediated-LLM
+Debuting in 3052, the Mantis is a light mech ���ed for the ���� arenas on Solaris VII. A 30-ton ����, the Mantis is powered by a 270-rated XL����, giving it the speed to outrun or out-maneuver almost any other ����. The Mantis MTS-T is armed with 3 ER ���ͼ���s and a pair of ER Small Lasers augmented by a ��λ Computer. MASC and a pair of Claws allow it to tear apart other ����s.
+
+<b><color=#e62e00>����ɱ�����: 0.97.</color></b>	螳螂于 3052 年首次亮相，是为 Solaris VII 竞技场设计的轻型机甲。它重 30 吨，搭载 270 级 XL 引擎，速度足以甩开或机动压制几乎所有其他机甲。螳螂 MTS-T 配备 3 门 ER 中型激光和一对 ER 小型激光，并由瞄准计算机辅助。MASC 与一对利爪使它能够撕碎其他机甲。
+
+<b><color=#e62e00>部署费用倍率：0.97。</color></b>	Remediated-LLM
+Debuting in 3052, the Mantis is a light mech ���ed for the ���� arenas on Solaris VII. A 30-ton ����, the Mantis is powered by a 270-rated XL����, giving it the speed to outrun or out-maneuver almost any other ����. The Mantis MTS-T2 is armed with 3 ER ���ͼ���s and a pair of ER Small Lasers augmented by a ��λ Computer. MASC, Reflective װ�� and a pair of Claws allow it to tear apart other ����s.
+
+<b><color=#e62e00>����ɱ�����: 0.97.</color></b>	螳螂于 3052 年首次亮相，是为 Solaris VII 竞技场设计的轻型机甲。它重 30 吨，搭载 270 级 XL 引擎，速度足以甩开或机动压制几乎所有其他机甲。螳螂 MTS-T2 配备 3 门 ER 中型激光和一对 ER 小型激光，并由瞄准计算机辅助。MASC、反射装甲和一对利爪使它能够撕碎其他机甲。
+
+<b><color=#e62e00>部署费用倍率：0.97。</color></b>	Remediated-LLM
+Debuting in 3052, the Mantis is a light mech ���ed for the ���� arenas on Solaris VII. A 30-ton ����, the Mantis is powered by a 270-rated XL����, giving it the speed to outrun or out-maneuver almost any other ����. The Mantis MTS-T3 is armed with 3 ER ���ͼ���s and a pair of ER Small Lasers augmented by a ��λ Computer. MASC, Reactive װ�� and a pair of Claws allow it to tear apart other ����s.
+
+<b><color=#e62e00>����ɱ�����: 0.97.</color></b>	螳螂于 3052 年首次亮相，是为 Solaris VII 竞技场设计的轻型机甲。它重 30 吨，搭载 270 级 XL 引擎，速度足以甩开或机动压制几乎所有其他机甲。螳螂 MTS-T3 配备 3 门 ER 中型激光和一对 ER 小型激光，并由瞄准计算机辅助。MASC、反应装甲和一对利爪使它能够撕碎其他机甲。
+
+<b><color=#e62e00>部署费用倍率：0.97。</color></b>	Remediated-LLM
+The Ninja-To is intended to work with, and take advantage of, other units which carry a C3 Master Computer by carrying a C3 slave unit that allows it to share targeting data with other units in a C3 equipped unit. The Ninja-To is built on a lightweight Star League XT Light Endo Steel that cradles a powerful Magna 390 XL���� that gives the 'Mech a top speed of 97.2 km/h. While this combination of �ṹ and ���� saves weight, it also makes the Ninja-To susceptible to being a combat loss from side torso destruction. The Ninja-To carries twelve tons of Durallex Heavy with CASE to ensure that it will not be completely destroyed in the event of an ammunition explosion.	忍者刀旨在与搭载 C3 主计算机的其他单位协同作战，并通过携带 C3 从属单元与 C3 网络中的友军共享目标数据。它采用轻型星盟 XT Light Endo Steel 结构，搭载强大的 Magna 390 XL 引擎，最高速度可达 97.2 公里/小时。结构与引擎的组合减轻了重量，但也使忍者刀在侧躯干被摧毁时容易遭受战斗损失。机体配备 12 吨 Durallex Heavy 装甲，并以 CASE 防护弹药，确保发生弹药爆炸时不会被彻底摧毁。	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-4N is armed with a 中型激光, 2 Small Lasers and a pair of Machine Guns.	统一战争后，SLDF设计了猎鹰，用于侦察机甲猎杀和反步兵作战。作为30吨轻型机甲，猎鹰由额定功率180的聚变核心驱动。猎鹰FLC-4N装备一门中型激光、两门小型激光和一对机枪。	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-4Nb-PP is armed with a 中型激光 and a PPC.	统一战争后，SLDF设计了猎鹰，用于侦察机甲猎杀和反步兵作战。作为30吨轻型机甲，猎鹰由额定功率180的聚变核心驱动。猎鹰FLC-4Nb-PP装备一门中型激光和一门粒子加农炮。	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-4Nb-PP2 is armed with a 中型脉冲激光, a 中型激光 and an ER Large Laser.	统一战争后，SLDF设计了猎鹰，用于侦察机甲猎杀和反步兵作战。作为30吨轻型机甲，猎鹰由额定功率180的聚变核心驱动。猎鹰FLC-4Nb-PP2装备一门中型脉冲激光、一门中型激光和一门增程大型激光。	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-4Nb-Saho is armed with a 中型激光 and a 大型脉冲激光.	统一战争后，SLDF设计了猎鹰，用于侦察机甲猎杀和反步兵作战。作为30吨轻型机甲，猎鹰由额定功率180的聚变核心驱动。猎鹰FLC-4Nb-Saho装备一门中型激光和一门大型脉冲激光。	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-4Nb is armed with a pair of 中型激光s and a Snub Nose PPC. Endo Steel and 双散热器 free up the weight needed for the experimental PPC.	统一战争后，SLDF设计了猎鹰，用于侦察机甲猎杀和反步兵作战。作为30吨轻型机甲，猎鹰由额定功率180的聚变核心驱动。猎鹰FLC-4Nb装备两门中型激光和一门短管粒子加农炮。内骨骼和双倍散热器释放了安装实验性粒子加农炮所需的重量。	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-4P is armed with a 中型脉冲激光, 2 Small Lasers and an AMS.	统一战争后，SLDF设计了猎鹰，用于侦察机甲猎杀和反步兵作战。作为30吨轻型机甲，猎鹰由额定功率180的聚变核心驱动。猎鹰FLC-4P装备一门中型脉冲激光、两门小型激光和一套反导系统。	Remediated-LLM
+为SLDF在统一战争之后设计，猎鹰是侦察机甲猎手兼反步兵机甲。作为30吨轻型机甲，猎鹰由一具180级聚变核心驱动。The Falcon FLC-5P is armed with a 中型脉冲激光 and a pair of ER 中型激光s. A 瞄准计算机 enhances the Laser’s accuracy while the inclusion of MASC boosts the Falcon’s speed.	统一战争后，SLDF设计了猎鹰，用于侦察机甲猎杀和反步兵作战。作为30吨轻型机甲，猎鹰由额定功率180的聚变核心驱动。猎鹰FLC-5P装备一门中型脉冲激光和一对增程中型激光。瞄准计算机提高激光精度，MASC则提升猎鹰的速度。	Remediated-LLM
+The Heavy Metal model of the Highlander is the signature ride of Rhonda Snord of the Snord's Irregulars mercenary unit. This customized Highlander features a number of recently reintroduced Lostech technologies. The most expensive example is the 275 XL引擎 which saves weight for a heavy weapons payload, a Gauss Rifle in the right arm provides respectable punch at long range, while 13 双散热器 keep the design running cool.	高地人重金属型是斯诺德游击队雇佣兵罗达·斯诺德的标志性座驾。这款定制高地人采用多项近期复原的失落科技。最昂贵的部件是275级XL引擎，可减轻重量以携带重型武器；右臂的高斯步枪提供可靠的远程火力，13台双倍散热器让机甲保持低温运行。	Remediated-LLM
+The HBK-GI Grid Iron is the Hero variant of the Hunchback. It has the characteristic hunch with quirks that emphasize the Gauss Rifle and 中型脉冲激光s. It comes from the factory with 双散热器, Endo-Steel, and an XL引擎. Unfortunately, since Gauss Rifles explode like ammo, the XL引擎 tends to be more of a downside.	HBK-GI“铁栅”是巫师的英雄变体。它保留标志性的驼背结构，并通过特性强化高斯步枪和中型脉冲激光。出厂时配备双倍散热器、内骨骼和XL引擎。不幸的是，高斯步枪会像弹药一样爆炸，因此XL引擎往往反而成为弱点。	Remediated-LLM
+Designed as a replacement to the Timber Wolf, the 65 ton Linebacker entered production in 3052. Built around a 390-rated XL引擎, the Linebacker’s faster speed enables it to keep up with lighter star mates in running battles, something the Timber Wolf struggled to do. A combination of 铁纤维装甲 装甲 and Endo Steel give the OmniMech 17.5 tons of free pod space. The Linebacker LBK-E is armed with an ER Large Laser and a pair of ATM-6’s. A 轻型 主动探头 is installed in the CT.
+
+<b><color=#e62e00>部署费用倍率：1.1.</color></b>	截击者最初用于替代狂战士，65吨的截击者于3052年投入生产。它以额定功率390的XL引擎为核心，更快的速度使其能在机动作战中跟上较轻的氏族星队友，这是狂战士难以做到的。铁纤维装甲和内骨骼为这台全向机甲释放出17.5吨舱位空间。截击者LBK-E装备一门增程大型激光和一对ATM-6，中央躯干安装了一具轻型主动探头。
+
+<b><color=#e62e00>部署费用倍率：1.1。</color></b>	Remediated-LLM
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated XL引擎, the Marauder II MAD-5A is armed with an LB-10X, paired ER PPC’s and 中型激光s.
+
+<b><color=#e62e00>部署费用倍率：1.18.</color></b>	掠夺者II于3012年问世，是经典掠夺者的重新设计，将75吨重型机甲改造成100吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到3030年第四次继承战争后才流传到龙骑兵之外。掠夺者II MAD-5A由额定功率300的XL引擎驱动，装备一门LB-10X、两门增程粒子加农炮和中型激光。
+
+<b><color=#e62e00>部署费用倍率：1.18。</color></b>	Remediated-LLM
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated Fusion Core, the Marauder II MAD-5B is armed with a Gauss Rifle, paired ER PPC’s and 中型激光s.
+
+<b><color=#e62e00>部署费用倍率：1.18.</color></b>	掠夺者II于3012年问世，是经典掠夺者的重新设计，将75吨重型机甲改造成100吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到3030年第四次继承战争后才流传到龙骑兵之外。掠夺者II MAD-5B由额定功率300的聚变核心驱动，装备一门高斯步枪、两门增程粒子加农炮和中型激光。
+
+<b><color=#e62e00>部署费用倍率：1.18。</color></b>	Remediated-LLM
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated XL引擎, the Marauder II MAD-5C is armed with a UAC/5, paired ER PPC’s and 中型激光s.
+
+<b><color=#e62e00>部署费用倍率：1.18.</color></b>	掠夺者II于3012年问世，是经典掠夺者的重新设计，将75吨重型机甲改造成100吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到3030年第四次继承战争后才流传到龙骑兵之外。掠夺者II MAD-5C由额定功率300的XL引擎驱动，装备一门UAC/5、两门增程粒子加农炮和中型激光。
+
+<b><color=#e62e00>部署费用倍率：1.18。</color></b>	Remediated-LLM
+A prototype that never saw widespread adoption, the Merlin 2A was Mountain Wolfs next generation offering unveiled alongside the 1B variant in 3053. Built around a 240-rated XL引擎, it is armed with a pair of ER Large Lasers and a pair of Medium Pulses. The 1A's Machine Gun is retained and the LRM-5 upgraded to a LRM-10. The addition of CASE protects the ammunition bays and 14 双散热器 handle the increased heat burden. At almost 19 million CBills, the design was rejected as too expensive and too reliant on advanced technology that the Outworlds Alliance struggled to produce. Mountain Wolf shelved the design, though not before a single run of 20 2A's were produced. Most of these were fielded by the Mountain Wolf security team, but some found their way into the hands of the elite Avellar Guard.	梅林2A是未获广泛采用的原型机，由山狼在3053年与1B型一同公布，作为下一代产品。它以额定功率240的XL引擎为核心，装备一对增程大型激光和一对中型脉冲激光；保留1A型的机枪，并将LRM-5升级为LRM-10。CASE保护弹药舱，14台双倍散热器承担增加的热负荷。该设计造价接近1900万C币，因过于昂贵且依赖外世界联盟难以生产的先进技术而被否决。山狼随后搁置项目，但仍生产了仅20台的首批2A型，其中大多数由山狼保安队使用，少数落入精英阿韦拉尔卫队手中。	Remediated-LLM
+
+The -Er is a recent refit of the SG11-E to focus more on firepower over ruggedness. By dropping the Binary Lasers in favor of Large Pulser Lasers managed to upgrade the MRM-10 to MRM-30 launchers and adding two ER 中型激光器, and the Heavy Duty ...	SG11-Er型是SG11-E近期进行的改装，重点提升火力而非坚固性。它用大型脉冲激光器替代二元激光器，将MRM-10升级为MRM-30发射器，并增加两门增程中型激光器；重型陀螺仪和反应装甲也换成了更轻的选项。改装的最后一项变化是改用紧凑型散热器。
+
+<b><color=#e62e00>特性：改良生命保障</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.4</color></b>	Remediated-LLM
+An unusual Clan 设计, the Tercio 4 is almost fully focused on very long range, indirect fire. This is achieved by mounting a 长 Tom 火炮 and two Arrow IV launchers, all with both standard and specialised ammunition to control the battlefield. Tw...	Tercio 4是一台不同寻常的氏族机甲，几乎完全专注于超远程间接火力。它安装一门双联火炮和两具箭IV发射器，并配备标准及特种弹药来控制战场。若机甲遭到直接交战，两具阿尔忒弥斯V LRM-20发射器也可用于直接射击，但它没有其他防御武器，额定300的紧凑型引擎使这台超重型机甲很难及时脱离危险。
+
+<b><color=#e62e00>特性：多重锁定</color></b>
+
+<b><color=#e62e00>投放费用倍率：1.47</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左下臂、右下臂</color>	Remediated-LLM
+The bravo configuration of the Wannu is a combination of missile boat and support '机甲, mounting 80 tubes of LRM missiles and 16 tubes of Mortars. Two 中型X脉冲激光 Lasers and a Re-engineered Small Laser provide direct fire coverage to defend the ...	Wannu的B型配置兼具导弹艇和支援机甲的职责，搭载80管LRM导弹和16管迫击炮。两门大型脉冲激光器和一门重制型小型激光器提供直接火力，用于保护这台机甲。
+
+<b><color=#e62e00>特性：扩展躯干扭转</color></b>
+
+<b><color=#e62e00>投放费用倍率：1.32</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Remediated-LLM
+The Gulltoppr OmniMonitor is a thirty-second century superheavy 全向车辆. It was first 生产 for the Lyran Commonwealth and Clan Wolf-in-Exile as a defensive garrison unit. The Gulltoppr was 设计ed and manufactured by Clan Wolf-in-Exile on Arc-Royal...	Gulltoppr全能监视车是32世纪的超重型全能载具。它最初为莱拉联邦和流亡之狼氏族设计，作为防御驻军单位。3102年，流亡之狼氏族在阿克皇家制造了Gulltoppr，并大量生产以填充氏族边境世界。Gulltoppr是巨大的机器，以惊人的火力和装甲著称，但缓慢的速度使其只能担任防御作战单位。主配置的武器全部安装在两座炮塔中。一号炮塔装有两门高斯步枪，由4吨弹药供给；二号炮塔装有这台载具的大型短程双联火炮和两套反导系统。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3格 / 60/90米。</color></b>
+
+<color=#ffcc00><b>装甲：</b>强化装甲
+<b>结构：</b>结构
+<b>数值       A        S  </b>
+<b>前方</b>       470    133
+<b>左侧</b>         365    133
+<b>右侧</b>       365    133
+<b>后方</b>       280    133
+<b>炮塔</b>      290    133
+
+<b>总计</b>      1770    665</color>
+
+<color=#ff0000>特性：主战坦克 B2000</color>
+
+<color=#ffcc00>全能载具</color>	Remediated-LLM
+The Paladin Defense System is a Superheavy Tank armed with double 长 Toms. These 火炮 field pieces are fed by 6 tons of ammunition, giving the unit 15 double salvos of fire support. It has a pair of 多元光学 中型激光s for close in defense. The 坦克 was ...	帕拉丁防御系统是一台装备双联火炮的超重型坦克。这些野战炮由6吨弹药供给，可进行15轮双重火力支援齐射。它还配备两门元素光学中型激光器用于近距离防御。该坦克通常不与前线作战单位一起部署，但在行星民兵和专门的防御营中表现出色。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3格 / 60/90米。</color></b>
+
+<color=#ffcc00><b>装甲：</b>车辆铁磁纤维装甲
+<b>结构：</b>结构
+<b>数值       A        S  </b>
+<b>前方</b>       300     91
+<b>左侧</b>       150     91
+<b>右侧</b>       150     91
+<b>后方</b>       150     91
+<b>炮塔</b>       200     91
+
+<b>总计</b>       950    455</color>
+
+<color=#ff0000>特性：高级电子系统</color>	Remediated-LLM
+The B variant is focused on medium to long range burst damage capabilities, carrying a Rotary Autocannon 5 in each arm, paired with a total of three Large Pulse Lasers. Two side torso mounted Light PPC and an AMS Mk2 finishes the armaments ...	B型专注于中远程爆发伤害，双臂各携带一门转管自动炮/5，并配备三门大型脉冲激光器。两门安装在侧面躯干的轻型PPC和一套AMS Mk2构成完整武装。
+
+<b><color=#e62e00>特性：指挥机甲</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.35</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Remediated-LLM
+The personal 设计 of Feng Hu, the mastermind behind the concept of the Tian Xie Zuo, the F configuration is an attempt to turn the Quad into a true vanguard unit. Ten 中型脉冲激光s, a Light PPC and a M9 Gauss Rifle as weapons, while Hardened 铁纤维装甲 ...	冯虎是天蝎座概念的构想者，这台四足机的F型是其个人座驾，试图将四足机真正改造成先锋单位。它以十门大型脉冲激光器、一门轻型PPC和一门M9高斯步枪为武器；强化装甲和安装于躯干的驾驶舱使其比其他配置耐用得多。该机最大的生存性缺陷是XL引擎伸入侧面躯干，使核心暴露在更多命中风险下。
+
+<b><color=#e62e00>特性：标准武器—弹道</color></b>
+
+<b><color=#e62e00>投放费用倍率：1.36</color></b>	Remediated-LLM
+Based on the flawed UM-R60-LAM prototypes, engineers attached to the NAIS attempted to reverse engineer and upgrade a number of prototypes recovered from the Orguss Cache on Marcus. Armed with a UAC/2 and a ER 中型激光, the engineers took inspi...	基于存在缺陷的UM-R60-LAM原型机，NAIS工程师尝试对马库斯奥古斯缓存中回收的若干原型机进行逆向工程和升级。工程师为其装备UAC/2和一门增程中型激光器，并从经典城市机甲改型中汲取灵感，试图将有限的速度和机动性转化为优势。通过调整跳跃喷气机的位置，这台LAM成为非常稳定的射击平台，适合远程支援任务。该项目是否成功尚不得而知，因为内战的混乱迫使原型机重新封存，相关记录也被封锁。	Remediated-LLM
+A fast unit, the Light VTOL is not designed for protracted combat. Carrying an array of ranged weapons, the Light VTOL is designed to support allied units from range.  <b><color=#ffcc00>生物群系限制：该单位无法在月球生物群系部署。</color></b>  <b><color=#ffcc00>...	快速的轻型垂直起降载具不适合持久作战。它携带多种远程武器，旨在从远距离支援友军单位。
+
+<b><color=#ffcc00>生物群系限制：该单位无法在水域作战；全能载具不受此限制。</color></b>
+
+<b><color=#ffcc00>移动：5/8格 / 150/240米。</color></b>
+
+<color=#ffcc00><b>装甲：</b>装甲
+<b>结构：</b>结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     15
+<b>左侧</b>         135     15
+<b>右侧</b>       135     15
+<b>后方</b>        105     15
+
+<b>总计</b>      560     75</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>	Remediated-LLM
+Somewhat of a departure from most 氏族战斗机甲s, the Hellstar is a long-running campaign workhorse rather than the quick-and-deadly striker usually used in Clan warfare. A continuation of the collaboration between 氏族地狱马 and the Exiled Wolves on Arc-Royal during the Jihad which resulted in the Cygnus, a machine based on the earlier Annihilator, the Hellstar is more or less a Clan Awesome. Introduced in 3079, the Wolves-in-Exile and 地狱马 maintained exclusive production of the effective 'Mech since, with the largest number outside the ranks of their toumans being the relatively few examples the newborn 球体共和国 salvaged from the battlefields of Operation SCOUR. Built on a weight-saving Endo Steel frame and 380-rated XL fusion 引擎, the Hellstar boasts impressive speed for its weight while carrying eighteen-and-a-half tons of standard 装甲, the maximum possible for its weight. The real key to the design's reputation is its unprecedented thirty 双散热器, which allow it to fire all its weapons continuously without the risk of heat buildup.	地狱使者的设计重达 65 吨，强调压倒性火力而非速度或装甲，是一款全向机甲。 Hellbringer 由 325 级 XL 发动机提供动力，拥有 28.5 吨的吊舱空间。地狱使者 D 装备有两门等离子炮。一个微型脉冲激光器、一对B-Pod和4个中型脉冲激光器覆盖近距离作战。	Final-WholeField
+When General Aleksandr Kerensky led most of the 星际联盟防卫军 into exile in 2784, they brought prototypes of the Clint BattleMech with them. After the annihilation of 狼獾氏族, 雪鸦氏族 revisited these prototypes and was able to begin mass-production of the 'Mech in 2830 and introduced 2842. They ensured that it kept up with advances in Clan technology, eventually becoming the design that is now known as the Clint IIC. Developed during the Jihad in 3073, the Clint IIC 2 was fitted with an all-energy weapons configuration. The 'Mech mounts five 中型脉冲激光s divided amongst its center torso, left torso, and right arm; one in each of the torso locations, and the remaining three in the arm. This variant has been provided eight 改进型跳跃推进器 to greatly enhance its mobility in tactical situations. To cope with the new levels of heat, ten 双散热器 are used instead of the single versions. Additionally, an ECM Suite has been allocated to the head. Lastly, 铁纤维装甲 装甲 now protects the design in place of the original Standard 装甲.	受到玉鹰家族在过去十年推出的《雷神二号》的启发，新星猫的科学家们拆除了原来的影子猫的固定跳跃喷射器，以释放宝贵的质量。剩余的大部分吨位被分配给吊舱空间，增强机甲的灵活性，而其余的则最大化装甲覆盖范围，以确保氏族珍贵的全向机甲及其战士安全回家。暗影猫III的主要配置是左臂装有三吨弹药的高斯步枪，右臂有一对中型脉冲激光器。  增加了机动性，它保留了原始影子猫的固定 MASC。	Final-WholeField
+The Grigori is one of the 布雷克圣言会's new Celestial series OmniMechs designed by Doctor Devon Cortland. The Grigori (named after fallen angels from Christianity) was added to the 布雷克圣言会 Militia's arsenal in late 3069 as Doctor Cortland oversaw the final production personally. It is constructed on a standard chassis, but makes use of eleven tons of 轻型铁纤维装甲-Fibrous 装甲, a light fusion 引擎, and an XL Gyro; as well as the small cockpit that is common to all of the Celestials. Like the other Celestials, the Grigori has a C3i Computer to help direct its fire. This variant also jumps, though it also adds a 守护者ECM Suite for further defensive measures. Three MRM 10s aim to take advantage of the integral C3 network, while twin 锁定式SRM-6s spreads fire out all over an enemy target. Two ER 中型激光s back up the missile weapons in case they run out of ammunition.	Cicada 于 2740 年推出，重 40 吨，是作为 Locust 的竞争对手而开发的。 Slightly better armed and just as fast, the Cicada’s heavier armor and better melee capabilities enable it to function as an effective Light Mech hunter and scout. Cicada 3X 由 280 级 XL 发动机提供动力，配备一对中型 X 脉冲激光激光器和一对 MML-7。隐形装甲和守护者 ECM 完善了该变体。	Final-WholeField
+The Grigori is one of the 布雷克圣言会's new Celestial series OmniMechs designed by Doctor Devon Cortland. The Grigori (named after fallen angels from Christianity) was added to the 布雷克圣言会 Militia's arsenal in late 3069 as Doctor Cortland oversaw the final production personally. It is constructed on a standard chassis, but makes use of eleven tons of 轻型铁纤维装甲-Fibrous 装甲, a light fusion 引擎, and an XL Gyro; as well as the small cockpit that is common to all of the Celestials. Like the other Celestials, the Grigori has a C3i Computer to help direct its fire. Six 改进型跳跃推进器 vault the Grigori D up to 180 米. A Heavy and a Light PPC allow it to snipe effectively. Two ER Mediums and a pair of ER Smalls back up the PPCs in case an enemy gets under their minimum range.	布雷克圣言会征服考文垂后，圣战分子修改了 7S 以满足他们的规格。 7B在左臂保留了一个ER中型激光炮，但增加了两个火焰喷射器，使7B对非装甲步兵构成致命威胁。一个小驾驶舱可以容纳两架 SRM-4，它们仍然由受 CASE 保护的弹药箱供弹。减轻的重量使工程师能够添加足够的跳跃喷气机，将突击队一次提升到一百二十米。他们还额外增加了一吨装甲车。	Final-WholeField
+The Ninja-To is intended to work with, and take advantage of, other units which carry a C3 Master Computer by carrying a C3 slave unit that allows it to share targeting data with other units in a C3 equipped unit. The Ninja-To is built on a lightweight Star League XT Light Endo Steel that cradles a powerful Magna 390 XL引擎 that gives the 'Mech a top speed of 97.2 km/h, more when TSM is activated. While this combination of 结构 and 引擎 saves weight, it also makes the Ninja-To susceptible to being a combat loss from side torso destruction. This variant of the Ninja-To puts a Snub Nose PPC in each arm, removes a heat sink, and adds an advanced Targeting Computer. The standard 装甲 plate of the original is replaced by 铁纤维装甲 装甲.	与许多 Solaris VII 竞技场机甲一样，斯帕塔被设计为格斗机甲，但依赖于技巧，而不是像大多数机甲那样依靠蛮力。手工制作的 360 级 XXL 发动机以耐用性换取了巨大的重量减轻，但 Spatha 只需担心自动加农炮或高斯步枪对其脆弱的发动机开火，这要归功于其 11 吨的先进反射装甲和激光 AMS 可以抵消对手的能量和导弹武器。 Spatha 的 13 个双散热器勉强完成了冷却其先进动力装置和自身能量武器的任务，这实际上是有意的选择，因为 Spatha 配备了三重强度 Myomer 来提高其速度并显着提高其剑的效率。	Final-WholeField
+The Ninja-To is intended to work with, and take advantage of, other units which carry a C3 Master Computer by carrying a C3 slave unit that allows it to share targeting data with other units in a C3 equipped unit. The Ninja-To is built on a lightweight Star League XT Light Endo Steel that cradles a powerful Magna 390 XL引擎 that gives the 'Mech a top speed of 97.2 km/h. While this combination of 结构 and 引擎 saves weight, it also makes the Ninja-To susceptible to being a combat loss from side torso destruction. The Ninja-To carries twelve tons of Durallex Heavy with CASE to ensure that it will not be completely destroyed in the event of an ammunition explosion.	Slagmaiden BattleMech 是 Clan 和 Inner Sphere 实验技术的混合体。机甲由 Arc-Royal MechWorks 于 3076 年建造，旨在在圣战期间展示先进技术并提高部队士气。由于其一些设计特点和费用，仅建造了两艘 Slagmaidens。	Final-WholeField
+Commander, I've received some intel on a new configuration for the Boreas that was 开发 by 氏族地狱马. This variant, known as Configuration A, is equipped with a single Class-20 超突击高斯 Rifle and two tons of ammunition. It seems that the Horses have opted for a more focused approach with this variant, relying on the massive firepower of the Gauss Rifle to take out targets quickly and efficiently. It could be a formidable weapon in the hands of a skilled pilot. However, we should also be aware that the lack of backup weapons could be a liability in certain situations. We'll need to assess the situation carefully before deciding if this variant is right for our mission.	我知道为什么这个机甲的所有宣传材料都是关于它的速度。他们几乎忘记了武器！它只有四个轻型 PPC，对于这么重的机甲来说这是相当可悲的。不仅如此，如果你真的设法用所有这些攻击击中敌人，除非你在可怕的北极，否则你会在一两次齐射中使机甲过热。	Final-WholeField
+Designed to handle armored infantry and combat vehicles, the A Configuration comes with a balance of energy and ballistic weaponry. Each of the Configuration's arms comes with an ER PPC and 中型脉冲激光, and two 双散热器. In the right torso are fitted two hard-hitting Improved Heavy 中型激光s and a pair of AP Gauss Rifles. The left side torso houses a single LB 10-X Class Autocannon, 'Mech's 2 tons of ammunition for the AC, and the single ton of space for AP Gauss Rifles' ammo. An additional 双散热器 is found in the center torso and another in the head, along with an additional two in each arm. An Angel ECM is mounted in the right torso for added protection.	A commander's configuration, this variation carries a C3 Master Computer to coordinate fire. To protect itself from hostile electronic systems, it carries a 守护者ECM Suite. Offensively it carries a pair of 中型脉冲激光s, twin Artemis IV-enhanced LRM-15s, and an ER PPC. A Small Laser has also been included.	Final-WholeField
+The Hellspawn was designed in response to a call from the Federated Commonwealth for a modern, highly mobile, fire-support BattleMech. The Hellspawn is built on an Endo Steel chassis and a 270 XL引擎 that gives it a top speed of 97.2 km/h. For protection, the Hellspawn is equipped with a 守护者ECM Suite and has six and a half tons of 装甲 that is barely adequate when compared to other medium 'Mechs. To enhance the 'Mech's mobility it has six jump jets. The 8E is a variant aimed at increasing the 'Mech's long range effectiveness. Two of the 中型脉冲激光s have been traded for lighter ER 中型激光s and an Artemis IV system has been added to the LRMs.	地狱犬的设计源于联邦共和国对现代化、高机动性火力支援战斗机甲的需求。地狱犬采用内骨骼底盘和 270 级 XL 引擎，最高速度可达 97.2 km/h。为提供防护，它配备守护者 ECM 套件和六吨半装甲；与其他中型机甲相比，这样的装甲勉强够用。为了提高机甲的机动性，它安装了六台跳跃喷射器。8E 型旨在增强机甲的远程作战能力：将其中两门中型脉冲激光器替换为更轻的 ER 中型激光器，并为 LRM 加装阿尔忒弥斯 IV 系统。	Final-WholeField
+Not designed for traditional combat, the Carrier is a force multiplier. Deadly at mid to short ranged combat, the Carrier is armed with a mix of heavy weapons tailored for mech busting.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       120     30
+<b>左侧</b>          70     30
+<b>右侧</b>        70     30
+<b>后方</b>         55     30
+<b>炮塔</b>       60     30
+
+<b>总计</b>      375    150</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>	运输车并非为传统战斗而设计，而是用来放大部队战力的力量倍增器。它在中近距离战斗中极其致命，装备了一组专门用于摧毁机甲的重型武器。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：4/6 格 / 120/180 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       120     30
+<b>左侧</b>          70     30
+<b>右侧</b>        70     30
+<b>后方</b>         55     30
+<b>炮塔</b>       60     30
+
+<b>总计</b>      375    150</color>
+
+<color=#ff0000>怪癖：窄小低矮轮廓</color>	Final-WholeField
+Developed by 机甲Warriors from Warrior House Dai Da Chi, this variant of the Ti Ts'ang uses several experimental systems to provide a '机甲 customized to their needs. Using a 小型驾驶舱 allows for a Supercharger to increase the ground speed of the '机甲. The Hatchet of the standard Ti Ts'ang is replaced with a Lance that can penetrate 装甲 in a single blow. Finally, the Small Lasers of the standard model have been replaced by 小型X脉冲激光 Lasers. For greater accuracy, a 定位 Computer is used.
+
+<b><color=#e62e00>怪癖: 超伸展驱动器</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.08</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower</color>	由大达奇战士家族的机甲战士开发，这一钛苍变体采用多套实验系统，将机甲定制为符合他们需求的型号。借助小型驾驶舱，可以安装增压器来提高机甲的地面速度。标准钛苍的战斧被替换为一把能够一击穿透装甲的长枪。最后，标准型号的小型激光被替换为中型 X 脉冲激光。为了提高命中率，还安装了一台标准瞄准计算机。
+
+<b><color=#e62e00>特性：强化散热系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.08</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂</color>	Final-WholeField
+Boss, I hope you don't plan on piloting this yourself.  A round penetrates the 装甲, and you could see limbs fly off. I heard the designer in charge of this was in a relationship with a test pilot's sibling, and wanted to eliminate the test pilot for some inheritance scheme. It ended up wiping a whole class of test pilots, but missed the one the designer wanted.  Infuriated, the designer took the mech out for a test, hoping to crush the test pilot as they were examining a Roadrunner, and blew themselves up. So, uhh, guess the moral of the story is... don't date coworkers? Or maybe keep an eye on your heat? Don't be greedy?	老板，我希望你没打算亲自驾驶这台东西。一发炮弹就能穿透装甲，你可能会看到四肢飞出去。我听说负责设计它的人和一名试飞员的兄弟姐妹有关系，为了某个继承阴谋想除掉那名试飞员。结果它消灭了整整一批试飞员，却偏偏漏掉了设计师想除掉的那个人。设计师勃然大怒，趁那名试飞员检查一台路行鸟时亲自驾驶机甲进行测试，想把试飞员碾碎，结果把自己炸上了天。所以，呃，我想这个故事的寓意是……别和同事谈恋爱？或者要注意热量？别太贪心？	Final-WholeField
+First 生产 in 2948, the Ice Ferret is a medium scout Omni机甲 often employed as a head hunter or strike unit. A 45 ton Clan Omni机甲, the Ice Ferret is powered by a 360-rated XL引擎 and has 9.5 tons of pod space thanks to a combination of Endo Steel, an XL引擎 and 铁纤维装甲. The Ice Ferret IFR-T is armed with an 改进的 Heavy Large Laser, an ER 中型激光 and an SRM-4. An 主动探头 improves the Ice Ferrets scout capabilities and a Supercharger boosts its speed.
+
+<b><color=#e62e00>怪癖: 改进的 Sensors</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	冰貂首次生产于 2948 年，是一款中型侦察全向机甲，经常被用作猎杀单位或突击单位。作为 45 吨的氏族全向机甲，冰貂由一具额定 360 的 XL 引擎驱动，并得益于内骨骼、XL 引擎和铁纤维装甲的组合，拥有 9.5 吨 pod 空间。冰貂 IFR-T 配备一门改进型重型大型激光、一门 ER 中型激光和一门 SRM-4。主动探头增强了冰貂的侦察能力，增压器则提升其速度。
+
+<b><color=#e62e00>特性：改进型传感器</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+A fast unit, the Light VTOL is not designed for protracted combat. Carrying an array of ranged weapons, the Light VTOL is designed to support allied units from range.
+
+<b><color=#ffcc00>生物群系限制：该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       115     15
+<b>左侧</b>         100     15
+<b>右侧</b>       100     15
+<b>后方</b>         70     15
+
+<b>总计</b>      400     75</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>	轻型 VTOL 是一款高速单位，不适合持久战。它携带多种远程武器，旨在从远处支援友军单位。
+
+<b><color=#ffcc00>生物群系限制：该单位无法部署在月球生物群系。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       115     15
+<b>左侧</b>       100     15
+<b>右侧</b>       100     15
+<b>后方</b>        70     15
+
+<b>总计</b>      400     75</color>
+
+<color=#ff0000>怪癖：窄小低矮轮廓</color>	Final-WholeField
+The slowest Tank class, but carrying the heaviest 装甲 and biggest weapons. Carrying an array of ranged weapons, the Assault Tank is 设计ed to smash targets at range.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 反射涂层
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       265     40
+<b>左侧</b>         235     40
+<b>右侧</b>       235     40
+<b>后方</b>        200     40
+<b>炮塔</b>      210     40
+
+<b>总计</b>      1145    200</color>
+
+<color=#ff0000>怪癖: 改进的 Sensors</color>	坦克中速度最慢的一类，却拥有最厚重的装甲和最大的武器。突击坦克携带多种远程武器，旨在从远距离粉碎目标。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 硬化板装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       265     40
+<b>左侧</b>       235     40
+<b>右侧</b>       235     40
+<b>后方</b>        200     40
+<b>炮塔</b>      210     40
+
+<b>总计</b>      1145    200</color>
+
+<color=#ff0000>特性：改进型传感器</color>	Final-WholeField
+Designed for the Republic Armed Forces in 3121, the Doloire is an 80 ton 全向mech designed with a mixture of Clantech and Inner Sphere tech. Designed around a 320-rated Clan XL引擎 and an Endo-Composite 结构, the Doloire has 32 tons of pod space, with a pair of Clan ER 中型激光器 hardwired into the Mechs CT. The Doloire DLR-OD is armed with a trio of Streak SRM-4’s and a pair of additional ER 中型激光器 all of which are Clan spec. A pair of TSEMP’s round out the design.
+
+<b><color=#e62e00>特性：Multi Trac</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.09</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	多尔瓦为共和国武装部队于 3121 年设计，是一台 80 吨全向机甲，融合了氏族技术与内层圈技术。它以额定 320 的氏族 XL 引擎和内骨骼结构为核心，拥有 32 吨 pod 空间，并在中央躯干预装一对氏族 ER 中型激光。多尔瓦 DLR-OD 配备三门锁定式 SRM-4 和两门额外的 ER 中型激光，全部采用氏族规格。两门 TSEMP 完成了该设计的武器配置。
+
+<b><color=#e62e00>特性：多重锁定</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.09</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+The 5W variant of the Goliath is armed with two 等离子步枪s which not only inflict damage on their targets but heat as well. The 5W is also armed with three 中型激光s for close combat. The '机甲 has a 守护者ECM Suite which is needed to properly use its sixteen and a half tons of Stealth 装甲. Additionally, the '机甲 has a 小型驾驶舱 that is cramped and makes the '机甲 harder to pilot but saves valuable weight. The '机甲 also has an 改进的 C3 computer, allowing it to share targeting telemetry with similarly equipped units.
+
+<b><color=#e62e00>怪癖: Multi Trac</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.14</color></b>	石像鬼 5W 型配备两门等离子步枪，不仅能对目标造成伤害，还能使其升温。5W 型还装备三门中型激光，用于近距离战斗。该机甲配备守护者 ECM 套件，这是正常使用其 16.5 吨隐形装甲所必需的。此外，机甲还拥有狭窄的小型驾驶舱，使驾驶更加困难，却能节省宝贵重量。机甲还安装了改进型 C3 计算机，能够与配备相同系统的单位共享目标遥测数据。
+
+<b><color=#e62e00>特性：多重锁定</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.14</color></b>	Final-WholeField
+The Hellspawn was designed in response to a call from the Federated Commonwealth for a modern, highly mobile, fire-support BattleMech. The Hellspawn is built on an Endo Steel chassis and a 270 XL引擎 that gives it a top speed of 97.2 km/h. For protection, the Hellspawn is equipped with a 守护者ECM Suite and has six and a half tons of 装甲 that is barely adequate when compared to other medium 'Mechs. This 3081 variant carries a Light PPC and ER 中型激光 in each arm. It's also equipped with a 守护者ECM Suite, 比格犬主动探头, and TAG. The Hellspawn-10SR also carries eight 改进型跳跃推进器, allowing for 240 meter jumps.	地狱犬的设计源于联邦共和国对现代化、高机动性火力支援战斗机甲的需求。地狱犬采用内骨骼底盘和 270 级 XL 引擎，最高速度可达 97.2 km/h。为提供防护，它配备守护者 ECM 套件和六吨半装甲；与其他中型机甲相比，这样的装甲勉强够用。这个 3081 年变体在双臂各装备一门轻型 PPC 和一门 ER 中型激光。此外，它还配备守护者 ECM 套件、比格犬主动探头和 TAG。地狱犬 10SR 还携带八台改进型跳跃喷射器，可进行 240 米跳跃。	Final-WholeField
+A Light Clan 全向Mech, the 30 ton Kit Fox was introduced in 2890 by Clan Cloud Cobra. Favouring a mix of firepower and 装甲 over speed, the Kit Fox is powered by a 180 XL引擎 and features a mix of Endo Steel and 铁纤维装甲; giving it 16 tons of pod space. The Kit Fox T is armed with an ER Large Laser and a PAC/4. An ER 中型激光器 and a Streak SRM-4 make up the close range firepower, with a Supercharger and an Active Probe filling the rest of the available pod space.
+
+<b><color=#e62e00>特性：Narrow/Low Profile</color></b>
+
+<b><color=#e62e00>部署费用倍率：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	猎狐是一款轻型氏族全向机甲，30 吨的它由星团工业于 2890 年推出。它牺牲速度，转而强调火力与装甲的平衡，由一具 180 级 XL 引擎驱动，并结合内骨骼和铁纤维装甲，提供 16 吨 pod 空间。猎狐 T 型配备一门 ER 大型激光和一门 PAC/4。近距离火力由一门 ER 中型激光和一门锁定式 SRM-4 组成，增压器和主动探头则填满剩余 pod 空间。
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>掉落成本乘数：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+Introduced during the Jihad, this variant is a revision of the Predator's weaponry and 装甲. The '机甲's 装甲 has been replaced with 铁纤维装甲 装甲 for slightly increased protection. Its LB-X Class autocannons have been replaced by a pair of Class 20 超突击高斯 Rifles with 4 tons of ammunition split between the two torsos. While two ER Small Lasers have been retained, its ER Mediums have been exchanged for pair of 中型脉冲激光s.
+
+<b><color=#e62e00>怪癖: 高级光学系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.14</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	这一变体在圣战期间推出，是掠食者武器与装甲的改进型。机甲装甲更换为铁纤维装甲，防护略有提升。原有 LB-X 型自动炮被一对 HAG/20 步枪取代，4 吨弹药分装在两个躯干中。两门 ER 小型激光得以保留，而 ER 中型激光则换成了一对中型脉冲激光。
+
+<b><color=#e62e00>特性：高级光学系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.14</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂，右侧下臂</color>	Final-WholeField
+The Spirit is one of the first Clan 'Mechs produced in the Inner Sphere. Though some components are imported from Clan space, the 245 XL引擎 is made in the 玉鹰氏族 Occupation Zone. The 引擎 is only one of the weight-saving technologies the design makes use of, however, as the Spirit incorporates both an endo steel 结构 and six tons of 铁纤维装甲 装甲. The Spirit itself is a relatively fast recon 'Mech that can hold its own at both long and short ranges. In addition, it makes for a good training 'Mech, ensuring that it will have a place in the Falcon touman for a long time to come.	灵魂是最早在内层圈生产的氏族机甲之一。虽然部分组件从氏族领地进口，但其 245 级 XL 引擎产自翡翠隼占领区。不过，引擎只是该设计采用的众多减重技术之一；灵魂还结合了内骨骼结构和 6 吨铁纤维装甲。灵魂本身是一款速度相当快的侦察机甲，在远距离和近距离都能独当一面。此外，它还是很好的训练机甲，因此很长时间内都会在翡翠隼氏族的军团中占有一席之地。	Final-WholeField
+Originating after the 17th battle of Hesperus II, the Fafnir II is the 设计ation given to a limited production run of custom Fafnir's created with battlefield salvage. Built by 迪法恩斯工业, the 100 ton Fafnir II FNR2-5-B is powered by a 300-rated XL引擎 and protected by 21 tons of Ferro-Lamellor 装甲. A pair of Gauss Rifles form the primary armament supported by a quad of Light PPC’s and a pair of Streak LRM-10’s. 
+
+<b><color=#e62e00>怪癖: 稳定 Weapons</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.18</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	法夫尼尔 II 起源于赫斯珀洛斯 II 的第 17 场战斗，其名称用于指代一批利用战场残骸制造的定制法夫尼尔限量生产型。100 吨的法夫尼尔 II FNR2-5-B 由迪法恩斯工业制造，由一具额定 300 的 XL 引擎驱动，并以 21 吨铁层叠装甲提供防护。两门高斯步枪组成主武器，辅以四门轻型 PPC 和一对 Streak LRM-10。
+
+<b><color=#e62e00>特性：稳定武器</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.18</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧上臂，右侧上臂</color>	Final-WholeField
+The Cricket 'Mech was developed by the DCMS as a raider and harasser. Originally it was named the Roweena after Roweena Kurita, but the ISF suspected the designer was a Black Dragon Society sympathizer so a new name was assigned. The Cricket uses every weight saving technology possible to free enough room to have a high ground speed and pack on more 装甲. Capable of reaching over 150 km/h, it can also jump 180 米 at a time thanks to six jump jets. Despite its high speed and jump capability, the Cricket is unpopular for scouting and recon as it has a cramped cockpit and no electronics.	蟋蟀机甲由龙马联合军司令部设计，用作突袭和骚扰单位。它最初以库里塔家族的罗威娜命名，但内务安全部怀疑设计师是黑龙社的同情者，于是重新命名。蟋蟀尽可能采用各种减重技术，以腾出空间获得较高的地面速度并搭载更多装甲。它的速度可超过 150 km/h，凭借六台跳跃喷射器还可一次跳跃 180 米。尽管速度和跳跃能力出色，蟋蟀却不受侦察和搜索任务欢迎，因为它的驾驶舱狭窄且没有电子设备。	Final-WholeField
+A Solaris VII BattleMech, the Silver Fox uses a large but light 引擎 to provide a lot of speed for low weight. The increased size of this 引擎 leaves little room for weapons, but given how fast the Silver Fox is this usually isn't a problem. To protect the 'Mech, Innovative Design Concepts added seven tons of reflective 装甲, which while only as effective as standard 装甲 against missiles or autocannons, provides superior protection against energy weapons common to the arenas. To provide more protection, IDC additionally installed an ECM suite in the 'Mech's right torso.	银狐是一台 Solaris VII 战斗机甲，使用大型但轻量的引擎，以较低重量换取很高速度。引擎尺寸增大后几乎没有空间容纳武器，但考虑到银狐的速度，这通常不是问题。为保护机甲，创新设计概念公司加装了 7 吨反射装甲；这种装甲对导弹或自动炮的防护仅相当于标准装甲，却能更有效地抵御竞技场常见的能量武器。为进一步提高防护，IDC 还在机甲右侧躯干安装了一套 ECM 套件。	Final-WholeField
+The Argus is first and foremost a close combat '机甲. For this reason, the Argus carries a 转管自动炮/5 and a pair of ER 中型激光s for close combat. The Argus has a single Machine Gun to defend itself against infantry attacks, and an  LRM-10 launcher  provides the Argus with some long range striking capabilities. The 转管自动炮/5 and the ER 中型激光s are linked to an advanced 定位 Computer which makes them extremely accurate. 
+
+<b><color=#e62e00>怪癖: Nimble</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.08</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	阿古斯首先是一台近距离战斗机甲。因此，阿古斯配备一门转管自动炮/5和一对 ER 中型激光，用于近距离作战。阿古斯还配备一挺机枪，用于抵御步兵攻击；一具 LRM-10 发射器则为它提供一定的远程打击能力。转管自动炮/5和 ER 中型激光都连接到先进的瞄准计算机，使它们具备极高精度。 
+
+<b><color=#e62e00>特性：灵巧</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.08</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧上臂，右侧上臂</color>	Final-WholeField
+A Nova Cat design, the 50 ton Huntsman was designed for Operation Revival and the invasion of the Inner Sphere; first entering production in 3049. An OmniMech, the Huntsman is built around a 250-rated XL引擎 with an Endo Steel Skeleton and 铁纤维装甲 装甲 giving the OmniMech, 21.5 tons of pod space. 5 Jump Jets are fixed to the chassis, giving the Huntsman additional flexibility. The Huntsman N is armed with an ATM-6, an ER PPC and an ER Large Laser. A Heavy 中型激光 provide additional firepower at close range. A 瞄准计算机 improves the accuracy of the weapons.	猎杀者由 Nova Cat 设计，是一台 50 吨机甲，用于复兴行动和入侵内层圈，并于 3049 年首次投入生产。作为全向机甲，猎杀者以一具额定 250 的 XL 引擎为核心，配备内骨骼和铁纤维装甲，为全向机甲提供 21.5 吨 pod 空间。底盘固定安装 5 台跳跃喷射器，进一步提升猎杀者的灵活性。猎杀者 N 配备一门 ATM-6、一门 ER PPC 和一门 ER 大型激光。一门重型中型激光提供额外的近距离火力。标准瞄准计算机可提高武器命中率。	Final-WholeField
+Commander, the Arion is a hybrid 车辆 开发 by 氏族地狱马. It has a powerful ER Large Laser and two SRM-4 launchers, giving it a strong punch at range and up close. Its top speed of 97 km/h makes it a fast and agile 车辆, perfect for hit-and-run tactics. What makes the Arion unique is its ability to convert from a Battle机甲 to a 坦克, allowing it to adapt to different combat situations. Keep in mind that this 车辆 was 开发 by a Clan known for their expertise in hybrid technology, so it's likely to be a formidable opponent on the battlefield.	指挥官，阿里翁是由地狱战马氏族开发的混合车辆。它配备一门强力 ER 大型激光和两门 SRM-4 发射器，在远距离和近距离都能造成强大打击。97 km/h 的最高速度使它成为快速灵活的车辆，非常适合突袭战术。阿里翁的独特之处在于能够在战斗机甲与坦克之间转换，从而适应不同战斗情况。请记住，这款车辆由以混合技术见长的氏族开发，因此很可能是战场上难缠的对手。	Final-WholeField
+The MGP-86 is an unconventional Capellan scout built from a patchwork of sourced and stolen technology. Stealth 装甲 powered by a 守护者ECM keeps it invisible to sensors while a 部分机翼 stolen from 玉鹰氏族 extends jump distance well beyond standard capability. Twin ER 中型激光s provide combat punch and an MML 3 with both ammunition types covers additional range brackets when the situation demands it.
+
+<b><color=#e62e00>怪癖: 短翼</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 0.98</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	MGP-86 是卡佩兰的一款非传统侦察机甲，由采购和窃取来的技术拼凑而成。由守护者 ECM 驱动的隐形装甲使它在传感器中难以显现，而从翡翠隼氏族窃取的跳跃喷射器让它的跳跃距离远超标准能力。两门 ER 中型激光提供战斗火力，MML 3 则可使用两种弹药，在需要时覆盖额外射程区间。
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>掉落成本乘数：0.98</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧上臂，右侧上臂</color>	Final-WholeField
+Created during the heyday of the Star League era, the Fer-de-Lance is a 30 ton Canopian Battle机甲 built by Majesty Metals and Manufacturing at their Canopus IV facilities. Surviving the succession wars mostly intact, the Fer-de-Lance is still 生产 in small quantities by MMM every year and features in most MAF light mech lances. The FDL-4 is built around a 240 rated XL引擎. Outfitted to hunt enemy scout units, the FDL-4 boasts a pair of clan made 改进的 Heavy 中型激光s and a pair of 中型脉冲激光s. Angel ECM and Stealth 装甲 round out the 设计.	长剑是在星盟时代鼎盛时期制造的 30 吨坎诺普斯战斗机甲，由 Majesty Metals and Manufacturing 在坎诺普斯 IV 的工厂生产。它基本完整地挺过继承战争，MMM 至今仍每年少量生产，并装备于大多数 MAF 轻型机甲长枪小队。FDL-4 以一具额定 240 的 XL 引擎为核心。为猎杀敌方侦察单位，FDL-4 配备一对氏族制造的改进型重型中型激光和一对中型脉冲激光。天使 ECM 与隐形装甲完善了这一设计。	Final-WholeField
+Developed in the later years of the Jihad by the Jade Falcons, the Flamberge was based on an older experiment involving 部分机翼 technology. A 70 ton OmniMech, the Flamberge is built around a 280-rated XL引擎 and an Endo Steel chassis with 13.5 tons of 装甲. 11 DHS are installed as standard, as are a pair of SRM-6's with 35 tons of podspace rounding out the design. The Flamberge C is armed with an Arrow IV, paired 中型脉冲激光s, an ER 中型激光 and an ER Large Laser with TAG boosting the designs accuracy and 6 extra DHS offsetting the increased heat load.	火焰剑由翡翠隼氏族在圣战后期开发，源自一项涉及机翼技术的早期实验。这是一台 70 吨全向机甲，以额定 280 的 XL 引擎为核心，采用内骨骼底盘和 13.5 吨装甲。标准配置安装 11 台双倍散热器，并配备一对 SRM-6；35 吨 pod 空间构成了设计主体。火焰剑 C 型配备一门 Arrow IV、成对中型脉冲激光、一门 ER 中型激光和一门 ER 大型激光，TAG 提高了设计的命中率，额外 6 台双倍散热器则抵消了增加的热负荷。	Final-WholeField
+迪法恩斯工业, producing the Locust under license, decided to be bold and modernize the next 设计 heavily. They used their new -7S as a testbed for their homegrown ClanTech components, including the ER 中型激光器 and XL fusion 引擎. The latter is a popular salvage item for those who manage to down this variant, which can reach speeds approaching 200 kilometers an hour
+
+<b><color=#e62e00>怪癖: 窄/低调</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 0.97</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	迪法恩斯工业获得许可生产小蜜蜂后，决定大胆地对下一款设计进行全面现代化改造。他们把新型 -7S 当作自研氏族技术部件的试验台，包括 ER 中型激光和 XL 聚变引擎。后者成为成功击落该变体者热衷搜寻的战利品，因为这台机甲的速度接近每小时 200 公里。
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>掉落成本乘数：0.97</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧上臂，右侧上臂</color>	Final-WholeField
+Another of the 布雷克圣言会's Celestial series OmniMechs, the Deva (named for celestial beings from the Hindu belief system) also makes extensive use of new technologies. It is built with a light fusion 引擎, a heavy-duty gyro that can take half again as much punishment as its standard counterpart, and the small cockpit common to all of the Celestials. This variant uses a 转管自动炮/5 and a Multi-Missile Launcher 7. CASE protects the ammunition for both of these weapons. A Light PPC, an ER Small Laser, and a pair of ER 中型激光s back them up.	天体系列的另一台全向机甲——提婆（名称源自印度教信仰中的天神）同样大量采用新技术。它采用轻型聚变引擎、重型陀螺仪以及所有天体机甲共有的小型驾驶舱；重型陀螺仪能够承受标准型号一倍半的打击。该变体使用一门转管自动炮/5和一具多联导弹发射器 7，CASE 保护两种武器的弹药。一门轻型 PPC、一门 ER 小型激光和一对 ER 中型激光为其提供辅助火力。	Final-WholeField
+Dark Crow 是 Snow Raven 氏族开发的第二线 BattleMech，圣战后仅在 Outworlds Alliance 的内圈设施生产。它以 Dante 上一种奇特的穴居鸟类命名，在第二线部队中很受欢迎。This variant of the Dark Crow appears to be a hybrid of the original Dark Crow and the Dark Crow 2, the ER Large Laser, which has been replaced with a standard Heavy Medium Laser器 and an advanced Targeting Computer, a configuration similar to that found on the Dark Crow 2.	暗鸦是由雪鸦氏族开发的第二线战斗机甲，圣战后只在外域联盟的内层圈设施生产。它因但丁星上一种栖息于洞穴的奇异鸟类而得名，并已成为第二线部队中广受欢迎的设计。这一暗鸦变体似乎是原版暗鸦与暗鸦 2 的混合型：将 ER 大型激光替换为标准重型中型激光和先进瞄准计算机，配置类似暗鸦 2。	Final-WholeField
+A Nova Cat design, the 50 ton Huntsman was designed for Operation Revival and the invasion of the Inner Sphere; first entering production in 3049. An OmniMech, the Huntsman is built around a 250-rated XL引擎 with an Endo Steel Skeleton and 铁纤维装甲 装甲 giving the OmniMech, 21.5 tons of pod space. 5 Jump Jets are fixed to the chassis, giving the Huntsman additional flexibility. The Huntsman I is armed with an ER Large Laser and a HAG/20. A 等离子炮 and an ER 小型脉冲激光 provide additional firepower at close range.	猎杀者由 Nova Cat 设计，是一台 50 吨机甲，用于复兴行动和入侵内层圈，并于 3049 年首次投入生产。作为全向机甲，猎杀者以一具额定 250 的 XL 引擎为核心，配备内骨骼和铁纤维装甲，为全向机甲提供 21.5 吨 pod 空间。底盘固定安装 5 台跳跃喷射器，进一步提升猎杀者的灵活性。猎杀者 I 配备一门 ER 大型激光和一门 HAG/20。一门重型中型激光和一门 ER 中型脉冲激光提供额外的近距离火力。	Final-WholeField
+The Reaver is a one-of-a-kind machine, built by Firefly Foundry from the ground up for Firefly 稳定s to compete in Solaris VII assault-class tournaments starting in 3073. Arena mechs get 设计ed around a very different set of priorities than battlefield machines, and this one shows it, with a Fluid Gun for limiting the opponents strength and a Lance for crowd-pleasing melee work alongside the conventional weapons. Getting something purpose-built for the Games into field service is always an interesting problem to solve.	掠夺者是一台独一无二的机器，由萤火虫铸造厂从零开始制造，供萤火虫的氏族成员参加 3073 年起在 Solaris VII 举行的突击级锦标赛。竞技场机甲的设计优先级与战场机器截然不同，这台机甲就是明证：它在传统武器之外配备流体枪来削弱对手，并配备长枪进行取悦观众的近战表演。要让一台为比赛量身打造的机器投入战场服役，一直都是一个有趣的难题。	Final-WholeField
+Developed by Iroquois Machinery in the mid 3140s, the Broadside is an unusual offering from a company better known for being a major manufacturer of industrial mechs. A 100 ton mech powered by a 300 rated fusion 引擎, the Broadside is a rapidly proliferating sigh in the increasingly strained ranks of the AFFS. Heavily armed with a myriad of weapons, the Broadsword BS-2D is armed with a pair of AC/10s and an AC/5. For secondary armament, it carries a pair of ER 中型激光s, a Flamer and a pair of Re-engineered 中型激光s.	Broadside 由易洛魁机械公司在 3140 年代中期开发。该公司更为人所知的是大型工业机甲制造商，因此这是一款不同寻常的产品。Broadside 是一台由额定 300 的聚变引擎驱动的 100 吨机甲，正在 AFFS 日益紧张的编制中迅速扩散。Broadsword BS-2D 装备两门 AC/10 和一门 AC/5，火力极其强大。辅助武器包括一对 ER 中型激光、一具火焰喷射器和一对重新设计的中型激光。	Final-WholeField
+One of the first mass production QuadMechs, the 55 ton Scorpion entered production in 2570 as an infantry support unit. Shunned by most MechWarriors due to its notoriously unstable gait, the Scorpion would nevertheless see uninterrupted use throughout the Succession Wars and beyond. The Scorpion 12C is powered by a 330-rated XL引擎 giving it a top speed of 97 km/h. An ER PPC, iNARC and an ER Small Laser form the Mechs weapons load. A C3i module allows the Mech to share data with other C3i equipped Mechs.	蝎子是最早量产的四足机甲之一，于 2570 年作为步兵支援单位投入生产。由于步态极不稳定，它遭到大多数机甲战士的嫌弃，但仍在继承战争及其后长期持续服役。蝎子 12C 由一具额定 330 的 XL 引擎驱动，最高速度可达 97 km/h。武器配置包括一门 ER PPC、一具 iNARC 和一门 ER 小型激光。C3i 模块允许该机甲与其他配备 C3i 的机甲共享数据。	Final-WholeField
+The Impaler is James "Amalor Myrnnyx" Degenhardt's custom-built replacement for the lost Urban机甲 "Crossfire." Debuting in 3085 with Melody's Rockers, the 50-ton '机甲 uses a 350 XL引擎 to hit 119 kph, emphasizing speed. With Stealth 装甲, 守护者ECM, and a frame partially based on a Mad Cat Mk II Enhanced, it's hard to track and harder to hit. Armed with twin lances and Clan tech, the Impaler brings medieval menace to the battlefield without suffering from the balance issues typical of mixed-origin builds.	穿刺者是詹姆斯·“阿马洛尔·米尔尼克斯”·德根哈特为替代失踪的城市机甲“交火”而定制制造的机甲。它于 3085 年随梅洛迪的摇滚手登场，这台 50 吨机甲使用 350 级 XL 引擎达到 119 kph，强调速度。凭借硬化装甲、守护者 ECM 以及部分基于强化型 Mad Cat Mk II 的骨架，它难以被追踪，也更难被命中。穿刺者装备两把长枪和氏族技术，把中世纪般的威胁带上战场，同时避免了混血设计常见的平衡问题。	Final-WholeField
+One of the first mass production QuadMechs, the 55 ton Scorpion entered production in 2570 as an infantry support unit. Shunned by most MechWarriors due to it’s notoriously unstable gait, the Scorpion would nevertheless see uninterrupted use throughout the Succession Wars and beyond. The Scorpion 2N is powered by a 330-rated Light Fusion 引擎 giving it a top speed of 97 km/h. A pair of MML-3's and a 等离子步枪 form the Mechs weapons load. TAG allows the Mech to designate targets for allied support units.	蝎子是最早量产的四足机甲之一，于 2570 年作为步兵支援单位投入生产。由于步态极不稳定，它遭到大多数机甲战士的嫌弃，但仍在继承战争及其后长期持续服役。蝎子 2N 由一具额定 330 的轻型聚变引擎驱动，最高速度可达 97 km/h。武器配置包括两具 MML-3 和一门等离子步枪。TAG 允许该机甲为友军支援单位指定目标。	Final-WholeField
+Powered by a 200-rated XL引擎 and mounting MASC, the 20 ton Fire Moth is one of the fastest 机甲s ever created. 设计 for scouting and as an Elemental transport, the Fire Moth entered production in 2874. A combination of 铁纤维装甲 and Endo Steel give the Fire Moth 7.5 tons of Pod Space. The Fire Moth T is armed with a pair of 改进的 Heavy 中型激光s, a 锁定式SRM-2 and an SRM-6. A Supercharger pushes the Fire Moth to even faster speeds.
+
+<b><color=#e62e00>掉落成本乘数: 0.98.</color></b>	火蝠由一具额定 200 的 XL 引擎驱动，并安装 MASC；20 吨的它是有史以来速度最快的机甲之一。火蝠为侦察和运载元素战士而设计，于 2874 年投入生产。铁纤维装甲与内骨骼的组合为火蝠提供 7.5 吨 pod 空间。火蝠 T 型配备一对改进型重型中型激光、一具锁定式 SRM-2 和一具 SRM-6。增压器让火蝠的速度更上一层楼。 <b><color=#e62e00>掉落成本乘数：0.98。</color></b>	Final-WholeField
+Based on the Golden Age Storm Giant, the Scylla is an updated model 开发 by the Steel Vipers as a second line Battlemech. A 100-ton mech with a 400-rated XL引擎, the Scylla SCY-2 is armed with a pair of HAG-20’s. A 小型脉冲激光, a pair of 中型脉冲激光s and a pair of ER 中型激光s deter opponents from closing range with the Scylla.
+
+<b><color=#e62e00>怪癖: 坚固</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.24</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	斯库拉以黄金时代的风暴巨人为基础，由钢蛇氏族开发为第二线战斗机甲的更新型号。这台 100 吨机甲由一具额定 400 的 XL 引擎驱动，斯库拉 SCY-2 配备一对 HAG-20。一门小型脉冲激光、一对中型脉冲激光和一对 ER 中型激光阻止敌人接近斯库拉。
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.24</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂，右侧下臂</color>	Final-WholeField
+The Boggart ultraheavy Proto机甲 was 开发 by The Society as a flanker and harasser unit. It's relatively high ground speed is coupled with a 150 meter jumping capability to allow it to quickly engage multiple foes. The single 等离子炮 mounted on the Boggart is particularly effective against overheating '机甲s. Conventional infantry and 车辆s are also quickly damaged by the weapon.
+
+<b><color=#e62e00>怪癖: Fearsome</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 0.982</color></b>	博格特超重型原型机甲由学会开发，用作侧翼和骚扰单位。它相对较高的地面速度与 150 米跳跃能力相结合，使其能够快速接敌并同时应对多个敌人。博格特上安装的唯一等离子步枪对正在过热的机甲尤其有效，也能迅速杀伤常规步兵和车辆。
+
+<b><color=#e62e00>特性：凶猛</color></b>
+
+<b><color=#e62e00>掉落成本乘数：0.982</color></b>	Final-WholeField
+The Boggart ultraheavy Proto机甲 was 开发 by The Society as a flanker and harasser unit. It's relatively high ground speed is coupled with a 150 meter jumping capability to allow it to quickly engage multiple foes. This variant of the Boggart replaces the 等离子炮 and ammunition with seven Extended Jump Jets and more 装甲. The only weapon mounted on the Boggart 2 is a 中型脉冲激光.
+
+<b><color=#e62e00>怪癖: Fearsome</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 0.982</color></b>	博格特超重型原型机甲由学会开发，用作侧翼和骚扰单位。它相对较高的地面速度与 150 米跳跃能力相结合，使其能够快速接敌并同时应对多个敌人。这一博格特变体用七台延伸型跳跃喷射器和更多装甲替换了等离子步枪及其弹药。博格特 2 上安装的唯一武器是一门中型脉冲激光。
+
+<b><color=#e62e00>特性：凶猛</color></b>
+
+<b><color=#e62e00>掉落成本乘数：0.982</color></b>	Final-WholeField
+A Light Clan 全向Mech, the 30 ton Kit Fox was introduced in 2890 by 云蛇氏族. Favouring a mix of fire power and 装甲 over speed, the Kit Fox is powered by a 180 XL引擎 and features a mix of Endo Steel and Ferro Fibrous; giving it 16 tons of pod space. The Kit Fox A-EWR is s an emergency refit developed by the Invading Clans to improve the Mechs combat effectiveness. The standard Gauss Rifle is swapped for an LB-10X with a pair of Flamers and a 小型脉冲激光 added to handle enemy infantry.	猎狐是一款轻型氏族全向机甲，30 吨的它由星团工业于 2890 年推出。它牺牲速度，转而强调火力与装甲的平衡，由一具 180 级 XL 引擎驱动，并结合内骨骼和铁纤维装甲，提供 16 吨 pod 空间。猎狐 A-EWR 是入侵氏族为提高机甲战斗效能而开发的紧急改装型。标准高斯步枪被 LB-10X 替换，同时增加一对火焰喷射器和一门中型脉冲激光，用于对付敌方步兵。	Final-WholeField
+The Krait Prime configuration is an agile skirmisher, wielding a Class 20 超重型突击高斯 Rifle guided by a 定位 Computer for accurate long-range strikes. Two tons of HAG ammunition support sustained fire, while an 改进的 Heavy 中型激光 and an 改进的 Heavy Small Laser round out its short-range capabilities.
+
+<b><color=#e62e00>怪癖: 改进的 Cooling Jacket - Laser</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.01</color></b>
+
+<b><color=#0064e6>Used with permission from Aries Games and Miniatures.</color></b>	克莱特 Prime 型是一台敏捷的游击机甲，使用一门由标准瞄准计算机引导的 20 型重型高斯步枪，进行精确的远程打击。两吨 HAG 弹药支持持续射击，改进型重型中型激光和改进型重型小型激光则完善了它的近距离能力。
+
+<b><color=#e62e00>特性：改进型冷却套—武器</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.01</color></b>
+
+<b><color=#0064e6>经 Aries Games and Miniatures 授权使用。</color></b>	Final-WholeField
+A Draconis Combine 开发 Omni mech, the Sunder is based on reverse engineered Loki and Thor Omnimechs. A 360-rated XL引擎 allows the omnimech to carry 15 DHS along with 16.5 tons of 装甲 and 36 tons of weapons. The 分裂 SD1-OX is armed with a 4 增强型LRM-5’s and 2 增强型LRM-10’s. 3 ER 中型激光s a 中型脉冲激光 act as secondary weapons. 
+
+<b><color=#e62e00>怪癖: 延长躯干扭转</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.11</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	苏联合开发的全向机甲獠牙，基于逆向工程的洛基和雷神全向机甲。额定 360 的 XL 引擎让这台全向机甲能够携带 15 台双倍散热器、16.5 吨装甲和 36 吨武器。獠牙 SD1-OX 配备 4 门增强型 LRM-5 和 2 门增强型 LRM-10。3 门 ER 中型激光和一门中型脉冲激光作为副武器。
+
+<b><color=#e62e00>特性：增强型躯干扭转</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.11</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+An early FedSuns BattleMech, the 75 ton Hammerhands debuted in 2475 and served as one of the progenitor designs that would influence the iconic Warhammer. Powered by a 225-rated Fusion Core, the Hammerhands HMH-6E is armed with a pair of RAC/5’s, with a pair of 中型激光器 supporting the RAC’s at close range. A C3 Slave allows the HMH-5D to function as part of a C3 enabled Lance, while Improved Jump Jets and TSM give it additional mobility. Guardian ECM adds to the Mechs defensive capabilities.	锤手是早期联邦太阳战斗机甲之一，于 2475 年首次亮相，并成为影响标志性战锤设计的先驱型号之一。它由额定 225 的聚变核心驱动，锤手 HMH-6E 配备一对 RAC/5；另有一对中型激光在近距离为 RAC 提供支援。C3 从属计算机使 HMH-5D 能够作为 C3 网络长枪小队的一员行动，改进型跳跃喷射器和 TSM 则提高其机动性。守护者 ECM 进一步增强了机甲的防御能力。	Final-WholeField
+A much tougher BattleMech than its predecessor, the Viking IIC is protected by a massive 31 tons of GC Hardened Slab 装甲. This is a dense and tough hardened 装甲, which while providing considerable protection in combat also slows the 'Mech down. Its lack of speed would make the Viking IIC unpopular with Clan warriors, who prefer swifter machines in combat. The foundation of toughness is also found in its GC Type 2C Endo Steel skeleton and a General Motors 270-Rated Fusion 引擎.	维京 IIC 比前代战斗机甲坚固得多，配备厚达 31 吨的 GC 硬化板装甲。这是一种致密而坚韧的硬化装甲，虽然能在战斗中提供可观防护，却也会拖慢机甲速度。它速度不足，因此不受偏爱高速机器的氏族战士欢迎。坚固性的基础还来自 GC 2C 型内骨骼和一具额定 270 的聚变引擎。	Final-WholeField
+A 90 ton Assault Mech, the Mad Cat Mk II is a 钻石鲨 redesign of the Timber Wolf introduced in 3061 and intended for export to other Clans. Powered by a 360-rated XL引擎, the Mad Cat Mk II 7 is armed with a pair of HAG/20’s and a pair of Streak LRM-10’s. A pair of ER 中型激光s act as backup weapons. 
+
+<b><color=#e62e00>特性：瞄准增强—中程</color></b>
+
+<b><color=#e62e00>部署成本倍率：1.22</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	Mad Cat Mk II 是一台 90 吨突击机甲，由钻石鲨氏族重新设计自 3061 年推出、并计划出口给其他氏族的 Timber Wolf。它由一具额定 360 的 XL 引擎驱动，Mad Cat Mk II 7 配备一对 HAG/20 和一对 Streak LRM-10。两门 ER 中型激光作为备用武器。
+
+<b><color=#e62e00>特性：改进型瞄准—中程</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.22</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧上臂，右侧上臂</color>	Final-WholeField
+Developed in the later years of the Jihad by the Jade Falcons, the Flamberge was based on an older experiment involving 部分机翼 technology. A 70 ton OmniMech, the Flamberge is built around a 280-rated XL引擎 and an Endo Steel chassis with 13.5 tons of 装甲. 11 DHS are installed as standard, as are a pair of SRM-6's with 35 tons of podspace rounding out the design. The Flamberge Prime is armed with 2 ATM-6's and 4 中型脉冲激光s with 6 改进型跳跃推进器 boosting the designs mobility.	火焰剑由翡翠隼氏族在圣战后期开发，源自一项涉及机翼技术的早期实验。这是一台 70 吨全向机甲，以额定 280 的 XL 引擎为核心，采用内骨骼底盘和 13.5 吨装甲。标准配置安装 11 台双倍散热器，并配备一对 SRM-6；35 吨 pod 空间构成了设计主体。火焰剑 Prime 型配备 2 门 ATM-6 和 4 门中型脉冲激光，6 台改进型跳跃喷射器提高了机动性。	Final-WholeField
+Designed for the Republic Armed Forces in 3121, the Doloire is an 80 ton 全向mech designed with a mixture of Clantech and Inner Sphere tech. Designed around a 320-rated Clan XL引擎 and an 内骨骼复合结构, the Doloire has 32 tons of pod space, with a pair of Clan ER 中型激光s hardwired into the Mechs CT. The Doloire DLR-O is armed with a pair of 大型脉冲激光s and a Gauss Rifle. All of the weapons are Clantech versions, while 4 extra DHS and an Angel ECM suite round out the variant.	多尔瓦为共和国武装部队于 3121 年设计，是一台 80 吨全向机甲，融合了氏族技术与内层圈技术。它以额定 320 的氏族 XL 引擎和内骨骼结构为核心，拥有 32 吨 pod 空间，并在中央躯干预装一对氏族 ER 中型激光。多尔瓦 DLR-O 配备一对中型脉冲激光和一门高斯步枪。所有武器均为氏族技术版本，另外 4 台双倍散热器和一套天使 ECM 套件完善了该变体。	Final-WholeField
+The Lineholder was the first Battle机甲 设计 to come from Kressly Warworks. The Lineholder is 设计ed around a set of `Common Sense Rules` for '机甲 设计. This approach has 生产 a '机甲 with a good ground speed and respectable amount of 装甲 and firepower. The '机甲 has a top speed of 86.4 km/h, allowing it to keep up with all but the fastest light and medium '机甲s. The Lineholder also carries ten tons of 装甲 protection and has fourteen heat sinks. Its mix of off-the-shelf weapons and equipment makes the Lineholder a reliable '机甲 that is easy to repair and is dependable in battle. However, the ultimate selling point for the Lineholder, especially to its target audience of small units and minor nobles, is value and price. In the first year of sales, the Lineholder was historically successful compared with other 55-ton Battle机甲s. For minor factions able to afford brand new Battle机甲s, the Lineholder has become the garrison machine of choice.
+
+<b><color=#e62e00>怪癖: 易于维护</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	Lineholder 是克雷斯利工厂推出的第一款战斗机甲。它围绕机甲设计的“常识规则”打造，兼顾良好地面速度、可观装甲和火力，最高速度 86.4 km/h，能跟上除最快轻型和中型机甲外的大多数单位。它携带 10 吨装甲和 14 台散热器，采用现成武器与设备，可靠、易维修且适合战斗。对小型部队和小贵族而言，它最大的卖点是物有所值、价格低廉。上市首年，Lineholder 相比其他 55 吨战斗机甲取得了历史性的成功；对于买得起新机甲的小型势力，它已成为首选驻防机甲。
+
+<b><color=#e62e00>特性：铁纤维装甲</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.05</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂，右侧下臂</color>	Final-WholeField
+The SM Tank Destroyer was designed as a speedy infighter by scientists from 氏族新星猫. The machine is a cheap and effective 战斗车辆. The vehicle has unique 'glass' dual cockpits on the front of the vehicle that are functionally identical while mounting a smaller anti-infantry turret just behind its left side cockpit. The vehicle's unique split cockpit design allows the cockpit modules to eject from the vehicle. Due to its appearance, the SM1 was dubbed the 'Suicide Machine' by its first pilots because they felt overexposed with the tank's all ferro-glass cockpit.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       255     25
+<b>左侧</b>         155     25
+<b>右侧</b>       150     25
+<b>后方</b>        120     25
+<b>炮塔</b>      150     25
+
+<b>总计</b>      830    125</color>
+
+<color=#ff0000>特性：武器稳定</color>	SM 坦克歼击车由星团工业的科学家设计，是一款高速近战车辆。它便宜而有效，车体前部拥有独特的“玻璃”双驾驶舱，功能相同；左侧驾驶舱后方还安装一座较小的反步兵炮塔。分离式驾驶舱可从车辆上弹射。由于外形独特，首批驾驶员把 SM1 称为“自杀机器”，因为全铁纤维玻璃驾驶舱让他们感觉毫无遮挡。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：8/12 格 / 240/360 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲（重型）
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       255     25
+<b>左侧</b>         155     25
+<b>右侧</b>       150     25
+<b>后方</b>        120     25
+<b>炮塔</b>      150     25
+
+<b>总计</b>      830    125</color>
+
+<color=#ff0000>特性：稳定武器</color>	Final-WholeField
+The Hephaestus 侦察坦克 is an 全向Vehicle produced exclusively by 氏族地狱马. All variants of the Hephaestus incorporate a sizable infantry bay as well as an 主动探头 to locate hidden units. The primary configuration of the Hephaestus is designed for electronic warfare. In addition to the fixed 主动探头, it carries TAG and an ECM Suite in pod mounts, and the primary armament is a pair of 中型脉冲激光s mounted in the turret.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲(氏族)
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       125     15
+<b>左侧</b>         110     15
+<b>右侧</b>       110     15
+<b>后方</b>         90     15
+<b>炮塔</b>       90     15
+
+<b>总计</b>      525     75</color>
+
+<color=#ff0000>特性：导弹干扰器</color>
+
+<color=#ffcc00> 全向 Vehicle</color>
+
+<color=#ffcc00> Can carry 1 战斗装甲 Squads. Has firing ports.</color>	赫菲斯托斯侦察坦克是由星团工业独家生产的全向车辆。所有赫菲斯托斯变体都配备大型步兵舱和主动探头，用于发现隐藏单位。赫菲斯托斯 Prime 专为电子战设计，除固定主动探头外，还在 pod 挂载中携带 TAG 和 ECM 套件，主武器是安装在炮塔上的一对中型脉冲激光。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：8/12 格 / 240/360 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲（重型）
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       125     15
+<b>左侧</b>         110     15
+<b>右侧</b>       110     15
+<b>后方</b>         90     15
+<b>炮塔</b>        90     15
+
+<b>总计</b>      525     75</color>
+
+<color=#ff0000>特性：电子战套件</color>
+
+<color=#ffcc00>全向车辆</color>
+
+<color=#ffcc00>可搭载 1 个战斗装甲班组。配有射击孔。</color>	Final-WholeField
+The Morningstar City Command Vehicle is 设计ed to coordinate battles that take place within urban centers. Though it was ostensibly created to coordinate defensive operations in said areas, it has proven equally adept at going on the offensive. The Morningstar is built around a C3 computer that can coordinate friendly units. Four tons of cargo space let's it ferry infantry into the battle.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       215     30
+<b>左侧</b>         150     30
+<b>右侧</b>       150     30
+<b>后方</b>        100     30
+<b>炮塔</b>      130     30
+
+<b>总计</b>      745    150</color>
+
+<color=#ff0000>怪癖: 主战坦克</color>
+
+<color=#ffcc00> Can carry 1 Battle 装甲 Squads. Has firing ports.</color>	晨星城市指挥车旨在协调城市中心内发生的战斗。虽然它表面上是为协调这些地区的防御行动而建造的，但事实证明它同样擅长发动进攻。晨星以一台能够协调友军单位的 C3 计算机为核心。四吨货舱空间使它能够把步兵运送到战场。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       215     30
+<b>左侧</b>       150     30
+<b>右侧</b>       150     30
+<b>后方</b>       100     30
+<b>炮塔</b>       130     30
+
+<b>总计</b>      745    150</color>
+
+<color=#ff0000>特性：主战坦克</color>
+
+<color=#ffcc00>可搭载 1 个战斗装甲班组。配有射击孔。</color>	Final-WholeField
+Developed by Rileys Rangers as an in house attack helicopter, the Trask proved successful enough that large quantities were sold to the Canopian armed forces and other mercenary groups. A 30 ton VTOL, the Trask can reach speeds of 160kph, thanks to its 160 rated XL引擎; while 5 tons of heavy 铁纤维装甲 装甲 provide heavy protection. The Trask TSK-01 is armed with a 中型X脉冲激光 Laser and a pair of 锁定式SRM-6's.
+
+<b><color=#ffcc00>生物群系限制: 该单位无法在月球生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动: 10/15 格 / 300/450 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 重型铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       150     15
+<b>左侧</b>         120     15
+<b>右侧</b>       120     15
+<b>后方</b>         95     15
+
+<b>总计</b>      500     75</color>
+
+<color=#ff0000>怪癖: 改进的 定位 - Medium</color>	莱利游骑兵将其作为内部攻击直升机开发，特拉斯克取得成功后，大量出售给坎诺普斯武装部队和其他佣兵团。作为 30 吨 VTOL，特拉斯克凭借额定 160 的 XL 引擎可达 160 kph；5 吨重型铁纤维装甲提供强力防护。特拉斯克 TSK-01 配备一门中型 X 脉冲激光和一对锁定式 SRM-6。
+
+<b><color=#ffcc00>生物群系限制：该单位无法部署在月球生物群系。</color></b>
+
+<b><color=#ffcc00>移动：10/15 格 / 300/450 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       150     15
+<b>左侧</b>       120     15
+<b>右侧</b>       120     15
+<b>后方</b>        95     15
+
+<b>总计</b>      500     75</color>
+
+<color=#ff0000>特性：改进型瞄准—中程</color>	Final-WholeField
+A generic medium weight APC, the Sleipnir is a common sight across the Inner Sphere and the Periphery. Armed with a pair of 中型激光s and a pair of Machine Guns, the Sleipnir can provide adequate support for the troops it carries.
+
+<b><color=#ffcc00>生物群系限制：该单位因使用内燃机，无法在月球或火星生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 轻型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       135     25
+<b>左侧</b>         115     25
+<b>右侧</b>       115     25
+<b>后方</b>        100     25
+<b>炮塔</b>      120     25
+
+<b>总计</b>      585    125</color>
+
+<color=#ff0000>特性：通信增强</color>
+
+<color=#ffcc00> Can carry 1 战斗装甲 Squads. Has firing ports.</color>	斯莱普尼尔是一款通用中型装甲输送车，在内层圈和边疆随处可见。它装备一对中型激光和一对机枪，能够为所搭载的部队提供足够支援。
+
+<b><color=#ffcc00>生物群系限制：由于使用内燃机，该单位无法部署在月球或火星生物群系。</color></b>
+
+<b><color=#ffcc00>移动：5/8 格 / 150/240 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 轻型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       135     25
+<b>左侧</b>       115     25
+<b>右侧</b>       115     25
+<b>后方</b>       100     25
+<b>炮塔</b>       120     25
+
+<b>总计</b>      585    125</color>
+
+<color=#ff0000>特性：改进型通信设备</color>
+
+<color=#ffcc00>可搭载 1 个战斗装甲班组。配有射击孔。</color>	Final-WholeField
+The Grigori is one of the 布雷克圣言会's new Celestial series OmniMechs designed by Doctor Devon Cortland. The Grigori (named after fallen angels from Christianity) was added to the 布雷克圣言会 Militia's arsenal in late 3069 as Doctor Cortland oversaw the final production personally. It is constructed on a standard chassis, but makes use of eleven tons of 轻型铁纤维装甲-Fibrous 装甲, a light fusion 引擎, and an XL Gyro; as well as the small cockpit that is common to all of the Celestials. Like the other Celestials, the Grigori has a C3i Computer to help direct its fire. Six 改进型跳跃推进器 vault the Grigori D up to 180 米. A Heavy and a Light PPC allow it to snipe effectively. Two ER Mediums and a pair of ER Smalls back up the PPCs in case an enemy gets under their minimum range.	格里高利是天体系列新型全向机甲之一，由德文·科特兰博士设计。格里高利（名称取自基督教堕天使）于 3069 年末加入天体民兵武库，最终生产由科特兰博士亲自监督。它采用标准底盘，使用 11 吨轻型铁纤维装甲、轻型聚变引擎、XL 陀螺仪以及所有天体机甲共有的小型驾驶舱。与其他天体机甲一样，格里高利配备 C3i 计算机以协调整体火力。六台改进型跳跃喷射器可将格里高利 D 弹射至 180 米高空。一门重型 PPC 和一门轻型 PPC 使其能够有效狙击；两门 ER 中型激光和一对 ER 小型激光用于应对进入 PPC 最小射程的敌人。	Final-WholeField
+After Clan Hell's Horses forces' invaded the Rasalhague Dominion during Operation Noyan in 3147, the Mastodon was designed and signified a large change from their previous reliance on a mix of Executioner variants as the mainstay of their army. The Mastodon's performance after its introduction makes it inevitable that it will be at the forefront of many campaigns to come. The heavily reinforced 结构 resists both weapons fire and the standard wear and tear that accompanies most campaigns. The A configuration combines an Artemis IV enabled LRM-15 launcher with three Large Pulse Lasers and a Gauss Rifle.
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.18</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	3147 年诺扬行动期间，地狱之马氏族部队入侵拉萨哈格自治领后，獒犬应运而生，标志着他们不再依赖多种刽子手变体作为军队主力。獒犬投入使用后的表现证明，它必将成为未来许多战役的先锋。经过大幅强化的结构能够抵御武器射击以及大多数战役中的正常磨损。A 配置将一具配备阿尔忒弥斯 IV 的 LRM-15 发射器、三门中型脉冲激光和一门高斯步枪组合在一起。
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.18</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+For once Pirate Lingo makes sense on a 机甲, the Bilge Rat is exactly like the archaic Rodent it gets its name from. Relying on a mixture of speed and EWAR does this Quad 机甲 try to skim under the Radar and hide in the murky depths of a Chaotic Battlefield. Showing some bite when threatened the 机甲 packs several MRM 5's with paired Chem Lasers wired through the cockpit. Whoever 设计ed the couplings made the machine a bumpy ride at best with the fumes leading straight into the Cockpit. I can only compare this to huffing a Marker while trying to run for your Life, unless the 引擎 explodes underneath you in true PiraSte Fashion. Someone carved 'Cheese and Sin' in the cockpit's interior as well.	海盗黑话难得说得通：舱底鼠就像它名字所指的那只古老啮齿动物。作为一台四足机甲，它依靠速度与电子战混合能力，在混乱战场的浑浊深处贴地掠过并躲避雷达。受到威胁时它也会咬人：机甲装有数门 MRM-5 和成对化学激光，并通过驾驶舱接线。把这些耦合器装上的人，最多让这台机器颠簸难行，烟雾还会直冲驾驶舱。我只能把它比作一边跑命一边猛吸标记弹的感觉，除非这台机甲像真正的海盗一样在你脚下爆炸。有人还在驾驶舱内壁刻下了“奶酪与罪恶”。	Final-WholeField
+Commander, I've received some intel on a new configuration for the Boreas that was 开发 by 氏族地狱马. This variant, known as Configuration A, is equipped with a single Class-20 超突击高斯 Rifle and two tons of ammunition. It seems that the Horses have opted for a more focused approach with this variant, relying on the massive firepower of the Gauss Rifle to take out targets quickly and efficiently. It could be a formidable weapon in the hands of a skilled pilot. However, we should also be aware that the lack of backup weapons could be a liability in certain situations. We'll need to assess the situation carefully before deciding if this variant is right for our mission.	指挥官，我收到了一份关于星团工业为北风开发的新配置情报。这个被称为 A 配置的型号装备一门 20 型重型高斯步枪和两吨弹药。看来地狱之马氏族在这一变体上采取了更集中的思路，依靠高斯步枪的巨大火力快速高效地摧毁目标。它在熟练驾驶员手中可能是极其强大的武器。不过，我们也要注意，缺少备用武器可能在某些情况下成为弱点。决定它是否适合我们的任务前，需要仔细评估形势。	Final-WholeField
+Designed to handle armored infantry and combat vehicles, the A Configuration comes with a balance of energy and ballistic weaponry. Each of the Configuration's arms comes with an ER PPC and 中型脉冲激光, and two 双散热器. In the right torso are fitted two hard-hitting Improved Heavy 中型激光s and a pair of AP Gauss Rifles. The left side torso houses a single LB 10-X Class Autocannon, 'Mech's 2 tons of ammunition for the AC, and the single ton of space for AP Gauss Rifles' ammo. An additional 双散热器 is found in the center torso and another in the head, along with an additional two in each arm. An Angel ECM is mounted in the right torso for added protection.	A 配置用于对付装甲步兵和战斗车辆，在能量武器与弹道武器之间取得平衡。配置的每条手臂都装备一门 ER PPC、一门中型脉冲激光和两具双联机枪。右侧躯干安装两门威力强大的改进型重型中型激光和一对 AP 高斯步枪。左侧躯干装有一门 LB 10-X 自动炮、供自动炮使用的 2 吨弹药，以及 AP 高斯步枪所需的 1 吨弹药。中央躯干还安装一具双联机枪，头部再安装一具，每条手臂各额外安装两具。右侧躯干安装一套天使 ECM 以加强防护。	Final-WholeField
+Designed for the Republic Armed Forces in 3121, the Doloire is an 80 ton 全向mech designed with a mixture of Clantech and Inner Sphere tech. Designed around a 320-rated Clan XL引擎 and an Endo-Composite 结构, the Doloire has 32 tons of pod space, with a pair of Clan ER 中型激光器 hardwired into the Mechs CT. The Doloire DLR-OD is armed with a trio of Streak SRM-4’s and a pair of additional ER 中型激光器 all of which are Clan spec. A pair of TSEMP’s round out the design.
+
+<b><color=#e62e00>特性：Multi Trac</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.09</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	多尔瓦为共和国武装部队于 3121 年设计，是一台 80 吨全向机甲，融合氏族技术与内层圈技术。它以额定 320 的氏族 XL 引擎和内骨骼结构为核心，拥有 32 吨 pod 空间，并在中央躯干预装一对氏族 ER 中型激光。多尔瓦 DLR-OD 配备三门锁定式 SRM-4 和两门额外的 ER 中型激光，全部采用氏族规格。两门 TSEMP 完成了该设计。
+
+<b><color=#e62e00>特性：多重锁定</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.09</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+Introduced during the Jihad, this variant is a revision of the Predator's weaponry and 装甲. The '机甲's 装甲 has been replaced with 铁纤维装甲 装甲 for slightly increased protection. Its LB-X Class autocannons have been replaced by a pair of Class 20 超突击高斯 Rifles with 4 tons of ammunition split between the two torsos. While two ER Small Lasers have been retained, its ER Mediums have been exchanged for pair of 中型脉冲激光s.
+
+<b><color=#e62e00>怪癖: 高级光学系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.14</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	这一变体在圣战期间推出，是掠食者武器与装甲的改进型。机甲装甲换成铁纤维装甲，防护略有提升。原有 LB-X 型自动炮被一对 20 型重型高斯步枪取代，4 吨弹药分装在两个躯干中。两门 ER 小型激光得以保留，而 ER 中型激光则换成一对中型脉冲激光。
+
+<b><color=#e62e00>特性：高级光学系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.14</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂，右侧下臂</color>	Final-WholeField
+A Solaris VII BattleMech, the Silver Fox uses a large but light 引擎 to provide a lot of speed for low weight. The increased size of this 引擎 leaves little room for weapons, but given how fast the Silver Fox is this usually isn't a problem. To protect the 'Mech, Innovative Design Concepts added seven tons of reflective 装甲, which while only as effective as standard 装甲 against missiles or autocannons, provides superior protection against energy weapons common to the arenas. To provide more protection, IDC additionally installed an ECM suite in the 'Mech's right torso.	银狐是一台 Solaris VII 战斗机甲，使用大型但轻量的引擎，以较低重量换取高速度。引擎尺寸增大后几乎没有空间容纳武器，但考虑到银狐的速度，这通常不是问题。为保护机甲，创新设计概念公司加装了 7 吨反射装甲；这种装甲对导弹或自动炮的防护仅相当于标准装甲，却能更有效地抵御竞技场常见的能量武器。为进一步提高防护，IDC 还在机甲右侧躯干安装了一套 ECM 套件。	Final-WholeField
+Powered by a 200-rated XL引擎 and mounting MASC, the 20 ton Fire Moth is one of the fastest 机甲s ever created. 设计 for scouting and as an Elemental transport, the Fire Moth entered production in 2874. A combination of 铁纤维装甲 and Endo Steel give the Fire Moth 7.5 tons of Pod Space. The Fire Moth T is armed with a pair of 改进的 Heavy 中型激光s, a 锁定式SRM-2 and an SRM-6. A Supercharger pushes the Fire Moth to even faster speeds.
+
+<b><color=#e62e00>掉落成本乘数: 0.98.</color></b>	火蝠由一具额定 200 的 XL 引擎驱动，并安装 MASC；20 吨的它是有史以来速度最快的机甲之一。火蝠为侦察和运载元素战士而设计，于 2874 年投入生产。铁纤维装甲与内骨骼的组合为火蝠提供 7.5 吨 pod 空间。火蝠 T 型配备一对改进型重型中型激光、一具锁定式 SRM-2 和一具 SRM-6。增压器让火蝠速度更上一层楼。 <b><color=#e62e00>掉落成本乘数：0.98。</color></b>	Final-WholeField
+A much tougher BattleMech than its predecessor, the Viking IIC is protected by a massive 31 tons of GC Hardened Slab 装甲. This is a dense and tough hardened 装甲, which while providing considerable protection in combat also slows the 'Mech down. Its lack of speed would make the Viking IIC unpopular with Clan warriors, who prefer swifter machines in combat. The foundation of toughness is also found in its GC Type 2C Endo Steel skeleton and a General Motors 270-Rated Fusion 引擎.	维京 IIC 比前代机甲坚固得多，配备厚达 31 吨的 GC 硬化板装甲。这是一种致密而坚韧的硬化装甲，虽然能在战斗中提供可观防护，却也会拖慢机甲速度。它速度不足，因此不受偏爱高速机器的氏族战士欢迎。坚固性的基础还来自 GC 2C 型内骨骼和一具额定 270 的聚变引擎。	Final-WholeField
+Designed during the Amaris Civil War as a command Mech, the 95 ton Nightstar would not see production until the chaos of the First Succession War. The Nightstar ceased production a year after it first walked off the factory line and would not see production again until the late 3050’s. Powered by a 285-rated XL引擎, the Nightstar 10D is armed with a pair of Light Gauss Rifles and a pair of Clan ER Large Lasers. A Medium X-Pulse Laser provides extra firepower at close quarters.	夜星作为指挥机甲在阿玛里内战期间开始设计，但直到第一次继承战争的混乱时期才投入生产。它在离开生产线一年后停产，直到 3050 年代末才重新投产。夜星 10D 由额定 285 的 XL 引擎驱动，配备一对轻型高斯步枪和一对氏族 ER 大型激光；大型 X 脉冲激光在近距离提供额外火力。	Final-WholeField
+Designed for the Republic Armed Forces in 3121, the Doloire is an 80 ton 全向mech designed with a mixture of Clantech and Inner Sphere tech. Designed around a 320-rated Clan XL引擎 and an 内骨骼复合结构, the Doloire has 32 tons of pod space, with a pair of Clan ER 中型激光s hardwired into the Mechs CT. The Doloire DLR-OD is armed with a trio of 锁定式SRM-4’s and a pair of additional ER 中型激光器 all of which are Clan spec. A pair of TSEMP’s round out the design.	多尔瓦为共和国武装部队于 3121 年设计，是一台 80 吨全向机甲，融合氏族技术与内层圈技术。它以额定 320 的氏族 XL 引擎和内骨骼结构为核心，拥有 32 吨 pod 空间，并在中央躯干预装一对氏族 ER 中型激光。多尔瓦 DLR-OD 配备三门锁定式 SRM-4、两门额外 ER 中型激光和一对 TSEMP，全部采用氏族规格。	Final-WholeField
+Powered by a 200-rated XL引擎 and mounting MASC, the 20 ton Fire Moth is one of the fastest Mechs ever created. Designed for scouting and as an Elemental transport, the Fire Moth entered production in 2874. A combination of 铁纤维装甲 and Endo Steel give the Fire Moth 7.5 tons of Pod Space. The Fire Moth I is armed with an ER Large Laser, an Improved Heavy Small Laser and an LRM-5.
+
+<b><color=#e62e00>部署费用倍率：0.98.</color></b>	火蝠由额定 200 的 XL 引擎驱动，并安装 MASC；20 吨的它是有史以来速度最快的机甲之一。火蝠为侦察和运载元素战士而设计，于 2874 年投入生产。铁纤维装甲与内骨骼的组合为火蝠提供 7.5 吨 pod 空间。火蝠 I 配备一门 ER 大型激光、一门改进型重型小型激光和一具 LRM-5。 <b><color=#e62e00>掉落成本乘数：0.98。</color></b>	Final-WholeField
+Built with nearly Same Mindset as the Other 灵魂行者s, the symmetrical Loadout gives this 灵魂行者 one Hell of a Punch. A Gauss Rifle, SRM6 and LRM15 Launcher per side make it even scarier than the normal ones. While not Faster, it has Even more Armour than before, so even the Occasional shots in the Back are Shrugged off by this Mech. The only Downside to this Variant is the ammo Dependancy, which as it stands, might be the only Weakness.	这台机甲与其他型号采用近乎相同的思路，对称式载荷让它拥有惊人的火力。每侧各配备一门高斯步枪、一具 SRM-6 和一具 LRM-15 发射器，比普通型号更加可怕。虽然速度没有提升，但装甲比以前更厚，因此连偶尔击中后方的炮火也能轻松承受。这一变体唯一的缺点是依赖弹药，而这可能正是它目前唯一的弱点。	Final-WholeField
+A unique Franken机甲 created by the Tooth of Ymir Mercenary unit, the 100 ton Schwerer Gustav was built from parts sourced from a variety of destroyed mechs and grafted onto the remains of a salvaged Annihilator. Powered by a 400-rated XL引擎, the Schwerer Gustav mounts a 重击者火炮 Piece, with a 二元激光 and a Clan RAC/5 for close range combat. Intended as a Command 机甲, a 指挥控制台 is mounted in the head and a 血猎犬主动探头 in the Center Torso.	舒维勒·古斯塔夫是由尤弥尔之牙佣兵部队制造的独特弗兰肯机甲。这个 100 吨机甲由多台被摧毁机甲的零件拼装而成，嫁接在一台回收的歼灭者残骸上。它由额定 400 的 XL 引擎驱动，装备一门重击者火炮、一门双联机枪和一门氏族 RAC/5，用于近距离战斗。作为指挥机甲，它在头部安装指挥控制台，并在中央躯干安装血猎犬主动探头。	Final-WholeField
+Designed for the Republic Armed Forces in 3121, the Doloire is an 80 ton 全向mech designed with a mixture of Clantech and Inner Sphere tech. Designed around a 320-rated Clan XL引擎 and an 内骨骼复合结构, the Doloire has 32 tons of pod space, with a pair of Clan ER 中型激光s hardwired into the Mechs CT. The Doloire DLR-OA is armed with a pair of 等离子步枪s. A pair of Clan SRM-6’s and an additional ER 中型激光 round out the variant.	多尔瓦为共和国武装部队于 3121 年设计，是一台 80 吨全向机甲，融合氏族技术与内层圈技术。它以额定 320 的氏族 XL 引擎和内骨骼结构为核心，拥有 32 吨 pod 空间，并在中央躯干预装一对氏族 ER 中型激光。多尔瓦 DLR-OA 配备两门等离子步枪、一对氏族 SRM-6 和一门额外的 ER 中型激光。	Final-WholeField
+The Mosquito MOS-NCX is a Narc missile beacon testbed, carrying a pod launcher with six charges to mark targets. An LRM 20 with two tons of ammunition follows up on marked foes, backed by a single 中型激光器 for close defense. It relies on hit and run tactics to close and retreat.
+
+<b><color=#e62e00>特性：精准武器—导弹</color></b>
+
+<b><color=#e62e00>部署成本倍率：0.98</color></b>	蚊虫 MOS-NCX 是一台 NARC 导弹信标试验台，携带一具 pod 发射器和 6 枚标记弹，用于标记目标。它配备一具 LRM-20 和两吨弹药，追击被标记的敌人，并以一门中型激光提供近距离防御。该机甲依靠打了就跑的战术接敌和撤退。
+
+<b><color=#e62e00>特性：精准武器—导弹</color></b>
+
+<b><color=#e62e00>掉落成本乘数：0.98</color></b>	Final-WholeField
+This variant removes the large X-Pulse laser and three ER 中型激光器 and replaces them with two 锁定式SRM-4 launchers and one 锁定式SRM-6 launcher. It also carries a supercharger-enhanced 引擎, but at the loss of one and a half tons of 装甲.
+
+<b><color=#e62e00>怪癖: 坚固</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.03</color></b>
+
+<color=#FFEF00>手臂驱动器限制：右侧 Lower</color>	这一变体拆除大型 X 脉冲激光和三门 ER 中型激光，换成两具锁定式 SRM-4 发射器和一具锁定式 SRM-6 发射器。它还搭载由增压器强化的引擎，但代价是减少一吨半装甲。
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.03</color></b>
+
+<color=#FFEF00>手臂驱动器限制：右侧下臂</color>	Final-WholeField
+This variant replaces the SA-OS's Large Laser with an 中型X脉冲激光 Laser as well as the Ultra AC/5 with an Ultra AC/10. It also replaces the standard 装甲 with 铁纤维装甲 and replaces the chassis with a composite chassis.
+
+<b><color=#e62e00>怪癖: 受保护的驱动器</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.11</color></b>
+
+<color=#FFEF00>手臂驱动器限制：右侧 Lower, 左侧 Upper</color>	这一变体将 SA-OS 的大型激光替换为一门中型 X 脉冲激光，并将 Ultra AC/5 替换为 Ultra AC/10。同时，标准装甲替换为铁纤维装甲，底盘替换为复合底盘。
+
+<b><color=#e62e00>特性：电子战套件</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.11</color></b>
+
+<color=#FFEF00>手臂驱动器限制：右侧下臂，左侧上臂</color>	Final-WholeField
+The Society managed to squeeze in both a 转管自动炮 20 and a Large Supra Laser, making the ERE-PZ the best performing variant of the Erebus. The major downside is the huge price increase by almost a third more c-bills.
+
+<b><color=#e62e00>特性：武器稳定</color></b>
+
+<b><color=#e62e00>部署成本倍率：1.42</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	学会设法同时塞入一门转管自动炮/20和一门大型超脉冲激光，使 ERE-PZ 成为厄瑞布斯中性能最好的变体。主要缺点是价格暴涨，C-bill 成本增加了将近三分之一。
+
+<b><color=#e62e00>特性：稳定武器</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.42</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂，右侧下臂</color>	Final-WholeField
+Known and revered across the Inner Sphere and beyond, the Warhammer is the pre-eminent heavy 机甲. Debuting in 2515, the 70-ton 机甲 is a solid blend of firepower and mobility 设计ed to outfight almost any opponent. Powered by a 280-rated 轻型引擎, the Warhammer WHM-9K is armed with a pair of Heavy PPCs. An MML-9 deters opponents from closing in. CASE II rounds out the 设计.	战锤在内层圈及更远地区都声名显赫，是最杰出的重型机甲。70 吨的它于 2515 年首次亮相，是火力与机动性的坚实结合，旨在击败几乎任何对手。战锤 WHM-9K 由额定 280 的聚变引擎驱动，装备一对重型 PPC；MML-9 可阻止敌人接近，CASE II 则完善了整体设计。	Final-WholeField
+A Light Clan 全向Mech, the 30 ton Kit Fox was introduced in 2890 by 云蛇氏族. Favouring a mix of firepower and 装甲 over speed, the Kit Fox is powered by a 180 XL引擎 and features a mix of Endo Steel and 铁纤维装甲; giving it 16 tons of pod space. The Kit Fox BLO is armed with a UAC/10, an ER 中型激光 and an ER Small Laser. C3i rounds out the variant.	猎狐是一款轻型氏族全向机甲，30 吨的它由星团工业于 2890 年推出。它牺牲速度，转而强调火力与装甲的平衡，由一具 180 级 XL 引擎驱动，并结合内骨骼和铁纤维装甲，提供 16 吨 pod 空间。猎狐 BLO 配备一门 UAC/10、一门 ER 中型激光和一门 ER 小型激光，C3i 完善了该变体。	Final-WholeField
+A Draconis Combine 开发 Omni mech, the Sunder is based on reverse engineered Loki and Thor Omnimechs. A 360-rated XL引擎 allows the omnimech to carry 15 DHS along with 16.5 tons of 装甲 and 36 tons of weapons. The 分裂 SD1-OF is armed with 5 Clan LRM-5’s and 6 Thunderbolt-5’s. A Clan ER 中型激光器 acts as a secondary weapon.	苏联合开发的全向机甲獠牙，基于逆向工程的洛基和雷神全向机甲。额定 360 的 XL 引擎让它能够携带 15 台双倍散热器、16.5 吨装甲和 36 吨武器。獠牙 SD1-OF 配备 5 门氏族 LRM-5 和 6 门雷霆霹雳-5，氏族 ER 中型激光器作为副武器。	Final-WholeField
+Based on the original 9G, this variant was produced during the Jihad. The 'Mech's long-range weaponry included an LRM-10 launcher with 1 ton of ammunition and a standard Large Laser fitted in the left arm. The 'Mech's close-in weaponry included an Class 20 Ultra Autocannon with 3 tons of ammunition and three standard 中型激光器.	该变体基于原始 9G 型号，在圣战期间生产。机甲远程武器包括一具 LRM-10 发射器和 1 吨弹药，以及安装在左臂的一门标准大型激光。近距离武器包括一门 20 型转管自动炮、3 吨弹药和三门标准中型激光。	Final-WholeField
+由于它是"伟大之父"选用的战斗机甲，古老的猎户座在氏族的神秘传统中始终占有特殊地位。出于对克伦斯基将军遗产的尊重，所有氏族都维持该设计数十年，即便更新更先进技术的发展日益令它在战场上失去效力。猎户座 IIC 并非像某些氏族升级那样彻底重做，而是更换了原版的大部分内部结构与武器，同时保留其质量与外观。此次 IIC 升级采用内骨骼底盘和十二吨铁纤维装甲，并使用十二台双倍散热器，腾出重量以搭载更重的武器。This variant switches the Gauss Rifle to an 超级自动炮/10 and downgrading the LRM-20 rack into an LRM-15.	由于是“伟大之父”选用的战斗机甲，古老的猎户座在氏族的神秘传统中始终占有特殊地位。出于对克伦斯基将军遗产的尊重，所有氏族都维持这一设计数十年，即便更新、更先进技术的发展日益令它在战场上失去效力。猎户座 IIC 并不像某些氏族升级型号那样彻底重做，而是更换了原版的大部分内部结构与武器，同时保留其质量与外观。此次 IIC 升级采用内骨骼底盘和 12 吨铁纤维装甲，并使用 12 台双倍散热器，腾出重量以搭载更重的武器。这一变体将高斯步枪换成超级自动炮/10，并把 LRM-20 发射架降级为 LRM-15。	Final-WholeField
+A first generation Battle机甲, the 50 ton Phoenix was the first native Battle机甲 to be built by the Rim Worlds Republic. Built with primitive components and powered by a 240-rated Fusion Core, the Phoenix 1KC is a Retrotech 设计 生产 by WRI Inc. The 1KC carries an AC/5 and a pair of SRM-2’s.	凤凰是第一代战斗机甲，50 吨的它是边缘世界共和国制造的第一款本土战斗机甲。它采用原始部件，由额定 240 的聚变核心驱动；凤凰 1KC 是 WRI 公司制造的复古科技改装机甲，携带一门 AC/5 和一对 SRM-2。	Final-WholeField
+An upgrade of the Highlander introduced in 3115, the Highlander 740 is powered by a 270-rated Fusion Core. An ER PPC is paired with an Artemis IV augmented LRM-20 for long range combat, while a 锁定式SRM-6, 2 M-Pods and a pair of ER 中型激光s cover close range combat.	高地人 740 是 3115 年推出的高地人升级型，由额定 270 的聚变核心驱动。远程武器是一门 ER PPC 和一具经阿尔忒弥斯 IV 增强的 LRM-20；近距离武器包括一具锁定式 SRM-6、两具 M-Pod 和一对 ER 中型激光。	Final-WholeField
+The Vulcan is one of the most well-known Inner Sphere anti-infantry 'Mechs. Its unparalleled mobility and loadouts fully focused on dealing with infantry and 战斗装甲 lead to it for a long time being the prime 'Mech for urban battlefields.	Vulcan 是内层圈最知名的反步兵机甲之一。它无与伦比的机动性和完全针对步兵与战斗装甲的武器配置，使其长期以来一直是城市战场的首选机甲。	Final-WholeField
+看看这个，这东西肯定被悉心保养、珍爱了数百年. 它确实是台麦基，但居然硬塞进了钢内骨结构和更现代的技术，每个部件都散发着修理过数十次——甚至数百次的痕迹. 引擎上还贴着张“＜3大自然”的贴纸！
+
+<b><color=#e62e00>特质: 易于维护</color></b>
+
+<b><color=#e62e00>部署费用倍率: 1.2</color></b>
+
+<color=#FFEF00>臂部驱动器限制: 左上臂、右上臂</color>	这是一台专为东部边疆某位熟悉的爱人打造的机甲。它确实是一台坚固的战斗机甲，采用内骨骼与先进技术，每台机甲都配备散热器。它还拥有一次又一次的战斗伤痕，并配备一门“龙”3 型火炮。
+
+<b><color=#e62e00>特性：易于维护</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.2</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧上臂，右侧上臂</color>	Final-WholeField
+The Malak E utilizes experimental technology in the form of a Thunderbolt 5 missile launcher, though it only carries one ton of CASE-protected ammunition. To this it can add a Light PPC and a pair of ER 中型激光器.	马拉克 E 使用实验技术，装备一具雷霆霹雳-5 导弹发射器，但只携带 1 吨由 CASE 保护的弹药。此外还可搭载一门轻型 PPC 和一对 ER 中型激光。	Final-WholeField
+The Triton was designed by Clan Goliath Scorpion for their Seekers. This variant replaces the Streak and ER Micro Laser of the standard model for a single Heavy 中型激光器.	海神由氏族钢铁蜥蜴为其寻路者设计。这一变体用一门重型中型激光替换标准型号的 Streak 激光和 ER 微型激光。	Final-WholeField
+<b><color=#0064e6>Used with permission from Aries Games and Miniatures.</color></b>	<b><color=#0064e6>经 Aries Games and Miniatures 授权使用。</color></b>	Final-WholeField
+Inspired by reports of multi-gun 坦克s used by Inner Sphere forces, the 地狱马 created the Tezcatlipoca as a replacement to the ageing Oro 重型坦克. Powered by a 240 rated fuel cell, the Tezcatlipoca can reach speeds of 65kph and has 10.5 tons of armour. Armed with a pair of Large 化学激光s, the Tezcatlipoca is somewhat short ranged by Clan standards, but the reliability and low cost of manufacture more then make up for this. A quartet of Medium 化学激光s and 4 Machine Guns provide additional fire power at closer ranges. Currently only fielded by 地狱马, the bulk of these 坦克s have been allocated to second line units; often as command 车辆s.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 4/6 格 / 120/180 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       240     30
+<b>左侧</b>         175     30
+<b>右侧</b>       175     30
+<b>后方</b>        150     30
+<b>炮塔</b>      225     30
+
+<b>总计</b>      965    150</color>
+
+<color=#ff0000>怪癖: 主战坦克</color>	受内层圈多炮坦克报告启发，钢铁蜥蜴氏族制造了特斯卡特利波卡，用于替代老旧的奥罗重型坦克。它由额定 240 的燃料电池驱动，速度可达 65 kph，拥有 10.5 吨装甲。两门大型激光使其按氏族标准而言射程偏短，但可靠性和低廉制造成本足以弥补这一点。四门中型激光和 4 挺机枪提供额外近距离火力。目前仅由钢铁蜥蜴氏族装备，大多数车辆分配给第二线部队，常作为指挥车辆。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：4/6 格 / 120/180 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       240     30
+<b>左侧</b>       175     30
+<b>右侧</b>       175     30
+<b>后方</b>       150     30
+<b>炮塔</b>       225     30
+
+<b>总计</b>       965    150</color>
+
+<color=#ff0000>特性：主战坦克</color>	Final-WholeField
+When General Aleksandr Kerensky led most of the 星际联盟防卫军 into exile in 2784, they brought prototypes of the Clint BattleMech with them. After the annihilation of 狼獾氏族, 雪鸦氏族 revisited these prototypes and was able to begin mass-production of the 'Mech in 2830 and introduced 2842. They ensured that it kept up with advances in Clan technology, eventually becoming the design that is now known as the Clint IIC. Developed during the Jihad in 3073, the Clint IIC 2 was fitted with an all-energy weapons configuration. The 'Mech mounts five 中型脉冲激光s divided amongst its center torso, left torso, and right arm; one in each of the torso locations, and the remaining three in the arm. This variant has been provided eight 改进型跳跃推进器 to greatly enhance its mobility in tactical situations. To cope with the new levels of heat, ten 双散热器 are used instead of the single versions. Additionally, an ECM Suite has been allocated to the head. Lastly, 铁纤维装甲 装甲 now protects the design in place of the original Standard 装甲.	2784 年，克伦斯基将军率大部分星盟军队流亡时，他们带走了克林特战斗机甲的原型。毁灭钢铁蜥蜴氏族后，雪鸦氏族重新研究这些原型，并于 2830 年开始量产，2842 年正式推出。他们不断跟进氏族技术进步，最终发展为如今的克林特 IIC。克林特 IIC 2 于 3073 年圣战期间开发，采用全能量武器配置：五门中型脉冲激光分布在中央躯干、左侧躯干和右臂，躯干各一门，剩余三门在手臂上。八台改进型跳跃喷射器大幅增强战术机动性；为应对新增热量，用十台双倍散热器取代单倍型号。头部还安装 ECM 套件，原有标准装甲则换成铁纤维装甲。	Final-WholeField
+The Shrike is outfitted with a powerful 定位 Computer that allows it to bring accurate firepower to bear on the battlefield. It has a hard-hitting armament that gives the '机甲 a powerful sting in combat at most ranges. A 长 Bow LRM-10-rack allows pilots to engage enemies at long range, and two Type 9 超级自动炮/5s are effective against even other assault-class '机甲s. Lastly, two Series 2b ER Large Lasers provide a fairly powerful punch should the other weapon systems deplete their ammunition. The 设计 owes its large weapon capacity to due use to its Endo Steel construction and its large 380-rated Extra-Light Fusion 引擎. Engineers enhanced the 设计 by adding a 部分机翼, giving the Shrike extra jump capacity as well as additional cooling abilities under normal atmospheric conditions.
+
+<b><color=#e62e00>怪癖: Command 机甲</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.23</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower</color>	鹫鹰配备强大的瞄准计算机，能够在战场上实施精确火力。它拥有覆盖多数射程的强力武器。长弓 LRM-10 可攻击远距离敌人，两门 9 型转管自动炮/5 即使面对其他突击机甲也很有效。若其他武器弹药耗尽，两门 2b 系列 ER 大型激光仍能提供可观火力。内骨骼结构和额定 380 的超轻型聚变引擎赋予它巨大的武器承载能力。工程师加装跳跃喷射器，进一步提高跳跃能力，并在正常大气条件下增强散热。
+
+<b><color=#e62e00>特性：指挥机甲</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.23</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂</color>	Final-WholeField
+First introduced in 3096, this post-Jihad 设计 was created by Clan Wolf as a cheap anti-aircraft platform. Slow and heavily 装甲ed, the Aesir is often set into static positions where its relatively slow speed is not considered a liability. Used by 氏族地狱马, this version of the Aesir replaces the LB-X autocannons with a single turret mounted HAG/40. It carries six tons of ammunition and retains the 装甲 protection and 装甲ed Motive System of the original Aesir.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲(氏族)
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       200     30
+<b>左侧</b>         200     30
+<b>右侧</b>       200     30
+<b>后方</b>        190     30
+<b>炮塔</b>      185     30
+
+<b>总计</b>      975    150</color>
+
+<color=#ff0000>怪癖: Anti-Air 定位</color>	Aesir 于 3096 年首次推出，是圣战后的设计，由狼之氏族制造为廉价防空平台。它速度缓慢但装甲厚重，常被部署在固定阵地，因此低速通常不是问题。该版本由钢铁蜥蜴氏族使用，以炮塔安装的一门 HAG/40 替换 LB-X 自动炮，携带 6 吨弹药，并保留原 Aesir 的装甲防护和导弹防御系统。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲（重型）
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       200     30
+<b>左侧</b>       200     30
+<b>右侧</b>       200     30
+<b>后方</b>       190     30
+<b>炮塔</b>       185     30
+
+<b>总计</b>       975    150</color>
+
+<color=#ff0000>特性：高级瞄准系统</color>	Final-WholeField
+The Grigori is one of the 布雷克圣言会's new Celestial series OmniMechs designed by Doctor Devon Cortland. The Grigori (named after fallen angels from Christianity) was added to the 布雷克圣言会 Militia's arsenal in late 3069 as Doctor Cortland oversaw the final production personally. It is constructed on a standard chassis, but makes use of eleven tons of 轻型铁纤维装甲-Fibrous 装甲, a light fusion 引擎, and an XL Gyro; as well as the small cockpit that is common to all of the Celestials. Like the other Celestials, the Grigori has a C3i Computer to help direct its fire. This variant also jumps, though it also adds a 守护者ECM Suite for further defensive measures. Three MRM 10s aim to take advantage of the integral C3 network, while twin 锁定式SRM-6s spreads fire out all over an enemy target. Two ER 中型激光s back up the missile weapons in case they run out of ammunition.	格里高利是天体系列全向机甲之一，由德文·科特兰博士设计。它于 3069 年末加入天体民兵武库，采用标准底盘、11 吨轻型铁纤维装甲、轻型聚变引擎、XL 陀螺仪和小型驾驶舱，并配备 C3i 计算机协调整体火力。该变体同样具备跳跃能力，并额外安装守护者 ECM 套件。三具 MRM-10 利用内置 C3 网络，双具锁定式 SRM-6 可将火力分散到目标各处；两门 ER 中型激光用于弹药耗尽后的支援。	Final-WholeField
+Commissioned in 3042 by Imperator Marius O'Reilly, the Gladius Medium Hover Tank is a fast and simple combat 车辆. The Gladius is 生产 entirely on Alphard, with the exception of its single gun. The rugged 设计 is heavily 装甲ed for a 坦克 its size, mounting six tons of 装甲. The simple Internal combustion 引擎 is cheap to produce and easy to repair and maintain.
+
+<b><color=#ffcc00>生物群系限制: 无.</color></b>
+
+<b><color=#ffcc00>移动: 9/14 格 / 270/420 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     20
+<b>左侧</b>         130     20
+<b>右侧</b>       130     20
+<b>后方</b>        105     20
+
+<b>总计</b>      535     80</color>
+
+<color=#ff0000>怪癖: 窄/低调</color>	角斗士中型悬浮坦克由马里乌斯·奥莱利执政官于 3042 年委托，是一款快速而简单的战斗车辆。除唯一主炮外，角斗士完全在阿尔法德生产。坚固设计配备 6 吨装甲，对同吨位坦克而言防护厚重；简单的内燃机生产成本低、易于维修维护。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：9/14 格 / 270/420 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       170     20
+<b>左侧</b>       130     20
+<b>右侧</b>       130     20
+<b>后方</b>       105     20
+
+<b>总计</b>       535     80</color>
+
+<color=#ff0000>特性：窄小低矮轮廓</color>	Final-WholeField
+A Jihad era upgrade of the Succession Wars Partisan, the Partisan Air Defense Tank (Cell) upgrades the original ICE 引擎 to a Fuel Cell. The free weight is used to mount a C3 slave and upgrade the Autocannons to a pair of AC/2’s and a pair of LB-10X’s. AMS and heavier 装甲 rounds out the design.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       200     40
+<b>左侧</b>         145     40
+<b>右侧</b>       145     40
+<b>后方</b>        100     40
+<b>炮塔</b>      150     40
+
+<b>总计</b>      740    200</color>
+
+<color=#ff0000>特性：防空瞄准系统</color>	圣战时代对继承战争游击队员防空坦克的升级型，将原有内燃机换成燃料电池。节省的重量用于安装 C3 从属计算机，并将自动炮升级为一对 AC/2 和一对 LB-10X。AMS 和更厚的装甲完善了设计。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：3/5 格 / 90/150 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 重型铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       200     40
+<b>左侧</b>       145     40
+<b>右侧</b>       145     40
+<b>后方</b>       100     40
+<b>炮塔</b>       150     40
+
+<b>总计</b>       740    200</color>
+
+<color=#ff0000>特性：高级瞄准系统</color>	Final-WholeField
+A Light Clan 全向Mech, the 30 ton Kit Fox was introduced in 2890 by Clan Cloud Cobra. Favouring a mix of fire power and 装甲 over speed, the Kit Fox is powered by a 180 XL引擎 and features a mix of Endo Steel and Ferro Fibrous; giving it 16 tons of pod space. The Kit Fox D-EWR is s an emergency refit developed by the Invading Clans to improve the Mechs combat effectiveness. The standard NARC Pod and LRM-5 are removed. With the freed weight, the LRM-15's are upgraded to use the Artemis IV FCS and a pair of ER 中型激光器 added. A Small Pulse Laser rounds out the configuration.
+
+<b><color=#e62e00>特性：Narrow/Low Profile</color></b>
+
+<b><color=#e62e00>部署费用倍率：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	猎狐 D-EWR 是入侵氏族为提高机甲战斗效能而开发的紧急改装型。它拆除了标准 NARC pod 和 LRM-5；节省的重量用于让 LRM-15 使用阿尔忒弥斯 IV 系统，并增加一对 ER 中型激光。一门小型脉冲激光完善了配置。
+
+<b><color=#e62e00>特性：窄小低矮轮廓</color></b>
+
+<b><color=#e62e00>掉落成本乘数：0.99</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+An odd experimental 设计, the Maxim Flanker is 设计ed to increase the hovercraft's performance while dropping troops, it has much more 装甲 on its right side than on its left side. The idea was to present a heavily-装甲ed broadside to the enemy while performing its primary duty. 
+
+<b><color=#ffcc00>生物群系限制: 该单位因使用内燃机，无法在月球或火星生物群系部署。</color></b>
+
+<b><color=#ffcc00>移动: 8/12 格 / 240/360 米.</color></b>
+
+<color=#ffcc00><b>装甲:</b> 铁纤维装甲
+<b>结构:</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>        95     25
+<b>左侧</b>          50     25
+<b>右侧</b>       220     25
+<b>后方</b>         60     25
+<b>炮塔</b>       95     25
+
+<b>总计</b>      520    125</color>
+
+<color=#ff0000>怪癖: 坚固</color>	马克西姆侧翼车是一款奇特的实验车辆，旨在提高悬浮车运载部队时的性能；右侧装甲远多于左侧。设计理念是在执行主要任务时向敌人展示装甲厚重的侧舷。
+
+<b><color=#ffcc00>生物群系限制：使用燃料电池，因此无法部署在月球生物群系。</color></b>
+
+<b><color=#ffcc00>移动：8/12 格 / 240/360 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>        95     25
+<b>左侧</b>          50     25
+<b>右侧</b>       220     25
+<b>后方</b>         60     25
+<b>炮塔</b>        95     25
+
+<b>总计</b>      520    125</color>
+
+<color=#ff0000>特性：坚固</color>	Final-WholeField
+Not designed for traditional combat, the Carrier is a force multiplier. Designed to support allies from range, the Carrier can hang back behind friendly lines where it's lack of 装甲 isn't a concern.
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3 格 / 60/90 米.</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       150     40
+<b>左侧</b>         140     40
+<b>右侧</b>       140     40
+<b>后方</b>        100     40
+<b>炮塔</b>      100     40
+
+<b>总计</b>      630    200</color>
+
+<color=#ff0000>特性：瞄准增强—远程</color>	运输车并非为传统战斗而设计，而是用来放大部队战力的力量倍增器。它旨在从远处支援盟友，可在友军战线后方待命，无需担心自身装甲薄弱。
+
+<b><color=#ffcc00>生物群系限制：无。</color></b>
+
+<b><color=#ffcc00>移动：2/3 格 / 60/90 米。</color></b>
+
+<color=#ffcc00><b>装甲：</b> 铁纤维装甲
+<b>结构：</b> 结构
+<b>数值       A        S  </b>
+<b>前方</b>       150     40
+<b>左侧</b>       140     40
+<b>右侧</b>       140     40
+<b>后方</b>       100     40
+<b>炮塔</b>       100     40
+
+<b>总计</b>       630    200</color>
+
+<color=#ff0000>特性：改进型瞄准—导弹</color>	Final-WholeField
+The Hellspawn was designed in response to a call from the Federated Commonwealth for a modern, highly mobile, fire-support BattleMech. The Hellspawn is built on an Endo Steel chassis and a 270 XL引擎 that gives it a top speed of 97.2 km/h. For protection, the Hellspawn is equipped with a 守护者ECM Suite and has six and a half tons of 装甲 that is barely adequate when compared to other medium 'Mechs. To enhance the 'Mech's mobility it has six jump jets. The 8E is a variant aimed at increasing the 'Mech's long range effectiveness. Two of the 中型脉冲激光s have been traded for lighter ER 中型激光s and an Artemis IV system has been added to the LRMs.	地狱犬 8E 的设计源于联邦共和国对现代化、高机动火力支援战斗机甲的需求。它采用内骨骼底盘和 270 级 XL 引擎，最高速度 97.2 km/h，配备守护者 ECM 套件和六吨半装甲，并安装六台跳跃喷射器。8E 型用更轻的 ER 中型激光替换两门中型脉冲激光，并为 LRM 加装阿尔忒弥斯 IV 系统。	Final-WholeField
+First 生产 in 2948, the Ice Ferret is a medium scout Omni机甲 often employed as a head hunter or strike unit. A 45 ton Clan Omni机甲, the Ice Ferret is powered by a 360-rated XL引擎 and has 9.5 tons of pod space thanks to a combination of Endo Steel, an XL引擎 and 铁纤维装甲. The Ice Ferret IFR-T is armed with an 改进的 Heavy Large Laser, an ER 中型激光 and an SRM-4. An 主动探头 improves the Ice Ferrets scout capabilities and a Supercharger boosts its speed.
+
+<b><color=#e62e00>怪癖: 改进的 Sensors</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：Omni</color>	冰貂首次生产于 2948 年，是一款中型侦察全向机甲，经常被用作猎杀或突击单位。45 吨的它由额定 360 的 XL 引擎驱动，并凭借内骨骼、XL 引擎和铁纤维装甲拥有 9.5 吨 pod 空间。冰貂 IFR-T 配备改进型重型大型激光、ER 中型激光和 SRM-4；主动探头增强侦察能力，增压器提升速度。
+
+<b><color=#e62e00>特性：改进型传感器</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.04</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+The 5W variant of the Goliath is armed with two 等离子步枪s which not only inflict damage on their targets but heat as well. The 5W is also armed with three 中型激光s for close combat. The '机甲 has a 守护者ECM Suite which is needed to properly use its sixteen and a half tons of Stealth 装甲. Additionally, the '机甲 has a 小型驾驶舱 that is cramped and makes the '机甲 harder to pilot but saves valuable weight. The '机甲 also has an 改进的 C3 computer, allowing it to share targeting telemetry with similarly equipped units.
+
+<b><color=#e62e00>怪癖: Multi Trac</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.14</color></b>	石像鬼 5W 型配备两门等离子步枪，不仅能造成伤害，还能使目标升温；另有三门中型激光用于近战。守护者 ECM 套件是正常使用其 16.5 吨隐形装甲所必需的。狭窄的小型驾驶舱使驾驶更困难，却能节省重量。改进型 C3 计算机可与同样装备的单位共享目标遥测。
+
+<b><color=#e62e00>特性：多重锁定</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.14</color></b>	Final-WholeField
+The Spirit is one of the first Clan 'Mechs produced in the Inner Sphere. Though some components are imported from Clan space, the 245 XL引擎 is made in the 玉鹰氏族 Occupation Zone. The 引擎 is only one of the weight-saving technologies the design makes use of, however, as the Spirit incorporates both an endo steel 结构 and six tons of 铁纤维装甲 装甲. The Spirit itself is a relatively fast recon 'Mech that can hold its own at both long and short ranges. In addition, it makes for a good training 'Mech, ensuring that it will have a place in the Falcon touman for a long time to come.	灵魂是最早在内层圈生产的氏族机甲之一。245 级 XL 引擎产自翡翠隼占领区，机体还采用内骨骼和 6 吨铁纤维装甲。灵魂是一款速度很快的侦察机甲，在远近距离都能独当一面，也是优秀的训练机甲，因此长期在翡翠隼氏族军团中占有一席之地。	Final-WholeField
+The Argus is first and foremost a close combat '机甲. For this reason, the Argus carries a 转管自动炮/5 and a pair of ER 中型激光s for close combat. The Argus has a single Machine Gun to defend itself against infantry attacks, and an  LRM-10 launcher  provides the Argus with some long range striking capabilities. The 转管自动炮/5 and the ER 中型激光s are linked to an advanced 定位 Computer which makes them extremely accurate. 
+
+<b><color=#e62e00>怪癖: Nimble</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.08</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	阿古斯是一台近距离战斗机甲，配备一门转管自动炮/5、一对 ER 中型激光、一挺机枪和一具 LRM-10 发射器。转管自动炮/5 与 ER 中型激光连接到先进瞄准计算机，精度极高。 
+
+<b><color=#e62e00>特性：灵巧</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.08</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧上臂，右侧上臂</color>	Final-WholeField
+Created during the heyday of the Star League era, the Fer-de-Lance is a 30 ton Canopian Battle机甲 built by Majesty Metals and Manufacturing at their Canopus IV facilities. Surviving the succession wars mostly intact, the Fer-de-Lance is still 生产 in small quantities by MMM every year and features in most MAF light mech lances. The FDL-4 is built around a 240 rated XL引擎. Outfitted to hunt enemy scout units, the FDL-4 boasts a pair of clan made 改进的 Heavy 中型激光s and a pair of 中型脉冲激光s. Angel ECM and Stealth 装甲 round out the 设计.	长剑是在星盟时代鼎盛时期制造的 30 吨坎诺普斯战斗机甲，由 Majesty Metals and Manufacturing 生产。它挺过继承战争后仍由 MMM 每年少量生产，并装备于大多数 MAF 轻型机甲长枪小队。FDL-4 以额定 240 的 XL 引擎为核心，配备一对氏族制造的改进型重型中型激光和一对中型脉冲激光；天使 ECM 与隐形装甲完善了设计。	Final-WholeField
+Dark Crow 是 Snow Raven 氏族开发的第二线 BattleMech，圣战后仅在 Outworlds Alliance 的内圈设施生产。它以 Dante 上一种奇特的穴居鸟类命名，在第二线部队中很受欢迎。This variant of the Dark Crow appears to be a hybrid of the original Dark Crow and the Dark Crow 2, the ER Large Laser, which has been replaced with a standard Heavy Medium Laser器 and an advanced Targeting Computer, a configuration similar to that found on the Dark Crow 2.	暗鸦是由雪鸦氏族开发的第二线战斗机甲，圣战后仅在外域联盟的内层圈设施生产。这一变体似乎是原版暗鸦与暗鸦 2 的混合型：将 ER 大型激光替换为标准重型中型激光和先进瞄准计算机，配置类似暗鸦 2。	Final-WholeField
+One of the first mass production QuadMechs, the 55 ton Scorpion entered production in 2570 as an infantry support unit. Shunned by most MechWarriors due to its notoriously unstable gait, the Scorpion would nevertheless see uninterrupted use throughout the Succession Wars and beyond. The Scorpion 12C is powered by a 330-rated XL引擎 giving it a top speed of 97 km/h. An ER PPC, iNARC and an ER Small Laser form the Mechs weapons load. A C3i module allows the Mech to share data with other C3i equipped Mechs.	蝎子是最早量产的四足机甲之一，于 2570 年作为步兵支援单位投产。蝎子 12C 由额定 330 的 XL 引擎驱动，最高速度 97 km/h；配备 ER PPC、iNARC 和 ER 小型激光。C3i 模块允许它与其他配备 C3i 的机甲共享数据。	Final-WholeField
+Based on the Golden Age Storm Giant, the Scylla is an updated model 开发 by the Steel Vipers as a second line Battlemech. A 100-ton mech with a 400-rated XL引擎, the Scylla SCY-2 is armed with a pair of HAG-20’s. A 小型脉冲激光, a pair of 中型脉冲激光s and a pair of ER 中型激光s deter opponents from closing range with the Scylla.
+
+<b><color=#e62e00>怪癖: 坚固</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.24</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	斯库拉以黄金时代的风暴巨人为基础，由钢蛇氏族开发为第二线战斗机甲更新型号。100 吨的斯库拉 SCY-2 由额定 400 的 XL 引擎驱动，装备一对 HAG-20、一门小型脉冲激光、一对中型脉冲激光和一对 ER 中型激光。
+
+<b><color=#e62e00>特性：坚固</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.24</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂，右侧下臂</color>	Final-WholeField
+The Krait Prime configuration is an agile skirmisher, wielding a Class 20 超重型突击高斯 Rifle guided by a 定位 Computer for accurate long-range strikes. Two tons of HAG ammunition support sustained fire, while an 改进的 Heavy 中型激光 and an 改进的 Heavy Small Laser round out its short-range capabilities.
+
+<b><color=#e62e00>怪癖: 改进的 Cooling Jacket - Laser</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.01</color></b>
+
+<b><color=#0064e6>Used with permission from Aries Games and Miniatures.</color></b>	克莱特 Prime 型是一台敏捷游击机甲，使用由瞄准计算机引导的 20 型 HAG 步枪进行精确远程打击。两吨 HAG 弹药支持持续射击，改进型重型中型激光和改进型重型小型激光完善近距离能力。
+
+<b><color=#e62e00>特性：改进型冷却套—武器</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.01</color></b>
+
+<b><color=#0064e6>经 Aries Games and Miniatures 授权使用。</color></b>	Final-WholeField
+A 90 ton Assault Mech, the Mad Cat Mk II is a 钻石鲨 redesign of the Timber Wolf introduced in 3061 and intended for export to other Clans. Powered by a 360-rated XL引擎, the Mad Cat Mk II 7 is armed with a pair of HAG/20’s and a pair of Streak LRM-10’s. A pair of ER 中型激光s act as backup weapons. 
+
+<b><color=#e62e00>特性：瞄准增强—中程</color></b>
+
+<b><color=#e62e00>部署成本倍率：1.22</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Upper, 右侧 Upper</color>	Mad Cat Mk II 是一台 90 吨突击机甲，由钻石鲨氏族重新设计自 Timber Wolf，3061 年推出并计划出口给其他氏族。它由额定 360 的 XL 引擎驱动，Mad Cat Mk II 7 配备一对 HAG/20、一对 Streak LRM-10 和一对 ER 中型激光。
+
+<b><color=#e62e00>特性：改进型瞄准—中程</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.22</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧上臂，右侧上臂</color>	Final-WholeField
+A 65-ton design that emphasizes overwhelming firepower over speed or 装甲, the Hellbringer is a Clan 全向Mech. Powered by a 325-rated XL引擎, the Hellbringer has 28.5 tons of pod space. The Hellbringer D is armed with a pair of Plasma Cannons. A Micro Pulse Laser, pair of B-Pods and 4 Medium Pulse Lasers cover close range combat. 
+
+<b><color=#e62e00>特性：Integrated Searchlight</color></b>
+
+<b><color=#e62e00>部署费用倍率：1.1</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	地狱使者是强调压倒性火力而非速度或装甲的 65 吨氏族全向机甲。它由额定 325 的 XL 引擎驱动，拥有 28.5 吨 pod 空间。地狱使者 D 配备两门等离子炮；微型脉冲激光、一对 B-Pod 和四门中型脉冲激光负责近距离战斗。
+
+<b><color=#e62e00>特性：集成探照灯</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.1</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+Known and revered across the Inner Sphere and beyond, the Warhammer is the pre-eminent heavy Mech. Debuting in 2515, the 70-ton Mech is a solid blend of firepower and mobility designed to outfight almost any opponent. Powered by a 350 XL引擎, the Warhammer WHM-6Rk is armed with a pair of PPC’s. A pair of 中型激光s, Small Lasers, Machine Guns and an SRM-6 deter opponents from closing in. 双散热器 round out the variant.
+
+<b><color=#e62e00>部署费用倍率：1.1.</color></b>	战锤是内层圈最杰出的重型机甲之一。它于 2515 年首次亮相，70 吨的机体兼具火力与机动性。WHM-6Rk 由 350 级 XL 引擎驱动，装备一对 PPC、一对中型激光、小型激光、机枪和 SRM-6，双倍散热器完善了该变体。
+
+<b><color=#e62e00>部署费用倍率：1.1。</color></b>	Final-WholeField
+A Light Clan 全向Mech, the 30 ton Kit Fox was introduced in 2890 by 云蛇氏族. Favouring a mix of firepower and 装甲 over speed, the Kit Fox is powered by a 180 XL引擎 and features a mix of Endo Steel and 铁纤维装甲; giving it 16 tons of pod space. The Kit Fox T is armed with an ER Large Laser and a PAC/4. An ER 中型激光 and a 锁定式SRM-4 make up the close range firepower, with a Supercharger and an 主动探头 filling the rest of the available pod space.	猎狐 T 型配备一门 ER 大型激光和一门 PAC/4；一门 ER 中型激光和一具锁定式 SRM-4 提供近距离火力，增压器和主动探头占用其余 pod 空间。	Final-WholeField
+The Lament is a Heavy Class Battle机甲 originally created for the Armed Forces of the 球体共和国 in late 3120s. Its blend of firepower and 装甲 has individuals comparing the '机甲 with previous 设计s such as the Warhammer and the heavier Awesome Assault '机甲.
+
+<b><color=#e62e00>怪癖: Variable Range 定位</color></b>
+
+<b><color=#e62e00>掉落成本乘数: 1.09</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧 Lower, 右侧 Lower</color>	哀叹是一台重型战斗机甲，最初为 3120 年代末的联邦共和国武装部队制造。其火力与装甲的平衡让人们将它与战锤和更重型的强袭机甲相提并论。
+
+<b><color=#e62e00>特性：可变射程瞄准系统</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.09</color></b>
+
+<color=#FFEF00>手臂驱动器限制：左侧下臂，右侧下臂</color>	Final-WholeField
+The quadrupedal Ursa was a jack of all trades often paired alongside the Scourge to perform risky escort duties or to go on heavy recon missions. The Ursa is popular with mercenary units and with those forces fighting along the border between the Lyran Commonwealth and 玉鹰氏族. Key to the Ursa's design is its revolutionary gyroscope, which renders the 'Mech exceptionally stable - even in comparison to other quad BattleMechs.	四足机甲乌尔萨是一台全能型单位，常与天灾搭档执行危险护航或重型侦察任务。它深受佣兵部队以及在莱拉联邦和翡翠隼氏族边境作战的势力欢迎。乌尔萨设计的关键是革命性陀螺仪，使这台机甲异常稳定，即便与其他四足战斗机甲相比也是如此。	Final-WholeField
+灰熊是鬼熊氏族科学家在三十世纪开发的战斗机甲。遗憾的是，该设计在任何方面都不出众，因此从未在氏族的图曼中占据一席之地。Thirteen tons of 装甲 are mounted on an Endo Steel frame. Jump jets are mounted so that the Grizzly can leap up to 120 米 at a time. Aside from the 'jack of all trades, master of none' moniker, the Grizzly is also poorly engineered. Slagged 装甲 tends to get stuck in joints and weapons, while the actuators are difficult to repair in their own right.	格里兹利是一台 20 世纪末设计的战斗机甲，几乎各方面都能应付，因此长期占据一席之地。它在内骨骼框架上安装 13 吨装甲，并配备跳跃喷射器，可一次跳跃 120 米。除了“样样通、样样松”的称号外，它还存在工程缺陷：剥落的装甲容易卡入关节和武器，执行器本身也难以维修。	Final-WholeField
+Developed by 通用汽车 during the Dark Age, the OmniMarauder MAD-BR-O turns the classic Marauder in to an OmniMech, albeit through heavy use of expensive Clan Tech. A skin of Ferro Lamellor 装甲 covers the Mech, while a 300-rated XL引擎 and an Endo Steel Chassis allow the Omni to carry 35.5 tons of pod space. The MAD-BR-O is armed with a pair of Clan ER PPC’s, a pair of Clan ER 中型激光s and a Clan HAG/30.	黑暗时代由天蝎座氏族开发，OmniMarauder MAD-BR-O 通过大量昂贵氏族技术将经典掠夺者改造成全向机甲。机体覆盖铁层叠装甲，额定 300 的 XL 引擎和内骨骼底盘让它拥有 35.5 吨 pod 空间。MAD-BR-O 配备一对氏族 ER PPC、一对氏族 ER 中型激光和一门氏族 HAG/30。	Final-WholeField
+This Society configuration of the Mist Lynx features the a pair of Medium Supra Lasers in the torsos and a pair of Small Supra Lasers in the arms. These advanced weapons combined with the Nova CEWS makes the Mist Lynx Z-A an effective skirmisher.
+
+<b><color=#e62e00>特性：改进型传感器</color></b>
+
+<b><color=#e62e00>部署成本倍率：1.07</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	这一学会配置的雾猞猁在躯干安装一对中型超脉冲激光，在手臂安装一对小型超脉冲激光。这些先进武器与 Nova CEWS 结合，使雾猞猁 Z-A 成为有效的游击机甲。
+
+<b><color=#e62e00>特性：改进型传感器</color></b>
+
+<b><color=#e62e00>掉落成本乘数：1.07</color></b>
+
+<color=#FFEF00>手臂驱动器限制：全向</color>	Final-WholeField
+The Boggart ultraheavy Proto机甲 was 开发 by The Society as a flanker and harasser unit. It's relatively high ground speed is coupled with a 150 meter jumping capability to allow it to quickly engage multiple foes. The single 等离子炮 mounted on the Boggart is particularly effective against overheating '机甲s. Conventional infantry and 车辆s are also quickly damaged by the weapon.	博格特超重型原型机甲由学会开发，用作侧翼和骚扰单位。它拥有较高地面速度和 150 米跳跃能力，能够快速接敌并同时应对多个敌人。博格特上的唯一等离子步枪对过热机甲尤其有效，也能迅速杀伤常规步兵和车辆。	Final-WholeField
+The Boggart ultraheavy Proto机甲 was 开发 by The Society as a flanker and harasser unit. It's relatively high ground speed is coupled with a 150 meter jumping capability to allow it to quickly engage multiple foes. This variant of the Boggart replaces the 等离子炮 and ammunition with seven Extended Jump Jets and more 装甲. The only weapon mounted on the Boggart 2 is a 中型脉冲激光.	博格特超重型原型机甲由学会开发，用作侧翼和骚扰单位。这一变体用七台延伸型跳跃喷射器和更多装甲替换等离子步枪及其弹药；博格特 2 上安装的唯一武器是一门中型脉冲激光。	Final-WholeField
+Introduced in 2940, the Viper is a 40-ton OmniMech that emphasizes speed and 装甲, with only 8.5 tons of podspace available for weapons. A 320-rated XL引擎 powers the Viper and 8 Jump Jets are hardwired into the chassis, further improving the mobility. The Viper F is armed with 8 HMG’s and a trio of ER 中型激光s.
+
+<b><color=#e62e00>部署费用倍率：1.03.</color></b>	毒蛇于 2940 年推出，是一台强调速度和装甲的 40 吨全向机甲，可用武器 pod 空间仅 8.5 吨。它由额定 320 的 XL 引擎驱动，底盘固定安装 8 台跳跃喷射器，进一步提升机动性。毒蛇 F 配备 8 挺重型机枪和三门 ER 中型激光。 <b><color=#e62e00>掉落成本乘数：1.03。</color></b>	Final-WholeField
+The Hippogriff is a 雪鸦氏族 设计, which was created as part of their need for additional ground troops for their Touman. Made as a companion to the Gorgon, the Hippogriff was 设计ed as a mobile light fire support unit. Considered to be a Heavy Proto机甲, the 设计 is lightly armed for its size. Its only weaponry is a pair of SRM-2 Launchers.	鹰马是由雪鸦氏族开发的设计，用于补充军团地面部队。它作为戈耳工的伴随单位，被设计成机动轻型火力支援单位。虽然属于重型原型机甲，但其武装对自身尺寸而言很轻，仅有两具 SRM-2 发射器。	Final-WholeField
+The Dominus configuration is armed with a pair of arm-mounted Heavy PPCs, giving it powerful ranged combat capabilities. It also has a 短管PPC and a pair of ER 中型激光s mounted in the head and center torso, respectively, giving it a powerful close range punch. Eight additional double heat sinks keep the 'Mech's heat under control.	Dominus 配备一对安装在手臂上的重型 PPC，具备强大远程作战能力；头部和中央躯干分别安装一门轻型 PPC 和一对 ER 中型激光，近距离火力同样强劲。额外八台双倍散热器控制机甲热量。	Final-WholeField
+A Clan built upgrade of the Guillotine, the Guillotine IIC is assigned to second line units and solahma troops. The Guillotine IIC-2 is armed with a quartet of ER 中型激光s and an ER PPC, backed up by a 锁定式SRM-4 for close range engagements. A 瞄准计算机 enhances the mech’s accuracy and 改进型跳跃推进器 increase it’s mobility.	断头台 IIC 是氏族制造的断头台升级型，分配给第二线部队和 Solahma 部队。断头台 IIC-2 配备四门 ER 中型激光和一门 ER PPC，并以一具锁定式 SRM-4 支援近距离交战。瞄准计算机提高命中率，改进型跳跃喷射器增强机动性。	Final-WholeField
+掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。它最初是狼之龙骑兵的专属机甲，直到 3030 年第四次继承战争之后才流传到龙骑兵之外。Powered by a 300-rated 轻型引擎, the Marauder II MAD-6S is armed with a Gauss Rifle, paired ER PPC’s and 中型脉冲激光s. AMS and an ER Small Laser round out the design.
+
+<b><color=#e62e00>部署费用倍率：1.18.</color></b>	掠夺者 II 于 3012 年问世，是经典掠夺者的重新设计，把 75 吨重型机甲变成 100 吨突击机甲。掠夺者 II MAD-6S 由额定 300 的轻型引擎驱动，装备一门高斯步枪、两门 ER PPC 和两门中型脉冲激光；AMS 与 ER 小型激光完善了设计。
+
+<b><color=#e62e00>部署费用倍率：1.18。</color></b>	Final-WholeField
+The Roc is considered one of the best of the first generation Proto机甲s, and most known successful, as it was 生产, operative and fighting for almost a century. This Dark Age variant uses an Extended Jump Jet system to keep up with Snow Raven Hippogriffs. It carries a 化学激光.	Roc 被认为是第一代原型机甲中最优秀、最成功的型号之一，持续生产、运行和战斗了近一个世纪。这一黑暗时代变体使用延伸型跳跃喷射器系统，以跟上雪鸦氏族的鹰马，并携带一门大型激光。	Final-WholeField
+A Dark Age upgrade of the Centurion 9H, the 9H3 replaces the primitive 引擎 with a standard Fusion 引擎 and upgrades the 装甲 to 铁纤维装甲; giving it comparable protection to a Succession Wars era Centurion. The freed weight is used to upgrade the LB-10X to a UAC/10.	这是 Centurion 9H 的黑暗时代升级型。9H3 用标准聚变引擎替换原始引擎，并将装甲升级为铁纤维装甲，使其防护达到继承战争时期 Centurion 的水平。节省的重量用于将 LB-10X 升级为 UAC/10。	Final-WholeField
+The Ostscout 9CS has been rebuilt from the ground up with advanced 装甲 and chassis to allow an advanced suite of electronics and a respectable weapons loadout. It's still not built for the front line but is a very capable scout.	Ostscout 9CS 采用先进装甲和底盘从头重建，以容纳先进电子套件和可观武器配置。它仍不适合前线作战，却是一台能力很强的侦察机甲。	Final-WholeField
+A non-全向 variant of the Deimos, this design features mainly Experimental equipment. This variant was speculated by Armed Forces of the Federated Suns intelligence as being based on the original prototype of the Deimos.	这是 Deimos 的非全向变体，主要采用实验设备。联邦太阳武装部队情报部门推测，它可能基于 Deimos 的原始原型。	Final-WholeField
+Developed during the Draconis Combine's push into the Federated Suns during the 3140s. This variant swaps the Thunderbolt launchers for 银弹高斯 Rifles and are excellent anti-aerospace platforms.	该变体在 3140 年代龙马联合军进攻联邦太阳期间开发，用重型高斯步枪替换雷霆霹雳发射器，是优秀的反空天平台。	Final-WholeField
+However this 黑蟒 ended up in the hands of a pirate is a mystery; the scarier mystery is how they got advanced and experimental technology into it.	这台机甲为何落入海盗手中是个谜，更可怕的问题是他们究竟如何把先进实验技术装进了它。	Final-WholeField
+If you want to move a lot of ammo this is great. It's a big truck, Boss.	如果你想运输大量弹药，这辆车非常合适。老板，它就是一辆大卡车。	Final-WholeField
