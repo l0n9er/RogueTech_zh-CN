@@ -154,9 +154,9 @@ if ([IO.File]::Exists($qaUnitBaseline)) {
     $qaBeforeRows = @(Import-Csv -LiteralPath $qaBefore -Delimiter "`t" -ErrorAction SilentlyContinue)
     $script:qaBaselineRows = $qaBeforeRows
     foreach ($row in $qaBeforeRows) {
-        # 以样本内容也参与基线键：同一文件/字段若被本次安装改成另一种坏值，
-        # 仍应被识别为新增问题，避免基线机制掩盖安装器自身的污染。
-        [void]$script:qaBaselineKeys.Add(([string]$row.Status + "`t" + [string]$row.File + "`t" + [string]$row.Field + "`t" + [string]$row.Sample))
+        # 不比较 Status/Sample：安装器可能改变同一条已有问题的分类或具体文本，
+        # 不能因此把 DLC/模组原有内容差异判成失败。
+        [void]$script:qaBaselineKeys.Add(([string]$row.File + "`t" + [string]$row.Field))
     }
     Ok ("安装前单位字段基线: " + $qaBeforeRows.Count + " 条（DLC/模组差异不作为失败）")
 }
@@ -878,7 +878,7 @@ if ([IO.File]::Exists($qaUnit)) {
     & $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File $qaUnit -mods (Join-Path $gameRoot 'Mods') -out $qaReport
     $qaRows = @(Import-Csv -LiteralPath $qaReport -Delimiter "`t" -ErrorAction SilentlyContinue)
     $qaNewRows = @($qaRows | Where-Object {
-        $key = ([string]$_.Status + "`t" + [string]$_.File + "`t" + [string]$_.Field + "`t" + [string]$_.Sample)
+        $key = ([string]$_.File + "`t" + [string]$_.Field)
         -not $script:qaBaselineKeys.Contains($key)
     })
     if ($qaNewRows.Count -gt 0) {
