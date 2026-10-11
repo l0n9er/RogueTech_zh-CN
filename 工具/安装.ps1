@@ -309,7 +309,7 @@ function AssertPackageInputs {
     $refs = [regex]::Matches($body, "'([^']+\.(?:ps1|tsv))'") | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
     foreach ($rel in $refs) {
         # 这些是安装过程生成到 backup 的报告名，不是包内输入词典。
-        if ($rel -in @('unit-fields-qa.tsv','mods-json-files.txt','coverage-summary.txt')) { continue }
+        if ($rel -in @('unit-fields-qa.tsv','unit-fields-qa-before.tsv','unit-fields-qa-summary.txt','mods-json-files.txt','coverage-summary.txt')) { continue }
         $p = Join-Path $PSScriptRoot $rel
         if (-not (Test-Path -LiteralPath $p)) { [void]$missing.Add($p) }
     }
