@@ -143,6 +143,24 @@ $script:installLog = Join-Path $backupDir 'install.log'
 Say (" 备份目录: backup\" + $stamp)
 Say (" 安装日志: backup\" + $stamp + "\install.log")
 
+# 目标机可以启用不同 DLC/模组组合；这些内容集合本身的英文或历史格式问题
+# 不能阻止安装。先记录安装前基线，最终校验只拦截本次安装新产生的问题。
+$script:qaBaselineRows = @()
+$script:qaBaselineKeys = New-Object 'System.Collections.Generic.HashSet[string]'
+$qaUnitBaseline = Join-Path $PSScriptRoot 'qa-unit-fields.ps1'
+if ([IO.File]::Exists($qaUnitBaseline)) {
+    $qaBefore = Join-Path $backupDir 'unit-fields-qa-before.tsv'
+    & $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File $qaUnitBaseline -mods (Join-Path $gameRoot 'Mods') -out $qaBefore | Out-Null
+    $qaBeforeRows = @(Import-Csv -LiteralPath $qaBefore -Delimiter "`t" -ErrorAction SilentlyContinue)
+    $script:qaBaselineRows = $qaBeforeRows
+    foreach ($row in $qaBeforeRows) {
+        # 以样本内容也参与基线键：同一文件/字段若被本次安装改成另一种坏值，
+        # 仍应被识别为新增问题，避免基线机制掩盖安装器自身的污染。
+        [void]$script:qaBaselineKeys.Add(([string]$row.Status + "`t" + [string]$row.File + "`t" + [string]$row.Field + "`t" + [string]$row.Sample))
+    }
+    Ok ("安装前单位字段基线: " + $qaBeforeRows.Count + " 条（DLC/模组差异不作为失败）")
+}
+
 # 汉化 DLL 与非 DLL 资源的固定清单。先定义清单，再做一次完整预检查，
 # 确保任何游戏文件被覆盖前就能发现安装包不完整。
 $dllList = @(
@@ -852,33 +870,38 @@ if ($LASTEXITCODE -ne 0) {
     Warn "检测到标识符被汉化（已自动还原），详见 backup\registry-check.txt"
 } else { Ok "注册表标识符正常" }
 
-# 全量单位字段审计：不再只看抽样型号。无效 JSON、长英文详情中的中文
-# 插入污染、字面换行和裸控制字符都必须进入报告；其中格式问题直接阻止
-# 安装宣称成功，避免处理器静默跳过后仍显示“安装完成”。
+# 全量单位字段审计：不再只看抽样型号。安装前已存在的英文/格式问题属于
+# 目标机 DLC/模组内容差异，只记录不拦截；本次安装新增的问题才阻止成功宣称。
 $qaUnit = Join-Path $PSScriptRoot 'qa-unit-fields.ps1'
 if ([IO.File]::Exists($qaUnit)) {
     $qaReport = Join-Path $backupDir 'unit-fields-qa.tsv'
     & $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File $qaUnit -mods (Join-Path $gameRoot 'Mods') -out $qaReport
-    if ($LASTEXITCODE -ne 0) {
+    $qaRows = @(Import-Csv -LiteralPath $qaReport -Delimiter "`t" -ErrorAction SilentlyContinue)
+    $qaNewRows = @($qaRows | Where-Object {
+        $key = ([string]$_.Status + "`t" + [string]$_.File + "`t" + [string]$_.Field + "`t" + [string]$_.Sample)
+        -not $script:qaBaselineKeys.Contains($key)
+    })
+    if ($qaNewRows.Count -gt 0) {
         # 失败时直接显示分类计数和首批样本，用户无需在乱码窗口中猜测原因；
         # 完整报告仍保存在备份目录，便于继续修复。
-        $qaRows = @(Import-Csv -LiteralPath $qaReport -Delimiter "`t" -ErrorAction SilentlyContinue)
         $qaSummary = Join-Path $backupDir 'unit-fields-qa-summary.txt'
         $summary = New-Object 'System.Collections.Generic.List[string]'
         [void]$summary.Add('单位字段 QA 失败摘要')
         [void]$summary.Add(('目标 Mods: ' + (Join-Path $gameRoot 'Mods')))
-        [void]$summary.Add(('报告行数: ' + $qaRows.Count))
-        [void]$summary.Add('说明: DLC/模组内容集合不同会导致扫描数量不同；以下报告来自本机实际扫描结果。')
-        if ($qaRows.Count -gt 0) {
+        [void]$summary.Add(('安装后报告行数: ' + $qaRows.Count))
+        [void]$summary.Add(('本次新增问题: ' + $qaNewRows.Count))
+        [void]$summary.Add(('安装前已有问题（已忽略）: ' + ($qaRows.Count - $qaNewRows.Count)))
+        [void]$summary.Add('说明: DLC/模组内容集合不同造成的安装前问题不会阻止安装。')
+        if ($qaNewRows.Count -gt 0) {
             Write-Host "      单位字段 QA 失败分类:" -ForegroundColor Red
-            $qaRows | Group-Object Status | Sort-Object Count -Descending | ForEach-Object {
+            $qaNewRows | Group-Object Status | Sort-Object Count -Descending | ForEach-Object {
                 $line = ("        " + $_.Name + " = " + $_.Count)
                 Write-Host $line -ForegroundColor Red
                 [void]$summary.Add($line.Trim())
             }
             Write-Host "      首个失败样本:" -ForegroundColor Yellow
             [void]$summary.Add('首个失败样本:')
-            $qaRows | Select-Object -First 10 | ForEach-Object {
+            $qaNewRows | Select-Object -First 10 | ForEach-Object {
                 $head = ("[" + $_.Status + "] " + $_.File + " / " + $_.Field)
                 $sample = ('  ' + ([string]$_.Sample -replace "`r?`n", ' '))
                 Write-Host ("        " + $head) -ForegroundColor Yellow
@@ -891,6 +914,11 @@ if ([IO.File]::Exists($qaUnit)) {
         Write-Host ("      诊断摘要: " + $qaSummary) -ForegroundColor Yellow
         LogLine ("诊断摘要: " + $qaSummary)
         throw "单位字段全量校验失败，详见 backup\$stamp\unit-fields-qa.tsv"
+    } elseif ($qaRows.Count -gt 0) {
+        Warn ("单位字段 QA 发现 " + $qaRows.Count + " 条问题，均已存在于安装前基线；按 DLC/模组差异规则放行")
+        Ok "单位字段新增问题: 0"
+    } else {
+        Ok "单位字段 QA: 通过"
     }
 }
 
