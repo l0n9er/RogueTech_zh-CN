@@ -101,6 +101,14 @@ function TranslationQuality([string]$key, [string]$value) {
     $score = $han * 10
     if ($value -ne $key) { $score += 100 }
     if ($han -gt 0 -and $latin -gt 0) { $score += 10 }
+    # 拒绝“英文句子只替换了少数词”的污染译文，例如
+    # “The Albatross was 设计ed by ...”或“机甲 is armed with ...”。
+    # 型号、厂商和武器缩写可以保留英文，但完整英文句法不能作为候选译文。
+    if ($han -gt 0 -and $key.Length -ge 80) {
+        $sentenceWords = ([regex]::Matches($value, '\b(?:the|was|were|is|are|designed|design|by|with|and|for|this|variant|configuration|from|in|of|to|a|an|that|on|as|its|has|have|using|used|provides|carries|equipped|armed)\b', [Text.RegularExpressions.RegexOptions]::IgnoreCase)).Count
+        if ($sentenceWords -ge 2) { return -100000 }
+        if ($value -match '(?:设计ed|装甲ed|机甲s|战斗机甲s|激光s|全向Mech|Omni机甲|XL引擎\s+to\b)') { return -100000 }
+    }
     return $score
 }
 foreach ($l in $rawLines) {

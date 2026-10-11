@@ -39,6 +39,11 @@ foreach ($file in $files) {
         $value = $m.Groups['value'].Value
         $fixed = $value.Replace($doubleEscapedNewline, $singleEscapedNewline).
                         Replace($doubleEscapedReturn, $singleEscapedReturn)
+        # 旧版本地化表把换行哨兵写成了 <<NL>，这会在单位详情中形成
+        # 多余的 '<' 并触发标签解析异常。还原为 JSON 字符串中的换行转义。
+        $fixed = $fixed.Replace('<<NL>', $singleEscapedNewline)
+        # 少量历史条目把斜体结束标签写成 </>，恢复为合法标签。
+        $fixed = $fixed.Replace('</>', '</i>')
         if ($fixed -ne $value) {
             $localValues++
             $localEscapes += ([regex]::Matches($value, [regex]::Escape($doubleEscapedNewline))).Count
