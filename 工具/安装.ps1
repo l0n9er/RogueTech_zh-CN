@@ -857,8 +857,41 @@ if ($LASTEXITCODE -ne 0) {
 # 安装宣称成功，避免处理器静默跳过后仍显示“安装完成”。
 $qaUnit = Join-Path $PSScriptRoot 'qa-unit-fields.ps1'
 if ([IO.File]::Exists($qaUnit)) {
-    & $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File $qaUnit -mods (Join-Path $gameRoot 'Mods') -out (Join-Path $backupDir 'unit-fields-qa.tsv')
-    if ($LASTEXITCODE -ne 0) { throw "单位字段全量校验失败，详见 backup\$stamp\unit-fields-qa.tsv" }
+    $qaReport = Join-Path $backupDir 'unit-fields-qa.tsv'
+    & $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File $qaUnit -mods (Join-Path $gameRoot 'Mods') -out $qaReport
+    if ($LASTEXITCODE -ne 0) {
+        # 失败时直接显示分类计数和首批样本，用户无需在乱码窗口中猜测原因；
+        # 完整报告仍保存在备份目录，便于继续修复。
+        $qaRows = @(Import-Csv -LiteralPath $qaReport -Delimiter "`t" -ErrorAction SilentlyContinue)
+        $qaSummary = Join-Path $backupDir 'unit-fields-qa-summary.txt'
+        $summary = New-Object 'System.Collections.Generic.List[string]'
+        [void]$summary.Add('单位字段 QA 失败摘要')
+        [void]$summary.Add(('目标 Mods: ' + (Join-Path $gameRoot 'Mods')))
+        [void]$summary.Add(('报告行数: ' + $qaRows.Count))
+        [void]$summary.Add('说明: DLC/模组内容集合不同会导致扫描数量不同；以下报告来自本机实际扫描结果。')
+        if ($qaRows.Count -gt 0) {
+            Write-Host "      单位字段 QA 失败分类:" -ForegroundColor Red
+            $qaRows | Group-Object Status | Sort-Object Count -Descending | ForEach-Object {
+                $line = ("        " + $_.Name + " = " + $_.Count)
+                Write-Host $line -ForegroundColor Red
+                [void]$summary.Add($line.Trim())
+            }
+            Write-Host "      首个失败样本:" -ForegroundColor Yellow
+            [void]$summary.Add('首个失败样本:')
+            $qaRows | Select-Object -First 10 | ForEach-Object {
+                $head = ("[" + $_.Status + "] " + $_.File + " / " + $_.Field)
+                $sample = ('  ' + ([string]$_.Sample -replace "`r?`n", ' '))
+                Write-Host ("        " + $head) -ForegroundColor Yellow
+                Write-Host ("          " + $sample.Trim()) -ForegroundColor Yellow
+                [void]$summary.Add($head)
+                [void]$summary.Add($sample)
+            }
+        }
+        [IO.File]::WriteAllLines($qaSummary, $summary, (New-Object Text.UTF8Encoding($false)))
+        Write-Host ("      诊断摘要: " + $qaSummary) -ForegroundColor Yellow
+        LogLine ("诊断摘要: " + $qaSummary)
+        throw "单位字段全量校验失败，详见 backup\$stamp\unit-fields-qa.tsv"
+    }
 }
 
 Say ""
