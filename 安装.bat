@@ -23,7 +23,7 @@ pause >nul
 echo.
 echo  正在启动安装脚本，请稍候...
 echo.
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0工具\安装.ps1" -edition "%EDITION%"
+"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "%~dp0工具\安装.ps1" -edition "%EDITION%"
 set RC=%ERRORLEVEL%
 
 echo.

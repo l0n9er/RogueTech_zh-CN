@@ -31,6 +31,9 @@ $script:lastGroup = 0
 $script:installLog = $null
 $script:installerPath = $PSCommandPath
 $script:modsJsonFileList = ''
+$script:powershellRuntime = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
+if (-not [IO.File]::Exists($script:powershellRuntime)) { $script:powershellRuntime = (Get-Command powershell.exe -ErrorAction SilentlyContinue).Source }
+if (-not $script:powershellRuntime -or -not [IO.File]::Exists($script:powershellRuntime)) { throw '找不到系统 Windows PowerShell，无法继续安装。' }
 
 # 控制台与子 PowerShell 输出统一采用 UTF-8，避免中文工具输出在父进程中乱码。
 
@@ -239,7 +242,7 @@ function RunTool($script, $extraArgs) {
     Write-Host ("      正在处理: " + $script + " ...") -ForegroundColor DarkGray
     LogLine ((Get-Date -Format 'HH:mm:ss') + " RUN " + $script)
     $timer = [Diagnostics.Stopwatch]::StartNew()
-    $output = @(& powershell @arg 2>&1)
+    $output = @(& $script:powershellRuntime @arg 2>&1)
     $rc = $LASTEXITCODE
     $timer.Stop()
     foreach ($line in $output) {
@@ -250,17 +253,14 @@ function RunTool($script, $extraArgs) {
     if ($rc -ne 0) { throw ($script + " 返回码 " + $rc) }
 }
 function RunPythonTool($script, $extraArgs) {
-    $sp = Join-Path $PSScriptRoot $script
-    if (-not (Test-Path $sp)) { throw ("缺少安装工具: " + $script) }
-    Write-Host ("      正在处理: " + $script + " ...") -ForegroundColor DarkGray
-    LogLine ((Get-Date -Format 'HH:mm:ss') + " RUN " + $script)
-    $output = @(& python $sp @extraArgs 2>&1)
-    $rc = $LASTEXITCODE
-    foreach ($line in $output) {
-        $text = [string]$line
-        if (-not [string]::IsNullOrWhiteSpace($text)) { Write-Host ("      " + $text); LogLine $text }
+    # 保留旧函数名以兼容调用点，但安装流程不依赖 Python。发布包面向普通玩家，
+    # 不能要求额外安装 Python；运行时 CSV 修复与 QA 均使用系统自带 PowerShell。
+    $native = switch ($script) {
+        'repair-runtime-csv.py' { 'repair-runtime-csv.ps1'; break }
+        'qa-runtime-csv.py' { 'qa-runtime-csv.ps1'; break }
+        default { throw ("不支持的内置工具: " + $script) }
     }
-    if ($rc -ne 0) { throw ($script + " 返回码 " + $rc) }
+    RunTool $native $extraArgs
 }
 
 function AssertPackageInputs {
@@ -829,9 +829,9 @@ RunTool 'fix-literal-newlines.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                     '-backupRoot', (Join-Path $backupDir 'literal-newlines'))
 # 运行时整段条目由 CSV 查表，不会经过 JSON 字段 QA；安装到目标 CSV 后再做一次
 # 结构化修复，防止包内条目被旧版本覆盖或换行被压平。
-RunPythonTool 'repair-runtime-csv.py' @('--csv', $csvDst)
-RunPythonTool 'qa-runtime-csv.py' @('--csv', $csvDst,
-                                   '--out', (Join-Path $backupDir 'runtime-csv-qa.txt'))
+RunPythonTool 'repair-runtime-csv.py' @('-csv', $csvDst)
+RunPythonTool 'qa-runtime-csv.py' @('-csv', $csvDst,
+                                   '-out', (Join-Path $backupDir 'runtime-csv-qa.txt'))
 Ok "完成"
 
 # ---------- 12) 校验 ----------
@@ -847,7 +847,7 @@ Ok ("翻译总表: " + $csvLine + " 行")
 # 一旦被译成中文(如 Quad -> 四足), 四足机甲的槽位限制会失效, 报
 # "过量 足部驱动器: 该单位在 左臂 中最多只能安装 0 个 / QuadIncompatible 无法与 四足机甲 搭配使用"
 # check-registry 发现问题会自动按基线还原(所以这里只提示, 不中断)
-& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot 'check-registry.ps1') -mods (Join-Path $gameRoot 'Mods')
+& $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot 'check-registry.ps1') -mods (Join-Path $gameRoot 'Mods')
 if ($LASTEXITCODE -ne 0) {
     Warn "检测到标识符被汉化（已自动还原），详见 backup\registry-check.txt"
 } else { Ok "注册表标识符正常" }
@@ -857,7 +857,7 @@ if ($LASTEXITCODE -ne 0) {
 # 安装宣称成功，避免处理器静默跳过后仍显示“安装完成”。
 $qaUnit = Join-Path $PSScriptRoot 'qa-unit-fields.ps1'
 if ([IO.File]::Exists($qaUnit)) {
-    & powershell -NoProfile -ExecutionPolicy Bypass -File $qaUnit -mods (Join-Path $gameRoot 'Mods') -out (Join-Path $backupDir 'unit-fields-qa.tsv')
+    & $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File $qaUnit -mods (Join-Path $gameRoot 'Mods') -out (Join-Path $backupDir 'unit-fields-qa.tsv')
     if ($LASTEXITCODE -ne 0) { throw "单位字段全量校验失败，详见 backup\$stamp\unit-fields-qa.tsv" }
 }
 
