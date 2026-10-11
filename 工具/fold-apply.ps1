@@ -349,6 +349,11 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         if ($null -ne $zh -and -not [string]::IsNullOrWhiteSpace($zh)) { break }
     }
     if ($null -ne $zh -and -not [string]::IsNullOrWhiteSpace($zh)) {
+        # 整段译文可能来自历史词典或专用模组词典，正文已翻译但动态尾部
+        # （装甲/结构/移动/特性等）仍保留英文。对成功命中的结果也执行
+        # 已审校短语补全；标签、占位符由 ApplyFragments 保护，不会被改写。
+        $zh2 = ApplyFragments $zh
+        if ($zh2 -ne $zh) { $zh = $zh2; $stats.viaFragment++ }
         $m2 = '"' + $fld + '": "' + (Esc $zh) + '"'
         if ($m2 -ne $m.Value) { $stats.repl++ }
         return $m2
