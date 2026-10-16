@@ -16,6 +16,11 @@
 )
 $ErrorActionPreference = 'Stop'
 $packRoot = Split-Path $PSScriptRoot -Parent
+# Windows PowerShell 5.1 会让 string[] 参数吞掉后续命名参数。安装器因此
+# 将多个额外词典打包为一个 | 分隔参数；直接调用脚本时仍支持原生数组。
+if ($extraDict.Count -eq 1 -and $extraDict[0].Contains('|')) {
+    $extraDict = @($extraDict[0].Split('|', [StringSplitOptions]::RemoveEmptyEntries))
+}
 if ([string]::IsNullOrWhiteSpace($dict)) { $dict = Join-Path $PSScriptRoot 'dict-all.tsv' }
 if ([string]::IsNullOrWhiteSpace($mods)) {
     $gr = & (Join-Path $PSScriptRoot 'find-game.ps1')
@@ -407,13 +412,41 @@ $excl = @(
     'Localization'
     'localization'
 )
-if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
-    $files = Get-Content -Encoding UTF8 $fileList | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | ForEach-Object {
-        $p = $_; $bad = $false
-        foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true; break } }
-        if ([IO.Path]::GetFileName($p) -in @('mod.json', 'modstate.json')) { $bad = $true }
-        if (-not $bad -and [IO.Path]::GetExtension($p) -eq '.json') { Get-Item -LiteralPath $p }
+
+# 文件索引来自游戏目录，不能假定每一行都能被 Path API 直接解析。
+# Windows PowerShell 在管道中遇到异常路径时会让整个 ForEach-Object 终止，
+# 因此统一先按 LiteralPath 取得 FileInfo，再使用对象属性筛选。
+$pathIssues = New-Object 'System.Collections.Generic.List[string]'
+function Add-PathIssue([string]$rawPath, [string]$reason) {
+    if ($pathIssues.Count -lt 2000) {
+        [void]$pathIssues.Add((([string]$reason) + "`t" + ([string]$rawPath)))
     }
+}
+function Resolve-JsonFile([object]$rawPath) {
+    $p = [string]$rawPath
+    if ([string]::IsNullOrWhiteSpace($p)) { return }
+    $p = $p.Trim()
+    try {
+        $item = Get-Item -LiteralPath $p -ErrorAction Stop
+        if ($item.PSIsContainer) { return }
+        if ($item.Extension -ine '.json') { return }
+        if ($item.Name -in @('mod.json', 'modstate.json')) { return }
+        foreach ($e in $excl) {
+            if ($item.FullName -like ('*' + $e + '*')) { return }
+        }
+        return $item
+    } catch {
+        Add-PathIssue $p $_.Exception.Message
+        return
+    }
+}
+if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
+    $files = @(
+        foreach ($rawPath in [IO.File]::ReadAllLines($fileList, [Text.Encoding]::UTF8)) {
+            $item = Resolve-JsonFile $rawPath
+            if ($null -ne $item) { $item }
+        }
+    )
 } else {
     $files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
         $p = $_.FullName; $bad = $false
@@ -425,13 +458,18 @@ if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileLis
 if (-not [string]::IsNullOrWhiteSpace($qaReport) -and [IO.File]::Exists($qaReport)) {
     $targetPaths = New-Object 'System.Collections.Generic.HashSet[string]' ([StringComparer]::OrdinalIgnoreCase)
     foreach ($row in (Import-Csv -LiteralPath $qaReport -Delimiter "`t")) {
-        $p = [string]$row.File
-        if ([string]::IsNullOrWhiteSpace($p) -or [IO.Path]::GetExtension($p) -ne '.json') { continue }
+        $item = Resolve-JsonFile $row.File
+        if ($null -eq $item) { continue }
+        $p = $item.FullName
         if (-not $p.StartsWith($mods.TrimEnd('\') + '\', [StringComparison]::OrdinalIgnoreCase)) { continue }
-        if ([IO.Path]::GetFileName($p) -in @('mod.json', 'modstate.json')) { continue }
-        if ([IO.File]::Exists($p)) { [void]$targetPaths.Add($p) }
+        [void]$targetPaths.Add($p)
     }
     $files = @($targetPaths | ForEach-Object { Get-Item -LiteralPath $_ })
+}
+if ($pathIssues.Count -gt 0) {
+    $pathReport = Join-Path $packRoot 'backup\fold-path-errors.tsv'
+    [IO.File]::WriteAllLines($pathReport, [string[]]$pathIssues, (New-Object Text.UTF8Encoding $false))
+    Write-Warning ("忽略了 " + $pathIssues.Count + " 个无法读取的 JSON 索引行，详见 backup\fold-path-errors.tsv")
 }
 
 if (-not $Worker -and $threads -gt 1 -and @($files).Count -gt 1) {

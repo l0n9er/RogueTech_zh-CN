@@ -40,6 +40,10 @@ if (-not $script:powershellRuntime -or -not [IO.File]::Exists($script:powershell
 try {
     [Console]::OutputEncoding = [Text.Encoding]::UTF8
     [Console]::InputEncoding = [Text.Encoding]::UTF8
+    $OutputEncoding = New-Object Text.UTF8Encoding($false)
+    # 子 PowerShell 继承当前控制台代码页；统一为 UTF-8，避免中文日志被按
+    # GBK 解码后写成“鎺у埗瀛楃”一类乱码。
+    & chcp.com 65001 | Out-Null
     [Console]::TreatControlCAsInput = $false
 } catch { }
 
@@ -519,7 +523,7 @@ RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-dict', (Join-Path $PSScriptRoot 'dict-unit-completion.tsv'),
                            # residual-mixed 放在第一个 extraDict，兼容 Windows PowerShell
                            # 外部子进程对 string[] 参数的绑定顺序。
-                           '-extraDict', (Join-Path $PSScriptRoot 'dict-residual-mixed.tsv'), (Join-Path $PSScriptRoot 'dict-mia-update.tsv'), (Join-Path $PSScriptRoot 'dict-all.tsv'), (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'), (Join-Path $PSScriptRoot 'dict-unit-llm.tsv'), (Join-Path $PSScriptRoot 'dict-piratetech-unit.tsv'),
+                           '-extraDict', ((Join-Path $PSScriptRoot 'dict-residual-mixed.tsv'), (Join-Path $PSScriptRoot 'dict-mia-update.tsv'), (Join-Path $PSScriptRoot 'dict-all.tsv'), (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'), (Join-Path $PSScriptRoot 'dict-unit-llm.tsv'), (Join-Path $PSScriptRoot 'dict-piratetech-unit.tsv') -join '|'),
                            # 整段 LLM 译文必须参与安装；否则后续安装会重新
                            # 用旧的半翻译词典覆盖已经修好的 Details。
                            '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),

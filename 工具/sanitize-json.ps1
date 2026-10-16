@@ -1,7 +1,9 @@
-param(
+﻿param(
     [Parameter(Mandatory=$true)][string]$mods,
     [string]$backupRoot = ""
 )
+
+try { [Console]::OutputEncoding = New-Object Text.UTF8Encoding($false) } catch { }
 $ErrorActionPreference = 'Stop'
 $enc = New-Object Text.UTF8Encoding($false)
 if ([string]::IsNullOrWhiteSpace($backupRoot)) {

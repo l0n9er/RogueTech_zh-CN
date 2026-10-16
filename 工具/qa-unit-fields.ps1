@@ -1,8 +1,10 @@
-param(
+﻿param(
  [Parameter(Mandatory=$true)][string]$mods,
  [string]$out = "",
  [switch]$AllowEnglishNameOnly
 )
+
+try { [Console]::OutputEncoding = New-Object Text.UTF8Encoding($false) } catch { }
 $ErrorActionPreference='Stop'
 if ([string]::IsNullOrWhiteSpace($out)) { $out=Join-Path (Split-Path $PSScriptRoot -Parent) 'backup\unit-fields-qa.tsv' }
 $parent=Split-Path $out -Parent

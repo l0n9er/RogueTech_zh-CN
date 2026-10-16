@@ -1,4 +1,4 @@
-param(
+﻿param(
     [Parameter(Mandatory = $true)][string]$file,
     [Parameter(Mandatory = $true)][string]$pairs,
     [string]$backupRoot = ''
