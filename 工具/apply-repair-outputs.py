@@ -20,7 +20,7 @@ BACKUP = ROOT / "backup" / "Mods-repair-wholefield"
 DICT = ROOT / "工具" / "dict-unit-llm.tsv"
 REPORT = ROOT / "backup" / "llm-repair-apply.tsv"
 
-TOKEN_RE = re.compile(r"<[^>]*>|\{[^{}]*\}|\[\[[\s\S]*?\]\]|\\[nrt]|\r?\n")
+TOKEN_RE = re.compile(r"</?[A-Za-z][^>]*>|<3|\{[^{}]*\}|\[\[[\s\S]*?\]\]|\\[nrt]|\r?\n")
 HAN_RE = re.compile(r"[\u3400-\u9fff]")
 
 

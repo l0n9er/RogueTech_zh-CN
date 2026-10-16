@@ -7,6 +7,11 @@
     [string]$repairDict = "",
     [string[]]$extraDict = @(),
     [string]$fileList = "",
+    [string]$missReport = "",
+    [string]$qaReport = "",
+    [ValidateRange(1, 16)][int]$threads = 4,
+    [switch]$Worker,
+    [string]$workerId = "",
     [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
@@ -43,6 +48,7 @@ function Test-CorruptDictionaryValue([string]$text) {
 $exact = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 function Fold([string]$s) { return ([regex]::Replace(($s -replace "`r`n", "`n"), '[\s]+', ' ')).Trim() }
 $fold = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+$foldQuality = New-Object 'System.Collections.Generic.Dictionary[string,int]'
 $csvExact = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 $csvPrefix = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 function CsvKey([string]$s) {
@@ -145,7 +151,10 @@ foreach ($l in $rawLines) {
         $dictQuality[$k] = $q
     }
     $fk = Fold $k
-    if ($fk.Length -gt 12 -and -not $fold.ContainsKey($fk)) { $fold[$fk] = $v }
+    if ($fk.Length -gt 12 -and (-not $foldQuality.ContainsKey($fk) -or $q -gt $foldQuality[$fk])) {
+        $fold[$fk] = $v
+        $foldQuality[$fk] = $q
+    }
 }
 $script:metaPattern = (($metaSuffixes | ForEach-Object { [regex]::Escape($_) }) -join '|')
 
@@ -161,6 +170,17 @@ if ([IO.File]::Exists($fragments)) {
 }
 $fragmentKeys = @($fragmentMap.Keys | Sort-Object Length -Descending)
 Write-Host ("fragments: " + $fragmentMap.Count)
+# The old implementation checked every fragment with IndexOf for every field.
+# A single alternation regex lets .NET build a shared matcher for the same
+# workload and avoids tens of thousands of PowerShell-level string calls.
+$fragmentRegex = $null
+if ($fragmentKeys.Count -gt 0) {
+    $fragmentPattern = '(?:' + (($fragmentKeys | ForEach-Object { [regex]::Escape($_) }) -join '|') + ')'
+    $fragmentRegex = New-Object System.Text.RegularExpressions.Regex(
+        $fragmentPattern,
+        [System.Text.RegularExpressions.RegexOptions]::CultureInvariant
+    )
+}
 
 # 旧版词典中已有一批“英文正文 + 中文词片段”的结果，游戏文件里可能已经
 # 写入这些坏值，无法再通过原始英文键命中。这个覆盖表按坏值直接恢复到
@@ -251,16 +271,14 @@ function Esc([string]$s) {
 }
 
 function ApplyFragments([string]$s) {
-    if ([string]::IsNullOrWhiteSpace($s) -or $script:fragmentMap.Count -eq 0 -or $s -notmatch '[A-Za-z]') { return $s }
+    if ([string]::IsNullOrWhiteSpace($s) -or $null -eq $script:fragmentRegex -or $s -notmatch '[A-Za-z]') { return $s }
     $saved = New-Object 'System.Collections.Generic.List[string]'
     $protected = [regex]::Replace($s, '<[^>]*>|\[\[[\s\S]*?\]\]|\{[^{}]*\}', [Text.RegularExpressions.MatchEvaluator]{
         param($m) $i = $saved.Count; [void]$saved.Add($m.Value); return ('__FRAG' + $i + '__')
     })
-    foreach ($key in $script:fragmentKeys) {
-        if ($protected.IndexOf($key, [StringComparison]::Ordinal) -ge 0) {
-            $protected = $protected.Replace($key, $script:fragmentMap[$key])
-        }
-    }
+    $protected = $script:fragmentRegex.Replace($protected, [Text.RegularExpressions.MatchEvaluator]{
+        param($m) $script:fragmentMap[$m.Value]
+    })
     return [regex]::Replace($protected, '__FRAG(\d+)__', [Text.RegularExpressions.MatchEvaluator]{
         param($m) $saved[[int]$m.Groups[1].Value]
     })
@@ -404,6 +422,115 @@ if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileLis
         -not $bad
     }
 }
+if (-not [string]::IsNullOrWhiteSpace($qaReport) -and [IO.File]::Exists($qaReport)) {
+    $targetPaths = New-Object 'System.Collections.Generic.HashSet[string]' ([StringComparer]::OrdinalIgnoreCase)
+    foreach ($row in (Import-Csv -LiteralPath $qaReport -Delimiter "`t")) {
+        $p = [string]$row.File
+        if ([string]::IsNullOrWhiteSpace($p) -or [IO.Path]::GetExtension($p) -ne '.json') { continue }
+        if (-not $p.StartsWith($mods.TrimEnd('\') + '\', [StringComparison]::OrdinalIgnoreCase)) { continue }
+        if ([IO.Path]::GetFileName($p) -in @('mod.json', 'modstate.json')) { continue }
+        if ([IO.File]::Exists($p)) { [void]$targetPaths.Add($p) }
+    }
+    $files = @($targetPaths | ForEach-Object { Get-Item -LiteralPath $_ })
+}
+
+if (-not $Worker -and $threads -gt 1 -and @($files).Count -gt 1) {
+    $threadCount = [Math]::Min($threads, @($files).Count)
+    $buckets = @()
+    for ($i = 0; $i -lt $threadCount; $i++) {
+        $buckets += ,(New-Object 'System.Collections.Generic.List[string]')
+    }
+    for ($i = 0; $i -lt @($files).Count; $i++) {
+        [void]$buckets[$i % $threadCount].Add($files[$i].FullName)
+    }
+    $tempLists = @()
+    $tempMissReports = @()
+    $jobs = @()
+    for ($i = 0; $i -lt $threadCount; $i++) {
+        $id = [Guid]::NewGuid().ToString('N')
+        $listPath = Join-Path ([IO.Path]::GetTempPath()) ("fold-apply-" + $id + ".txt")
+        $missPath = Join-Path ([IO.Path]::GetTempPath()) ("fold-apply-miss-" + $id + ".tsv")
+        [IO.File]::WriteAllLines($listPath, [string[]]$buckets[$i], (New-Object Text.UTF8Encoding $false))
+        $tempLists += $listPath
+        $cfg = [pscustomobject]@{
+            Script = $PSCommandPath; Mods = $mods; Dict = $dict; Csv = $csv
+            Fragments = $fragments; RepairDict = $repairDict; ExtraDict = [string[]]$extraDict
+            BackupRoot = $backupRoot; FileList = $listPath; MissReport = $missPath; WorkerId = $id
+            DryRun = [bool]$DryRun
+        }
+        $tempMissReports += $missPath
+        $jobs += Start-Job -ArgumentList $cfg -ScriptBlock {
+            param($c)
+            $p = @{
+                mods = [string]$c.Mods; dict = [string]$c.Dict; csv = [string]$c.Csv
+                fragments = [string]$c.Fragments; repairDict = [string]$c.RepairDict
+                extraDict = [string[]]$c.ExtraDict; backupRoot = [string]$c.BackupRoot
+                fileList = [string]$c.FileList; missReport = [string]$c.MissReport
+                threads = 1; Worker = $true
+                workerId = [string]$c.WorkerId
+            }
+            if ([bool]$c.DryRun) { $p.DryRun = $true }
+            & ([string]$c.Script) @p
+        }
+    }
+    $workerLines = @()
+    try {
+        $null = $jobs | Wait-Job
+        foreach ($job in $jobs) {
+            $output = Receive-Job -Job $job 2>&1
+            if ($job.State -ne 'Completed') { throw ("fold worker failed: " + ($output -join "`n")) }
+            $workerLines += @($output | ForEach-Object { [string]$_ })
+        }
+    } finally {
+        $jobs | Remove-Job -Force -ErrorAction SilentlyContinue
+        foreach ($tmp in $tempLists) { Remove-Item -LiteralPath $tmp -Force -ErrorAction SilentlyContinue }
+    }
+    $workerSummaries = @()
+    foreach ($line in $workerLines) {
+        $lineText = ([string]$line).Trim()
+        if ($lineText -match 'mode=(?:dry|written)\s+files=') { $workerSummaries += $lineText }
+        else { Write-Host $lineText }
+    }
+    $totals = @{ files = 0; changed = 0; repl = 0; cleaned = 0; viaFold = 0; viaPrefix = 0; viaFragment = 0; miss = 0; skippedCorrupt = 0 }
+    foreach ($line in $workerSummaries) {
+        # 逐项读取固定格式，避免 Windows PowerShell 的 $Matches 在嵌套
+        # hashtable 枚举/赋值中被后续匹配覆盖，造成汇总值意外归零。
+        $sm = [regex]::Match([string]$line, 'mode=(?:dry|written)\s+files=(\d+)\s+changed=(\d+)\s+repl=(\d+)\s+cleaned=(\d+)\s+viaFold=(\d+)\s+viaPrefix=(\d+)\s+viaFragment=(\d+)\s+miss=(\d+)\s+skippedCorrupt=(\d+)')
+        if (-not $sm.Success) { throw ("无法解析 fold worker 统计: " + [string]$line) }
+        $totals.files += [int]$sm.Groups[1].Value
+        $totals.changed += [int]$sm.Groups[2].Value
+        $totals.repl += [int]$sm.Groups[3].Value
+        $totals.cleaned += [int]$sm.Groups[4].Value
+        $totals.viaFold += [int]$sm.Groups[5].Value
+        $totals.viaPrefix += [int]$sm.Groups[6].Value
+        $totals.viaFragment += [int]$sm.Groups[7].Value
+        $totals.miss += [int]$sm.Groups[8].Value
+        $totals.skippedCorrupt += [int]$sm.Groups[9].Value
+    }
+    $mode = if ($DryRun) { 'dry' } else { 'written' }
+    $summary = "mode=$mode files=$($totals.files) changed=$($totals.changed) repl=$($totals.repl) cleaned=$($totals.cleaned) viaFold=$($totals.viaFold) viaPrefix=$($totals.viaPrefix) viaFragment=$($totals.viaFragment) miss=$($totals.miss) skippedCorrupt=$($totals.skippedCorrupt) threads=$threadCount"
+    Write-Host $summary
+    $reportDir = Join-Path $packRoot 'backup'
+    if (-not (Test-Path $reportDir)) { [void][IO.Directory]::CreateDirectory($reportDir) }
+    [IO.File]::WriteAllText((Join-Path $reportDir 'coverage-summary.txt'), $summary, (New-Object Text.UTF8Encoding $false))
+    $allMisses = New-Object 'System.Collections.Generic.List[string]'
+    foreach ($missPath in $tempMissReports) {
+        if ([IO.File]::Exists($missPath)) {
+            foreach ($missLine in [IO.File]::ReadAllLines($missPath, [Text.Encoding]::UTF8)) {
+                if ($allMisses.Count -ge 20000) { break }
+                [void]$allMisses.Add($missLine)
+            }
+        }
+        Remove-Item -LiteralPath $missPath -Force -ErrorAction SilentlyContinue
+    }
+    if ($allMisses.Count -gt 0) {
+        [IO.File]::WriteAllLines((Join-Path $reportDir 'still-missing-raw.tsv'), $allMisses, (New-Object Text.UTF8Encoding $true))
+        Write-Host ("missing samples -> backup\still-missing-raw.tsv (" + $allMisses.Count + ")")
+    } else {
+        Remove-Item -LiteralPath (Join-Path $reportDir 'still-missing-raw.tsv') -Force -ErrorAction SilentlyContinue
+    }
+    return
+}
 $enc = New-Object Text.UTF8Encoding $false
 $ser = $null
 if (-not $DryRun) {
@@ -438,12 +565,19 @@ foreach ($f in $files) {
     }
 }
 $line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " viaPrefix=" + $stats.viaPrefix + " viaFragment=" + $stats.viaFragment + " miss=" + $stats.miss + " skippedCorrupt=" + $skippedCorrupt
-Write-Host $line
+if ($Worker) { Write-Output $line } else { Write-Host $line }
 # 报告写到包内 backup 目录(不污染游戏目录, 便于排查)
 $reportDir = Join-Path $packRoot 'backup'
 if (-not (Test-Path $reportDir)) { [void][IO.Directory]::CreateDirectory($reportDir) }
-[IO.File]::WriteAllText((Join-Path $reportDir 'coverage-summary.txt'), $line, (New-Object Text.UTF8Encoding $false))
-if ($missList.Count -gt 0) {
+if (-not $Worker) {
+    [IO.File]::WriteAllText((Join-Path $reportDir 'coverage-summary.txt'), $line, (New-Object Text.UTF8Encoding $false))
+}
+if ($Worker -and -not [string]::IsNullOrWhiteSpace($missReport)) {
+    [IO.File]::WriteAllLines($missReport, [string[]]$missList, (New-Object Text.UTF8Encoding $false))
+}
+if (-not $Worker -and $missList.Count -gt 0) {
     [IO.File]::WriteAllLines((Join-Path $reportDir 'still-missing-raw.tsv'), $missList, (New-Object Text.UTF8Encoding $true))
     Write-Host ("missing samples -> backup\still-missing-raw.tsv (" + $missList.Count + ")")
+} elseif (-not $Worker) {
+    Remove-Item -LiteralPath (Join-Path $reportDir 'still-missing-raw.tsv') -Force -ErrorAction SilentlyContinue
 }

@@ -26,7 +26,10 @@ function Inspect([string]$f,[string]$k,[string]$v) {
  if($en -ge 10 -and $han -eq 0 -and !$AllowEnglishNameOnly){$stats.english++;Add-Row 'ENGLISH' $f $k $v}
  # 只将高置信度英文句法与中文共存判为混杂；型号、厂商和武器专名中的英文词不单独报错。
  if($han -gt 0 -and $sent){$stats.contaminated++;Add-Row 'CONTAMINATED' $f $k $v}
- $lt=([regex]::Matches($v,'<')).Count; $gt=([regex]::Matches($v,'>')).Count; if($lt -ne $gt -or ($lt -gt 0 -and $tagRx.Matches($v).Count -lt $lt)){$stats.markup++;Add-Row 'MARKUP' $f $k $v}
+ # Mackie sticker text uses the literal heart emoticon "<3" (for example,
+ # "I <3 Nature"). It is player-facing text, not an opening HTML tag.
+ $markupText=$v.Replace('<3','  ')
+ $lt=([regex]::Matches($markupText,'<')).Count; $gt=([regex]::Matches($markupText,'>')).Count; if($lt -ne $gt -or ($lt -gt 0 -and $tagRx.Matches($markupText).Count -lt $lt)){$stats.markup++;Add-Row 'MARKUP' $f $k $v}
  if($v -match '\{[^{}]*$|^[^{}]*\}|%(?:\d+\$)?[sdif]'){$stats.placeholder++;Add-Row 'PLACEHOLDER' $f $k $v}
 }
 $files=@(Get-ChildItem $mods -Recurse -File -Filter '*.json' -ErrorAction SilentlyContinue|Where-Object{$_.FullName -notlike '*\.modtek\*' -and $_.FullName -notmatch '[\\/]Localization[\\/]' -and $_.FullName -notmatch '[\\/]localization[\\/]' -and $_.Name -match '^(chassisdef_|mechdef_|vehiclechassisdef_|vehicledef_|weapondef_|ammunitionBoxDef_)'})

@@ -10,7 +10,7 @@ OUT=ROOT/'工具'/'dict-unit-llm.tsv'; REPORT=ROOT/'backup'/'llm-merge-report.ts
 TARGET=re.compile(r'^(chassisdef_|mechdef_|vehiclechassisdef_|vehicledef_|weapondef_|ammunitionBoxDef_)',re.I)
 FIELDS={'Details','YangsThoughts'}
 HAN=re.compile(r'[\u3400-\u9fff]')
-TOKEN=re.compile(r'<[^>]*>|\{[^{}]*\}|\[\[[\s\S]*?\]\]|\\[nrt]|\n')
+TOKEN=re.compile(r'</?[A-Za-z][^>]*>|<3|\{[^{}]*\}|\[\[[\s\S]*?\]\]|\\[nrt]|\n')
 
 def walk(x):
     if isinstance(x,dict):

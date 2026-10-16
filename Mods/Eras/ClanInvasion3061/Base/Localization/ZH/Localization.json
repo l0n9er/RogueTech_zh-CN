@@ -244,7 +244,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The G configuration is focused on medium range engagements with its two Streak SRM-6 and four ER Medium Laser.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.01</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "G配置专注于中距离交战，依靠2具连发SRM-6和4门增程中型激光。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.01</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "G配置专注于中距离交战，依靠2具连发SRM-6和4门增程中型激光。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.01</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -316,7 +316,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Adder-S is a is a scout configuration mounting a pair of Medium Pulse Lasers in each arm and sixteen Machine Guns to exploit any holes opened up in armor by the pulse lasers. The Adder-S also includes an Active Probe and ECM Suite to aid in detection and evasion.   \n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.01</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "蝰蛇-S是一种侦察配置，每只手臂装有2门中型脉冲激光，另有16挺机枪，用来打击脉冲激光在装甲上撕开的缺口。蝰蛇-S还配有1具主动探测器和1套电子对抗套件，以协助探测与规避。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.01</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "蝰蛇-S是一种侦察配置，每只手臂装有2门中型脉冲激光，另有16挺机枪，用来打击脉冲激光在装甲上撕开的缺口。蝰蛇-S还配有1具主动探测器和1套电子对抗套件，以协助探测与规避。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.01</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -2868,7 +2868,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Unique among Wolfs Dragoon's, this is apparently a downgraded Stone Rhino equipped with locally made Inner Sphere technology. The sole known example was lost at the battle of Misery and the Dragoon's have been unusually reticent about the mech or it's origins, refusing to confirm where the mech came from or whether they posses anymore.\n\n<b><color=#e62e00>Quirk: Distracting</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.18</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "这台机甲在狼之龙骑兵中独一无二，显然是一台降级版石犀牛，换装了本地制造的内层星域技术。唯一已知的样机在苦难星之战中损失，而龙骑兵对这台机甲及其来历异常默口，既不愿确认它的出处，也不肯透露是否还拥有更多。\n<<NL><b><color=#e62e00>特性：扰敌</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.18</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "这台机甲在狼之龙骑兵中独一无二，显然是一台降级版石犀牛，换装了本地制造的内层星域技术。唯一已知的样机在苦难星之战中损失，而龙骑兵对这台机甲及其来历异常默口，既不愿确认它的出处，也不肯透露是否还拥有更多。\n\n<b><color=#e62e00>特性：扰敌</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -3508,7 +3508,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This variant was introduced by Clan Steel Viper. It replaces the traditional weaponry with a pair of ER PPCs, a Gauss rifle, and two Machine Guns.\n\n<b><color=#e62e00>Quirk: Improved Targeting - Short</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.17</color></b>",
-        "CULTURE_ZH_CN": "该变型由钢蝰蛇部族推出，它以2门增程粒子炮、1门高斯步枪和2挺机枪取代了传统武器。\n<<NL><b><color=#e62e00>特性：改进瞄准（近程）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.17</color></b>"
+        "CULTURE_ZH_CN": "该变型由钢蝰蛇部族推出，它以2门增程粒子炮、1门高斯步枪和2挺机枪取代了传统武器。\n\n<b><color=#e62e00>特性：改进瞄准（近程）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.17</color></b>"
       }
     },
     {
@@ -4364,7 +4364,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This variant abandons any hope of the Bowman being an ArtilleryMech. The remaining artillery is replaced with a second LRM-20 launcher, three additional tons of ammunition, and an ER Large Laser. More heat sinks are added to keep the heat in check.\n\n<b><color=#e62e00>Quirk: Stable</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.16</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Upper</color>",
-        "CULTURE_ZH_CN": "这个变型彻底放弃了让弓手充当火炮机甲的可能：剩余的火炮被替换为第2具LRM-20发射器、3吨额外弹药和1门增程大型激光，并加装更多散热器以控制热量。\n<<NL><b><color=#e62e00>特性：稳定</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.16</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂上段</color>"
+        "CULTURE_ZH_CN": "这个变型彻底放弃了让弓手充当火炮机甲的可能：剩余的火炮被替换为第2具LRM-20发射器、3吨额外弹药和1门增程大型激光，并加装更多散热器以控制热量。\n\n<b><color=#e62e00>特性：稳定</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.16</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂上段</color>"
       }
     },
     {
@@ -4828,7 +4828,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "While not mounting any defensive weaponry, the Celerity CLR-02-X-D's head is equipped with a  Drone Remote Control System and carries a C3i module. The fact the 'Mech has no MechWarrior piloting it is a good thing given the Celerity's single ton of armor and the fragile nature of its XXL engine and XL gyro, even a single skid following a misstep would almost cripple the design let alone combat fire on the battlefield. The standard design carries no weapon, but this version has been altered to mount a single Small Laser.\n\n<b><color=#e62e00>Quirk: Quad Mech (Squad)</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>",
-        "CULTURE_ZH_CN": "迅捷CLR-02-X-D虽然没有安装任何防御武器，其头部却配备了无人机遥控系统，并携带1个C3i模块。由于迅捷仅有1吨装甲，其XXL引擎和XL陀螺仪又极为脆弱，机甲里没有机甲战士驾驶反倒是件好事——哪怕是一次失足后的打滑都几乎足以让这台设计报废，更不用说战场上的火力了。标准型号不携带任何武器，但这个版本经过改装，安装了1门小型激光。\n<<NL><b><color=#e62e00>特性：四足机甲（小队）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.99</color></b>"
+        "CULTURE_ZH_CN": "迅捷CLR-02-X-D虽然没有安装任何防御武器，其头部却配备了无人机遥控系统，并携带1个C3i模块。由于迅捷仅有1吨装甲，其XXL引擎和XL陀螺仪又极为脆弱，机甲里没有机甲战士驾驶反倒是件好事——哪怕是一次失足后的打滑都几乎足以让这台设计报废，更不用说战场上的火力了。标准型号不携带任何武器，但这个版本经过改装，安装了1门小型激光。\n\n<b><color=#e62e00>特性：四足机甲（小队）</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>"
       }
     },
     {
@@ -5836,7 +5836,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Similar to the -7A in weapons loadout with two SRM-4 launchers and a Medium Laser, the -7J mounts five jump jets instead of the extra armor and ammunition of the -7A.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.96</color></b>",
-        "CULTURE_ZH_CN": "-7J的武器配置与-7A相似，同为2具SRM-4发射器和1门中型激光，但它用5具跳跃推进器替代了-7A上额外的装甲与弹药。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.96</color></b>"
+        "CULTURE_ZH_CN": "-7J的武器配置与-7A相似，同为2具SRM-4发射器和1门中型激光，但它用5具跳跃推进器替代了-7A上额外的装甲与弹药。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.96</color></b>"
       }
     },
     {
@@ -6452,7 +6452,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Coyotl has the honor of being the first OmniMech. Developed by Clan Coyote with some help from Clan Sea Fox, the Coyotl was first fielded in 2854. By using an XL Engine and Endo Steel chassis, the scientists were able to create a medium 'Mech that could carry a great deal of equipment. In addition, the high ground speed of the Coyotl allowed it to rush from one area of a battlefield to another, providing support for its teammates. The B configuration uses an Ultra AC/10 in the right arm as its main firepower, supported by an ER Medium Laser and SRM-6 launcher.\n\n<b><color=#e62e00>Quirk: Extended Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "郊狼有幸成为史上第一台全向机甲，由郊狼部族在海狐部族的一些协助下研制，于2854年首次投入战场。借助XL引擎和内骨架底盘，科学家们得以造出一台能携带大量装备的中型机甲。此外，郊狼较高的地面速度使其能快速从战场一处奔赴另一处，为队友提供支援。B配置以右臂的1门超级自动炮/10为主要火力，并配1门增程中型激光和1具SRM-6发射器。\n<<NL><b><color=#e62e00>特性：扩展躯干旋转</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.03</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "郊狼有幸成为史上第一台全向机甲，由郊狼部族在海狐部族的一些协助下研制，于2854年首次投入战场。借助XL引擎和内骨架底盘，科学家们得以造出一台能携带大量装备的中型机甲。此外，郊狼较高的地面速度使其能快速从战场一处奔赴另一处，为队友提供支援。B配置以右臂的1门超级自动炮/10为主要火力，并配1门增程中型激光和1具SRM-6发射器。\n\n<b><color=#e62e00>特性：扩展躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -8500,7 +8500,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This variant was created by Clan Wolf in 3050 to carry out decapitation strikes against Inner Sphere command personnel during the Clan Invasion. It removes the missile launcher to include an additional Power Pack, Heat and Improved Sensors, a Remote Sensor Dispenser, and a pair of extra Fuel Tanks for its jump jets, while mounting a fixed anti-personnel Machine Gun in addition to the anti-personnel weapon mount.\n\n<b><color=#e62e00>Quirk: Standard Parts</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.93</color></b>\n\n<b><color=#2aad3b>Can mount Omni units, can melee, can swarm.</b></color>",
-        "CULTURE_ZH_CN": "该变型由狼族部族于3050年创造，用于在部族入侵期间对内层星域的指挥人员实施斩首打击。它移除导弹发射器，以加装额外的动力包、热感应器与改进传感器、1具遥控传感器撒布器，以及2只为其跳跃推进器准备的额外燃料箱，同时在反步兵武器挂架之外固定安装1挺反步兵机枪。\n<<NL><b><color=#e62e00>特性：标准零件</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.93</color></b>\n<<NL><b><color=#2aad3b>可搭载全向单位，可近战，可攀爬攻击。</b></color>"
+        "CULTURE_ZH_CN": "该变型由狼族部族于3050年创造，用于在部族入侵期间对内层星域的指挥人员实施斩首打击。它移除导弹发射器，以加装额外的动力包、热感应器与改进传感器、1具遥控传感器撒布器，以及2只为其跳跃推进器准备的额外燃料箱，同时在反步兵武器挂架之外固定安装1挺反步兵机枪。\n\n<b><color=#e62e00>特性：标准零件</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.93</color></b>\n\n<b><color=#2aad3b>可搭载全向单位，可近战，可攀爬攻击。</b></color>"
       }
     },
     {
@@ -8700,7 +8700,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "An attempted modernization of the Enforcer that never was mass produced, the -4D carries a ER PPC and a LB 10-X Autocannon, with a Guardian ECM for sensor protection. With the launch of the Enforcer III this variant was quickly forgotten.\n\n<b><color=#e62e00>Quirk: Improved Cooling Jacket - AC</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "这是对执行者的一次现代化尝试，但从未量产。该型号搭载1门增程粒子炮和1门LB 10-X自动炮，并配1具守护者电子对抗套件保护传感器。随着执行者III的推出，这一变型很快就被遗忘了。\n<<NL><b><color=#e62e00>特性：改进冷却套（自动炮）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "这是对执行者的一次现代化尝试，但从未量产。该型号搭载1门增程粒子炮和1门LB 10-X自动炮，并配1具守护者电子对抗套件保护传感器。随着执行者III的推出，这一变型很快就被遗忘了。\n\n<b><color=#e62e00>特性：改进冷却套（自动炮）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -9468,7 +9468,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A variant of the EXT-4D, the Exterminator EXT-4C incorporates a Chameleon Light Polarisation Shield. Entering production at the same time as the EXT-4D, the 4C is otherwise unchanged from its parent design.\n\n<b><color=#e62e00>Quirk: Nimble</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>",
-        "CULTURE_ZH_CN": "作为EXT-4D的变型，灭绝者EXT-4C整合了1面变色龙光偏振护盾。它与EXT-4D同时投产，除此之外与母型设计没有任何差别。\n<<NL><b><color=#e62e00>特性：灵活</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.11</color></b>"
+        "CULTURE_ZH_CN": "作为EXT-4D的变型，灭绝者EXT-4C整合了1面变色龙光偏振护盾。它与EXT-4D同时投产，除此之外与母型设计没有任何差别。\n\n<b><color=#e62e00>特性：灵活</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.11</color></b>"
       }
     },
     {
@@ -10532,7 +10532,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Pentagon Powers variant of the FFL-3SLE that removes the CASE and ECM in order to upgrade the missile rack to an LRM-10.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是五角势力对FFL-3SLE的变型，拆除了CASE和电子对抗套件，以便把导弹架升级为LRM-10。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是五角势力对FFL-3SLE的变型，拆除了CASE和电子对抗套件，以便把导弹架升级为LRM-10。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -10548,7 +10548,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Another refit of the FFL-3SLE, this time simply using standard armor plating instead of the advanced Ferro-Fibrous composites.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是FFL-3SLE的又一次改装，这次只是改用标准装甲板，而不再使用先进的铁纤维复合材料。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是FFL-3SLE的又一次改装，这次只是改用标准装甲板，而不再使用先进的铁纤维复合材料。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -10580,7 +10580,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A basic variant of the Firefly that accompanied the Dragoons to the Inner Sphere, the 4A carries a similar weapons payload to the 4B model, although it keeps the small laser battery of the -3A instead of the anti-missile system.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是随龙骑兵一同来到内层星域的萤火虫基础变型。4A的武器载荷与4B型相近，但它保留了-3A的小型激光阵列，而没有采用反导弹系统。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是随龙骑兵一同来到内层星域的萤火虫基础变型。4A的武器载荷与4B型相近，但它保留了-3A的小型激光阵列，而没有采用反导弹系统。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -10924,7 +10924,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A far cry from the fast and deadly 8K Flashman, the 7K model is a downgraded version that was produced by Defiance Industries in 2796 after the destruction of the Renault-Prime factories, using a blueprint that was acquired prior to the factory's destruction. The advanced extralight engine was no longer being produced though, and with a standard Vlar 300 the design now has a top speed of only 64.8 km/h. In addition, the center torso Large Laser, the AMS and the advanced targeting-tracking system were also removed and the double heat sinks replaced with standard single versions. The design now instead only carries two arm-mounted Large Lasers and five Medium Lasers. Surprisingly, the armor protection has not been sacrificed in any way, which has resulted in the 7K being more durable than the SLDF version due to its lack of an XL engine.\n\n<b><color=#e62e00>Quirk: Rugged</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "与迅捷致命的8K型闪电相比，7K型是一台降级版本，由迪法恩斯工业于2796年在雷诺-普莱姆工厂被摧毁后、依据工厂毁灭前取得的图纸生产。然而先进的特轻引擎已不再生产，改用标准Vlar 300后，该设计的最高时速只剩64.8 km/h。此外，中央躯干的大型激光、反导弹系统以及先进的瞄准跟踪系统也一并被拆除，双散热器则换成标准单散热器。现在它只携带2门装在手臂上的大型激光和5门中型激光。令人意外的是，装甲防护丝毫没有缩水，这使得7K由于没有XL引擎，反而比星际联盟防卫军版本更耐打。\n<<NL><b><color=#e62e00>特性：坚固</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "与迅捷致命的8K型闪电相比，7K型是一台降级版本，由迪法恩斯工业于2796年在雷诺-普莱姆工厂被摧毁后、依据工厂毁灭前取得的图纸生产。然而先进的特轻引擎已不再生产，改用标准Vlar 300后，该设计的最高时速只剩64.8 km/h。此外，中央躯干的大型激光、反导弹系统以及先进的瞄准跟踪系统也一并被拆除，双散热器则换成标准单散热器。现在它只携带2门装在手臂上的大型激光和5门中型激光。令人意外的是，装甲防护丝毫没有缩水，这使得7K由于没有XL引擎，反而比星际联盟防卫军版本更耐打。\n\n<b><color=#e62e00>特性：坚固</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -11444,7 +11444,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Garm is capable of providing both direct and indirect fire support. For direct fire support, the Garm has a LB-X AC/5, capable of firing both standard and cluster ammunition. A LRM-10 launcher provides the Garm with added long-range combat capabilities and allows indirect fire support.\n\n<b><color=#e62e00>Quirk: Extended Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.98</color></b>",
-        "CULTURE_ZH_CN": "加尔姆能够同时提供直接与间接火力支援。直接火力方面，它装有1门LB-X自动炮/5，可发射标准弹和集束弹；1具LRM-10发射器则赋予加尔姆额外的远程作战能力，并使其能够进行间接射击支援。\n<<NL><b><color=#e62e00>特性：扩展躯干旋转</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.98</color></b>"
+        "CULTURE_ZH_CN": "加尔姆能够同时提供直接与间接火力支援。直接火力方面，它装有1门LB-X自动炮/5，可发射标准弹和集束弹；1具LRM-10发射器则赋予加尔姆额外的远程作战能力，并使其能够进行间接射击支援。\n\n<b><color=#e62e00>特性：扩展躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.98</color></b>"
       }
     },
     {
@@ -12500,7 +12500,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Though Gray Death Scout armor has no integral weapons, its Armored Gloves allow soldiers to wield standard small arms and perform other functions as normal. While this does not allow for very much damage potential against hardened targets, a scout squad can be a serious threat to unarmored infantry. The armored gloves, in combination with the suit's strength enhancements, allows the trooper to ride on OmniMechs via their handholds or perform anti-'Mech attacks. That the trooper's natural dexterity is otherwise unaffected by the suit is an added bonus for placing Satchel Charges in exposed 'Mech joints.\n\n<b><color=#e62e00>Quirk: Information Gatherer</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.886</color></b>\n\n<b><color=#2aad3b>Can mount Omni units, can melee, can swarm.</b></color>",
-        "CULTURE_ZH_CN": "尽管灰死侦察装甲没有内置武器，其装甲手套却让士兵能像平常一样使用标准轻型枪械并执行其他动作。虽然面对坚固目标时谈不上有多大杀伤潜力，但一支侦察小队对无装甲步兵而言仍是严重威胁。装甲手套结合装甲服的力量增幅，使士兵能抓着把手搭乘全向机甲，或发动反机甲攻击。而士兵天生的灵巧度不受装甲服影响，这一点对于把炸药包塞进机甲外露的关节处更是额外的好处。\n<<NL><b><color=#e62e00>特性：情报收集者</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.886</color></b>\n<<NL><b><color=#2aad3b>可搭载全向单位，可近战，可攀爬攻击。</b></color>"
+        "CULTURE_ZH_CN": "尽管灰死侦察装甲没有内置武器，其装甲手套却让士兵能像平常一样使用标准轻型枪械并执行其他动作。虽然面对坚固目标时谈不上有多大杀伤潜力，但一支侦察小队对无装甲步兵而言仍是严重威胁。装甲手套结合装甲服的力量增幅，使士兵能抓着把手搭乘全向机甲，或发动反机甲攻击。而士兵天生的灵巧度不受装甲服影响，这一点对于把炸药包塞进机甲外露的关节处更是额外的好处。\n\n<b><color=#e62e00>特性：情报收集者</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.886</color></b>\n\n<b><color=#2aad3b>可搭载全向单位，可近战，可攀爬攻击。</b></color>"
       }
     },
     {
@@ -13244,7 +13244,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Guardian GRD-1N is armed with five machine guns, one mounted in each arm, in each torso side and in the center torso, respectively. Two and a half tons of ammunition in the right torso provide an ample supply of ammunition.\n\n<b><color=#e62e00>Quirk: Accurate Weapon - MG</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>",
-        "CULTURE_ZH_CN": "守卫者GRD-1N装有5挺机枪，分别安装在左右手臂、左右侧躯干和中央躯干各1挺。右躯干内的2.5吨弹药为其提供了充足的补给。\n<<NL><b><color=#e62e00>特性：精准武器（机枪）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>"
+        "CULTURE_ZH_CN": "守卫者GRD-1N装有5挺机枪，分别安装在左右手臂、左右侧躯干和中央躯干各1挺。右躯干内的2.5吨弹药为其提供了充足的补给。\n\n<b><color=#e62e00>特性：精准武器（机枪）</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>"
       }
     },
     {
@@ -13692,7 +13692,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "An early FedSuns BattleMech, the 75 ton Hammerhands debuted in 2475 and served as one of the progenitor designs that would influence the iconic Warhammer. Powered by a 225-rated Fusion Core, the Hammerhands HMH-3D is armed with a pair of AC/10’s, with a pair of Medium Lasers and an SRM-6 for close range combat.\n\n<b><color=#e62e00>Quirk: Barrel Fist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "作为联邦太阳国的早期战斗机甲，75吨的锤手于2475年首次登场，是影响了经典战锤的先行设计之一。锤手HMH-3D由225额定聚变核心驱动，装备2门AC/10，并配2门中型激光和1具SRM-6用于近距交战。\n<<NL><b><color=#e62e00>特性：炮管拳</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "作为联邦太阳国的早期战斗机甲，75吨的锤手于2475年首次登场，是影响了经典战锤的先行设计之一。锤手HMH-3D由225额定聚变核心驱动，装备2门AC/10，并配2门中型激光和1具SRM-6用于近距交战。\n\n<b><color=#e62e00>特性：炮管拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -14596,7 +14596,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Hellion is a product of Clan Ice Hellion and their philosophy that espouses speed above all else. Based on the Mist Lynx, the Hellion is a fast OmniMech that has respectable firepower. This light 'Mech is rather difficult to kill, incorporating five and a half tons of Ferro-Fibrous armor. To save weight, the Hellion also uses an Endo Steel chassis. While it is not especially fast for its size, the Hellion does use MASC to allow for bursts of additional speed. The Hellion sports no fixed weapons on its chassis. The primary configuration consists of four ER Medium Lasers as well as a trio of Streak SRM-2s, which make it a potent headhunter 'Mech. It also packs an LRM-10 to harass enemies at range.\n\n<b><color=#e62e00>Quirk: Nimble</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.98</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "地狱魔是冰魔部族的产物，体现了该部族奉行速度至上的理念。它以雾森猁为基础，是一台速度很快、火力也相当可观的全向机甲。这台轻型机甲相当难以击毁，披挂5.5吨铁纤维装甲；为节省重量，地狱魔还采用了内骨架底盘。虽然就其体型而言速度不算特别突出，但它确实装有MASC，可爆发出额外速度。地狱魔的底盘上没有固定武器，主配置由4门增程中型激光和3具连发SRM-2组成，使其成为一台强悍的猎头机甲；此外还配有1具LRM-10，可在远距离骚扰敌人。\n<<NL><b><color=#e62e00>特性：灵活</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.98</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "地狱魔是冰魔部族的产物，体现了该部族奉行速度至上的理念。它以雾森猁为基础，是一台速度很快、火力也相当可观的全向机甲。这台轻型机甲相当难以击毁，披挂5.5吨铁纤维装甲；为节省重量，地狱魔还采用了内骨架底盘。虽然就其体型而言速度不算特别突出，但它确实装有MASC，可爆发出额外速度。地狱魔的底盘上没有固定武器，主配置由4门增程中型激光和3具连发SRM-2组成，使其成为一台强悍的猎头机甲；此外还配有1具LRM-10，可在远距离骚扰敌人。\n\n<b><color=#e62e00>特性：灵活</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.98</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -14612,7 +14612,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Hercules HRC-LS-9000 carries a wide variety of weapons. For long-range firepower, the 'Mech is armed with a ER PPC. The ER PPC is backed up at intermediate ranges by an LB-X Autocannon/10 that can fire both standard and cluster rounds, making it effective against a wide range of combat units. For close-range combat, the Hercules carries a Streak SRM-2 launcher, an Medium Pulse Laser, and two Small Pulse Lasers. For added protection from missile attacks, the 'Mech also carried an anti-missile system.\n\n<b><color=#e62e00>Quirk: Stable Weapons</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.1</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Lower</color>",
-        "CULTURE_ZH_CN": "大力神HRC-LS-9000搭载种类繁多的武器。远程火力方面，该机甲装备1门增程粒子炮。在中距离上，增程粒子炮由1门LB-X自动炮/10提供支援，它既能发射标准弹也能发射集束弹，对各种作战单位都颇具威胁。近距交战时，大力神携带1具连发SRM-2发射器、1门中型脉冲激光和2门小型脉冲激光。为进一步防御导弹袭击，该机甲还装有1套反导弹系统。\n<<NL><b><color=#e62e00>特性：稳定武器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.1</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂下段</color>"
+        "CULTURE_ZH_CN": "大力神HRC-LS-9000搭载种类繁多的武器。远程火力方面，该机甲装备1门增程粒子炮。在中距离上，增程粒子炮由1门LB-X自动炮/10提供支援，它既能发射标准弹也能发射集束弹，对各种作战单位都颇具威胁。近距交战时，大力神携带1具连发SRM-2发射器、1门中型脉冲激光和2门小型脉冲激光。为进一步防御导弹袭击，该机甲还装有1套反导弹系统。\n\n<b><color=#e62e00>特性：稳定武器</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.1</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂下段</color>"
       }
     },
     {
@@ -15756,7 +15756,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The -4TD has one big change from the -4G, the fact that it houses a 350 XL engine core. Also knows as the 'Turbo Hunchback Deluxe', it drops the armoring down to 7 tons and uses an Endo Steel chassis to be able to fit both the massive engine and an extra Medium Laser. Similar to its predecessor, the normal 'Turbo Hunchback', the chassis had to be modified in such a way that replacing the engine core is not possible.\n\n<b><color=#e62e00>Quirk: Battle Fists</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>",
-        "CULTURE_ZH_CN": "与-4G相比，-4TD有一个重大变化：它内置了一台350 XL引擎核心。它也被称为“豪华涡轮驼背”，装甲削减到7吨，并采用内骨架底盘，以便同时容纳那台巨型引擎和1门额外的中型激光。与它的前辈——普通的“涡轮驼背”——一样，其底盘经过特殊改造，以致无法更换引擎核心。\n<<NL><b><color=#e62e00>特性：战拳</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>"
+        "CULTURE_ZH_CN": "与-4G相比，-4TD有一个重大变化：它内置了一台350 XL引擎核心。它也被称为“豪华涡轮驼背”，装甲削减到7吨，并采用内骨架底盘，以便同时容纳那台巨型引擎和1门额外的中型激光。与它的前辈——普通的“涡轮驼背”——一样，其底盘经过特殊改造，以致无法更换引擎核心。\n\n<b><color=#e62e00>特性：战拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>"
       }
     },
     {
@@ -16516,7 +16516,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "First produced in 2948, the Ice Ferret is a medium scout OmniMech often employed as a head hunter or strike unit. A 45 ton Clan OmniMech, the Ice Ferret is powered by a 360-rated XL Engine and has 9.5 tons of pod space thanks to a combination of Endo Steel, an XL Engine and Ferro-Fibrous. The Ice Ferret IFR-E is armed with an ATM-9, ER Medium Laser and an ER Small Laser.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "冰貂于2948年首次投产，是一款中型侦察全向机甲，常被用作猎头或突击单位。这台45吨的部族全向机甲由360额定XL引擎驱动，并凭借内骨架、XL引擎与铁纤维装甲的组合拥有9.5吨挂载空间。冰貂IFR-E装备1具ATM-9、1门增程中型激光和1门增程小型激光。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "冰貂于2948年首次投产，是一款中型侦察全向机甲，常被用作猎头或突击单位。这台45吨的部族全向机甲由360额定XL引擎驱动，并凭借内骨架、XL引擎与铁纤维装甲的组合拥有9.5吨挂载空间。冰貂IFR-E装备1具ATM-9、1门增程中型激光和1门增程小型激光。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -16804,7 +16804,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Wolf's Dragoons custom refit of the Imp, using all Clan tech. The 'Mech's primary weapons are two ER PPC, two Large Pulse Lasers and two LRM-15 with attached Artemis IV FCS. As secondary fireline the 4W carries two ER Medium Laser and two Medium Pulse Laser, while two ER Small Lasers are kept for defensive purposes.\n\n<b><color=#e62e00>Quirk: Command Mech</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.24</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是狼之龙骑兵对“小鬼”的定制改装，全部采用部族技术。该机甲的主武器为2门增程粒子炮、2门大型脉冲激光和2具带阿尔忒弥斯IV火控系统的LRM-15。作为次要火力线，4W还搭载2门增程中型激光和2门中型脉冲激光，并保留2门增程小型激光用于自卫。\n<<NL><b><color=#e62e00>特性：指挥机甲</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.24</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是狼之龙骑兵对“小鬼”的定制改装，全部采用部族技术。该机甲的主武器为2门增程粒子炮、2门大型脉冲激光和2具带阿尔忒弥斯IV火控系统的LRM-15。作为次要火力线，4W还搭载2门增程中型激光和2门中型脉冲激光，并保留2门增程小型激光用于自卫。\n\n<b><color=#e62e00>特性：指挥机甲</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.24</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -18420,7 +18420,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A pirate version of the Jenner, using as light components as possible to fit twin Streak SRM-2 launchers, a single Streak SRM-6 and 7 tons of armor.\n\n<b><color=#e62e00>Quirk: Improved Lifesupport</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.98</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是珍纳的海盗改装版，尽可能采用轻量部件，以装下2具连发SRM-2发射器、1具连发SRM-6和7吨装甲。\n<<NL><b><color=#e62e00>特性：改进生命维持系统</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.98</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是珍纳的海盗改装版，尽可能采用轻量部件，以装下2具连发SRM-2发射器、1具连发SRM-6和7吨装甲。\n\n<b><color=#e62e00>特性：改进生命维持系统</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.98</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -19060,7 +19060,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "One of the earliest second generation OmniMech designs, the Kingfisher debuted in 2887 and is reputed to have influenced all subsequent Clan Assault OmniMech designs. A 90-ton mech powered by a 360-rated Fusion Engine, the Kingfisher has 24 tons of podspace provided by a combination of Ferro-Fibrous armor and an Endo Steel skeleton. The Kingfisher C is armed with a pair of ER PPC’s. At closer ranges, the C can bring to bear 5 ER Medium Lasers.\n\n<b><color=#e62e00>Quirk: Rugged</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.17</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "作为最早的第二代全向机甲设计之一，翠鸟于2887年首次亮相，据说影响了此后所有部族突击型全向机甲的设计。这台90吨的机甲由360额定聚变引擎驱动，凭借铁纤维装甲与内骨架的组合拥有24吨挂载空间。翠鸟C装备2门增程粒子炮；在较近距离上，C还能动用5门增程中型激光。\n<<NL><b><color=#e62e00>特性：坚固</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.17</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "作为最早的第二代全向机甲设计之一，翠鸟于2887年首次亮相，据说影响了此后所有部族突击型全向机甲的设计。这台90吨的机甲由360额定聚变引擎驱动，凭借铁纤维装甲与内骨架的组合拥有24吨挂载空间。翠鸟C装备2门增程粒子炮；在较近距离上，C还能动用5门增程中型激光。\n\n<b><color=#e62e00>特性：坚固</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.17</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -20620,7 +20620,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Designed as a replacement to the Timber Wolf, the 65 ton Linebacker entered production in 3052. Built around a 390-rated XL Engine, the Linebacker’s faster speed enables it to keep up with lighter star mates in running battles, something the Timber Wolf struggled to do. A combination of Ferro-Fibrous armor and Endo Steel give the OmniMech 17.5 tons of free pod space. The Linebacker LBK-RL is armed with a UAC/10 and a Streak SRM-4. 3 ER Small Lasers fill out the remaining free weight.\n\n<b><color=#e62e00>Quirk: Stable</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.12</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "作为木狼的替代型号，65吨的线卫于3052年投产。它围绕390额定XL引擎建造，更快的速度让线卫在运动战中能跟上星编队中更轻的同伴，而这正是木狼难以做到的。铁纤维装甲与内骨架的组合为这台全向机甲带来17.5吨的自由挂载空间。线卫LBK-RL装备1门UAC/10和1具连发SRM-4，剩余载重则由3门增程小型激光填满。\n<<NL><b><color=#e62e00>特性：稳定</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.12</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "作为木狼的替代型号，65吨的线卫于3052年投产。它围绕390额定XL引擎建造，更快的速度让线卫在运动战中能跟上星编队中更轻的同伴，而这正是木狼难以做到的。铁纤维装甲与内骨架的组合为这台全向机甲带来17.5吨的自由挂载空间。线卫LBK-RL装备1门UAC/10和1具连发SRM-4，剩余载重则由3门增程小型激光填满。\n\n<b><color=#e62e00>特性：稳定</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.12</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -20756,7 +20756,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Jade Falcon designed Locust IIC, as they tried to speed up production with simpler 'Mechs to recover after the losses during the failed Operation REVIVAL. Using Clan-grade Endo Steel structure and Ferro-Fibrous armor, enough weight was freed to mount two Streak SRM-2 launchers and two ER Medium Lasers.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是玉鹰部族设计的蝗虫IIC——在“复兴行动”失败、损失惨重之后，他们试图用更简单的机甲加快生产、恢复元气。该机甲采用部族级内骨架结构和铁纤维装甲，腾出的重量足以安装2具连发SRM-2发射器和2门增程中型激光。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是玉鹰部族设计的蝗虫IIC——在“复兴行动”失败、损失惨重之后，他们试图用更简单的机甲加快生产、恢复元气。该机甲采用部族级内骨架结构和铁纤维装甲，腾出的重量足以安装2具连发SRM-2发射器和2门增程中型激光。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -21524,7 +21524,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The unofficial mascot of the Desert Wars portion of the Martial Olympiad, Kill Roy uses two LB 10-X autocannons instead of the single AC/20. Two tons of ammunition are stored in each side torso. For protection, the torsos are equipped with CASE. To make room for these, the Beagle Active Probe has been removed. Thirteen Double Heat Sinks keep the 'Mech running.\n\n<b><color=#e62e00>Quirk: Easy to Maintain</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.2</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Upper</color>",
-        "CULTURE_ZH_CN": "作为军事奥林匹克“沙漠战争”环节的非官方吉祥物，“杀戮罗伊”用2门LB 10-X自动炮取代了单门AC/20，两侧躯干各存放2吨弹药；为加强防护，躯干都装上了CASE。为腾出空间，比格犬主动探测器已被拆除。13具双散热器让这台机甲持续运转。\n<<NL><b><color=#e62e00>特性：易于维护</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.2</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂上段</color>"
+        "CULTURE_ZH_CN": "作为军事奥林匹克“沙漠战争”环节的非官方吉祥物，“杀戮罗伊”用2门LB 10-X自动炮取代了单门AC/20，两侧躯干各存放2吨弹药；为加强防护，躯干都装上了CASE。为腾出空间，比格犬主动探测器已被拆除。13具双散热器让这台机甲持续运转。\n\n<b><color=#e62e00>特性：易于维护</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.2</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂上段</color>"
       }
     },
     {
@@ -23212,7 +23212,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Marauder 5R2 is an export model for the Periphery market. It was constructed on the same line as the 5R, but with much cheaper components, in an attempt to sell based on the relation to the actual 5R alone. Its weapons consist of only three Large and two Medium standard lasers, its cooling is using single heat sinks and the engine is a standard 300 rated core. Overall, the design is pretty much very subpar for a Marauder, but a number of 5R2 were produced and sold before this was fully realized.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "掠夺者5R2是面向外围地区市场的出口型号。它与5R共用同一条生产线，但采用便宜得多的部件，试图仅凭与真正5R的渊源来打开销路。其武器只有3门大型激光和2门中型标准激光，散热使用单散热器，引擎则是标准300额定核心。总体而言，这台设计对一台掠夺者来说相当不堪，但在人们完全意识到这点之前，已有不少5R2被生产并售出。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "掠夺者5R2是面向外围地区市场的出口型号。它与5R共用同一条生产线，但采用便宜得多的部件，试图仅凭与真正5R的渊源来打开销路。其武器只有3门大型激光和2门中型标准激光，散热使用单散热器，引擎则是标准300额定核心。总体而言，这台设计对一台掠夺者来说相当不堪，但在人们完全意识到这点之前，已有不少5R2被生产并售出。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -23772,7 +23772,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Mercury debuted for the first time in 2742, intended as a replacement for the aging Wasps and Stingers in use by the Star League Defense Force. Hailed as the beginning of a new age in 'Mech design, the Mercury was faster and better-armed than its competition without sacrificing armor protection. It also featured an advancement in weapons installation, making use of a modular replacement system to allow for considerably faster and easier repairs. The Mercury carries an assortment of energy weapons which helps to extend its endurance on long campaigns. The primary weapons are two Medium Lasers in the right arm and left torso, supported by two Small Lasers in the center torso and head. The heart of the Mercury is its MASC System which, in combination with a 160 fusion engine, allows for momentary bursts of speed up to 172 km/h. Three tons of Ferro-Fibrous armor gives it superior protection compared to other 20-ton 'Mechs.\n\n<b><color=#e62e00>Quirk: Modular Weapons</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>",
-        "CULTURE_ZH_CN": "水星于2742年首次登场，意在替换星际联盟防卫军中使用已久、日渐老旧的黄蜂和毒刺。它被誉为机甲设计新时代的开端：在不牺牲装甲防护的前提下，水星比竞争对手更快、武装更好。它还在武器安装方式上有所创新，采用模块化更换系统，使维修显著更快、更容易。水星携带多种能量武器，这有助于延长它在长期战役中的续航。主武器是分别位于右臂和左躯干的2门中型激光，另有位于中央躯干和头部的2门小型激光支援。水星的核心是它的MASC系统，配合160聚变引擎可短时爆发到172 km/h。3吨铁纤维装甲让它在防护上优于其他20吨机甲。\n<<NL><b><color=#e62e00>特性：模块化武器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>"
+        "CULTURE_ZH_CN": "水星于2742年首次登场，意在替换星际联盟防卫军中使用已久、日渐老旧的黄蜂和毒刺。它被誉为机甲设计新时代的开端：在不牺牲装甲防护的前提下，水星比竞争对手更快、武装更好。它还在武器安装方式上有所创新，采用模块化更换系统，使维修显著更快、更容易。水星携带多种能量武器，这有助于延长它在长期战役中的续航。主武器是分别位于右臂和左躯干的2门中型激光，另有位于中央躯干和头部的2门小型激光支援。水星的核心是它的MASC系统，配合160聚变引擎可短时爆发到172 km/h。3吨铁纤维装甲让它在防护上优于其他20吨机甲。\n\n<b><color=#e62e00>特性：模块化武器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>"
       }
     },
     {
@@ -24124,7 +24124,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A common Light OmniMech, the Mist Lynx is fielded by every Clan since its introduction in 2926. A 25-ton mech, the Mist Lynx is powered by a 175-rated XL Engine and is built with a combination of Endo Steel and Ferro-Fibrous that gives it a respectable 7.5 tons of pod space. An Active Probe is hardwired into the chassis boosting the Mist Lynx’s effectiveness as a scout. The Mist Lynx H is armed with a Streak SRM-6 and an AMS. A Heavy Medium Laser and 2 Heavy Small Lasers round out the variant.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "作为一款常见的轻型全向机甲，雾森猁自2926年问世以来便被各部族广泛装备。这台25吨的机甲由175额定XL引擎驱动，并采用内骨架与铁纤维装甲的组合，因而拥有可观的7.5吨挂载空间。1具主动探测器被硬连接到机甲底盘上，提升了雾森猁作为侦察机的效能。雾森猁H装备1具连发SRM-6和1套AMS，另有1门重型中型激光和2门重型小型激光补足配置。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.99</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "作为一款常见的轻型全向机甲，雾森猁自2926年问世以来便被各部族广泛装备。这台25吨的机甲由175额定XL引擎驱动，并采用内骨架与铁纤维装甲的组合，因而拥有可观的7.5吨挂载空间。1具主动探测器被硬连接到机甲底盘上，提升了雾森猁作为侦察机的效能。雾森猁H装备1具连发SRM-6和1套AMS，另有1门重型中型激光和2门重型小型激光补足配置。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -26268,7 +26268,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A variant of the Ostroc OSR-2C adding a C3 slave unit and replacing the single heat sink with doubles.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.08</color></b>",
-        "CULTURE_ZH_CN": "这是奥斯特罗克OSR-2C的变型，加装了1台C3从属单元，并将单散热器更换为双散热器。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.08</color></b>"
+        "CULTURE_ZH_CN": "这是奥斯特罗克OSR-2C的变型，加装了1台C3从属单元，并将单散热器更换为双散热器。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.08</color></b>"
       }
     },
     {
@@ -26812,7 +26812,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Debuting by Clan Wolf in 3052, the Phantom is a 40 ton Clan Omnimech designed as scout and light mech hunter. A combination of an Endo Steel chassis and a 360-rated XL Engine allow the Phantom to achieve speeds of 151 km/h and maintain 6.5 tons of pod space. The Phantom A carries 5 ER Small Lasers, alongside an ER Medium Laser and a pair of LRM-5’s.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "幻影于3052年由狼族部族首次投入实战，是一台40吨的部族全向机甲，设计定位为侦察与轻型机甲猎手。内骨架底盘与360额定XL引擎的组合，使幻影能达到151 km/h的速度，并保有6.5吨的挂载空间。幻影A型搭载5门增程小型激光，另配1门增程中型激光和2具LRM-5。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.03</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "幻影于3052年由狼族部族首次投入实战，是一台40吨的部族全向机甲，设计定位为侦察与轻型机甲猎手。内骨架底盘与360额定XL引擎的组合，使幻影能达到151 km/h的速度，并保有6.5吨的挂载空间。幻影A型搭载5门增程小型激光，另配1门增程中型激光和2具LRM-5。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -28228,7 +28228,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "An assault grade fire support mech, the Salamander entered production in 3055. An 80-ton mech, the Salamander is built around a 320-rated XL Engine and an Endo Steel Skeleton, allowing it to carry 43 tons of weapons and equipment. The Salamander PPR-5S is armed with a trio of LRM-20’s. A pair of Medium Lasers act as back up weapons.\n\n<b><color=#e62e00>Quirk: Accurate Weapon - Missiles</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.14</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Left Lower</color>",
-        "CULTURE_ZH_CN": "作为一台突击级火力支援机甲，火蜥蜴于3055年投产。这台80吨的机甲围绕320额定XL引擎和内骨架建造，可携带43吨武器与装备。火蜥蜴PPR-5S装备3具LRM-20，并由2门中型激光充当备用武器。\n<<NL><b><color=#e62e00>特性：精准武器（导弹）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.14</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段</color>"
+        "CULTURE_ZH_CN": "作为一台突击级火力支援机甲，火蜥蜴于3055年投产。这台80吨的机甲围绕320额定XL引擎和内骨架建造，可携带43吨武器与装备。火蜥蜴PPR-5S装备3具LRM-20，并由2门中型激光充当备用武器。\n\n<b><color=#e62e00>特性：精准武器（导弹）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.14</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段</color>"
       }
     },
     {
@@ -28684,7 +28684,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This 'Mech was used by the Wolf's Dragoons during their campaigns in the Inner Sphere. The design replaces most of the technology in the 'Mech with Clan-grade equivalents, considerably improving the performance compared to the original Scorpion designs.\n\n<b><color=#e62e00>Quirk: Improved Lifesupport</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>",
-        "CULTURE_ZH_CN": "这台机甲曾在狼之龙骑兵于内层星域的征战中使用。该设计把机甲上的大部分技术替换为部族级同类装备，性能比原版蝎子设计有了显著提升。\n<<NL><b><color=#e62e00>特性：改进生命维持系统</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>"
+        "CULTURE_ZH_CN": "这台机甲曾在狼之龙骑兵于内层星域的征战中使用。该设计把机甲上的大部分技术替换为部族级同类装备，性能比原版蝎子设计有了显著提升。\n\n<b><color=#e62e00>特性：改进生命维持系统</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>"
       }
     },
     {
@@ -29532,7 +29532,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Clan Buster upgrade, the Shadow Hawk 2Ht was a Comstar refit built with scrapped SLDF plans and modified for use as an Elemental hunter. Built on the standard SHD-2H chassis, the original 275-rated Fusion Core is retained along with the pair of arm mounted Medium Lasers. Replacing the AC/5 is a Large Laser, while 5 Streak SRM-2’s and a ton of ammo replace the original missile launchers. DHS replaces the original SHS, freeing up weight for CASE and an extra pair of Jump Jets.\n\n<b><color=#e62e00>Quirk: Battle Fists</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.05</color></b>",
-        "CULTURE_ZH_CN": "作为一项“反部族”升级，影鹰2Ht是通讯之星利用废弃的星际联盟防卫军图纸打造、并改造为元素猎手的改装型。它沿用标准SHD-2H底盘，保留275额定聚变核心和2门装在手臂上的中型激光。AC/5被1门大型激光取代，原有的导弹发射器则由5具连发SRM-2和1吨弹药顶替。双散热器取代了原来的单散热器，腾出的重量用于安装CASE和2具额外的跳跃推进器。\n<<NL><b><color=#e62e00>特性：战拳</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.05</color></b>"
+        "CULTURE_ZH_CN": "作为一项“反部族”升级，影鹰2Ht是通讯之星利用废弃的星际联盟防卫军图纸打造、并改造为元素猎手的改装型。它沿用标准SHD-2H底盘，保留275额定聚变核心和2门装在手臂上的中型激光。AC/5被1门大型激光取代，原有的导弹发射器则由5具连发SRM-2和1吨弹药顶替。双散热器取代了原来的单散热器，腾出的重量用于安装CASE和2具额外的跳跃推进器。\n\n<b><color=#e62e00>特性：战拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.05</color></b>"
       }
     },
     {
@@ -30708,7 +30708,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The so-called Stag II incorporated a prototype version of the ER PPC that was roughly comparable to the Clan version of the weapon, though it was slightly less destructive. This upgrade of the large laser necessitated removal of the MASC, though the top speed was upgraded to 119 km/h. Additionally, Ferro-Fibrous weave was incorporated into the armor, though at an overall decrease in protection. The SRMs were removed in favor of an additional Medium Laser, two Medium Pulse Lasers, and two Small Lasers. This gave the 'Mech greater battlefield longevity, though the potential for excessive heat buildup was much greater.\n\n<b><color=#e62e00>Quirk: Improved Communications</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Lower</color>",
-        "CULTURE_ZH_CN": "所谓的“雄鹿II”采用了增程粒子炮的原型版本，性能大致可与该武器的部族版本相比，只是破坏力略低。用这种大型激光的升级型号替换原有武器，使MASC不得不被拆除，不过最高时速提升到了119 km/h。此外，装甲中加入了铁纤维编织层，整体防护却有所下降。SRM被拆掉，换来1门额外的中型激光、2门中型脉冲激光和2门小型激光。这让该机甲在战场上更耐久，但过热的风险也大得多。\n<<NL><b><color=#e62e00>特性：改进通讯</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.03</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂下段</color>"
+        "CULTURE_ZH_CN": "所谓的“雄鹿II”采用了增程粒子炮的原型版本，性能大致可与该武器的部族版本相比，只是破坏力略低。用这种大型激光的升级型号替换原有武器，使MASC不得不被拆除，不过最高时速提升到了119 km/h。此外，装甲中加入了铁纤维编织层，整体防护却有所下降。SRM被拆掉，换来1门额外的中型激光、2门中型脉冲激光和2门小型激光。这让该机甲在战场上更耐久，但过热的风险也大得多。\n\n<b><color=#e62e00>特性：改进通讯</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂下段</color>"
       }
     },
     {
@@ -31092,7 +31092,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Star League era mech, the Starslayer was intended to replace the Crab as the SLDF’s standard medium chassis, though politics kept it from seeing full production until 2781. A 50 ton medium mech, the Starslayer is powered by a 250-rated fusion core and has 5 JJ’s for maximum mobility. The STY-3C carries 2 Large Lasers, with a pair of Medium Lasers and a Small laser for closer ranged combat. An SRM-4 with a ton of ammo rounds out the design. \n\n<b><color=#e62e00>Quirk: Rugged</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Upper</color>",
-        "CULTURE_ZH_CN": "作为星际联盟时代的机甲，弑星者本被寄望取代螃蟹、成为星际联盟防卫军的标准中型底盘，但因政治因素直到2781年才得以全面量产。这台50吨的中型机甲由250额定聚变核心驱动，并装有5具跳跃推进器以获得最大机动性。STY-3C携带2门大型激光，另有2门中型激光和1门小型激光应对较近距离的交战，最后以1具带1吨弹药的SRM-4收尾。\n<<NL><b><color=#e62e00>特性：坚固</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂上段</color>"
+        "CULTURE_ZH_CN": "作为星际联盟时代的机甲，弑星者本被寄望取代螃蟹、成为星际联盟防卫军的标准中型底盘，但因政治因素直到2781年才得以全面量产。这台50吨的中型机甲由250额定聚变核心驱动，并装有5具跳跃推进器以获得最大机动性。STY-3C携带2门大型激光，另有2门中型激光和1门小型激光应对较近距离的交战，最后以1具带1吨弹药的SRM-4收尾。\n\n<b><color=#e62e00>特性：坚固</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂上段</color>"
       }
     },
     {
@@ -32532,7 +32532,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The only difference of the H2 and J2 layouts are the different positioning of the heat sinks, as the J2 move them to the arms for better balance during jumps.\n\n<b><color=#e62e00>Quirk: Improved Communications</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "H2与J2配置唯一的区别在于散热器的布置位置不同：J2把它们移到手臂上，以便在跳跃时获得更好的平衡。\n<<NL><b><color=#e62e00>特性：改进通讯</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.11</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "H2与J2配置唯一的区别在于散热器的布置位置不同：J2把它们移到手臂上，以便在跳跃时获得更好的平衡。\n\n<b><color=#e62e00>特性：改进通讯</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.11</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -32644,7 +32644,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The O configuration combines two ER PPC with a LRM-20. A Medium Pulse Laser and ER Small Laser act as backup.\n\n<b><color=#e62e00>Quirk: Improved Communications</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "O配置把2门增程粒子炮与1具LRM-20组合在一起，并由1门中型脉冲激光和1门增程小型激光充当备用火力。\n<<NL><b><color=#e62e00>特性：改进通讯</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.11</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "O配置把2门增程粒子炮与1具LRM-20组合在一起，并由1门中型脉冲激光和1门增程小型激光充当备用火力。\n\n<b><color=#e62e00>特性：改进通讯</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.11</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -34292,7 +34292,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based on the older 5SS model, the 9S was built in 3050 by Olivetti Weaponry using off-the-shelf structural components and armor after extensive changes delayed production. The 'Mech is armed with an ER PPC in its right arm as its primary long-range firepower. This is supported at closer ranges by a SRM-6 in the left torso along with the original three medium lasers. While retaining the left arm machine guns, in the right torso it carries a pair of flamers and an anti-missile system, along with one ton of AMS ammo.\n\n<b><color=#e62e00>Quirk: Multi Trac</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>",
-        "CULTURE_ZH_CN": "9S以较老的5SS型号为基础，于3050年由奥利维蒂兵工厂使用现成的结构部件和装甲制造——此前大幅度的改动一再拖延了投产。该机甲以右臂的1门增程粒子炮作为主要远程火力，近距离则依靠左躯干的1具SRM-6以及原有的3门中型激光。它保留了左臂的机枪，同时右躯干装有2具火焰喷射器和1套反导弹系统，并配1吨AMS弹药。\n<<NL><b><color=#e62e00>特性：多重履带</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>"
+        "CULTURE_ZH_CN": "9S以较老的5SS型号为基础，于3050年由奥利维蒂兵工厂使用现成的结构部件和装甲制造——此前大幅度的改动一再拖延了投产。该机甲以右臂的1门增程粒子炮作为主要远程火力，近距离则依靠左躯干的1具SRM-6以及原有的3门中型激光。它保留了左臂的机枪，同时右躯干装有2具火焰喷射器和1套反导弹系统，并配1吨AMS弹药。\n\n<b><color=#e62e00>特性：多重履带</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>"
       }
     },
     {
@@ -37124,7 +37124,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A customized variant of the Vapor Eagle. The Rival carries 3 Heavy Machine Guns in its left arm, while a single ER PPC is mounted in the right arm. An ATM 9s and three ton of ATM ammo is in the right torso mounted with MASC.\n\n<b><color=#e62e00>Quirk: Aerial Assault</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>",
-        "CULTURE_ZH_CN": "这是雾鹰的定制变型。“对手”在左臂装有3挺重型机枪，右臂则挂载1门增程粒子炮；右躯干内装1具ATM 9与3吨ATM弹药，并与MASC一同安装。\n<<NL><b><color=#e62e00>特性：空降突击</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.11</color></b>"
+        "CULTURE_ZH_CN": "这是雾鹰的定制变型。“对手”在左臂装有3挺重型机枪，右臂则挂载1门增程粒子炮；右躯干内装1具ATM 9与3吨ATM弹药，并与MASC一同安装。\n\n<b><color=#e62e00>特性：空降突击</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.11</color></b>"
       }
     },
     {
@@ -38332,7 +38332,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A full clan conversion of the War Dog, used by the mercenary outfit the Wolf's Dragoons. Although all weapons were upgraded to Clan specification, the 'Mech keeps the same weapon configuration as the original -02FC, except for replacing the one-shot streak launchers with Streak SRM-6 ones. A C3 Slave computer was also added, a common occurance for Wolf's Dragoons rebuilds.\n\n<b><color=#e62e00>Quirk: Accurate Weapon - Gauss</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.17</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Lower</color>",
-        "CULTURE_ZH_CN": "这是战犬的完全部族化改装，由雇佣兵部队狼之龙骑兵使用。所有武器虽已按部族规格升级，机甲却仍保持与原版-02FC相同的武器配置，只是把一次性连发发射器换成了连发SRM-6。此外还加装了1台C3从属计算机——这在狼之龙骑兵的重建机甲中十分常见。\n<<NL><b><color=#e62e00>特性：精准武器（高斯）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.17</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂下段</color>"
+        "CULTURE_ZH_CN": "这是战犬的完全部族化改装，由雇佣兵部队狼之龙骑兵使用。所有武器虽已按部族规格升级，机甲却仍保持与原版-02FC相同的武器配置，只是把一次性连发发射器换成了连发SRM-6。此外还加装了1台C3从属计算机——这在狼之龙骑兵的重建机甲中十分常见。\n\n<b><color=#e62e00>特性：精准武器（高斯）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.17</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂下段</color>"
       }
     },
     {
@@ -38476,7 +38476,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The original Warhammer was designed as an assault BattleMech. However, it had been superseded by later and heavier 'Mech designs, though it remained a powerful weapons platform. The Clans wisely maintained and built on this solid frame a real assault 'Mech, the Warhammer IIC. The IIC-BL is a custom variant of the IIC-1 replaces the Medium Pulse Lasers with a pair of ER Medium lasers and removes the original SRM-6 for an ATM-6 with 3 tons of ammo. The IIC-BL is otherwise identical to the IIC-1 with the exception of a trio of Jump Jets added to the Torsos.\n\n<b><color=#e62e00>Quirk: Integrated Searchlight</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.22</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "最初设计的战锤本是一台突击战斗机甲，但后来被更晚、更重的机甲设计所取代，尽管如此，它仍是一个强大的武器平台。部族明智地保留了这套坚固的框架，并在其上打造出真正的突击机甲——战锤IIC。IIC-BL是IIC-1的定制变型，用2门增程中型激光替换了中型脉冲激光，并以1具ATM-6（配3吨弹药）取代原有的SRM-6。除此之外，IIC-BL与IIC-1完全相同，只是躯干上加装了3具跳跃推进器。\n<<NL><b><color=#e62e00>特性：内置探照灯</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.22</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "最初设计的战锤本是一台突击战斗机甲，但后来被更晚、更重的机甲设计所取代，尽管如此，它仍是一个强大的武器平台。部族明智地保留了这套坚固的框架，并在其上打造出真正的突击机甲——战锤IIC。IIC-BL是IIC-1的定制变型，用2门增程中型激光替换了中型脉冲激光，并以1具ATM-6（配3吨弹药）取代原有的SRM-6。除此之外，IIC-BL与IIC-1完全相同，只是躯干上加装了3具跳跃推进器。\n\n<b><color=#e62e00>特性：内置探照灯</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.22</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -39164,7 +39164,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The V configuration carries four medium pulse lasers and an ER PPC as the main damage dealers, while four Jump Jets allow more maneuverability. For close quarters combat a flamer and three Streak SRM-6s are also available.\n\n<b><color=#e62e00>Quirk: Improved Targeting - Long</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.16</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "V配置以4门中型脉冲激光和1门增程粒子炮作为主要输出手段，4具跳跃推进器则带来更强的机动性。近身缠斗时，还可动用1具火焰喷射器和3具连发SRM-6。\n<<NL><b><color=#e62e00>特性：改进瞄准（远程）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.16</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "V配置以4门中型脉冲激光和1门增程粒子炮作为主要输出手段，4具跳跃推进器则带来更强的机动性。近身缠斗时，还可动用1具火焰喷射器和3具连发SRM-6。\n\n<b><color=#e62e00>特性：改进瞄准（远程）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.16</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -40004,7 +40004,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based off Phelan Kell's 'Mech 'Grinner', the Wolfhound IIC 3A is a Clan tech version of the Wolfhound. The design includes Endo Steel structure, Ferro-Fibrous armor and XL engine, combined with an ECM suite. The weapons are fully energy based, consisting of one Large Pulse Laser and four Medium Pulse Lasers.\n\n<b><color=#e62e00>Quirk: Accurate Weapon - Energy</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.06</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Lower</color>",
-        "CULTURE_ZH_CN": "猎狼犬IIC 3A以菲兰·凯尔的座机“咧嘴者”为基础，是猎狼犬的部族技术版本。该设计采用内骨架结构、铁纤维装甲和XL引擎，并整合了1具电子对抗套件。武器全为能量型，包括1门大型脉冲激光和4门中型脉冲激光。\n<<NL><b><color=#e62e00>特性：精准武器（能量）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.06</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂下段</color>"
+        "CULTURE_ZH_CN": "猎狼犬IIC 3A以菲兰·凯尔的座机“咧嘴者”为基础，是猎狼犬的部族技术版本。该设计采用内骨架结构、铁纤维装甲和XL引擎，并整合了1具电子对抗套件。武器全为能量型，包括1门大型脉冲激光和4门中型脉冲激光。\n\n<b><color=#e62e00>特性：精准武器（能量）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.06</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂下段</color>"
       }
     },
     {
@@ -40716,7 +40716,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Designed for Urban combat, the 45 ton Wyvern blends heavy armor, jump jets and a versatile weapons package. Powered by a 180-rated Fusion Core, the Wyvern 6N is armed with a Large Laser and an LRM-10. For close range combat, the Mech carries a pair of Small Lasers and a SRM-6.\n\n<b><color=#e62e00>Quirk: Rugged</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.01</color></b>",
-        "CULTURE_ZH_CN": "45吨的翼龙专为城市战设计，把厚重装甲、跳跃推进器和多样的武器组合融为一体。翼龙6N由180额定聚变核心驱动，装备1门大型激光和1具LRM-10。近距作战方面，该机甲携带2门小型激光和1具SRM-6。\n<<NL><b><color=#e62e00>特性：坚固</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.01</color></b>"
+        "CULTURE_ZH_CN": "45吨的翼龙专为城市战设计，把厚重装甲、跳跃推进器和多样的武器组合融为一体。翼龙6N由180额定聚变核心驱动，装备1门大型激光和1具LRM-10。近距作战方面，该机甲携带2门小型激光和1具SRM-6。\n\n<b><color=#e62e00>特性：坚固</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.01</color></b>"
       }
     },
     {
@@ -41300,7 +41300,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The G configuration is focused on medium range engagements with its two Streak SRM-6 and four ER Medium Laser.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.01</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "G配置专注于中距离交战，依靠2具连发SRM-6和4门增程中型激光。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.01</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "G配置专注于中距离交战，依靠2具连发SRM-6和4门增程中型激光。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.01</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -41388,7 +41388,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Adder-S is a is a scout configuration mounting a pair of Medium Pulse Lasers in each arm and sixteen Machine Guns to exploit any holes opened up in armor by the pulse lasers. The Adder-S also includes an Active Probe and ECM Suite to aid in detection and evasion.   \n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.01</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "蝰蛇-S是一种侦察配置，每只手臂装有2门中型脉冲激光，另有16挺机枪，用来打击脉冲激光在装甲上撕开的缺口。蝰蛇-S还配有1具主动探测器和1套电子对抗套件，以协助探测与规避。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.01</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "蝰蛇-S是一种侦察配置，每只手臂装有2门中型脉冲激光，另有16挺机枪，用来打击脉冲激光在装甲上撕开的缺口。蝰蛇-S还配有1具主动探测器和1套电子对抗套件，以协助探测与规避。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.01</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -44076,7 +44076,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Unique among Wolfs Dragoon's, this is apparently a downgraded Stone Rhino equipped with locally made Inner Sphere technology. The sole known example was lost at the battle of Misery and the Dragoon's have been unusually reticent about the mech or it's origins, refusing to confirm where the mech came from or whether they posses anymore.\n\n<b><color=#e62e00>Quirk: Distracting</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.18</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "这台机甲在狼之龙骑兵中独一无二，显然是一台降级版石犀牛，换装了本地制造的内层星域技术。唯一已知的样机在苦难星之战中损失，而龙骑兵对这台机甲及其来历异常默口，既不愿确认它的出处，也不肯透露是否还拥有更多。\n<<NL><b><color=#e62e00>特性：扰敌</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.18</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "这台机甲在狼之龙骑兵中独一无二，显然是一台降级版石犀牛，换装了本地制造的内层星域技术。唯一已知的样机在苦难星之战中损失，而龙骑兵对这台机甲及其来历异常默口，既不愿确认它的出处，也不肯透露是否还拥有更多。\n\n<b><color=#e62e00>特性：扰敌</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.18</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -44636,7 +44636,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This variant was introduced by Clan Steel Viper. It replaces the traditional weaponry with a pair of ER PPCs, a Gauss rifle, and two Machine Guns.\n\n<b><color=#e62e00>Quirk: Improved Targeting - Short</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.17</color></b>",
-        "CULTURE_ZH_CN": "该变型由钢蝰蛇部族推出，它以2门增程粒子炮、1门高斯步枪和2挺机枪取代了传统武器。\n<<NL><b><color=#e62e00>特性：改进瞄准（近程）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.17</color></b>"
+        "CULTURE_ZH_CN": "该变型由钢蝰蛇部族推出，它以2门增程粒子炮、1门高斯步枪和2挺机枪取代了传统武器。\n\n<b><color=#e62e00>特性：改进瞄准（近程）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.17</color></b>"
       }
     },
     {
@@ -45284,7 +45284,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This variant abandons any hope of the Bowman being an ArtilleryMech. The remaining artillery is replaced with a second LRM-20 launcher, three additional tons of ammunition, and an ER Large Laser. More heat sinks are added to keep the heat in check.\n\n<b><color=#e62e00>Quirk: Stable</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.16</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Upper</color>",
-        "CULTURE_ZH_CN": "这个变型彻底放弃了让弓手充当火炮机甲的可能：剩余的火炮被替换为第2具LRM-20发射器、3吨额外弹药和1门增程大型激光，并加装更多散热器以控制热量。\n<<NL><b><color=#e62e00>特性：稳定</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.16</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂上段</color>"
+        "CULTURE_ZH_CN": "这个变型彻底放弃了让弓手充当火炮机甲的可能：剩余的火炮被替换为第2具LRM-20发射器、3吨额外弹药和1门增程大型激光，并加装更多散热器以控制热量。\n\n<b><color=#e62e00>特性：稳定</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.16</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂上段</color>"
       }
     },
     {
@@ -45780,7 +45780,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "While not mounting any defensive weaponry, the Celerity CLR-02-X-D's head is equipped with a  Drone Remote Control System and carries a C3i module. The fact the 'Mech has no MechWarrior piloting it is a good thing given the Celerity's single ton of armor and the fragile nature of its XXL engine and XL gyro, even a single skid following a misstep would almost cripple the design let alone combat fire on the battlefield. The standard design carries no weapon, but this version has been altered to mount a single Small Laser.\n\n<b><color=#e62e00>Quirk: Quad Mech (Squad)</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>",
-        "CULTURE_ZH_CN": "迅捷CLR-02-X-D虽然没有安装任何防御武器，其头部却配备了无人机遥控系统，并携带1个C3i模块。由于迅捷仅有1吨装甲，其XXL引擎和XL陀螺仪又极为脆弱，机甲里没有机甲战士驾驶反倒是件好事——哪怕是一次失足后的打滑都几乎足以让这台设计报废，更不用说战场上的火力了。标准型号不携带任何武器，但这个版本经过改装，安装了1门小型激光。\n<<NL><b><color=#e62e00>特性：四足机甲（小队）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.99</color></b>"
+        "CULTURE_ZH_CN": "迅捷CLR-02-X-D虽然没有安装任何防御武器，其头部却配备了无人机遥控系统，并携带1个C3i模块。由于迅捷仅有1吨装甲，其XXL引擎和XL陀螺仪又极为脆弱，机甲里没有机甲战士驾驶反倒是件好事——哪怕是一次失足后的打滑都几乎足以让这台设计报废，更不用说战场上的火力了。标准型号不携带任何武器，但这个版本经过改装，安装了1门小型激光。\n\n<b><color=#e62e00>特性：四足机甲（小队）</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>"
       }
     },
     {
@@ -46916,7 +46916,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Similar to the -7A in weapons loadout with two SRM-4 launchers and a Medium Laser, the -7J mounts five jump jets instead of the extra armor and ammunition of the -7A.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.96</color></b>",
-        "CULTURE_ZH_CN": "-7J的武器配置与-7A相似，同为2具SRM-4发射器和1门中型激光，但它用5具跳跃推进器替代了-7A上额外的装甲与弹药。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.96</color></b>"
+        "CULTURE_ZH_CN": "-7J的武器配置与-7A相似，同为2具SRM-4发射器和1门中型激光，但它用5具跳跃推进器替代了-7A上额外的装甲与弹药。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.96</color></b>"
       }
     },
     {
@@ -47524,7 +47524,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Coyotl has the honor of being the first OmniMech. Developed by Clan Coyote with some help from Clan Sea Fox, the Coyotl was first fielded in 2854. By using an XL Engine and Endo Steel chassis, the scientists were able to create a medium 'Mech that could carry a great deal of equipment. In addition, the high ground speed of the Coyotl allowed it to rush from one area of a battlefield to another, providing support for its teammates. The B configuration uses an Ultra AC/10 in the right arm as its main firepower, supported by an ER Medium Laser and SRM-6 launcher.\n\n<b><color=#e62e00>Quirk: Extended Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "郊狼有幸成为史上第一台全向机甲，由郊狼部族在海狐部族的一些协助下研制，于2854年首次投入战场。借助XL引擎和内骨架底盘，科学家们得以造出一台能携带大量装备的中型机甲。此外，郊狼较高的地面速度使其能快速从战场一处奔赴另一处，为队友提供支援。B配置以右臂的1门超级自动炮/10为主要火力，并配1门增程中型激光和1具SRM-6发射器。\n<<NL><b><color=#e62e00>特性：扩展躯干旋转</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.03</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "郊狼有幸成为史上第一台全向机甲，由郊狼部族在海狐部族的一些协助下研制，于2854年首次投入战场。借助XL引擎和内骨架底盘，科学家们得以造出一台能携带大量装备的中型机甲。此外，郊狼较高的地面速度使其能快速从战场一处奔赴另一处，为队友提供支援。B配置以右臂的1门超级自动炮/10为主要火力，并配1门增程中型激光和1具SRM-6发射器。\n\n<b><color=#e62e00>特性：扩展躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -49588,7 +49588,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This variant was created by Clan Wolf in 3050 to carry out decapitation strikes against Inner Sphere command personnel during the Clan Invasion. It removes the missile launcher to include an additional Power Pack, Heat and Improved Sensors, a Remote Sensor Dispenser, and a pair of extra Fuel Tanks for its jump jets, while mounting a fixed anti-personnel Machine Gun in addition to the anti-personnel weapon mount.\n\n<b><color=#e62e00>Quirk: Standard Parts</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.93</color></b>\n\n<b><color=#2aad3b>Can mount Omni units, can melee, can swarm.</b></color>",
-        "CULTURE_ZH_CN": "该变型由狼族部族于3050年创造，用于在部族入侵期间对内层星域的指挥人员实施斩首打击。它移除导弹发射器，以加装额外的动力包、热感应器与改进传感器、1具遥控传感器撒布器，以及2只为其跳跃推进器准备的额外燃料箱，同时在反步兵武器挂架之外固定安装1挺反步兵机枪。\n<<NL><b><color=#e62e00>特性：标准零件</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.93</color></b>\n<<NL><b><color=#2aad3b>可搭载全向单位，可近战，可攀爬攻击。</b></color>"
+        "CULTURE_ZH_CN": "该变型由狼族部族于3050年创造，用于在部族入侵期间对内层星域的指挥人员实施斩首打击。它移除导弹发射器，以加装额外的动力包、热感应器与改进传感器、1具遥控传感器撒布器，以及2只为其跳跃推进器准备的额外燃料箱，同时在反步兵武器挂架之外固定安装1挺反步兵机枪。\n\n<b><color=#e62e00>特性：标准零件</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.93</color></b>\n\n<b><color=#2aad3b>可搭载全向单位，可近战，可攀爬攻击。</b></color>"
       }
     },
     {
@@ -49748,7 +49748,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "An attempted modernization of the Enforcer that never was mass produced, the -4D carries a ER PPC and a LB 10-X Autocannon, with a Guardian ECM for sensor protection. With the launch of the Enforcer III this variant was quickly forgotten.\n\n<b><color=#e62e00>Quirk: Improved Cooling Jacket - AC</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "这是对执行者的一次现代化尝试，但从未量产。该型号搭载1门增程粒子炮和1门LB 10-X自动炮，并配1具守护者电子对抗套件保护传感器。随着执行者III的推出，这一变型很快就被遗忘了。\n<<NL><b><color=#e62e00>特性：改进冷却套（自动炮）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "这是对执行者的一次现代化尝试，但从未量产。该型号搭载1门增程粒子炮和1门LB 10-X自动炮，并配1具守护者电子对抗套件保护传感器。随着执行者III的推出，这一变型很快就被遗忘了。\n\n<b><color=#e62e00>特性：改进冷却套（自动炮）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -50684,7 +50684,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A variant of the EXT-4D, the Exterminator EXT-4C incorporates a Chameleon Light Polarisation Shield. Entering production at the same time as the EXT-4D, the 4C is otherwise unchanged from its parent design.\n\n<b><color=#e62e00>Quirk: Nimble</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>",
-        "CULTURE_ZH_CN": "作为EXT-4D的变型，灭绝者EXT-4C整合了1面变色龙光偏振护盾。它与EXT-4D同时投产，除此之外与母型设计没有任何差别。\n<<NL><b><color=#e62e00>特性：灵活</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.11</color></b>"
+        "CULTURE_ZH_CN": "作为EXT-4D的变型，灭绝者EXT-4C整合了1面变色龙光偏振护盾。它与EXT-4D同时投产，除此之外与母型设计没有任何差别。\n\n<b><color=#e62e00>特性：灵活</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.11</color></b>"
       }
     },
     {
@@ -51596,7 +51596,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Pentagon Powers variant of the FFL-3SLE that removes the CASE and ECM in order to upgrade the missile rack to an LRM-10.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是五角势力对FFL-3SLE的变型，拆除了CASE和电子对抗套件，以便把导弹架升级为LRM-10。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是五角势力对FFL-3SLE的变型，拆除了CASE和电子对抗套件，以便把导弹架升级为LRM-10。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -51620,7 +51620,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Another refit of the FFL-3SLE, this time simply using standard armor plating instead of the advanced Ferro-Fibrous composites.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是FFL-3SLE的又一次改装，这次只是改用标准装甲板，而不再使用先进的铁纤维复合材料。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是FFL-3SLE的又一次改装，这次只是改用标准装甲板，而不再使用先进的铁纤维复合材料。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -51668,7 +51668,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A basic variant of the Firefly that accompanied the Dragoons to the Inner Sphere, the 4A carries a similar weapons payload to the 4B model, although it keeps the small laser battery of the -3A instead of the anti-missile system.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是随龙骑兵一同来到内层星域的萤火虫基础变型。4A的武器载荷与4B型相近，但它保留了-3A的小型激光阵列，而没有采用反导弹系统。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是随龙骑兵一同来到内层星域的萤火虫基础变型。4A的武器载荷与4B型相近，但它保留了-3A的小型激光阵列，而没有采用反导弹系统。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -52196,7 +52196,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A far cry from the fast and deadly 8K Flashman, the 7K model is a downgraded version that was produced by Defiance Industries in 2796 after the destruction of the Renault-Prime factories, using a blueprint that was acquired prior to the factory's destruction. The advanced extralight engine was no longer being produced though, and with a standard Vlar 300 the design now has a top speed of only 64.8 km/h. In addition, the center torso Large Laser, the AMS and the advanced targeting-tracking system were also removed and the double heat sinks replaced with standard single versions. The design now instead only carries two arm-mounted Large Lasers and five Medium Lasers. Surprisingly, the armor protection has not been sacrificed in any way, which has resulted in the 7K being more durable than the SLDF version due to its lack of an XL engine.\n\n<b><color=#e62e00>Quirk: Rugged</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "与迅捷致命的8K型闪电相比，7K型是一台降级版本，由迪法恩斯工业于2796年在雷诺-普莱姆工厂被摧毁后、依据工厂毁灭前取得的图纸生产。然而先进的特轻引擎已不再生产，改用标准Vlar 300后，该设计的最高时速只剩64.8 km/h。此外，中央躯干的大型激光、反导弹系统以及先进的瞄准跟踪系统也一并被拆除，双散热器则换成标准单散热器。现在它只携带2门装在手臂上的大型激光和5门中型激光。令人意外的是，装甲防护丝毫没有缩水，这使得7K由于没有XL引擎，反而比星际联盟防卫军版本更耐打。\n<<NL><b><color=#e62e00>特性：坚固</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "与迅捷致命的8K型闪电相比，7K型是一台降级版本，由迪法恩斯工业于2796年在雷诺-普莱姆工厂被摧毁后、依据工厂毁灭前取得的图纸生产。然而先进的特轻引擎已不再生产，改用标准Vlar 300后，该设计的最高时速只剩64.8 km/h。此外，中央躯干的大型激光、反导弹系统以及先进的瞄准跟踪系统也一并被拆除，双散热器则换成标准单散热器。现在它只携带2门装在手臂上的大型激光和5门中型激光。令人意外的是，装甲防护丝毫没有缩水，这使得7K由于没有XL引擎，反而比星际联盟防卫军版本更耐打。\n\n<b><color=#e62e00>特性：坚固</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -52812,7 +52812,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Garm is capable of providing both direct and indirect fire support. For direct fire support, the Garm has a LB-X AC/5, capable of firing both standard and cluster ammunition. A LRM-10 launcher provides the Garm with added long-range combat capabilities and allows indirect fire support.\n\n<b><color=#e62e00>Quirk: Extended Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.98</color></b>",
-        "CULTURE_ZH_CN": "加尔姆能够同时提供直接与间接火力支援。直接火力方面，它装有1门LB-X自动炮/5，可发射标准弹和集束弹；1具LRM-10发射器则赋予加尔姆额外的远程作战能力，并使其能够进行间接射击支援。\n<<NL><b><color=#e62e00>特性：扩展躯干旋转</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.98</color></b>"
+        "CULTURE_ZH_CN": "加尔姆能够同时提供直接与间接火力支援。直接火力方面，它装有1门LB-X自动炮/5，可发射标准弹和集束弹；1具LRM-10发射器则赋予加尔姆额外的远程作战能力，并使其能够进行间接射击支援。\n\n<b><color=#e62e00>特性：扩展躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.98</color></b>"
       }
     },
     {
@@ -53716,7 +53716,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Though Gray Death Scout armor has no integral weapons, its Armored Gloves allow soldiers to wield standard small arms and perform other functions as normal. While this does not allow for very much damage potential against hardened targets, a scout squad can be a serious threat to unarmored infantry. The armored gloves, in combination with the suit's strength enhancements, allows the trooper to ride on OmniMechs via their handholds or perform anti-'Mech attacks. That the trooper's natural dexterity is otherwise unaffected by the suit is an added bonus for placing Satchel Charges in exposed 'Mech joints.\n\n<b><color=#e62e00>Quirk: Information Gatherer</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.886</color></b>\n\n<b><color=#2aad3b>Can mount Omni units, can melee, can swarm.</b></color>",
-        "CULTURE_ZH_CN": "尽管灰死侦察装甲没有内置武器，其装甲手套却让士兵能像平常一样使用标准轻型枪械并执行其他动作。虽然面对坚固目标时谈不上有多大杀伤潜力，但一支侦察小队对无装甲步兵而言仍是严重威胁。装甲手套结合装甲服的力量增幅，使士兵能抓着把手搭乘全向机甲，或发动反机甲攻击。而士兵天生的灵巧度不受装甲服影响，这一点对于把炸药包塞进机甲外露的关节处更是额外的好处。\n<<NL><b><color=#e62e00>特性：情报收集者</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.886</color></b>\n<<NL><b><color=#2aad3b>可搭载全向单位，可近战，可攀爬攻击。</b></color>"
+        "CULTURE_ZH_CN": "尽管灰死侦察装甲没有内置武器，其装甲手套却让士兵能像平常一样使用标准轻型枪械并执行其他动作。虽然面对坚固目标时谈不上有多大杀伤潜力，但一支侦察小队对无装甲步兵而言仍是严重威胁。装甲手套结合装甲服的力量增幅，使士兵能抓着把手搭乘全向机甲，或发动反机甲攻击。而士兵天生的灵巧度不受装甲服影响，这一点对于把炸药包塞进机甲外露的关节处更是额外的好处。\n\n<b><color=#e62e00>特性：情报收集者</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.886</color></b>\n\n<b><color=#2aad3b>可搭载全向单位，可近战，可攀爬攻击。</b></color>"
       }
     },
     {
@@ -54356,7 +54356,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Guardian GRD-1N is armed with five machine guns, one mounted in each arm, in each torso side and in the center torso, respectively. Two and a half tons of ammunition in the right torso provide an ample supply of ammunition.\n\n<b><color=#e62e00>Quirk: Accurate Weapon - MG</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>",
-        "CULTURE_ZH_CN": "守卫者GRD-1N装有5挺机枪，分别安装在左右手臂、左右侧躯干和中央躯干各1挺。右躯干内的2.5吨弹药为其提供了充足的补给。\n<<NL><b><color=#e62e00>特性：精准武器（机枪）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>"
+        "CULTURE_ZH_CN": "守卫者GRD-1N装有5挺机枪，分别安装在左右手臂、左右侧躯干和中央躯干各1挺。右躯干内的2.5吨弹药为其提供了充足的补给。\n\n<b><color=#e62e00>特性：精准武器（机枪）</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>"
       }
     },
     {
@@ -54844,7 +54844,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "An early FedSuns BattleMech, the 75 ton Hammerhands debuted in 2475 and served as one of the progenitor designs that would influence the iconic Warhammer. Powered by a 225-rated Fusion Core, the Hammerhands HMH-3D is armed with a pair of AC/10’s, with a pair of Medium Lasers and an SRM-6 for close range combat.\n\n<b><color=#e62e00>Quirk: Barrel Fist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "作为联邦太阳国的早期战斗机甲，75吨的锤手于2475年首次登场，是影响了经典战锤的先行设计之一。锤手HMH-3D由225额定聚变核心驱动，装备2门AC/10，并配2门中型激光和1具SRM-6用于近距交战。\n<<NL><b><color=#e62e00>特性：炮管拳</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "作为联邦太阳国的早期战斗机甲，75吨的锤手于2475年首次登场，是影响了经典战锤的先行设计之一。锤手HMH-3D由225额定聚变核心驱动，装备2门AC/10，并配2门中型激光和1具SRM-6用于近距交战。\n\n<b><color=#e62e00>特性：炮管拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -56100,7 +56100,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Hellion is a product of Clan Ice Hellion and their philosophy that espouses speed above all else. Based on the Mist Lynx, the Hellion is a fast OmniMech that has respectable firepower. This light 'Mech is rather difficult to kill, incorporating five and a half tons of Ferro-Fibrous armor. To save weight, the Hellion also uses an Endo Steel chassis. While it is not especially fast for its size, the Hellion does use MASC to allow for bursts of additional speed. The Hellion sports no fixed weapons on its chassis. The primary configuration consists of four ER Medium Lasers as well as a trio of Streak SRM-2s, which make it a potent headhunter 'Mech. It also packs an LRM-10 to harass enemies at range.\n\n<b><color=#e62e00>Quirk: Nimble</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.98</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "地狱魔是冰魔部族的产物，体现了该部族奉行速度至上的理念。它以雾森猁为基础，是一台速度很快、火力也相当可观的全向机甲。这台轻型机甲相当难以击毁，披挂5.5吨铁纤维装甲；为节省重量，地狱魔还采用了内骨架底盘。虽然就其体型而言速度不算特别突出，但它确实装有MASC，可爆发出额外速度。地狱魔的底盘上没有固定武器，主配置由4门增程中型激光和3具连发SRM-2组成，使其成为一台强悍的猎头机甲；此外还配有1具LRM-10，可在远距离骚扰敌人。\n<<NL><b><color=#e62e00>特性：灵活</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.98</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "地狱魔是冰魔部族的产物，体现了该部族奉行速度至上的理念。它以雾森猁为基础，是一台速度很快、火力也相当可观的全向机甲。这台轻型机甲相当难以击毁，披挂5.5吨铁纤维装甲；为节省重量，地狱魔还采用了内骨架底盘。虽然就其体型而言速度不算特别突出，但它确实装有MASC，可爆发出额外速度。地狱魔的底盘上没有固定武器，主配置由4门增程中型激光和3具连发SRM-2组成，使其成为一台强悍的猎头机甲；此外还配有1具LRM-10，可在远距离骚扰敌人。\n\n<b><color=#e62e00>特性：灵活</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.98</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -56108,7 +56108,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Hercules HRC-LS-9000 carries a wide variety of weapons. For long-range firepower, the 'Mech is armed with a ER PPC. The ER PPC is backed up at intermediate ranges by an LB-X Autocannon/10 that can fire both standard and cluster rounds, making it effective against a wide range of combat units. For close-range combat, the Hercules carries a Streak SRM-2 launcher, an Medium Pulse Laser, and two Small Pulse Lasers. For added protection from missile attacks, the 'Mech also carried an anti-missile system.\n\n<b><color=#e62e00>Quirk: Stable Weapons</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.1</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Lower</color>",
-        "CULTURE_ZH_CN": "大力神HRC-LS-9000搭载种类繁多的武器。远程火力方面，该机甲装备1门增程粒子炮。在中距离上，增程粒子炮由1门LB-X自动炮/10提供支援，它既能发射标准弹也能发射集束弹，对各种作战单位都颇具威胁。近距交战时，大力神携带1具连发SRM-2发射器、1门中型脉冲激光和2门小型脉冲激光。为进一步防御导弹袭击，该机甲还装有1套反导弹系统。\n<<NL><b><color=#e62e00>特性：稳定武器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.1</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂下段</color>"
+        "CULTURE_ZH_CN": "大力神HRC-LS-9000搭载种类繁多的武器。远程火力方面，该机甲装备1门增程粒子炮。在中距离上，增程粒子炮由1门LB-X自动炮/10提供支援，它既能发射标准弹也能发射集束弹，对各种作战单位都颇具威胁。近距交战时，大力神携带1具连发SRM-2发射器、1门中型脉冲激光和2门小型脉冲激光。为进一步防御导弹袭击，该机甲还装有1套反导弹系统。\n\n<b><color=#e62e00>特性：稳定武器</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.1</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂下段</color>"
       }
     },
     {
@@ -57284,7 +57284,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The -4TD has one big change from the -4G, the fact that it houses a 350 XL engine core. Also knows as the 'Turbo Hunchback Deluxe', it drops the armoring down to 7 tons and uses an Endo Steel chassis to be able to fit both the massive engine and an extra Medium Laser. Similar to its predecessor, the normal 'Turbo Hunchback', the chassis had to be modified in such a way that replacing the engine core is not possible.\n\n<b><color=#e62e00>Quirk: Battle Fists</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>",
-        "CULTURE_ZH_CN": "与-4G相比，-4TD有一个重大变化：它内置了一台350 XL引擎核心。它也被称为“豪华涡轮驼背”，装甲削减到7吨，并采用内骨架底盘，以便同时容纳那台巨型引擎和1门额外的中型激光。与它的前辈——普通的“涡轮驼背”——一样，其底盘经过特殊改造，以致无法更换引擎核心。\n<<NL><b><color=#e62e00>特性：战拳</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>"
+        "CULTURE_ZH_CN": "与-4G相比，-4TD有一个重大变化：它内置了一台350 XL引擎核心。它也被称为“豪华涡轮驼背”，装甲削减到7吨，并采用内骨架底盘，以便同时容纳那台巨型引擎和1门额外的中型激光。与它的前辈——普通的“涡轮驼背”——一样，其底盘经过特殊改造，以致无法更换引擎核心。\n\n<b><color=#e62e00>特性：战拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>"
       }
     },
     {
@@ -58100,7 +58100,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "First produced in 2948, the Ice Ferret is a medium scout OmniMech often employed as a head hunter or strike unit. A 45 ton Clan OmniMech, the Ice Ferret is powered by a 360-rated XL Engine and has 9.5 tons of pod space thanks to a combination of Endo Steel, an XL Engine and Ferro-Fibrous. The Ice Ferret IFR-E is armed with an ATM-9, ER Medium Laser and an ER Small Laser.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "冰貂于2948年首次投产，是一款中型侦察全向机甲，常被用作猎头或突击单位。这台45吨的部族全向机甲由360额定XL引擎驱动，并凭借内骨架、XL引擎与铁纤维装甲的组合拥有9.5吨挂载空间。冰貂IFR-E装备1具ATM-9、1门增程中型激光和1门增程小型激光。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "冰貂于2948年首次投产，是一款中型侦察全向机甲，常被用作猎头或突击单位。这台45吨的部族全向机甲由360额定XL引擎驱动，并凭借内骨架、XL引擎与铁纤维装甲的组合拥有9.5吨挂载空间。冰貂IFR-E装备1具ATM-9、1门增程中型激光和1门增程小型激光。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -58452,7 +58452,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Wolf's Dragoons custom refit of the Imp, using all Clan tech. The 'Mech's primary weapons are two ER PPC, two Large Pulse Lasers and two LRM-15 with attached Artemis IV FCS. As secondary fireline the 4W carries two ER Medium Laser and two Medium Pulse Laser, while two ER Small Lasers are kept for defensive purposes.\n\n<b><color=#e62e00>Quirk: Command Mech</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.24</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是狼之龙骑兵对“小鬼”的定制改装，全部采用部族技术。该机甲的主武器为2门增程粒子炮、2门大型脉冲激光和2具带阿尔忒弥斯IV火控系统的LRM-15。作为次要火力线，4W还搭载2门增程中型激光和2门中型脉冲激光，并保留2门增程小型激光用于自卫。\n<<NL><b><color=#e62e00>特性：指挥机甲</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.24</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是狼之龙骑兵对“小鬼”的定制改装，全部采用部族技术。该机甲的主武器为2门增程粒子炮、2门大型脉冲激光和2具带阿尔忒弥斯IV火控系统的LRM-15。作为次要火力线，4W还搭载2门增程中型激光和2门中型脉冲激光，并保留2门增程小型激光用于自卫。\n\n<b><color=#e62e00>特性：指挥机甲</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.24</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -59732,7 +59732,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A pirate version of the Jenner, using as light components as possible to fit twin Streak SRM-2 launchers, a single Streak SRM-6 and 7 tons of armor.\n\n<b><color=#e62e00>Quirk: Improved Lifesupport</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.98</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是珍纳的海盗改装版，尽可能采用轻量部件，以装下2具连发SRM-2发射器、1具连发SRM-6和7吨装甲。\n<<NL><b><color=#e62e00>特性：改进生命维持系统</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.98</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是珍纳的海盗改装版，尽可能采用轻量部件，以装下2具连发SRM-2发射器、1具连发SRM-6和7吨装甲。\n\n<b><color=#e62e00>特性：改进生命维持系统</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.98</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -60220,7 +60220,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "One of the earliest second generation OmniMech designs, the Kingfisher debuted in 2887 and is reputed to have influenced all subsequent Clan Assault OmniMech designs. A 90-ton mech powered by a 360-rated Fusion Engine, the Kingfisher has 24 tons of podspace provided by a combination of Ferro-Fibrous armor and an Endo Steel skeleton. The Kingfisher C is armed with a pair of ER PPC’s. At closer ranges, the C can bring to bear 5 ER Medium Lasers.\n\n<b><color=#e62e00>Quirk: Rugged</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.17</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "作为最早的第二代全向机甲设计之一，翠鸟于2887年首次亮相，据说影响了此后所有部族突击型全向机甲的设计。这台90吨的机甲由360额定聚变引擎驱动，凭借铁纤维装甲与内骨架的组合拥有24吨挂载空间。翠鸟C装备2门增程粒子炮；在较近距离上，C还能动用5门增程中型激光。\n<<NL><b><color=#e62e00>特性：坚固</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.17</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "作为最早的第二代全向机甲设计之一，翠鸟于2887年首次亮相，据说影响了此后所有部族突击型全向机甲的设计。这台90吨的机甲由360额定聚变引擎驱动，凭借铁纤维装甲与内骨架的组合拥有24吨挂载空间。翠鸟C装备2门增程粒子炮；在较近距离上，C还能动用5门增程中型激光。\n\n<b><color=#e62e00>特性：坚固</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.17</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -61828,7 +61828,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Designed as a replacement to the Timber Wolf, the 65 ton Linebacker entered production in 3052. Built around a 390-rated XL Engine, the Linebacker’s faster speed enables it to keep up with lighter star mates in running battles, something the Timber Wolf struggled to do. A combination of Ferro-Fibrous armor and Endo Steel give the OmniMech 17.5 tons of free pod space. The Linebacker LBK-RL is armed with a UAC/10 and a Streak SRM-4. 3 ER Small Lasers fill out the remaining free weight.\n\n<b><color=#e62e00>Quirk: Stable</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.12</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "作为木狼的替代型号，65吨的线卫于3052年投产。它围绕390额定XL引擎建造，更快的速度让线卫在运动战中能跟上星编队中更轻的同伴，而这正是木狼难以做到的。铁纤维装甲与内骨架的组合为这台全向机甲带来17.5吨的自由挂载空间。线卫LBK-RL装备1门UAC/10和1具连发SRM-4，剩余载重则由3门增程小型激光填满。\n<<NL><b><color=#e62e00>特性：稳定</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.12</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "作为木狼的替代型号，65吨的线卫于3052年投产。它围绕390额定XL引擎建造，更快的速度让线卫在运动战中能跟上星编队中更轻的同伴，而这正是木狼难以做到的。铁纤维装甲与内骨架的组合为这台全向机甲带来17.5吨的自由挂载空间。线卫LBK-RL装备1门UAC/10和1具连发SRM-4，剩余载重则由3门增程小型激光填满。\n\n<b><color=#e62e00>特性：稳定</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.12</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -61996,7 +61996,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Jade Falcon designed Locust IIC, as they tried to speed up production with simpler 'Mechs to recover after the losses during the failed Operation REVIVAL. Using Clan-grade Endo Steel structure and Ferro-Fibrous armor, enough weight was freed to mount two Streak SRM-2 launchers and two ER Medium Lasers.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这是玉鹰部族设计的蝗虫IIC——在“复兴行动”失败、损失惨重之后，他们试图用更简单的机甲加快生产、恢复元气。该机甲采用部族级内骨架结构和铁纤维装甲，腾出的重量足以安装2具连发SRM-2发射器和2门增程中型激光。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
+        "CULTURE_ZH_CN": "这是玉鹰部族设计的蝗虫IIC——在“复兴行动”失败、损失惨重之后，他们试图用更简单的机甲加快生产、恢复元气。该机甲采用部族级内骨架结构和铁纤维装甲，腾出的重量足以安装2具连发SRM-2发射器和2门增程中型激光。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂上段，右臂上段</color>"
       }
     },
     {
@@ -62900,7 +62900,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The unofficial mascot of the Desert Wars portion of the Martial Olympiad, Kill Roy uses two LB 10-X autocannons instead of the single AC/20. Two tons of ammunition are stored in each side torso. For protection, the torsos are equipped with CASE. To make room for these, the Beagle Active Probe has been removed. Thirteen Double Heat Sinks keep the 'Mech running.\n\n<b><color=#e62e00>Quirk: Easy to Maintain</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.2</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Upper</color>",
-        "CULTURE_ZH_CN": "作为军事奥林匹克“沙漠战争”环节的非官方吉祥物，“杀戮罗伊”用2门LB 10-X自动炮取代了单门AC/20，两侧躯干各存放2吨弹药；为加强防护，躯干都装上了CASE。为腾出空间，比格犬主动探测器已被拆除。13具双散热器让这台机甲持续运转。\n<<NL><b><color=#e62e00>特性：易于维护</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.2</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂上段</color>"
+        "CULTURE_ZH_CN": "作为军事奥林匹克“沙漠战争”环节的非官方吉祥物，“杀戮罗伊”用2门LB 10-X自动炮取代了单门AC/20，两侧躯干各存放2吨弹药；为加强防护，躯干都装上了CASE。为腾出空间，比格犬主动探测器已被拆除。13具双散热器让这台机甲持续运转。\n\n<b><color=#e62e00>特性：易于维护</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.2</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂上段</color>"
       }
     },
     {
@@ -64180,7 +64180,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Marauder 5R2 is an export model for the Periphery market. It was constructed on the same line as the 5R, but with much cheaper components, in an attempt to sell based on the relation to the actual 5R alone. Its weapons consist of only three Large and two Medium standard lasers, its cooling is using single heat sinks and the engine is a standard 300 rated core. Overall, the design is pretty much very subpar for a Marauder, but a number of 5R2 were produced and sold before this was fully realized.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "掠夺者5R2是面向外围地区市场的出口型号。它与5R共用同一条生产线，但采用便宜得多的部件，试图仅凭与真正5R的渊源来打开销路。其武器只有3门大型激光和2门中型标准激光，散热使用单散热器，引擎则是标准300额定核心。总体而言，这台设计对一台掠夺者来说相当不堪，但在人们完全意识到这点之前，已有不少5R2被生产并售出。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "掠夺者5R2是面向外围地区市场的出口型号。它与5R共用同一条生产线，但采用便宜得多的部件，试图仅凭与真正5R的渊源来打开销路。其武器只有3门大型激光和2门中型标准激光，散热使用单散热器，引擎则是标准300额定核心。总体而言，这台设计对一台掠夺者来说相当不堪，但在人们完全意识到这点之前，已有不少5R2被生产并售出。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -64764,7 +64764,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Mercury debuted for the first time in 2742, intended as a replacement for the aging Wasps and Stingers in use by the Star League Defense Force. Hailed as the beginning of a new age in 'Mech design, the Mercury was faster and better-armed than its competition without sacrificing armor protection. It also featured an advancement in weapons installation, making use of a modular replacement system to allow for considerably faster and easier repairs. The Mercury carries an assortment of energy weapons which helps to extend its endurance on long campaigns. The primary weapons are two Medium Lasers in the right arm and left torso, supported by two Small Lasers in the center torso and head. The heart of the Mercury is its MASC System which, in combination with a 160 fusion engine, allows for momentary bursts of speed up to 172 km/h. Three tons of Ferro-Fibrous armor gives it superior protection compared to other 20-ton 'Mechs.\n\n<b><color=#e62e00>Quirk: Modular Weapons</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97</color></b>",
-        "CULTURE_ZH_CN": "水星于2742年首次登场，意在替换星际联盟防卫军中使用已久、日渐老旧的黄蜂和毒刺。它被誉为机甲设计新时代的开端：在不牺牲装甲防护的前提下，水星比竞争对手更快、武装更好。它还在武器安装方式上有所创新，采用模块化更换系统，使维修显著更快、更容易。水星携带多种能量武器，这有助于延长它在长期战役中的续航。主武器是分别位于右臂和左躯干的2门中型激光，另有位于中央躯干和头部的2门小型激光支援。水星的核心是它的MASC系统，配合160聚变引擎可短时爆发到172 km/h。3吨铁纤维装甲让它在防护上优于其他20吨机甲。\n<<NL><b><color=#e62e00>特性：模块化武器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.97</color></b>"
+        "CULTURE_ZH_CN": "水星于2742年首次登场，意在替换星际联盟防卫军中使用已久、日渐老旧的黄蜂和毒刺。它被誉为机甲设计新时代的开端：在不牺牲装甲防护的前提下，水星比竞争对手更快、武装更好。它还在武器安装方式上有所创新，采用模块化更换系统，使维修显著更快、更容易。水星携带多种能量武器，这有助于延长它在长期战役中的续航。主武器是分别位于右臂和左躯干的2门中型激光，另有位于中央躯干和头部的2门小型激光支援。水星的核心是它的MASC系统，配合160聚变引擎可短时爆发到172 km/h。3吨铁纤维装甲让它在防护上优于其他20吨机甲。\n\n<b><color=#e62e00>特性：模块化武器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.97</color></b>"
       }
     },
     {
@@ -65172,7 +65172,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A common Light OmniMech, the Mist Lynx is fielded by every Clan since its introduction in 2926. A 25-ton mech, the Mist Lynx is powered by a 175-rated XL Engine and is built with a combination of Endo Steel and Ferro-Fibrous that gives it a respectable 7.5 tons of pod space. An Active Probe is hardwired into the chassis boosting the Mist Lynx’s effectiveness as a scout. The Mist Lynx H is armed with a Streak SRM-6 and an AMS. A Heavy Medium Laser and 2 Heavy Small Lasers round out the variant.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "作为一款常见的轻型全向机甲，雾森猁自2926年问世以来便被各部族广泛装备。这台25吨的机甲由175额定XL引擎驱动，并采用内骨架与铁纤维装甲的组合，因而拥有可观的7.5吨挂载空间。1具主动探测器被硬连接到机甲底盘上，提升了雾森猁作为侦察机的效能。雾森猁H装备1具连发SRM-6和1套AMS，另有1门重型中型激光和2门重型小型激光补足配置。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：0.99</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "作为一款常见的轻型全向机甲，雾森猁自2926年问世以来便被各部族广泛装备。这台25吨的机甲由175额定XL引擎驱动，并采用内骨架与铁纤维装甲的组合，因而拥有可观的7.5吨挂载空间。1具主动探测器被硬连接到机甲底盘上，提升了雾森猁作为侦察机的效能。雾森猁H装备1具连发SRM-6和1套AMS，另有1门重型中型激光和2门重型小型激光补足配置。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -67276,7 +67276,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A variant of the Ostroc OSR-2C adding a C3 slave unit and replacing the single heat sink with doubles.\n\n<b><color=#e62e00>Quirk: Narrow/Low Profile</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.08</color></b>",
-        "CULTURE_ZH_CN": "这是奥斯特罗克OSR-2C的变型，加装了1台C3从属单元，并将单散热器更换为双散热器。\n<<NL><b><color=#e62e00>特性：狭小/低矮外形</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.08</color></b>"
+        "CULTURE_ZH_CN": "这是奥斯特罗克OSR-2C的变型，加装了1台C3从属单元，并将单散热器更换为双散热器。\n\n<b><color=#e62e00>特性：狭小/低矮外形</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.08</color></b>"
       }
     },
     {
@@ -67876,7 +67876,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Debuting by Clan Wolf in 3052, the Phantom is a 40 ton Clan Omnimech designed as scout and light mech hunter. A combination of an Endo Steel chassis and a 360-rated XL Engine allow the Phantom to achieve speeds of 151 km/h and maintain 6.5 tons of pod space. The Phantom A carries 5 ER Small Lasers, alongside an ER Medium Laser and a pair of LRM-5’s.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "幻影于3052年由狼族部族首次投入实战，是一台40吨的部族全向机甲，设计定位为侦察与轻型机甲猎手。内骨架底盘与360额定XL引擎的组合，使幻影能达到151 km/h的速度，并保有6.5吨的挂载空间。幻影A型搭载5门增程小型激光，另配1门增程中型激光和2具LRM-5。\n<<NL><b><color=#e62e00>特性：改进传感器</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.03</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "幻影于3052年由狼族部族首次投入实战，是一台40吨的部族全向机甲，设计定位为侦察与轻型机甲猎手。内骨架底盘与360额定XL引擎的组合，使幻影能达到151 km/h的速度，并保有6.5吨的挂载空间。幻影A型搭载5门增程小型激光，另配1门增程中型激光和2具LRM-5。\n\n<b><color=#e62e00>特性：改进传感器</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -69468,7 +69468,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "An assault grade fire support mech, the Salamander entered production in 3055. An 80-ton mech, the Salamander is built around a 320-rated XL Engine and an Endo Steel Skeleton, allowing it to carry 43 tons of weapons and equipment. The Salamander PPR-5S is armed with a trio of LRM-20’s. A pair of Medium Lasers act as back up weapons.\n\n<b><color=#e62e00>Quirk: Accurate Weapon - Missiles</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.14</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Left Lower</color>",
-        "CULTURE_ZH_CN": "作为一台突击级火力支援机甲，火蜥蜴于3055年投产。这台80吨的机甲围绕320额定XL引擎和内骨架建造，可携带43吨武器与装备。火蜥蜴PPR-5S装备3具LRM-20，并由2门中型激光充当备用武器。\n<<NL><b><color=#e62e00>特性：精准武器（导弹）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.14</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段</color>"
+        "CULTURE_ZH_CN": "作为一台突击级火力支援机甲，火蜥蜴于3055年投产。这台80吨的机甲围绕320额定XL引擎和内骨架建造，可携带43吨武器与装备。火蜥蜴PPR-5S装备3具LRM-20，并由2门中型激光充当备用武器。\n\n<b><color=#e62e00>特性：精准武器（导弹）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.14</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段</color>"
       }
     },
     {
@@ -69916,7 +69916,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This 'Mech was used by the Wolf's Dragoons during their campaigns in the Inner Sphere. The design replaces most of the technology in the 'Mech with Clan-grade equivalents, considerably improving the performance compared to the original Scorpion designs.\n\n<b><color=#e62e00>Quirk: Improved Lifesupport</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>",
-        "CULTURE_ZH_CN": "这台机甲曾在狼之龙骑兵于内层星域的征战中使用。该设计把机甲上的大部分技术替换为部族级同类装备，性能比原版蝎子设计有了显著提升。\n<<NL><b><color=#e62e00>特性：改进生命维持系统</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>"
+        "CULTURE_ZH_CN": "这台机甲曾在狼之龙骑兵于内层星域的征战中使用。该设计把机甲上的大部分技术替换为部族级同类装备，性能比原版蝎子设计有了显著提升。\n\n<b><color=#e62e00>特性：改进生命维持系统</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>"
       }
     },
     {
@@ -70644,7 +70644,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Clan Buster upgrade, the Shadow Hawk 2Ht was a Comstar refit built with scrapped SLDF plans and modified for use as an Elemental hunter. Built on the standard SHD-2H chassis, the original 275-rated Fusion Core is retained along with the pair of arm mounted Medium Lasers. Replacing the AC/5 is a Large Laser, while 5 Streak SRM-2’s and a ton of ammo replace the original missile launchers. DHS replaces the original SHS, freeing up weight for CASE and an extra pair of Jump Jets.\n\n<b><color=#e62e00>Quirk: Battle Fists</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.05</color></b>",
-        "CULTURE_ZH_CN": "作为一项“反部族”升级，影鹰2Ht是通讯之星利用废弃的星际联盟防卫军图纸打造、并改造为元素猎手的改装型。它沿用标准SHD-2H底盘，保留275额定聚变核心和2门装在手臂上的中型激光。AC/5被1门大型激光取代，原有的导弹发射器则由5具连发SRM-2和1吨弹药顶替。双散热器取代了原来的单散热器，腾出的重量用于安装CASE和2具额外的跳跃推进器。\n<<NL><b><color=#e62e00>特性：战拳</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.05</color></b>"
+        "CULTURE_ZH_CN": "作为一项“反部族”升级，影鹰2Ht是通讯之星利用废弃的星际联盟防卫军图纸打造、并改造为元素猎手的改装型。它沿用标准SHD-2H底盘，保留275额定聚变核心和2门装在手臂上的中型激光。AC/5被1门大型激光取代，原有的导弹发射器则由5具连发SRM-2和1吨弹药顶替。双散热器取代了原来的单散热器，腾出的重量用于安装CASE和2具额外的跳跃推进器。\n\n<b><color=#e62e00>特性：战拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.05</color></b>"
       }
     },
     {
@@ -71812,7 +71812,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The so-called Stag II incorporated a prototype version of the ER PPC that was roughly comparable to the Clan version of the weapon, though it was slightly less destructive. This upgrade of the large laser necessitated removal of the MASC, though the top speed was upgraded to 119 km/h. Additionally, Ferro-Fibrous weave was incorporated into the armor, though at an overall decrease in protection. The SRMs were removed in favor of an additional Medium Laser, two Medium Pulse Lasers, and two Small Lasers. This gave the 'Mech greater battlefield longevity, though the potential for excessive heat buildup was much greater.\n\n<b><color=#e62e00>Quirk: Improved Communications</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Lower</color>",
-        "CULTURE_ZH_CN": "所谓的“雄鹿II”采用了增程粒子炮的原型版本，性能大致可与该武器的部族版本相比，只是破坏力略低。用这种大型激光的升级型号替换原有武器，使MASC不得不被拆除，不过最高时速提升到了119 km/h。此外，装甲中加入了铁纤维编织层，整体防护却有所下降。SRM被拆掉，换来1门额外的中型激光、2门中型脉冲激光和2门小型激光。这让该机甲在战场上更耐久，但过热的风险也大得多。\n<<NL><b><color=#e62e00>特性：改进通讯</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.03</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂下段</color>"
+        "CULTURE_ZH_CN": "所谓的“雄鹿II”采用了增程粒子炮的原型版本，性能大致可与该武器的部族版本相比，只是破坏力略低。用这种大型激光的升级型号替换原有武器，使MASC不得不被拆除，不过最高时速提升到了119 km/h。此外，装甲中加入了铁纤维编织层，整体防护却有所下降。SRM被拆掉，换来1门额外的中型激光、2门中型脉冲激光和2门小型激光。这让该机甲在战场上更耐久，但过热的风险也大得多。\n\n<b><color=#e62e00>特性：改进通讯</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂下段</color>"
       }
     },
     {
@@ -72180,7 +72180,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Star League era mech, the Starslayer was intended to replace the Crab as the SLDF’s standard medium chassis, though politics kept it from seeing full production until 2781. A 50 ton medium mech, the Starslayer is powered by a 250-rated fusion core and has 5 JJ’s for maximum mobility. The STY-3C carries 2 Large Lasers, with a pair of Medium Lasers and a Small laser for closer ranged combat. An SRM-4 with a ton of ammo rounds out the design. \n\n<b><color=#e62e00>Quirk: Rugged</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.04</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Upper</color>",
-        "CULTURE_ZH_CN": "作为星际联盟时代的机甲，弑星者本被寄望取代螃蟹、成为星际联盟防卫军的标准中型底盘，但因政治因素直到2781年才得以全面量产。这台50吨的中型机甲由250额定聚变核心驱动，并装有5具跳跃推进器以获得最大机动性。STY-3C携带2门大型激光，另有2门中型激光和1门小型激光应对较近距离的交战，最后以1具带1吨弹药的SRM-4收尾。\n<<NL><b><color=#e62e00>特性：坚固</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.04</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂上段</color>"
+        "CULTURE_ZH_CN": "作为星际联盟时代的机甲，弑星者本被寄望取代螃蟹、成为星际联盟防卫军的标准中型底盘，但因政治因素直到2781年才得以全面量产。这台50吨的中型机甲由250额定聚变核心驱动，并装有5具跳跃推进器以获得最大机动性。STY-3C携带2门大型激光，另有2门中型激光和1门小型激光应对较近距离的交战，最后以1具带1吨弹药的SRM-4收尾。\n\n<b><color=#e62e00>特性：坚固</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.04</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂上段</color>"
       }
     },
     {
@@ -73812,7 +73812,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The only difference of the H2 and J2 layouts are the different positioning of the heat sinks, as the J2 move them to the arms for better balance during jumps.\n\n<b><color=#e62e00>Quirk: Improved Communications</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "H2与J2配置唯一的区别在于散热器的布置位置不同：J2把它们移到手臂上，以便在跳跃时获得更好的平衡。\n<<NL><b><color=#e62e00>特性：改进通讯</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.11</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "H2与J2配置唯一的区别在于散热器的布置位置不同：J2把它们移到手臂上，以便在跳跃时获得更好的平衡。\n\n<b><color=#e62e00>特性：改进通讯</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.11</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -73956,7 +73956,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The O configuration combines two ER PPC with a LRM-20. A Medium Pulse Laser and ER Small Laser act as backup.\n\n<b><color=#e62e00>Quirk: Improved Communications</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "O配置把2门增程粒子炮与1具LRM-20组合在一起，并由1门中型脉冲激光和1门增程小型激光充当备用火力。\n<<NL><b><color=#e62e00>特性：改进通讯</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.11</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "O配置把2门增程粒子炮与1具LRM-20组合在一起，并由1门中型脉冲激光和1门增程小型激光充当备用火力。\n\n<b><color=#e62e00>特性：改进通讯</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.11</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -75804,7 +75804,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based on the older 5SS model, the 9S was built in 3050 by Olivetti Weaponry using off-the-shelf structural components and armor after extensive changes delayed production. The 'Mech is armed with an ER PPC in its right arm as its primary long-range firepower. This is supported at closer ranges by a SRM-6 in the left torso along with the original three medium lasers. While retaining the left arm machine guns, in the right torso it carries a pair of flamers and an anti-missile system, along with one ton of AMS ammo.\n\n<b><color=#e62e00>Quirk: Multi Trac</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.09</color></b>",
-        "CULTURE_ZH_CN": "9S以较老的5SS型号为基础，于3050年由奥利维蒂兵工厂使用现成的结构部件和装甲制造——此前大幅度的改动一再拖延了投产。该机甲以右臂的1门增程粒子炮作为主要远程火力，近距离则依靠左躯干的1具SRM-6以及原有的3门中型激光。它保留了左臂的机枪，同时右躯干装有2具火焰喷射器和1套反导弹系统，并配1吨AMS弹药。\n<<NL><b><color=#e62e00>特性：多重履带</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.09</color></b>"
+        "CULTURE_ZH_CN": "9S以较老的5SS型号为基础，于3050年由奥利维蒂兵工厂使用现成的结构部件和装甲制造——此前大幅度的改动一再拖延了投产。该机甲以右臂的1门增程粒子炮作为主要远程火力，近距离则依靠左躯干的1具SRM-6以及原有的3门中型激光。它保留了左臂的机枪，同时右躯干装有2具火焰喷射器和1套反导弹系统，并配1吨AMS弹药。\n\n<b><color=#e62e00>特性：多重履带</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.09</color></b>"
       }
     },
     {
@@ -78364,7 +78364,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A customized variant of the Vapor Eagle. The Rival carries 3 Heavy Machine Guns in its left arm, while a single ER PPC is mounted in the right arm. An ATM 9s and three ton of ATM ammo is in the right torso mounted with MASC.\n\n<b><color=#e62e00>Quirk: Aerial Assault</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.11</color></b>",
-        "CULTURE_ZH_CN": "这是雾鹰的定制变型。“对手”在左臂装有3挺重型机枪，右臂则挂载1门增程粒子炮；右躯干内装1具ATM 9与3吨ATM弹药，并与MASC一同安装。\n<<NL><b><color=#e62e00>特性：空降突击</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.11</color></b>"
+        "CULTURE_ZH_CN": "这是雾鹰的定制变型。“对手”在左臂装有3挺重型机枪，右臂则挂载1门增程粒子炮；右躯干内装1具ATM 9与3吨ATM弹药，并与MASC一同安装。\n\n<b><color=#e62e00>特性：空降突击</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.11</color></b>"
       }
     },
     {
@@ -79604,7 +79604,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A full clan conversion of the War Dog, used by the mercenary outfit the Wolf's Dragoons. Although all weapons were upgraded to Clan specification, the 'Mech keeps the same weapon configuration as the original -02FC, except for replacing the one-shot streak launchers with Streak SRM-6 ones. A C3 Slave computer was also added, a common occurance for Wolf's Dragoons rebuilds.\n\n<b><color=#e62e00>Quirk: Accurate Weapon - Gauss</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.17</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Lower</color>",
-        "CULTURE_ZH_CN": "这是战犬的完全部族化改装，由雇佣兵部队狼之龙骑兵使用。所有武器虽已按部族规格升级，机甲却仍保持与原版-02FC相同的武器配置，只是把一次性连发发射器换成了连发SRM-6。此外还加装了1台C3从属计算机——这在狼之龙骑兵的重建机甲中十分常见。\n<<NL><b><color=#e62e00>特性：精准武器（高斯）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.17</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂下段</color>"
+        "CULTURE_ZH_CN": "这是战犬的完全部族化改装，由雇佣兵部队狼之龙骑兵使用。所有武器虽已按部族规格升级，机甲却仍保持与原版-02FC相同的武器配置，只是把一次性连发发射器换成了连发SRM-6。此外还加装了1台C3从属计算机——这在狼之龙骑兵的重建机甲中十分常见。\n\n<b><color=#e62e00>特性：精准武器（高斯）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.17</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂下段</color>"
       }
     },
     {
@@ -79724,7 +79724,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The original Warhammer was designed as an assault BattleMech. However, it had been superseded by later and heavier 'Mech designs, though it remained a powerful weapons platform. The Clans wisely maintained and built on this solid frame a real assault 'Mech, the Warhammer IIC. The IIC-BL is a custom variant of the IIC-1 replaces the Medium Pulse Lasers with a pair of ER Medium lasers and removes the original SRM-6 for an ATM-6 with 3 tons of ammo. The IIC-BL is otherwise identical to the IIC-1 with the exception of a trio of Jump Jets added to the Torsos.\n\n<b><color=#e62e00>Quirk: Integrated Searchlight</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.22</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Lower, Right Lower</color>",
-        "CULTURE_ZH_CN": "最初设计的战锤本是一台突击战斗机甲，但后来被更晚、更重的机甲设计所取代，尽管如此，它仍是一个强大的武器平台。部族明智地保留了这套坚固的框架，并在其上打造出真正的突击机甲——战锤IIC。IIC-BL是IIC-1的定制变型，用2门增程中型激光替换了中型脉冲激光，并以1具ATM-6（配3吨弹药）取代原有的SRM-6。除此之外，IIC-BL与IIC-1完全相同，只是躯干上加装了3具跳跃推进器。\n<<NL><b><color=#e62e00>特性：内置探照灯</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.22</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
+        "CULTURE_ZH_CN": "最初设计的战锤本是一台突击战斗机甲，但后来被更晚、更重的机甲设计所取代，尽管如此，它仍是一个强大的武器平台。部族明智地保留了这套坚固的框架，并在其上打造出真正的突击机甲——战锤IIC。IIC-BL是IIC-1的定制变型，用2门增程中型激光替换了中型脉冲激光，并以1具ATM-6（配3吨弹药）取代原有的SRM-6。除此之外，IIC-BL与IIC-1完全相同，只是躯干上加装了3具跳跃推进器。\n\n<b><color=#e62e00>特性：内置探照灯</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.22</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左臂下段，右臂下段</color>"
       }
     },
     {
@@ -80516,7 +80516,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The V configuration carries four medium pulse lasers and an ER PPC as the main damage dealers, while four Jump Jets allow more maneuverability. For close quarters combat a flamer and three Streak SRM-6s are also available.\n\n<b><color=#e62e00>Quirk: Improved Targeting - Long</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.16</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Omni</color>",
-        "CULTURE_ZH_CN": "V配置以4门中型脉冲激光和1门增程粒子炮作为主要输出手段，4具跳跃推进器则带来更强的机动性。近身缠斗时，还可动用1具火焰喷射器和3具连发SRM-6。\n<<NL><b><color=#e62e00>特性：改进瞄准（远程）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.16</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：全向</color>"
+        "CULTURE_ZH_CN": "V配置以4门中型脉冲激光和1门增程粒子炮作为主要输出手段，4具跳跃推进器则带来更强的机动性。近身缠斗时，还可动用1具火焰喷射器和3具连发SRM-6。\n\n<b><color=#e62e00>特性：改进瞄准（远程）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.16</color></b>\n\n<color=#FFEF00>手臂驱动器限制：全向</color>"
       }
     },
     {
@@ -81324,7 +81324,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based off Phelan Kell's 'Mech 'Grinner', the Wolfhound IIC 3A is a Clan tech version of the Wolfhound. The design includes Endo Steel structure, Ferro-Fibrous armor and XL engine, combined with an ECM suite. The weapons are fully energy based, consisting of one Large Pulse Laser and four Medium Pulse Lasers.\n\n<b><color=#e62e00>Quirk: Accurate Weapon - Energy</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.06</color></b>\n\n<color=#FFEF00>Arm Actuator Limit: Right Lower</color>",
-        "CULTURE_ZH_CN": "猎狼犬IIC 3A以菲兰·凯尔的座机“咧嘴者”为基础，是猎狼犬的部族技术版本。该设计采用内骨架结构、铁纤维装甲和XL引擎，并整合了1具电子对抗套件。武器全为能量型，包括1门大型脉冲激光和4门中型脉冲激光。\n<<NL><b><color=#e62e00>特性：精准武器（能量）</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.06</color></b>\n<<NL><color=#FFEF00>手臂驱动器限制：右臂下段</color>"
+        "CULTURE_ZH_CN": "猎狼犬IIC 3A以菲兰·凯尔的座机“咧嘴者”为基础，是猎狼犬的部族技术版本。该设计采用内骨架结构、铁纤维装甲和XL引擎，并整合了1具电子对抗套件。武器全为能量型，包括1门大型脉冲激光和4门中型脉冲激光。\n\n<b><color=#e62e00>特性：精准武器（能量）</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.06</color></b>\n\n<color=#FFEF00>手臂驱动器限制：右臂下段</color>"
       }
     },
     {
@@ -82092,7 +82092,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Designed for Urban combat, the 45 ton Wyvern blends heavy armor, jump jets and a versatile weapons package. Powered by a 180-rated Fusion Core, the Wyvern 6N is armed with a Large Laser and an LRM-10. For close range combat, the Mech carries a pair of Small Lasers and a SRM-6.\n\n<b><color=#e62e00>Quirk: Rugged</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.01</color></b>",
-        "CULTURE_ZH_CN": "45吨的翼龙专为城市战设计，把厚重装甲、跳跃推进器和多样的武器组合融为一体。翼龙6N由180额定聚变核心驱动，装备1门大型激光和1具LRM-10。近距作战方面，该机甲携带2门小型激光和1具SRM-6。\n<<NL><b><color=#e62e00>特性：坚固</color></b>\n<<NL><b><color=#e62e00>投放费用倍率：1.01</color></b>"
+        "CULTURE_ZH_CN": "45吨的翼龙专为城市战设计，把厚重装甲、跳跃推进器和多样的武器组合融为一体。翼龙6N由180额定聚变核心驱动，装备1门大型激光和1具LRM-10。近距作战方面，该机甲携带2门小型激光和1具SRM-6。\n\n<b><color=#e62e00>特性：坚固</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.01</color></b>"
       }
     },
     {
@@ -83460,7 +83460,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Fortress installation safeguarding the surrounding area.\n\n<color=#ff0000>Quirk: Stable Weapons</color>\n\n<color=#ffcc00><b>Armor:</b> Armor <b>Amount:</b> 300\n<b>Structure:</b> Structure <b>Amount:</b> 1\n\n\n<b>Engine:</b> 200 Standard Fusion\n\n<b>Equipment:</b>\n  1 x Command Bunker\n\n\n<b>Weapons:</b>\n  1x Sniper Artillery\n\n\n<b>Ammunition:</b>\n  2x Ammo Sniper\n  2x Ammo Sniper Inferno\n  2x Ammo Sniper Shaped Charge\n",
-        "CULTURE_ZH_CN": "堡垒设施，守卫周边区域。\n\n<color=#ff0000>特性：武器稳定</color>\n\n<color=#ffcc00><b>护甲：</b> 护甲  <b>数量：</b> 300\n<b>结构：</b>结构 <b>数量：</b> 1\n\n\n<b>引擎：</b>200 标准聚变\n\n<b>装备：</b>\n1 x 指挥地堡\n\n\n<b>武器：</b>\n1x Sniper火炮\n\n\n<b>弹药：</b>\n2x Sniper弹药\n2x Sniper炼狱弹药\n2x Sniper聚能弹药\n"
+        "CULTURE_ZH_CN": "堡垒设施，守卫周边区域。\n\n<color=#ff0000>特性：武器稳定</color>\n\n<color=#ffcc00><b>护甲：</b> 护甲  <b>数量：</b> 300\n<b>结构：</b>结构 <b>数量：</b> 1\n\n\n<b>引擎：</b>200 标准聚变\n\n<b>装备：</b>\n1 x 指挥地堡\n\n\n<b>武器：</b>\n1x 狙击炮\n\n\n<b>弹药：</b>\n2x Sniper弹药\n2x Sniper炼狱弹药\n2x Sniper聚能弹药\n"
       }
     },
     {
@@ -84644,7 +84644,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Defensive structure capable of repelling minor threats.\n\n<color=#ff0000>Quirk: Stable Weapons</color>\n\n<color=#ffcc00><b>Armor:</b> Armor <b>Amount:</b> 240\n<b>Structure:</b> Structure <b>Amount:</b> 150\n\n\n<b>Engine:</b> 200 Standard Fusion\n\n<b>Equipment:</b>\n  1 x Command Bunker\n\n\n<b>Weapons:</b>\n  1x Sniper Artillery Cannon\n\n\n<b>Ammunition:</b>\n  2x Ammo Sniper\n",
-        "CULTURE_ZH_CN": "防御工事，足以击退轻度威胁。\n\n<color=#ff0000>特性：武器稳定</color>\n\n<color=#ffcc00><b>护甲：</b> 护甲  <b>数量：</b> 240\n<b>结构：</b>结构 <b>数量：</b> 150\n\n\n<b>引擎：</b>200 标准聚变\n\n<b>装备：</b>\n1 x 指挥地堡\n\n\n<b>武器：</b>\n1x Sniper火炮加农炮\n\n\n<b>弹药：</b>\n2x Sniper弹药\n"
+        "CULTURE_ZH_CN": "防御工事，足以击退轻度威胁。\n\n<color=#ff0000>特性：武器稳定</color>\n\n<color=#ffcc00><b>护甲：</b> 护甲  <b>数量：</b> 240\n<b>结构：</b>结构 <b>数量：</b> 150\n\n\n<b>引擎：</b>200 标准聚变\n\n<b>装备：</b>\n1 x 指挥地堡\n\n\n<b>武器：</b>\n1x 狙击炮加农炮\n\n\n<b>弹药：</b>\n2x Sniper弹药\n"
       }
     },
     {
@@ -85692,7 +85692,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Fortress installation safeguarding the surrounding area.\n\n<color=#ff0000>Quirk: Stable Weapons</color>\n\n<color=#ffcc00><b>Armor:</b> Armor <b>Amount:</b> 300\n<b>Structure:</b> Structure <b>Amount:</b> 1\n\n\n<b>Engine:</b> 200 Standard Fusion\n\n<b>Equipment:</b>\n  1 x Command Bunker\n\n\n<b>Weapons:</b>\n  1x Sniper Artillery\n\n\n<b>Ammunition:</b>\n  2x Ammo Sniper\n  2x Ammo Sniper Inferno\n  2x Ammo Sniper Shaped Charge\n",
-        "CULTURE_ZH_CN": "堡垒设施，守卫周边区域。\n\n<color=#ff0000>特性：武器稳定</color>\n\n<color=#ffcc00><b>护甲：</b> 护甲  <b>数量：</b> 300\n<b>结构：</b>结构 <b>数量：</b> 1\n\n\n<b>引擎：</b>200 标准聚变\n\n<b>装备：</b>\n1 x 指挥地堡\n\n\n<b>武器：</b>\n1x Sniper火炮\n\n\n<b>弹药：</b>\n2x Sniper弹药\n2x Sniper炼狱弹药\n2x Sniper聚能弹药\n"
+        "CULTURE_ZH_CN": "堡垒设施，守卫周边区域。\n\n<color=#ff0000>特性：武器稳定</color>\n\n<color=#ffcc00><b>护甲：</b> 护甲  <b>数量：</b> 300\n<b>结构：</b>结构 <b>数量：</b> 1\n\n\n<b>引擎：</b>200 标准聚变\n\n<b>装备：</b>\n1 x 指挥地堡\n\n\n<b>武器：</b>\n1x 狙击炮\n\n\n<b>弹药：</b>\n2x Sniper弹药\n2x Sniper炼狱弹药\n2x Sniper聚能弹药\n"
       }
     },
     {
@@ -86916,7 +86916,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Defensive structure capable of repelling minor threats.\n\n<color=#ff0000>Quirk: Stable Weapons</color>\n\n<color=#ffcc00><b>Armor:</b> Armor <b>Amount:</b> 240\n<b>Structure:</b> Structure <b>Amount:</b> 150\n\n\n<b>Engine:</b> 200 Standard Fusion\n\n<b>Equipment:</b>\n  1 x Command Bunker\n\n\n<b>Weapons:</b>\n  1x Sniper Artillery Cannon\n\n\n<b>Ammunition:</b>\n  2x Ammo Sniper\n",
-        "CULTURE_ZH_CN": "防御工事，足以击退轻度威胁。\n\n<color=#ff0000>特性：武器稳定</color>\n\n<color=#ffcc00><b>护甲：</b> 护甲  <b>数量：</b> 240\n<b>结构：</b>结构 <b>数量：</b> 150\n\n\n<b>引擎：</b>200 标准聚变\n\n<b>装备：</b>\n1 x 指挥地堡\n\n\n<b>武器：</b>\n1x Sniper火炮加农炮\n\n\n<b>弹药：</b>\n2x Sniper弹药\n"
+        "CULTURE_ZH_CN": "防御工事，足以击退轻度威胁。\n\n<color=#ff0000>特性：武器稳定</color>\n\n<color=#ffcc00><b>护甲：</b> 护甲  <b>数量：</b> 240\n<b>结构：</b>结构 <b>数量：</b> 150\n\n\n<b>引擎：</b>200 标准聚变\n\n<b>装备：</b>\n1 x 指挥地堡\n\n\n<b>武器：</b>\n1x 狙击炮加农炮\n\n\n<b>弹药：</b>\n2x Sniper弹药\n"
       }
     },
     {
@@ -186844,7 +186844,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Sniper Artillery Emplacement",
-        "CULTURE_ZH_CN": "Sniper火炮炮台"
+        "CULTURE_ZH_CN": "狙击炮炮台"
       }
     },
     {

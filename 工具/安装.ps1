@@ -252,7 +252,9 @@ function RunTool($script, $extraArgs) {
     $arg = @('-NoProfile','-ExecutionPolicy','Bypass','-File', $sp) + $extraArgs
     # 这些工具本来各自递归枚举 Mods。复用安装时生成的文件清单，避免每个
     # 子进程都重新遍历数万文件；工具仍保留自身字段与路径过滤规则。
-    $indexedTools = @('fold-apply.ps1','apply-fields.ps1','apply-words.ps1','apply-norm.ps1','apply-tags.ps1','clean-metadata.ps1')
+    # fold-apply 使用自己的并行文件发现；传入安装索引会在子进程参数绑定时
+    # 变成空列表，导致字段阶段静默处理 0 个文件。
+    $indexedTools = @('apply-fields.ps1','apply-words.ps1','apply-norm.ps1','apply-tags.ps1','clean-metadata.ps1')
     if ($script -in $indexedTools -and -not [string]::IsNullOrWhiteSpace($script:modsJsonFileList) -and
         -not ($extraArgs -contains '-fileList')) {
         $arg += @('-fileList', $script:modsJsonFileList)
@@ -270,12 +272,11 @@ function RunTool($script, $extraArgs) {
     LogLine ((Get-Date -Format 'HH:mm:ss') + " DONE " + $script + " " + [math]::Round($timer.Elapsed.TotalSeconds, 1) + "s")
     if ($rc -ne 0) { throw ($script + " 返回码 " + $rc) }
 }
-function RunPythonTool($script, $extraArgs) {
-    # 保留旧函数名以兼容调用点，但安装流程不依赖 Python。发布包面向普通玩家，
-    # 不能要求额外安装 Python；运行时 CSV 修复与 QA 均使用系统自带 PowerShell。
+function RunBuiltinPsTool($script, $extraArgs) {
+    # 发布包面向普通玩家；运行时 CSV 修复与 QA 使用系统自带 PowerShell。
     $native = switch ($script) {
-        'repair-runtime-csv.py' { 'repair-runtime-csv.ps1'; break }
-        'qa-runtime-csv.py' { 'qa-runtime-csv.ps1'; break }
+        'repair-runtime-csv.ps1' { 'repair-runtime-csv.ps1'; break }
+        'qa-runtime-csv.ps1' { 'qa-runtime-csv.ps1'; break }
         default { throw ("不支持的内置工具: " + $script) }
     }
     RunTool $native $extraArgs
@@ -515,12 +516,25 @@ Ok ("已建立 JSON 文件索引：" + $jsonPaths.Count + " 个文件")
 # ---------- 7) 数据字段汉化 ----------
 Step 7 "汉化数据字段（Details / YangsThoughts / StockRole）"
 RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                           '-dict', (Join-Path $PSScriptRoot 'dict-all.tsv'),
-                           '-extraDict', (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'), (Join-Path $PSScriptRoot 'dict-unit-llm.tsv'), (Join-Path $PSScriptRoot 'dict-piratetech-unit.tsv'),
+                           '-dict', (Join-Path $PSScriptRoot 'dict-unit-completion.tsv'),
+                           # residual-mixed 放在第一个 extraDict，兼容 Windows PowerShell
+                           # 外部子进程对 string[] 参数的绑定顺序。
+                           '-extraDict', (Join-Path $PSScriptRoot 'dict-residual-mixed.tsv'), (Join-Path $PSScriptRoot 'dict-mia-update.tsv'), (Join-Path $PSScriptRoot 'dict-all.tsv'), (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'), (Join-Path $PSScriptRoot 'dict-unit-llm.tsv'), (Join-Path $PSScriptRoot 'dict-piratetech-unit.tsv'),
                            # 整段 LLM 译文必须参与安装；否则后续安装会重新
                            # 用旧的半翻译词典覆盖已经修好的 Details。
                            '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-defs'))
+RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                             '-pairs', (Join-Path $PSScriptRoot 'dict-mia-update.tsv'),
+                             '-fields', 'Name,UIName',
+                             '-pathLike', 'chassisdef_grandtitan,mechdef_grandtitan,chassisdef_lich,mechdef_lich,KineticDiplomacy,Superheavy_Omni_Plus,Optionals\Quicsell\Heatsink\Gear_Engine_ICE_XL_Quicsell,Core\RogueModuleTech\Primitive\Engines\Gear_Engine_XL_Quicsell',
+                             '-backupRoot', (Join-Path $packRoot 'backup\Mods-mia-update'))
+RunTool 'apply-rtconfig-zh.ps1' @('-file', (Join-Path $gameRoot 'Mods\RtConfig.xml'),
+                                  '-pairs', (Join-Path $PSScriptRoot 'dict-mia-update.tsv'),
+                                  '-backupRoot', (Join-Path $backupDir 'Mods'))
+RunTool 'repair-localization-json.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                         '-pairs', (Join-Path $PSScriptRoot 'dict-mia-update.tsv'),
+                                         '-backupRoot', (Join-Path $backupDir 'localization-format'))
 Ok "完成"
 RunTool 'normalize-unit-terms.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                     '-backupRoot', (Join-Path $packRoot 'backup\Mods-unit-terms'))
@@ -847,8 +861,8 @@ RunTool 'fix-literal-newlines.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                     '-backupRoot', (Join-Path $backupDir 'literal-newlines'))
 # 运行时整段条目由 CSV 查表，不会经过 JSON 字段 QA；安装到目标 CSV 后再做一次
 # 结构化修复，防止包内条目被旧版本覆盖或换行被压平。
-RunPythonTool 'repair-runtime-csv.py' @('-csv', $csvDst)
-RunPythonTool 'qa-runtime-csv.py' @('-csv', $csvDst,
+RunBuiltinPsTool 'repair-runtime-csv.ps1' @('-csv', $csvDst)
+RunBuiltinPsTool 'qa-runtime-csv.ps1' @('-csv', $csvDst,
                                    '-out', (Join-Path $backupDir 'runtime-csv-qa.txt'))
 Ok "完成"
 

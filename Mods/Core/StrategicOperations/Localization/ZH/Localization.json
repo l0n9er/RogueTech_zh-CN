@@ -76,7 +76,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Call in a strafing run by the Argo's two aerospace fighters.\r\n\r\n <b><color=#099ff2>Has a 2 turn cooldown! Costs 15 Resolve to use!</color></b>\r\n\r\n <b><color=#15df37>Can only call in three strafes per contract! The fighters attack in two waves, one after another!</color></b>\r\n\r\n <b><color=#e11919>Costs 50000 C-bills per use!</color></b>",
-        "CULTURE_ZH_CN": "呼叫阿戈号两架航空战机进行一次扫射。\n<<NL> <b><color=#099ff2>有2回合冷却！使用需消耗15点决心！</color></b>\n<<NL> <b><color=#15df37>每份合约最多只能呼叫三次扫射！战机会分两波先后攻击！</color></b>\n<<NL> <b><color=#e11919>每次使用花费50000C币！</color></b>"
+        "CULTURE_ZH_CN": "呼叫阿戈号两架航空战机进行一次扫射。\n\n<b><color=#099ff2>有2回合冷却！使用需消耗15点决心！</color></b>\n\n<b><color=#15df37>每份合约最多只能呼叫三次扫射！战机会分两波先后攻击！</color></b>\n\n<b><color=#e11919>每次使用花费50000C币！</color></b>"
       }
     },
     {
@@ -156,7 +156,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "ACTION: Deploy a UAV from storage.\r\n\r\n <b><color=#e11919>Costs 10 000 C-Bills per use!</color></b>\r\n\r\n <b><color=#15df37>Can deploy two UAV per contract!\nCannot be used in duels, Solaris matches or on lunar biomes.</color></b>",
-        "CULTURE_ZH_CN": "动作：从储存中部署一架无人机。\n<<NL> <b><color=#e11919>每次使用花费10,000 C币！</color></b>\n<<NL> <b><color=#15df37>每份合约可部署两架无人机！\n不能用于决斗、索拉里斯比赛或月球生物群系。</color></b>"
+        "CULTURE_ZH_CN": "动作：从储存中部署一架无人机。\n\n<b><color=#e11919>每次使用花费10,000 C币！</color></b>\n\n<b><color=#15df37>每份合约可部署两架无人机！\n不能用于决斗、索拉里斯比赛或月球生物群系。</color></b>"
       }
     },
     {
@@ -436,7 +436,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Bluejay is a 0.5 ton UAV with a general purpose configuration. It carries a TAG, and a tiny combat load of a single droppable Thumper shell. It can EWS ping with a radius of 30 meters and feed data to C3 networks. 20 armor, 10/15 move, 150 meter fly height.\r\n\r\n <b><color=#099ff2>Hold Shift while placing the unit after activating the deploy ability to select a unit from among those available.</color></b>",
-        "CULTURE_ZH_CN": "蓝鸦是一种0.5吨通用配置无人机。它携带一具TAG，以及极其有限的战斗载荷：一枚可空投的重锤炮弹。它能以30米半径进行电子战套件探测，并向C3网络提供数据。20点装甲，移动力10/15，飞行高度150米。\n<<NL> <b><color=#099ff2>激活部署能力后放置单位时按住Shift，即可从可用单位中选择一个。</color></b>"
+        "CULTURE_ZH_CN": "蓝鸦是一种0.5吨通用配置无人机。它携带一具TAG，以及极其有限的战斗载荷：一枚可空投的重锤炮弹。它能以30米半径进行电子战套件探测，并向C3网络提供数据。20点装甲，移动力10/15，飞行高度150米。\n\n<b><color=#099ff2>激活部署能力后放置单位时按住Shift，即可从可用单位中选择一个。</color></b>"
       }
     },
     {
@@ -460,7 +460,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Canary is a 0.5 ton UAV equipped with a Drone EWS, and Stealth Armor. It has no weapons that could raise its sensor signature. It can EWS ping with a radius of 30 meters.\r\n\r\n <b><color=#099ff2>Hold Shift while placing the unit after activating the deploy ability to select a unit from among those available.</color></b>",
-        "CULTURE_ZH_CN": "金丝雀是一种0.5吨无人机，装备无人机电子战套件和隐形装甲。它没有任何可能提高其传感器信号的武器。它能以30米半径进行电子战套件探测。\n<<NL> <b><color=#099ff2>激活部署能力后放置单位时按住Shift，即可从可用单位中选择一个。</color></b>"
+        "CULTURE_ZH_CN": "金丝雀是一种0.5吨无人机，装备无人机电子战套件和隐形装甲。它没有任何可能提高其传感器信号的武器。它能以30米半径进行电子战套件探测。\n\n<b><color=#099ff2>激活部署能力后放置单位时按住Shift，即可从可用单位中选择一个。</color></b>"
       }
     },
     {
@@ -484,7 +484,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Magpie is a 0.5 ton UAV equipped with TAG an ECM suite. It can feed information to C3 equipped allies. 20 armor, 10/15 move, 150 meter fly height.\r\n\r\n <b><color=#099ff2>Hold Shift while placing the unit after activating the deploy ability to select a unit from among those available.</color></b>",
-        "CULTURE_ZH_CN": "喜鹊是一种0.5吨无人机，装备TAG和一套ECM套件。它能向装备C3的友军提供信息。20点装甲，移动力10/15，飞行高度150米。\n<<NL> <b><color=#099ff2>激活部署能力后放置单位时按住Shift，即可从可用单位中选择一个。</color></b>"
+        "CULTURE_ZH_CN": "喜鹊是一种0.5吨无人机，装备TAG和一套ECM套件。它能向装备C3的友军提供信息。20点装甲，移动力10/15，飞行高度150米。\n\n<b><color=#099ff2>激活部署能力后放置单位时按住Shift，即可从可用单位中选择一个。</color></b>"
       }
     },
     {

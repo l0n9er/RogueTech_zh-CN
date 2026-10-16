@@ -23,8 +23,8 @@ DICT_FILES = [
     ROOT / "工具" / "dict-all.tsv",
 ]
 HAN = re.compile(r"[\u3400-\u9fff]")
-TAG = re.compile(r"<[^>]*>")
-TOKEN = re.compile(r"<[^>]*>|\\[nrt]|\n|\{[^{}]*\}|\[\[[\s\S]*?\]\]")
+TAG = re.compile(r"</?[A-Za-z][^>]*>")
+TOKEN = re.compile(r"</?[A-Za-z][^>]*>|<3|\\[nrt]|\n|\{[^{}]*\}|\[\[[\s\S]*?\]\]")
 COMMON = re.compile(r"\b(?:the|this|that|was|were|with|and|from|into|used|designed|powered|carried|armed|is|are|can|not|left|right|front|rear|quirk|drop|cost|multiplier|armor|structure|laser|medium|small|large)\b", re.I)
 
 def norm(v: str) -> str:
