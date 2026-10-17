@@ -539,6 +539,9 @@ RunTool 'apply-rtconfig-zh.ps1' @('-file', (Join-Path $gameRoot 'Mods\RtConfig.x
 RunTool 'repair-localization-json.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                          '-pairs', (Join-Path $PSScriptRoot 'dict-mia-update.tsv'),
                                          '-backupRoot', (Join-Path $backupDir 'localization-format'))
+RunTool 'apply-localization-missing.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                          '-pairs', (Join-Path $PSScriptRoot 'dict-localization-missing.tsv'),
+                                          '-backupRoot', (Join-Path $backupDir 'localization-missing'))
 Ok "完成"
 RunTool 'normalize-unit-terms.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                     '-backupRoot', (Join-Path $packRoot 'backup\Mods-unit-terms'))

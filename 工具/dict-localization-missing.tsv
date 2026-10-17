@@ -1,0 +1,11 @@
+Hidden Open Player Evac Objective	隐藏：开启玩家撤离目标
+Empty Do Additonal Forces Secondary Autocomplete Flag	空值：添加额外部队（次要）自动完成标记
+Hidden Target Primary AI Swap Timer	隐藏：目标主要 AI 交换计时器
+Hidden Target Primary Drop Timer	隐藏：目标主要投放计时器
+Empty Do Additonal Forces Primary Autocomplete Flag	空值：添加额外部队（主要）自动完成标记
+Empty Do Additonal Forces 2 Secondary Autocomplete Flag	空值：添加额外部队 2（次要）自动完成标记
+Empty Do Additonal Forces 2 Primary Autocomplete Flag	空值：添加额外部队 2（主要）自动完成标记
+Hidden Hostile to ALL AI Timer	隐藏：对所有敌对 AI 计时器
+Hidden Hostile to All Drop Timer	隐藏：对所有敌对目标投放计时器
+Dialogue_Interrupt_EnemyAllyAppears_Primary (Optional)	对话中断：敌方盟友出现——主要（可选）
+Dialogue_Interrupt_EnemyAllyAppears_Secondary (Optional)	对话中断：敌方盟友出现——次要（可选）

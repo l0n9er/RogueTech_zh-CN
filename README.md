@@ -260,6 +260,7 @@ RtCache\                          启动器缓存副本
   ├─ 还原.ps1                     按备份还原
   ├─ find-game.ps1                游戏目录自动探测
   ├─ fold-apply.ps1               数据字段汉化（含 Details 前缀匹配与元数据清理）
+  ├─ apply-localization-missing.ps1 补齐本地化字段中的缺失中文并修复英文回退
   ├─ apply-words.ps1              对话与战斗字幕
   ├─ apply-voicepacks.ps1         额外 MWSphere 语音包说明汉化（存在时自动处理）
   ├─ apply-bonus.ps1              装备特性说明（Short / Long / Full）

@@ -1714,14 +1714,16 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective3.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer"
+      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对目标投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective4.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer"
+      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对 AI 计时器"
     }
   },
   {
@@ -1743,14 +1745,16 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective7.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer"
+      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对目标投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective8.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer"
+      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对 AI 计时器"
     }
   },
   {
@@ -1765,21 +1769,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective10.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective11.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective12.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（主要）自动完成标记"
     }
   },
   {
@@ -1794,21 +1801,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective14.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective15.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective16.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（次要）自动完成标记"
     }
   },
   {
@@ -1823,21 +1833,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective18.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective19.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective20.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队 2（主要）自动完成标记"
     }
   },
   {
@@ -1852,21 +1865,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective22.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective23.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective24.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队 2（次要）自动完成标记"
     }
   },
   {
@@ -1881,21 +1897,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective26.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective27.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective28.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（主要）自动完成标记"
     }
   },
   {
@@ -1910,21 +1929,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective30.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective31.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective32.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（次要）自动完成标记"
     }
   },
   {
@@ -2008,7 +2030,8 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle.objective43.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Open Player Evac Objective"
+      "CULTURE_EN_US": "Hidden Open Player Evac Objective",
+      "CULTURE_ZH_CN": "隐藏：开启玩家撤离目标"
     }
   },
   {
@@ -2921,14 +2944,16 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective3.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer"
+      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对目标投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective4.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer"
+      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对 AI 计时器"
     }
   },
   {
@@ -2950,14 +2975,16 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective7.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer"
+      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对目标投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective8.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer"
+      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对 AI 计时器"
     }
   },
   {
@@ -2972,21 +2999,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective10.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective11.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective12.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（主要）自动完成标记"
     }
   },
   {
@@ -3001,21 +3031,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective14.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective15.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective16.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（次要）自动完成标记"
     }
   },
   {
@@ -3030,21 +3063,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective18.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective19.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective20.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队 2（主要）自动完成标记"
     }
   },
   {
@@ -3059,21 +3095,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective22.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective23.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective24.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队 2（次要）自动完成标记"
     }
   },
   {
@@ -3088,21 +3127,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective26.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective27.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective28.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（主要）自动完成标记"
     }
   },
   {
@@ -3117,21 +3159,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective30.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective31.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective32.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（次要）自动完成标记"
     }
   },
   {
@@ -3215,7 +3260,8 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle.objective43.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Open Player Evac Objective"
+      "CULTURE_EN_US": "Hidden Open Player Evac Objective",
+      "CULTURE_ZH_CN": "隐藏：开启玩家撤离目标"
     }
   },
   {
@@ -4032,14 +4078,16 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective3.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer"
+      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对目标投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective4.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer"
+      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对 AI 计时器"
     }
   },
   {
@@ -4061,14 +4109,16 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective7.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer"
+      "CULTURE_EN_US": "Hidden Hostile to All Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对目标投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective8.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer"
+      "CULTURE_EN_US": "Hidden Hostile to ALL AI Timer",
+      "CULTURE_ZH_CN": "隐藏：对所有敌对 AI 计时器"
     }
   },
   {
@@ -4083,21 +4133,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective10.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective11.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective12.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（主要）自动完成标记"
     }
   },
   {
@@ -4112,21 +4165,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective14.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective15.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective16.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（次要）自动完成标记"
     }
   },
   {
@@ -4141,21 +4197,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective18.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective19.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective20.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队 2（主要）自动完成标记"
     }
   },
   {
@@ -4170,21 +4229,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective22.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective23.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective24.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces 2 Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队 2（次要）自动完成标记"
     }
   },
   {
@@ -4199,21 +4261,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective26.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective27.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective28.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Primary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（主要）自动完成标记"
     }
   },
   {
@@ -4228,21 +4293,24 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective30.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary Drop Timer"
+      "CULTURE_EN_US": "Hidden Target Primary Drop Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要投放计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective31.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer"
+      "CULTURE_EN_US": "Hidden Target Primary AI Swap Timer",
+      "CULTURE_ZH_CN": "隐藏：目标主要 AI 交换计时器"
     }
   },
   {
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective32.title",
     "Localization": {
-      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag"
+      "CULTURE_EN_US": "Empty Do Additonal Forces Secondary Autocomplete Flag",
+      "CULTURE_ZH_CN": "空值：添加额外部队（次要）自动完成标记"
     }
   },
   {
@@ -4326,7 +4394,8 @@
     "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
     "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle.objective43.title",
     "Localization": {
-      "CULTURE_EN_US": "Hidden Open Player Evac Objective"
+      "CULTURE_EN_US": "Hidden Open Player Evac Objective",
+      "CULTURE_ZH_CN": "隐藏：开启玩家撤离目标"
     }
   },
   {
