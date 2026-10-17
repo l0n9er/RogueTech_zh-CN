@@ -39,11 +39,6 @@ function Format-UnitDetail([string]$Value) {
     $evaluator = [System.Text.RegularExpressions.MatchEvaluator]{
         param($match)
         $labels = @($match.Groups['labels'].Value.Trim() -split '[ \t]+' | Where-Object { $_ })
-        $contextBeforeTable = $Value.Substring(0, $match.Index)
-        $hasArmorStructureContext = $contextBeforeTable -match '(?s)<b>(?:装甲|护甲)[：:]?</b>.*<b>结构[：:]?</b>'
-        if ($hasArmorStructureContext -and $labels.Count -eq 2 -and $labels[0] -eq 'A' -and $labels[1] -eq 'S') {
-            $labels = @('装甲', '结构')
-        }
         $rows = [regex]::Matches($match.Groups['rows'].Value, $rowPattern)
         $parsedRows = @()
         foreach ($row in $rows) {
