@@ -10,6 +10,7 @@
     [string]$missReport = "",
     [string]$qaReport = "",
     [ValidateRange(1, 16)][int]$threads = 4,
+    [switch]$IncludeLocalization,
     [switch]$Worker,
     [string]$workerId = "",
     [switch]$DryRun
@@ -71,7 +72,7 @@ if ([IO.File]::Exists($csv)) {
         $key = $line.Substring(0, $comma)
         # CSV 译文里的字面量 \\n 表示换行；先还原为真实换行，再由 Esc
         # 编成 JSON 的单层转义，避免游戏界面显示字面量 "\\n"。
-        $value = $line.Substring($comma + 1).Replace($BS + 'n', "`n").Replace($BS + 'r', "`r")
+        $value = $line.Substring($comma + 1).Replace($BS + 'n', "`n").Replace($BS + 'r', "`r").Replace($BS + 't', "`t")
         if (-not $csvExact.ContainsKey($key)) { $csvExact[$key] = $value }
         # 详情末尾可能已被旧版本部分汉化（例如仅 Quirk 行为中文），
         # 但正文开头仍与 CSV 英文键一致。记录稳定前缀用于整段替换。
@@ -310,10 +311,7 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     if ([string]::IsNullOrWhiteSpace($val)) { return $m.Value }
     if ($script:repairMap.ContainsKey($val)) {
         $rv = $script:repairMap[$val]
-        if ($rv -ne $val) {
-            $stats.repl++
-            return '"' + $fld + '": "' + (Esc $rv) + '"'
-        }
+        if ($rv -ne $val) { $val = $rv }
     }
     if ($cleaned) {
         $m2 = '"' + $fld + '": "' + (Esc $val) + '"'
@@ -405,13 +403,15 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     $stats.repl++
     return $m2
 }
-$rx = [regex]('"(Details|YangsThoughts|StockRole)"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"')
+$fieldPattern = if ($IncludeLocalization) { 'Details|YangsThoughts|StockRole|CULTURE_ZH_CN' } else { 'Details|YangsThoughts|StockRole' }
+$rx = [regex]('"(' + $fieldPattern + ')"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"')
 $excl = @(
     ($BS + '.modtek' + $BS)
     'ModSaves'
-    'Localization'
-    'localization'
 )
+if (-not $IncludeLocalization) {
+    $excl += @('Localization', 'localization')
+}
 
 # 文件索引来自游戏目录，不能假定每一行都能被 Path API 直接解析。
 # Windows PowerShell 在管道中遇到异常路径时会让整个 ForEach-Object 终止，
@@ -455,6 +455,10 @@ if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileLis
         -not $bad
     }
 }
+$files = @($files | Where-Object {
+    if ($IncludeLocalization) { return $true }
+    return $true
+})
 if (-not [string]::IsNullOrWhiteSpace($qaReport) -and [IO.File]::Exists($qaReport)) {
     $targetPaths = New-Object 'System.Collections.Generic.HashSet[string]' ([StringComparer]::OrdinalIgnoreCase)
     foreach ($row in (Import-Csv -LiteralPath $qaReport -Delimiter "`t")) {
@@ -494,7 +498,7 @@ if (-not $Worker -and $threads -gt 1 -and @($files).Count -gt 1) {
             Script = $PSCommandPath; Mods = $mods; Dict = $dict; Csv = $csv
             Fragments = $fragments; RepairDict = $repairDict; ExtraDict = [string[]]$extraDict
             BackupRoot = $backupRoot; FileList = $listPath; MissReport = $missPath; WorkerId = $id
-            DryRun = [bool]$DryRun
+            DryRun = [bool]$DryRun; IncludeLocalization = [bool]$IncludeLocalization
         }
         $tempMissReports += $missPath
         $jobs += Start-Job -ArgumentList $cfg -ScriptBlock {
@@ -508,6 +512,7 @@ if (-not $Worker -and $threads -gt 1 -and @($files).Count -gt 1) {
                 workerId = [string]$c.WorkerId
             }
             if ([bool]$c.DryRun) { $p.DryRun = $true }
+            if ([bool]$c.IncludeLocalization) { $p.IncludeLocalization = $true }
             & ([string]$c.Script) @p
         }
     }

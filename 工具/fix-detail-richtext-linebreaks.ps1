@@ -1,0 +1,85 @@
+param(
+    [string]$Root = (Split-Path $PSScriptRoot -Parent),
+    [string]$ModsPath = '',
+    [string]$CsvPath = ''
+)
+
+$ErrorActionPreference = 'Stop'
+$detailLabelPattern = '(?:\u751f\u7269\u7fa4\u7cfb\u9650\u5236|\u73af\u5883\u9650\u5236|\u79fb\u52a8|\u88c5\u7532|\u7ed3\u6784|\u6570\u503c|\u7279\u8d28|\u7279\u6027|\u7279\u70b9|\u7279\u5f81|\u6295\u653e\u8d39\u7528\u500d\u7387|\u90e8\u7f72\u8d39\u7528\u500d\u7387|\u6295\u653e\u6210\u672c\u500d\u7387|\u90e8\u7f72\u6210\u672c\u500d\u7387|\u624b\u81c2\u9a71\u52a8\u5668\u9650\u5236|\u624b\u81c2\u6267\u884c\u5668\u9650\u5236|\u624b\u81c2\u9650\u5236|\u624b\u81c2\u9a71\u52a8\u5668\u9650\u4f4d|\u624b\u81c2\u6267\u884c\u5668\u9650\u4f4d)'
+
+function Normalize-UnitDetailText([string]$Text) {
+    if ([string]::IsNullOrEmpty($Text)) { return $Text }
+    $colors = '#(?:e62e00|ff0000|ffef00|ffcc00|f0ff00|ff0d00)'
+    $Text = [regex]::Replace($Text, '(?i)</color></b>[ \t]+(?=<b>)', '</color></b>\n')
+    $Text = [regex]::Replace($Text, '(?i)</color>[ \t]+(?=<b>)', '</color>\n')
+    $Text = [regex]::Replace($Text, '<b>(?:\\n)*(?=<color=' + $colors + '>' + $detailLabelPattern + ')', '<b>', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    $targetTagPattern = '(?i)(?<!<b>)(?:<b>)?<color=' + $colors + '>(?:<b>)?(?=' + $detailLabelPattern + ')'
+    if ($Text -notmatch $targetTagPattern) {
+        return $Text
+    }
+
+    $boundary = '(?<!<b>)(?:<b>)?<color=' + $colors + '>(?:<b>)?(?=' + $detailLabelPattern + ')'
+    $breakPattern = '(?:\\n)+(?=' + $boundary + ')'
+    $Text = [regex]::Replace($Text, $breakPattern, '\n', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+
+    $missingBreakPattern = '(?<!\\n)(?<!<br>)(?<!<<NL>>)(?=' + $boundary + ')'
+    return [regex]::Replace($Text, $missingBreakPattern, '\n', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+}
+
+function Update-DetailsJson([string]$Path) {
+    $lines = [IO.File]::ReadAllLines($Path, [Text.Encoding]::UTF8)
+    $changed = $false
+    $isDetails = $false
+    for ($index = 0; $index -lt $lines.Count; $index++) {
+        if ($lines[$index] -match '^\s*"Name"\s*:\s*"[^"]+\.Details"') {
+            $isDetails = $true
+        }
+        elseif ($lines[$index] -match '^\s*"Name"\s*:') {
+            $isDetails = $false
+        }
+
+        if (-not $isDetails) { continue }
+        $match = [regex]::Match($lines[$index], '^(?<indent>\s*)"(?<field>Details|YangsThoughts|StockRole|CULTURE_ZH_CN)"\s*:\s*"(?<value>(?:[^"\\]|\\.)*)"(?<tail>\s*,?)\s*$')
+        if (-not $match.Success) { continue }
+        if ($match.Groups['field'].Value -eq 'CULTURE_ZH_CN' -and -not $isDetails) { continue }
+        $value = Normalize-UnitDetailText $match.Groups['value'].Value
+        if ($value -eq $match.Groups['value'].Value) { continue }
+        $lines[$index] = $match.Groups['indent'].Value + '"' + $match.Groups['field'].Value + '": "' + $value + '"' + $match.Groups['tail'].Value
+        $changed = $true
+    }
+    if ($changed) {
+        [IO.File]::WriteAllLines($Path, $lines, (New-Object Text.UTF8Encoding($false)))
+    }
+    return $changed
+}
+
+$changedFiles = 0
+if ([string]::IsNullOrWhiteSpace($ModsPath)) { $ModsPath = Join-Path $Root 'Mods' }
+if ([string]::IsNullOrWhiteSpace($CsvPath)) { $CsvPath = Join-Path $Root 'strings_zh-CN.csv' }
+foreach ($file in Get-ChildItem -LiteralPath $ModsPath -Recurse -File -Filter 'Localization.json') {
+    if (Update-DetailsJson $file.FullName) { $changedFiles++ }
+}
+foreach ($file in Get-ChildItem -LiteralPath $ModsPath -Recurse -File -Filter '*.json' | Where-Object { $_.Name -ne 'Localization.json' }) {
+    if (Update-DetailsJson $file.FullName) { $changedFiles++ }
+}
+
+$csvLines = [IO.File]::ReadAllLines($CsvPath, [Text.Encoding]::UTF8)
+$csvChanged = $false
+for ($index = 1; $index -lt $csvLines.Count; $index++) {
+    $comma = $csvLines[$index].IndexOf(',')
+    if ($comma -lt 1) { continue }
+    $key = $csvLines[$index].Substring(0, $comma)
+    $value = $csvLines[$index].Substring($comma + 1)
+    $targetValuePattern = '(?i)(?:<b>)?<color=#(?:e62e00|ff0000|ffef00|ffcc00|f0ff00|ff0d00)>(?:<b>)?' + $detailLabelPattern
+    if ($key -notmatch 'quirk:.*dropcostmultiplier|armactuatorlimit' -and $value -notmatch $targetValuePattern) { continue }
+    $updated = Normalize-UnitDetailText $value
+    if ($updated -eq $value) { continue }
+    $csvLines[$index] = $key + ',' + $updated
+    $csvChanged = $true
+}
+if ($csvChanged) {
+    [IO.File]::WriteAllLines($CsvPath, $csvLines, (New-Object Text.UTF8Encoding($false)))
+    $changedFiles++
+}
+
+Write-Host ("详情颜色换行修复: files={0}" -f $changedFiles)

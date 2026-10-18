@@ -1,41 +1,18 @@
 param(
-    [string]$Root = (Split-Path $PSScriptRoot -Parent)
+    [string]$Root = (Split-Path $PSScriptRoot -Parent),
+    [string]$ModsPath = '',
+    [string]$CsvPath = ''
 )
 
 $ErrorActionPreference = 'Stop'
 
-function Get-DisplayWidth([string]$Text) {
-    $width = 0
-    foreach ($char in $Text.ToCharArray()) {
-        if ([int][char]$char -ge 0x2E80) { $width += 2 } else { $width++ }
-    }
-    return $width
-}
-
-function Format-TableRow([string]$Label, [string[]]$Values, [int[]]$ColumnStarts) {
-    $labelWidth = Get-DisplayWidth $Label
-    $line = "\n<b>$Label</b>" + (' ' * [Math]::Max(1, $ColumnStarts[0] - $labelWidth))
-    $position = $ColumnStarts[0]
-    for ($index = 0; $index -lt $Values.Count; $index++) {
-        $value = $Values[$index]
-        if ($position -gt $ColumnStarts[$index]) {
-            $line += ' '
-            $position++
-        }
-        elseif ($position -lt $ColumnStarts[$index]) {
-            $line += (' ' * ($ColumnStarts[$index] - $position))
-            $position = $ColumnStarts[$index]
-        }
-        $line += $value
-        $position += Get-DisplayWidth $value
-    }
-    return $line
-}
-
 function Format-UnitDetail([string]$Value) {
     if ($Value.IndexOf('<b>数值', [StringComparison]::Ordinal) -lt 0) { return $Value }
-    $tablePattern = '<b>数值[ \t]+(?<labels>[^<\r\n]+)</b>(?<rows>(?:\\n<b>(?!(?:总计|合计)</b>)[^<\r\n]+</b>[ \t]+-?\d+(?:\.\d+)?(?:[ \t]+-?\d+(?:\.\d+)?)+)+)(?<total>\\n(?:\\n)?<b>(?:总计|合计)</b>[ \t]+-?\d+(?:\.\d+)?(?:[ \t]+-?\d+)+)'
-    $rowPattern = '\\n<b>(?<label>[^<]+)</b>[ \t]+(?<values>-?\d+(?:\.\d+)?(?:[ \t]+-?\d+(?:\.\d+)?)+)'
+    $normalized = $Value -replace '<mspace(?:=[^>]+)?>', ''
+    $normalized = $normalized -replace '</mspace>', ''
+    $numberPattern = '-?\d+(?:\.\d+)?'
+    $tablePattern = '<b>数值</b>[ \t]+(?<labels>[^<\r\n]+)(?<rows>(?:\\n<b>(?!(?:总计|合计)</b>)[^<\r\n]+</b>[ \t]+' + $numberPattern + '(?:[ \t]+' + $numberPattern + ')*)+)(?<total>\\n(?:\\n)?<b>(?:总计|合计)</b>[ \t]+' + $numberPattern + '(?:[ \t]+' + $numberPattern + ')*)?'
+    $rowPattern = '\\n<b>(?<label>[^<]+)</b>[ \t]+(?<values>' + $numberPattern + '(?:[ \t]+' + $numberPattern + ')*)'
     $evaluator = [System.Text.RegularExpressions.MatchEvaluator]{
         param($match)
         $labels = @($match.Groups['labels'].Value.Trim() -split '[ \t]+' | Where-Object { $_ })
@@ -57,45 +34,39 @@ function Format-UnitDetail([string]$Value) {
             }
         }
 
+        if ($labels.Count -lt 1) { return $match.Value }
         $columnCount = [Math]::Max($labels.Count, (($parsedRows | ForEach-Object { $_.Values.Count } | Measure-Object -Maximum).Maximum))
-        if ($columnCount -lt 1) { return $match.Value }
-        $labelWidth = Get-DisplayWidth '数值'
-        foreach ($row in $parsedRows) {
-            $labelWidth = [Math]::Max($labelWidth, (Get-DisplayWidth $row.Label))
-        }
+        $labelWidth = '数值'.Length
+        foreach ($row in $parsedRows) { $labelWidth = [Math]::Max($labelWidth, $row.Label.Length) }
         $columnWidths = New-Object int[] $columnCount
         for ($index = 0; $index -lt $columnCount; $index++) {
-            if ($index -lt $labels.Count) {
-                $columnWidths[$index] = Get-DisplayWidth $labels[$index]
-            }
+            if ($index -lt $labels.Count) { $columnWidths[$index] = $labels[$index].Length }
             foreach ($row in $parsedRows) {
-                if ($index -lt $row.Values.Count) {
-                    $columnWidths[$index] = [Math]::Max($columnWidths[$index], (Get-DisplayWidth $row.Values[$index]))
-                }
+                if ($index -lt $row.Values.Count) { $columnWidths[$index] = [Math]::Max($columnWidths[$index], $row.Values[$index].Length) }
             }
         }
-        $columnStarts = New-Object int[] $columnCount
-        $columnGap = 6
-        $columnStarts[0] = $labelWidth + $columnGap
-        for ($index = 1; $index -lt $columnCount; $index++) {
-            $columnStarts[$index] = $columnStarts[$index - 1] + $columnWidths[$index - 1] + $columnGap
-        }
-
-        $header = '<b>数值' + (' ' * [Math]::Max(1, $columnStarts[0] - (Get-DisplayWidth '数值')))
+        $columnGap = 3
+        $headerValues = New-Object 'System.Collections.Generic.List[string]'
         for ($index = 0; $index -lt $labels.Count; $index++) {
-            $header += $labels[$index]
-            if ($index -lt $labels.Count - 1) {
-                $header += (' ' * [Math]::Max(1, $columnStarts[$index + 1] - $columnStarts[$index] - (Get-DisplayWidth $labels[$index])))
-            }
+            [void]$headerValues.Add($labels[$index].PadRight($columnWidths[$index]))
         }
-        $body = '</b>'
+        $headerGap = ' ' * ([Math]::Max(1, $labelWidth - '数值'.Length + 1))
+        $header = '<b>数值</b>' + $headerGap + '<mspace=0.5em>' + (($headerValues -join (' ' * $columnGap)).TrimEnd()) + '</mspace>'
+        $body = ''
         foreach ($row in $parsedRows) {
             if ($row.Label -eq '总计' -or $row.Label -eq '合计') { $body += "\n" }
-            $body += Format-TableRow $row.Label $row.Values $columnStarts
+            $rowCells = New-Object 'System.Collections.Generic.List[string]'
+            for ($index = 0; $index -lt $row.Values.Count; $index++) {
+                $cell = $row.Values[$index]
+                if ($index -lt $row.Values.Count - 1) { $cell = $cell.PadRight($columnWidths[$index]) }
+                [void]$rowCells.Add($cell)
+            }
+            $rowGap = ' ' * ([Math]::Max(1, $labelWidth - $row.Label.Length + 1))
+            $body += "\n<b>$($row.Label)</b>" + $rowGap + '<mspace=0.5em>' + (($rowCells -join (' ' * $columnGap)).TrimEnd()) + '</mspace>'
         }
         return $header + $body
     }
-    return [regex]::Replace($Value, $tablePattern, $evaluator)
+    return [regex]::Replace($normalized, $tablePattern, $evaluator)
 }
 
 function Update-LocalizationJson([string]$Path) {
@@ -116,14 +87,13 @@ function Update-LocalizationJson([string]$Path) {
 }
 
 $changedFiles = 0
-$changedTables = 0
-
-foreach ($file in Get-ChildItem (Join-Path $Root 'Mods') -Recurse -File -Filter 'Localization.json') {
+if ([string]::IsNullOrWhiteSpace($ModsPath)) { $ModsPath = Join-Path $Root 'Mods' }
+if ([string]::IsNullOrWhiteSpace($CsvPath)) { $CsvPath = Join-Path $Root 'strings_zh-CN.csv' }
+foreach ($file in Get-ChildItem -LiteralPath $ModsPath -Recurse -File -Filter 'Localization.json') {
     if (Update-LocalizationJson $file.FullName) { $changedFiles++ }
 }
 
-$csvPath = Join-Path $Root 'strings_zh-CN.csv'
-$csvLines = [IO.File]::ReadAllLines($csvPath, [Text.Encoding]::UTF8)
+$csvLines = [IO.File]::ReadAllLines($CsvPath, [Text.Encoding]::UTF8)
 $csvChanged = $false
 for ($index = 0; $index -lt $csvLines.Count; $index++) {
     $value = Format-UnitDetail $csvLines[$index]
@@ -133,7 +103,7 @@ for ($index = 0; $index -lt $csvLines.Count; $index++) {
     }
 }
 if ($csvChanged) {
-    [IO.File]::WriteAllLines($csvPath, $csvLines, (New-Object Text.UTF8Encoding($false)))
+    [IO.File]::WriteAllLines($CsvPath, $csvLines, (New-Object Text.UTF8Encoding($false)))
     $changedFiles++
 }
 

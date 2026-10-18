@@ -521,6 +521,7 @@ Ok ("已建立 JSON 文件索引：" + $jsonPaths.Count + " 个文件")
 Step 7 "汉化数据字段（Details / YangsThoughts / StockRole）"
 RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-dict', (Join-Path $PSScriptRoot 'dict-unit-completion.tsv'),
+                           '-IncludeLocalization',
                            # residual-mixed 放在第一个 extraDict，兼容 Windows PowerShell
                            # 外部子进程对 string[] 参数的绑定顺序。
                            '-extraDict', ((Join-Path $PSScriptRoot 'dict-residual-mixed.tsv'), (Join-Path $PSScriptRoot 'dict-mia-update.tsv'), (Join-Path $PSScriptRoot 'dict-all.tsv'), (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'), (Join-Path $PSScriptRoot 'dict-unit-llm.tsv'), (Join-Path $PSScriptRoot 'dict-piratetech-unit.tsv') -join '|'),
@@ -866,9 +867,15 @@ RunTool 'clean-metadata.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                '-backupRoot', (Join-Path $packRoot 'backup\Mods-metadata'))
 RunTool 'fix-literal-newlines.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                     '-backupRoot', (Join-Path $backupDir 'literal-newlines'))
+# 富文本详情的动态特性/费用/限制段落与数值表必须在目标 CSV 和 Mods 上修复，
+# 仅改包内源文件不会影响本次安装完成后的实际显示。
 # 运行时整段条目由 CSV 查表，不会经过 JSON 字段 QA；安装到目标 CSV 后再做一次
 # 结构化修复，防止包内条目被旧版本覆盖或换行被压平。
 RunBuiltinPsTool 'repair-runtime-csv.ps1' @('-csv', $csvDst)
+RunTool 'fix-detail-richtext-linebreaks.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
+                                               '-CsvPath', $csvDst)
+RunTool 'fix-unit-detail-layout.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
+                                      '-CsvPath', $csvDst)
 RunBuiltinPsTool 'qa-runtime-csv.ps1' @('-csv', $csvDst,
                                    '-out', (Join-Path $backupDir 'runtime-csv-qa.txt'))
 Ok "完成"

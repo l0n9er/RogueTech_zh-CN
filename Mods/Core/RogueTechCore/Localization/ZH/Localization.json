@@ -38372,7 +38372,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A sturdy and reliable 'Mech, the Centurion is good at both taking and giving a beating. CN9-A models are able to engage at any range, but their damage curve increases as they approach a target.\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.02.</color></b>",
-        "CULTURE_ZH_CN": "Centurion 是一款坚固可靠的机甲，既能挨打也善于打人。CN9-A 型可在任何距离上交战，但越接近目标，其伤害输出曲线越高。\n\n<b><color=#e62e00>投放费用倍率：1.02。</color></b>"
+        "CULTURE_ZH_CN": "Centurion 是一款坚固可靠的机甲，既能挨打也善于打人。CN9-A 型可在任何距离上交战，但越接近目标，其伤害输出曲线越高。\n<b><color=#e62e00>投放费用倍率：1.02。</color></b>"
       }
     },
     {
@@ -38396,7 +38396,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Panther 9Rs are solid all-around 'Mechs, if a bit on the slow side. They make up for it with Jump Jets, considerable armor, and a hefty punch from their trademark PPC. They've even been used in physical slugging matches to good effect.\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.98.</color></b>",
-        "CULTURE_ZH_CN": "黑豹9R是扎实的全能机甲，只是速度稍慢。它们用跳跃推进器、可观的装甲以及标志性粒子炮的沉重打击来弥补。它们甚至被用于肉搏缠斗并取得不错效果。\n\n<b><color=#e62e00>投放费用倍率：0.98。</color></b>"
+        "CULTURE_ZH_CN": "黑豹9R是扎实的全能机甲，只是速度稍慢。它们用跳跃推进器、可观的装甲以及标志性粒子炮的沉重打击来弥补。它们甚至被用于肉搏缠斗并取得不错效果。\n<b><color=#e62e00>投放费用倍率：0.98。</color></b>"
       }
     },
     {
@@ -38420,7 +38420,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Shadow Hawk 2H is the perfect example of a 'jack-of-all-trades.' It supports weaponry for all ranges, has respectable speed and jump capability, and mounts decent armor. This comes at the cost of excelling at nothing in particular.\n\n<b><color=#e62e00>Quirk: Battle Fists</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>",
-        "CULTURE_ZH_CN": "暗影鹰 2H 是\"样样通吃\"的完美范例。它具备适用于所有射程的武器，速度与跳跃能力可观，装甲也相当不错。代价是它在任何方面都不特别出众。\n\n<b><color=#e62e00>特质：战斗铁拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>"
+        "CULTURE_ZH_CN": "暗影鹰 2H 是\"样样通吃\"的完美范例。它具备适用于所有射程的武器，速度与跳跃能力可观，装甲也相当不错。代价是它在任何方面都不特别出众。\n<b><color=#e62e00>特质：战斗铁拳</color></b>\n<b><color=#e62e00>投放费用倍率：1.03</color></b>"
       }
     },
     {
@@ -38460,7 +38460,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Don't let the stubby 'Urbie' fool you, it may look like a walking trash can, but it can mount heavy armor and a grown-up-sized Autocannon. R60s aren't known for their speed, but they are very useful if you can draw the enemy into their firing range.\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97.</color></b>",
-        "CULTURE_ZH_CN": "别被矮墩墩的\"城市仔\"骗了，它看着像个会走路的垃圾桶，却能装上重型装甲和成人尺寸的自动炮。R60不以速度著称，但如果你能把敌人引到它们的射程内，它们就非常有用。\n\n<b><color=#e62e00>投放成本倍率：0.97。</color></b>"
+        "CULTURE_ZH_CN": "别被矮墩墩的\"城市仔\"骗了，它看着像个会走路的垃圾桶，却能装上重型装甲和成人尺寸的自动炮。R60不以速度著称，但如果你能把敌人引到它们的射程内，它们就非常有用。\n<b><color=#e62e00>投放成本倍率：0.97。</color></b>"
       }
     },
     {
@@ -79500,7 +79500,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A sturdy and reliable 'Mech, the Centurion is good at both taking and giving a beating. CN9-A models are able to engage at any range, but their damage curve increases as they approach a target.\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.02.</color></b>",
-        "CULTURE_ZH_CN": "Centurion 是一款坚固可靠的机甲，既能挨打也善于打人。CN9-A 型可在任何距离上交战，但越接近目标，其伤害输出曲线越高。\n\n<b><color=#e62e00>投放费用倍率：1.02。</color></b>"
+        "CULTURE_ZH_CN": "Centurion 是一款坚固可靠的机甲，既能挨打也善于打人。CN9-A 型可在任何距离上交战，但越接近目标，其伤害输出曲线越高。\n<b><color=#e62e00>投放费用倍率：1.02。</color></b>"
       }
     },
     {
@@ -79524,7 +79524,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Panther 9Rs are solid all-around 'Mechs, if a bit on the slow side. They make up for it with Jump Jets, considerable armor, and a hefty punch from their trademark PPC. They've even been used in physical slugging matches to good effect.\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.98.</color></b>",
-        "CULTURE_ZH_CN": "黑豹9R是扎实的全能机甲，只是速度稍慢。它们用跳跃推进器、可观的装甲以及标志性粒子炮的沉重打击来弥补。它们甚至被用于肉搏缠斗并取得不错效果。\n\n<b><color=#e62e00>投放费用倍率：0.98。</color></b>"
+        "CULTURE_ZH_CN": "黑豹9R是扎实的全能机甲，只是速度稍慢。它们用跳跃推进器、可观的装甲以及标志性粒子炮的沉重打击来弥补。它们甚至被用于肉搏缠斗并取得不错效果。\n<b><color=#e62e00>投放费用倍率：0.98。</color></b>"
       }
     },
     {
@@ -79548,7 +79548,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Shadow Hawk 2H is the perfect example of a 'jack-of-all-trades.' It supports weaponry for all ranges, has respectable speed and jump capability, and mounts decent armor. This comes at the cost of excelling at nothing in particular.\n\n<b><color=#e62e00>Quirk: Battle Fists</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>",
-        "CULTURE_ZH_CN": "暗影鹰 2H 是\"样样通吃\"的完美范例。它具备适用于所有射程的武器，速度与跳跃能力可观，装甲也相当不错。代价是它在任何方面都不特别出众。\n\n<b><color=#e62e00>特质：战斗铁拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>"
+        "CULTURE_ZH_CN": "暗影鹰 2H 是\"样样通吃\"的完美范例。它具备适用于所有射程的武器，速度与跳跃能力可观，装甲也相当不错。代价是它在任何方面都不特别出众。\n<b><color=#e62e00>特质：战斗铁拳</color></b>\n<b><color=#e62e00>投放费用倍率：1.03</color></b>"
       }
     },
     {
@@ -79572,7 +79572,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Don't let the stubby 'Urbie' fool you—it may look like a walking trash can, but it can mount heavy armor and a grown-up-sized Autocannon. R60s aren't known for their speed, but they are very useful if you can draw the enemy into their firing range.\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.97.</color></b>",
-        "CULTURE_ZH_CN": "别被矮墩墩的\"城市仔\"骗了——它看着像个会走路的垃圾桶，却能装上重型装甲和成人尺寸的自动炮。R60不以速度著称，但如果你能把敌人引到它们的射程内，它们就非常有用。\n\n<b><color=#e62e00>投放成本倍率：0.97。</color></b>"
+        "CULTURE_ZH_CN": "别被矮墩墩的\"城市仔\"骗了——它看着像个会走路的垃圾桶，却能装上重型装甲和成人尺寸的自动炮。R60不以速度著称，但如果你能把敌人引到它们的射程内，它们就非常有用。\n<b><color=#e62e00>投放成本倍率：0.97。</color></b>"
       }
     },
     {
