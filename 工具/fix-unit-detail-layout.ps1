@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$Root = (Split-Path $PSScriptRoot -Parent),
     [string]$ModsPath = '',
     [string]$CsvPath = ''
@@ -7,6 +7,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 function Format-UnitDetail([string]$Value) {
+    if ([string]::IsNullOrEmpty($Value)) { return $Value }
     if ($Value.IndexOf('<b>数值', [StringComparison]::Ordinal) -lt 0) { return $Value }
     $normalized = $Value -replace '<mspace(?:=[^>]+)?>', ''
     $normalized = $normalized -replace '</mspace>', ''
@@ -87,16 +88,28 @@ function Update-LocalizationJson([string]$Path) {
 }
 
 $changedFiles = 0
+$script:failedFields = 0
 if ([string]::IsNullOrWhiteSpace($ModsPath)) { $ModsPath = Join-Path $Root 'Mods' }
 if ([string]::IsNullOrWhiteSpace($CsvPath)) { $CsvPath = Join-Path $Root 'strings_zh-CN.csv' }
 foreach ($file in Get-ChildItem -LiteralPath $ModsPath -Recurse -File -Filter 'Localization.json') {
-    if (Update-LocalizationJson $file.FullName) { $changedFiles++ }
+    try {
+        if (Update-LocalizationJson $file.FullName) { $changedFiles++ }
+    } catch {
+        $script:failedFields++
+        Write-Warning ("单位详情表格修复跳过文件: {0} :: {1}" -f $file.FullName, $_.Exception.Message)
+    }
 }
 
 $csvLines = [IO.File]::ReadAllLines($CsvPath, [Text.Encoding]::UTF8)
 $csvChanged = $false
 for ($index = 0; $index -lt $csvLines.Count; $index++) {
-    $value = Format-UnitDetail $csvLines[$index]
+    try {
+        $value = Format-UnitDetail $csvLines[$index]
+    } catch {
+        $script:failedFields++
+        Write-Warning ("单位详情表格修复跳过 CSV 行 {0}: {1}" -f ($index + 1), $_.Exception.Message)
+        continue
+    }
     if ($value -ne $csvLines[$index]) {
         $csvLines[$index] = $value
         $csvChanged = $true
@@ -107,4 +120,4 @@ if ($csvChanged) {
     $changedFiles++
 }
 
-Write-Host ("单位详情表格修复: files={0}" -f $changedFiles)
+Write-Host ("单位详情表格修复: files={0} failed={1}" -f $changedFiles, $script:failedFields)
