@@ -64707,7 +64707,7 @@
       "Name": "RogueTech_Core.faction_ComStar.BadFaithFailureStatement",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Far be it from a simple organization like ComStar to reprimand you in matters of warfare, Commander, butâ€¦ your performance on that operation was positively abysmal. We roundly condemn your inadequacies.",
+        "CULTURE_EN_US": "Far be it from a simple organization like ComStar to reprimand you in matters of warfare, Commander, but… your performance on that operation was positively abysmal. We roundly condemn your inadequacies.",
         "CULTURE_ZH_CN": "像通讯之星这样简单的组织本不该在作战事务上斥责你，指挥官，但……你在那次行动中的表现实在糟糕透顶。我们对你的无能予以严正谴责。"
       }
     },
@@ -64715,7 +64715,7 @@
       "Name": "RogueTech_Core.faction_ComStar.Description",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "ComStar, the institution and religion, grew out of the Star League Department of Communications, as reenvisioned by Jerome Blake, Minister of Communications. ComStar is transnational, beholden to none of the Successor States, and its priesthood exclusively controls access to the only means of faster-than-light communications, the HyperPulse Generators. ComStar facilities and personnel are sacrosanct, a status enforced aggressively by the institution; offending statesâ€”even entire Successor Statesâ€”can find themselves cut off from the rest of the Inner Sphere, unable to communicate or trade. The current head of ComStar is Primus Julian Tiepolo.",
+        "CULTURE_EN_US": "ComStar, the institution and religion, grew out of the Star League Department of Communications, as reenvisioned by Jerome Blake, Minister of Communications. ComStar is transnational, beholden to none of the Successor States, and its priesthood exclusively controls access to the only means of faster-than-light communications, the HyperPulse Generators. ComStar facilities and personnel are sacrosanct, a status enforced aggressively by the institution; offending states—even entire Successor States—can find themselves cut off from the rest of the Inner Sphere, unable to communicate or trade. The current head of ComStar is Primus Julian Tiepolo.",
         "CULTURE_ZH_CN": "通讯之星(ComStar)，作为一个机构与宗教，脱胎于星际联盟通讯部，由时任通讯部长杰罗姆·布雷克重新构想而创立. 通讯之星是跨国组织，不对任何继承国效忠，其教士阶层独掌着唯一超光速通讯手段——超脉冲发生器的使用权. 通讯之星的设施与人员神圣不可侵犯，这一地位由该机构极力维护; 冒犯它的国家——甚至是整个继承国——都可能发现自己被内天体其余部分隔绝，无法通讯与贸易. 通讯之星目前的领袖是首席主教朱利安·蒂耶波洛."
       }
     },
@@ -64739,7 +64739,7 @@
       "Name": "RogueTech_Core.faction_ComStar3031.BadFaithFailureStatement",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "Far be it from a simple organization like ComStar to reprimand you in matters of warfare, Commander, butâ€¦ your performance on that operation was positively abysmal. We roundly condemn your inadequacies.",
+        "CULTURE_EN_US": "Far be it from a simple organization like ComStar to reprimand you in matters of warfare, Commander, but… your performance on that operation was positively abysmal. We roundly condemn your inadequacies.",
         "CULTURE_ZH_CN": "像通讯之星这样简单的组织本不该在作战事务上斥责你，指挥官，但……你在那次行动中的表现实在糟糕透顶。我们对你的无能予以严正谴责。"
       }
     },
@@ -64747,7 +64747,7 @@
       "Name": "RogueTech_Core.faction_ComStar3031.Description",
       "Commentary": "RT-ZH-ADD",
       "Localization": {
-        "CULTURE_EN_US": "ComStar, the institution and religion, grew out of the Star League Department of Communications, as reenvisioned by Jerome Blake, Minister of Communications. ComStar is transnational, beholden to none of the Successor States, and its priesthood exclusively controls access to the only means of faster-than-light communications, the HyperPulse Generators. ComStar facilities and personnel are sacrosanct, a status enforced aggressively by the institution; offending statesâ€”even entire Successor Statesâ€”can find themselves cut off from the rest of the Inner Sphere, unable to communicate or trade. The current head of ComStar is Primus Julian Tiepolo.",
+        "CULTURE_EN_US": "ComStar, the institution and religion, grew out of the Star League Department of Communications, as reenvisioned by Jerome Blake, Minister of Communications. ComStar is transnational, beholden to none of the Successor States, and its priesthood exclusively controls access to the only means of faster-than-light communications, the HyperPulse Generators. ComStar facilities and personnel are sacrosanct, a status enforced aggressively by the institution; offending states—even entire Successor States—can find themselves cut off from the rest of the Inner Sphere, unable to communicate or trade. The current head of ComStar is Primus Julian Tiepolo.",
         "CULTURE_ZH_CN": "通讯之星(ComStar)，作为一个机构与宗教，脱胎于星际联盟通讯部，由时任通讯部长杰罗姆·布雷克重新构想而创立. 通讯之星是跨国组织，不对任何继承国效忠，其教士阶层独掌着唯一超光速通讯手段——超脉冲发生器的使用权. 通讯之星的设施与人员神圣不可侵犯，这一地位由该机构极力维护; 冒犯它的国家——甚至是整个继承国——都可能发现自己被内天体其余部分隔绝，无法通讯与贸易. 通讯之星目前的领袖是首席主教朱利安·蒂耶波洛."
       }
     },
