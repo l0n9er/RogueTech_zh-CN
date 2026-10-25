@@ -60044,7 +60044,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This compartment is configured for carrying Battle Armored infantry into combat. \n\n <b><color=#ffcc00>Can carry 1 Battle Armor Squad</color>",
-        "CULTURE_ZH_CN": "这个舱室为把战斗装甲步兵送入战斗而配置。\n<<NL> <b><color=#ffcc00>可搭载1个战斗装甲小队</color>"
+        "CULTURE_ZH_CN": "这个舱室为把战斗装甲步兵送入战斗而配置。\n\n <b><color=#ffcc00>可搭载1个战斗装甲小队</color>"
       }
     },
     {
@@ -60100,7 +60100,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This compartment is configured for carrying Battle Armored infantry into combat. \n\n <b><color=#ffcc00>Can carry 2 Battle Armor Squads</color>",
-        "CULTURE_ZH_CN": "这个舱室为把战斗装甲步兵送入战斗而配置。\n<<NL> <b><color=#ffcc00>可搭载2个战斗装甲小队</color>"
+        "CULTURE_ZH_CN": "这个舱室为把战斗装甲步兵送入战斗而配置。\n\n <b><color=#ffcc00>可搭载2个战斗装甲小队</color>"
       }
     },
     {
@@ -60156,7 +60156,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This compartment is configured for carrying Battle Armored infantry into combat. \n\n <b><color=#ffcc00>Can carry 3 Battle Armor Squads</color>",
-        "CULTURE_ZH_CN": "这个舱室为把战斗装甲步兵送入战斗而配置。\n<<NL> <b><color=#ffcc00>可搭载3个战斗装甲小队</color>"
+        "CULTURE_ZH_CN": "这个舱室为把战斗装甲步兵送入战斗而配置。\n\n <b><color=#ffcc00>可搭载3个战斗装甲小队</color>"
       }
     },
     {
@@ -60212,7 +60212,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This compartment is configured for carrying Battle Armored infantry into combat. \n\n <b><color=#ffcc00>Can carry 4 Battle Armor Squads</color>",
-        "CULTURE_ZH_CN": "这个舱室为把战斗装甲步兵送入战斗而配置。\n<<NL> <b><color=#ffcc00>可搭载4个战斗装甲小队</color>"
+        "CULTURE_ZH_CN": "这个舱室为把战斗装甲步兵送入战斗而配置。\n\n <b><color=#ffcc00>可搭载4个战斗装甲小队</color>"
       }
     },
     {
@@ -61012,7 +61012,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Made to order by Vining Engineering and Salvage Team, the 'Avenger' is anything but shoddy. Built around a Mydron Rotary AC5 with specialized Shock Absorbers and 3 tons of caseless ammo storage, it howls Victory and Vengeance through the Arena. \n\n <b><color=#ffcc00>Has 120 Shots.</color></b> ",
-        "CULTURE_ZH_CN": "由瓦伊宁工程与打捞队定制打造，\"复仇者\"绝不是什么劣货。它围绕一门迈德隆旋转AC5建造，配以专用减震器和3吨无壳弹药储存，在竞技场里高呼着胜利与复仇。\n<<NL> <b><color=#ffcc00>有120发。</color></b> "
+        "CULTURE_ZH_CN": "由瓦伊宁工程与打捞队定制打造，\"复仇者\"绝不是什么劣货。它围绕一门迈德隆旋转AC5建造，配以专用减震器和3吨无壳弹药储存，在竞技场里高呼着胜利与复仇。\n\n <b><color=#ffcc00>有120发。</color></b> "
       }
     },
     {
@@ -61108,7 +61108,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Recovered from an SLDF research Facility. Seemingly similar to an AC10 in Caliber and Damage, this weapon was designed along the lines of advanced Infantry Assault Weapons with a Select Fire Switch.\n\n <b><color=#00ffff>Firing Modes: Single Shot, Burst Fire, Full Auto.</color> </b>",
-        "CULTURE_ZH_CN": "从一处SLDF研究设施中回收。口径与伤害似乎与AC10相近，这件武器沿先进步兵突击武器的路线设计，带有一个射击选择开关。\n<<NL> <b><color=#00ffff>射击模式：单发、点射、全自动。</color></b>"
+        "CULTURE_ZH_CN": "从一处SLDF研究设施中回收。口径与伤害似乎与AC10相近，这件武器沿先进步兵突击武器的路线设计，带有一个射击选择开关。\n\n <b><color=#00ffff>射击模式：单发、点射、全自动。</color></b>"
       }
     },
     {
@@ -61164,7 +61164,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Leave it to some Periphery Junkhead to take a perfectly fine LBX and Redneck it into a 'Sawed Off Shotgun' and scribble stuff all over, where do they get this stuff... 'Klaatu barada nihikturhun'..... \n\n <b><color=#ffcc00>Internal Ammo 10 Shots</color></b>",
-        "CULTURE_ZH_CN": "只能交给某个外缘蠢货，把一具好好的LBX乡下改装成\"截短霰弹枪\"，还在上面到处乱涂，他们到底从哪儿弄来这些东西……'克拉图 巴拉达 尼赫克图尔'……\n<<NL> <b><color=#ffcc00>内部弹药 10发</color></b>"
+        "CULTURE_ZH_CN": "只能交给某个外缘蠢货，把一具好好的LBX乡下改装成\"截短霰弹枪\"，还在上面到处乱涂，他们到底从哪儿弄来这些东西……'克拉图 巴拉达 尼赫克图尔'……\n\n <b><color=#ffcc00>内部弹药 10发</color></b>"
       }
     },
     {
@@ -61300,7 +61300,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This appears to be a regular LBX AC/5, torn straight out of the housing of an unfortunate mech. Someone welded some ammo packs to it, hooked up a feed, and cut off the barrel to compensate for the weight. This was some angry engineering, boss. \n\n <b><color=#ffcc00>Internal Ammo 10 Shots</color></b>",
-        "CULTURE_ZH_CN": "这看起来是一具普通的LBX AC/5，从一台倒霉机甲的壳子里直接扯出来的。有人在上面焊了些弹药包，接上供弹，并砍短炮管以补偿重量。这是充满怒火的工程，老大。\n<<NL> <b><color=#ffcc00>内部弹药 10发</color></b>"
+        "CULTURE_ZH_CN": "这看起来是一具普通的LBX AC/5，从一台倒霉机甲的壳子里直接扯出来的。有人在上面焊了些弹药包，接上供弹，并砍短炮管以补偿重量。这是充满怒火的工程，老大。\n\n <b><color=#ffcc00>内部弹药 10发</color></b>"
       }
     },
     {
@@ -61620,7 +61620,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Handheld battery of 3 Anti-Personel Gauss Rifles.\n\n <b><color=#ffcc00>40 Shots.</color></b>",
-        "CULTURE_ZH_CN": "一组手持式3门反人员磁轨炮。\n<<NL> <b><color=#ffcc00>40发。</color></b>"
+        "CULTURE_ZH_CN": "一组手持式3门反人员磁轨炮。\n\n <b><color=#ffcc00>40发。</color></b>"
       }
     },
     {
@@ -62388,7 +62388,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This clan-made masterpiece of a Laser Rifle debuted on Solaris VII. Combining Clan advances to laser technology with an SLDF Laser Rifle, this weapon is able to outmatch many opponents in the arena as well as the battlefield. \n\n <b><color=#F79232>12 rounds.</color></b> \n\n <b><color=#00ffff>Alternative firing modes allows either a stronger shot or extreme range, with increased ammo consumption.</color> </b>",
-        "CULTURE_ZH_CN": "这把氏族制造的激光步枪杰作在索拉里斯VII首次亮相。它把氏族的激光技术进步与一具SLDF激光步枪结合，使这件武器在竞技场和战场上都能胜过许多对手。\n<<NL> <b><color=#F79232>12发。</color></b> \n<<NL> <b><color=#00ffff>替代射击模式可发射更强的一击或获得极远射程，但消耗更多弹药。</color></b>"
+        "CULTURE_ZH_CN": "这把氏族制造的激光步枪杰作在索拉里斯VII首次亮相。它把氏族的激光技术进步与一具SLDF激光步枪结合，使这件武器在竞技场和战场上都能胜过许多对手。\n\n <b><color=#F79232>12发。</color></b> \n\n <b><color=#00ffff>替代射击模式可发射更强的一击或获得极远射程，但消耗更多弹药。</color></b>"
       }
     },
     {
@@ -62420,7 +62420,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Clan grade Chemical Laser Rifle! Similar to the old SLDF designs but they linked 2 Chemical Medium laser together.\n\n <b><color=#F79232>20 rounds.</color></b> \n\n <b><color=#00ffff>Alternative firing mode allows a stronger shot with double ammo consumption</color> </b>",
-        "CULTURE_ZH_CN": "一具氏族级化学激光步枪！与旧SLDF设计相似，但他们把2门化学中型激光器连在了一起。\n<<NL> <b><color=#F79232>20发。</color></b> \n<<NL> <b><color=#00ffff>替代射击模式可发射更强的一击，但消耗双倍弹药</color></b>"
+        "CULTURE_ZH_CN": "一具氏族级化学激光步枪！与旧SLDF设计相似，但他们把2门化学中型激光器连在了一起。\n\n <b><color=#F79232>20发。</color></b> \n\n <b><color=#00ffff>替代射击模式可发射更强的一击，但消耗双倍弹药</color></b>"
       }
     },
     {
@@ -62484,7 +62484,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Laser Pistol? Ive only read about these in old tech manuals. You See how they Wired a Chemical Laser to be fired just like your typical SideArm? This is Genius! \n\n <b><color=#F79232>30 rounds.</color></b>",
-        "CULTURE_ZH_CN": "一把激光手枪？我只在旧技术手册里读到过。你看他们怎么把化学激光器接到能像普通随身武器那样开火？这简直是天才！\n<<NL> <b><color=#F79232>30发。</color></b>"
+        "CULTURE_ZH_CN": "一把激光手枪？我只在旧技术手册里读到过。你看他们怎么把化学激光器接到能像普通随身武器那样开火？这简直是天才！\n\n <b><color=#F79232>30发。</color></b>"
       }
     },
     {
@@ -62508,7 +62508,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This is an Amazing Relic, a Large Laser Rifle! Just look at this boss, designed to be carried by Mech's into Combat without requiring to rewire anything. These SLDF BlackHeart guys have been crafty!\n\n <b><color=#F79232>16 rounds.</color></b>",
-        "CULTURE_ZH_CN": "这是一件惊人的遗物：一具大型激光步枪！看看这个，老大，它专为机甲携带入战而设计，无需重新布线任何东西。这些SLDF黑心家伙可真够聪明的！\n<<NL> <b><color=#F79232>16发。</color></b>"
+        "CULTURE_ZH_CN": "这是一件惊人的遗物：一具大型激光步枪！看看这个，老大，它专为机甲携带入战而设计，无需重新布线任何东西。这些SLDF黑心家伙可真够聪明的！\n\n <b><color=#F79232>16发。</color></b>"
       }
     },
     {
@@ -62540,7 +62540,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Amazing, at first this looks like junk, but if you look closer, it's an old SLDF Wasp Laser Rifle Prototype; I've got no idea where they dug this thing up or even made it work at all! \n\n <b><color=#F79232>20 rounds.</color></b>",
-        "CULTURE_ZH_CN": "太惊人了，乍看像是废品，但仔细看，这是一具旧的SLDF黄蜂激光步枪原型；我完全不知道他们从哪儿挖出这东西，甚至不知道他们怎么让它还能用的！\n<<NL> <b><color=#F79232>20发。</color></b>"
+        "CULTURE_ZH_CN": "太惊人了，乍看像是废品，但仔细看，这是一具旧的SLDF黄蜂激光步枪原型；我完全不知道他们从哪儿挖出这东西，甚至不知道他们怎么让它还能用的！\n\n <b><color=#F79232>20发。</color></b>"
       }
     },
     {
@@ -62596,7 +62596,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This Handheld package combines 2 Clan LRM5 Launchers able to fire a salvo accurately or in Tandem Salvo with a higher chance to cluster.\n\n <b><color=#ffcc00>60 Rounds.</color></b>",
-        "CULTURE_ZH_CN": "这个手持套件把2具氏族LRM5发射器结合在一起，能精准地发射一轮齐射，或以更高的集束几率进行串联齐射。\n<<NL> <b><color=#ffcc00>60发。</color></b>"
+        "CULTURE_ZH_CN": "这个手持套件把2具氏族LRM5发射器结合在一起，能精准地发射一轮齐射，或以更高的集束几率进行串联齐射。\n\n <b><color=#ffcc00>60发。</color></b>"
       }
     },
     {
@@ -62644,7 +62644,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Enhanced Long Range Missiles were developed by the Federated Commonwealth in response to the superior performance of Clan weaponry. These new LRMs use a more sophisticated arming mechanism to increase their viability at close range. The result has been a much smaller blind spot compared to traditional LRMs while still retaining the same long-range functionality. This is packaged with half a ton of ammo in an unarmored handheld package, intended for firing and ejecting before getting into brawling range.\n\n <b><color=#ffcc00>60 rounds.</color></b>",
-        "CULTURE_ZH_CN": "增强型远程导弹由联邦共同体研发，以应对氏族武器更优越的性能。这些新型LRM采用更精密的解锁机制，以提升其在近距离的可用性。结果是相比传统LRM小得多的盲区，同时保留相同的远程功能。它以半吨弹药的形式封装在一个无装甲的手持套件中，意在进入肉搏距离之前发射并抛弃。\n<<NL> <b><color=#ffcc00>60发。</color></b>"
+        "CULTURE_ZH_CN": "增强型远程导弹由联邦共同体研发，以应对氏族武器更优越的性能。这些新型LRM采用更精密的解锁机制，以提升其在近距离的可用性。结果是相比传统LRM小得多的盲区，同时保留相同的远程功能。它以半吨弹药的形式封装在一个无装甲的手持套件中，意在进入肉搏距离之前发射并抛弃。\n\n <b><color=#ffcc00>60发。</color></b>"
       }
     },
     {
@@ -62700,7 +62700,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A HandHeld MML3 Launcher System. \n\n <b><color=#ffcc00>Internal Ammo: LRM:30. SRM:30.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle between LRM or SRM.</color> </b>",
-        "CULTURE_ZH_CN": "一套手持式MML3发射器系统。\n<<NL> <b><color=#ffcc00>内部弹药：LRM:30。SRM:30。</color></b> \n<<NL> <b><color=#00ffff>战斗中左键点击命中率可在LRM与SRM之间切换。</color></b>"
+        "CULTURE_ZH_CN": "一套手持式MML3发射器系统。\n\n <b><color=#ffcc00>内部弹药：LRM:30。SRM:30。</color></b> \n\n <b><color=#00ffff>战斗中左键点击命中率可在LRM与SRM之间切换。</color></b>"
       }
     },
     {
@@ -62780,7 +62780,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A HandHeld MML7 Launcher System. \n\n <b><color=#ffcc00>Internal Ammo: LRM:70. SRM:70.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle between LRM or SRM.</color> </b>",
-        "CULTURE_ZH_CN": "一套手持式MML7发射器系统。\n<<NL> <b><color=#ffcc00>内部弹药：LRM:70。SRM:70。</color></b> \n<<NL> <b><color=#00ffff>战斗中左键点击命中率可在LRM与SRM之间切换。</color></b>"
+        "CULTURE_ZH_CN": "一套手持式MML7发射器系统。\n\n <b><color=#ffcc00>内部弹药：LRM:70。SRM:70。</color></b> \n\n <b><color=#00ffff>战斗中左键点击命中率可在LRM与SRM之间切换。</color></b>"
       }
     },
     {
@@ -62820,7 +62820,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A HandHeld MML9 Launcher System. \n\n <b><color=#ffcc00>Internal Ammo: LRM:90. SRM:90.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle between LRM or SRM.</color> </b>",
-        "CULTURE_ZH_CN": "一套手持式MML9发射器系统。\n<<NL> <b><color=#ffcc00>内部弹药：LRM:90。SRM:90。</color></b> \n<<NL> <b><color=#00ffff>战斗中左键点击命中率可在LRM与SRM之间切换。</color></b>"
+        "CULTURE_ZH_CN": "一套手持式MML9发射器系统。\n\n <b><color=#ffcc00>内部弹药：LRM:90。SRM:90。</color></b> \n\n <b><color=#00ffff>战斗中左键点击命中率可在LRM与SRM之间切换。</color></b>"
       }
     },
     {
@@ -62876,7 +62876,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Medium-Range Missile Launcher was designed by scientists at Luthien Armor Works. MRMs are dead-fire missiles that are fired more like lasers than missiles. In order to pack as many missiles as possible into one salvo, scientists removed guidance systems and made the whole package smaller. Though this was seen as a step backwards in technological development, the inexpensive and deadly MRMs have spread throughout the Draconis Combine and to many mercenary units. \n\n <b><color=#F79232>100 rounds.</color></b>",
-        "CULTURE_ZH_CN": "中程导弹发射器由卢西恩装甲厂的科学家设计。MRM是一种无制导导弹，发射方式更像激光而非导弹。为了把尽可能多的导弹塞进一轮齐射，科学家们拆掉了制导系统，让整个组件更小。虽然这被视为技术发展上的一次倒退，但廉价而致命的MRM已遍布龙尼斯联合体和许多雇佣兵部队。\n<<NL> <b><color=#F79232>100发。</color></b>"
+        "CULTURE_ZH_CN": "中程导弹发射器由卢西恩装甲厂的科学家设计。MRM是一种无制导导弹，发射方式更像激光而非导弹。为了把尽可能多的导弹塞进一轮齐射，科学家们拆掉了制导系统，让整个组件更小。虽然这被视为技术发展上的一次倒退，但廉价而致命的MRM已遍布龙尼斯联合体和许多雇佣兵部队。\n\n <b><color=#F79232>100发。</color></b>"
       }
     },
     {
@@ -62900,7 +62900,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Yeah, Boss I don't know where you got this from, but this ain't periphery Junk, this Rifle was Purpose Built with the best Technologies available. \n\n <b><color=#F79232>10 rounds.</color></b>",
-        "CULTURE_ZH_CN": "是啊老大，我不知道你这是从哪儿弄来的，但这可不是外缘的破烂货，这支步枪是用现有最好的技术专门打造的。\n<<NL> <b><color=#F79232>10发。</color></b>"
+        "CULTURE_ZH_CN": "是啊老大，我不知道你这是从哪儿弄来的，但这可不是外缘的破烂货，这支步枪是用现有最好的技术专门打造的。\n\n <b><color=#F79232>10发。</color></b>"
       }
     },
     {
@@ -63124,7 +63124,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This is a handheld Streak SRM-6 launcher protected by one ton of armour.\n\n <b><color=#F79232>90 rounds.</color></b>",
-        "CULTURE_ZH_CN": "这是一个手持式连发SRM-6发射器，由一吨装甲保护。\n<<NL> <b><color=#F79232>90发。</color></b>"
+        "CULTURE_ZH_CN": "这是一个手持式连发SRM-6发射器，由一吨装甲保护。\n\n <b><color=#F79232>90发。</color></b>"
       }
     },
     {
@@ -63156,7 +63156,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This 'Super Shotgun' is pretty much a LBX20 in a HandHeld device for BattleMech's, it Rips, Tears and Slays anything the loud end gets pointed at. \n\n <b><color=#ffcc00>Internal Ammo 8 Shots.</color></b>",
-        "CULTURE_ZH_CN": "这把\"超级霰弹枪\"基本上就是把一具LBX20装进供战斗机甲使用的手持装置里，它会把枪口指向的任何东西撕碎、扯烂、斩杀。\n<<NL> <b><color=#ffcc00>内部弹药 8发。</color></b>"
+        "CULTURE_ZH_CN": "这把\"超级霰弹枪\"基本上就是把一具LBX20装进供战斗机甲使用的手持装置里，它会把枪口指向的任何东西撕碎、扯烂、斩杀。\n\n <b><color=#ffcc00>内部弹药 8发。</color></b>"
       }
     },
     {
@@ -63268,7 +63268,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This is a handheld trio of Streak SRM-4 launchers protected by two tons of armour.\n\n <b><color=#F79232>90 rounds.</color></b>",
-        "CULTURE_ZH_CN": "这是一个手持式三联连发SRM-4发射器，由两吨装甲保护。\n<<NL> <b><color=#F79232>90发。</color></b>"
+        "CULTURE_ZH_CN": "这是一个手持式三联连发SRM-4发射器，由两吨装甲保护。\n\n <b><color=#F79232>90发。</color></b>"
       }
     },
     {
@@ -63284,7 +63284,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Basically this is a Vehicle Mortar, Boss. Some Junker wired it up to be Held by a Battlemech and to fire home made 'Grenades'.\n\n <b><color=#ffcc00>10 Shots.</color></b>",
-        "CULTURE_ZH_CN": "基本上这是一门车辆迫击炮，老大。某个废品商用线把它接到机甲手持，并发射自制\"手榴弹\"。\n<<NL> <b><color=#ffcc00>10发。</color></b>"
+        "CULTURE_ZH_CN": "基本上这是一门车辆迫击炮，老大。某个废品商用线把它接到机甲手持，并发射自制\"手榴弹\"。\n\n <b><color=#ffcc00>10发。</color></b>"
       }
     },
     {
@@ -92612,7 +92612,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Arrow IV is a stand-alone, missile based, artillery system, designed to augment conventional systems such as the Long Tom and the Sniper. <i>This</i> is a rotary abomination, capable of launching up to three high speed air-to-ground Arrow IV warheads at once... if it doesn't explode when you pull the trigger, that is.\n\n <b><color=#ffcc00>15 shots.</color></b>",
-        "CULTURE_ZH_CN": "箭矢IV是一种独立、以导弹为基础的炮兵系统，旨在补充长汤姆和狙击手等常规系统。<i>这</i>一具却是旋转式的怪物，能一次性发射多达三枚高速空对地箭矢IV弹头……前提是你扣下扳机时它没炸掉。\n<<NL> <b><color=#ffcc00>15发。</color></b>"
+        "CULTURE_ZH_CN": "箭矢IV是一种独立、以导弹为基础的炮兵系统，旨在补充长汤姆和狙击手等常规系统。<i>这</i>一具却是旋转式的怪物，能一次性发射多达三枚高速空对地箭矢IV弹头……前提是你扣下扳机时它没炸掉。\n\n <b><color=#ffcc00>15发。</color></b>"
       }
     },
     {
@@ -92668,7 +92668,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Arrow IV is a stand-alone, missile based, artillery system, designed to augment conventional systems such as the Long Tom and the Sniper. It was first introduced by the Terran Hegemony in 2600 and became a staple of the Star League Defense Force. Although the technology to create Arrow IVs was lost during the Star League's collapse, it was recovered by Capellan Confederation engineers in 3044 working off of surviving examples and the Helm Memory Core. \n\n <b><color=#ffcc00>5 shots.</color></b>",
-        "CULTURE_ZH_CN": "箭矢IV是一种独立、以导弹为基础的炮兵系统，旨在补充长汤姆和狙击手等常规系统。它由地球霸权于2600年首次推出，此后成为星盟防卫部队的主力装备。虽然制造箭矢IV的技术在星盟崩溃期间失传，但卡佩兰联邦的工程师在3044年依据幸存的样机和亥姆记忆核心将其复原。\n<<NL> <b><color=#ffcc00>5发。</color></b>"
+        "CULTURE_ZH_CN": "箭矢IV是一种独立、以导弹为基础的炮兵系统，旨在补充长汤姆和狙击手等常规系统。它由地球霸权于2600年首次推出，此后成为星盟防卫部队的主力装备。虽然制造箭矢IV的技术在星盟崩溃期间失传，但卡佩兰联邦的工程师在3044年依据幸存的样机和亥姆记忆核心将其复原。\n\n <b><color=#ffcc00>5发。</color></b>"
       }
     },
     {
@@ -92764,7 +92764,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This was an Advanced Tactical Missile system, before someone turned it into this wreckage. This is the famous case of getting a weapon into some nutcases hand but no ammo for it. The whole system has been turned upside down, the Artemis got completely yanked out and they put a jury rigged RAC-feeder in its place, allowing the speed at which it launches Missiles to be adjusted, but i'd be carefull setting it to high speed, though slower speeds improve its lock on speed.  \n\n <b><color=#099ff2>VOLATILE!</color></b> \n\n <b><color=#ffcc00>Uses LRM/MRM/SRM Ammo.</color></b> \n\n <b><color=#00ffff>Firing Modes: LRM, MRM, SRM</color> </b>",
-        "CULTURE_ZH_CN": "这原本是一套高级战术导弹系统，直到有人把它变成了这堆残骸。这是那种著名的案例：武器落到某个疯子手里，却没有配套弹药。整个系统被翻了个底朝天，阿尔忒弥斯被彻底拔出，他们塞进了一个临时拼凑的旋转自动炮供弹器，让发射导弹的速度可调，但把速度调高时你要小心，虽然较低速度能提升其锁定速度。\n<<NL> <b><color=#099ff2>易爆！</color></b> \n<<NL> <b><color=#ffcc00>使用LRM/MRM/SRM弹药。</color></b> \n<<NL> <b><color=#00ffff>射击模式：LRM、MRM、SRM</color></b>"
+        "CULTURE_ZH_CN": "这原本是一套高级战术导弹系统，直到有人把它变成了这堆残骸。这是那种著名的案例：武器落到某个疯子手里，却没有配套弹药。整个系统被翻了个底朝天，阿尔忒弥斯被彻底拔出，他们塞进了一个临时拼凑的旋转自动炮供弹器，让发射导弹的速度可调，但把速度调高时你要小心，虽然较低速度能提升其锁定速度。\n\n <b><color=#099ff2>易爆！</color></b> \n\n <b><color=#ffcc00>使用LRM/MRM/SRM弹药。</color></b> \n\n <b><color=#00ffff>射击模式：LRM、MRM、SRM</color></b>"
       }
     },
     {
@@ -93508,7 +93508,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This poor mangled and tortured Weapon was a Star League era relic, a Masterpiece of lost Technology, a 'Rail Gun'. Then some Pirates found it and made it 'working' again, the chambering system is a complete mess that only accepts 'Canisters' with 'Magnetic Materials'. \n\n <b><color=#099ff2>VOLATILE!</color></b> \n\n <b><color=#ffcc00>Uses Railgun Ammo.</color></b> \n\n <b><color=#00ffff>Reduced Damage from Movement</color> </b>",
-        "CULTURE_ZH_CN": "这件被可怜地撕裂、折磨的武器曾是星盟时代的遗物、失传科技的杰作——一门\"磁轨炮\"。然后一些海盗找到了它，让它重新\"能用\"。其装填系统已彻底混乱，只接受装有\"磁性材料\"的\"罐体\"。\n<<NL> <b><color=#099ff2>易爆！</color></b> \n<<NL> <b><color=#ffcc00>使用磁轨炮弹药。</color></b> \n<<NL> <b><color=#00ffff>移动造成的伤害降低</color></b>"
+        "CULTURE_ZH_CN": "这件被可怜地撕裂、折磨的武器曾是星盟时代的遗物、失传科技的杰作——一门\"磁轨炮\"。然后一些海盗找到了它，让它重新\"能用\"。其装填系统已彻底混乱，只接受装有\"磁性材料\"的\"罐体\"。\n\n <b><color=#099ff2>易爆！</color></b> \n\n <b><color=#ffcc00>使用磁轨炮弹药。</color></b> \n\n <b><color=#00ffff>移动造成的伤害降低</color></b>"
       }
     },
     {
@@ -93996,7 +93996,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Product of the RISC MML Program for the Raptor II Experimentals, it has an Advanced Targeting System that Securely Guides in the First Volley. \n\n <b><color=#ffcc00>Uses Clan SRM/LRM Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to toggle between LRM or SRM.</color> </b>",
-        "CULTURE_ZH_CN": "作为RISC为猛禽II实验型所做MML项目的产物，它带有先进瞄准系统，能在第一轮齐射中稳固制导。\n<<NL> <b><color=#ffcc00>使用氏族SRM/LRM弹药。</color></b> \n<<NL> <b><color=#00ffff>战斗中左键点击命中率可在LRM与SRM之间切换。</color></b>"
+        "CULTURE_ZH_CN": "作为RISC为猛禽II实验型所做MML项目的产物，它带有先进瞄准系统，能在第一轮齐射中稳固制导。\n\n <b><color=#ffcc00>使用氏族SRM/LRM弹药。</color></b> \n\n <b><color=#00ffff>战斗中左键点击命中率可在LRM与SRM之间切换。</color></b>"
       }
     },
     {
@@ -94020,7 +94020,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Broadside is Barrymore Munitions very own take on the Mech Mortar, able to fire 10 Shells per trigger pull it does deliver a barrage of all types of Barrymore Munitions finest choices. \n\n <b><color=#ffcc00>Uses Mortar Ammo.</color></b>",
-        "CULTURE_ZH_CN": "舷炮是贝里莫尔弹药自己对机甲迫击炮的演绎，每次扣扳机可发射10发炮弹，能呈上一轮由贝里莫尔各类精良弹药构成的弹幕。\n<<NL> <b><color=#ffcc00>使用迫击炮弹药。</color></b>"
+        "CULTURE_ZH_CN": "舷炮是贝里莫尔弹药自己对机甲迫击炮的演绎，每次扣扳机可发射10发炮弹，能呈上一轮由贝里莫尔各类精良弹药构成的弹幕。\n\n <b><color=#ffcc00>使用迫击炮弹药。</color></b>"
       }
     },
     {
@@ -94028,7 +94028,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Medium-Range Missile Launcher was designed by scientists at Luthien Armor Works. MRMs are dead-fire missiles that are fired more like lasers than missiles. In order to pack as many missiles as possible into one salvo, scientists removed guidance systems and made the whole package smaller. Though this was seen as a step backwards in technological development, the inexpensive and deadly MRMs have spread throughout the Draconis Combine and to many mercenary units. \n\n <b><color=#ffcc00>Uses MRM Ammo.</color></b> <b><color=#F79232>5 Salvos</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "中程导弹发射器由卢西恩装甲厂的科学家设计。MRM是一种无制导导弹，发射方式更像激光而非导弹。为了把尽可能多的导弹塞进一轮齐射，科学家们拆掉了制导系统，让整个组件更小。虽然这被视为技术发展上的一次倒退，但廉价而致命的MRM已遍布龙尼斯联合体和许多雇佣兵部队。\n<<NL> <b><color=#ffcc00>使用MRM弹药。</color></b>\n<b><color=#F79232>5轮齐射</color></b>\n<b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "中程导弹发射器由卢西恩装甲厂的科学家设计。MRM是一种无制导导弹，发射方式更像激光而非导弹。为了把尽可能多的导弹塞进一轮齐射，科学家们拆掉了制导系统，让整个组件更小。虽然这被视为技术发展上的一次倒退，但廉价而致命的MRM已遍布龙尼斯联合体和许多雇佣兵部队。\n\n <b><color=#ffcc00>使用MRM弹药。</color></b>\n<b><color=#F79232>5轮齐射</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94204,7 +94204,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "It's a PPC designed for a small spacecraft. The EMP Field is generates is massive, affecting units near the target, disrupting myomer and sensor systems. It's hard to focus it on nearby targets due to the large minimum range in safe mode. \n\n <b><color=#00ffff>FIOFF Has no minimum range penalty and does full damage at close range, but is very likely to fry the weapon. \n\n Boosted Mode greatly increases damage, but has distance falloff and requires a recharge period.</color> </b>",
-        "CULTURE_ZH_CN": "这是一门为小型航天器设计的PPC。它产生的电磁脉冲场极为庞大，会影响目标附近的单位，扰乱肌纤维与传感器系统。在安全模式下，由于最小射程过大，很难把它聚焦到附近目标上。\n<<NL> <b><color=#00ffff>FIOFF无最小射程惩罚，在近距离造成全额伤害，但极可能烧毁武器。\n\n增压模式大幅提升伤害，但有距离衰减并需要一段充能时间。</color></b>"
+        "CULTURE_ZH_CN": "这是一门为小型航天器设计的PPC。它产生的电磁脉冲场极为庞大，会影响目标附近的单位，扰乱肌纤维与传感器系统。在安全模式下，由于最小射程过大，很难把它聚焦到附近目标上。\n\n <b><color=#00ffff>FIOFF无最小射程惩罚，在近距离造成全额伤害，但极可能烧毁武器。\n\n增压模式大幅提升伤害，但有距离衰减并需要一段充能时间。</color></b>"
       }
     },
     {
@@ -95572,7 +95572,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The smallest of the Cruise Missile family developed by the Federated Suns in the 3060s, the CM/50 is nonetheless an utterly devastating weapon of war. The CM/50 is a truly massive missile and its payload is perfectly capable of annihilating smaller 'Mechs in a single shot as well as devastate stationary targets. However, the weapon's immense bulk and absurd ammo weight requirements limited its ability to be fielded and as of now only a single combat unit is capable of fielding the CM/50, the Kalki Cruise Missile Launcher superheavy tank. \n\n <b><color=#ffcc00>Uses Cruise Missile/50 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "作为联邦太阳在3060年代研发的巡航导弹家族中最小的一款，CM/50仍是一种彻底毁灭性的战争武器。CM/50是一枚真正巨大的导弹，其弹头完全有能力一击歼灭较小的机甲，也能摧毁固定目标。然而该武器庞大的体积与荒谬的弹药重量要求限制了它的部署能力，目前为止只有一种战斗单位能搭载CM/50，即卡尔基巡航导弹发射车超重型坦克。\n<<NL> <b><color=#ffcc00>使用巡航导弹/50弹药。</color></b>"
+        "CULTURE_ZH_CN": "作为联邦太阳在3060年代研发的巡航导弹家族中最小的一款，CM/50仍是一种彻底毁灭性的战争武器。CM/50是一枚真正巨大的导弹，其弹头完全有能力一击歼灭较小的机甲，也能摧毁固定目标。然而该武器庞大的体积与荒谬的弹药重量要求限制了它的部署能力，目前为止只有一种战斗单位能搭载CM/50，即卡尔基巡航导弹发射车超重型坦克。\n\n <b><color=#ffcc00>使用巡航导弹/50弹药。</color></b>"
       }
     },
     {
@@ -95660,7 +95660,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Need to remind your Neighbor of the Noise? Chug some Budget over to the Rowdy Town over? Cant Afford a Fancy Long Tom? Look no Further we at Quicsell work hard to bring you finest in Weapons, Our Howitzer 2000 is based on well known Lyran designs coming straight from Terra! \n\n <b><color=#ffcc00>Uses Medium Rifle Ammo.</color></b>",
-        "CULTURE_ZH_CN": "需要提醒你的邻居什么叫噪音？想给闹腾的镇上送点预算过去？买不起昂贵的长汤姆？不用再找了，我们快销公司致力于为你带来最精良的武器，我们的榴弹炮2000基于众所周知的莱兰设计，直接从地球而来！\n<<NL> <b><color=#ffcc00>使用中型步枪弹药。</color></b>"
+        "CULTURE_ZH_CN": "需要提醒你的邻居什么叫噪音？想给闹腾的镇上送点预算过去？买不起昂贵的长汤姆？不用再找了，我们快销公司致力于为你带来最精良的武器，我们的榴弹炮2000基于众所周知的莱兰设计，直接从地球而来！\n\n <b><color=#ffcc00>使用中型步枪弹药。</color></b>"
       }
     },
     {
@@ -95756,7 +95756,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Long Tom Artillery Cannon is a scaled down version of the Long Tom Artillery Piece designed for use as an on-board indirect fire weapon. Capable of being mounted on 'Mechs, combat vehicles, and AeroSpace Fighters, the Long Tom Cannon is a snub-nosed version of the artillery piece of the same name. \n\n <b><color=#ffcc00>Uses LongTom Ammo.</color></b>",
-        "CULTURE_ZH_CN": "长汤姆火炮是长汤姆炮身的缩小版，设计用作机载间接火力武器。它能装到机甲、战斗车辆和航空战机上，是同名炮身的短鼻版本。\n<<NL> <b><color=#ffcc00>使用长汤姆弹药。</color></b>"
+        "CULTURE_ZH_CN": "长汤姆火炮是长汤姆炮身的缩小版，设计用作机载间接火力武器。它能装到机甲、战斗车辆和航空战机上，是同名炮身的短鼻版本。\n\n <b><color=#ffcc00>使用长汤姆弹药。</color></b>"
       }
     },
     {
@@ -96012,7 +96012,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Thumper Artillery Cannon is a scaled down version of the Thumper Artillery Piece capable of direct fire. When mounted on BattleMechs, combat vehicles, and AeroSpace Fighters, it provides artillery support at much closer ranges than its cousin. Essentially a snub-nosed version of the Thumper Artillery Piece, the Thumper Artillery Cannon fires a shell at an enemy location like an autocannon. \n\n <b><color=#ffcc00>Uses Thumper Ammo.</color></b>",
-        "CULTURE_ZH_CN": "重锤火炮是重锤炮身的缩小版，能进行直射。当装到战斗机甲、战斗车辆和航空战机上时，它能在比其表亲近得多的距离上提供炮火支援。重锤火炮本质上是重锤炮身的短鼻版本，像自动炮一样朝敌方位置发射炮弹。\n<<NL> <b><color=#ffcc00>使用重锤弹药。</color></b>"
+        "CULTURE_ZH_CN": "重锤火炮是重锤炮身的缩小版，能进行直射。当装到战斗机甲、战斗车辆和航空战机上时，它能在比其表亲近得多的距离上提供炮火支援。重锤火炮本质上是重锤炮身的短鼻版本，像自动炮一样朝敌方位置发射炮弹。\n\n <b><color=#ffcc00>使用重锤弹药。</color></b>"
       }
     },
     {
@@ -96068,7 +96068,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Thunderstorm is an experiment in using Thunderbolt missiles as artillery. It's unique rack system loads and launches a full ton of any size Thunderbolt Missile per volley. \n\n <b><color=#ffcc00>Uses TBOLT20, TBOLTM15, TBOLTM10, TBOLTM5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "雷暴是把雷霆导弹当炮使用的实验。它独特的挂架系统每轮齐射可装载并发射整整一吨任意规格的雷霆导弹。\n<<NL> <b><color=#ffcc00>使用TBOLT20、TBOLTM15、TBOLTM10、TBOLTM5弹药。</color></b>"
+        "CULTURE_ZH_CN": "雷暴是把雷霆导弹当炮使用的实验。它独特的挂架系统每轮齐射可装载并发射整整一吨任意规格的雷霆导弹。\n\n <b><color=#ffcc00>使用TBOLT20、TBOLTM15、TBOLTM10、TBOLTM5弹药。</color></b>"
       }
     },
     {
@@ -96236,7 +96236,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Early Clan ballistic weapons tech also benefited from advanced metallurgy and construction techniques that rendered these classics of warfare lighter and more compact. Firing bursts of smaller Caliber have Clan Engineers managed to enable it firing a reliable Rapid Fire too. \n\n <b><color=#ffcc00>Uses AC10 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "早期氏族弹道武器技术同样受益于先进冶金与制造工艺，这些工艺让这些战争经典变得更轻、更紧凑。通过发射较小口径的连发，氏族工程师还设法让它能可靠地进行速射。\n<<NL> <b><color=#ffcc00>使用AC10弹药。</color></b>"
+        "CULTURE_ZH_CN": "早期氏族弹道武器技术同样受益于先进冶金与制造工艺，这些工艺让这些战争经典变得更轻、更紧凑。通过发射较小口径的连发，氏族工程师还设法让它能可靠地进行速射。\n\n <b><color=#ffcc00>使用AC10弹药。</color></b>"
       }
     },
     {
@@ -96412,7 +96412,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "One of the most powerful and efficient weapons mounted in combat, AC/10s are known for their heavy damage and ability to stagger opponents. Like all Autocannon weaponry, AC/10s suffer from recoil effects from continuous fire.\n\n <b><color=#ffcc00>Uses AC10 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "作为战斗中最强大、最高效的武器之一，AC/10以沉重伤害和击退对手的能力著称。与所有自动炮武器一样，AC/10会因持续射击而受后坐力影响。\n<<NL> <b><color=#ffcc00>使用AC10弹药。</color></b>"
+        "CULTURE_ZH_CN": "作为战斗中最强大、最高效的武器之一，AC/10以沉重伤害和击退对手的能力著称。与所有自动炮武器一样，AC/10会因持续射击而受后坐力影响。\n\n <b><color=#ffcc00>使用AC10弹药。</color></b>"
       }
     },
     {
@@ -96524,7 +96524,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "One of the most powerful and efficient weapons mounted in combat, AC/10s are known for their heavy damage and ability to stagger opponents. Mydron's burst-fire autocannons do not suffer the recoil typical of continuous use.\n\n <b><color=#ffcc00>Uses AC10 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "作为战斗中最强大、最高效的武器之一，AC/10以沉重伤害和击退对手的能力著称。迈德隆的连发自动炮不会像持续射击那样产生典型的后坐力。\n<<NL> <b><color=#ffcc00>使用AC10弹药。</color></b>"
+        "CULTURE_ZH_CN": "作为战斗中最强大、最高效的武器之一，AC/10以沉重伤害和击退对手的能力著称。迈德隆的连发自动炮不会像持续射击那样产生典型的后坐力。\n\n <b><color=#ffcc00>使用AC10弹药。</color></b>"
       }
     },
     {
@@ -96644,7 +96644,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Early Clan ballistic weapons tech also benefited from advanced metallurgy and construction techniques that rendered these classics of warfare lighter and more compact. Firing bursts of smaller Caliber have Clan Engineers managed to enable it firing a reliable Rapid Fire too. \n\n <b><color=#ffcc00>Uses AC2 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "早期氏族弹道武器技术同样受益于先进冶金与制造工艺，这些工艺让这些战争经典变得更轻、更紧凑。通过发射较小口径的连发，氏族工程师还设法让它能可靠地进行速射。\n<<NL> <b><color=#ffcc00>使用AC2弹药。</color></b>"
+        "CULTURE_ZH_CN": "早期氏族弹道武器技术同样受益于先进冶金与制造工艺，这些工艺让这些战争经典变得更轻、更紧凑。通过发射较小口径的连发，氏族工程师还设法让它能可靠地进行速射。\n\n <b><color=#ffcc00>使用AC2弹药。</color></b>"
       }
     },
     {
@@ -96900,7 +96900,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Light Autocannon trade some range for a weight reduction of approximately 40%. This allows combat units to carry more weapons, ammunition, or armor, and still use the specialized autocannon rounds. The first Light AC were prototypes created by the NAIS during the Clan Invasion. They didn't see widespread production until after the NAIS was destroyed by the Word of Blake's assault on New Avalon.\n\n <b><color=#ffcc00>Uses AC2 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "轻型自动炮以牺牲一部分射程换取约40%的重量削减。这使战斗单位能携带更多武器、弹药或装甲，同时仍能使用专用自动炮弹。最早的轻型AC是氏族入侵期间由NAIS制造的原型。直到布雷克之言突袭新阿瓦隆摧毁NAIS之后，它们才实现大规模量产。\n<<NL> <b><color=#ffcc00>使用AC2弹药。</color></b>"
+        "CULTURE_ZH_CN": "轻型自动炮以牺牲一部分射程换取约40%的重量削减。这使战斗单位能携带更多武器、弹药或装甲，同时仍能使用专用自动炮弹。最早的轻型AC是氏族入侵期间由NAIS制造的原型。直到布雷克之言突袭新阿瓦隆摧毁NAIS之后，它们才实现大规模量产。\n\n <b><color=#ffcc00>使用AC2弹药。</color></b>"
       }
     },
     {
@@ -97036,7 +97036,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Early Clan ballistic weapons tech also benefited from advanced metallurgy and construction techniques that rendered these classics of warfare lighter and more compact. Firing bursts of smaller Caliber have Clan Engineers managed to enable it firing a reliable Rapid Fire too. \n\n <b><color=#ffcc00>Uses AC20 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "早期氏族弹道武器技术同样受益于先进冶金与制造工艺，这些工艺让这些战争经典变得更轻、更紧凑。通过发射较小口径的连发，氏族工程师还设法让它能可靠地进行速射。\n<<NL> <b><color=#ffcc00>使用AC20弹药。</color></b>"
+        "CULTURE_ZH_CN": "早期氏族弹道武器技术同样受益于先进冶金与制造工艺，这些工艺让这些战争经典变得更轻、更紧凑。通过发射较小口径的连发，氏族工程师还设法让它能可靠地进行速射。\n\n <b><color=#ffcc00>使用AC20弹药。</color></b>"
       }
     },
     {
@@ -97100,7 +97100,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The king of the battlefield in terms of raw damage, AC/20s hit harder than any other weapon. However, this comes at the expense of weight, range, and severely limited ammunition.  Federated Autocannons, while posessing no rapid-fire mode, also lack the recoil issues of other, faster autocannons.\n\n <b><color=#ffcc00>Uses AC20 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "就原始伤害而言，AC/20是战场之王，打得比任何其他武器都狠。但代价是重量、射程和严重受限的弹药。联邦自动炮虽然不具备速射模式，却也没有其他更快自动炮的后坐力问题。\n<<NL> <b><color=#ffcc00>使用AC20弹药。</color></b>"
+        "CULTURE_ZH_CN": "就原始伤害而言，AC/20是战场之王，打得比任何其他武器都狠。但代价是重量、射程和严重受限的弹药。联邦自动炮虽然不具备速射模式，却也没有其他更快自动炮的后坐力问题。\n\n <b><color=#ffcc00>使用AC20弹药。</color></b>"
       }
     },
     {
@@ -97180,7 +97180,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The king of the battlefield in terms of raw damage, AC/20s hit harder than any other weapon. However, this comes at the expense of weight, range, and severely limited ammunition. Like all Autocannon weaponry, AC/20s suffer from recoil effects from continuous fire. \n\n <b><color=#ffcc00>Uses AC20 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "就原始伤害而言，AC/20是战场之王，打得比任何其他武器都狠。但代价是重量、射程和严重受限的弹药。与所有自动炮武器一样，AC/20会因持续射击而受后坐力影响。\n<<NL> <b><color=#ffcc00>使用AC20弹药。</color></b>"
+        "CULTURE_ZH_CN": "就原始伤害而言，AC/20是战场之王，打得比任何其他武器都狠。但代价是重量、射程和严重受限的弹药。与所有自动炮武器一样，AC/20会因持续射击而受后坐力影响。\n\n <b><color=#ffcc00>使用AC20弹药。</color></b>"
       }
     },
     {
@@ -97236,7 +97236,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Light Autocannons trade some range for a weight reduction of approximately 40%. This allows combat units to carry more weapons, ammunition, or armor, and still use the specialized autocannon rounds. The first Light AC were prototypes created by the NAIS during the Clan Invasion. They didn't see widespread production until after the NAIS was destroyed by the Word of Blake's assault on New Avalon. Like all Autocannon weaponry, Light AC/20s suffer from recoil effects in rapid-fire mode.\n\n <b><color=#ffcc00>Uses AC20 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "轻型自动炮以牺牲一部分射程换取约40%的重量削减。这使战斗单位能携带更多武器、弹药或装甲，同时仍能使用专用自动炮弹。最早的轻型AC是氏族入侵期间由NAIS制造的原型。直到布雷克之言突袭新阿瓦隆摧毁NAIS之后，它们才实现大规模量产。与所有自动炮武器一样，轻型AC/20在速射模式下会受后坐力影响。\n<<NL> <b><color=#ffcc00>使用AC20弹药。</color></b>"
+        "CULTURE_ZH_CN": "轻型自动炮以牺牲一部分射程换取约40%的重量削减。这使战斗单位能携带更多武器、弹药或装甲，同时仍能使用专用自动炮弹。最早的轻型AC是氏族入侵期间由NAIS制造的原型。直到布雷克之言突袭新阿瓦隆摧毁NAIS之后，它们才实现大规模量产。与所有自动炮武器一样，轻型AC/20在速射模式下会受后坐力影响。\n\n <b><color=#ffcc00>使用AC20弹药。</color></b>"
       }
     },
     {
@@ -97380,7 +97380,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Early Clan ballistic weapons tech also benefited from advanced metallurgy and construction techniques that rendered these classics of warfare lighter and more compact. Firing bursts of smaller Caliber have Clan Engineers managed to enable it firing a reliable Rapid Fire too. \n\n <b><color=#ffcc00>Uses AC5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "早期氏族弹道武器技术同样受益于先进冶金与制造工艺，这些工艺让这些战争经典变得更轻、更紧凑。通过发射较小口径的连发，氏族工程师还设法让它能可靠地进行速射。\n<<NL> <b><color=#ffcc00>使用AC5弹药。</color></b>"
+        "CULTURE_ZH_CN": "早期氏族弹道武器技术同样受益于先进冶金与制造工艺，这些工艺让这些战争经典变得更轻、更紧凑。通过发射较小口径的连发，氏族工程师还设法让它能可靠地进行速射。\n\n <b><color=#ffcc00>使用AC5弹药。</color></b>"
       }
     },
     {
@@ -97564,7 +97564,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A flexible weapon, AC/5s strike a balance between long range, power, and performance. These weapons are commonly found on medium 'Mechs as their primary source of reliable damage. Like all Autocannon weaponry, AC/5s suffer from recoil effects from continuous fire.\n\n <b><color=#ffcc00>Uses AC5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "作为一种灵活的武器，AC/5在射程、威力与性能之间取得平衡。这些武器常见于中型机甲，作为其可靠的伤害来源。与所有自动炮武器一样，AC/5会因持续射击而受后坐力影响。\n<<NL> <b><color=#ffcc00>使用AC5弹药。</color></b>"
+        "CULTURE_ZH_CN": "作为一种灵活的武器，AC/5在射程、威力与性能之间取得平衡。这些武器常见于中型机甲，作为其可靠的伤害来源。与所有自动炮武器一样，AC/5会因持续射击而受后坐力影响。\n\n <b><color=#ffcc00>使用AC5弹药。</color></b>"
       }
     },
     {
@@ -97636,7 +97636,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Light Autocannon trade some range for a weight reduction of approximately 40%. This allows combat units to carry more weapons, ammunition, or armor, and still use the specialized autocannon rounds. The first Light AC were prototypes created by the NAIS during the Clan Invasion. They didn't see widespread production until after the NAIS was destroyed by the Word of Blake's assault on New Avalon.\n\n <b><color=#ffcc00>Uses AC5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "轻型自动炮以牺牲一部分射程换取约40%的重量削减。这使战斗单位能携带更多武器、弹药或装甲，同时仍能使用专用自动炮弹。最早的轻型AC是氏族入侵期间由NAIS制造的原型。直到布雷克之言突袭新阿瓦隆摧毁NAIS之后，它们才实现大规模量产。\n<<NL> <b><color=#ffcc00>使用AC5弹药。</color></b>"
+        "CULTURE_ZH_CN": "轻型自动炮以牺牲一部分射程换取约40%的重量削减。这使战斗单位能携带更多武器、弹药或装甲，同时仍能使用专用自动炮弹。最早的轻型AC是氏族入侵期间由NAIS制造的原型。直到布雷克之言突袭新阿瓦隆摧毁NAIS之后，它们才实现大规模量产。\n\n <b><color=#ffcc00>使用AC5弹药。</color></b>"
       }
     },
     {
@@ -97676,7 +97676,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A flexible weapon, AC/5s strike a balance between long range, power, and performance. These weapons are commonly found on medium 'Mechs as their primary source of reliable damage. Mydron's burst-fire autocannons do not suffer the recoil typical of continuous use.\n\n <b><color=#ffcc00>Uses AC5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "作为一种灵活的武器，AC/5在射程、威力与性能之间取得平衡。这些武器常见于中型机甲，作为其可靠的伤害来源。迈德隆的连发自动炮不会像持续射击那样产生典型的后坐力。\n<<NL> <b><color=#ffcc00>使用AC5弹药。</color></b>"
+        "CULTURE_ZH_CN": "作为一种灵活的武器，AC/5在射程、威力与性能之间取得平衡。这些武器常见于中型机甲，作为其可靠的伤害来源。迈德隆的连发自动炮不会像持续射击那样产生典型的后坐力。\n\n <b><color=#ffcc00>使用AC5弹药。</color></b>"
       }
     },
     {
@@ -98948,7 +98948,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This does Look like a pretty basic AC10 Class Weapon, but it fires a steady stream of Ultra Munitions.\n\n <b><color=#ffcc00>Uses UAC10 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "这看起来确实像一件相当基础的AC10级武器，但它会持续射出超速弹药。\n<<NL> <b><color=#ffcc00>使用UAC10弹药。</color></b>"
+        "CULTURE_ZH_CN": "这看起来确实像一件相当基础的AC10级武器，但它会持续射出超速弹药。\n\n <b><color=#ffcc00>使用UAC10弹药。</color></b>"
       }
     },
     {
@@ -98972,7 +98972,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Hypervelocity Autocannon (HVAC) family of weapons is based on the Autocannon. While they have the same damage classes, they're capable of firing much further. However, in order to obtain the increased ballistic range, the hypervelocity ammo is larger and uses a unique type of propellant, reducing the number of shots per ton of ammo along with a couple other drawbacks, such as a chance of the weapon exploding, and a thick smoke trail every time the weapon is fired. \n\n <b><color=#ffcc00>Uses HVAC10 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "超高速自动炮（HVAC）武器系列以自动炮为基础。虽然它们拥有相同的伤害等级，却能射得更远。然而，为了获得更高的弹道射程，超高速弹药更大，并使用一种独特的推进剂，这减少了每吨弹药的发射次数，也带来另外几项缺点，比如武器有爆炸几率，以及每次开火都会拖出一条浓重的烟迹。\n<<NL> <b><color=#ffcc00>使用HVAC10弹药。</color></b>"
+        "CULTURE_ZH_CN": "超高速自动炮（HVAC）武器系列以自动炮为基础。虽然它们拥有相同的伤害等级，却能射得更远。然而，为了获得更高的弹道射程，超高速弹药更大，并使用一种独特的推进剂，这减少了每吨弹药的发射次数，也带来另外几项缺点，比如武器有爆炸几率，以及每次开火都会拖出一条浓重的烟迹。\n\n <b><color=#ffcc00>使用HVAC10弹药。</color></b>"
       }
     },
     {
@@ -98996,7 +98996,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Hypervelocity Autocannon (HVAC) family of weapons is based on the Autocannon. While they have the same damage classes, they're capable of firing much further. However, in order to obtain the increased ballistic range, the hypervelocity ammo is larger and uses a unique type of propellant, reducing the number of shots per ton of ammo along with a couple other drawbacks, such as a chance of the weapon exploding, and a thick smoke trail every time the weapon is fired. \n\n <b><color=#ffcc00>Uses HVAC2 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "超高速自动炮（HVAC）武器系列以自动炮为基础。虽然它们拥有相同的伤害等级，却能射得更远。然而，为了获得更高的弹道射程，超高速弹药更大，并使用一种独特的推进剂，这减少了每吨弹药的发射次数，也带来另外几项缺点，比如武器有爆炸几率，以及每次开火都会拖出一条浓重的烟迹。\n<<NL> <b><color=#ffcc00>使用HVAC2弹药。</color></b>"
+        "CULTURE_ZH_CN": "超高速自动炮（HVAC）武器系列以自动炮为基础。虽然它们拥有相同的伤害等级，却能射得更远。然而，为了获得更高的弹道射程，超高速弹药更大，并使用一种独特的推进剂，这减少了每吨弹药的发射次数，也带来另外几项缺点，比如武器有爆炸几率，以及每次开火都会拖出一条浓重的烟迹。\n\n <b><color=#ffcc00>使用HVAC2弹药。</color></b>"
       }
     },
     {
@@ -99020,7 +99020,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Hypervelocity Autocannon (HVAC) family of weapons is based on the Autocannon. While they have the same damage classes, they're capable of firing much further. However, in order to obtain the increased ballistic range, the hypervelocity ammo is larger and uses a unique type of propellant, reducing the number of shots per ton of ammo along with a couple other drawbacks, such as a chance of the weapon exploding, and a thick smoke trail every time the weapon is fired. \n\n <b><color=#ffcc00>Uses HVAC20 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "超高速自动炮（HVAC）武器系列以自动炮为基础。虽然它们拥有相同的伤害等级，却能射得更远。然而，为了获得更高的弹道射程，超高速弹药更大，并使用一种独特的推进剂，这减少了每吨弹药的发射次数，也带来另外几项缺点，比如武器有爆炸几率，以及每次开火都会拖出一条浓重的烟迹。\n<<NL> <b><color=#ffcc00>使用HVAC20弹药。</color></b>"
+        "CULTURE_ZH_CN": "超高速自动炮（HVAC）武器系列以自动炮为基础。虽然它们拥有相同的伤害等级，却能射得更远。然而，为了获得更高的弹道射程，超高速弹药更大，并使用一种独特的推进剂，这减少了每吨弹药的发射次数，也带来另外几项缺点，比如武器有爆炸几率，以及每次开火都会拖出一条浓重的烟迹。\n\n <b><color=#ffcc00>使用HVAC20弹药。</color></b>"
       }
     },
     {
@@ -99052,7 +99052,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Hypervelocity Autocannon (HVAC) family of weapons is based on the Autocannon. While they have the same damage classes, they're capable of firing much further. However, in order to obtain the increased ballistic range, the hypervelocity ammo is larger and uses a unique type of propellant, reducing the number of shots per ton of ammo along with a couple other drawbacks, such as a chance of the weapon exploding, and a thick smoke trail every time the weapon is fired. \n\n <b><color=#ffcc00>Uses HVAC5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "超高速自动炮（HVAC）武器系列以自动炮为基础。虽然它们拥有相同的伤害等级，却能射得更远。然而，为了获得更高的弹道射程，超高速弹药更大，并使用一种独特的推进剂，这减少了每吨弹药的发射次数，也带来另外几项缺点，比如武器有爆炸几率，以及每次开火都会拖出一条浓重的烟迹。\n<<NL> <b><color=#ffcc00>使用HVAC5弹药。</color></b>"
+        "CULTURE_ZH_CN": "超高速自动炮（HVAC）武器系列以自动炮为基础。虽然它们拥有相同的伤害等级，却能射得更远。然而，为了获得更高的弹道射程，超高速弹药更大，并使用一种独特的推进剂，这减少了每吨弹药的发射次数，也带来另外几项缺点，比如武器有爆炸几率，以及每次开火都会拖出一条浓重的烟迹。\n\n <b><color=#ffcc00>使用HVAC5弹药。</color></b>"
       }
     },
     {
@@ -99076,7 +99076,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Developed by Lubalin Ballistics for the Terran Hegemony, the LB-X Autocannon was a derivative of the standard and relatively primitive Autocannon design. Taking advantage of advanced materials, the company was able to reduce the weight of the weapon for only a slight increase in bulk and mated it with the advanced Mercury-VII targeting system to boost its effective range.\n\n <b><color=#ffcc00>Uses LBX10 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "LB-X自动炮由卢巴林弹道公司为地球霸权研发，是标准且相对原始自动炮设计的衍生型。得益于先进材料，该公司得以在仅略微增加体积的情况下减轻武器重量，并将其与先进的墨丘利VII瞄准系统配对，以提升有效射程。\n<<NL> <b><color=#ffcc00>使用LBX10弹药。</color></b>"
+        "CULTURE_ZH_CN": "LB-X自动炮由卢巴林弹道公司为地球霸权研发，是标准且相对原始自动炮设计的衍生型。得益于先进材料，该公司得以在仅略微增加体积的情况下减轻武器重量，并将其与先进的墨丘利VII瞄准系统配对，以提升有效射程。\n\n <b><color=#ffcc00>使用LBX10弹药。</color></b>"
       }
     },
     {
@@ -99276,7 +99276,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Early Clan prototypes of the LB-X also underwent testing during Operation KLONDIKE. Though a little less effective and a little more bulky than their modern Inner Sphere-made equivalents, these autocannons paved the way for what became known as the Clan standard. \n\n <b><color=#ffcc00>Uses LBX2 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "LB-X的早期氏族原型也在克朗代克行动期间接受了测试。虽然比现代内天体制造的对应型号效能略低、体积略大，这些自动炮为后来被称为氏族标准的东西铺平了道路。\n<<NL> <b><color=#ffcc00>使用LBX2弹药。</color></b>"
+        "CULTURE_ZH_CN": "LB-X的早期氏族原型也在克朗代克行动期间接受了测试。虽然比现代内天体制造的对应型号效能略低、体积略大，这些自动炮为后来被称为氏族标准的东西铺平了道路。\n\n <b><color=#ffcc00>使用LBX2弹药。</color></b>"
       }
     },
     {
@@ -99364,7 +99364,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Developed by Lubalin Ballistics for the Terran Hegemony, the LB-X Autocannon was a derivative of the standard and relatively primitive Autocannon design. Taking advantage of advanced materials, the company was able to reduce the weight of the weapon for only a slight increase in bulk and mated it with the advanced Mercury-VII targeting system to boost its effective range. \n\n <b><color=#ffcc00>Uses LBX20 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "LB-X自动炮由卢巴林弹道公司为地球霸权研发，是标准且相对原始自动炮设计的衍生型。得益于先进材料，该公司得以在仅略微增加体积的情况下减轻武器重量，并将其与先进的墨丘利VII瞄准系统配对，以提升有效射程。\n<<NL> <b><color=#ffcc00>使用LBX20弹药。</color></b>"
+        "CULTURE_ZH_CN": "LB-X自动炮由卢巴林弹道公司为地球霸权研发，是标准且相对原始自动炮设计的衍生型。得益于先进材料，该公司得以在仅略微增加体积的情况下减轻武器重量，并将其与先进的墨丘利VII瞄准系统配对，以提升有效射程。\n\n <b><color=#ffcc00>使用LBX20弹药。</color></b>"
       }
     },
     {
@@ -99412,7 +99412,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Early Clan prototypes of the LB-X also underwent testing during Operation KLONDIKE. Though a little less effective and a little more bulky than their modern Inner Sphere-made equivalents, these autocannons paved the way for what became known as the Clan standard. \n\n <b><color=#ffcc00>Uses LBX20 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "LB-X的早期氏族原型也在克朗代克行动期间接受了测试。虽然比现代内天体制造的对应型号效能略低、体积略大，这些自动炮为后来被称为氏族标准的东西铺平了道路。\n<<NL> <b><color=#ffcc00>使用LBX20弹药。</color></b>"
+        "CULTURE_ZH_CN": "LB-X的早期氏族原型也在克朗代克行动期间接受了测试。虽然比现代内天体制造的对应型号效能略低、体积略大，这些自动炮为后来被称为氏族标准的东西铺平了道路。\n\n <b><color=#ffcc00>使用LBX20弹药。</color></b>"
       }
     },
     {
@@ -99500,7 +99500,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Developed by Lubalin Ballistics for the Terran Hegemony, the LB-X Autocannon was a derivative of the standard and relatively primitive Autocannon design. Taking advantage of advanced materials, the company was able to reduce the weight of the weapon for only a slight increase in bulk and mated it with the advanced Mercury-VII targeting system to boost its effective range.\n\n <b><color=#ffcc00>Uses LBX5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "LB-X自动炮由卢巴林弹道公司为地球霸权研发，是标准且相对原始自动炮设计的衍生型。得益于先进材料，该公司得以在仅略微增加体积的情况下减轻武器重量，并将其与先进的墨丘利VII瞄准系统配对，以提升有效射程。\n<<NL> <b><color=#ffcc00>使用LBX5弹药。</color></b>"
+        "CULTURE_ZH_CN": "LB-X自动炮由卢巴林弹道公司为地球霸权研发，是标准且相对原始自动炮设计的衍生型。得益于先进材料，该公司得以在仅略微增加体积的情况下减轻武器重量，并将其与先进的墨丘利VII瞄准系统配对，以提升有效射程。\n\n <b><color=#ffcc00>使用LBX5弹药。</color></b>"
       }
     },
     {
@@ -99540,7 +99540,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Early Clan prototypes of the LB-X also underwent testing during Operation KLONDIKE. Though a little less effective and a little more bulky than their modern Inner Sphere-made equivalents, these autocannons paved the way for what became known as the Clan standard. \n\n <b><color=#ffcc00>Uses LBX5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "LB-X的早期氏族原型也在克朗代克行动期间接受了测试。虽然比现代内天体制造的对应型号效能略低、体积略大，这些自动炮为后来被称为氏族标准的东西铺平了道路。\n<<NL> <b><color=#ffcc00>使用LBX5弹药。</color></b>"
+        "CULTURE_ZH_CN": "LB-X的早期氏族原型也在克朗代克行动期间接受了测试。虽然比现代内天体制造的对应型号效能略低、体积略大，这些自动炮为后来被称为氏族标准的东西铺平了道路。\n\n <b><color=#ffcc00>使用LBX5弹药。</color></b>"
       }
     },
     {
@@ -100260,7 +100260,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Ultra Autocannons boast double the rate of fire of a regular Autocannon, with only moderate increases in weight, size, and heat. The UAC/10 is your standard heavy gun, with all-around good damage, range, and heat efficiency.\n\n <b><color=#ffcc00>Uses UAC10 Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "超速自动炮的射速是普通自动炮的两倍，而重量、体积和热量只适度增加。UAC/10是你的标准重型火力，伤害、射程与热量效率全面均衡。\n<<NL> <b><color=#ffcc00>使用UAC10弹药。</color></b> "
+        "CULTURE_ZH_CN": "超速自动炮的射速是普通自动炮的两倍，而重量、体积和热量只适度增加。UAC/10是你的标准重型火力，伤害、射程与热量效率全面均衡。\n\n <b><color=#ffcc00>使用UAC10弹药。</color></b> "
       }
     },
     {
@@ -100292,7 +100292,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Prototype versions of the Ultra Autocannon all saw limited use with the Clans during Operation KLONDIKE. As with the other weapons of this era, the final evolution of modern ''Clan-spec'' versions would not come until after the conquest of the Pentagon worlds and the dawn of the Golden Century. \n\n <b><color=#ffcc00>Uses UAC10 Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "超速自动炮的原型版本在克朗代克行动期间在氏族中仅有有限使用。与这一时代的其他武器一样，现代\"氏族规格\"版本的最终演化要等到五角星系被征服、黄金世纪来临之后才会出现。\n<<NL> <b><color=#ffcc00>使用UAC10弹药。</color></b> "
+        "CULTURE_ZH_CN": "超速自动炮的原型版本在克朗代克行动期间在氏族中仅有有限使用。与这一时代的其他武器一样，现代\"氏族规格\"版本的最终演化要等到五角星系被征服、黄金世纪来临之后才会出现。\n\n <b><color=#ffcc00>使用UAC10弹药。</color></b> "
       }
     },
     {
@@ -100404,7 +100404,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Prototype versions of the Ultra Autocannon all saw limited use with the Clans during Operation KLONDIKE. As with the other weapons of this era, the final evolution of modern ''Clan-spec'' versions would not come until after the conquest of the Pentagon worlds and the dawn of the Golden Century. \n\n <b><color=#ffcc00>Uses UAC2 Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "超速自动炮的原型版本在克朗代克行动期间在氏族中仅有有限使用。与这一时代的其他武器一样，现代\"氏族规格\"版本的最终演化要等到五角星系被征服、黄金世纪来临之后才会出现。\n<<NL> <b><color=#ffcc00>使用UAC2弹药。</color></b> "
+        "CULTURE_ZH_CN": "超速自动炮的原型版本在克朗代克行动期间在氏族中仅有有限使用。与这一时代的其他武器一样，现代\"氏族规格\"版本的最终演化要等到五角星系被征服、黄金世纪来临之后才会出现。\n\n <b><color=#ffcc00>使用UAC2弹药。</color></b> "
       }
     },
     {
@@ -100476,7 +100476,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Ultra Autocannons boast double the rate of fire of a regular Autocannon, with only moderate increases in weight, size, and heat. The UAC/20 is one of the most fearsome weapons on the battlefield. \n\n <b><color=#ffcc00>Uses UAC20 Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "超速自动炮的射速是普通自动炮的两倍，而重量、体积和热量只适度增加。UAC/20是战场上最令人生畏的武器之一。\n<<NL> <b><color=#ffcc00>使用UAC20弹药。</color></b> "
+        "CULTURE_ZH_CN": "超速自动炮的射速是普通自动炮的两倍，而重量、体积和热量只适度增加。UAC/20是战场上最令人生畏的武器之一。\n\n <b><color=#ffcc00>使用UAC20弹药。</color></b> "
       }
     },
     {
@@ -100580,7 +100580,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Ultra Autocannons boast double the rate of fire of a regular Autocannon, with only moderate increases in weight, size, and heat. The UAC/5 is a reliable long range weapon. \n\n <b><color=#ffcc00>Uses UAC5 Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "超速自动炮的射速是普通自动炮的两倍，而重量、体积和热量只适度增加。UAC/5是一种可靠的远程武器。\n<<NL> <b><color=#ffcc00>使用UAC5弹药。</color></b> "
+        "CULTURE_ZH_CN": "超速自动炮的射速是普通自动炮的两倍，而重量、体积和热量只适度增加。UAC/5是一种可靠的远程武器。\n\n <b><color=#ffcc00>使用UAC5弹药。</color></b> "
       }
     },
     {
@@ -100612,7 +100612,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Prototype versions of the Ultra Autocannon all saw limited use with the Clans during Operation KLONDIKE. As with the other weapons of this era, the final evolution of modern ''Clan-spec'' versions would not come until after the conquest of the Pentagon worlds and the dawn of the Golden Century. \n\n <b><color=#ffcc00>Uses UAC5 Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "超速自动炮的原型版本在克朗代克行动期间在氏族中仅有有限使用。与这一时代的其他武器一样，现代\"氏族规格\"版本的最终演化要等到五角星系被征服、黄金世纪来临之后才会出现。\n<<NL> <b><color=#ffcc00>使用UAC5弹药。</color></b> "
+        "CULTURE_ZH_CN": "超速自动炮的原型版本在克朗代克行动期间在氏族中仅有有限使用。与这一时代的其他武器一样，现代\"氏族规格\"版本的最终演化要等到五角星系被征服、黄金世纪来临之后才会出现。\n\n <b><color=#ffcc00>使用UAC5弹药。</color></b> "
       }
     },
     {
@@ -101580,7 +101580,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 1-Tubed Clan-grade LRM Launcher. \n\n <b><color=#F79232>Uses Clan BA LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种1管氏族级LRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种1管氏族级LRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
       }
     },
     {
@@ -101684,7 +101684,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 2-Tubed Clan-grade LRM Launcher. \n\n <b><color=#F79232>Uses Clan BA LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种2管氏族级LRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种2管氏族级LRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
       }
     },
     {
@@ -101756,7 +101756,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 3-Tubed LRM Launcher. \n\n <b><color=#F79232>Uses BA LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种3管LRM发射器。\n<<NL> <b><color=#F79232>使用战斗装甲LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种3管LRM发射器。\n\n <b><color=#F79232>使用战斗装甲LRM弹药。</color></b>"
       }
     },
     {
@@ -101788,7 +101788,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 3-Tubed Clan-grade LRM Launcher. \n\n <b><color=#F79232>Uses Clan BA LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种3管氏族级LRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种3管氏族级LRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
       }
     },
     {
@@ -101860,7 +101860,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 4-Tubed LRM Launcher. \n\n <b><color=#F79232>Uses BA LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种4管LRM发射器。\n<<NL> <b><color=#F79232>使用战斗装甲LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种4管LRM发射器。\n\n <b><color=#F79232>使用战斗装甲LRM弹药。</color></b>"
       }
     },
     {
@@ -101892,7 +101892,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 4-Tubed Clan-grade LRM Launcher. \n\n <b><color=#F79232>Uses Clan BA LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种4管氏族级LRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种4管氏族级LRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
       }
     },
     {
@@ -101964,7 +101964,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 5-Tubed LRM Launcher. \n\n <b><color=#F79232>Uses BA LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种5管LRM发射器。\n<<NL> <b><color=#F79232>使用战斗装甲LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种5管LRM发射器。\n\n <b><color=#F79232>使用战斗装甲LRM弹药。</color></b>"
       }
     },
     {
@@ -101996,7 +101996,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 5-Tubed Clan-grade LRM Launcher. \n\n <b><color=#F79232>Uses Clan BA LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种5管氏族级LRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种5管氏族级LRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲LRM弹药。</color></b>"
       }
     },
     {
@@ -102324,7 +102324,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Battle Armor MRM-1 Launcher. \n\n <b><color=#F79232>Uses BA MRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种战斗装甲MRM-1发射器。\n<<NL> <b><color=#F79232>使用战斗装甲MRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种战斗装甲MRM-1发射器。\n\n <b><color=#F79232>使用战斗装甲MRM弹药。</color></b>"
       }
     },
     {
@@ -102388,7 +102388,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Battle Armor MRM-2 Launcher. \n\n <b><color=#F79232>Uses BA MRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种战斗装甲MRM-2发射器。\n<<NL> <b><color=#F79232>使用战斗装甲MRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种战斗装甲MRM-2发射器。\n\n <b><color=#F79232>使用战斗装甲MRM弹药。</color></b>"
       }
     },
     {
@@ -102452,7 +102452,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Battle Armor MRM-3 Launcher. \n\n <b><color=#F79232>Uses BA MRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种战斗装甲MRM-3发射器。\n<<NL> <b><color=#F79232>使用战斗装甲MRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种战斗装甲MRM-3发射器。\n\n <b><color=#F79232>使用战斗装甲MRM弹药。</color></b>"
       }
     },
     {
@@ -102580,7 +102580,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Battle Armor MRM-5 Launcher. \n\n <b><color=#F79232>Uses BA MRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种战斗装甲MRM-5发射器。\n<<NL> <b><color=#F79232>使用战斗装甲MRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种战斗装甲MRM-5发射器。\n\n <b><color=#F79232>使用战斗装甲MRM弹药。</color></b>"
       }
     },
     {
@@ -102644,7 +102644,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This compact NARC launcher fires a single beacon that attaches itself to the enemy and emits a homing signal for all friendly missiles.\n\n <b><color=#ffcc00>Uses BA NARC ammo.</color></b>",
-        "CULTURE_ZH_CN": "这种紧凑型NARC发射器发射一个信标，它会附着在敌人身上，为所有友方导弹发出寻的信号。\n<<NL> <b><color=#ffcc00>使用战斗装甲NARC弹药。</color></b>"
+        "CULTURE_ZH_CN": "这种紧凑型NARC发射器发射一个信标，它会附着在敌人身上，为所有友方导弹发出寻的信号。\n\n <b><color=#ffcc00>使用战斗装甲NARC弹药。</color></b>"
       }
     },
     {
@@ -103124,7 +103124,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A single-tubed SRM Launcher for use by Battle Armor. \n\n <b><color=#F79232>Uses BA SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种单管SRM发射器，供战斗装甲使用。\n<<NL> <b><color=#F79232>使用战斗装甲SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种单管SRM发射器，供战斗装甲使用。\n\n <b><color=#F79232>使用战斗装甲SRM弹药。</color></b>"
       }
     },
     {
@@ -103156,7 +103156,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 1-Tubed Advanced SRM Launcher. \n\n <b><color=#F79232>Uses Clan BA Advanced SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种1管高级SRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种1管高级SRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
       }
     },
     {
@@ -103412,7 +103412,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Clan-grade SRM-2 Launcher. \n\n <b><color=#F79232>Uses Clan BA SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种氏族级SRM-2发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种氏族级SRM-2发射器。\n\n <b><color=#F79232>使用氏族战斗装甲SRM弹药。</color></b>"
       }
     },
     {
@@ -103540,7 +103540,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 3-Tubed Advanced SRM Launcher. \n\n <b><color=#F79232>Uses Clan BA Advanced SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种3管高级SRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种3管高级SRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
       }
     },
     {
@@ -103588,7 +103588,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Clan-grade SRM-3 Launcher. \n\n <b><color=#F79232>Uses Clan BA SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种氏族级SRM-3发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种氏族级SRM-3发射器。\n\n <b><color=#F79232>使用氏族战斗装甲SRM弹药。</color></b>"
       }
     },
     {
@@ -103716,7 +103716,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 4-Tubed Advanced SRM Launcher. \n\n <b><color=#F79232>Uses Clan BA Advanced SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种4管高级SRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种4管高级SRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
       }
     },
     {
@@ -103764,7 +103764,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A Clan-grade SRM-4 Launcher. \n\n <b><color=#F79232>Uses Clan BA SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种氏族级SRM-4发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种氏族级SRM-4发射器。\n\n <b><color=#F79232>使用氏族战斗装甲SRM弹药。</color></b>"
       }
     },
     {
@@ -103892,7 +103892,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 5-Tubed Advanced SRM Launcher. \n\n <b><color=#F79232>Uses Clan BA Advanced SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种5管高级SRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种5管高级SRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
       }
     },
     {
@@ -103940,7 +103940,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 5-Tubed SRM Launcher. \n\n <b><color=#F79232>Uses Clan BA SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种5管SRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种5管SRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲SRM弹药。</color></b>"
       }
     },
     {
@@ -104028,7 +104028,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 6-Tubed SRM Launcher for use by Battle Armor.\n\n <b><color=#F79232>Uses BA SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种6管SRM发射器，供战斗装甲使用。\n<<NL> <b><color=#F79232>使用战斗装甲SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种6管SRM发射器，供战斗装甲使用。\n\n <b><color=#F79232>使用战斗装甲SRM弹药。</color></b>"
       }
     },
     {
@@ -104060,7 +104060,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A 6-Tubed Advanced SRM Launcher. \n\n <b><color=#F79232>Uses Clan BA Advanced SRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "一种6管高级SRM发射器。\n<<NL> <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种6管高级SRM发射器。\n\n <b><color=#F79232>使用氏族战斗装甲高级SRM弹药。</color></b>"
       }
     },
     {
@@ -104956,7 +104956,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Fluid Gun is nothing more than a militarized Fluid Sprayer system. By toughening the feed lines and storage tanks, the engineers of Solaris VII created a system roughly equivalent to a Flamer. Unlike the flamer however, the Fluid Gun can store and spray a variety of fluid types. Clever arena fighters have used water, oil slicks, Inferno Fuel, Cooling Fluid, and Corrosive Fluids in matches.\n\n <b><color=#ffcc00>Uses Fluid Canisters (Ammo).</color></b>",
-        "CULTURE_ZH_CN": "流体炮不过是军用化的流体喷洒系统。通过加固供料管线与储罐，索拉里斯VII的工程师造出一套大致相当于火焰喷射器的系统。不过与火焰喷射器不同，流体炮能储存并喷洒多种流体。聪明的竞技场斗士在比赛中用过水、油膜、地狱火燃料、冷却液和腐蚀性流体。\n<<NL> <b><color=#ffcc00>使用流体罐（弹药）。</color></b>"
+        "CULTURE_ZH_CN": "流体炮不过是军用化的流体喷洒系统。通过加固供料管线与储罐，索拉里斯VII的工程师造出一套大致相当于火焰喷射器的系统。不过与火焰喷射器不同，流体炮能储存并喷洒多种流体。聪明的竞技场斗士在比赛中用过水、油膜、地狱火燃料、冷却液和腐蚀性流体。\n\n <b><color=#ffcc00>使用流体罐（弹药）。</color></b>"
       }
     },
     {
@@ -105516,7 +105516,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Clan technology would scarcely improve the performance of the standard Gauss rifle beyond its Star League-era glory, but the improved version nevertheless demonstrated how Kerensky’s disciples proceeded along that path. \n\n <b><color=#ffcc00>Uses Gauss Ammo.</color></b> \n\n <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "氏族科技几乎无法在星盟时代的荣光之上再提升标准磁轨炮的性能，但改进版仍然展示了克伦斯基的追随者们是如何沿着那条路走下去的。\n<<NL> <b><color=#ffcc00>使用磁轨炮弹药。</color></b> \n<<NL> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "氏族科技几乎无法在星盟时代的荣光之上再提升标准磁轨炮的性能，但改进版仍然展示了克伦斯基的追随者们是如何沿着那条路走下去的。\n\n <b><color=#ffcc00>使用磁轨炮弹药。</color></b> \n\n <b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -105588,7 +105588,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Heavy Gauss Rifle is a new, deadly innovation by Lyran Alliance scientists in conjunction with a manufacturing cooperation between Defiance Industries and TharHes. Applying their ''bigger is better'' philosophy to Gauss technology, the Heavy Gauss Rifle is one of the heaviest battlefield weapons in existence.\n\n <b><color=#ffcc00>Uses Heavy Gauss Ammo. \n\n</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "重型磁轨炮是莱兰联盟科学家与反抗工业和塔尔赫斯制造合作的一项新的致命创新。他们把自己的\"越大越好\"哲学应用到磁轨技术上，重型磁轨炮是现存最重的战场武器之一。\n<<NL> <b><color=#ffcc00>使用重型磁轨炮弹药。\n<<NL></color></b>\n<b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "重型磁轨炮是莱兰联盟科学家与反抗工业和塔尔赫斯制造合作的一项新的致命创新。他们把自己的\"越大越好\"哲学应用到磁轨技术上，重型磁轨炮是现存最重的战场武器之一。\n\n <b><color=#ffcc00>使用重型磁轨炮弹药。\n\n</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -105660,7 +105660,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Light Gauss Rifle was introduced by the Free Worlds League. It functions identically to a Gauss Rifle, electromagnetically accelerating a slug to high speeds to cause massive damage at long range. As its name suggests, however, the Light Gauss Rifle is designed to be more compact, allowing Gauss Rifles to be mounted on smaller combat units.\n\n <b><color=#ffcc00>Uses Light Gauss Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "轻型磁轨炮由自由世界联盟推出。它的工作原理与磁轨炮完全相同，以电磁方式将弹丸加速到高速，在远距离造成巨大伤害。但正如其名，轻型磁轨炮被设计得更紧凑，使磁轨炮能装在更小的战斗单位上。\n<<NL> <b><color=#ffcc00>使用轻型磁轨炮弹药。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "轻型磁轨炮由自由世界联盟推出。它的工作原理与磁轨炮完全相同，以电磁方式将弹丸加速到高速，在远距离造成巨大伤害。但正如其名，轻型磁轨炮被设计得更紧凑，使磁轨炮能装在更小的战斗单位上。\n\n <b><color=#ffcc00>使用轻型磁轨炮弹药。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -106500,7 +106500,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This Chemical Laser seems to have been designed to push out an intense blast with a very short duration enabling it to punch through Armor similar to a Gauss Rifle. \n\n <b><color=#ffcc00>Uses Chem Large Ammo.</color></b>",
-        "CULTURE_ZH_CN": "这种化学激光器似乎被设计为发射一次持续时间极短的高强度冲击，使其能像磁轨炮一样击穿装甲。\n<<NL> <b><color=#ffcc00>使用化学大型弹药。</color></b>"
+        "CULTURE_ZH_CN": "这种化学激光器似乎被设计为发射一次持续时间极短的高强度冲击，使其能像磁轨炮一样击穿装甲。\n\n <b><color=#ffcc00>使用化学大型弹药。</color></b>"
       }
     },
     {
@@ -106716,7 +106716,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This 'PAAARTYCANNON' is barely more then 4 Chemical Lasers jury rigged together with a Randomized Focusing Lense to make it change Colours During firing... Someone scratched 'Sta-sta-Staaying Aliive' on it... \n\n <b><color=#ffcc00>Uses Chem Medium Ammo.</color></b>",
-        "CULTURE_ZH_CN": "这门\"派——对——炮\"不过是把4门化学激光器胡乱拼在一起，再加一枚随机聚焦透镜，让它在开火时改变颜色……有人在上面刻了\"活—活—活下去\"……\n<<NL> <b><color=#ffcc00>使用化学中型弹药。</color></b>"
+        "CULTURE_ZH_CN": "这门\"派——对——炮\"不过是把4门化学激光器胡乱拼在一起，再加一枚随机聚焦透镜，让它在开火时改变颜色……有人在上面刻了\"活—活—活下去\"……\n\n <b><color=#ffcc00>使用化学中型弹药。</color></b>"
       }
     },
     {
@@ -112076,7 +112076,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Enhanced Long Range Missiles were developed by the Federated Commonwealth in response to the superior performance of Clan weaponry. These new LRMs use a more sophisticated arming mechanism to increase their viability at close range. The result has been a much smaller blind spot compared to traditional LRMs while still retaining the same long-range functionality.\n\n <b><color=#ffcc00>Uses LRM Ammo.</color></b>",
-        "CULTURE_ZH_CN": "增强型远程导弹由联邦共同体研发，以应对氏族武器更优越的性能。这些新型LRM采用更精密的解锁机制，以提升其在近距离的可用性。结果是相比传统LRM小得多的盲区，同时保留相同的远程功能。\n<<NL> <b><color=#ffcc00>使用LRM弹药。</color></b>"
+        "CULTURE_ZH_CN": "增强型远程导弹由联邦共同体研发，以应对氏族武器更优越的性能。这些新型LRM采用更精密的解锁机制，以提升其在近距离的可用性。结果是相比传统LRM小得多的盲区，同时保留相同的远程功能。\n\n <b><color=#ffcc00>使用LRM弹药。</color></b>"
       }
     },
     {
@@ -113268,7 +113268,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 4 Machine Guns. \n\n <b><color=#ffcc00>Uses MG Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺机枪组成。\n<<NL> <b><color=#ffcc00>使用机枪弹药。</color></b> "
+        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺机枪组成。\n\n <b><color=#ffcc00>使用机枪弹药。</color></b> "
       }
     },
     {
@@ -113324,7 +113324,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 4 Machine Guns. Clan Versions are less likely to Jam at higher fire rates. \n\n <b><color=#ffcc00>Uses MG Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺机枪组成。氏族版本在更高射速下更不容易卡壳。\n<<NL> <b><color=#ffcc00>使用机枪弹药。</color></b> "
+        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺机枪组成。氏族版本在更高射速下更不容易卡壳。\n\n <b><color=#ffcc00>使用机枪弹药。</color></b> "
       }
     },
     {
@@ -113444,7 +113444,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Guns deal very little damage, have severely limited range, and depend upon volatile ammunition stores. \n\n <b><color=#ffcc00>Uses MG Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "机枪造成的伤害极小，射程极为有限，还依赖易爆的弹药储备。\n<<NL> <b><color=#ffcc00>使用机枪弹药。</color></b> "
+        "CULTURE_ZH_CN": "机枪造成的伤害极小，射程极为有限，还依赖易爆的弹药储备。\n\n <b><color=#ffcc00>使用机枪弹药。</color></b> "
       }
     },
     {
@@ -113484,7 +113484,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Guns deal very little damage, have severely limited range, and depend upon volatile ammunition stores. However, they have a greatly increased chance to cause Criticals when they impact a target that has been stripped of its armor. This one is just two welded together to operate off a single hardpoint.\n\n <b><color=#ffcc00>Uses MG Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "机枪造成的伤害极小，射程极为有限，还依赖易爆的弹药储备。然而，它们命中已被剥去装甲的目标时，造成致命一击的几率大幅提升。这一款只是把两挺焊在一起，从单一硬点运作。\n<<NL> <b><color=#ffcc00>使用机枪弹药。</color></b> "
+        "CULTURE_ZH_CN": "机枪造成的伤害极小，射程极为有限，还依赖易爆的弹药储备。然而，它们命中已被剥去装甲的目标时，造成致命一击的几率大幅提升。这一款只是把两挺焊在一起，从单一硬点运作。\n\n <b><color=#ffcc00>使用机枪弹药。</color></b> "
       }
     },
     {
@@ -113532,7 +113532,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Guns deal very little damage, have severely limited range, and depend upon volatile ammunition stores. This one is just two welded together to operate off a single hardpoint.\n\n <b><color=#ffcc00>Uses MG Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "机枪造成的伤害极小，射程极为有限，还依赖易爆的弹药储备。这一款只是把两挺焊在一起，从单一硬点运作。\n<<NL> <b><color=#ffcc00>使用机枪弹药。</color></b> "
+        "CULTURE_ZH_CN": "机枪造成的伤害极小，射程极为有限，还依赖易爆的弹药储备。这一款只是把两挺焊在一起，从单一硬点运作。\n\n <b><color=#ffcc00>使用机枪弹药。</color></b> "
       }
     },
     {
@@ -113684,7 +113684,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 3 Heavy Machine Guns. Clan Versions are less likely to Jam at higher fire rates.  \n\n <b><color=#ffcc00>Uses HMG Ammo.</color></b> <b><color=#00ffff>Left Click on Ammocount/Damage value during battle to switch firing mode</color> </b>",
-        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由3挺重型机枪组成。氏族版本在更高射速下更不容易卡壳。\n<<NL> <b><color=#ffcc00>使用重型机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
+        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由3挺重型机枪组成。氏族版本在更高射速下更不容易卡壳。\n\n <b><color=#ffcc00>使用重型机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
       }
     },
     {
@@ -113788,7 +113788,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Light Machine Gun fires smaller caliber shells, but boasts a higher rate of fire and increased range over a standard Machine Gun. \n\n <b><color=#ffcc00>Uses LMG Ammo.</color></b> ",
-        "CULTURE_ZH_CN": "轻型机枪发射较小口径的弹药，但相比标准机枪拥有更高的射速和更远的射程。\n<<NL> <b><color=#ffcc00>使用轻机枪弹药。</color></b> "
+        "CULTURE_ZH_CN": "轻型机枪发射较小口径的弹药，但相比标准机枪拥有更高的射速和更远的射程。\n\n <b><color=#ffcc00>使用轻机枪弹药。</color></b> "
       }
     },
     {
@@ -113836,7 +113836,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 4 Light Machine Guns. \n\n <b><color=#ffcc00>Uses LMG Ammo.</color></b> <b><color=#00ffff>Left Click on Ammocount/Damage value during battle to switch firing mode</color> </b>",
-        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺轻机枪组成。\n<<NL> <b><color=#ffcc00>使用轻机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
+        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺轻机枪组成。\n\n <b><color=#ffcc00>使用轻机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
       }
     },
     {
@@ -113900,7 +113900,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 4 Light Machine Guns. Clan Versions are less likely to Jam at higher fire rates.  \n\n <b><color=#ffcc00>Uses LMG Ammo.</color></b> <b><color=#00ffff>Left Click on Ammocount/Damage value during battle to switch firing mode</color> </b>",
-        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺轻机枪组成。氏族版本在更高射速下更不容易卡壳。\n<<NL> <b><color=#ffcc00>使用轻机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
+        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺轻机枪组成。氏族版本在更高射速下更不容易卡壳。\n\n <b><color=#ffcc00>使用轻机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
       }
     },
     {
@@ -115044,7 +115044,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This launcher fires a single NARC beacon that attaches itself to the enemy and emits a homing signal for all friendly missiles. \n\n <b><color=#ffcc00>Uses NARC ammo.</color></b>",
-        "CULTURE_ZH_CN": "这种发射器发射单个NARC信标，它会附着在敌人身上，为所有友方导弹发出寻的信号。\n<<NL> <b><color=#ffcc00>使用NARC弹药。</color></b>"
+        "CULTURE_ZH_CN": "这种发射器发射单个NARC信标，它会附着在敌人身上，为所有友方导弹发出寻的信号。\n\n <b><color=#ffcc00>使用NARC弹药。</color></b>"
       }
     },
     {
@@ -115108,7 +115108,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This launcher fires a single iNARC beacon that attaches itself to the enemy and emits a homing signal for all friendly missiles.\n\n <b><color=#ffcc00>Uses iNarc ammo.</color></b>",
-        "CULTURE_ZH_CN": "这种发射器发射单个iNARC信标，它会附着在敌人身上，为所有友方导弹发出寻的信号。\n<<NL> <b><color=#ffcc00>使用iNarc弹药。</color></b>"
+        "CULTURE_ZH_CN": "这种发射器发射单个iNARC信标，它会附着在敌人身上，为所有友方导弹发出寻的信号。\n\n <b><color=#ffcc00>使用iNarc弹药。</color></b>"
       }
     },
     {
@@ -115972,7 +115972,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Researched by the Draconis Combine, the Heavy PPC is a larger, more potent version of the Particle Projector Cannon, capable of delivering a devastating blow to both the enemy and their sensors. \n\n <b><color=#00ffff>Left Click on Chance to Hit during battle to toggle the Field Inhibitor.  (FIOFF) Has no minimum range penalty but can Misfire.</color> </b>",
-        "CULTURE_ZH_CN": "重型PPC由龙尼斯联合体研发，是粒子投射炮更大、更强的版本，能对敌人及其传感器都造成毁灭性打击。\n<<NL> <b><color=#00ffff>战斗中左键点击命中率可切换场抑制器。（FIOFF）没有最小射程惩罚，但可能走火。</color></b>"
+        "CULTURE_ZH_CN": "重型PPC由龙尼斯联合体研发，是粒子投射炮更大、更强的版本，能对敌人及其传感器都造成毁灭性打击。\n\n <b><color=#00ffff>战斗中左键点击命中率可切换场抑制器。（FIOFF）没有最小射程惩罚，但可能走火。</color></b>"
       }
     },
     {
@@ -117332,7 +117332,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Railgun is a massive weapon adapted from WarShips to be used on BattleMechs. This somehow got barely made functional again with a broken barrel and additional chargers....\n\n <b><color=#00ffff>Can Toggle Between Standard Mode or Overcharging the Capacitor, exchanging Reliability and Firing Rate for Range and Damage</color> \n\n<b><color=#ffcc00>Uses Railgun Gauss Ammo.</color></b>",
-        "CULTURE_ZH_CN": "磁轨炮是一种从战舰改装到战斗机甲上使用的巨型武器。这一门不知怎么地在炮管破损、还加了额外充电器的情况下被勉强修复到能用的地步……\n<<NL> <b><color=#00ffff>可在标准模式与电容过充之间切换，以可靠性及射速换取射程与伤害</color> \n\n<b><color=#ffcc00>使用磁轨炮磁轨弹药。</color></b>"
+        "CULTURE_ZH_CN": "磁轨炮是一种从战舰改装到战斗机甲上使用的巨型武器。这一门不知怎么地在炮管破损、还加了额外充电器的情况下被勉强修复到能用的地步……\n\n <b><color=#00ffff>可在标准模式与电容过充之间切换，以可靠性及射速换取射程与伤害</color> \n\n<b><color=#ffcc00>使用磁轨炮磁轨弹药。</color></b>"
       }
     },
     {
@@ -117356,7 +117356,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Heavy Rifle is the largest Rifle in the family. The precursor to the modern Autocannon, the Rifle is based on the main guns used by tanks on pre-spaceflight Terra.\n\n <b><color=#ffcc00>Uses Heavy Rifle Ammo.</color></b>",
-        "CULTURE_ZH_CN": "重型步枪是步枪家族中最大的一型。作为现代自动炮的前身，步枪基于前太空时代地球上坦克使用的主炮。\n<<NL> <b><color=#ffcc00>使用重型步枪弹药。</color></b>"
+        "CULTURE_ZH_CN": "重型步枪是步枪家族中最大的一型。作为现代自动炮的前身，步枪基于前太空时代地球上坦克使用的主炮。\n\n <b><color=#ffcc00>使用重型步枪弹药。</color></b>"
       }
     },
     {
@@ -117412,7 +117412,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This isn't quite your run of the mill Heavy Rifle. Its bore diameter matches Thunderbolt 10 missiles, and it has an adapted feed system to handle them in addition to normal shells. It's better quality than a lot of weird periphery junk, even though it looks hand made. Its designer has stenciled the word ''Shillelagh'' onto the barrel, and was thoughtful enough to etch the specs for the custom zero-spin sabots the missiles need onto the inside of the top cover. \n\n <b><color=#00ffff>Can toggle between missile and rifle mode. Firing missiles has a 12% jam chance, mitigated by Gunnery</color> </b>  \n\n <b><color=#ffcc00>Uses Heavy Rifle Ammo.</color></b>\n\n <b><color=#ffcc00>Uses TBOLT10 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "这可不完全是普通的超重型步枪。它的口径与雷霆10导弹匹配，并配有改装过的供弹系统，除正常炮弹之外也能处理它们。尽管看着像手工打造，它的质量比许多古怪的外缘破烂要好。其设计师在炮管上印上了\"橡木棍\"这个词，还体贴地把这些导弹所需的定制零旋转弹托规格蚀刻在顶盖内侧。\n<<NL> <b><color=#00ffff>可在导弹模式与步枪模式之间切换。发射导弹有12%卡壳几率，受射击技能影响</color></b>  \n<<NL> <b><color=#ffcc00>使用重型步枪弹药。</color></b>\n<<NL> <b><color=#ffcc00>使用TBOLT10弹药。</color></b>"
+        "CULTURE_ZH_CN": "这可不完全是普通的超重型步枪。它的口径与雷霆10导弹匹配，并配有改装过的供弹系统，除正常炮弹之外也能处理它们。尽管看着像手工打造，它的质量比许多古怪的外缘破烂要好。其设计师在炮管上印上了\"橡木棍\"这个词，还体贴地把这些导弹所需的定制零旋转弹托规格蚀刻在顶盖内侧。\n\n <b><color=#00ffff>可在导弹模式与步枪模式之间切换。发射导弹有12%卡壳几率，受射击技能影响</color></b>  \n\n <b><color=#ffcc00>使用重型步枪弹药。</color></b>\n\n <b><color=#ffcc00>使用TBOLT10弹药。</color></b>"
       }
     },
     {
@@ -117452,7 +117452,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Light Rifle is the smallest of the ''Rifle'' family. The precursor to the modern Autocannon, the Rifle is based on the main guns used by tanks on pre-spaceflight Terra.\n\n <b><color=#ffcc00>Uses Light Rifle Ammo.</color></b>",
-        "CULTURE_ZH_CN": "轻型步枪是\"步枪\"家族中最小的一型。作为现代自动炮的前身，步枪基于前太空时代地球上坦克使用的主炮。\n<<NL> <b><color=#ffcc00>使用轻型步枪弹药。</color></b>"
+        "CULTURE_ZH_CN": "轻型步枪是\"步枪\"家族中最小的一型。作为现代自动炮的前身，步枪基于前太空时代地球上坦克使用的主炮。\n\n <b><color=#ffcc00>使用轻型步枪弹药。</color></b>"
       }
     },
     {
@@ -117492,7 +117492,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Medium Rifle is the middleweight of the 'Rifle' family. The precursor to the modern Autocannon, the Rifle was based on the main guns used by tanks on pre-spaceflight Terra. \n\n <b><color=#ffcc00>Uses Medium Rifle Ammo.</color></b>",
-        "CULTURE_ZH_CN": "中型步枪是\"步枪\"家族中的中量级选手。作为现代自动炮的前身，步枪基于前太空时代地球上坦克使用的主炮。\n<<NL> <b><color=#ffcc00>使用中型步枪弹药。</color></b>"
+        "CULTURE_ZH_CN": "中型步枪是\"步枪\"家族中的中量级选手。作为现代自动炮的前身，步枪基于前太空时代地球上坦克使用的主炮。\n\n <b><color=#ffcc00>使用中型步枪弹药。</color></b>"
       }
     },
     {
@@ -117524,7 +117524,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This 'Rifle' is little more than a crude tube with a firing mechanism added to it. Whatever works out there, I guess.\n\n <b><color=#ffcc00>Uses Potato Rifle Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这把\"步枪\"不过是一根粗管子加上发射机构。我想在那外面能用的就行。\n<<NL> <b><color=#ffcc00>使用土豆步枪弹药。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这把\"步枪\"不过是一根粗管子加上发射机构。我想在那外面能用的就行。\n\n <b><color=#ffcc00>使用土豆步枪弹药。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118460,7 +118460,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Get a taste of true rotary firepower without the burdensome weight and bulk of traditional Rotary Autocannons. Try Quicsell's line of slim and sleek Rotary Rifles. Perfect for your budget firepower needs. \n\n <b><color=#ffcc00>Uses Heavy Rifle Ammo.</color></b>",
-        "CULTURE_ZH_CN": "体验真正的旋转火力，却无需承受传统旋转自动炮那累赘的重量与体积。试试快销公司线条纤巧、外形利落的旋转步枪系列。完美满足你对经济型火力的需求。\n<<NL> <b><color=#ffcc00>使用重型步枪弹药。</color></b>"
+        "CULTURE_ZH_CN": "体验真正的旋转火力，却无需承受传统旋转自动炮那累赘的重量与体积。试试快销公司线条纤巧、外形利落的旋转步枪系列。完美满足你对经济型火力的需求。\n\n <b><color=#ffcc00>使用重型步枪弹药。</color></b>"
       }
     },
     {
@@ -118636,7 +118636,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Get a taste of true rotary firepower without the burdensome weight and bulk of traditional Rotary Autocannons. Try Quicsell's line of slim and sleek Rotary Rifles. Perfect for your budget firepower needs. \n\n <b><color=#ffcc00>Uses Medium Rifle Ammo.</color></b>",
-        "CULTURE_ZH_CN": "体验真正的旋转火力，却无需承受传统旋转自动炮那累赘的重量与体积。试试快销公司线条纤巧、外形利落的旋转步枪系列。完美满足你对经济型火力的需求。\n<<NL> <b><color=#ffcc00>使用中型步枪弹药。</color></b>"
+        "CULTURE_ZH_CN": "体验真正的旋转火力，却无需承受传统旋转自动炮那累赘的重量与体积。试试快销公司线条纤巧、外形利落的旋转步枪系列。完美满足你对经济型火力的需求。\n\n <b><color=#ffcc00>使用中型步枪弹药。</color></b>"
       }
     },
     {
@@ -120876,7 +120876,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Thunderbolt launcher is an offshoot of standard LRM technology. Instead of firing groups of missiles, the Thunderbolt launcher fires a single missile.   \n\n <b><color=#ffcc00>Uses TBOLT10 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "雷霆发射器是标准LRM技术的一个分支。它不发射成组导弹，而是发射单枚导弹。\n<<NL> <b><color=#ffcc00>使用TBOLT10弹药。</color></b>"
+        "CULTURE_ZH_CN": "雷霆发射器是标准LRM技术的一个分支。它不发射成组导弹，而是发射单枚导弹。\n\n <b><color=#ffcc00>使用TBOLT10弹药。</color></b>"
       }
     },
     {
@@ -120988,7 +120988,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Thunderbolt launcher is an offshoot of standard LRM technology. Instead of firing groups of missiles, the Thunderbolt launcher fires a single missile.   \n\n <b><color=#ffcc00>Uses TBOLT15 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "雷霆发射器是标准LRM技术的一个分支。它不发射成组导弹，而是发射单枚导弹。\n<<NL> <b><color=#ffcc00>使用TBOLT15弹药。</color></b>"
+        "CULTURE_ZH_CN": "雷霆发射器是标准LRM技术的一个分支。它不发射成组导弹，而是发射单枚导弹。\n\n <b><color=#ffcc00>使用TBOLT15弹药。</color></b>"
       }
     },
     {
@@ -121020,7 +121020,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Thunderbolt launcher is an offshoot of standard LRM technology. Instead of firing groups of missiles, the Thunderbolt launcher fires a single missile.   \n\n <b><color=#ffcc00>Uses TBOLT20 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "雷霆发射器是标准LRM技术的一个分支。它不发射成组导弹，而是发射单枚导弹。\n<<NL> <b><color=#ffcc00>使用TBOLT20弹药。</color></b>"
+        "CULTURE_ZH_CN": "雷霆发射器是标准LRM技术的一个分支。它不发射成组导弹，而是发射单枚导弹。\n\n <b><color=#ffcc00>使用TBOLT20弹药。</color></b>"
       }
     },
     {
@@ -121052,7 +121052,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Thunderbolt launcher is an offshoot of standard LRM technology. Instead of firing groups of missiles, the Thunderbolt launcher fires a single missile.   \n\n <b><color=#ffcc00>Uses TBOLT5 Ammo.</color></b>",
-        "CULTURE_ZH_CN": "雷霆发射器是标准LRM技术的一个分支。它不发射成组导弹，而是发射单枚导弹。\n<<NL> <b><color=#ffcc00>使用TBOLT5弹药。</color></b>"
+        "CULTURE_ZH_CN": "雷霆发射器是标准LRM技术的一个分支。它不发射成组导弹，而是发射单枚导弹。\n\n <b><color=#ffcc00>使用TBOLT5弹药。</color></b>"
       }
     },
     {
@@ -121356,7 +121356,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A simplified internal Bomb Bay system, can't handle missiles. \n\n <b><color=#ff0066>All stats of this Weapon are derived from loaded Munitions.</color>\n\n <b><color=#ff0066>Requires Weapons Bay Hardpoint and Bomb type [Bay] Munitions.</color></b>",
-        "CULTURE_ZH_CN": "一种简化的内置炸弹舱系统，无法处理导弹。\n<<NL> <b><color=#ff0066>该武器的所有数值均取决于所装填的弹药。</color>\n<<NL> <b><color=#ff0066>需要武器舱硬点与炸弹类型[弹药舱]弹药。</color></b>"
+        "CULTURE_ZH_CN": "一种简化的内置炸弹舱系统，无法处理导弹。\n\n <b><color=#ff0066>该武器的所有数值均取决于所装填的弹药。</color>\n\n <b><color=#ff0066>需要武器舱硬点与炸弹类型[弹药舱]弹药。</color></b>"
       }
     },
     {
@@ -121412,7 +121412,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "An automated Bomb and Missile carousel capable of swapping through a multitude of Munitions and dropping them through bay doors in the belly of the unit. \n\n <b><color=#ff0066>All stats of this Weapon are derived from loaded Munitions.</color>\n\n <b><color=#ff0066>Requires Weapons Bay Hardpoint and [Bay] Munitions.</color></b>",
-        "CULTURE_ZH_CN": "一套自动化炸弹与导弹转盘，能在多种弹药之间切换，并通过单位腹部的舱门投下它们。\n<<NL> <b><color=#ff0066>该武器的所有数值均取决于所装填的弹药。</color>\n<<NL> <b><color=#ff0066>需要武器舱硬点与[弹药舱]弹药。</color></b>"
+        "CULTURE_ZH_CN": "一套自动化炸弹与导弹转盘，能在多种弹药之间切换，并通过单位腹部的舱门投下它们。\n\n <b><color=#ff0066>该武器的所有数值均取决于所装填的弹药。</color>\n\n <b><color=#ff0066>需要武器舱硬点与[弹药舱]弹药。</color></b>"
       }
     },
     {
@@ -121452,7 +121452,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "A simplified internal Missile Bay system, can't handle Bombs. \n\n <b><color=#ff0066>All stats of this Weapon are derived from loaded Munitions.</color>\n\n <b><color=#ff0066>Requires Weapons Bay Hardpoint and Missile type [Bay] Munitions.</color></b>",
-        "CULTURE_ZH_CN": "简化型内置导弹舱系统，无法挂载炸弹。\n\n <b><color=#ff0066>此武器的所有属性均取自所装填的弹药。</color>\n<<NL> <b><color=#ff0066>需要武器舱挂载点与导弹类[舱]弹药。</color></b>"
+        "CULTURE_ZH_CN": "简化型内置导弹舱系统，无法挂载炸弹。\n\n <b><color=#ff0066>此武器的所有属性均取自所装填的弹药。</color>\n\n <b><color=#ff0066>需要武器舱挂载点与导弹类[舱]弹药。</color></b>"
       }
     },
     {

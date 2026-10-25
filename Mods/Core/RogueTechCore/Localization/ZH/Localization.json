@@ -6780,7 +6780,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "With the <i>Argo</i>'s power systems fully online, and enough reinforcement to keep the active Bays from damaging the ship's spine, the final 6 'Mech cubicles can be powered up and put to work. \n\n <b><color=#F79232>Enables third Repair bay, allows work on a third 'Mech at 33% efficiency.</color></b>.",
-        "CULTURE_ZH_CN": "随着<i>阿戈</i>号动力系统完全上线，加上足够的加固使已启用的舱室不会损伤舰体脊骨，最后6个机甲隔间可以通电并投入使用了。\n<<NL> <b><color=#F79232>启用第三个维修舱，允许以33%效率对第三台机甲作业。</color></b>。"
+        "CULTURE_ZH_CN": "随着<i>阿戈</i>号动力系统完全上线，加上足够的加固使已启用的舱室不会损伤舰体脊骨，最后6个机甲隔间可以通电并投入使用了。\n\n <b><color=#F79232>启用第三个维修舱，允许以33%效率对第三台机甲作业。</color></b>。"
       }
     },
     {
@@ -6972,7 +6972,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Gamma Pod is very much a blank slate, as only its internal support structures survived intact. Rebuilding the habitation decks of the pod still leaves plenty of space for other facilities. \n\n <b><color=#F79232>+10 Days before Affinities Decay. </color></b>",
-        "CULTURE_ZH_CN": "伽马舱基本是一张白纸，只有其内部支撑结构完好幸存。重建该舱的居住甲板之后，仍会剩下充足空间用于其他设施。\n<<NL> <b><color=#F79232>契合度衰减前+10天。</color></b>"
+        "CULTURE_ZH_CN": "伽马舱基本是一张白纸，只有其内部支撑结构完好幸存。重建该舱的居住甲板之后，仍会剩下充足空间用于其他设施。\n\n <b><color=#F79232>契合度衰减前+10天。</color></b>"
       }
     },
     {
@@ -7460,7 +7460,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Adding more Battle Pods allows for full-lance training simulations, as well as raucous ship-wide tournaments. This increases the amount of experience gained by MechWarriors aboard the ship.  \n\n <b><color=#F79232>Each MechWarrior with less than 500,000 total experience will gain 50 experience points per day. </color></b> \n\n <b><color=#F79232>Affinity decays to minimum 10 points </color></b>",
-        "CULTURE_ZH_CN": "增加更多战斗吊舱可以实现全分队训练模拟，以及热闹的全舰锦标赛。这会提升船上机师获得的经验量。\n<<NL> <b><color=#F79232>每名总经验低于500,000的机师每天将获得50点经验。</color></b> \n<<NL> <b><color=#F79232>契合度最低衰减至10点</color></b>"
+        "CULTURE_ZH_CN": "增加更多战斗吊舱可以实现全分队训练模拟，以及热闹的全舰锦标赛。这会提升船上机师获得的经验量。\n\n <b><color=#F79232>每名总经验低于500,000的机师每天将获得50点经验。</color></b> \n\n <b><color=#F79232>契合度最低衰减至10点</color></b>"
       }
     },
     {
@@ -7484,7 +7484,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "With a training space completely packed with Battle Pods, MechWarriors can engage in lance-versus-lance competition, and that inevitably means teams, logos, and pennants. Large-scale competition means even more experience for participating MechWarriors.  \n\n <b><color=#F79232>Each MechWarrior with less than 800,000 total experience will gain 80 experience points per day.</color></b> \n\n <b><color=#F79232>Affinity decays to minimum 40 points </color></b>",
-        "CULTURE_ZH_CN": "训练空间被战斗吊舱完全塞满后，机师们可以进行分队对分队的竞赛，而这必然意味着队伍、标志和锦旗。大规模竞赛意味着参赛机师获得更多经验。\n<<NL> <b><color=#F79232>每名总经验低于800,000的机师每天将获得80点经验。</color></b> \n<<NL> <b><color=#F79232>契合度最低衰减至40点</color></b>"
+        "CULTURE_ZH_CN": "训练空间被战斗吊舱完全塞满后，机师们可以进行分队对分队的竞赛，而这必然意味着队伍、标志和锦旗。大规模竞赛意味着参赛机师获得更多经验。\n\n <b><color=#F79232>每名总经验低于800,000的机师每天将获得80点经验。</color></b> \n\n <b><color=#F79232>契合度最低衰减至40点</color></b>"
       }
     },
     {
@@ -38420,7 +38420,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Shadow Hawk 2H is the perfect example of a 'jack-of-all-trades.' It supports weaponry for all ranges, has respectable speed and jump capability, and mounts decent armor. This comes at the cost of excelling at nothing in particular.\n\n<b><color=#e62e00>Quirk: Battle Fists</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>",
-        "CULTURE_ZH_CN": "暗影鹰 2H 是\"样样通吃\"的完美范例。它具备适用于所有射程的武器，速度与跳跃能力可观，装甲也相当不错。代价是它在任何方面都不特别出众。\n<b><color=#e62e00>特质：战斗铁拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>"
+        "CULTURE_ZH_CN": "暗影鹰 2H 是\"样样通吃\"的完美范例。它具备适用于所有射程的武器，速度与跳跃能力可观，装甲也相当不错。代价是它在任何方面都不特别出众。\n<b><color=#e62e00>特质：战斗铁拳</color>\n</b>\n<b><color=#e62e00>投放费用倍率：1.03</color>\n</b>"
       }
     },
     {
@@ -79548,7 +79548,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Shadow Hawk 2H is the perfect example of a 'jack-of-all-trades.' It supports weaponry for all ranges, has respectable speed and jump capability, and mounts decent armor. This comes at the cost of excelling at nothing in particular.\n\n<b><color=#e62e00>Quirk: Battle Fists</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>",
-        "CULTURE_ZH_CN": "暗影鹰 2H 是\"样样通吃\"的完美范例。它具备适用于所有射程的武器，速度与跳跃能力可观，装甲也相当不错。代价是它在任何方面都不特别出众。\n<b><color=#e62e00>特质：战斗铁拳</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>"
+        "CULTURE_ZH_CN": "暗影鹰 2H 是\"样样通吃\"的完美范例。它具备适用于所有射程的武器，速度与跳跃能力可观，装甲也相当不错。代价是它在任何方面都不特别出众。\n<b><color=#e62e00>特质：战斗铁拳</color>\n</b>\n<b><color=#e62e00>投放费用倍率：1.03</color>\n</b>"
       }
     },
     {

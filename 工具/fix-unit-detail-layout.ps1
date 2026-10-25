@@ -35,14 +35,15 @@ function Pad-DisplayWidthRight([string]$Text, [int]$Width) {
 
 function Format-UnitDetail([string]$Value) {
     if ([string]::IsNullOrEmpty($Value)) { return $Value }
-    $normalized = $Value -replace '<mspace(?:=[^>]+)?>', ''
+    $normalized = $Value.Replace('<<NL>', '\n')
+    $normalized = $normalized -replace '<mspace(?:=[^>]+)?>', ''
     $normalized = $normalized -replace '</mspace>', ''
     if ($normalized.IndexOf('<b>数值', [StringComparison]::Ordinal) -lt 0 -and
         $normalized.IndexOf('<b>位置', [StringComparison]::Ordinal) -lt 0) { return $normalized }
 
     $normalized = $normalized -replace '(?i)</b>[ \t]+(?=<color=#ffcc00>)', '</b>\n'
     $normalized = $normalized -replace '(?i)</b>[ \t]+(?=<b><color=#ffcc00>)', '</b>\n'
-    $normalized = $normalized -replace '(?i)</color>[ \t]+(?=<color=#ff0000>)', '</color>\n\n'
+    $normalized = $normalized -replace '(?i)</color>[ \t]+(?=<color=#(?:ff0000|e62e00|e20000|e51717|cc1c12|ff0d00|d80404|e11919))', '</color>\n\n'
     $normalized = $normalized -replace '</color>[ \t]+(#武器:)', '</color>\n$1'
     $numberPattern = '-?\d+(?:\.\d+)?'
     $yellowPattern = '(?i)<color=(?<color>#[0-9a-f]{6,8})>(?<body>.*?)</color>'
@@ -50,7 +51,7 @@ function Format-UnitDetail([string]$Value) {
     foreach ($candidate in [regex]::Matches($normalized, $yellowPattern, [Text.RegularExpressions.RegexOptions]::Singleline)) {
         if (($candidate.Groups['body'].Value.IndexOf('<b>数值', [StringComparison]::Ordinal) -ge 0 -or
              $candidate.Groups['body'].Value.IndexOf('<b>位置', [StringComparison]::Ordinal) -ge 0) -and
-            $candidate.Groups['color'].Value -match '(?i)^#(?:ffcc00|ffef00|f0ff00)$') {
+            $candidate.Groups['color'].Value -match '(?i)^#(?:ffcc00|ffef00|f0ff00|ffff00)$') {
             $yellow = $candidate
             break
         }
@@ -111,7 +112,7 @@ function Format-UnitDetail([string]$Value) {
         $rowGap = ' ' * ([Math]::Max(1, $labelWidth - (Get-DisplayWidth $row.Label) + 1))
         $bodyLines += "\n<b>$($row.Label)</b>" + $rowGap + (($rowCells -join (' ' * $columnGap)).TrimEnd())
     }
-    $table = '<align=left>' + $table + $bodyLines + '</align>'
+    $table = '<align=\"left\">' + $table + $bodyLines + '</align>'
     $prefix = $body.Substring(0, $header.Index).Trim()
     $prefix = $prefix -replace '^(?:\\n|<br>)+', '' -replace '(?:\\n|<br>)+$', '' -replace '[ \t]+', ' '
     $prefix = [regex]::Replace($prefix, '[ \t]*(<b>结构\b)', '\n$1')
@@ -125,13 +126,10 @@ function Update-LocalizationJson([string]$Path) {
     $lines = [IO.File]::ReadAllLines($Path, [Text.Encoding]::UTF8)
     $changed = $false
     for ($index = 0; $index -lt $lines.Count; $index++) {
-        if ($lines[$index].Contains('<align="left">')) {
-            $lines[$index] = $lines[$index].Replace('<align="left">', '<align=left>')
-            $changed = $true
-        }
         $match = [regex]::Match($lines[$index], '^(?<indent>\s*)"CULTURE_ZH_CN"\s*:\s*"(?<value>(?:[^"\\]|\\.)*)"(?<tail>\s*,?)\s*$')
         if (-not $match.Success) { continue }
         $value = Format-UnitDetail $match.Groups['value'].Value
+        $value = $value.Replace('<align=left>', '<align=\"left\">').Replace('<align="left">', '<align=\"left\">')
         if ($value -eq $match.Groups['value'].Value) { continue }
         $lines[$index] = $match.Groups['indent'].Value + '"CULTURE_ZH_CN": "' + $value + '"' + $match.Groups['tail'].Value
         $changed = $true
@@ -160,6 +158,7 @@ $csvChanged = $false
 for ($index = 0; $index -lt $csvLines.Count; $index++) {
     try {
         $value = Format-UnitDetail $csvLines[$index]
+        $value = $value.Replace('<align=left>', '<align=\"left\">').Replace('<align="left">', '<align=\"left\">')
     } catch {
         $script:failedFields++
         Write-Warning ("单位详情表格修复跳过 CSV 行 {0}: {1}" -f ($index + 1), $_.Exception.Message)
@@ -173,6 +172,25 @@ for ($index = 0; $index -lt $csvLines.Count; $index++) {
 if ($csvChanged) {
     [IO.File]::WriteAllLines($CsvPath, $csvLines, (New-Object Text.UTF8Encoding($false)))
     $changedFiles++
+}
+
+$remainingSentinels = 0
+$invalidTableAlignment = 0
+foreach ($line in [IO.File]::ReadAllLines($CsvPath, [Text.Encoding]::UTF8)) {
+    if ($line.Contains('<<NL>')) { $remainingSentinels++ }
+    if ($line -match '<b>數值' -and $line -match '<color=#(?:ffcc00|ffef00|f0ff00|ffff00)>' -and
+        -not $line.Contains('<align=\"left\">') -and -not $line.Contains('<align="left">')) { $invalidTableAlignment++ }
+}
+foreach ($file in Get-ChildItem -LiteralPath $ModsPath -Recurse -File -Filter '*.json') {
+    $jsonLines = [IO.File]::ReadAllLines($file.FullName, [Text.Encoding]::UTF8)
+    foreach ($line in $jsonLines) {
+        if ($line.Contains('<<NL>')) { $remainingSentinels++ }
+        if ($line -match '<b>數值' -and $line -match '<color=#(?:ffcc00|ffef00|f0ff00|ffff00)>' -and
+            -not $line.Contains('<align=\"left\">') -and -not $line.Contains('<align="left">')) { $invalidTableAlignment++ }
+    }
+}
+if ($remainingSentinels -gt 0 -or $invalidTableAlignment -gt 0) {
+    throw ("排版复核失败: 换行哨兵残留={0} 黄色表格缺少左对齐={1}" -f $remainingSentinels, $invalidTableAlignment)
 }
 
 Write-Host ("单位详情表格修复: files={0} failed={1}" -f $changedFiles, $script:failedFields)

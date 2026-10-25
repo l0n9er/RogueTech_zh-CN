@@ -2492,7 +2492,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "{TEAM_TAR.FactionDef.Name}'s incursions have been escalating, and a massive force is gathering to deliver a decisive strike and destroy all of {TEAM_EMP.FactionDef.Name}'s fortifications in the area.  We've been hired to slow them down, taking the brunt of the attack upfront.\n\r\nThe {TEAM_EMP.FactionDef.Demonym}'s second-string units have been deployed to support us.\n\r\n <b><color=#e51717>Defence-in-Depth can be extremely long, come prepared for extended combat!</color></b>",
-        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Name}的侵犯不断升级，一支庞大部队正在集结，准备发动决定性打击、摧毁{TEAM_EMP.FactionDef.Name}在该地区的所有工事。我们受雇拖慢他们，正面承受攻击的主力。\n\n{TEAM_EMP.FactionDef.Demonym}的二线部队已被派来支援我们。\n<<NL> <b><color=#e51717>纵深防御可能极其漫长，请为持久战斗做好准备！</color></b>"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Name}的侵犯不断升级，一支庞大部队正在集结，准备发动决定性打击、摧毁{TEAM_EMP.FactionDef.Name}在该地区的所有工事。我们受雇拖慢他们，正面承受攻击的主力。\n\n{TEAM_EMP.FactionDef.Demonym}的二线部队已被派来支援我们。\n\n <b><color=#e51717>纵深防御可能极其漫长，请为持久战斗做好准备！</color></b>"
       }
     },
     {
@@ -2700,7 +2700,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "{TEAM_EMP.FactionDef.Name} has been pulling back their forces in large numbers after taking heavy casualties.  The last remaining bases are being kept online as a decoy, so the bulk of their troops are retreating without being attacked.  Our task is to create a diversion, with no reinforcements coming from {TEAM_EMP.FactionDef.Demonym}'s.\n\r\nBe advised that the {TEAM_TAR.FactionDef.Name} are sending a massive force, we're on our own here; save for some stationary turrets.\n\r\n <b><color=#e51717>Defence-in-Depth can be extremely long, come prepared for extended combat!</color></b>",
-        "CULTURE_ZH_CN": "{TEAM_EMP.FactionDef.Name}在遭受重大伤亡后一直在大量撤军。最后剩下的基地被保持运转作为诱饵，好让他们的主力在不被攻击的情况下撤退。我们的任务是制造一次牵制，而{TEAM_EMP.FactionDef.Demonym}不会给我们派增援。\n\n请注意，{TEAM_TAR.FactionDef.Name}正派出一支庞大部队，我们在这里只能靠自己；除了一些固定炮塔。\n<<NL> <b><color=#e51717>纵深防御可能极其漫长，请为持久战斗做好准备！</color></b>"
+        "CULTURE_ZH_CN": "{TEAM_EMP.FactionDef.Name}在遭受重大伤亡后一直在大量撤军。最后剩下的基地被保持运转作为诱饵，好让他们的主力在不被攻击的情况下撤退。我们的任务是制造一次牵制，而{TEAM_EMP.FactionDef.Demonym}不会给我们派增援。\n\n请注意，{TEAM_TAR.FactionDef.Name}正派出一支庞大部队，我们在这里只能靠自己；除了一些固定炮塔。\n\n <b><color=#e51717>纵深防御可能极其漫长，请为持久战斗做好准备！</color></b>"
       }
     },
     {
@@ -3564,7 +3564,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "{TEAM_EMP.FactionDef.Demonym} intelligence reports a massive {TEAM_TAR.FactionDef.Demonym} force advancing on several recently captured bases following their successful occupation.  They'll almost certainly attempt to reclaim --- or even destroy --- the sites.  The main {TEAM_EMP.FactionDef.Demonym} forces have already reached the neutral zone and are doubling back, but they won't make it in time to stop the initial assault.\n\r\nWe've been hired to engage the enemy and delay their attack long enough for the main forces to return.\n\r\n <b><color=#e51717>Defence-in-Depth can be extremely long, come prepared for extended combat!</color></b>\n\r\n\r\n\r\n\r\n\t<i><color=#99ebff>A mighty host of foes advances upon the captured fortresses, intent on ruin.\n\tThe main army hastens,\n\tbut shall not reach the walls ere the first clash.\n\tWe are charged to hold and harry the enemy,\n\tthat the returning force may smite them in full strength.\n</color></i>",
-        "CULTURE_ZH_CN": "{TEAM_EMP.FactionDef.Demonym}情报报告，一支庞大的{TEAM_TAR.FactionDef.Demonym}部队正向着几处刚被成功占领的基地推进。他们几乎肯定会试图夺回——甚至摧毁——这些地点。{TEAM_EMP.FactionDef.Demonym}主力部队已经抵达中立区并正在折返，但他们赶不上阻止首轮进攻。\n\n我们受雇去迎击敌人，把他们的进攻拖到主力部队回返为止。\n<<NL> <b><color=#e51717>纵深防御可能极其漫长，请为持久战斗做好准备！</color></b>\n\n\n<<NL>　<i><color=#99ebff>一支强大的敌军正扑向被夺取的堡垒，意在毁灭。\n　主力正在赶回，\n　却无法在首次交锋前抵达城墙。\n　我们受命坚守并袭扰敌军，\n　好让回返之师能以全力痛击他们。\n</color></i>"
+        "CULTURE_ZH_CN": "{TEAM_EMP.FactionDef.Demonym}情报报告，一支庞大的{TEAM_TAR.FactionDef.Demonym}部队正向着几处刚被成功占领的基地推进。他们几乎肯定会试图夺回——甚至摧毁——这些地点。{TEAM_EMP.FactionDef.Demonym}主力部队已经抵达中立区并正在折返，但他们赶不上阻止首轮进攻。\n\n我们受雇去迎击敌人，把他们的进攻拖到主力部队回返为止。\n\n <b><color=#e51717>纵深防御可能极其漫长，请为持久战斗做好准备！</color></b>\n\n\n\n　<i><color=#99ebff>一支强大的敌军正扑向被夺取的堡垒，意在毁灭。\n　主力正在赶回，\n　却无法在首次交锋前抵达城墙。\n　我们受命坚守并袭扰敌军，\n　好让回返之师能以全力痛击他们。\n</color></i>"
       }
     },
     {
@@ -12404,7 +12404,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Fierce fighting has erupted in {TGT_SYSTEM.Name}, and our defenses won't hold without immediate support.  We're contracting anyone who can get boots on the ground now.\n\n <b><color=#e51717>Warzones can be extremely long, come prepared for extended combat!</color></b>",
-        "CULTURE_ZH_CN": "{TGT_SYSTEM.Name}爆发了激烈战斗，若不立即支援，我们的防线撑不住。我们正在签约任何能立刻派兵落地的人。\n<<NL> <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
+        "CULTURE_ZH_CN": "{TGT_SYSTEM.Name}爆发了激烈战斗，若不立即支援，我们的防线撑不住。我们正在签约任何能立刻派兵落地的人。\n\n <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
       }
     },
     {
@@ -12588,7 +12588,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Even though we've had some wins in other parts of the {TEAM_EMP.FactionDef.Demonym} region, {TEAM_TAR.FactionDef.Name}'s stepping up their game.  Right now, several units have arrived at {TGT_SYSTEM.Name}, and it's looking like it might fall into their hands.  Your job is to back up the {TEAM_EMP.FactionDef.Name}'s lance and hold the line for as long as you can.  Reinforcements are on the way, but we need to buy some time.\n\n <b><color=#e51717>Warzones can be extremely long, come prepared for extended combat!</color></b>",
-        "CULTURE_ZH_CN": "尽管我们在{TEAM_EMP.FactionDef.Demonym}区域的其他地方取得了一些胜利，{TEAM_TAR.FactionDef.Name}正在加大力度。眼下，若干单位已抵达{TGT_SYSTEM.Name}，看来它可能会落入他们手中。你的任务是支援{TEAM_EMP.FactionDef.Name}的分队，尽可能久地守住阵地。增援正在赶来，但我们需要争取一些时间。\n<<NL> <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
+        "CULTURE_ZH_CN": "尽管我们在{TEAM_EMP.FactionDef.Demonym}区域的其他地方取得了一些胜利，{TEAM_TAR.FactionDef.Name}正在加大力度。眼下，若干单位已抵达{TGT_SYSTEM.Name}，看来它可能会落入他们手中。你的任务是支援{TEAM_EMP.FactionDef.Name}的分队，尽可能久地守住阵地。增援正在赶来，但我们需要争取一些时间。\n\n <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
       }
     },
     {
@@ -13100,7 +13100,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "{TEAM_TAR.FactionDef.Name} have been pushing into this region, so there are big bounties out on them. Take out as many as you can --- the more you drop, the bigger your payout.\n\n <b><color=#e51717>Warzones can be extremely long, come prepared for extended combat!</color></b>",
-        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Name}一直在推进这一地区，所以对他们开出的赏金很高。尽可能多干掉一些——你打掉的越多，拿到的钱越多。\n<<NL> <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Name}一直在推进这一地区，所以对他们开出的赏金很高。尽可能多干掉一些——你打掉的越多，拿到的钱越多。\n\n <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
       }
     },
     {
@@ -13276,7 +13276,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Commander, a battalion sporting {TEAM_TAR.FactionDef.Name}'s colors are operating covertly in {TGT_SYSTEM.Name}.  Your mission: draw their focus, hold them in place while we close their escape.  Disrupt, disable, and buy us time --- extraction to follow. We will send an allied force to support your evac as soon as you draw enough enemy attention.\n\n <b><color=#e51717>Warzones can be extremely long, come prepared for extended combat!</color></b>",
-        "CULTURE_ZH_CN": "指挥官，一个打着{TEAM_TAR.FactionDef.Name}旗帜的营正在{TGT_SYSTEM.Name}秘密活动。你的任务：吸引他们的注意力，把他们钉在原地，而我们封住他们的退路。扰乱、瘫痪、为我们争取时间——随后撤离。一旦你吸引到足够的敌军注意，我们会派一支友军来支援你的撤离。\n<<NL> <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
+        "CULTURE_ZH_CN": "指挥官，一个打着{TEAM_TAR.FactionDef.Name}旗帜的营正在{TGT_SYSTEM.Name}秘密活动。你的任务：吸引他们的注意力，把他们钉在原地，而我们封住他们的退路。扰乱、瘫痪、为我们争取时间——随后撤离。一旦你吸引到足够的敌军注意，我们会派一支友军来支援你的撤离。\n\n <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
       }
     },
     {
@@ -13644,7 +13644,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "{TEAM_EMP.FactionDef.Demonym}'s area in {TGT_SYSTEM.Name} just got hit with a surprise attack, and right now, the only thing standing in the way is a single lance.  Our main forces are too far out to help in time, so we're calling on anyone willing to step up and lend a hand.\n\n <b><color=#e51717>Warzones can be extremely long, come prepared for extended combat!</color></b>",
-        "CULTURE_ZH_CN": "{TGT_SYSTEM.Name}中{TEAM_EMP.FactionDef.Demonym}的区域刚遭到突袭，而眼下挡在路上的只有一支分队。我们的主力部队太远，来不及救援，所以我们在号召任何愿意挺身相助的人。\n<<NL> <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
+        "CULTURE_ZH_CN": "{TGT_SYSTEM.Name}中{TEAM_EMP.FactionDef.Demonym}的区域刚遭到突袭，而眼下挡在路上的只有一支分队。我们的主力部队太远，来不及救援，所以我们在号召任何愿意挺身相助的人。\n\n <b><color=#e51717>战区可能极其漫长，请为持久战斗做好准备！</color></b>"
       }
     },
     {
