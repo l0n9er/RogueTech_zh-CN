@@ -350,6 +350,11 @@ if ([IO.Directory]::Exists($dataSrc)) {
     Ok ("" + $dataCnt + " 个文件")
 } else { Warn "包内缺少 Mods 目录，已跳过" }
 
+# 少数旧版 RT 文件曾把无法解码的字符写成 U+FFFD。只按已确认的英文
+# 上下文精确修复，未知残片会让安装失败并列出文件，避免静默污染数据。
+RunTool 'repair-runtime-corruption.ps1' @('-gameRoot', $gameRoot,
+                                           '-backupRoot', (Join-Path $backupDir 'runtime-corruption'))
+
 # 用户额外安装的 MWSphere 语音包不在发布包内；若存在则仅补写 credits 的
 # CULTURE_ZH_CN，并将原文件纳入本次备份。没有该语音包时安全跳过。
 RunTool 'apply-voicepacks.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),

@@ -1,36 +1,36 @@
 @echo off
 chcp 65001 >nul
-title BATTLETECH / RogueTech ¼òÌåÖÐÎÄ²¹¶¡
+title BATTLETECH / RogueTech ç®€ä½“ä¸­æ–‡è¡¥ä¸
 cd /d "%~dp0"
 
 echo.
-echo  BATTLETECH / RogueTech ¼òÌåÖÐÎÄ²¹¶¡
+echo  BATTLETECH / RogueTech ç®€ä½“ä¸­æ–‡è¡¥ä¸
 echo  ----------------------------------------
-echo  °²×°Ç°ÇëÍêÈ«ÍË³öÓÎÏ·ºÍ RogueLauncher¡£
-echo  ÇëÃ÷È·Ñ¡ÔñÄãµÄÓÎÏ·°æ±¾£¬Steam ºÍ GOG ²»ÄÜ»ìÓÃ¡£
-echo  Ô¤¼ÆÐèÒª 3~4 ·ÖÖÓ£¬ÇëÎð¹Ø±Õ´°¿Ú¡£
+echo  å®‰è£…å‰è¯·å®Œå…¨é€€å‡ºæ¸¸æˆå’Œ RogueLauncherã€‚
+echo  è¯·æ˜Žç¡®é€‰æ‹©ä½ çš„æ¸¸æˆç‰ˆæœ¬ï¼ŒSteam å’Œ GOG ä¸èƒ½æ··ç”¨ã€‚
+echo  é¢„è®¡éœ€è¦ 3~4 åˆ†é’Ÿï¼Œè¯·å‹¿å…³é—­çª—å£ã€‚
 echo.
 echo  [1] Steam
 echo  [2] GOG
 echo.
-choice /C 12 /N /M "ÇëÑ¡Ôñ°æ±¾: "
+choice /C 12 /N /M "è¯·é€‰æ‹©ç‰ˆæœ¬: "
 if errorlevel 2 (set EDITION=GOG) else (set EDITION=Steam)
-echo  ÒÑÑ¡Ôñ: %EDITION%
+echo  å·²é€‰æ‹©: %EDITION%
 echo.
-echo  °´ÈÎÒâ¼ü¿ªÊ¼°²×°...
+echo  æŒ‰ä»»æ„é”®å¼€å§‹å®‰è£…...
 pause >nul
 
 echo.
-echo  ÕýÔÚÆô¶¯°²×°½Å±¾£¬ÇëÉÔºò...
+echo  æ­£åœ¨å¯åŠ¨å®‰è£…è„šæœ¬ï¼Œè¯·ç¨å€™...
 echo.
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0¹¤¾ß\°²×°.ps1" -edition "%EDITION%"
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0å·¥å…·\å®‰è£….ps1" -edition "%EDITION%"
 set RC=%ERRORLEVEL%
 
 echo.
 if "%RC%"=="0" (
-    echo  [Íê³É] ºº»¯°²×°ÒÑÍê³É£¬ÇëÖØÐÂÆô¶¯ÓÎÏ·¡£
+    echo  [å®Œæˆ] æ±‰åŒ–å®‰è£…å·²å®Œæˆï¼Œè¯·é‡æ–°å¯åŠ¨æ¸¸æˆã€‚
 ) else (
-    echo  [Ê§°Ü] °²×°Î´Íê³É£¨·µ»ØÂë %RC%£©¡£Çë²é¿´´°¿ÚÖÐµÄ´íÎóºÍ install.log¡£
+    echo  [å¤±è´¥] å®‰è£…æœªå®Œæˆï¼ˆè¿”å›žç  %RC%ï¼‰ã€‚è¯·æŸ¥çœ‹çª—å£ä¸­çš„é”™è¯¯å’Œ install.logã€‚
 )
 echo.
 pause

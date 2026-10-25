@@ -17,7 +17,7 @@ UNRES = BACKUP / "focus-unresolved-top100.jsonl"
 GAME = Path(r"H:\SteamLibrary\steamapps\common\BATTLETECH")
 
 FIELDS = {"Details", "YangsThoughts", "StockRole", "UIName", "Name", "Description"}
-BAD = re.compile(r"[�]|(?:^|\b)(?:Powered\s+by|The\s+|This\s+variant|is\s+armed\s+with|was\s+designed|and\s+a\s+pair\s+of|Left\s+Lower|Right\s+Lower|Quirk:|Drop\s+Cost\s+Multiplier)(?:\b|:)", re.I)
+BAD = re.compile(r"\ufffd|(?:^|\b)(?:Powered\s+by|The\s+|This\s+variant|is\s+armed\s+with|was\s+designed|and\s+a\s+pair\s+of|Left\s+Lower|Right\s+Lower|Quirk:|Drop\s+Cost\s+Multiplier)(?:\b|:)", re.I)
 
 def clean(v: str) -> bool:
     if not isinstance(v, str) or not v.strip() or "\ufffd" in v:
@@ -119,7 +119,7 @@ def main():
             unresolved.append({"file": fn, "field": field, "status": "no_exact_translation", "source": source, "current": rec.get("value", "")})
     OUT.write_text("\n".join(json.dumps(x, ensure_ascii=False) for x in results) + "\n", encoding="utf-8")
     # 优先把包含整句英文、乱码、候选最长的条目交给模型；只输出前100条。
-    unresolved.sort(key=lambda x: ("�" not in x.get("current", ""), -len(x.get("source", ""))))
+    unresolved.sort(key=lambda x: ("\ufffd" not in x.get("current", ""), -len(x.get("source", ""))))
     UNRES.write_text("\n".join(json.dumps(x, ensure_ascii=False) for x in unresolved[:100]) + "\n", encoding="utf-8")
     print(json.dumps({"focus_unique": len(seen), "recovered": len(results), "unresolved": len(unresolved), "output": str(OUT), "top100": str(UNRES)}, ensure_ascii=False))
 

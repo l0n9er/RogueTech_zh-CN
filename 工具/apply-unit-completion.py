@@ -118,7 +118,7 @@ def good_translation(source: str, translation: str) -> tuple[bool, str]:
         return False, "empty"
     if not HAN.search(translation):
         return False, "no_chinese"
-    if "\ufffd" in translation or "�" in translation:
+    if "\ufffd" in translation:
         return False, "replacement_character"
     if tokens(source) != tokens(translation):
         return False, "token_mismatch"

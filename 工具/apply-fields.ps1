@@ -78,6 +78,46 @@ if (-not $DryRun) {
     $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
     $ser.MaxJsonLength = [int]::MaxValue
 }
+$fieldSet = New-Object 'System.Collections.Generic.HashSet[string]'
+foreach ($field in ($fields -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ })) {
+    [void]$fieldSet.Add($field)
+}
+
+function ResolveTranslation([string]$value) {
+    if ($script:map.ContainsKey($value)) { return $script:map[$value] }
+    if ($script:csvMap.Count -gt 0) {
+        $ck = CsvKey $value
+        if ($script:csvMap.ContainsKey($ck)) { return $script:csvMap[$ck] }
+    }
+    return $null
+}
+
+function DecodeMappedValue([string]$value) {
+    if (-not $script:jsonValue) { return $value }
+    try { return $ser.DeserializeObject('"' + $value + '"') }
+    catch { return $value.Replace('\\"', '"').Replace('\\n', "`n").Replace('\\r', "`r").Replace('\\t', "`t") }
+}
+
+function ReplaceStructuredJson($node) {
+    if ($node -is [System.Collections.IDictionary]) {
+        foreach ($key in @($node.Keys)) {
+            $value = $node[$key]
+            if ($value -is [string] -and $fieldSet.Contains([string]$key)) {
+                $zh = ResolveTranslation $value
+                if ($null -ne $zh) {
+                    $node[$key] = DecodeMappedValue $zh
+                    $script:stats.repl++
+                }
+            } else {
+                ReplaceStructuredJson $value
+            }
+        }
+    } elseif ($node -is [System.Collections.IEnumerable] -and -not ($node -is [string])) {
+        foreach ($item in @($node)) { ReplaceStructuredJson $item }
+    }
+    return $node
+}
+
 $stats = @{ files = 0; changed = 0; repl = 0 }
 $script:map = $map
 $script:csvMap = $csvMap
@@ -116,6 +156,7 @@ foreach ($f in $files) {
     $stats.files++
     $orig = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)
     if ($orig -notmatch ('"(' + $fldAlt + ')"')) { continue }
+    $regexReplBefore = $script:stats.repl
     $new = $rx.Replace($orig, {
         param($m)
         $fld = $m.Groups[1].Value
@@ -149,7 +190,20 @@ foreach ($f in $files) {
     })
     if ($new -eq $orig) { continue }
     if (-not $DryRun) {
-        try { [void]$ser.DeserializeObject($new) } catch { Write-Host ("跳过(JSON 无效): " + $f.Name); continue }
+        try { [void]$ser.DeserializeObject($new) }
+        catch {
+            try {
+                $script:stats.repl = $regexReplBefore
+                $structured = $ser.DeserializeObject($orig)
+                $structured = ReplaceStructuredJson $structured
+                $new = $ser.Serialize($structured)
+                [void]$ser.DeserializeObject($new)
+            } catch {
+                $script:stats.repl = $regexReplBefore
+                Write-Host ("跳过(JSON 无效): " + $f.Name)
+                continue
+            }
+        }
         $rel = $f.FullName.Substring($mods.Length).TrimStart($BS)
         $bak = Join-Path $backupRoot $rel
         $d = Split-Path $bak -Parent
