@@ -6,6 +6,7 @@
     [string]$fragments = "",
     [string]$extraDict = "",
     [string]$repairDict = "",
+    [string]$residualDict = "",
     [string]$fileList = "",
     [switch]$DryRun
 )
@@ -21,6 +22,7 @@ if ([string]::IsNullOrWhiteSpace($backupRoot)) { $backupRoot = Join-Path $packRo
 if ([string]::IsNullOrWhiteSpace($csv)) { $csv = Join-Path $packRoot 'strings_zh-CN.csv' }
 if ([string]::IsNullOrWhiteSpace($fragments)) { $fragments = Join-Path $PSScriptRoot 'dict-fragments.tsv' }
 if ([string]::IsNullOrWhiteSpace($repairDict)) { $repairDict = Join-Path $PSScriptRoot 'dict-repair.tsv' }
+if ([string]::IsNullOrWhiteSpace($residualDict)) { $residualDict = Join-Path $PSScriptRoot 'dict-residual-mixed.tsv' }
 $BS = [string][char]92
 
 # 防止半翻译结果再次写入游戏：这类译文通常只把英文连接词替换成中文，
@@ -118,8 +120,9 @@ foreach ($l in $rawLines) {
 }
 
 $repairCount = 0
-if ([IO.File]::Exists($repairDict)) {
-    foreach ($line in [IO.File]::ReadAllLines($repairDict, [Text.Encoding]::UTF8)) {
+$repairFiles = @($repairDict, $residualDict) | Where-Object { [IO.File]::Exists($_) }
+foreach ($repairFile in $repairFiles) {
+    foreach ($line in [IO.File]::ReadAllLines($repairFile, [Text.Encoding]::UTF8)) {
         if ([string]::IsNullOrWhiteSpace($line)) { continue }
         $i = $line.IndexOf("`t")
         if ($i -lt 1) { continue }
