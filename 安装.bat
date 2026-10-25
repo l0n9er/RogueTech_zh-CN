@@ -1,5 +1,5 @@
 @echo off
-chcp 936 >nul
+chcp 65001 >nul
 title BATTLETECH / RogueTech 简体中文补丁
 cd /d "%~dp0"
 
@@ -23,7 +23,7 @@ pause >nul
 echo.
 echo  正在启动安装脚本，请稍候...
 echo.
-"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "%~dp0工具\安装.ps1" -edition "%EDITION%"
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0工具\安装.ps1" -edition "%EDITION%"
 set RC=%ERRORLEVEL%
 
 echo.
@@ -33,4 +33,4 @@ if "%RC%"=="0" (
     echo  [失败] 安装未完成（返回码 %RC%）。请查看窗口中的错误和 install.log。
 )
 echo.
-pause
+pause

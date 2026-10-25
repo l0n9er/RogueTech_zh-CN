@@ -8,7 +8,7 @@
 RogueTech 模组（含 BATTLETECH 本体）的简体中文补丁。
 术语以官方中文表与项目术语表（terms-13908.json）为准。
 
-  · 翻译总表 strings_zh-CN.csv：65,310 行 / 64,933 键
+  · 翻译总表 strings_zh-CN.csv：68,745 行 / 68,369 键
   · 机甲、战车、战甲的名称与描述（Details / YangsThoughts / StockRole）
   · MechAffinity 亲和面板（名称与描述）
   · 各模组的本地化表、装备分类显示名、AI 能力与特征说明

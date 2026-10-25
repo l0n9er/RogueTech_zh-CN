@@ -3,7 +3,7 @@
     # 必须明确指定 Steam 或 GOG；未指定时由脚本提示选择。
     [string]$edition = '',
     # 可选: 月光石头新版汉化包的数据目录(…\battletech-trans\resources\data)。
-    # 指定后会从中增量合并本包缺少的条目(主要是运行时拼接的载具整段描述)。
+    # 指定后会以月光石头 RT 表覆盖同键译文，并保留本包独有条目。
     [string]$moonstone = ""
 )
 $ErrorActionPreference = 'Stop'
@@ -31,19 +31,12 @@ $script:lastGroup = 0
 $script:installLog = $null
 $script:installerPath = $PSCommandPath
 $script:modsJsonFileList = ''
-$script:powershellRuntime = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
-if (-not [IO.File]::Exists($script:powershellRuntime)) { $script:powershellRuntime = (Get-Command powershell.exe -ErrorAction SilentlyContinue).Source }
-if (-not $script:powershellRuntime -or -not [IO.File]::Exists($script:powershellRuntime)) { throw '找不到系统 Windows PowerShell，无法继续安装。' }
 
 # 控制台与子 PowerShell 输出统一采用 UTF-8，避免中文工具输出在父进程中乱码。
 
 try {
     [Console]::OutputEncoding = [Text.Encoding]::UTF8
     [Console]::InputEncoding = [Text.Encoding]::UTF8
-    $OutputEncoding = New-Object Text.UTF8Encoding($false)
-    # 子 PowerShell 继承当前控制台代码页；统一为 UTF-8，避免中文日志被按
-    # GBK 解码后写成“鎺у埗瀛楃”一类乱码。
-    & chcp.com 65001 | Out-Null
     [Console]::TreatControlCAsInput = $false
 } catch { }
 
@@ -147,24 +140,6 @@ $script:installLog = Join-Path $backupDir 'install.log'
 Say (" 备份目录: backup\" + $stamp)
 Say (" 安装日志: backup\" + $stamp + "\install.log")
 
-# 目标机可以启用不同 DLC/模组组合；这些内容集合本身的英文或历史格式问题
-# 不能阻止安装。先记录安装前基线，最终校验只拦截本次安装新产生的问题。
-$script:qaBaselineRows = @()
-$script:qaBaselineKeys = New-Object 'System.Collections.Generic.HashSet[string]'
-$qaUnitBaseline = Join-Path $PSScriptRoot 'qa-unit-fields.ps1'
-if ([IO.File]::Exists($qaUnitBaseline)) {
-    $qaBefore = Join-Path $backupDir 'unit-fields-qa-before.tsv'
-    & $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File $qaUnitBaseline -mods (Join-Path $gameRoot 'Mods') -out $qaBefore | Out-Null
-    $qaBeforeRows = @(Import-Csv -LiteralPath $qaBefore -Delimiter "`t" -ErrorAction SilentlyContinue)
-    $script:qaBaselineRows = $qaBeforeRows
-    foreach ($row in $qaBeforeRows) {
-        # 不比较 Status/Sample：安装器可能改变同一条已有问题的分类或具体文本，
-        # 不能因此把 DLC/模组原有内容差异判成失败。
-        [void]$script:qaBaselineKeys.Add(([string]$row.File + "`t" + [string]$row.Field))
-    }
-    Ok ("安装前单位字段基线: " + $qaBeforeRows.Count + " 条（DLC/模组差异不作为失败）")
-}
-
 # 汉化 DLL 与非 DLL 资源的固定清单。先定义清单，再做一次完整预检查，
 # 确保任何游戏文件被覆盖前就能发现安装包不完整。
 $dllList = @(
@@ -194,13 +169,6 @@ $dllList = @(
     'Mods\Core\StrategicOperations\StrategicOperations.dll',
     'Mods\Core\TisButAScratch\TisButAScratch.dll',
     'Mods\WarTechIIC\WarTechIIC.dll'
-)
-# 某些整合包会额外安装 ArmorRepair / LewdableTanks。它们把维修弹窗与
-# #Weapons: 直接写在 DLL 字符串中，若目标机存在对应模组则一并覆盖修复版；
-# 没有这些模组时安全跳过，不把可选依赖变成安装前置条件。
-$optionalPatchedDllList = @(
-    'Mods\Options\ArmorRepair\ArmorRepair.dll',
-    'Mods\Core\LewdableTanks\LewdableTanks.dll'
 )
 $assetList = @(
     'BattleTech_Data\StreamingAssets\font',
@@ -256,9 +224,7 @@ function RunTool($script, $extraArgs) {
     $arg = @('-NoProfile','-ExecutionPolicy','Bypass','-File', $sp) + $extraArgs
     # 这些工具本来各自递归枚举 Mods。复用安装时生成的文件清单，避免每个
     # 子进程都重新遍历数万文件；工具仍保留自身字段与路径过滤规则。
-    # fold-apply 使用自己的并行文件发现；传入安装索引会在子进程参数绑定时
-    # 变成空列表，导致字段阶段静默处理 0 个文件。
-    $indexedTools = @('apply-fields.ps1','apply-words.ps1','apply-norm.ps1','apply-tags.ps1','clean-metadata.ps1')
+    $indexedTools = @('fold-apply.ps1','apply-fields.ps1','apply-words.ps1','apply-norm.ps1','apply-tags.ps1','clean-metadata.ps1')
     if ($script -in $indexedTools -and -not [string]::IsNullOrWhiteSpace($script:modsJsonFileList) -and
         -not ($extraArgs -contains '-fileList')) {
         $arg += @('-fileList', $script:modsJsonFileList)
@@ -266,7 +232,7 @@ function RunTool($script, $extraArgs) {
     Write-Host ("      正在处理: " + $script + " ...") -ForegroundColor DarkGray
     LogLine ((Get-Date -Format 'HH:mm:ss') + " RUN " + $script)
     $timer = [Diagnostics.Stopwatch]::StartNew()
-    $output = @(& $script:powershellRuntime @arg 2>&1)
+    $output = @(& powershell @arg 2>&1)
     $rc = $LASTEXITCODE
     $timer.Stop()
     foreach ($line in $output) {
@@ -275,15 +241,6 @@ function RunTool($script, $extraArgs) {
     }
     LogLine ((Get-Date -Format 'HH:mm:ss') + " DONE " + $script + " " + [math]::Round($timer.Elapsed.TotalSeconds, 1) + "s")
     if ($rc -ne 0) { throw ($script + " 返回码 " + $rc) }
-}
-function RunBuiltinPsTool($script, $extraArgs) {
-    # 发布包面向普通玩家；运行时 CSV 修复与 QA 使用系统自带 PowerShell。
-    $native = switch ($script) {
-        'repair-runtime-csv.ps1' { 'repair-runtime-csv.ps1'; break }
-        'qa-runtime-csv.ps1' { 'qa-runtime-csv.ps1'; break }
-        default { throw ("不支持的内置工具: " + $script) }
-    }
-    RunTool $native $extraArgs
 }
 
 function AssertPackageInputs {
@@ -313,8 +270,6 @@ function AssertPackageInputs {
     $body = [IO.File]::ReadAllText($script:installerPath, [Text.Encoding]::UTF8)
     $refs = [regex]::Matches($body, "'([^']+\.(?:ps1|tsv))'") | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
     foreach ($rel in $refs) {
-        # 这些是安装过程生成到 backup 的报告名，不是包内输入词典。
-        if ($rel -in @('unit-fields-qa.tsv','unit-fields-qa-before.tsv','unit-fields-qa-summary.txt','mods-json-files.txt','coverage-summary.txt')) { continue }
         $p = Join-Path $PSScriptRoot $rel
         if (-not (Test-Path -LiteralPath $p)) { [void]$missing.Add($p) }
     }
@@ -414,19 +369,6 @@ foreach ($rel in $dllList) {
     if (($dllCnt % 10) -eq 0) { Write-Host ("      已处理 " + $dllCnt + " 个 DLL...") -ForegroundColor DarkGray }
 }
 Ok ("已写入 " + $dllCnt + " 个 DLL（" + $script:gameEdition + " 版）")
-$optionalDllCnt = 0
-foreach ($rel in $optionalPatchedDllList) {
-    $s = Join-Path $packRoot $rel
-    $d = Join-Path $gameRoot $rel
-    if (-not [IO.File]::Exists($s)) { continue }
-    if (-not [IO.File]::Exists($d)) {
-        Warn ("目标未安装可选模组，跳过: " + $rel)
-        continue
-    }
-    [void](BackupAndCopy $s $d $rel)
-    $optionalDllCnt++
-}
-if ($optionalDllCnt -gt 0) { Ok ("已写入 " + $optionalDllCnt + " 个可选运行时修复 DLL") }
 
 $assetCnt = 0
 foreach ($rel in $assetList) {
@@ -501,14 +443,6 @@ if ($movedModtekState -eq 0) { Ok "未发现 ModTek Cache/Database，跳过清�
 RunTool 'fix-launcher-safe.ps1' @('-backupRoot', $backupDir)
 Ok "完成"
 
-# 旧版本曾把 CSV 的 0x1F 分隔符直接写入 JSON Details，造成大量载具/机甲
-# 定义无法解析；所有后续词典处理器都会静默跳过这类文件。必须在建立索引
-# 和汉化前统一修复裸控制字符，确保全量定义都进入同一处理流程。
-Step 6 "修复 JSON 裸控制字符"
-RunTool 'sanitize-json.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                             '-backupRoot', (Join-Path $backupDir 'json-sanitize'))
-Ok "完成"
-
 # 建立本次安装的 Mods JSON 文件索引，供多个字段处理器复用。
 $script:modsJsonFileList = Join-Path $backupDir 'mods-json-files.txt'
 $modsRootForIndex = Join-Path $gameRoot 'Mods'
@@ -520,32 +454,11 @@ Ok ("已建立 JSON 文件索引：" + $jsonPaths.Count + " 个文件")
 # ---------- 7) 数据字段汉化 ----------
 Step 7 "汉化数据字段（Details / YangsThoughts / StockRole）"
 RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                           '-dict', (Join-Path $PSScriptRoot 'dict-unit-completion.tsv'),
-                           '-IncludeLocalization',
-                           # residual-mixed 放在第一个 extraDict，兼容 Windows PowerShell
-                           # 外部子进程对 string[] 参数的绑定顺序。
-                           '-extraDict', ((Join-Path $PSScriptRoot 'dict-residual-mixed.tsv'), (Join-Path $PSScriptRoot 'dict-mia-update.tsv'), (Join-Path $PSScriptRoot 'dict-all.tsv'), (Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'), (Join-Path $PSScriptRoot 'dict-unit-llm.tsv'), (Join-Path $PSScriptRoot 'dict-piratetech-unit.tsv') -join '|'),
-                           # 整段 LLM 译文必须参与安装；否则后续安装会重新
-                           # 用旧的半翻译词典覆盖已经修好的 Details。
+                           '-pairs', (Join-Path $PSScriptRoot 'dict-all.tsv'),
+                           '-repairDict', (Join-Path $PSScriptRoot 'dict-repair.tsv'),
+                           '-extraDict', (Join-Path $PSScriptRoot 'dict-details-direct.tsv'),
                            '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-defs'))
-RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                             '-pairs', (Join-Path $PSScriptRoot 'dict-mia-update.tsv'),
-                             '-fields', 'Name,UIName',
-                             '-pathLike', 'chassisdef_grandtitan,mechdef_grandtitan,chassisdef_lich,mechdef_lich,KineticDiplomacy,Superheavy_Omni_Plus,Optionals\Quicsell\Heatsink\Gear_Engine_ICE_XL_Quicsell,Core\RogueModuleTech\Primitive\Engines\Gear_Engine_XL_Quicsell',
-                             '-backupRoot', (Join-Path $packRoot 'backup\Mods-mia-update'))
-RunTool 'apply-rtconfig-zh.ps1' @('-file', (Join-Path $gameRoot 'Mods\RtConfig.xml'),
-                                  '-pairs', (Join-Path $PSScriptRoot 'dict-mia-update.tsv'),
-                                  '-backupRoot', (Join-Path $backupDir 'Mods'))
-RunTool 'repair-localization-json.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                                         '-pairs', (Join-Path $PSScriptRoot 'dict-mia-update.tsv'),
-                                         '-backupRoot', (Join-Path $backupDir 'localization-format'))
-RunTool 'apply-localization-missing.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                                          '-pairs', (Join-Path $PSScriptRoot 'dict-localization-missing.tsv'),
-                                          '-backupRoot', (Join-Path $backupDir 'localization-missing'))
-Ok "完成"
-RunTool 'normalize-unit-terms.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                                    '-backupRoot', (Join-Path $packRoot 'backup\Mods-unit-terms'))
 Ok "完成"
 
 # ---------- 8) 装备特性说明汉化 ----------
@@ -817,7 +730,7 @@ Ok "完成"
 
 # 载具的 Details 由 DLL 在运行时拼好(含 "#武器:" 段)后整段查表, 因此必须把
 # "整段描述" 作为 key 收录。这些条目来自月光石头新版汉化包, 随包分发总表已含;
-# 若用户把包放在工具同机目录, 也可用 -moonstone 指定源目录做增量合并。
+# 若用户把包放在工具同机目录, 也可用 -moonstone 指定源目录做同键覆盖合并。
 if (-not [string]::IsNullOrWhiteSpace($moonstone)) {
     OptionalStep 20 "合并月光石头新版条目"
     RunTool 'merge-moonstone.ps1' @('-source', $moonstone, '-csv', $csvDst) | Out-Null
@@ -865,19 +778,8 @@ RunTool 'apply-norm.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
 RunTool 'norm-csv.ps1' @('-csv', $csvDst)
 RunTool 'clean-metadata.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                '-backupRoot', (Join-Path $packRoot 'backup\Mods-metadata'))
-RunTool 'fix-literal-newlines.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
-                                    '-backupRoot', (Join-Path $backupDir 'literal-newlines'))
-# 富文本详情的动态特性/费用/限制段落与数值表必须在目标 CSV 和 Mods 上修复，
-# 仅改包内源文件不会影响本次安装完成后的实际显示。
-# 运行时整段条目由 CSV 查表，不会经过 JSON 字段 QA；安装到目标 CSV 后再做一次
-# 结构化修复，防止包内条目被旧版本覆盖或换行被压平。
-RunBuiltinPsTool 'repair-runtime-csv.ps1' @('-csv', $csvDst)
-RunTool 'fix-detail-richtext-linebreaks.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
-                                               '-CsvPath', $csvDst)
-RunTool 'fix-unit-detail-layout.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
-                                      '-CsvPath', $csvDst)
-RunBuiltinPsTool 'qa-runtime-csv.ps1' @('-csv', $csvDst,
-                                   '-out', (Join-Path $backupDir 'runtime-csv-qa.txt'))
+  RunTool 'fix-unit-detail-layout.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
+                                         '-CsvPath', $csvDst)
 Ok "完成"
 
 # ---------- 12) 校验 ----------
@@ -893,62 +795,10 @@ Ok ("翻译总表: " + $csvLine + " 行")
 # 一旦被译成中文(如 Quad -> 四足), 四足机甲的槽位限制会失效, 报
 # "过量 足部驱动器: 该单位在 左臂 中最多只能安装 0 个 / QuadIncompatible 无法与 四足机甲 搭配使用"
 # check-registry 发现问题会自动按基线还原(所以这里只提示, 不中断)
-& $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot 'check-registry.ps1') -mods (Join-Path $gameRoot 'Mods')
+& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot 'check-registry.ps1') -mods (Join-Path $gameRoot 'Mods')
 if ($LASTEXITCODE -ne 0) {
     Warn "检测到标识符被汉化（已自动还原），详见 backup\registry-check.txt"
 } else { Ok "注册表标识符正常" }
-
-# 全量单位字段审计：不再只看抽样型号。安装前已存在的英文/格式问题属于
-# 目标机 DLC/模组内容差异，只记录不拦截；本次安装新增的问题才阻止成功宣称。
-$qaUnit = Join-Path $PSScriptRoot 'qa-unit-fields.ps1'
-if ([IO.File]::Exists($qaUnit)) {
-    $qaReport = Join-Path $backupDir 'unit-fields-qa.tsv'
-    & $script:powershellRuntime -NoProfile -ExecutionPolicy Bypass -File $qaUnit -mods (Join-Path $gameRoot 'Mods') -out $qaReport
-    $qaRows = @(Import-Csv -LiteralPath $qaReport -Delimiter "`t" -ErrorAction SilentlyContinue)
-    $qaNewRows = @($qaRows | Where-Object {
-        $key = ([string]$_.File + "`t" + [string]$_.Field)
-        -not $script:qaBaselineKeys.Contains($key)
-    })
-    if ($qaNewRows.Count -gt 0) {
-        # 失败时直接显示分类计数和首批样本，用户无需在乱码窗口中猜测原因；
-        # 完整报告仍保存在备份目录，便于继续修复。
-        $qaSummary = Join-Path $backupDir 'unit-fields-qa-summary.txt'
-        $summary = New-Object 'System.Collections.Generic.List[string]'
-        [void]$summary.Add('单位字段 QA 失败摘要')
-        [void]$summary.Add(('目标 Mods: ' + (Join-Path $gameRoot 'Mods')))
-        [void]$summary.Add(('安装后报告行数: ' + $qaRows.Count))
-        [void]$summary.Add(('本次新增问题: ' + $qaNewRows.Count))
-        [void]$summary.Add(('安装前已有问题（已忽略）: ' + ($qaRows.Count - $qaNewRows.Count)))
-        [void]$summary.Add('说明: DLC/模组内容集合不同造成的安装前问题不会阻止安装。')
-        if ($qaNewRows.Count -gt 0) {
-            Write-Host "      单位字段 QA 失败分类:" -ForegroundColor Red
-            $qaNewRows | Group-Object Status | Sort-Object Count -Descending | ForEach-Object {
-                $line = ("        " + $_.Name + " = " + $_.Count)
-                Write-Host $line -ForegroundColor Red
-                [void]$summary.Add($line.Trim())
-            }
-            Write-Host "      首个失败样本:" -ForegroundColor Yellow
-            [void]$summary.Add('首个失败样本:')
-            $qaNewRows | Select-Object -First 10 | ForEach-Object {
-                $head = ("[" + $_.Status + "] " + $_.File + " / " + $_.Field)
-                $sample = ('  ' + ([string]$_.Sample -replace "`r?`n", ' '))
-                Write-Host ("        " + $head) -ForegroundColor Yellow
-                Write-Host ("          " + $sample.Trim()) -ForegroundColor Yellow
-                [void]$summary.Add($head)
-                [void]$summary.Add($sample)
-            }
-        }
-        [IO.File]::WriteAllLines($qaSummary, $summary, (New-Object Text.UTF8Encoding($false)))
-        Write-Host ("      诊断摘要: " + $qaSummary) -ForegroundColor Yellow
-        LogLine ("诊断摘要: " + $qaSummary)
-        throw "单位字段全量校验失败，详见 backup\$stamp\unit-fields-qa.tsv"
-    } elseif ($qaRows.Count -gt 0) {
-        Warn ("单位字段 QA 发现 " + $qaRows.Count + " 条问题，均已存在于安装前基线；按 DLC/模组差异规则放行")
-        Ok "单位字段新增问题: 0"
-    } else {
-        Ok "单位字段 QA: 通过"
-    }
-}
 
 Say ""
 Say "================================================"

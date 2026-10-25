@@ -4,24 +4,13 @@
     [string]$backupRoot = "",
     [string]$csv = "",
     [string]$fragments = "",
+    [string]$extraDict = "",
     [string]$repairDict = "",
-    [string[]]$extraDict = @(),
     [string]$fileList = "",
-    [string]$missReport = "",
-    [string]$qaReport = "",
-    [ValidateRange(1, 16)][int]$threads = 4,
-    [switch]$IncludeLocalization,
-    [switch]$Worker,
-    [string]$workerId = "",
     [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
 $packRoot = Split-Path $PSScriptRoot -Parent
-# Windows PowerShell 5.1 会让 string[] 参数吞掉后续命名参数。安装器因此
-# 将多个额外词典打包为一个 | 分隔参数；直接调用脚本时仍支持原生数组。
-if ($extraDict.Count -eq 1 -and $extraDict[0].Contains('|')) {
-    $extraDict = @($extraDict[0].Split('|', [StringSplitOptions]::RemoveEmptyEntries))
-}
 if ([string]::IsNullOrWhiteSpace($dict)) { $dict = Join-Path $PSScriptRoot 'dict-all.tsv' }
 if ([string]::IsNullOrWhiteSpace($mods)) {
     $gr = & (Join-Path $PSScriptRoot 'find-game.ps1')
@@ -54,7 +43,6 @@ function Test-CorruptDictionaryValue([string]$text) {
 $exact = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 function Fold([string]$s) { return ([regex]::Replace(($s -replace "`r`n", "`n"), '[\s]+', ' ')).Trim() }
 $fold = New-Object 'System.Collections.Generic.Dictionary[string,string]'
-$foldQuality = New-Object 'System.Collections.Generic.Dictionary[string,int]'
 $csvExact = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 $csvPrefix = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 function CsvKey([string]$s) {
@@ -70,9 +58,7 @@ if ([IO.File]::Exists($csv)) {
         $comma = $line.IndexOf(',')
         if ($comma -lt 1) { continue }
         $key = $line.Substring(0, $comma)
-        # CSV 译文里的字面量 \\n 表示换行；先还原为真实换行，再由 Esc
-        # 编成 JSON 的单层转义，避免游戏界面显示字面量 "\\n"。
-        $value = $line.Substring($comma + 1).Replace($BS + 'n', "`n").Replace($BS + 'r', "`r").Replace($BS + 't', "`t")
+        $value = $line.Substring($comma + 1)
         if (-not $csvExact.ContainsKey($key)) { $csvExact[$key] = $value }
         # 详情末尾可能已被旧版本部分汉化（例如仅 Quirk 行为中文），
         # 但正文开头仍与 CSV 英文键一致。记录稳定前缀用于整段替换。
@@ -87,8 +73,8 @@ $metaSuffixes = New-Object 'System.Collections.Generic.HashSet[string]'
 # 先收集第三列中的元数据标记；部分旧行把标记直接粘在第二列末尾，
 # 只有预扫描整张表后才能同时识别两种格式。
 $dictFiles = @($dict)
-foreach ($extra in @($extraDict)) {
-    if (-not [string]::IsNullOrWhiteSpace($extra) -and [IO.File]::Exists($extra)) { $dictFiles += $extra }
+if (-not [string]::IsNullOrWhiteSpace($extraDict) -and [IO.File]::Exists($extraDict)) {
+    $dictFiles += $extraDict
 }
 $rawLines = foreach ($df in $dictFiles) { [IO.File]::ReadAllLines($df, [Text.Encoding]::UTF8) }
 $skippedCorrupt = 0
@@ -101,28 +87,6 @@ foreach ($raw in $rawLines) {
     }
 }
 $metaSuffixesByLength = @($metaSuffixes | Sort-Object Length -Descending)
-$dictQuality = New-Object 'System.Collections.Generic.Dictionary[string,int]'
-function TranslationQuality([string]$key, [string]$value) {
-    if ([string]::IsNullOrWhiteSpace($value)) { return -100000 }
-    if (Test-CorruptDictionaryValue $value) { return -100000 }
-    $keyHan = ([regex]::Matches($key, '[\u3400-\u9fff]')).Count
-    $han = ([regex]::Matches($value, '[\u3400-\u9fff]')).Count
-    $latin = ([regex]::Matches($value, '[A-Za-z]')).Count
-    # 英文长键的英文原文不是译文；保留原文只会让安装器把英文重新写回游戏。
-    if ($keyHan -eq 0 -and $han -eq 0 -and $key.Length -ge 24) { return -90000 }
-    $score = $han * 10
-    if ($value -ne $key) { $score += 100 }
-    if ($han -gt 0 -and $latin -gt 0) { $score += 10 }
-    # 拒绝“英文句子只替换了少数词”的污染译文，例如
-    # “The Albatross was 设计ed by ...”或“机甲 is armed with ...”。
-    # 型号、厂商和武器缩写可以保留英文，但完整英文句法不能作为候选译文。
-    if ($han -gt 0 -and $key.Length -ge 80) {
-        $sentenceWords = ([regex]::Matches($value, '\b(?:the|was|were|is|are|designed|design|by|with|and|for|this|variant|configuration|from|in|of|to|a|an|that|on|as|its|has|have|using|used|provides|carries|equipped|armed)\b', [Text.RegularExpressions.RegexOptions]::IgnoreCase)).Count
-        if ($sentenceWords -ge 2) { return -100000 }
-        if ($value -match '(?:设计ed|装甲ed|机甲s|战斗机甲s|激光s|全向Mech|Omni机甲|XL引擎\s+to\b)') { return -100000 }
-    }
-    return $score
-}
 foreach ($l in $rawLines) {
     if ([string]::IsNullOrWhiteSpace($l)) { continue }
     $i = $l.IndexOf("`t"); if ($i -lt 1) { continue }
@@ -148,18 +112,24 @@ foreach ($l in $rawLines) {
     }
     $v = ($rest).Replace($BS + 'n', "`n")
     if (Test-CorruptDictionaryValue $v) { $skippedCorrupt++; continue }
-    $q = TranslationQuality $k $v
-    if ($q -le -90000) { continue }
-    # 同一个英文键可能同时存在“英文原文”“半翻译”“完整中文”多条记录。
-    # 不再采用首条记录，按质量分数选择完整译文。
-    if (-not $dictQuality.ContainsKey($k) -or $q -gt $dictQuality[$k]) {
-        $exact[$k] = $v
-        $dictQuality[$k] = $q
-    }
+    if (-not $exact.ContainsKey($k)) { $exact[$k] = $v }
     $fk = Fold $k
-    if ($fk.Length -gt 12 -and (-not $foldQuality.ContainsKey($fk) -or $q -gt $foldQuality[$fk])) {
-        $fold[$fk] = $v
-        $foldQuality[$fk] = $q
+    if ($fk.Length -gt 12 -and -not $fold.ContainsKey($fk)) { $fold[$fk] = $v }
+}
+
+$repairCount = 0
+if ([IO.File]::Exists($repairDict)) {
+    foreach ($line in [IO.File]::ReadAllLines($repairDict, [Text.Encoding]::UTF8)) {
+        if ([string]::IsNullOrWhiteSpace($line)) { continue }
+        $i = $line.IndexOf("`t")
+        if ($i -lt 1) { continue }
+        $k = $line.Substring(0, $i).Replace($BS + 'n', "`n")
+        $v = $line.Substring($i + 1).Replace($BS + 'n', "`n")
+        if ([string]::IsNullOrWhiteSpace($v) -or (Test-CorruptDictionaryValue $v)) { continue }
+        $exact[$k] = $v
+        $fk = Fold $k
+        if ($fk.Length -gt 12) { $fold[$fk] = $v }
+        $repairCount++
     }
 }
 $script:metaPattern = (($metaSuffixes | ForEach-Object { [regex]::Escape($_) }) -join '|')
@@ -175,33 +145,7 @@ if ([IO.File]::Exists($fragments)) {
     }
 }
 $fragmentKeys = @($fragmentMap.Keys | Sort-Object Length -Descending)
-Write-Host ("fragments: " + $fragmentMap.Count)
-# The old implementation checked every fragment with IndexOf for every field.
-# A single alternation regex lets .NET build a shared matcher for the same
-# workload and avoids tens of thousands of PowerShell-level string calls.
-$fragmentRegex = $null
-if ($fragmentKeys.Count -gt 0) {
-    $fragmentPattern = '(?:' + (($fragmentKeys | ForEach-Object { [regex]::Escape($_) }) -join '|') + ')'
-    $fragmentRegex = New-Object System.Text.RegularExpressions.Regex(
-        $fragmentPattern,
-        [System.Text.RegularExpressions.RegexOptions]::CultureInvariant
-    )
-}
-
-# 旧版词典中已有一批“英文正文 + 中文词片段”的结果，游戏文件里可能已经
-# 写入这些坏值，无法再通过原始英文键命中。这个覆盖表按坏值直接恢复到
-# 历史审校过的完整译文，优先于常规词典查找。
-$repairMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
-if ([IO.File]::Exists($repairDict)) {
-    foreach ($rl in [IO.File]::ReadAllLines($repairDict, [Text.Encoding]::UTF8)) {
-        $rp = $rl.Split([char]9, 2)
-        if ($rp.Count -lt 2 -or [string]::IsNullOrWhiteSpace($rp[0])) { continue }
-        $rk = $rp[0].Replace($BS + 'n', "`n").Replace($BS + 'r', "`r").Replace($BS + 't', "`t")
-        $rv = $rp[1].Replace($BS + 'n', "`n").Replace($BS + 'r', "`r").Replace($BS + 't', "`t")
-        if (-not $repairMap.ContainsKey($rk)) { $repairMap[$rk] = $rv }
-    }
-}
-Write-Host ("repair entries: " + $repairMap.Count)
+Write-Host ("fragments: " + $fragmentMap.Count + "; repairs: " + $repairCount)
 
 # 修复旧版本留下的“英文正文 + 中文片段”污染。先建立唯一的反向片段表，
 # 只有混合文本在完整匹配失败时才用它恢复英文候选键。
@@ -277,21 +221,23 @@ function Esc([string]$s) {
 }
 
 function ApplyFragments([string]$s) {
-    if ([string]::IsNullOrWhiteSpace($s) -or $null -eq $script:fragmentRegex -or $s -notmatch '[A-Za-z]') { return $s }
+    if ([string]::IsNullOrWhiteSpace($s) -or $script:fragmentMap.Count -eq 0 -or $s -notmatch '[A-Za-z]') { return $s }
     $saved = New-Object 'System.Collections.Generic.List[string]'
     $protected = [regex]::Replace($s, '<[^>]*>|\[\[[\s\S]*?\]\]|\{[^{}]*\}', [Text.RegularExpressions.MatchEvaluator]{
         param($m) $i = $saved.Count; [void]$saved.Add($m.Value); return ('__FRAG' + $i + '__')
     })
-    $protected = $script:fragmentRegex.Replace($protected, [Text.RegularExpressions.MatchEvaluator]{
-        param($m) $script:fragmentMap[$m.Value]
-    })
+    foreach ($key in $script:fragmentKeys) {
+        if ($protected.IndexOf($key, [StringComparison]::Ordinal) -ge 0) {
+            $protected = $protected.Replace($key, $script:fragmentMap[$key])
+        }
+    }
     return [regex]::Replace($protected, '__FRAG(\d+)__', [Text.RegularExpressions.MatchEvaluator]{
         param($m) $saved[[int]$m.Groups[1].Value]
     })
 }
 
 $script:exact = $exact; $script:fold = $fold; $script:prefixMap = $prefixMap; $script:csvExact = $csvExact; $script:csvPrefix = $csvPrefix
-$script:fragmentMap = $fragmentMap; $script:fragmentKeys = $fragmentKeys; $script:repairMap = $repairMap
+$script:fragmentMap = $fragmentMap; $script:fragmentKeys = $fragmentKeys
 $script:reverseFragmentMap = $reverseFragmentMap; $script:reverseFragmentKeys = $reverseFragmentKeys
 $stats = @{ files = 0; changed = 0; repl = 0; miss = 0; viaFold = 0; viaPrefix = 0; viaFragment = 0; cleaned = 0 }
 $missList = New-Object 'System.Collections.Generic.List[string]'
@@ -309,10 +255,6 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         if ($clean -ne $val) { $val = $clean; $stats.cleaned++; $cleaned = $true }
     }
     if ([string]::IsNullOrWhiteSpace($val)) { return $m.Value }
-    if ($script:repairMap.ContainsKey($val)) {
-        $rv = $script:repairMap[$val]
-        if ($rv -ne $val) { $val = $rv }
-    }
     if ($cleaned) {
         $m2 = '"' + $fld + '": "' + (Esc $val) + '"'
         if ($m2 -ne $m.Value) { $stats.repl++ }
@@ -328,7 +270,7 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     [void]$candidates.Add($val)
     foreach ($candidate in $candidates) {
         if ($script:exact.ContainsKey($candidate)) { $zh = $script:exact[$candidate] }
-    if ($null -eq $zh) {
+        if ($null -eq $zh) {
             $fk = Fold $candidate
             if ($script:fold.ContainsKey($fk)) { $zh = $script:fold[$fk]; $stats.viaFold++ }
         }
@@ -370,27 +312,16 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
         if ($null -ne $zh -and -not [string]::IsNullOrWhiteSpace($zh)) { break }
     }
     if ($null -ne $zh -and -not [string]::IsNullOrWhiteSpace($zh)) {
-        # 整段译文可能来自历史词典或专用模组词典，正文已翻译但动态尾部
-        # （装甲/结构/移动/特性等）仍保留英文。对成功命中的结果也执行
-        # 已审校短语补全；标签、占位符由 ApplyFragments 保护，不会被改写。
-        $zh2 = ApplyFragments $zh
-        if ($zh2 -ne $zh) { $zh = $zh2; $stats.viaFragment++ }
         $m2 = '"' + $fld + '": "' + (Esc $zh) + '"'
         if ($m2 -ne $m.Value) { $stats.repl++ }
         return $m2
     }
-    # 完整词条无法命中时，不再对长段落做片段替换。
-    # 旧逻辑把英文正文中的零散词替换成中文，产生“英文正文 + 中文片段”
-    # 的污染（机甲/武器详情最明显）。短字段仍允许使用片段词典，避免
-    # StockRole 等简短显示值失去已有术语翻译。
-    $englishWords = ([regex]::Matches($val, '\b[A-Za-z]{3,}\b')).Count
-    $allowFragment = ($val.Length -lt 160 -or $englishWords -lt 8)
-    if ($allowFragment) {
-        $fragmentVal = ApplyFragments $val
-        if ($fragmentVal -ne $val) {
-            $stats.repl++; $stats.viaFragment++
-            return '"' + $fld + '": "' + (Esc $fragmentVal) + '"'
-        }
+    # 完整词条无法命中时，才允许用片段补译；这类结果可能仍是混合文本，
+    # 但不会遮蔽后续完整词条，也不会破坏已有完整中文字段。
+    $fragmentVal = ApplyFragments $val
+    if ($fragmentVal -ne $val) {
+        $stats.repl++; $stats.viaFragment++
+        return '"' + $fld + '": "' + (Esc $fragmentVal) + '"'
     }
     if ($null -eq $zh -or [string]::IsNullOrWhiteSpace($zh)) {
         if ($mixedValue) { return $m.Value }
@@ -403,50 +334,20 @@ $eval = [System.Text.RegularExpressions.MatchEvaluator]{
     $stats.repl++
     return $m2
 }
-$fieldPattern = if ($IncludeLocalization) { 'Details|YangsThoughts|StockRole|CULTURE_ZH_CN' } else { 'Details|YangsThoughts|StockRole' }
-$rx = [regex]('"(' + $fieldPattern + ')"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"')
+$rx = [regex]('"(Details|YangsThoughts|StockRole)"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"')
 $excl = @(
     ($BS + '.modtek' + $BS)
     'ModSaves'
+    'Localization'
+    'localization'
 )
-if (-not $IncludeLocalization) {
-    $excl += @('Localization', 'localization')
-}
-
-# 文件索引来自游戏目录，不能假定每一行都能被 Path API 直接解析。
-# Windows PowerShell 在管道中遇到异常路径时会让整个 ForEach-Object 终止，
-# 因此统一先按 LiteralPath 取得 FileInfo，再使用对象属性筛选。
-$pathIssues = New-Object 'System.Collections.Generic.List[string]'
-function Add-PathIssue([string]$rawPath, [string]$reason) {
-    if ($pathIssues.Count -lt 2000) {
-        [void]$pathIssues.Add((([string]$reason) + "`t" + ([string]$rawPath)))
-    }
-}
-function Resolve-JsonFile([object]$rawPath) {
-    $p = [string]$rawPath
-    if ([string]::IsNullOrWhiteSpace($p)) { return }
-    $p = $p.Trim()
-    try {
-        $item = Get-Item -LiteralPath $p -ErrorAction Stop
-        if ($item.PSIsContainer) { return }
-        if ($item.Extension -ine '.json') { return }
-        if ($item.Name -in @('mod.json', 'modstate.json')) { return }
-        foreach ($e in $excl) {
-            if ($item.FullName -like ('*' + $e + '*')) { return }
-        }
-        return $item
-    } catch {
-        Add-PathIssue $p $_.Exception.Message
-        return
-    }
-}
 if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileList)) {
-    $files = @(
-        foreach ($rawPath in [IO.File]::ReadAllLines($fileList, [Text.Encoding]::UTF8)) {
-            $item = Resolve-JsonFile $rawPath
-            if ($null -ne $item) { $item }
-        }
-    )
+    $files = Get-Content -Encoding UTF8 $fileList | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | ForEach-Object {
+        $p = $_; $bad = $false
+        foreach ($e in $excl) { if ($p -like ('*' + $e + '*')) { $bad = $true; break } }
+        if ([IO.Path]::GetFileName($p) -in @('mod.json', 'modstate.json')) { $bad = $true }
+        if (-not $bad -and [IO.Path]::GetExtension($p) -eq '.json') { Get-Item -LiteralPath $p }
+    }
 } else {
     $files = Get-ChildItem $mods -Recurse -File -Filter '*.json' | Where-Object {
         $p = $_.FullName; $bad = $false
@@ -454,125 +355,6 @@ if (-not [string]::IsNullOrWhiteSpace($fileList) -and [IO.File]::Exists($fileLis
         if ($_.Name -in @('mod.json', 'modstate.json')) { $bad = $true }
         -not $bad
     }
-}
-$files = @($files | Where-Object {
-    if ($IncludeLocalization) { return $true }
-    return $true
-})
-if (-not [string]::IsNullOrWhiteSpace($qaReport) -and [IO.File]::Exists($qaReport)) {
-    $targetPaths = New-Object 'System.Collections.Generic.HashSet[string]' ([StringComparer]::OrdinalIgnoreCase)
-    foreach ($row in (Import-Csv -LiteralPath $qaReport -Delimiter "`t")) {
-        $item = Resolve-JsonFile $row.File
-        if ($null -eq $item) { continue }
-        $p = $item.FullName
-        if (-not $p.StartsWith($mods.TrimEnd('\') + '\', [StringComparison]::OrdinalIgnoreCase)) { continue }
-        [void]$targetPaths.Add($p)
-    }
-    $files = @($targetPaths | ForEach-Object { Get-Item -LiteralPath $_ })
-}
-if ($pathIssues.Count -gt 0) {
-    $pathReport = Join-Path $packRoot 'backup\fold-path-errors.tsv'
-    [IO.File]::WriteAllLines($pathReport, [string[]]$pathIssues, (New-Object Text.UTF8Encoding $false))
-    Write-Warning ("忽略了 " + $pathIssues.Count + " 个无法读取的 JSON 索引行，详见 backup\fold-path-errors.tsv")
-}
-
-if (-not $Worker -and $threads -gt 1 -and @($files).Count -gt 1) {
-    $threadCount = [Math]::Min($threads, @($files).Count)
-    $buckets = @()
-    for ($i = 0; $i -lt $threadCount; $i++) {
-        $buckets += ,(New-Object 'System.Collections.Generic.List[string]')
-    }
-    for ($i = 0; $i -lt @($files).Count; $i++) {
-        [void]$buckets[$i % $threadCount].Add($files[$i].FullName)
-    }
-    $tempLists = @()
-    $tempMissReports = @()
-    $jobs = @()
-    for ($i = 0; $i -lt $threadCount; $i++) {
-        $id = [Guid]::NewGuid().ToString('N')
-        $listPath = Join-Path ([IO.Path]::GetTempPath()) ("fold-apply-" + $id + ".txt")
-        $missPath = Join-Path ([IO.Path]::GetTempPath()) ("fold-apply-miss-" + $id + ".tsv")
-        [IO.File]::WriteAllLines($listPath, [string[]]$buckets[$i], (New-Object Text.UTF8Encoding $false))
-        $tempLists += $listPath
-        $cfg = [pscustomobject]@{
-            Script = $PSCommandPath; Mods = $mods; Dict = $dict; Csv = $csv
-            Fragments = $fragments; RepairDict = $repairDict; ExtraDict = [string[]]$extraDict
-            BackupRoot = $backupRoot; FileList = $listPath; MissReport = $missPath; WorkerId = $id
-            DryRun = [bool]$DryRun; IncludeLocalization = [bool]$IncludeLocalization
-        }
-        $tempMissReports += $missPath
-        $jobs += Start-Job -ArgumentList $cfg -ScriptBlock {
-            param($c)
-            $p = @{
-                mods = [string]$c.Mods; dict = [string]$c.Dict; csv = [string]$c.Csv
-                fragments = [string]$c.Fragments; repairDict = [string]$c.RepairDict
-                extraDict = [string[]]$c.ExtraDict; backupRoot = [string]$c.BackupRoot
-                fileList = [string]$c.FileList; missReport = [string]$c.MissReport
-                threads = 1; Worker = $true
-                workerId = [string]$c.WorkerId
-            }
-            if ([bool]$c.DryRun) { $p.DryRun = $true }
-            if ([bool]$c.IncludeLocalization) { $p.IncludeLocalization = $true }
-            & ([string]$c.Script) @p
-        }
-    }
-    $workerLines = @()
-    try {
-        $null = $jobs | Wait-Job
-        foreach ($job in $jobs) {
-            $output = Receive-Job -Job $job 2>&1
-            if ($job.State -ne 'Completed') { throw ("fold worker failed: " + ($output -join "`n")) }
-            $workerLines += @($output | ForEach-Object { [string]$_ })
-        }
-    } finally {
-        $jobs | Remove-Job -Force -ErrorAction SilentlyContinue
-        foreach ($tmp in $tempLists) { Remove-Item -LiteralPath $tmp -Force -ErrorAction SilentlyContinue }
-    }
-    $workerSummaries = @()
-    foreach ($line in $workerLines) {
-        $lineText = ([string]$line).Trim()
-        if ($lineText -match 'mode=(?:dry|written)\s+files=') { $workerSummaries += $lineText }
-        else { Write-Host $lineText }
-    }
-    $totals = @{ files = 0; changed = 0; repl = 0; cleaned = 0; viaFold = 0; viaPrefix = 0; viaFragment = 0; miss = 0; skippedCorrupt = 0 }
-    foreach ($line in $workerSummaries) {
-        # 逐项读取固定格式，避免 Windows PowerShell 的 $Matches 在嵌套
-        # hashtable 枚举/赋值中被后续匹配覆盖，造成汇总值意外归零。
-        $sm = [regex]::Match([string]$line, 'mode=(?:dry|written)\s+files=(\d+)\s+changed=(\d+)\s+repl=(\d+)\s+cleaned=(\d+)\s+viaFold=(\d+)\s+viaPrefix=(\d+)\s+viaFragment=(\d+)\s+miss=(\d+)\s+skippedCorrupt=(\d+)')
-        if (-not $sm.Success) { throw ("无法解析 fold worker 统计: " + [string]$line) }
-        $totals.files += [int]$sm.Groups[1].Value
-        $totals.changed += [int]$sm.Groups[2].Value
-        $totals.repl += [int]$sm.Groups[3].Value
-        $totals.cleaned += [int]$sm.Groups[4].Value
-        $totals.viaFold += [int]$sm.Groups[5].Value
-        $totals.viaPrefix += [int]$sm.Groups[6].Value
-        $totals.viaFragment += [int]$sm.Groups[7].Value
-        $totals.miss += [int]$sm.Groups[8].Value
-        $totals.skippedCorrupt += [int]$sm.Groups[9].Value
-    }
-    $mode = if ($DryRun) { 'dry' } else { 'written' }
-    $summary = "mode=$mode files=$($totals.files) changed=$($totals.changed) repl=$($totals.repl) cleaned=$($totals.cleaned) viaFold=$($totals.viaFold) viaPrefix=$($totals.viaPrefix) viaFragment=$($totals.viaFragment) miss=$($totals.miss) skippedCorrupt=$($totals.skippedCorrupt) threads=$threadCount"
-    Write-Host $summary
-    $reportDir = Join-Path $packRoot 'backup'
-    if (-not (Test-Path $reportDir)) { [void][IO.Directory]::CreateDirectory($reportDir) }
-    [IO.File]::WriteAllText((Join-Path $reportDir 'coverage-summary.txt'), $summary, (New-Object Text.UTF8Encoding $false))
-    $allMisses = New-Object 'System.Collections.Generic.List[string]'
-    foreach ($missPath in $tempMissReports) {
-        if ([IO.File]::Exists($missPath)) {
-            foreach ($missLine in [IO.File]::ReadAllLines($missPath, [Text.Encoding]::UTF8)) {
-                if ($allMisses.Count -ge 20000) { break }
-                [void]$allMisses.Add($missLine)
-            }
-        }
-        Remove-Item -LiteralPath $missPath -Force -ErrorAction SilentlyContinue
-    }
-    if ($allMisses.Count -gt 0) {
-        [IO.File]::WriteAllLines((Join-Path $reportDir 'still-missing-raw.tsv'), $allMisses, (New-Object Text.UTF8Encoding $true))
-        Write-Host ("missing samples -> backup\still-missing-raw.tsv (" + $allMisses.Count + ")")
-    } else {
-        Remove-Item -LiteralPath (Join-Path $reportDir 'still-missing-raw.tsv') -Force -ErrorAction SilentlyContinue
-    }
-    return
 }
 $enc = New-Object Text.UTF8Encoding $false
 $ser = $null
@@ -595,7 +377,7 @@ foreach ($f in $files) {
         try {
             [void]$ser.DeserializeObject($new)
         } catch {
-            try { $null = $new | ConvertFrom-Json -ErrorAction Stop }
+            try { $null = $new | ConvertFrom-Json -Depth 100 -ErrorAction Stop }
             catch { throw }
         }
         $rel = $f.FullName.Substring($mods.Length).TrimStart($BS)
@@ -608,19 +390,12 @@ foreach ($f in $files) {
     }
 }
 $line = "mode=" + $(if ($DryRun) { 'dry' } else { 'written' }) + " files=" + $stats.files + " changed=" + $stats.changed + " repl=" + $stats.repl + " cleaned=" + $stats.cleaned + " viaFold=" + $stats.viaFold + " viaPrefix=" + $stats.viaPrefix + " viaFragment=" + $stats.viaFragment + " miss=" + $stats.miss + " skippedCorrupt=" + $skippedCorrupt
-if ($Worker) { Write-Output $line } else { Write-Host $line }
+Write-Host $line
 # 报告写到包内 backup 目录(不污染游戏目录, 便于排查)
 $reportDir = Join-Path $packRoot 'backup'
 if (-not (Test-Path $reportDir)) { [void][IO.Directory]::CreateDirectory($reportDir) }
-if (-not $Worker) {
-    [IO.File]::WriteAllText((Join-Path $reportDir 'coverage-summary.txt'), $line, (New-Object Text.UTF8Encoding $false))
-}
-if ($Worker -and -not [string]::IsNullOrWhiteSpace($missReport)) {
-    [IO.File]::WriteAllLines($missReport, [string[]]$missList, (New-Object Text.UTF8Encoding $false))
-}
-if (-not $Worker -and $missList.Count -gt 0) {
+[IO.File]::WriteAllText((Join-Path $reportDir 'coverage-summary.txt'), $line, (New-Object Text.UTF8Encoding $false))
+if ($missList.Count -gt 0) {
     [IO.File]::WriteAllLines((Join-Path $reportDir 'still-missing-raw.tsv'), $missList, (New-Object Text.UTF8Encoding $true))
     Write-Host ("missing samples -> backup\still-missing-raw.tsv (" + $missList.Count + ")")
-} elseif (-not $Worker) {
-    Remove-Item -LiteralPath (Join-Path $reportDir 'still-missing-raw.tsv') -Force -ErrorAction SilentlyContinue
 }

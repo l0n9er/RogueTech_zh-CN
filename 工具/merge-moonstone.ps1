@@ -1,9 +1,8 @@
 ﻿# 合并月光石头新版汉化包中的条目
 #
 # 数据来源: <工具目录>\battletech-trans\resources\data\{BT,RT}\...\strings_zh-CN.csv
-# 合并策略: 以本包已有键为准(本包做过术语统一与格式修复), 只补本包没有的键。
-#   重点补充: 载具完整描述(含 "#武器:" 段的运行时拼接结果) 2200 条,
-#   这类文本由 DLL 在运行时拼好后整体查表, 因此必须整段作为 key 收录。
+# 合并策略: 月光石头 RT 表同键覆盖当前译文, 当前包独有键保留。
+#   载具完整描述(含 "#武器:" 段的运行时拼接结果)必须整段作为 key 收录。
 param(
     [string]$source = "",
     [string]$csv = "",
@@ -18,64 +17,75 @@ if ([string]::IsNullOrWhiteSpace($source)) {
     exit 1
 }
 
-# 收集源表(RT 优先, BT 补充)
-$srcFiles = New-Object System.Collections.ArrayList
-foreach ($rel in @('RT\BattleTech_Data\StreamingAssets\data\localization\strings_zh-CN.csv',
-                   'BT\BattleTech_Data\StreamingAssets\data\localization\strings_zh-CN.csv')) {
-    $p = Join-Path $source $rel
-    if ([IO.File]::Exists($p)) { [void]$srcFiles.Add($p) }
+# 允许直接传 data\RT, 也允许传包含 RT\ 的 resources\data。
+$sourceCsv = $source
+if ([IO.Directory]::Exists((Join-Path $source 'BattleTech_Data'))) {
+    $sourceCsv = Join-Path $source 'BattleTech_Data\StreamingAssets\data\localization\strings_zh-CN.csv'
+} else {
+    $sourceCsv = Join-Path $source 'RT\BattleTech_Data\StreamingAssets\data\localization\strings_zh-CN.csv'
 }
-if ($srcFiles.Count -eq 0) { Write-Host (" 源目录中没有找到 strings_zh-CN.csv: " + $source) -ForegroundColor Yellow; exit 1 }
-
-# 现有键
-$existing = New-Object 'System.Collections.Generic.HashSet[string]'
-$lines = [IO.File]::ReadAllLines($csv, [Text.Encoding]::UTF8)
-for ($i = 1; $i -lt $lines.Count; $i++) {
-    $p = $lines[$i].IndexOf(',')
-    if ($p -lt 1) { continue }
-    [void]$existing.Add($lines[$i].Substring(0, $p))
+if (-not [IO.File]::Exists($sourceCsv)) {
+    Write-Host (" 月光石头 RT 表不存在: " + $sourceCsv) -ForegroundColor Yellow
+    exit 1
 }
-Write-Host ("现有键: " + $existing.Count)
 
-# 逐源表取缺失键(后出现的源不覆盖先出现的)
-$added = New-Object 'System.Collections.Generic.Dictionary[string,string]'
-$srcStat = @{}
-foreach ($sf in $srcFiles) {
-    $n = 0
-    foreach ($l in [IO.File]::ReadLines($sf, [Text.Encoding]::UTF8)) {
-        if ([string]::IsNullOrWhiteSpace($l)) { continue }
-        $p = $l.IndexOf(',')
-        if ($p -lt 1) { continue }
-        $k = $l.Substring(0, $p)
-        if ($k -eq 'KEY') { continue }
-        if ($existing.Contains($k)) { continue }
-        if ($added.ContainsKey($k)) { continue }
-        $v = $l.Substring($p + 1)
-        # 只收含中文的值(避免把英文噪声并进来)
-        if ($v -notmatch '[\u4e00-\u9fff]') { continue }
-        $added[$k] = $v
-        $n++
+function Read-CsvTable([string]$path) {
+    $map = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+    $order = New-Object 'System.Collections.Generic.List[string]'
+    $duplicates = 0
+    foreach ($line in [IO.File]::ReadLines($path, [Text.Encoding]::UTF8)) {
+        $comma = $line.IndexOf(',')
+        if ($comma -lt 1) { continue }
+        $key = $line.Substring(0, $comma)
+        if ($key -eq 'KEY') { continue }
+        if ($map.ContainsKey($key)) { $duplicates++ }
+        else { [void]$order.Add($key) }
+        $map[$key] = $line.Substring($comma + 1)
     }
-    $srcStat[(Split-Path (Split-Path (Split-Path (Split-Path $sf -Parent) -Parent) -Parent) -Leaf)] = $n
-    Write-Host ("  " + $sf.Substring($source.Length).TrimStart('\') + "  可补 " + $n + " 条")
+    return [pscustomobject]@{ Map = $map; Order = $order; Duplicates = $duplicates }
 }
 
-Write-Host ("合计可补: " + $added.Count)
-if ($added.Count -eq 0) { Write-Host "无需合并"; exit 0 }
+$currentLines = [IO.File]::ReadAllLines($csv, [Text.Encoding]::UTF8)
+$current = Read-CsvTable $csv
+$sourceTable = Read-CsvTable $sourceCsv
+$sourceMap = $sourceTable.Map
+$seen = New-Object 'System.Collections.Generic.HashSet[string]'
+$output = New-Object 'System.Collections.Generic.List[string]'
+$replaced = 0
+$deduplicated = 0
 
-# 统计类型
-$wpn = 0; $biome = 0
-foreach ($k in $added.Keys) {
-    if ($k -like '*#weapons:newline*') { $wpn++ }
-    elseif ($k -like '*biomerestrictions*') { $biome++ }
+for ($index = 0; $index -lt $currentLines.Count; $index++) {
+    $line = $currentLines[$index]
+    $comma = $line.IndexOf(',')
+    if ($index -eq 0 -or $comma -lt 1) {
+        [void]$output.Add($line)
+        continue
+    }
+    $key = $line.Substring(0, $comma)
+    if (-not $seen.Add($key)) {
+        $deduplicated++
+        continue
+    }
+    if ($sourceMap.ContainsKey($key)) {
+        [void]$output.Add($key + ',' + $sourceMap[$key])
+        $replaced++
+    } else {
+        [void]$output.Add($line)
+    }
 }
-Write-Host ("  含 #武器 段的载具描述: " + $wpn)
-Write-Host ("  含生态限制的载具描述: " + $biome)
 
+$added = 0
+foreach ($key in $sourceTable.Order) {
+    if ($seen.Add($key)) {
+        [void]$output.Add($key + ',' + $sourceMap[$key])
+        $added++
+    }
+}
+
+Write-Host ("当前键: " + $current.Map.Count + "，月光石头键: " + $sourceMap.Count)
+Write-Host ("月光石头重复键: " + $sourceTable.Duplicates + "，当前重复键: " + $current.Duplicates)
+Write-Host ("同键覆盖: " + $replaced + "，追加月光石头独有: " + $added + "，删除重复行: " + $deduplicated)
 if (-not $DryRun) {
-    $sw = New-Object IO.StreamWriter($csv, $true, (New-Object Text.UTF8Encoding $false))
-    $sw.NewLine = "`r`n"
-    foreach ($k in $added.Keys) { $sw.WriteLine($k + ',' + $added[$k]) }
-    $sw.Close()
-    Write-Host ("已追加 " + $added.Count + " 条 -> " + $csv)
+    [IO.File]::WriteAllLines($csv, $output, (New-Object Text.UTF8Encoding($false)))
+    Write-Host ("已写入 " + $output.Count + " 行 -> " + $csv)
 } else { Write-Host '[DryRun] 未写盘' }

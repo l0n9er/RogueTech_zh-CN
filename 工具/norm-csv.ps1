@@ -16,18 +16,9 @@ $rules = @(
 # 保护: HTML 标签、[[...]] 占位符(内部可含 {...})、{...} 占位符、转义序列
 $guard = [regex]'(<[^>]*>|\[\[.*?\]\]|\{[^{}]*\}|\\r|\\n|\\t)'
 $encNoBom = New-Object Text.UTF8Encoding $false
-$residualTerms = [ordered]@{
-    'four loko' = '四瓶洛科'
-    'loko' = '洛科'
-    'chia flannel' = '奇亚籽法兰绒'
-    'adaptogen' = '适应原'
-    'tbh' = '说实话'
-    'vape locavore' = '电子烟本地美食主义者'
-}
 
 function Fix-Text([string]$text) {
     if ($text -notmatch '[\u4e00-\u9fff]') { return $text }
-    foreach ($term in $residualTerms.Keys) { $text = $text.Replace($term, $residualTerms[$term]) }
     $parts = @(); $last = 0
     foreach ($m in $guard.Matches($text)) {
         if ($m.Index -gt $last) { $parts += ,@('T', $text.Substring($last, $m.Index - $last)) }

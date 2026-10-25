@@ -27,8 +27,7 @@ $rows = @(
     ("vehiclerepairsneeded!" + "`t" + "战车需要维修!"),
     ("wantmycrewtogetstarted?" + "`t" + "要我的机组开始动手吗?"),
     ("boss^imveryverysorry(reallynot)*drunkentechbrokethisvehicle" + "`t" + "老板，我非常非常抱歉(真的)。醉酒的技师弄坏了这辆战车"),
-    ("boss^{0}damagedonthelastengagement*itllcost<color=#de6729>{1}{2:n0}</color>and{3}daysfortherepairs*newlinenewlinewantmycrewtogetstarted?" + "`t" + "老板，{0} 在最近一次交战中受损。维修需要 <color=#DE6729>{1}{2:n0}</color> 和 {3} 天。\n\n要我的机组开始动手吗？"),
-    ("boss^{0}damaged*itllcost<color=#de6729>{1}{2:n0}</color>and{3}daysfortheserepairs*wantmycrewtogetstarted?newlinenewlinealso^{4}" + "`t" + "老板，{0} 受损了。维修需要 <color=#DE6729>{1}{2:n0}</color> 和 {3} 天。要我的机组开始动手吗？\n\n另外，{4}"),
+    ("boss^{0}damaged*itllcost<color=#de6729>{1}{2:n0}</color>and{3}daysfortheserepairs*wantmycrewtogetstarted?newlinenewlinealso^{4}" + "`t" + "老板，{0} 受损了。维修需要 <color=#DE6729>{1}{2:n0}</color> 和 {3} 天。要我的机组开始动手吗？`n`n另外，{4}"),
     # ---------- 2) 载具报废 / 改装 ----------
     ("youmustrefitthevehcile" + "`t" + "你必须改装该战车。"),
     ("repairvehicle?" + "`t" + "修理战车？"),

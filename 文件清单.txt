@@ -1,7 +1,7 @@
 BATTLETECH / RogueTech 简体中文补丁 v27 —— 文件清单
 
 【核心】（游戏真正读取的东西）
-strings_zh-CN.csv                    翻译总表：65,310 行 / 64,933 键
+strings_zh-CN.csv                    翻译总表：68,745 行 / 68,369 键
                                      安装位置：<游戏目录>\BattleTech_Data\StreamingAssets\data\localization\
 BattleTech_Data\Managed\*.dll        游戏主程序集（2 个，界面文字汉化）
 Mods\                                已汉化的模组数据（安装脚本会全部写入游戏）

@@ -31,6 +31,11 @@ while (-not $sr.EndOfStream) {
 $sr.Close()
 Write-Host ("映射条目: " + $map.Count)
 if (-not (Test-Path $bakDir)) { [void][IO.Directory]::CreateDirectory($bakDir) }
+# JavaScriptSerializer 属于 System.Web.Extensions；PowerShell 7 不会默认加载
+# 该程序集，必须显式加载，否则分类汉化阶段会在初始化校验器时直接中断。
+Add-Type -AssemblyName System.Web.Extensions
+$ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+$ser.MaxJsonLength = [int]::MaxValue
 $repl = 0; $bad = 0
 foreach ($f in [IO.Directory]::GetFiles($dir, '*.json')) {
     $orig = [IO.File]::ReadAllText($f, [Text.Encoding]::UTF8)
@@ -42,10 +47,7 @@ foreach ($f in [IO.Directory]::GetFiles($dir, '*.json')) {
     if ($t -ne $orig) {
         $bak = Join-Path $bakDir ([IO.Path]::GetFileName($f))
         if (-not (Test-Path $bak)) { [IO.File]::WriteAllText($bak, $orig, $enc) }
-        # PowerShell 7 下 System.Web.Extensions/JavaScriptSerializer 可能触发
-        # System.Web 类型加载异常；ConvertFrom-Json 足够完成结构校验，且不依赖
-        # 已被移除的 .NET Framework 程序集。
-        try { $null = $t | ConvertFrom-Json -ErrorAction Stop } catch { $bad++; Write-Host ("JSON 校验失败，跳过: " + $f); continue }
+        try { [void]$ser.DeserializeObject($t) } catch { $bad++; Write-Host ("JSON 校验失败，跳过: " + $f); continue }
         [IO.File]::WriteAllText($f, $t, $enc)
     }
 }

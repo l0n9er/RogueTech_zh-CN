@@ -8,66 +8,83 @@ $ErrorActionPreference = 'Stop'
 
 function Format-UnitDetail([string]$Value) {
     if ([string]::IsNullOrEmpty($Value)) { return $Value }
-    if ($Value.IndexOf('<b>数值', [StringComparison]::Ordinal) -lt 0) { return $Value }
     $normalized = $Value -replace '<mspace(?:=[^>]+)?>', ''
     $normalized = $normalized -replace '</mspace>', ''
-    $numberPattern = '-?\d+(?:\.\d+)?'
-    $tablePattern = '<b>数值</b>[ \t]+(?<labels>[^<\r\n]+)(?<rows>(?:\\n<b>(?!(?:总计|合计)</b>)[^<\r\n]+</b>[ \t]+' + $numberPattern + '(?:[ \t]+' + $numberPattern + ')*)+)(?<total>\\n(?:\\n)?<b>(?:总计|合计)</b>[ \t]+' + $numberPattern + '(?:[ \t]+' + $numberPattern + ')*)?'
-    $rowPattern = '\\n<b>(?<label>[^<]+)</b>[ \t]+(?<values>' + $numberPattern + '(?:[ \t]+' + $numberPattern + ')*)'
-    $evaluator = [System.Text.RegularExpressions.MatchEvaluator]{
-        param($match)
-        $labels = @($match.Groups['labels'].Value.Trim() -split '[ \t]+' | Where-Object { $_ })
-        $rows = [regex]::Matches($match.Groups['rows'].Value, $rowPattern)
-        $parsedRows = @()
-        foreach ($row in $rows) {
-            $values = @($row.Groups['values'].Value -split '[ \t]+' | Where-Object { $_ })
-            $parsedRows += [pscustomobject]@{
-                Label = $row.Groups['label'].Value
-                Values = $values
-            }
-        }
-        $total = [regex]::Match($match.Groups['total'].Value, '<b>(?<label>总计|合计)</b>[ \t]+(?<values>-?\d+(?:\.\d+)?(?:[ \t]+-?\d+(?:\.\d+)?)+)')
-        if ($total.Success) {
-            $values = @($total.Groups['values'].Value -split '[ \t]+' | Where-Object { $_ })
-            $parsedRows += [pscustomobject]@{
-                Label = $total.Groups['label'].Value
-                Values = $values
-            }
-        }
+    if ($normalized.IndexOf('<b>数值', [StringComparison]::Ordinal) -lt 0) { return $normalized }
 
-        if ($labels.Count -lt 1) { return $match.Value }
-        $columnCount = [Math]::Max($labels.Count, (($parsedRows | ForEach-Object { $_.Values.Count } | Measure-Object -Maximum).Maximum))
-        $labelWidth = '数值'.Length
-        foreach ($row in $parsedRows) { $labelWidth = [Math]::Max($labelWidth, $row.Label.Length) }
-        $columnWidths = New-Object int[] $columnCount
-        for ($index = 0; $index -lt $columnCount; $index++) {
-            if ($index -lt $labels.Count) { $columnWidths[$index] = $labels[$index].Length }
-            foreach ($row in $parsedRows) {
-                if ($index -lt $row.Values.Count) { $columnWidths[$index] = [Math]::Max($columnWidths[$index], $row.Values[$index].Length) }
-            }
+    $normalized = $normalized -replace '(?i)</b>[ \t]+(?=<color=#ffcc00>)', '</b>\n'
+    $normalized = $normalized -replace '(?i)</b>[ \t]+(?=<b><color=#ffcc00>)', '</b>\n'
+    $normalized = $normalized -replace '(?i)</color>[ \t]+(?=<color=#ff0000>)', '</color>\n\n'
+    $normalized = $normalized -replace '</color>[ \t]+(#武器:)', '</color>\n$1'
+    $numberPattern = '-?\d+(?:\.\d+)?'
+    $yellowPattern = '(?i)<color=#ffcc00>(?<body>.*?)</color>'
+    $yellow = $null
+    foreach ($candidate in [regex]::Matches($normalized, $yellowPattern, [Text.RegularExpressions.RegexOptions]::Singleline)) {
+        if ($candidate.Groups['body'].Value.IndexOf('<b>数值', [StringComparison]::Ordinal) -ge 0) {
+            $yellow = $candidate
+            break
         }
-        $columnGap = 3
-        $headerValues = New-Object 'System.Collections.Generic.List[string]'
-        for ($index = 0; $index -lt $labels.Count; $index++) {
-            [void]$headerValues.Add($labels[$index].PadRight($columnWidths[$index]))
-        }
-        $headerGap = ' ' * ([Math]::Max(1, $labelWidth - '数值'.Length + 1))
-        $header = '<b>数值</b>' + $headerGap + '<mspace=0.5em>' + (($headerValues -join (' ' * $columnGap)).TrimEnd()) + '</mspace>'
-        $body = ''
-        foreach ($row in $parsedRows) {
-            if ($row.Label -eq '总计' -or $row.Label -eq '合计') { $body += "\n" }
-            $rowCells = New-Object 'System.Collections.Generic.List[string]'
-            for ($index = 0; $index -lt $row.Values.Count; $index++) {
-                $cell = $row.Values[$index]
-                if ($index -lt $row.Values.Count - 1) { $cell = $cell.PadRight($columnWidths[$index]) }
-                [void]$rowCells.Add($cell)
-            }
-            $rowGap = ' ' * ([Math]::Max(1, $labelWidth - $row.Label.Length + 1))
-            $body += "\n<b>$($row.Label)</b>" + $rowGap + '<mspace=0.5em>' + (($rowCells -join (' ' * $columnGap)).TrimEnd()) + '</mspace>'
-        }
-        return $header + $body
     }
-    return [regex]::Replace($normalized, $tablePattern, $evaluator)
+    if ($null -eq $yellow) { return $normalized }
+    $body = $yellow.Groups['body'].Value -replace '\\n', ' '
+    $header = [regex]::Match($body, '<b>数值(?<labels>[^<]*)</b>')
+    if (-not $header.Success) { return $normalized }
+    $headerEnd = $header.Index + $header.Length
+    $labelText = $header.Groups['labels'].Value
+    if ([string]::IsNullOrWhiteSpace($labelText)) {
+        $outsideLabels = [regex]::Match($body.Substring($headerEnd), '^[ \t]+(?<labels>[^<]*?)(?=<b>)')
+        if ($outsideLabels.Success) {
+            $labelText = $outsideLabels.Groups['labels'].Value
+            $headerEnd += $outsideLabels.Index + $outsideLabels.Length
+        }
+    }
+    $labels = @($labelText.Trim() -split '[ \t]+' | Where-Object { $_ })
+    $rowPattern = '<b>(?<label>[^<]+)</b>[ \t]+(?<values>' + $numberPattern + '(?:[ \t]+' + $numberPattern + ')*)'
+    $rows = [regex]::Matches($body.Substring($headerEnd), $rowPattern)
+    if ($rows.Count -eq 0) { return $normalized }
+    $parsedRows = @()
+    foreach ($row in $rows) {
+        $values = @($row.Groups['values'].Value -split '[ \t]+' | Where-Object { $_ })
+        $parsedRows += [pscustomobject]@{ Label = $row.Groups['label'].Value.Trim(); Values = $values }
+    }
+    $maxValues = ($parsedRows | ForEach-Object { $_.Values.Count } | Measure-Object -Maximum).Maximum
+    $columnCount = [Math]::Max($labels.Count, [int]$maxValues)
+    if ($columnCount -lt 1) { return $normalized }
+    $labelWidth = '数值'.Length
+    foreach ($row in $parsedRows) { $labelWidth = [Math]::Max($labelWidth, $row.Label.Length) }
+    $columnWidths = New-Object int[] $columnCount
+    for ($index = 0; $index -lt $columnCount; $index++) {
+        if ($index -lt $labels.Count) { $columnWidths[$index] = $labels[$index].Length }
+        foreach ($row in $parsedRows) {
+            if ($index -lt $row.Values.Count) { $columnWidths[$index] = [Math]::Max($columnWidths[$index], $row.Values[$index].Length) }
+        }
+    }
+    $columnGap = 3
+    $headerValues = New-Object 'System.Collections.Generic.List[string]'
+    for ($index = 0; $index -lt $labels.Count; $index++) {
+        [void]$headerValues.Add($labels[$index].PadRight($columnWidths[$index]))
+    }
+    $headerGap = ' ' * ([Math]::Max(1, $labelWidth - '数值'.Length + 1))
+    $table = '<b>数值' + $headerGap + (($headerValues -join (' ' * $columnGap)).TrimEnd()) + '</b>'
+    $bodyLines = ''
+    foreach ($row in $parsedRows) {
+        if ($row.Label -eq '总计' -or $row.Label -eq '合计') { $bodyLines += "\n" }
+        $rowCells = New-Object 'System.Collections.Generic.List[string]'
+        for ($index = 0; $index -lt $row.Values.Count; $index++) {
+            $cell = $row.Values[$index]
+            if ($index -lt $row.Values.Count - 1) { $cell = $cell.PadRight($columnWidths[$index]) }
+            [void]$rowCells.Add($cell)
+        }
+        $rowGap = ' ' * ([Math]::Max(1, $labelWidth - $row.Label.Length + 1))
+        $bodyLines += "\n<b>$($row.Label)</b>" + $rowGap + (($rowCells -join (' ' * $columnGap)).TrimEnd())
+    }
+    $table += $bodyLines
+    $prefix = $body.Substring(0, $header.Index).Trim() -replace '[ \t]+', ' '
+    $prefix = [regex]::Replace($prefix, '[ \t]*(<b>结构\b)', '\n$1')
+    if ($prefix.Length -gt 0) { $prefix += "\n" }
+    $replacement = '<color=#ffcc00>' + $prefix + $table + '</color>'
+    $normalized = $normalized.Remove($yellow.Index, $yellow.Length).Insert($yellow.Index, $replacement)
+    return $normalized
 }
 
 function Update-LocalizationJson([string]$Path) {

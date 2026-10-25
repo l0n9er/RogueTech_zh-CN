@@ -17,7 +17,7 @@
 
 | 内容 | 说明 |
 |---|---|
-| 翻译总表 | `strings_zh-CN.csv`，65,310 行 / 64,933 键 |
+| 翻译总表 | `strings_zh-CN.csv`，68,745 行 / 68,369 键 |
 | 机甲 / 战车 / 战甲 | 名称、描述、角色定位（Details / YangsThoughts / StockRole） |
 | MechAffinity | 亲和面板的名称与描述 |
 | 各模组本地化表 | 战斗、合约、事件、星图等 |
@@ -112,7 +112,7 @@ powershell -File "工具\安装.ps1" -gameRoot "D:\Steam\steamapps\common\BATTLE
 17. 补译 Quirk 特性显示名
 18. 汉化装备分类显示名
 19. 补充界面弹窗与任务目标兜底键
-20. （可选）合并月光石头新版条目
+20. （可选）按月光石头 RT 表覆盖同键译文并补入独有条目
 21. 修复译文中的性别分支残留英文
 22. 汉化机师个性与亲和 tag 文本
 23. 清理控制字符、标点空格与插值占位符
@@ -260,7 +260,6 @@ RtCache\                          启动器缓存副本
   ├─ 还原.ps1                     按备份还原
   ├─ find-game.ps1                游戏目录自动探测
   ├─ fold-apply.ps1               数据字段汉化（含 Details 前缀匹配与元数据清理）
-  ├─ apply-localization-missing.ps1 补齐本地化字段中的缺失中文并修复英文回退
   ├─ apply-words.ps1              对话与战斗字幕
   ├─ apply-voicepacks.ps1         额外 MWSphere 语音包说明汉化（存在时自动处理）
   ├─ apply-bonus.ps1              装备特性说明（Short / Long / Full）

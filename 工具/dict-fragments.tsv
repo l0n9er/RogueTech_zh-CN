@@ -366,8 +366,8 @@ Small Cockpit	小型驾驶舱	Base-fragment
 Small Pulse Laser	小型脉冲激光	Base-fragment
 Small VSP Laser	小型 VSP 激光	Base-fragment
 Small X-Pulse	小型X脉冲激光	Base-fragment
-Sniper Artillery	狙击炮	Base-fragment
-Sniper Artillery Cannon	狙击炮加农炮	Base-fragment
+Sniper Artillery	Sniper火炮	Base-fragment
+Sniper Artillery Cannon	Sniper火炮加农炮	Base-fragment
 Snub-Nose PPC	短管PPC	Base-fragment
 Snubnose PPC	短管PPC	Base-fragment
 Solaris Arms	索拉里斯兵工厂	Base-fragment
@@ -457,29 +457,3 @@ Wraith Suppression Shield System	幽灵抑制护盾系统	Base-fragment
 Wrath of Blake	布雷克之怒	Base-fragment
 Wrecking Ball	破坏球	Base-fragment
 Yellow Jacket	黄蜂	Base-fragment
-Created during the Age of War, the Vulture series of gunships are designed to wear targets down at range and provide direct fire support for allied units. A 30 ton gunship, the Vulture is usually built around some variation of a 100 rated engine, giving it a top speed of 120 km/h; with 4-5 tons of armour on each variant. Still in irregular production, the Vulture can be found in any number of variants across most of known space.	秃鹫系列炮艇机诞生于战争年代，旨在远距离削弱目标并为友军提供直接火力支援。这种 30 吨炮艇机通常搭载约 100 额定的引擎，最高速度为 120 公里/小时；各变型配有 4 至 5 吨装甲。秃鹫仍在断续生产，在已知空间的大部分地区都能见到各种变型。
-Biome Restrictions:	生态限制：
-This unit can not deploy in Lunar biomes.	无法部署于月球生物群系。
-This unit can not deploy in Lunar or Martian biomes due to using an ICE.	该单位使用内燃机，无法部署于月球或火星生物群系。
-Movement:	移动：
-hexes /	格 /
-meters.	米。
-Vehicle Stealth Armor	载具隐形装甲
-Light Ferro	轻型铁素纤维
-Values       A        S	数值       A        S
-<b>Armor:</b>	<b>装甲：</b>
-<b>Structure:</b>	<b>结构：</b>
-<b>Front</b>	<b>前部</b>
-<b>Left</b>	<b>左侧</b>
-<b>Right</b>	<b>右侧</b>
-<b>Rear</b>	<b>后部</b>
-<b>Total</b>	<b>总计</b>
-Quirk: Easy to Pilot	特性：易于驾驶
-Easy to Pilot	易于驾驶
-Armor	装甲
-Structure	结构
-Front	前部
-Left	左侧
-Right	右侧
-Rear	后部
-Total	总计
