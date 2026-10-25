@@ -1,0 +1,124 @@
+﻿1
+00:00:10,500 --> 00:00:13,020
+I am Kamea of House Arano,
+
+2
+00:00:13,020 --> 00:00:15,700
+High Lady of the Aurigan Reach,
+
+3
+00:00:15,980 --> 00:00:17,980
+Protector of Coromodir,
+
+4
+00:00:18,180 --> 00:00:20,540
+and the Sword of Restoration.
+
+5
+00:00:21,340 --> 00:00:26,050
+But I am not a hero… no matter what the stories say.
+
+6
+00:00:26,860 --> 00:00:32,020
+A hero would have sacrificed more, compromised less.
+
+7
+00:00:33,580 --> 00:00:35,560
+A hero would have done better.
+
+8
+00:00:37,420 --> 00:00:42,540
+You know this, of course - you were there.
+
+9
+00:00:45,980 --> 00:00:50,420
+My father used to tell me stories about the ancient times,
+
+10
+00:00:51,180 --> 00:00:53,140
+about the Star League.
+
+11
+00:00:53,180 --> 00:00:55,820
+A golden age of prosperity,
+
+12
+00:00:56,020 --> 00:00:59,020
+upheld by the great MechWarriors of old -
+
+13
+00:00:59,380 --> 00:01:01,020
+guardians of the innocent,
+
+14
+00:01:01,180 --> 00:01:03,020
+protectors of the peace.
+
+15
+00:01:03,020 --> 00:01:06,420
+I always dreamed of following in their footsteps!
+
+16
+00:01:08,980 --> 00:01:12,020
+I was too young to see the truth of things.
+
+17
+00:01:12,780 --> 00:01:16,620
+After all, it wasn't heroism
+
+18
+00:01:16,620 --> 00:01:19,780
+or a noble cause that won me the throne.
+
+19
+00:01:19,980 --> 00:01:23,620
+It was hiring a mercenary skilled enough -
+
+20
+00:01:23,780 --> 00:01:25,900
+perhaps ruthless enough -
+
+21
+00:01:25,980 --> 00:01:27,820
+to carry the day.
+
+22
+00:01:27,980 --> 00:01:30,020
+Hiring <b>you</b>.
+
+23
+00:01:31,060 --> 00:01:33,420
+I still don't know if you fought for honor,
+
+24
+00:01:33,420 --> 00:01:34,820
+or for the thrill of it.
+
+25
+00:01:34,820 --> 00:01:36,620
+For belief in my cause,
+
+26
+00:01:36,700 --> 00:01:38,980
+or just in my money.
+
+27
+00:01:39,180 --> 00:01:43,460
+But whether it was your noble heart or mercenary mind…
+
+28
+00:01:43,780 --> 00:01:47,020
+your actions gave us hope.
+
+29
+00:01:47,180 --> 00:01:50,020
+That makes you a hero in the eyes of history.
+
+30
+00:01:50,780 --> 00:01:52,420
+Whether you believe it?
+
+31
+00:01:56,980 --> 00:01:58,420
+That's up to you.
+

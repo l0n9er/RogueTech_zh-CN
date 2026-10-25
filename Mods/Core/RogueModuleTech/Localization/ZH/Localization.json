@@ -1148,7 +1148,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "These Flare Launchers are an Automatic Anti-Missile-System firing a cloud of small explosive warheads with chaff at any incoming missile trying to destroy it or disorient its guidance.<b><color=#F79232>5 SALVOS</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这些闪光弹发射器是一种自动反导弹系统，向任何试图来袭的导弹发射一团带箔条的小型爆炸弹头，以摧毁它或扰乱其制导。<b><color=#F79232>5次齐射</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这些闪光弹发射器是一种自动反导弹系统，向任何试图来袭的导弹发射一团带箔条的小型爆炸弹头，以摧毁它或扰乱其制导。<b><color=#F79232>5次齐射</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -1460,7 +1460,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Replacing the Warhead with a selection of disposable Active and Passive Sensors Allows this to deploy Sensor in a Area as a Early Warning.<b><color=#F79232>5 Salvos</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "把战斗部换成一组一次性主动与被动传感器，使它能在一片区域内布设传感器作为早期预警。<b><color=#F79232>5轮齐射</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "把战斗部换成一组一次性主动与被动传感器，使它能在一片区域内布设传感器作为早期预警。<b><color=#F79232>5轮齐射</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -3132,7 +3132,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "'There is no such thing as Overkill' Delivering a payload of extremely Volatile Explosive does this rocket show the ingenuity of those with nothing.<b><color=#F79232>5 SALVOS!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "'不存在过度杀伤这回事' 这枚火箭投送极其易爆的爆炸载荷，展示了那些一无所有者的巧思。<b><color=#F79232>5轮齐射！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "'不存在过度杀伤这回事' 这枚火箭投送极其易爆的爆炸载荷，展示了那些一无所有者的巧思。<b><color=#F79232>5轮齐射！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -4108,7 +4108,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Overwhelms the target's sensors and AMS with chaff and flares. Based on one of the most Ancient Electronic Countermeasures, these rockets carry a payload of Chaff and release a strobing, blinding Light on detonation to fool any and all kinds of Sensors.<b><color=#F79232>3 SALVOS</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "以箔条与闪光弹压制目标传感器与反导弹系统。这些火箭基于最古老的电子对抗手段之一：携带箔条载荷，并在引爆时释放频闪致盲的强光，以欺骗一切传感器。<b><color=#F79232>3次齐射</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "以箔条与闪光弹压制目标传感器与反导弹系统。这些火箭基于最古老的电子对抗手段之一：携带箔条载荷，并在引爆时释放频闪致盲的强光，以欺骗一切传感器。<b><color=#F79232>3次齐射</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -63092,7 +63092,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This is a nightmare. It's actually just the guts of a rocket technical with some 'Mech-sized handles welded on. Please don't ask me to reload it for you.<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这是一场噩梦。它实际上只是一台火箭皮卡的内部结构，焊上了几个机甲尺寸的把手。请别叫我帮你给它装弹。<b><color=#F79232>单发！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这是一场噩梦。它实际上只是一台火箭皮卡的内部结构，焊上了几个机甲尺寸的把手。请别叫我帮你给它装弹。<b><color=#F79232>单发！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94028,7 +94028,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Medium-Range Missile Launcher was designed by scientists at Luthien Armor Works. MRMs are dead-fire missiles that are fired more like lasers than missiles. In order to pack as many missiles as possible into one salvo, scientists removed guidance systems and made the whole package smaller. Though this was seen as a step backwards in technological development, the inexpensive and deadly MRMs have spread throughout the Draconis Combine and to many mercenary units. \n\n <b><color=#ffcc00>Uses MRM Ammo.</color></b> <b><color=#F79232>5 Salvos</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "中程导弹发射器由卢西恩装甲厂的科学家设计。MRM是一种无制导导弹，发射方式更像激光而非导弹。为了把尽可能多的导弹塞进一轮齐射，科学家们拆掉了制导系统，让整个组件更小。虽然这被视为技术发展上的一次倒退，但廉价而致命的MRM已遍布龙尼斯联合体和许多雇佣兵部队。\n<<NL> <b><color=#ffcc00>使用MRM弹药。</color></b> <b><color=#F79232>5轮齐射</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "中程导弹发射器由卢西恩装甲厂的科学家设计。MRM是一种无制导导弹，发射方式更像激光而非导弹。为了把尽可能多的导弹塞进一轮齐射，科学家们拆掉了制导系统，让整个组件更小。虽然这被视为技术发展上的一次倒退，但廉价而致命的MRM已遍布龙尼斯联合体和许多雇佣兵部队。\n<<NL> <b><color=#ffcc00>使用MRM弹药。</color></b>\n<b><color=#F79232>5轮齐射</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94044,7 +94044,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "I don't wanna know what Moonshine was responsible for this. Someone hotwired a Clan and Standard Plasma Cannon together, but on a single feeding system. On the upside, this spreads the Plasma reaction all over its impact area. On the other hand, it probably explodes. \n\n<b><color=#ffcc00>Uses Plasma Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "我不想追问这是哪家的私酒惹的祸。有人把一门氏族等离子炮和一门标准等离子炮硬接在一起，却共用一套供弹系统。好处是，这会把等离子反应散布到整个命中区域。坏处是，它很可能会爆炸。\n\n<b><color=#ffcc00>使用等离子弹药。</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "我不想追问这是哪家的私酒惹的祸。有人把一门氏族等离子炮和一门标准等离子炮硬接在一起，却共用一套供弹系统。好处是，这会把等离子反应散布到整个命中区域。坏处是，它很可能会爆炸。\n\n<b><color=#ffcc00>使用等离子弹药。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94236,7 +94236,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>Smokey's Special has 3 salvos.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>\"烟鬼特调\"有 3 轮齐射。</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>\"烟鬼特调\"有 3 轮齐射。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94268,7 +94268,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>Smokey's Special has 3 salvos.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>\"烟鬼特调\"有 3 轮齐射。</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>\"烟鬼特调\"有 3 轮齐射。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94300,7 +94300,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>Smokey's Special has 3 salvos.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>\"烟鬼特调\"有 3 轮齐射。</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>\"烟鬼特调\"有 3 轮齐射。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94332,7 +94332,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>Smokey's Special has 3 salvos.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>\"烟鬼特调\"有 3 轮齐射。</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>\"烟鬼特调\"有 3 轮齐射。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94364,7 +94364,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Heavy Rocket Launcher operate on the same Principle as the normal widespread Rocket Launcher, being unguided bolted on One Shot Throwaway Launchers do they carrier a heavier payload..<b><color=#F79232>5 Salvos</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "重型火箭发射器与普通广泛使用的火箭发射器原理相同，都是无制导、螺栓固定的单发抛弃式发射器，但携带更重的载荷。<b><color=#F79232>5轮齐射</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "重型火箭发射器与普通广泛使用的火箭发射器原理相同，都是无制导、螺栓固定的单发抛弃式发射器，但携带更重的载荷。<b><color=#F79232>5轮齐射</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -94396,7 +94396,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Taken as salvage from a Word of Blake jihadist by Peter Steiner-Davion, these Improved Rocket Launcher carry a smart Guidance System which drastically improves their accuracy. <b><color=#F79232>3 Salvos!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这些改进型火箭发射器是彼得·施泰纳-达维昂从一名布雷克之言圣战者身上打捞来的，它们装有智能制导系统，大幅提升精度。<b><color=#F79232>3轮齐射！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这些改进型火箭发射器是彼得·施泰纳-达维昂从一名布雷克之言圣战者身上打捞来的，它们装有智能制导系统，大幅提升精度。<b><color=#F79232>3轮齐射！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -105588,7 +105588,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Heavy Gauss Rifle is a new, deadly innovation by Lyran Alliance scientists in conjunction with a manufacturing cooperation between Defiance Industries and TharHes. Applying their ''bigger is better'' philosophy to Gauss technology, the Heavy Gauss Rifle is one of the heaviest battlefield weapons in existence.\n\n <b><color=#ffcc00>Uses Heavy Gauss Ammo. \n\n</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "重型磁轨炮是莱兰联盟科学家与反抗工业和塔尔赫斯制造合作的一项新的致命创新。他们把自己的\"越大越好\"哲学应用到磁轨技术上，重型磁轨炮是现存最重的战场武器之一。\n<<NL> <b><color=#ffcc00>使用重型磁轨炮弹药。\n<<NL></color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "重型磁轨炮是莱兰联盟科学家与反抗工业和塔尔赫斯制造合作的一项新的致命创新。他们把自己的\"越大越好\"哲学应用到磁轨技术上，重型磁轨炮是现存最重的战场武器之一。\n<<NL> <b><color=#ffcc00>使用重型磁轨炮弹药。\n<<NL></color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -105660,7 +105660,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The Light Gauss Rifle was introduced by the Free Worlds League. It functions identically to a Gauss Rifle, electromagnetically accelerating a slug to high speeds to cause massive damage at long range. As its name suggests, however, the Light Gauss Rifle is designed to be more compact, allowing Gauss Rifles to be mounted on smaller combat units.\n\n <b><color=#ffcc00>Uses Light Gauss Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "轻型磁轨炮由自由世界联盟推出。它的工作原理与磁轨炮完全相同，以电磁方式将弹丸加速到高速，在远距离造成巨大伤害。但正如其名，轻型磁轨炮被设计得更紧凑，使磁轨炮能装在更小的战斗单位上。\n<<NL> <b><color=#ffcc00>使用轻型磁轨炮弹药。</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "轻型磁轨炮由自由世界联盟推出。它的工作原理与磁轨炮完全相同，以电磁方式将弹丸加速到高速，在远距离造成巨大伤害。但正如其名，轻型磁轨炮被设计得更紧凑，使磁轨炮能装在更小的战斗单位上。\n<<NL> <b><color=#ffcc00>使用轻型磁轨炮弹药。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -110692,7 +110692,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This is 3 Plasma Cannons with a single rapid feeding mechanism that fails to properly create the plasma and mostly just lobs hot plastic at whatever is infront of it.... I know Pirates are known to imbibe but you gotta stop bringing me this stuff Boss! \n\n<b><color=#ffcc00>Uses Plasma Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这是3门等离子炮配一套快速供弹机构，但它无法正确生成等离子，多半只是把热塑料甩向眼前的东西……我知道海盗好这口，但老板你得别再给我带这种东西了！\n\n<b><color=#ffcc00>使用等离子弹药。</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这是3门等离子炮配一套快速供弹机构，但它无法正确生成等离子，多半只是把热塑料甩向眼前的东西……我知道海盗好这口，但老板你得别再给我带这种东西了！\n\n<b><color=#ffcc00>使用等离子弹药。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -113628,7 +113628,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 3 Heavy Machine Guns. \n\n <b><color=#ffcc00>Uses HMG Ammo.</color></b> <b><color=#00ffff>Left Click on Ammocount/Damage value during battle to switch firing mode</color> </b>",
-        "CULTURE_ZH_CN": "机枪阵列是多挺联动同时射击的机枪，这里由3挺重型机枪组成。\n\n <b><color=#ffcc00>使用重型机枪弹药。</color></b> <b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color> </b>"
+        "CULTURE_ZH_CN": "机枪阵列是多挺联动同时射击的机枪，这里由3挺重型机枪组成。\n\n <b><color=#ffcc00>使用重型机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color> </b>"
       }
     },
     {
@@ -113684,7 +113684,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 3 Heavy Machine Guns. Clan Versions are less likely to Jam at higher fire rates.  \n\n <b><color=#ffcc00>Uses HMG Ammo.</color></b> <b><color=#00ffff>Left Click on Ammocount/Damage value during battle to switch firing mode</color> </b>",
-        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由3挺重型机枪组成。氏族版本在更高射速下更不容易卡壳。\n<<NL> <b><color=#ffcc00>使用重型机枪弹药。</color></b> <b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
+        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由3挺重型机枪组成。氏族版本在更高射速下更不容易卡壳。\n<<NL> <b><color=#ffcc00>使用重型机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
       }
     },
     {
@@ -113836,7 +113836,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 4 Light Machine Guns. \n\n <b><color=#ffcc00>Uses LMG Ammo.</color></b> <b><color=#00ffff>Left Click on Ammocount/Damage value during battle to switch firing mode</color> </b>",
-        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺轻机枪组成。\n<<NL> <b><color=#ffcc00>使用轻机枪弹药。</color></b> <b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
+        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺轻机枪组成。\n<<NL> <b><color=#ffcc00>使用轻机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
       }
     },
     {
@@ -113900,7 +113900,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Machine Gun Arrays are multiple Machine Guns linked together to fire simultaneously, this consists of 4 Light Machine Guns. Clan Versions are less likely to Jam at higher fire rates.  \n\n <b><color=#ffcc00>Uses LMG Ammo.</color></b> <b><color=#00ffff>Left Click on Ammocount/Damage value during battle to switch firing mode</color> </b>",
-        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺轻机枪组成。氏族版本在更高射速下更不容易卡壳。\n<<NL> <b><color=#ffcc00>使用轻机枪弹药。</color></b> <b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
+        "CULTURE_ZH_CN": "机枪阵列是多挺机枪联动同时开火，此处由4挺轻机枪组成。氏族版本在更高射速下更不容易卡壳。\n<<NL> <b><color=#ffcc00>使用轻机枪弹药。</color></b>\n<b><color=#00ffff>战斗中左键点击弹药量/伤害数值可切换射击模式</color></b>"
       }
     },
     {
@@ -114148,7 +114148,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based on an ancient Ballistic Multiple Launch Rocket System does this fire Long Range Area of Effect Missiles.<b><color=#F79232>6 SALVOS!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "它基于一种古老的弹道多管火箭系统，发射的是远程面杀伤导弹。<b><color=#F79232>6次齐射！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "它基于一种古老的弹道多管火箭系统，发射的是远程面杀伤导弹。<b><color=#F79232>6次齐射！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -114524,7 +114524,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based on a combination of FASCAM Technology and Throw Away Rocket Launchers does this Mine Dispenser allow to deploy a single minefield during Battle.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -114564,7 +114564,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based on a combination of FASCAM Technology and Throw Away Rocket Launchers does this Mine Dispenser allow to deploy a single minefield during Battle.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -114604,7 +114604,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based on a combination of FASCAM Technology and Throw Away Rocket Launchers does this Mine Dispenser allow to deploy a single minefield during Battle.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -114644,7 +114644,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based on a combination of FASCAM Technology and Throw Away Rocket Launchers does this Mine Dispenser allow to deploy a single minefield during Battle.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -114684,7 +114684,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Based on a combination of FASCAM Technology and Throw Away Rocket Launchers does this Mine Dispenser allow to deploy a single minefield during Battle.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "基于 FASCAM 技术与抛弃式火箭发射器的结合，这款布雷器允许在战斗中布设一片雷场。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -117524,7 +117524,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This 'Rifle' is little more than a crude tube with a firing mechanism added to it. Whatever works out there, I guess.\n\n <b><color=#ffcc00>Uses Potato Rifle Ammo.</color></b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这把\"步枪\"不过是一根粗管子加上发射机构。我想在那外面能用的就行。\n<<NL> <b><color=#ffcc00>使用土豆步枪弹药。</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这把\"步枪\"不过是一根粗管子加上发射机构。我想在那外面能用的就行。\n<<NL> <b><color=#ffcc00>使用土豆步枪弹药。</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -117556,7 +117556,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Developed by the Marian Hegemony, they often replace more sophisticated equipment that the Periphery nation cannot afford or is unable to repair.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器是廉价、无制导的一次性导弹发射器。它们由马里亚纳霸权开发，常用来替代这个外围地区国家无力负担或无法维修的更精密装备。<b><color=#F79232>单次发射！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器是廉价、无制导的一次性导弹发射器。它们由马里亚纳霸权开发，常用来替代这个外围地区国家无力负担或无法维修的更精密装备。<b><color=#F79232>单次发射！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -117620,7 +117620,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Developed by the Marian Hegemony, they often replace more sophisticated equipment that the Periphery nation cannot afford or is unable to repair.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器是廉价、无制导的一次性导弹发射器。它们由马里亚纳霸权开发，常用来替代这个外围地区国家无力负担或无法维修的更精密装备。<b><color=#F79232>单次发射！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器是廉价、无制导的一次性导弹发射器。它们由马里亚纳霸权开发，常用来替代这个外围地区国家无力负担或无法维修的更精密装备。<b><color=#F79232>单次发射！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -117652,7 +117652,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Developed by the Marian Hegemony, they often replace more sophisticated equipment that the Periphery nation cannot afford or is unable to repair.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器是廉价、无制导的一次性导弹发射器。它们由马里亚纳霸权开发，常用来替代这个外围地区国家无力负担或无法维修的更精密装备。<b><color=#F79232>单次发射！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器是廉价、无制导的一次性导弹发射器。它们由马里亚纳霸权开发，常用来替代这个外围地区国家无力负担或无法维修的更精密装备。<b><color=#F79232>单次发射！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -117684,7 +117684,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "AA Rocket Launchers are an innovation out of the Taurian Concordat. While the rockets themselves are unguided, the launchers have built-in LIDAR, specially tuned to lock onto aircraft signatures even in the absence of advanced fire-control systems.<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "防空火箭发射器是陶里安协约国的一项创新。虽然火箭本身无制导，但发射器内置激光雷达，经过特别调校，即便没有先进火控系统也能锁定飞行器信号。<b><color=#F79232>单发！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "防空火箭发射器是陶里安协约国的一项创新。虽然火箭本身无制导，但发射器内置激光雷达，经过特别调校，即便没有先进火控系统也能锁定飞行器信号。<b><color=#F79232>单发！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -117708,7 +117708,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Five Rocket Launchers mounted together. Each launcher can be fired individually, with each launcher consisting of ten tubes.<b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "五具火箭发射器并排挂载。每具发射器可单独击发，每具由十个发射管组成。<b><color=#F79232>单发！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "五具火箭发射器并排挂载。每具发射器可单独击发，每具由十个发射管组成。<b><color=#F79232>单发！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -117876,7 +117876,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This Rocket Launchers Warhead got replaced by a HE Payload spreading the damage over a wide Area on Impact.<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这种火箭发射器的战斗部被换成了高爆载荷，命中时将伤害散布到很大一片区域。<b><color=#F79232>单发！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这种火箭发射器的战斗部被换成了高爆载荷，命中时将伤害散布到很大一片区域。<b><color=#F79232>单发！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118004,7 +118004,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118044,7 +118044,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118084,7 +118084,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118124,7 +118124,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. Someone took these warheads and replaced their payload with Inferno Gel. <b><color=#F79232>1 SHOT!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>单发！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。有人把这些弹头换成了燃烧凝胶。<b><color=#F79232>单发！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118164,7 +118164,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. The Packs have five rockets stacked superposed per tube, each firing cycle launches the front-most rocket. <b><color=#F79232>5 SALVOS!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。每个吊舱的发射管内叠放五枚火箭，每轮射击发射最前方那一枚。<b><color=#F79232>5 轮齐射！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。每个吊舱的发射管内叠放五枚火箭，每轮射击发射最前方那一枚。<b><color=#F79232>5 轮齐射！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118196,7 +118196,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. The Packs have five rockets stacked superposed per tube, each firing cycle launches the front-most rocket. <b><color=#F79232>5 SALVOS!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。每个吊舱的发射管内叠放五枚火箭，每轮射击发射最前方那一枚。<b><color=#F79232>5 轮齐射！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。每个吊舱的发射管内叠放五枚火箭，每轮射击发射最前方那一枚。<b><color=#F79232>5 轮齐射！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118228,7 +118228,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. The Packs have five rockets stacked superposed per tube, each firing cycle launches the front-most rocket. <b><color=#F79232>5 SALVOS!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。每个吊舱的发射管内叠放五枚火箭，每轮射击发射最前方那一枚。<b><color=#F79232>5 轮齐射！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。每个吊舱的发射管内叠放五枚火箭，每轮射击发射最前方那一枚。<b><color=#F79232>5 轮齐射！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -118260,7 +118260,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Rocket Launchers are cheap, unguided, one-shot missile launchers. The Packs have five rockets stacked superposed per tube, each firing cycle launches the front-most rocket. <b><color=#F79232>5 SALVOS!</color> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。每个吊舱的发射管内叠放五枚火箭，每轮射击发射最前方那一枚。<b><color=#F79232>5 轮齐射！</color> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "火箭发射器廉价、无制导、一次性使用。每个吊舱的发射管内叠放五枚火箭，每轮射击发射最前方那一枚。<b><color=#F79232>5 轮齐射！</color>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -121540,7 +121540,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": " <b><color=#F79232>3 SHOTS!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": " <b><color=#F79232>3发！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": " <b><color=#F79232>3发！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -123324,7 +123324,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This missile pod launches a set of four, fire and forget, guided missiles comparable to the standard Thunderbolt 5 class. <b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这个导弹吊舱发射一组四枚发射后不管的制导导弹，性能可与标准雷霆5级相比。<b><color=#F79232>单发！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这个导弹吊舱发射一组四枚发射后不管的制导导弹，性能可与标准雷霆5级相比。<b><color=#F79232>单发！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {
@@ -123396,7 +123396,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "This missile pod launches a set of four, fire and forget, guided missiles comparable to the standard Thunderbolt 5 class. It holds four volleys.<b><color=#F79232>1 SHOT!</color> </b> <b><color=#099ff2>VOLATILE!</color></b>",
-        "CULTURE_ZH_CN": "这个导弹吊舱发射一组四枚发射后不管的制导导弹，性能可与标准雷霆5级相比。它可携带四轮齐射。<b><color=#F79232>单发！</color></b> <b><color=#099ff2>易爆！</color></b>"
+        "CULTURE_ZH_CN": "这个导弹吊舱发射一组四枚发射后不管的制导导弹，性能可与标准雷霆5级相比。它可携带四轮齐射。<b><color=#F79232>单发！</color></b>\n<b><color=#099ff2>易爆！</color></b>"
       }
     },
     {

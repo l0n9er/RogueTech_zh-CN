@@ -64,7 +64,7 @@
 
 3. **双击 `安装.bat`**
 
-   脚本会显示 6 个安装阶段，内部共 25 个子步骤（第 20 步是可选的月光石头词条合并）。安装耗时约 **2~3 分钟**，请等它跑完再关窗口。
+   脚本会显示 6 个安装阶段，内部共 25 个子步骤。月光石头的译文、DLL、字体、字幕和资源清单已直接合并进本包，不需要选择或提供额外模块。安装耗时约 **2~3 分钟**，请等它跑完再关窗口。
    安装开始前会检查包内文件和工具是否齐全；关键步骤失败会立即停止，
    不会继续显示“安装完成”。详细输出保存在本次 `backup\时间戳\install.log`。
    安装开始时会先要求选择 Steam/GOG 版本；第 6 步会把 RogueTech 启动器的 `SafeLaunchDisabled` 改为 `true`，
@@ -73,7 +73,9 @@
 
 4. **重新启动游戏**
 
-   （模组数据只在启动时读取，装完必须重启才会生效）
+   必须通过 **RogueLauncher → Launch RogueTech** 启动，不能直接运行
+   `BattleTech.exe`；后者会让 RogueTech 核心初始化失败。模组数据只在启动时读取，
+   装完必须重启才会生效。
 
 ### 关于游戏路径
 
@@ -112,7 +114,7 @@ powershell -File "工具\安装.ps1" -gameRoot "D:\Steam\steamapps\common\BATTLE
 17. 补译 Quirk 特性显示名
 18. 汉化装备分类显示名
 19. 补充界面弹窗与任务目标兜底键
-20. （可选）按月光石头 RT 表覆盖同键译文并补入独有条目
+20. 使用已内置的月光石头新版条目（无需额外选择）
 21. 修复译文中的性别分支残留英文
 22. 汉化机师个性与亲和 tag 文本
 23. 清理控制字符、标点空格与插值占位符
@@ -210,6 +212,21 @@ Mods_Core_RogueTechCore_Localization.json
 A：按顺序排查：① 确认装完后**重启过游戏**；② 检查是否装了其它会覆盖
 文本的汉化模组；③ 删除 `<游戏目录>\Mods\.modtek\Cache` 后重启。
 
+**Q：启动后提示“部分模组未能加载”，并列出一长串模组？**
+
+A：先查看 `<游戏目录>\Mods\.modtek\ModTek.log`。若同时出现
+`Not loading CustomPrewarm because it is disabled` 和
+`Will not load "RogueTech Core"; missing dependencies`，根因是
+`Mods\Core\CustomPrewarm\modstate.json` 被关闭，后面的名单只是依赖级联结果。
+重新运行本补丁的 `安装.bat` 会先备份并自动恢复该状态；启动游戏时仍必须通过
+RogueLauncher 的 **Launch RogueTech**。若日志中的 `RogueTech Core` 为
+`fail:no` 且没有 `fail:yes`，说明这类级联加载问题已排除。
+
+**Q：直接运行 BattleTech.exe 后模组全部异常？**
+
+A：这是错误的启动入口。直接运行会触发 `RogueTech not launched with RogueLauncher!`，
+请退出游戏后从 RogueLauncher 重新点击 **Launch RogueTech**。
+
 **Q：安装脚本会覆盖我游戏里的 DLL 吗？**
 
 A：会。安装脚本第 4 步会替换 26 个汉化 DLL（含 `Assembly-CSharp.dll`）。
@@ -256,7 +273,7 @@ Mods\                             已汉化的模组数据 + 汉化 DLL（整套
 RtCache\                          启动器缓存副本
 可选-模组形式\                     把汉化做成 ModTek 模组（可选）
 工具\                             安装脚本（一般无需手动运行）
-  ├─ 安装.ps1                     主安装脚本（6 个阶段、25 个子步骤，第 20 步可选）
+  ├─ 安装.ps1                     主安装脚本（6 个阶段、25 个子步骤）
   ├─ 还原.ps1                     按备份还原
   ├─ find-game.ps1                游戏目录自动探测
   ├─ fold-apply.ps1               数据字段汉化（含 Details 前缀匹配与元数据清理）
@@ -265,6 +282,7 @@ RtCache\                          启动器缓存副本
   ├─ apply-bonus.ps1              装备特性说明（Short / Long / Full）
   ├─ apply-fields.ps1             通用字段补译（title / description / UIName / 合约简报；
                                    含 Quicsell 事件 Name / Details）
+  ├─ apply-residual-candidates.ps1 扫描并补译已确认的残留机甲/装备详情
   ├─ apply-statdesc.ps1           游戏本体状态说明模板
   ├─ apply-quirk.ps1              Quirk 特性显示名
   ├─ apply-category-zh.ps1        装备分类显示名汉化

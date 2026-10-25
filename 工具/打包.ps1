@@ -3,15 +3,12 @@ $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $packRoot = Split-Path $PSScriptRoot -Parent
-# 文件名带日期+时间后缀(精确到分), 便于区分版本; 旧包一并清掉, 只保留最新一个
+# 文件名带日期+时间后缀(精确到分), 便于区分版本; 保留已有发布包
 $stamp = (Get-Date).ToString('yyyyMMdd-HHmm')
 $zip = Join-Path $packRoot ('RT汉化包_' + $stamp + '.zip')
 
 # 需要排除的目录（相对包根）
 $excludeDirs = @('.git', 'backup')
-
-# 清掉所有历史包(含无后缀的旧命名), 避免目录里堆积
-Get-ChildItem $packRoot -Filter 'RT汉化包*.zip' -File -ErrorAction SilentlyContinue | Remove-Item -Force
 
 $files = Get-ChildItem $packRoot -Recurse -File -Force | Where-Object {
     $rel = $_.FullName.Substring($packRoot.Length).TrimStart('\')

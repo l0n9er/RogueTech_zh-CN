@@ -14,6 +14,7 @@ Mods\                                已汉化的模组数据（安装脚本会�
 BattleTech_Data\StreamingAssets\font                中文字形字体（Unity 资源包，
                                                     17 MB，缺了中文会显示成方框）
 BattleTech_Data\StreamingAssets\data\VersionManifest.csv  游戏资源清单（2.2 MB）
+BattleTech_Data\StreamingAssets\Video\Subtitles\    月光石头中文/英文剧情字幕（21 个）
 
 【汉化 DLL】（安装时写入 26 个，另附 GOG 替代程序集；均出自月光石头的《BATTLETECH 汉化工具》）
   BattleTech_Data\Managed\Assembly-CSharp.dll              游戏主程序集
@@ -42,9 +43,10 @@ BattleTech_Data\StreamingAssets\data\VersionManifest.csv  游戏资源清单（2
 安装.bat                             一键安装（双击即可）
 还原.bat                             一键还原（双击即可，用最新备份按目录结构覆盖回游戏）
 工具\安装.ps1                        安装脚本：自动找游戏目录、先备份再覆盖、
-                                     备份保留原目录结构，游戏在运行则拒绝执行，共 6 个阶段、25 个子步骤（第 20 步可选）
+                                     备份保留原目录结构，游戏在运行则拒绝执行，共 6 个阶段、25 个子步骤
                                      含安装包预检查、写入模组本地化表与数据文件、禁用启动器文件校验、
-                                     清理 ModTek 缓存、关键步骤失败即停与 install.log 日志
+                                     清理 ModTek 缓存、恢复 CustomPrewarm 启用状态、
+                                     关键步骤失败即停与 install.log 日志
 工具\还原.ps1                        还原脚本：把 backup\<时间戳>\ 按相对路径覆盖回游戏
 
 【工具】（正常无需手动运行，安装脚本会自动调用）
@@ -56,6 +58,7 @@ BattleTech_Data\StreamingAssets\data\VersionManifest.csv  游戏资源清单（2
 工具\dict-words.tsv                  对话台词中英对照表（6,642 行，去重后读取 6,546 条映射）
 工具\apply-voicepacks.ps1            检测额外 MWSphere 语音包并补写中文 credits
 工具\apply-fields.ps1                通用字段补译（title / description / UIName）
+工具\apply-residual-candidates.ps1   扫描并补译已确认的残留机甲/装备详情
 工具\dict-title.tsv                  任务标题中英对照表（21 条）
 工具\dict-desc.tsv                   目标描述中英对照表（39 条）
 工具\dict-uiname.tsv                 物品界面名对照表（37 条）

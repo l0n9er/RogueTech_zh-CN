@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$Root = (Split-Path $PSScriptRoot -Parent),
     [string]$ModsPath = '',
     [string]$CsvPath = ''
@@ -10,8 +10,13 @@ $detailLabelPattern = '(?:\u751f\u7269\u7fa4\u7cfb\u9650\u5236|\u73af\u5883\u965
 function Normalize-UnitDetailText([string]$Text) {
     if ([string]::IsNullOrEmpty($Text)) { return $Text }
     $colors = '#(?:e62e00|ff0000|ffef00|ffcc00|f0ff00|ff0d00)'
+    $redBlock = '(?i:<b><color=#(?:e62e00|ff0000)>(?:<b>)?(?:特质|特性|特点|特征)[:：].*?</color></b>)'
+    $costBlock = '(?i:<b><color=#(?:e62e00|ff0000)>(?:<b>)?(?:投放|部署)(?:费用|成本)倍率[:：].*?</color></b>)'
+    $Text = [regex]::Replace($Text, '(' + $redBlock + ')[ \t]+(?=' + $costBlock + ')', '$1\n\n')
+    $Text = [regex]::Replace($Text, '(' + $costBlock + ')[ \t]+(?=<color=#(?:ffef00|ffcc00|f0ff00))', '$1\n\n')
     $Text = [regex]::Replace($Text, '(?i)</color></b>[ \t]+(?=<b>)', '</color></b>\n')
     $Text = [regex]::Replace($Text, '(?i)</color>[ \t]+(?=<b>)', '</color>\n')
+    $Text = [regex]::Replace($Text, '(?i)</color>[ \t]*(?:\\n)*(?=<color=#(?:ff0000|e62e00)>(?:<b>)?(?:特性|特质|特点|特征)[:：])', '</color>\n\n')
     $Text = [regex]::Replace($Text, '<b>(?:\\n)*(?=<color=' + $colors + '>' + $detailLabelPattern + ')', '<b>', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
     $targetTagPattern = '(?i)(?<!<b>)(?:<b>)?<color=' + $colors + '>(?:<b>)?(?=' + $detailLabelPattern + ')'
     if ($Text -notmatch $targetTagPattern) {
@@ -23,7 +28,11 @@ function Normalize-UnitDetailText([string]$Text) {
     $Text = [regex]::Replace($Text, $breakPattern, '\n', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
 
     $missingBreakPattern = '(?<!\\n)(?<!<br>)(?<!<<NL>>)(?=' + $boundary + ')'
-    return [regex]::Replace($Text, $missingBreakPattern, '\n', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    $Text = [regex]::Replace($Text, $missingBreakPattern, '\n', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    $Text = [regex]::Replace($Text, '(' + $redBlock + ')[ \t]*(?:\\n)+(?=' + $costBlock + ')', '$1\n\n')
+    $Text = [regex]::Replace($Text, '(' + $costBlock + ')[ \t]*(?:\\n)+(?=<color=#(?:ffef00|ffcc00|f0ff00))', '$1\n\n')
+    $Text = [regex]::Replace($Text, '(?<align></align>)?</color>[ \t]*(?:\\n)*(?=<color=#(?:ff0000|e62e00)>(?:特性|特质|特点|特征)[:：])', '${align}</color>\n\n', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    return $Text
 }
 
 function Update-DetailsJson([string]$Path) {

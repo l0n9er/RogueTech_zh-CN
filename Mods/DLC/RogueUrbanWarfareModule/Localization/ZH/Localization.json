@@ -5236,7 +5236,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The UrbanMech IIC is a Clan IIC-style upgrade of the original UrbanMech. Around the same time as the development of the OmniMech during the Golden Century, Clan Coyote technicians reworked this venerable design. They studied battle data from as far back as the Amaris Civil War and used this research as the basis for their upgrades.\n\n<b><color=#e62e00>Quirk: 360° Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "都市机甲 IIC 是原版都市机甲的氏族 IIC 式升级。在黄金世纪全能机甲问世的同一时期，郊狼氏族技师重做了这一经典设计。他们研究了可追溯至阿马里斯内战的战斗数据，并以这些研究作为升级的基础。\n\n<b><color=#e62e00>特质：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>臂部驱动器限制：左上臂、右上臂</color>"
+        "CULTURE_ZH_CN": "都市机甲 IIC 是原版都市机甲的氏族 IIC 式升级。在黄金世纪全能机甲问世的同一时期，郊狼氏族技师重做了这一经典设计。他们研究了可追溯至阿马里斯内战的战斗数据，并以这些研究作为升级的基础。\n<b><color=#e62e00>特质：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>臂部驱动器限制：左上臂、右上臂</color>"
       }
     },
     {
@@ -5276,7 +5276,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The product of an aborted series of experiments into LAM technology, the Urbanmech LAM is not surprisingly; poorly suited for either role. Designed by the self proclaimed professor of Cluffs Stand, Mencius Horvat; using a mixture of stolen Urbanmech parts and Lostech recovered from throughout the Periphery. Slow by LAM standards and drastically under gunned by Urbanmech standards, this mech struggles to fill either role. That said, the shock factor of an Urbanmech LAM deployed against uninformed opponents, has allowed it a measure of success when used as a raider. Dual ER Mediums and a bevy of rockets provide a nasty punch at close quarters, but prove mediocre at longer ranges. The only known examples of this mech were were recovered by the DMI and were turned over to the NAIS, though their current status is unknown.\n\n<b><color=#e62e00>Quirk: Land Air Mech</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "作为 LAM 技术一系列中途夭折的实验的产物，Urbanmech LAM 哪一种角色都不适合，这一点并不令人意外。它由自称克拉夫斯站教授的门修斯·霍瓦特设计，材料是偷来的 Urbanmech 零件和从外围地区各地回收的失落科技。按 LAM 的标准它太慢，按 Urbanmech 的标准它的火力又严重不足，无论哪个角色都难以胜任。即便如此，把它派去对付毫无防备的对手时，其震撼效果让它在充当突袭者时取得了一定成功。双联增程中型激光加上一堆火箭，在近距离能打出凶狠的一击，但在较远距离上表现平平。已知仅存的几台此型机甲被 DMI 回收并移交给了 NAIS，不过它们目前的下落不明。\n\n<b><color=#e62e00>特性：陆空机甲</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左上臂、右上臂</color>"
+        "CULTURE_ZH_CN": "作为 LAM 技术一系列中途夭折的实验的产物，Urbanmech LAM 哪一种角色都不适合，这一点并不令人意外。它由自称克拉夫斯站教授的门修斯·霍瓦特设计，材料是偷来的 Urbanmech 零件和从外围地区各地回收的失落科技。按 LAM 的标准它太慢，按 Urbanmech 的标准它的火力又严重不足，无论哪个角色都难以胜任。即便如此，把它派去对付毫无防备的对手时，其震撼效果让它在充当突袭者时取得了一定成功。双联增程中型激光加上一堆火箭，在近距离能打出凶狠的一击，但在较远距离上表现平平。已知仅存的几台此型机甲被 DMI 回收并移交给了 NAIS，不过它们目前的下落不明。\n<b><color=#e62e00>特性：陆空机甲</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n<color=#FFEF00>手臂驱动器限制：左上臂、右上臂</color>"
       }
     },
     {
@@ -5300,7 +5300,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Meant for close in city fighting, the R60LL replaces its Autocannon 20 with a Ultra version.\n\n<b><color=#e62e00>Quirk: 360° Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "为城市近战而造，R60LL以超级版本取代其自动炮20。\n\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
+        "CULTURE_ZH_CN": "为城市近战而造，R60LL以超级版本取代其自动炮20。\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
       }
     },
     {
@@ -5324,7 +5324,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Meant for close in city fighting the R61L got upgraded with Stealth Equipment alongside its less expensive R60L cousins AC20.\n\n<b><color=#e62e00>Quirk: 360° Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "为城市近战而造的R61L，在它的廉价表亲R60L的AC20之外，还升级装上了隐形设备。\n\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
+        "CULTURE_ZH_CN": "为城市近战而造的R61L，在它的廉价表亲R60L的AC20之外，还升级装上了隐形设备。\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
       }
     },
     {
@@ -5348,7 +5348,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Designed by Cataclysm, a former freeborn Clan Wolf MechWarrior turned Mercenary, and infamous UrbanMech fanatic, this refit is designed to be a cost-effective and logistically reliable way to garrison cities. For the price of a single Awesome, one could afford to refit an entire lance of UrbanMechs to the R8Q standard.\n\n<b><color=#e62e00>Quirk: 360° Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这套改装由“灾变”（Cataclysm）设计——他曾是部族狼的自由出生机甲战士，后来成为雇佣兵，同时也是臭名昭著的都市机甲狂热爱好者——旨在提供一种经济实惠、后勤可靠的守城方案。以一台“超赞”（Awesome）的价钱，就足以把一整支都市机甲小队改装到 R8Q 标准。\n\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
+        "CULTURE_ZH_CN": "这套改装由“灾变”（Cataclysm）设计——他曾是部族狼的自由出生机甲战士，后来成为雇佣兵，同时也是臭名昭著的都市机甲狂热爱好者——旨在提供一种经济实惠、后勤可靠的守城方案。以一台“超赞”（Awesome）的价钱，就足以把一整支都市机甲小队改装到 R8Q 标准。\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
       }
     },
     {
@@ -6972,7 +6972,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The UrbanMech IIC is a Clan IIC-style upgrade of the original UrbanMech. Around the same time as the development of the OmniMech during the Golden Century, Clan Coyote technicians reworked this venerable design. They studied battle data from as far back as the Amaris Civil War and used this research as the basis for their upgrades.\n\n<b><color=#e62e00>Quirk: 360° Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.03</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "都市机甲 IIC 是原版都市机甲的氏族 IIC 式升级。在黄金世纪全能机甲问世的同一时期，郊狼氏族技师重做了这一经典设计。他们研究了可追溯至阿马里斯内战的战斗数据，并以这些研究作为升级的基础。\n\n<b><color=#e62e00>特质：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>臂部驱动器限制：左上臂、右上臂</color>"
+        "CULTURE_ZH_CN": "都市机甲 IIC 是原版都市机甲的氏族 IIC 式升级。在黄金世纪全能机甲问世的同一时期，郊狼氏族技师重做了这一经典设计。他们研究了可追溯至阿马里斯内战的战斗数据，并以这些研究作为升级的基础。\n<b><color=#e62e00>特质：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：1.03</color></b>\n\n<color=#FFEF00>臂部驱动器限制：左上臂、右上臂</color>"
       }
     },
     {
@@ -6996,7 +6996,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The product of an aborted series of experiments into LAM technology, the Urbanmech LAM is not surprisingly; poorly suited for either role. Designed by the self proclaimed professor of Cluffs Stand, Mencius Horvat; using a mixture of stolen Urbanmech parts and Lostech recovered from throughout the Periphery. Slow by LAM standards and drastically under gunned by Urbanmech standards, this mech struggles to fill either role. That said, the shock factor of an Urbanmech LAM deployed against uninformed opponents, has allowed it a measure of success when used as a raider. Dual ER Mediums and a bevy of rockets provide a nasty punch at close quarters, but prove mediocre at longer ranges. The only known examples of this mech were were recovered by the DMI and were turned over to the NAIS, though their current status is unknown.\n\n<b><color=#e62e00>Quirk: Land Air Mech</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "作为 LAM 技术一系列中途夭折的实验的产物，Urbanmech LAM 哪一种角色都不适合，这一点并不令人意外。它由自称克拉夫斯站教授的门修斯·霍瓦特设计，材料是偷来的 Urbanmech 零件和从外围地区各地回收的失落科技。按 LAM 的标准它太慢，按 Urbanmech 的标准它的火力又严重不足，无论哪个角色都难以胜任。即便如此，把它派去对付毫无防备的对手时，其震撼效果让它在充当突袭者时取得了一定成功。双联增程中型激光加上一堆火箭，在近距离能打出凶狠的一击，但在较远距离上表现平平。已知仅存的几台此型机甲被 DMI 回收并移交给了 NAIS，不过它们目前的下落不明。\n\n<b><color=#e62e00>特性：陆空机甲</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左上臂、右上臂</color>"
+        "CULTURE_ZH_CN": "作为 LAM 技术一系列中途夭折的实验的产物，Urbanmech LAM 哪一种角色都不适合，这一点并不令人意外。它由自称克拉夫斯站教授的门修斯·霍瓦特设计，材料是偷来的 Urbanmech 零件和从外围地区各地回收的失落科技。按 LAM 的标准它太慢，按 Urbanmech 的标准它的火力又严重不足，无论哪个角色都难以胜任。即便如此，把它派去对付毫无防备的对手时，其震撼效果让它在充当突袭者时取得了一定成功。双联增程中型激光加上一堆火箭，在近距离能打出凶狠的一击，但在较远距离上表现平平。已知仅存的几台此型机甲被 DMI 回收并移交给了 NAIS，不过它们目前的下落不明。\n<b><color=#e62e00>特性：陆空机甲</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n<color=#FFEF00>手臂驱动器限制：左上臂、右上臂</color>"
       }
     },
     {
@@ -7020,7 +7020,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Meant for close in city fighting, the R60LL replaces its Autocannon 20 with a Ultra version.\n\n<b><color=#e62e00>Quirk: 360° Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "为城市近战而造，R60LL以超级版本取代其自动炮20。\n\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
+        "CULTURE_ZH_CN": "为城市近战而造，R60LL以超级版本取代其自动炮20。\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
       }
     },
     {
@@ -7044,7 +7044,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Meant for close in city fighting the R61L got upgraded with Stealth Equipment alongside its less expensive R60L cousins AC20.\n\n<b><color=#e62e00>Quirk: 360° Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "为城市近战而造的R61L，在它的廉价表亲R60L的AC20之外，还升级装上了隐形设备。\n\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
+        "CULTURE_ZH_CN": "为城市近战而造的R61L，在它的廉价表亲R60L的AC20之外，还升级装上了隐形设备。\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
       }
     },
     {
@@ -7068,7 +7068,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Designed by Cataclysm, a former freeborn Clan Wolf MechWarrior turned Mercenary, and infamous UrbanMech fanatic, this refit is designed to be a cost-effective and logistically reliable way to garrison cities. For the price of a single Awesome, one could afford to refit an entire lance of UrbanMechs to the R8Q standard.\n\n<b><color=#e62e00>Quirk: 360° Torso Twist</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 0.99</color></b>\n\n<color=#FFEF00>Arm Actuator Limits: Left Upper, Right Upper</color>",
-        "CULTURE_ZH_CN": "这套改装由“灾变”（Cataclysm）设计——他曾是部族狼的自由出生机甲战士，后来成为雇佣兵，同时也是臭名昭著的都市机甲狂热爱好者——旨在提供一种经济实惠、后勤可靠的守城方案。以一台“超赞”（Awesome）的价钱，就足以把一整支都市机甲小队改装到 R8Q 标准。\n\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
+        "CULTURE_ZH_CN": "这套改装由“灾变”（Cataclysm）设计——他曾是部族狼的自由出生机甲战士，后来成为雇佣兵，同时也是臭名昭著的都市机甲狂热爱好者——旨在提供一种经济实惠、后勤可靠的守城方案。以一台“超赞”（Awesome）的价钱，就足以把一整支都市机甲小队改装到 R8Q 标准。\n<b><color=#e62e00>特性：360° 躯干旋转</color></b>\n\n<b><color=#e62e00>投放费用倍率：0.99</color></b>\n<color=#FFEF00>手臂驱动器限制：左上、右上</color>"
       }
     },
     {

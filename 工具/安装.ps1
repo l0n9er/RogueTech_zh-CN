@@ -1,10 +1,8 @@
 ﻿param(
     [string]$gameRoot = "",
     # 必须明确指定 Steam 或 GOG；未指定时由脚本提示选择。
-    [string]$edition = '',
-    # 可选: 月光石头新版汉化包的数据目录(…\battletech-trans\resources\data)。
-    # 指定后会以月光石头 RT 表覆盖同键译文，并保留本包独有条目。
-    [string]$moonstone = ""
+    [string]$edition = ''
+    # 月光石头的译文、DLL、字体、字幕和资源清单均已内置到本包。
 )
 $ErrorActionPreference = 'Stop'
 $enc = New-Object Text.UTF8Encoding $false
@@ -58,19 +56,6 @@ function Step($n, $m) {
     $script:currentStep = ("阶段 " + $group + "/" + $groupTotal + " · 子步骤 " + $n + "/" + $totalSteps + " · " + $m)
     Write-Host ("  · " + $m)
     LogLine ("  · " + $m)
-}
-function OptionalStep($n, $m) {
-    $group = $stepGroup[[int]$n]
-    if ($group -ne $script:lastGroup) {
-        $script:lastGroup = $group
-        $heading = "[阶段 " + $group + "/" + $groupTotal + "] " + $groupTitle[$group]
-        Write-Host ""
-        Write-Host $heading -ForegroundColor Cyan
-        LogLine $heading
-    }
-    $script:currentStep = ("阶段 " + $group + "/" + $groupTotal + " · 子步骤 " + $n + "/" + $totalSteps + " · 扩展 · " + $m)
-    Write-Host ("  · [扩展] " + $m)
-    LogLine ("  · [扩展] " + $m)
 }
 function Ok($m)   { Write-Host ("      " + $m); LogLine ("      " + $m) }
 function Warn($m) { Write-Host ("      警告: " + $m) -ForegroundColor Yellow; LogLine ("警告: " + $m) }
@@ -172,7 +157,8 @@ $dllList = @(
 )
 $assetList = @(
     'BattleTech_Data\StreamingAssets\font',
-    'BattleTech_Data\StreamingAssets\data\VersionManifest.csv'
+    'BattleTech_Data\StreamingAssets\data\VersionManifest.csv',
+    'BattleTech_Data\StreamingAssets\Video\Subtitles'
 )
 $steamAssemblyRel = 'BattleTech_Data\Managed\Assembly-CSharp.dll'
 $gogAssemblyRel = '版本\GOG\BattleTech_Data\Managed\Assembly-CSharp.dll'
@@ -215,6 +201,36 @@ function BackupAndCopy($src, $dst, $label) {
         return $true
     }
     throw ("包内缺少必需文件或目录: " + $label + " -> " + $src)
+}
+
+function EnsureRequiredModStates {
+    $rel = 'Mods\Core\CustomPrewarm\modstate.json'
+    $statePath = Join-Path $gameRoot $rel
+    if (-not [IO.File]::Exists($statePath)) {
+        throw ('游戏目录缺少 RogueTech 核心模组状态文件: ' + $rel)
+    }
+    try {
+        $state = Get-Content -LiteralPath $statePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    } catch {
+        throw ('无法读取 RogueTech 核心模组状态文件: ' + $rel)
+    }
+    if ($state -isnot [System.Management.Automation.PSCustomObject] -or
+        $null -eq $state.PSObject.Properties['Enabled'] -or $state.Enabled -isnot [bool]) {
+        throw ('RogueTech 核心模组状态文件格式无效: ' + $rel)
+    }
+    if (-not $state.Enabled) {
+        $stateBackup = Join-Path $backupDir ('modstate\' + $rel)
+        $stateBackupParent = Split-Path -Parent $stateBackup
+        if (-not [IO.Directory]::Exists($stateBackupParent)) {
+            [void][IO.Directory]::CreateDirectory($stateBackupParent)
+        }
+        [IO.File]::Copy($statePath, $stateBackup, $true)
+        [IO.File]::WriteAllText($statePath, '{"Enabled":true}' + [Environment]::NewLine, $enc)
+        Warn '检测到 CustomPrewarm 被禁用，已备份并恢复为启用；否则会导致大量模组级联跳过'
+        return $true
+    }
+    Ok 'CustomPrewarm 已启用，核心模组依赖状态正常'
+    return $false
 }
 
 # 工具脚本统一调用方式。关键工具失败时立即停止，避免留下“看似完成”的半套安装。
@@ -303,6 +319,7 @@ function ResolveGameEdition {
 
 AssertPackageInputs
 ResolveGameEdition
+EnsureRequiredModStates
 
 # ---------- 1) 翻译总表 ----------
 Step 1 "写入翻译总表"
@@ -466,6 +483,9 @@ RunTool 'fold-apply.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-extraDict', (Join-Path $PSScriptRoot 'dict-details-direct.tsv'),
                            '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-defs'))
+RunTool 'apply-residual-candidates.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                          '-csv', (Join-Path $gameRoot 'BattleTech_Data\StreamingAssets\data\localization\strings_zh-CN.csv'),
+                                          '-backupRoot', (Join-Path $packRoot 'backup\residual-candidates'))
 Ok "完成"
 
 # ---------- 8) 装备特性说明汉化 ----------
@@ -736,16 +756,10 @@ RunTool 'apply-mckeys.ps1' @('-csv', $csvDst) | Out-Null
 Ok "完成"
 
 # 载具的 Details 由 DLL 在运行时拼好(含 "#武器:" 段)后整段查表, 因此必须把
-# "整段描述" 作为 key 收录。这些条目来自月光石头新版汉化包, 随包分发总表已含;
-# 若用户把包放在工具同机目录, 也可用 -moonstone 指定源目录做同键覆盖合并。
-if (-not [string]::IsNullOrWhiteSpace($moonstone)) {
-    OptionalStep 20 "合并月光石头新版条目"
-    RunTool 'merge-moonstone.ps1' @('-source', $moonstone, '-csv', $csvDst) | Out-Null
-    Ok "完成"
-} else {
-    OptionalStep 20 "跳过月光石头新版条目（未指定 -moonstone）"
-    Ok "未执行"
-}
+# "整段描述" 作为 key 收录。月光石头新版条目已在打包前合并进总表，安装时
+# 直接写入，不再要求用户提供外部目录或选择额外模块。
+Step 20 "使用内置的月光石头新版条目"
+Ok "已内置，无需额外选择"
 
 # 译文里的 {角色.Gender?分支:值} 若留着英文动词, 句子里会半英半中
 # (例: "He acts 起来就像 he's 我的老板似的")。中文无动词变位, 两分支同值。
@@ -783,10 +797,15 @@ Step 24 "术语归一化与格式修复"
 RunTool 'apply-norm.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                            '-backupRoot', (Join-Path $packRoot 'backup\Mods-norm'))
 RunTool 'norm-csv.ps1' @('-csv', $csvDst)
+RunTool 'apply-residual-candidates.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                          '-csv', $csvDst,
+                                          '-backupRoot', (Join-Path $packRoot 'backup\residual-candidates'))
 RunTool 'clean-metadata.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                '-backupRoot', (Join-Path $packRoot 'backup\Mods-metadata'))
-  RunTool 'fix-unit-detail-layout.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
-                                         '-CsvPath', $csvDst)
+RunTool 'fix-detail-richtext-linebreaks.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
+                                               '-CsvPath', $csvDst)
+RunTool 'fix-unit-detail-layout.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
+                                       '-CsvPath', $csvDst)
 Ok "完成"
 
 # ---------- 12) 校验 ----------

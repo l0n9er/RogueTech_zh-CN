@@ -109,13 +109,12 @@ function ReplaceStructuredJson($node) {
                     $script:stats.repl++
                 }
             } else {
-                ReplaceStructuredJson $value
+                [void](ReplaceStructuredJson $value)
             }
         }
     } elseif ($node -is [System.Collections.IEnumerable] -and -not ($node -is [string])) {
-        foreach ($item in @($node)) { ReplaceStructuredJson $item }
+        foreach ($item in @($node)) { [void](ReplaceStructuredJson $item) }
     }
-    return $node
 }
 
 $stats = @{ files = 0; changed = 0; repl = 0 }
@@ -195,9 +194,16 @@ foreach ($f in $files) {
             try {
                 $script:stats.repl = $regexReplBefore
                 $structured = $ser.DeserializeObject($orig)
-                $structured = ReplaceStructuredJson $structured
+                [void](ReplaceStructuredJson $structured)
                 $new = $ser.Serialize($structured)
-                [void]$ser.DeserializeObject($new)
+                $roundTrip = $ser.DeserializeObject($new)
+                $originalIsDictionary = $structured -is [System.Collections.IDictionary]
+                $roundTripIsDictionary = $roundTrip -is [System.Collections.IDictionary]
+                $originalIsList = $structured -is [System.Collections.IList]
+                $roundTripIsList = $roundTrip -is [System.Collections.IList]
+                if ($originalIsDictionary -ne $roundTripIsDictionary -or $originalIsList -ne $roundTripIsList) {
+                    throw 'JSON 根节点类型发生变化，拒绝写入'
+                }
             } catch {
                 $script:stats.repl = $regexReplBefore
                 Write-Host ("跳过(JSON 无效): " + $f.Name)

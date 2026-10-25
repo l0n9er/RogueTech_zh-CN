@@ -111,6 +111,30 @@ foreach ($c in $checks) {
     $sw.WriteLine(('{0,-12} {1,-4} {2,8}  {3}' -f $c.Name, $c.Sev, $n, $c.Fix))
     foreach ($s in $samples) { $sw.WriteLine($s) }
 }
+
+$placeholderRx = [regex]::new('(?<!\{)\{(\d+)(?:,[^{}]*)?(?::[^{}]*)?\}(?!\})')
+$placeholderIssues = New-Object 'System.Collections.Generic.List[string]'
+$rowNumber = 0
+foreach ($line in [IO.File]::ReadLines($csv, [Text.Encoding]::UTF8)) {
+    $rowNumber++
+    if ($rowNumber -eq 1) { continue }
+    $comma = $line.IndexOf(',')
+    if ($comma -lt 1) { continue }
+    $key = $line.Substring(0, $comma)
+    $value = $line.Substring($comma + 1)
+    $keySlots = @($placeholderRx.Matches($key) | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
+    if ($keySlots.Count -eq 0) { continue }
+    $valueSlots = @($placeholderRx.Matches($value) | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
+    $maxKeySlot = [int](($keySlots | ForEach-Object { [int]$_ } | Measure-Object -Maximum).Maximum)
+    $outOfRangeSlots = @($valueSlots | Where-Object { [int]$_ -gt $maxKeySlot })
+    if ($outOfRangeSlots.Count -gt 0) {
+        $placeholderIssues.Add(('    CSV|row{0} :: source={1} translation={2}' -f $rowNumber, [string]::Join(',', $keySlots), [string]::Join(',', $valueSlots)))
+    }
+}
+$sw.WriteLine(('数字占位符索引 {0} {1,8}  译文索引不得超过源文最大索引' -f '高', $placeholderIssues.Count))
+foreach ($sample in ($placeholderIssues | Select-Object -First 10)) { $sw.WriteLine($sample) }
+if ($placeholderIssues.Count -gt 0) { $highCount++ }
+
 $sw.WriteLine('')
 if ($highCount -eq 0) { $sw.WriteLine('结论: 未发现高优先级问题。') }
 else { $sw.WriteLine('结论: 存在 ' + $highCount + ' 项高优先级问题，需处理。') }

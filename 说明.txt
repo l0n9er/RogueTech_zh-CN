@@ -45,6 +45,7 @@ Streak MRM、QS 弹药、布雷克圣言会对话与安杜瑞恩公国合约文�
      · 检测到游戏仍在运行会直接报错退出，不会写坏文件
 
 3. 重新启动游戏
+   必须通过 RogueLauncher 的“Launch RogueTech”启动，不能直接运行 BattleTech.exe。
    （模组数据只在启动时读取，装完必须重启）
 
 安装耗时约 3~4 分钟，请耐心等待脚本跑完。
@@ -90,6 +91,14 @@ Streak MRM、QS 弹药、布雷克圣言会对话与安杜瑞恩公国合约文�
 
 5. 游戏或 RogueTech 更新过？
    更新会覆盖汉化文件，重跑 安装.bat 即可。
+
+6. 部分模组加载失败？
+   查看 <游戏目录>\Mods\.modtek\ModTek.log。若同时看到
+   “Not loading CustomPrewarm because it is disabled”和
+   “Will not load RogueTech Core; missing dependencies”，说明 CustomPrewarm 被关闭，
+   后面列出的几十个模组是依赖级联失败。重新运行 安装.bat 会备份并自动恢复
+   Mods\Core\CustomPrewarm\modstate.json。启动游戏必须使用 RogueLauncher 的
+   “Launch RogueTech”；直接运行 BattleTech.exe 会导致 RogueTech 核心初始化失败。
 
 排查细节与原理见 汉化说明-内容分布与机制.md 第四节。
 
@@ -164,6 +173,7 @@ LICENSE 与 README.md 的"许可"一节：
   工具\fix-interp-punct.ps1  修复占位符内标点（"错误"文本的根因）
   工具\apply-norm.ps1        重新执行术语归一化与格式修复
   工具\norm-csv.ps1          规范化翻译总表的标点格式
+  工具\apply-residual-candidates.ps1  补译已确认的残留机甲/装备详情
   工具\还原.ps1              按最新备份还原
 
 各脚本的作用范围与原理见 汉化说明-内容分布与机制.md。

@@ -24522,7 +24522,7 @@ Bonus of {0} to sensor detection: provides additional target information.	传感
 Boosted C3i: Unit can participate in C3i network. Boosted units do not fall from network when in Active ECM range.	增强型C3i: 该单位可加入C3i网络. 增强型单位在主动ECM范围内不会脱离网络.	LocalizationRecovered
 C3 Networked Units calculate attack range penalties from the position of the Networked Unit closest to the target.	C3联网单位计算攻击距离惩罚时，取距目标最近的联网单位位置为准.	LocalizationRecovered
 C3 Systems interfere with electronic countermeasures. Unit suffers {0} to ECM shield and {1} to sensor signature.	C3系统会干扰电子对抗措施（ECM）. 单位的ECM护盾 {0}，{1} 传感器信号特征.	LocalizationRecovered
-C3 Systems interfere with electronic countermeasures. Unit suffers {0} to sensor signature.	C3系统会干扰电子对抗措施（ECM）. {1} 传感器信号特征.	LocalizationRecovered
+C3 Systems interfere with electronic countermeasures. Unit suffers {0} to sensor signature.	C3系统会干扰电子对抗措施（ECM），使单位的传感器信号特征受到 {0} 点惩罚。	LocalizationRecovered
 C3i: Unit can participate in C3i network.	C3i: 该单位可加入C3i网络.	LocalizationRecovered
 CommGear: {0} Tactics skill for all teamates. Does not stack.	通讯组件: 全队战术技能 {0}. 效果不叠加.	LocalizationRecovered
 Company Coordinator: {0} Company Resolve Cost of MechWarrior Skills. Stacks up to 3 times.	连队协调员: 连队机甲战士技能的决心消耗 {0}. 可叠加 3 次.	LocalizationRecovered
