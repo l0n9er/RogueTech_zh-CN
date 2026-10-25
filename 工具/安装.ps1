@@ -803,9 +803,17 @@ RunTool 'apply-residual-candidates.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
 RunTool 'clean-metadata.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
                                '-backupRoot', (Join-Path $packRoot 'backup\Mods-metadata'))
 RunTool 'fix-detail-richtext-linebreaks.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
-                                               '-CsvPath', $csvDst)
+                                               '-CsvPath', $csvDst,
+                                               '-BackupRoot', $backupDir)
 RunTool 'fix-unit-detail-layout.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
-                                       '-CsvPath', $csvDst)
+                                       '-CsvPath', $csvDst,
+                                       '-BackupRoot', $backupDir)
+RunTool 'fix-detail-richtext-linebreaks.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
+                                               '-CsvPath', $csvDst,
+                                               '-BackupRoot', $backupDir)
+RunTool 'fix-unit-detail-layout.ps1' @('-ModsPath', (Join-Path $gameRoot 'Mods'),
+                                       '-CsvPath', $csvDst,
+                                       '-BackupRoot', $backupDir)
 Ok "完成"
 
 # ---------- 12) 校验 ----------

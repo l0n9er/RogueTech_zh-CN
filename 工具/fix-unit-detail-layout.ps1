@@ -1,10 +1,26 @@
 ﻿param(
     [string]$Root = (Split-Path $PSScriptRoot -Parent),
     [string]$ModsPath = '',
-    [string]$CsvPath = ''
+    [string]$CsvPath = '',
+    [string]$BackupRoot = ''
 )
 
 $ErrorActionPreference = 'Stop'
+$unitTableColorPattern = [regex]::new(
+    '<color=(?<color>#[0-9a-fA-F]{6,8})>(?<body>.*?)</color>',
+    [Text.RegularExpressions.RegexOptions]::Singleline -bor [Text.RegularExpressions.RegexOptions]::Compiled
+)
+$unitTableHeaderPattern = [regex]::new(
+    '<b>(?<title>数值|數值)(?<labels>[^<]*)</b>',
+    [Text.RegularExpressions.RegexOptions]::Compiled
+)
+$unitTableRowPattern = [regex]::new(
+    '<b>[^<]+</b>[ \t]+-?\d+(?:\.\d+)?[ \t]+-?\d+(?:\.\d+)?',
+    [Text.RegularExpressions.RegexOptions]::Compiled
+)
+if ([string]::IsNullOrWhiteSpace($BackupRoot)) {
+    $BackupRoot = Join-Path (Split-Path $PSScriptRoot -Parent) ('backup\detail-format-' + (Get-Date -Format 'yyyyMMdd-HHmmss'))
+}
 
 function Get-DisplayWidth([string]$Text) {
     $width = 0
@@ -122,31 +138,67 @@ function Format-UnitDetail([string]$Value) {
     return $normalized
 }
 
-function Update-LocalizationJson([string]$Path) {
+function Backup-FormatTarget([string]$Path, [string]$RelativePath) {
+    $backupPath = Join-Path $BackupRoot $RelativePath
+    if (Test-Path -LiteralPath $backupPath) { return }
+    $parent = Split-Path $backupPath -Parent
+    if (-not (Test-Path -LiteralPath $parent)) { [IO.Directory]::CreateDirectory($parent) | Out-Null }
+    [IO.File]::Copy($Path, $backupPath, $false)
+}
+
+function Update-UnitDetailJson([string]$Path) {
     $lines = [IO.File]::ReadAllLines($Path, [Text.Encoding]::UTF8)
     $changed = $false
     for ($index = 0; $index -lt $lines.Count; $index++) {
-        $match = [regex]::Match($lines[$index], '^(?<indent>\s*)"CULTURE_ZH_CN"\s*:\s*"(?<value>(?:[^"\\]|\\.)*)"(?<tail>\s*,?)\s*$')
+        $match = [regex]::Match($lines[$index], '^(?<indent>\s*)"(?<field>Details|YangsThoughts|StockRole|CULTURE_ZH_CN)"\s*:\s*"(?<value>(?:[^"\\]|\\.)*)"(?<tail>\s*,?)\s*$')
         if (-not $match.Success) { continue }
         $value = Format-UnitDetail $match.Groups['value'].Value
         $value = $value.Replace('<align=left>', '<align=\"left\">').Replace('<align="left">', '<align=\"left\">')
         if ($value -eq $match.Groups['value'].Value) { continue }
-        $lines[$index] = $match.Groups['indent'].Value + '"CULTURE_ZH_CN": "' + $value + '"' + $match.Groups['tail'].Value
+        $lines[$index] = $match.Groups['indent'].Value + '"' + $match.Groups['field'].Value + '": "' + $value + '"' + $match.Groups['tail'].Value
         $changed = $true
     }
     if ($changed) {
+        $relative = $Path.Substring($ModsPath.Length).TrimStart([char[]]@([char]92, [char]47))
+        Backup-FormatTarget $Path (Join-Path 'Mods' $relative)
         [IO.File]::WriteAllLines($Path, $lines, (New-Object Text.UTF8Encoding($false)))
     }
     return $changed
+}
+
+function Get-UnitTableAlignmentStats([string]$Text) {
+    $tableCount = 0
+    $missingAlignment = 0
+    if (-not $Text.Contains('<color=#')) { return [pscustomobject]@{ TableCount = 0; MissingAlignment = 0 } }
+    foreach ($match in $unitTableColorPattern.Matches($Text)) {
+        if ($match.Groups['color'].Value -notmatch '(?i)^#(?:ffcc00|ffef00|f0ff00|ffff00)(?:[0-9a-f]{2})?$') { continue }
+        $body = $match.Groups['body'].Value
+        if (-not ($body.Contains('<b>数值') -or $body.Contains('<b>數值'))) { continue }
+        $header = $unitTableHeaderPattern.Match($body)
+        if (-not $header.Success) { continue }
+        $labels = @($header.Groups['labels'].Value.Trim() -split '[ \t]+' | Where-Object { $_ })
+        $isArmorStructureHeader = $labels.Count -eq 2 -and
+            (($labels[0] -ieq 'A' -and $labels[1] -ieq 'S') -or
+             ($labels[0] -eq '装甲' -and $labels[1] -eq '结构'))
+        if (-not $isArmorStructureHeader) { continue }
+        $bodyStart = $header.Index + $header.Length
+        if (-not $unitTableRowPattern.IsMatch($body.Substring($bodyStart))) { continue }
+        $tableCount++
+        $hasAlignment = $body.Contains('<align=left>') -or
+            $body.Contains('<align="left">') -or
+            $body.Contains('<align=\"left\">')
+        if (-not $hasAlignment) { $missingAlignment++ }
+    }
+    return [pscustomobject]@{ TableCount = $tableCount; MissingAlignment = $missingAlignment }
 }
 
 $changedFiles = 0
 $script:failedFields = 0
 if ([string]::IsNullOrWhiteSpace($ModsPath)) { $ModsPath = Join-Path $Root 'Mods' }
 if ([string]::IsNullOrWhiteSpace($CsvPath)) { $CsvPath = Join-Path $Root 'strings_zh-CN.csv' }
-foreach ($file in Get-ChildItem -LiteralPath $ModsPath -Recurse -File -Filter 'Localization.json') {
+foreach ($file in Get-ChildItem -LiteralPath $ModsPath -Recurse -File -Filter '*.json') {
     try {
-        if (Update-LocalizationJson $file.FullName) { $changedFiles++ }
+        if (Update-UnitDetailJson $file.FullName) { $changedFiles++ }
     } catch {
         $script:failedFields++
         Write-Warning ("单位详情表格修复跳过文件: {0} :: {1}" -f $file.FullName, $_.Exception.Message)
@@ -170,27 +222,36 @@ for ($index = 0; $index -lt $csvLines.Count; $index++) {
     }
 }
 if ($csvChanged) {
+    Backup-FormatTarget $CsvPath 'BattleTech_Data\StreamingAssets\data\localization\strings_zh-CN.csv'
     [IO.File]::WriteAllLines($CsvPath, $csvLines, (New-Object Text.UTF8Encoding($false)))
     $changedFiles++
 }
 
 $remainingSentinels = 0
-$invalidTableAlignment = 0
+$tableCount = 0
+$tableMissingAlignment = 0
 foreach ($line in [IO.File]::ReadAllLines($CsvPath, [Text.Encoding]::UTF8)) {
     if ($line.Contains('<<NL>')) { $remainingSentinels++ }
-    if ($line -match '<b>數值' -and $line -match '<color=#(?:ffcc00|ffef00|f0ff00|ffff00)>' -and
-        -not $line.Contains('<align=\"left\">') -and -not $line.Contains('<align="left">')) { $invalidTableAlignment++ }
+    if ($line.Contains('<color=#') -and ($line.Contains('<b>数值') -or $line.Contains('<b>數值'))) {
+        $stats = Get-UnitTableAlignmentStats $line
+        $tableCount += $stats.TableCount
+        $tableMissingAlignment += $stats.MissingAlignment
+    }
 }
 foreach ($file in Get-ChildItem -LiteralPath $ModsPath -Recurse -File -Filter '*.json') {
     $jsonLines = [IO.File]::ReadAllLines($file.FullName, [Text.Encoding]::UTF8)
     foreach ($line in $jsonLines) {
         if ($line.Contains('<<NL>')) { $remainingSentinels++ }
-        if ($line -match '<b>數值' -and $line -match '<color=#(?:ffcc00|ffef00|f0ff00|ffff00)>' -and
-            -not $line.Contains('<align=\"left\">') -and -not $line.Contains('<align="left">')) { $invalidTableAlignment++ }
+        if ($line.Contains('<color=#') -and ($line.Contains('<b>数值') -or $line.Contains('<b>數值'))) {
+            $stats = Get-UnitTableAlignmentStats $line
+            $tableCount += $stats.TableCount
+            $tableMissingAlignment += $stats.MissingAlignment
+        }
     }
 }
-if ($remainingSentinels -gt 0 -or $invalidTableAlignment -gt 0) {
-    throw ("排版复核失败: 换行哨兵残留={0} 黄色表格缺少左对齐={1}" -f $remainingSentinels, $invalidTableAlignment)
+Write-Host ("数值表复核: 表格={0} 未左对齐={1}" -f $tableCount, $tableMissingAlignment)
+if ($remainingSentinels -gt 0 -or $tableMissingAlignment -gt 0) {
+    throw ("排版复核失败: 换行哨兵残留={0} 黄色表格缺少左对齐={1}" -f $remainingSentinels, $tableMissingAlignment)
 }
 
 Write-Host ("单位详情表格修复: files={0} failed={1}" -f $changedFiles, $script:failedFields)
