@@ -1288,7 +1288,7 @@ resignation,辞职
 restart,重启
 restockingthekitchen,补充厨房物资
 restoration,光复会
-restoresconsciousnesstoallpilots^placesanydownedmechsupright^and(todo)removesanydemoralizationeffects*,恢复所有驾驶员的意识  将任何倒下的机甲竖立起来  并且(待办)移除所有士气低落效果.
+restoresconsciousnesstoallpilots^placesanydownedmechsupright^and(todo)removesanydemoralizationeffects*,恢复所有驾驶员的意识，扶起所有倒地机甲，并移除所有士气低落效果。
 retribution,惩戒
 revertandconfirm,还原和确认
 road,道路
@@ -3589,7 +3589,7 @@ hers,她的
 herotitus,希罗提多
 hermesequilibriumgyro,赫尔墨斯“平衡”陀螺仪
 hermes,赫尔墨斯
-herewego*(todo-defaultmissionstartdialogue-needtoconsidermadlibs^randomization^etc*),我们走吧. (TODO- Default Mission Start dialogue - need to consider mad libs  randomization  etc.)
+herewego*(todo-defaultmissionstartdialogue-needtoconsidermadlibs^randomization^etc*),我们出发吧。
 heretheycome!youvegottaurianbattlemechsonthemainapproach!,它们来了! 主干道上出现金牛战斗机甲!
 hereswherewellmakecontactwiththetargets*oncewestartshooting^theconvoywillprobablymakeabreakforit*interceptthem*,我们将在这里与目标接触. 一旦我们开火  车队很可能会试图逃跑. 拦截他们.
 heraldry,纹章
@@ -6956,7 +6956,7 @@ wejustconvincedthemthattheydefinitelydontneedaninsurancepolicyfrompirates*,我�
 wejusthappenedtobotharriveintheaoatthesametime*letsregroupbackinorbit*,我们双方正好同时到达了行动区域. 让我们回轨道重整队伍吧.
 weknewthiswasgoingtobeanastyonewhenwetookthejob*letsdebriefbackinorbit*,我们接受这活的时候就清楚这会是个糟糕的任务. 我们回轨道汇报吧.
 weldry,韦尔德里
-well*thatjusthappened*(todo-finailizedefaultfailure),好吧. 那就是发生了. (TODO - Finailize default failure)
+well*thatjusthappened*(todo-finailizedefaultfailure),好吧，事情就是这样。
 well^ihopethatdistractionwassufficientforourfriendspurposes*,好吧  我希望这次分散注意的行动对我们朋友的目的而言已经足够.
 well^iwasntabouttoletthetaurianshaveit*theyreshootingatus^remember?,嗯  我不想让金牛人得到它. 他们朝我们开枪  记得吗?
 well^letitneverbesaidhousedaviondoesnotbelieveincharity*obviously^yourskillscouldnotbeequivalenttoourownregulararmiessowedonotblameyouforyourinabilitytocompletethecontract*,好吧  永远不要说戴维恩家族不相信仁慈. 显然  你的实力无法和我们的正规军队相比\u2014所以我们并不会指责你无力完成这份合约.
@@ -9468,7 +9468,7 @@ expertise:gutsnewlinenewlinearesilientfighterwithimprovedhandlingofheatgeneratio
 expertise:gunnerynewlinenewlineacrackshotabletousebreachingshotagainstevenwell-defendedtargets*adeptattheuseofrangedweaponryincombatandabletotacklemultipleopponentsatonceviamulti-target*newlinenewlinespecialization:tacticsnewlinenewlineeffectiveatspottingtargetsviasensorlockandtakingbetteradvantageofindirectfireopportunities*weaponminimumrangesarealsoimproved*,<b><color=#85DBF6>专精:</color> 枪炮</b>\n\n一名神枪手  可以使用“突破一击”对付哪怕有着良好防护的目标. 作战时还擅长使用远程武器  能够通过“多目标攻击”同时应付多个对手.\n\n<b><color=#85DBF6>特长:</color> 战术</b>\n\n通过“传感器锁定”高效地发现目标  更好地利用间瞄火力机会. 也会改善武器的最小射程.
 expertise:gunnerynewlinenewlineacrackshotabletousebreachingshotagainstevenwell-defendedtargets*adeptattheuseofrangedweaponryincombatandabletotacklemultipleopponentsatonceviamulti-target*newlinenewlinespecialization:pilotingnewlinenewlineskilledinhandlingamechandavoidingdamagethroughtheuseofsurefootingandbetterathittingwithmeleeattacks*hasanincreasedthresholdatwhichpilotedmechsbecomeunsteady*,<b><color=#85DBF6>专精:</color> 枪炮</b>\n\n一名神枪手  可以使用“突破一击”对付哪怕有着良好防护的目标. 作战时还擅长使用远程武器  能够通过“多目标攻击”同时应付多个对手.\n\n<b><color=#85DBF6>特长:</color> 驾驶</b>\n\n擅长控制机甲  通过“步伐沉稳”躲避伤害  并且更长于肉搏攻击. 所驾驶的机甲要进入“失衡”状态有着更高的阈值.
 expertise:gunnerynewlinenewlineacrackshotabletousebreachingshotagainstevenwell-defendedtargets*adeptattheuseofrangedweaponryincombatandabletotacklemultipleopponentsatonceviamulti-target*,<b><color=#85DBF6>专精:</color> 枪炮</b>\n\n一名神枪手  可以使用“突破一击”对付哪怕有着良好防护的目标. 作战时还擅长使用远程武器  能够通过“多目标攻击”同时应付多个对手.
-excellentworkcommander*(todo-finailizedefaultsuccess)considermadlibsandrandomizationofdefaultthings*,干得漂亮  指挥官. (TODO-最终设置成功)考虑随机命名和随机设定物.
+excellentworkcommander*(todo-finailizedefaultsuccess)considermadlibsandrandomizationofdefaultthings*,干得漂亮，指挥官！
 exitfornpcs,NPC出口
 enkra,恩克拉
 electricaltransformer*explodeswithelectricity,电力变压器. 爆炸时释放电波
@@ -11406,7 +11406,7 @@ imoftwomindsaboutthisone^{commander*firstname}*itwouldntbeveryneighborlyofustole
 [theviewscreenflickersanddies*],[屏幕闪烁并变黑.]
 [theviewscreengoesdark*],[屏幕变黑.]
 [theviewscreengoesdarkasladymarinaterminatestheconnection*],[玛丽娜女士断开连接  屏幕变黑.]
-[todo]onebuildingleft^commander*ifanymorearedestroyed^wellhavetoscrubthemission*,[TODO] 只剩下一栋建筑了  指挥官. 如果那也被破坏了  我们就不得不取消任务了.
+[todo]onebuildingleft^commander*ifanymorearedestroyed^wellhavetoscrubthemission*,只剩下一栋建筑了，指挥官。如果那也被摧毁了，我们就不得不取消任务了。
 [totaltaggedunits]units,[totalTaggedUnits]单位
 [tutorial:argoimprovements]cantheargobeimproved?,<color=#85DBF6FF>[教程: 阿尔戈号的改进]</color> <i>阿尔戈号</i> 可以改进吗?
 [tutorial:changingloadouts]whatifiwanttochangeamechsloadout?canirefititwithnewweaponsandequipment?,<color=#85DBF6FF>[教程: 更换装备]</color> 如何更换机甲的装备? 我可以给它装配新的武器和装备吗?
@@ -16799,7 +16799,7 @@ pdxcon2019challenger,PDXCON 2019 挑战者
 pdxcon2019opfor,PDXCON 2019 敌军
 perfectly*andnowthatyouhaveacceptedmyverygenerousoffer^iexpecttogetmymoneysworth*andiexpectyoutotreatmewiththerespectiamdueifnotastherightfulhighladyofthe[[dm*basedescriptiondefs[loreauriganreach]^auriganreach^thenasyoursinglemostvaluableclient*newlinenewlineamiunderstood^commander?,非常完美. 既然你已经接受了我<i>极为慷慨</i> 的提议  我希望<i>物有所值</i>. 我也希望你给予我应得的尊重——如果不是作为[[DM.BaseDescriptionDefs [LoreAuriganReach]Aurigan Reach]]的合法至高女士  那么就是作为你<i>最重要的客户</i>.\n\n<i>明白了吗</i>  指挥官?
 performance,力量
-performsasensorlockagainstallenemieswithinrange*todo:havethisalsoaffecttheuser*,传感器记录范围内的所有单位. TODO:这也会影响用户.
+performsasensorlockagainstallenemieswithinrange*todo:havethisalsoaffecttheuser*,对范围内的所有敌人执行传感器锁定。
 perhaps*butitseemspointlesstodiscusssuchmattersnow*newlinenewlinethejobisdone^andyoumercenarieswillreaptherewards*,或许吧. 但现在讨论这些已无意义.\n\n任务已完成  你们这些雇佣兵自然会收获报酬.
 perhaps*butwhilemyuncleholdscoromodir^heretainstheillusionoflegitimacy^andthatissomethingicannolongerallow*newlinenewlinethetimehascometotakeitfromhim*,也许吧. 但只要我叔叔还占据着科罗摩迪尔  他就保留着合法性的假象  而这是我不能再容忍的.\n\n是时候从他手中夺走它了.
 perhapsalliedistoostrongaword^forcecommanderatleastaccordingtomyfamilybackintheleague*,或许“结盟”这个词有些言过其实了  部队指挥官——至少根据我在联盟的家族消息源来看.
@@ -37708,7 +37708,7 @@ halifaxwasoriginallyapartofthetimbuktuprovinceoftherimworldsrepublicthoughwasalm
 mostofthepopulationliveanagriculturallifestylemaintainedbytechnologyofanequivalenttothatfoundonterrainthelateeighteenth^aconsequenceoftheheavyinfluenceoftheomnissphilosophywithinthecompact,大多数人口过着农业生活方式  其维持技术相当于十八世纪晚期在泰拉上所见的技术  这是盟约国内部Omniss哲学强烈影响的结果.
 hallisapopulousplanetwithasignificantagriculturalsectoraswellasalargelightindustrialbase*onlyrecentlylostbythecapellanconfederation^abattalionofwolfsdragoonscurrentlymakesuppartoftheplanetarygarrison*,Hall是一颗人口稠密的行星  农业规模可观  并拥有庞大的轻工业基础. 卡佩拉邦联最近才失去它  而沃尔夫龙骑兵的一个营目前是行星驻军的一部分.
 hallawassettledduringthestarleagueeraatsomepointaftertheendofthereunificationwarbutdiedoutduringthefightinginthesuccessionwars*,Halla是在星际联盟时代、统一战争结束后的某个时候被殖民的  但在继承战争的战火中消亡了.
-ableakandfrozenworld^halloranhasnonethelesshostedconsiderableminingandmanufacturingindustriessinceitscolonization^exportinglargequantitiesofice^copper^andhydrocarbonstootherworlds*,一个荒凉冰封的世界  Halloran自殖民以来nonetheless? 不对. 翻译: \n\n一个荒凉冰封的世界  Halloran自殖民以来仍发展起了可观的采矿和制造业  向其他世界出口大量冰、铜和碳氢化合物.
+ableakandfrozenworld^halloranhasnonethelesshostedconsiderableminingandmanufacturingindustriessinceitscolonization^exportinglargequantitiesofice^copper^andhydrocarbonstootherworlds*,一个荒凉而冰封的世界。自殖民以来，Halloran仍发展起了可观的采矿和制造业，向其他世界出口大量冰、铜和碳氢化合物。
 thehalmyredeanssystemwascolonisedduringthestarleagueeraatsometimeaftertheendofthereunificationwar*theyareknownfortheirmultimillionc-billproductionlinewhichexportshalmyrebeanstonearbyworlds*,Halmyre Deans星系在星际联盟时代、统一战争结束后的某个时期被殖民. 该星系以产值达数百万C-币、向附近世界出口Halmyre豆的生产线而闻名.
 halsteadstationisaworldsettledexclusivelyforitsvastmineralresources*theatmosphereistoxic^sothepopulationlivesinvastundergroundcities*,Halstead Station是一个专为其丰富矿产资源而有人定居的世界. 大气有毒  因此居民生活在巨大的地下城市中.
 hamalwasoriginallycolonisedbysettlersfromthehighlandregionsofsouthamericaonterra*hamalhavepassedfromacapellantothefederatedsunsduringthefourthsuccessionwar*mostofthepopulationliveinatribal^nomadicfashion*,Hamal最初由来自泰拉南美洲高地地区的定居者殖民. 在第四次继承战争期间  Hamal从卡佩拉邦联转归恒星联邦. 大多数人口以部落、游牧方式生活.

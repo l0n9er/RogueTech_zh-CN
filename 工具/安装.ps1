@@ -354,6 +354,8 @@ if ([IO.Directory]::Exists($dataSrc)) {
 # 上下文精确修复，未知残片会让安装失败并列出文件，避免静默污染数据。
 RunTool 'repair-runtime-corruption.ps1' @('-gameRoot', $gameRoot,
                                            '-backupRoot', (Join-Path $backupDir 'runtime-corruption'))
+RunTool 'repair-modtek-config.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                     '-backupRoot', (Join-Path $backupDir 'modtek-config'))
 
 # 用户额外安装的 MWSphere 语音包不在发布包内；若存在则仅补写 credits 的
 # CULTURE_ZH_CN，并将原文件纳入本次备份。没有该语音包时安全跳过。
