@@ -11,6 +11,8 @@ _backup_archive/
 *.tmp
 *.bak
 *.log
+__pycache__/
+*.py[cod]
 
 # ---- OS / 编辑器 ----
 Thumbs.db

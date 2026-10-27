@@ -285,7 +285,9 @@ function AssertPackageInputs {
     }
     $body = [IO.File]::ReadAllText($script:installerPath, [Text.Encoding]::UTF8)
     $refs = [regex]::Matches($body, "'([^']+\.(?:ps1|tsv))'") | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
+    $generatedReports = @('event-residuals.tsv', 'basegame-event-residuals.tsv')
     foreach ($rel in $refs) {
+        if ($generatedReports -contains $rel) { continue }
         $p = Join-Path $PSScriptRoot $rel
         if (-not (Test-Path -LiteralPath $p)) { [void]$missing.Add($p) }
     }
@@ -528,7 +530,7 @@ Ok "完成"
 # 这些字段同样不查 CSV(或查询优先级低), 一并就地补译
 # shortDescription/longDescription 是合约简报正文, ShortDesc 是技能/AI 能力简述;
 # 这三个字段曾被完全遗漏, 玩家在合约界面看到的是整段英文
-Step 11 "补译任务标题、目标描述、物品界面名与合约简报"
+Step 11 "补译任务字段、事件闪点与物品详情"
 foreach ($pair in @(
     @{ f = 'title';       d = 'dict-title.tsv' },
     @{ f = 'description'; d = 'dict-desc.tsv' },
@@ -595,10 +597,74 @@ if ([IO.File]::Exists($eventDict)) {
                                  '-JsonValue',
                                  '-backupRoot', (Join-Path $packRoot 'backup\Mods-events'))
 }
+$eventShortDict = Join-Path $PSScriptRoot 'dict-events-short.tsv'
+$eventAutoDict = Join-Path $PSScriptRoot 'dict-events-auto.tsv'
 # 自动从各模组 Localization/ZH 表覆盖所有事件正文、标题和选项，
-# 解决人工事件词典只覆盖少量条目导致同类英文漏翻的问题。
+# 同时读取人工事件词典、319 条补译词典和通用短词典，并生成全量残留报告。
+$eventPairs = @($eventDict, $eventShortDict, $eventAutoDict) -join ';'
+$eventFallbackDict = @((Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'),
+                       (Join-Path $PSScriptRoot 'dict-all.tsv')) -join ';'
 RunTool 'apply-event-localization.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                         '-pairs', $eventPairs,
+                                         '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
+                                         '-fallbackDict', $eventFallbackDict,
+                                         '-fileList', $script:modsJsonFileList,
+                                         '-report', (Join-Path $backupDir 'event-residuals.tsv'),
                                          '-backupRoot', (Join-Path $packRoot 'backup\Mods-events-auto'))
+$baseDataRoot = Join-Path $gameRoot 'BattleTech_Data\StreamingAssets\data'
+$triageEventPath = Join-Path $baseDataRoot 'events\event_mw_triage.json'
+if ([IO.File]::Exists($triageEventPath)) {
+    $triageOriginal = [IO.File]::ReadAllText($triageEventPath, [Text.Encoding]::UTF8)
+    $triageToken = '"declared dead on the operating table.",'
+    $triageCount = [regex]::Matches($triageOriginal, [regex]::Escape($triageToken)).Count
+    if ($triageCount -gt 0) {
+        $triageFixed = $triageOriginal.Replace($triageToken, '"declared dead on the operating table."')
+        try { [void]($triageFixed | ConvertFrom-Json) }
+        catch { throw ("修复 event_mw_triage.json 尾逗号后仍无法解析: " + $_.Exception.Message) }
+        $triageBackup = Join-Path $backupDir 'basegame-event-json-repair\event_mw_triage.json'
+        $triageBackupParent = Split-Path -Parent $triageBackup
+        [void][IO.Directory]::CreateDirectory($triageBackupParent)
+        if (-not [IO.File]::Exists($triageBackup)) {
+            [IO.File]::WriteAllText($triageBackup, $triageOriginal, $enc)
+        }
+        [IO.File]::WriteAllText($triageEventPath, $triageFixed, $enc)
+        Ok ("已修复 event_mw_triage.json 中的 " + $triageCount + " 个无效尾逗号")
+    }
+}
+$baseGameEventJsonFileList = Join-Path $backupDir 'basegame-event-json-files.txt'
+$baseGameEventPaths = @(
+    foreach ($folder in @('events', 'flashpoints')) {
+        $eventDir = Join-Path $baseDataRoot $folder
+        if ([IO.Directory]::Exists($eventDir)) {
+            Get-ChildItem $eventDir -Recurse -File -Filter '*.json' -ErrorAction SilentlyContinue |
+                ForEach-Object { $_.FullName }
+        }
+    }
+)
+[IO.File]::WriteAllLines($baseGameEventJsonFileList, [string[]]$baseGameEventPaths, $enc)
+if ($baseGameEventPaths.Count -gt 0) {
+    RunTool 'apply-event-localization.ps1' @('-mods', $baseDataRoot,
+                                             '-pairs', $eventPairs,
+                                             '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
+                                             '-fallbackDict', $eventFallbackDict,
+                                             '-fileList', $baseGameEventJsonFileList,
+                                             '-report', (Join-Path $backupDir 'basegame-event-residuals.tsv'),
+                                             '-backupRoot', (Join-Path $packRoot 'backup\BattleTech-events-auto'))
+} else {
+    Ok '未发现基础游戏事件/闪点 JSON，跳过本体事件处理'
+}
+# 物品详情由 Description.Details 直接显示。覆盖所有模组 items 目录，
+# 使用总表 CSV 归一化键查找整段译文，并把 CSV 别名分隔符转换为 JSON 逗号。
+RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                             '-pairs', (Join-Path $PSScriptRoot 'dict-item-details.tsv'),
+                             '-fields', 'Details',
+                             '-pathLike', '\items\',
+                             '-csv', (Join-Path $packRoot 'strings_zh-CN.csv'),
+                             '-JsonValue',
+                             '-CsvJsonValue',
+                             '-ForcePairs',
+                             '-fileList', $script:modsJsonFileList,
+                             '-backupRoot', (Join-Path $packRoot 'backup\Mods-items-details'))
 # 个别模组 mod.json 的 description 是玩家可见的设置说明, 需 -IncludeModJson 放行
 $descExtra = Join-Path $PSScriptRoot 'dict-desc-extra.tsv'
 if ([IO.File]::Exists($descExtra)) {

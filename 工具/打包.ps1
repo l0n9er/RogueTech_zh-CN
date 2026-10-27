@@ -16,6 +16,7 @@ $files = Get-ChildItem $packRoot -Recurse -File -Force | Where-Object {
     foreach ($d in $excludeDirs) {
         if ($rel -eq $d -or $rel.StartsWith($d + '\')) { return $false }
     }
+    if ($rel -match '(?i)(^|\\)__pycache__(\\|$)' -or $_.Extension -in @('.pyc', '.pyo')) { return $false }
     # 排除人工审校工作簿、.zhbak / 临时产物
     if ($_.Name -eq '对白本土化审校_第一批.xlsx') { return $false }
     if ($_.Name -like '*.zhbak*') { return $false }

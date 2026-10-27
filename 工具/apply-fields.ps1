@@ -8,6 +8,8 @@
     [string]$fileList = "",
     [switch]$IncludeModJson,
     [switch]$JsonValue,
+    [switch]$CsvJsonValue,
+    [switch]$ForcePairs,
     [switch]$DryRun
 )
 <#
@@ -17,7 +19,7 @@
   字段通过 -fields 指定(逗号分隔), 如: words,title,description
 
   对照表格式: 英文原文 <TAB> 中文译文 (UTF-8)
-  保护: 已含中文的跳过; JSON 校验失败则跳过; 改前备份
+  保护: 已含中文的跳过(-ForcePairs 仅允许精确 TSV 命中覆盖); JSON 校验失败则跳过; 改前备份
 
   -JsonValue: 译文已是 JSON 转义形式(如从 Localization.json 的
   CULTURE_ZH_CN 提取的文本, 内含 \r\n 字面), 此时只转义双引号,
@@ -32,34 +34,96 @@ if ([string]::IsNullOrWhiteSpace($mods)) {
     $mods = Join-Path $gr 'Mods'
 }
 if ([string]::IsNullOrWhiteSpace($backupRoot)) { $backupRoot = Join-Path $packRoot 'backup\Mods-fields' }
-if (-not [IO.File]::Exists($pairs)) { Write-Host (" 找不到对照表: " + $pairs) -ForegroundColor Yellow; exit 1 }
+if (-not [string]::IsNullOrWhiteSpace($pairs) -and -not [IO.File]::Exists($pairs)) {
+    Write-Host (" 找不到对照表: " + $pairs) -ForegroundColor Yellow
+    exit 1
+}
 
 $map = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 $csvMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 function CsvKey([string]$s) {
     $t = $s.ToLowerInvariant()
     $t = $t.Replace("`r`n", 'newline').Replace("`n", 'newline').Replace("`r", 'newline')
+    $t = $t.Replace('\r\n', 'newline').Replace('\n', 'newline').Replace('\r', 'newline')
+    $t = $t.Replace(']]', '')
     $t = [regex]::Replace($t, '<[^>]*>', '')
     $t = $t.Replace(',', '^').Replace('.', '*')
     $t = [regex]::Replace($t, '["''`]', '')
     return [regex]::Replace($t, '\s+', '')
 }
-$sr = New-Object IO.StreamReader($pairs, [Text.Encoding]::UTF8)
-while (-not $sr.EndOfStream) {
-    $l = $sr.ReadLine()
-    if ([string]::IsNullOrWhiteSpace($l)) { continue }
-    $i = $l.IndexOf("`t"); if ($i -lt 1) { continue }
-    $k = $l.Substring(0, $i); $v = $l.Substring($i + 1)
-    if (-not $map.ContainsKey($k)) { $map[$k] = $v }
+function CsvLooseKey([string]$s) {
+    return [regex]::Replace((CsvKey $s), '[^a-z0-9\u3400-\u9fff]', '')
 }
-$sr.Close()
+function TranslationScore([string]$s) {
+    $plain = [regex]::Replace($s, '<[^>]*>|\[\[[\s\S]*?\]\]|\{[^{}]*\}', '')
+    $han = [regex]::Matches($plain, '[\u3400-\u9fff]').Count
+    $latin = [regex]::Matches($plain, '[A-Za-z]').Count
+    return ($han - (2 * $latin))
+}
+
+$sr = $null
+if (-not [string]::IsNullOrWhiteSpace($pairs)) {
+    $sr = New-Object IO.StreamReader($pairs, [Text.Encoding]::UTF8)
+    while (-not $sr.EndOfStream) {
+        $l = $sr.ReadLine()
+        if ([string]::IsNullOrWhiteSpace($l)) { continue }
+        $i = $l.IndexOf("`t"); if ($i -lt 1) { continue }
+        $k = $l.Substring(0, $i); $v = $l.Substring($i + 1)
+        if (-not $map.ContainsKey($k)) { $map[$k] = $v }
+    }
+    $sr.Close()
+}
 if (-not [string]::IsNullOrWhiteSpace($csv) -and [IO.File]::Exists($csv)) {
+    $csvLooseCandidates = New-Object 'System.Collections.Generic.Dictionary[string,object]'
     foreach ($line in [IO.File]::ReadLines($csv, [Text.Encoding]::UTF8)) {
         $comma = $line.IndexOf(',')
         if ($comma -lt 1) { continue }
         $key = $line.Substring(0, $comma)
-        if (-not $csvMap.ContainsKey($key)) { $csvMap[$key] = $line.Substring($comma + 1) }
+        $value = $line.Substring($comma + 1)
+        if (-not $csvMap.ContainsKey($key)) { $csvMap[$key] = $value }
+        if ($value -notmatch '[\u3400-\u9fff]') { continue }
+        $looseKey = CsvLooseKey $key
+        if (-not $looseKey) { continue }
+        if (-not $csvLooseCandidates.ContainsKey($looseKey)) {
+            $csvLooseCandidates[$looseKey] = [pscustomobject]@{
+                Value = $value
+                BestScore = $null
+                SecondScore = $null
+            }
+            continue
+        }
+        $candidate = $csvLooseCandidates[$looseKey]
+        if ($candidate.Value -eq $value) { continue }
+        $score = TranslationScore $value
+        if ($null -eq $candidate.BestScore) {
+            $candidate.BestScore = TranslationScore $candidate.Value
+            $candidate.SecondScore = [int]::MinValue
+        }
+        if ($score -gt $candidate.BestScore) {
+            $candidate.SecondScore = $candidate.BestScore
+            $candidate.BestScore = $score
+            $candidate.Value = $value
+        } elseif ($score -gt $candidate.SecondScore) {
+            $candidate.SecondScore = $score
+        }
     }
+    $csvLooseMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+    $csvLooseAmbiguous = New-Object 'System.Collections.Generic.HashSet[string]'
+    foreach ($entry in $csvLooseCandidates.GetEnumerator()) {
+        $candidate = $entry.Value
+        if ($null -eq $candidate.SecondScore) {
+            $csvLooseMap[$entry.Key] = $candidate.Value
+            continue
+        }
+        if ($candidate.BestScore -ge ($candidate.SecondScore + 2)) {
+            $csvLooseMap[$entry.Key] = $candidate.Value
+        } else {
+            [void]$csvLooseAmbiguous.Add($entry.Key)
+        }
+    }
+} else {
+    $csvLooseMap = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+    $csvLooseAmbiguous = New-Object 'System.Collections.Generic.HashSet[string]'
 }
 Write-Host ("对照表: " + $map.Count + " 条  字段: " + $fields)
 
@@ -84,12 +148,38 @@ foreach ($field in ($fields -split ',' | ForEach-Object { $_.Trim() } | Where-Ob
 }
 
 function ResolveTranslation([string]$value) {
-    if ($script:map.ContainsKey($value)) { return $script:map[$value] }
+    $script:lastTranslationSource = ''
+    if ($script:forcePairs -and $value -match '[\u4e00-\u9fff]' -and
+        -not $script:map.ContainsKey($value)) { return $null }
+    if ($script:map.ContainsKey($value)) {
+        $script:lastTranslationSource = 'pairs'
+        return $script:map[$value]
+    }
     if ($script:csvMap.Count -gt 0) {
         $ck = CsvKey $value
-        if ($script:csvMap.ContainsKey($ck)) { return $script:csvMap[$ck] }
+        if ($script:csvMap.ContainsKey($ck)) {
+            $script:lastTranslationSource = 'csv'
+            return $script:csvMap[$ck]
+        }
+    }
+    $looseKey = CsvLooseKey $value
+    if ($looseKey -and $script:csvLooseMap.ContainsKey($looseKey) -and
+        -not $script:csvLooseAmbiguous.Contains($looseKey)) {
+        $script:lastTranslationSource = 'csv'
+        return $script:csvLooseMap[$looseKey]
     }
     return $null
+}
+
+function ConvertCsvJsonValue([string]$value) {
+    if ($null -eq $value) { return $value }
+    # strings_zh-CN.csv 用 0x1F 表示富文本别名中的逗号；JSON 定义仍使用逗号。
+    # CSV 中的 \n 保留为两字符转义，写入 JSON 后由游戏还原为换行。
+    $decoded = $value.Replace([string][char]0x1F, ',')
+    $slashPattern = [regex]::Escape($BS) + '{2,}([nrt])'
+    return [regex]::Replace($decoded, $slashPattern, [System.Text.RegularExpressions.MatchEvaluator]{
+        param($m) return ($script:BS + $m.Groups[1].Value)
+    })
 }
 
 function DecodeMappedValue([string]$value) {
@@ -120,8 +210,13 @@ function ReplaceStructuredJson($node) {
 $stats = @{ files = 0; changed = 0; repl = 0 }
 $script:map = $map
 $script:csvMap = $csvMap
+$script:csvLooseMap = $csvLooseMap
+$script:csvLooseAmbiguous = $csvLooseAmbiguous
 $script:stats = $stats
 $script:jsonValue = $JsonValue.IsPresent
+$script:csvJsonValue = $CsvJsonValue.IsPresent
+$script:forcePairs = $ForcePairs.IsPresent
+$script:lastTranslationSource = ''
 
 $excl = @(
     ($BS + '.modtek' + $BS)
@@ -168,16 +263,34 @@ foreach ($f in $files) {
             $script:stats.repl++
             return '"' + $fld + '": "' + $e + '"'
         }
-        if ($val -match '[\u4e00-\u9fff]') { return $m.Value }
+        if ($val -match '[\u4e00-\u9fff]' -and
+            -not ($script:forcePairs -and $script:map.ContainsKey($val))) { return $m.Value }
         $zh = $null
-        if ($script:map.ContainsKey($val)) { $zh = $script:map[$val] }
+        $script:lastTranslationSource = ''
+        if ($script:map.ContainsKey($val)) {
+            $zh = $script:map[$val]
+            $script:lastTranslationSource = 'pairs'
+        }
         if ($null -eq $zh -and $script:csvMap.Count -gt 0) {
             $ck = CsvKey $val
-            if ($script:csvMap.ContainsKey($ck)) { $zh = $script:csvMap[$ck] }
+            if ($script:csvMap.ContainsKey($ck)) {
+                $zh = $script:csvMap[$ck]
+                $script:lastTranslationSource = 'csv'
+            }
+        }
+        if ($null -eq $zh) {
+            $looseKey = CsvLooseKey $val
+            if ($looseKey -and $script:csvLooseMap.ContainsKey($looseKey) -and
+                -not $script:csvLooseAmbiguous.Contains($looseKey)) {
+                $zh = $script:csvLooseMap[$looseKey]
+                $script:lastTranslationSource = 'csv'
+            }
         }
         if ($null -eq $zh) { return $m.Value }
+        $fromCsv = ($script:lastTranslationSource -eq 'csv')
+        if ($fromCsv -and $script:csvJsonValue) { $zh = ConvertCsvJsonValue $zh }
         $script:stats.repl++
-        if ($script:jsonValue) {
+        if ($script:jsonValue -or ($fromCsv -and $script:csvJsonValue)) {
             # 译文已是 JSON 转义形式, 只需处理双引号(不能翻倍反斜杠,
             # 否则 \r\n 会变成 \\r\\n 在游戏里显示成字面反斜杠)
             $e = $zh.Replace('"', $BS + '"')
