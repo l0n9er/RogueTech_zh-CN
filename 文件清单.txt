@@ -58,7 +58,7 @@ BattleTech_Data\StreamingAssets\Video\Subtitles\    月光石头中文/英文剧
 工具\dict-words.tsv                  对话台词中英对照表（6,642 行，去重后读取 6,546 条映射）
 工具\apply-voicepacks.ps1            检测额外 MWSphere 语音包并补写中文 credits
 工具\apply-fields.ps1                通用字段补译（title / description / UIName）
-工具\apply-residual-candidates.ps1   扫描并补译已确认的残留机甲/装备详情
+工具\apply-residual-candidates.ps1   扫描并修复事件混排短语、选项名称及详情残留
 工具\dict-title.tsv                  任务标题中英对照表（21 条）
 工具\dict-desc.tsv                   目标描述中英对照表（39 条）
 工具\dict-uiname.tsv                 物品界面名对照表（37 条）

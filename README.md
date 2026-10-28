@@ -286,7 +286,7 @@ RtCache\                          启动器缓存副本
   ├─ apply-event-localization.ps1 闪点、任务事件与 RogueTechCore 合同补译并输出残留报告
   ├─ dict-events-auto.tsv         自动整理的完整事件译文词典（本轮新增 2,112 条映射）
   ├─ dict-events-residual.tsv     扫描补译与复核后的事件残留词典
-  ├─ apply-residual-candidates.ps1 扫描并补译已确认的残留机甲/装备详情
+  ├─ apply-residual-candidates.ps1 扫描并修复确认的事件混排短语与详情残留
   ├─ apply-statdesc.ps1           游戏本体状态说明模板
   ├─ apply-quirk.ps1              Quirk 特性显示名
   ├─ apply-category-zh.ps1        装备分类显示名汉化

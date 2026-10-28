@@ -1107,8 +1107,92 @@ __ENDING__
     return $null
 }
 
+function Translate-VisibleEventTerms([string]$rel, [string]$value) {
+    $file = [IO.Path]::GetFileName($rel)
+    $isEventText = $rel -match '(?i)(?:^|[\\/])events[\\/]|(?:^|[\\/])(?:force?d?event|event)[^\\/]*\.json$'
+
+    if ($isEventText) {
+        $rules = @(
+            @{ Pattern='(?i)(?<![A-Za-z])Front Man(?![A-Za-z])'; Replacement='首脑' },
+            @{ Pattern='(?i)(?<![A-Za-z])前(?:方|部) Man(?![A-Za-z])'; Replacement='首脑' },
+            @{ Pattern='(?i)(?<![A-Za-z])Darius Oliveira(?![A-Za-z])'; Replacement='达吕斯·奥利维拉' },
+            @{ Pattern='(?i)(?<![A-Za-z])Dr\.?\s+Murad(?![A-Za-z])'; Replacement='穆拉德博士' },
+            @{ Pattern='(?i)(?<![A-Za-z])Darius''s(?![A-Za-z])'; Replacement='达吕斯的' },
+            @{ Pattern='(?i)(?<![A-Za-z])Dairus''s(?![A-Za-z])'; Replacement='达吕斯的' },
+            @{ Pattern='(?i)(?<![A-Za-z])Sumire''s(?![A-Za-z])'; Replacement='苏米尔的' },
+            @{ Pattern='(?i)(?<![A-Za-z])Yang''s(?![A-Za-z])'; Replacement='杨的' },
+            @{ Pattern='(?i)(?<![A-Za-z])Murad''s(?![A-Za-z])'; Replacement='穆拉德的' },
+            @{ Pattern='(?i)(?<![A-Za-z])Farah''s(?![A-Za-z])'; Replacement='法拉的' },
+            @{ Pattern='(?i)(?<![A-Za-z])Leopard''s(?![A-Za-z])'; Replacement='豹式空投艇的' },
+            @{ Pattern='(?i)(?<![A-Za-z])Argo''s(?![A-Za-z])'; Replacement='阿尔戈号的' },
+            @{ Pattern='(?i)(?<![A-Za-z])Darius(?![A-Za-z])'; Replacement='达吕斯' },
+            @{ Pattern='(?i)(?<![A-Za-z])Dairus(?![A-Za-z])'; Replacement='达吕斯' },
+            @{ Pattern='(?i)(?<![A-Za-z])Sumire(?![A-Za-z])'; Replacement='苏米尔' },
+            @{ Pattern='(?i)(?<![A-Za-z])Yang(?![A-Za-z])'; Replacement='杨' },
+            @{ Pattern='(?i)(?<![A-Za-z])Murad(?![A-Za-z])'; Replacement='穆拉德' },
+            @{ Pattern='(?i)(?<![A-Za-z])Farah(?![A-Za-z])'; Replacement='法拉' },
+            @{ Pattern='(?i)(?<![A-Za-z])Leopard(?![A-Za-z])'; Replacement='豹式空投艇' },
+            @{ Pattern='(?i)(?<![A-Za-z])Argo(?![A-Za-z])'; Replacement='阿尔戈号' },
+            @{ Pattern='(?i)(?<![A-Za-z])The Steel Beast(?![A-Za-z])'; Replacement='钢铁野兽' },
+            @{ Pattern='(?i)(?<![A-Za-z])The Raptors(?![A-Za-z])'; Replacement='猛禽组织' },
+            @{ Pattern='(?i)(?<![A-Za-z])Rogue Bear(?![A-Za-z])'; Replacement='流浪熊' },
+            @{ Pattern='(?i)(?<![A-Za-z])PropWash was here(?![A-Za-z])'; Replacement='PropWash 到此一游' },
+            @{ Pattern='(?i)(?<![A-Za-z])Wicced FTW(?![A-Za-z])'; Replacement='Wicced 必胜' }
+        )
+        foreach ($rule in $rules) {
+            $value = [regex]::Replace($value, $rule.Pattern, $rule.Replacement)
+        }
+    }
+
+    if ($rel -match '(?i)(?:^|[\\/])NecromoNightmare[\\/]events[\\/]event_co_Boneyard\.json$') {
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])TRICK(?![A-Za-z])', '恶作剧')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])TREAT(?![A-Za-z])', '款待')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])OR(?![A-Za-z])', '还是')
+    }
+
+    if ($rel -match '(?i)(?:^|[\\/])OperationRevival[\\/]Events[\\/]') {
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Participate\s+in\s+实弹\s+Exercise(?![A-Za-z])', '参加实弹演习')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Travel\s+Contract\s+to\s+诺瓦ya\s+Zemlya(?![A-Za-z])', '前往新地岛的旅行合约')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])诺瓦ya\s+Zemlya(?![A-Za-z])', '新地岛')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Novaya\s+Zemlya(?![A-Za-z])', '新地岛')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])NovayaZemlya(?![A-Za-z])', '新地岛')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Bergan Industries(?![A-Za-z])', '贝根工业')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Last Rites(?![A-Za-z])', '临终仪式')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Khaos Theory(?![A-Za-z])', '混沌理论')
+    }
+
+    if ($rel -match '(?i)(?:^|[\\/])Aircademy[\\/]events[\\/]') {
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Air Today, Gone Tomorrow(?![A-Za-z])', '今日翱翔，明日消逝')
+    }
+    if ($file -eq 'LoreTheMuscle.json') {
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])The Muscle(?![A-Za-z])', '主力')
+    }
+
+    if ($file -eq 'event_solarisSeasonStart4.json') {
+        $value = [regex]::Replace($value, '(?i)Purchase\s+access\s+to\s+a\s+索拉里斯\s*7号\s+冠军ship', '购买索拉里斯7号锦标赛的参赛资格')
+    }
+    if ($file -match '^event_sh_gate\d+_assessment\.json$') {
+        $value = $value.Replace('超重型合约（Superheavy Contracts）', '超重型合约')
+    }
+    if ($file -eq 'forcedevent_co_KhaosTheory_Search.json') {
+        $value = [regex]::Replace($value, '(?i)Look for the\s*$', '寻找')
+    }
+    if ($file -eq 'fp_NN.json' -and $value -eq '测试 Kickstart NN') {
+        $value = '死灵噩梦启动测试'
+    }
+    if ($file -eq 'SimGameStatDesc_ConsoleBuilt.json') {
+        $value = [regex]::Replace($value, '(?i)^Stat f或 KF Console Built on 阿尔戈号$', '阿尔戈号上 KF 控制台的建造统计')
+    }
+    if ($file -eq 'SimGameStatDesc_ConsoleDelayed.json') {
+        $value = [regex]::Replace($value, '(?i)^Stat f或 KF Console Delayed on 阿尔戈号$', '阿尔戈号上 KF 控制台的延期统计')
+    }
+
+    return $value
+}
+
 function Translate-EventTerms([string]$rel, [string]$value) {
     $file = [IO.Path]::GetFileName($rel)
+    $originalValue = $value
     if ($value -eq 'NYI') { return '尚未实现' }
     if ($value -eq 'Ensure VIP survives') { return '确保重要人物存活' }
     if ($value -eq 'Rescue the VIP and extract safely') { return '救出重要人物并安全撤离' }
@@ -1151,6 +1235,7 @@ function Translate-EventTerms([string]$rel, [string]$value) {
     $last = 0
     foreach ($match in $protected.Matches($value)) {
         $visible = $value.Substring($last, $match.Index - $last)
+        $visible = Translate-VisibleEventTerms $rel $visible
         $visible = $enemyRx.Replace($visible, '{TEAM_TAR.FactionDef.Demonym}')
         $visible = $vipRx.Replace($visible, [Text.RegularExpressions.MatchEvaluator]{
             param($m)
@@ -1162,6 +1247,7 @@ function Translate-EventTerms([string]$rel, [string]$value) {
         $last = $match.Index + $match.Length
     }
     $visible = $value.Substring($last)
+    $visible = Translate-VisibleEventTerms $rel $visible
     $visible = $enemyRx.Replace($visible, '{TEAM_TAR.FactionDef.Demonym}')
     $visible = $vipRx.Replace($visible, [Text.RegularExpressions.MatchEvaluator]{
         param($m)
@@ -1171,7 +1257,7 @@ function Translate-EventTerms([string]$rel, [string]$value) {
     [void]$out.Append($visible)
     $translated = $out.ToString()
     $translated = [regex]::Replace($translated, '(?<=[\u4e00-\u9fff])\s+(?=重要人物)|(?<=重要人物)\s+(?=[\u4e00-\u9fff])', '')
-    if ($translated -eq $value) { return $null }
+    if ($translated -eq $originalValue) { return $null }
     return $translated
 }
 
@@ -1507,13 +1593,17 @@ Mizuki Bekker 的下一步是什么？
 function Apply-JsonFile([IO.FileInfo]$file) {
     $rel = $file.FullName.Substring($mods.Length).TrimStart('\')
     $orig = [IO.File]::ReadAllText($file.FullName, [Text.Encoding]::UTF8)
-    $eventFields = 'Description|Details|YangsThoughts|StockRole|levelName|decription|DisplayName|ErrorMessage|title|description|shortDescription|longDescription|FlashpointShortDescription|FlashpointLongDescription|words|Caption|label|Text|CULTURE_ZH_CN|UIName'
+    $eventFields = 'Description|Details|Name|YangsThoughts|StockRole|levelName|decription|DisplayName|ErrorMessage|title|description|shortDescription|longDescription|FlashpointShortDescription|FlashpointLongDescription|words|Caption|label|Text|CULTURE_ZH_CN|UIName'
     $rx = [regex]('"(' + $eventFields + ')"\s*:\s*"((?:[^"\\]|\\.)*)"')
     $new = $rx.Replace($orig, {
         param($match)
         $field = $match.Groups[1].Value
         $value = Read-JsonString $match.Groups[2].Value
         if ($null -eq $value) { return $match.Value }
+        if ($field -eq 'Name' -and
+            $rel -notmatch '(?i)(?:^|[\\/])(?:event|forceevent|forcedevent)[^\\/]*\.json$') {
+            return $match.Value
+        }
         if ($field -eq 'Description' -and
             $rel -notmatch '(?i)^Flashpoints[\\/]FightingGhosts[\\/]mod\.json$') {
             return $match.Value

@@ -173,7 +173,7 @@ LICENSE 与 README.md 的"许可"一节：
   工具\fix-interp-punct.ps1  修复占位符内标点（"错误"文本的根因）
   工具\apply-norm.ps1        重新执行术语归一化与格式修复
   工具\norm-csv.ps1          规范化翻译总表的标点格式
-  工具\apply-residual-candidates.ps1  补译已确认的残留机甲/装备详情
+  工具\apply-residual-candidates.ps1  补译事件混排短语、选项名称及详情残留
   工具\还原.ps1              按最新备份还原
 
 各脚本的作用范围与原理见 汉化说明-内容分布与机制.md。

@@ -33,7 +33,7 @@ $rxNote       = [regex]::new('翻译' + '[' + ':：' + ']|译者|待译|nonethel
 $rxEnSent     = [regex]::new('[\u4e00-\u9fff]\s+[a-z]{3,}\s+[a-z]{3,}')
 $rxGenderExpr = [regex]::new('\{[A-Za-z_][A-Za-z0-9_.]*\.Gender\?([^{}]*)\}')
 $rxDynamicFaction = [regex]::new('\bENEMYFACTION\b')
-$rxUntranslatedEventTerm = [regex]::new('ENEMYFACTION|VIPs?|海盗三部曲第III部')
+$rxUntranslatedEventTerm = [regex]::new('ENEMYFACTION|VIPs?|海盗三部曲第III部|(?i:Front Man|前方 Man|前部 Man|The Muscle|\bTRICK\b|\bTREAT\b|The Steel Beast|The Raptors|Rogue Bear|Participate\s+in\s+实弹\s+Exercise|Travel\s+Contract\s+to\s+诺瓦ya\s+Zemlya|Purchase\s+access\s+to\s+a\s+索拉里斯|冠军ship|Kickstart\s+NN|PropWash\s+was\s+here|Wicced\s+FTW|Superheavy\s+Contracts|Look\s+for\s+the|Stat\s+f或\s+KF\s+Console\s+(?:Built|Delayed)\s+on\s+阿尔戈号)')
 $rxDupChar    = [regex]::new('的的|在在|了了|你你|我我')
 
 $checks = @(
@@ -48,7 +48,7 @@ $checks = @(
 )
 
 # ---- 收集语料 ----
-$fldList = @('Details','YangsThoughts','StockRole','levelName','decription','DisplayName','ErrorMessage',
+$fldList = @('Details','Name','YangsThoughts','StockRole','levelName','decription','DisplayName','ErrorMessage',
              'title','description','shortDescription','longDescription',
              'FlashpointShortDescription','FlashpointLongDescription','words','Caption','label',
              'Text','CULTURE_ZH_CN','UIName')
@@ -68,6 +68,10 @@ foreach ($f in $files) {
     $txt = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)
     if (-not $rxHan.IsMatch($txt)) { continue }
     foreach ($m in $fieldRx.Matches($txt)) {
+        if ($m.Groups[1].Value -eq 'Name' -and
+            $rel -notmatch '(?i)(?:^|[\\/])(?:event|forceevent|forcedevent)[^\\/]*\.json$') {
+            continue
+        }
         $v = $m.Groups[2].Value
         $items.Add([pscustomobject]@{ Src=('JSON|' + $rel + '|' + $m.Groups[1].Value); Text=$v })
         $jsonCnt++
