@@ -84,4 +84,25 @@ PLACHEHOLDER (对所有次要目标敌对)。侦测到敌对空投艇正在接�
 PLACHEHOLDER (主要额外目标部队)。侦测到敌对空投艇正在接近，已标记空投区域。	占位符（主要目标增援）。检测到敌方运输舰正在接近，已标记空降区域。
 VIP安全了，指挥官--做得不错。	重要人物安全了，指挥官——做得不错。
 The ENEMYFACTION scum are trying to get from one place to another. Kill them.	{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。
+Stop the Pony Express	拦截快马邮递队
+Set up the target range	设置射击场
+Set up the target range.	设置射击场。
+Set up the target 射程	设置射击场
+Kraken Champion Count	Kraken 冠军数
+Counter for number of Champions by Player	玩家获得的角斗士冠军次数。
+Counter for number of 冠军s by Player	玩家获得的角斗士冠军次数。
+Pay Off <i>Front Man</i>	向首脑支付赔款
+Pay Off <i>前部 Man</i>	向首脑支付赔款
+ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。	{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。
+Ensure VIP survives	确保重要人物存活
+Rescue the VIP and extract safely	救出重要人物并安全撤离
+Rescue the VIP from the {TEAM_TAR.FactionDef.Demonym} base.	从{TEAM_TAR.FactionDef.Demonym}基地救出重要人物。
+Recover the VIP's briefcase.	取回重要人物的公文包。
+Rescue the VIP	救出重要人物
+Rescue the VIP.	救出重要人物。
+NYI	尚未实现
+I think we need to wait a week before we jump into this to ensure our best chance at victory. We will revisit this in 7 days.	我认为最好等一周再跃迁过去，以确保胜算最大。一周后我们再重新评估。
+I think we need to wait a fortnight before we jump into this to ensure our best chance at victory. We will revisit this in 14 days.	我认为最好等两周再跃迁过去，以确保胜算最大。两周后我们再重新评估。
+I think we need to wait a month before we jump into this to ensure our best chance at victory. We will revisit this in 30 days.	我认为最好等一个月再跃迁过去，以确保胜算最大。一个月后我们再重新评估。
+Purchase access to a Solaris 7 Championship	购买索拉里斯7号锦标赛的参赛资格。
 有人在制造麻烦并栽赃给我们。如果我们置之不理，我们可能会在MRBC那里失掉声望。警告：本闪点既<b><color=#f0ff00>漫长</color></b>又<b><color=#ff0d00>困难</color></b>	有人在制造麻烦并栽赃给我们。如果我们置之不理，我们可能会失去雇佣兵评审与担保委员会（MRBC）的声望。警告：本闪点既<b><color=#f0ff00>漫长</color></b>又<b><color=#ff0d00>困难</color></b>

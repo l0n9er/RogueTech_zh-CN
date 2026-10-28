@@ -169,7 +169,8 @@ $evaluator = [System.Text.RegularExpressions.MatchEvaluator] {
         $cond = $p.Substring(0, $ci)
         $val = $p.Substring($ci + 1)
         $trimmed = $val.Trim()
-        $translation = Find-BranchTranslation $trimmed
+        $lookup = $trimmed.Replace('\u0027', "'")
+        $translation = Find-BranchTranslation $lookup
         if ($null -ne $translation) {
             $hit = $true
             $script:brN++
