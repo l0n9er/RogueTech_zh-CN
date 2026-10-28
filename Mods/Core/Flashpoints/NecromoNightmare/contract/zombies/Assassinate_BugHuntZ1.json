@@ -11,7 +11,7 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "指挥官，我们需要立即部署。我们追缉一名{TEAM_TAR.FactionDef.Demonym}恐怖分子已有数月，终于追踪到这颗行星。他们已转入地下，但今天早些时候我们一个轨道单位发现他们在地表活动。这是我们首次确认目击目标，我们希望你能立即将其拿下，别让他们再次溜走。时间不够对行动区域做完整勘测，所以你会盲飞进去。<b><color=#e20000>[警告：丧尸]</color></b>",
+  "shortDescription": "指挥官，我们需要立即部署。我们追缉一名{TEAM_TAR.FactionDef.Demonym}恐怖分子已有数月，终于追踪到这颗行星。他们已转入地下，但今天早些时候我们一个轨道单位发现他们在地表活动。这是我们首次确认目标踪迹，我们希望你能立即将其拿下，别让他们再次溜走。没有时间全面侦察行动区域，因此你只能在缺乏侦察情报的情况下进入。\u003cb\u003e\u003ccolor=#e20000\u003e[警告：丧尸]\u003c/color\u003e\u003c/b\u003e",
   "longDescription": "缺乏地形情报执行任务简直是糟糕透顶的主意. 下面<i>任何情况</i> 都有可能发生.",
   "salvagePotential": 12,
   "requirementList": [

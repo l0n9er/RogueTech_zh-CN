@@ -11,8 +11,8 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "Within the last three months, {TEAM_TAR.FactionDef.Name} has struck our facilities, personnel, and supply convoys over half a dozen times. My superiors in the {TEAM_EMP.FactionDef.Government} leadership would like to even the score. We'd like to hire you to find a {TEAM_TAR.FactionDef.Demonym} lance and destroy it, to demonstrate we are not without military resources on {TGT_SYSTEM.Name}.",
-  "longDescription": "如果他们想在{TGT_SYSTEM.Name}展示军事力量，我们可以替他们办到.",
+  "shortDescription": "在过去三个月里，{TEAM_TAR.FactionDef.Name} 对我们的设施、人员和补给车队发动了六次以上的袭击。我在 {TEAM_EMP.FactionDef.Government} 领导层中的上级希望讨回这笔账。我们想雇佣你找到并摧毁一支 {TEAM_TAR.FactionDef.Demonym} 小队，以表明我们在 {TGT_SYSTEM.Name} 上并非没有军事力量。",
+  "longDescription": "如果他们想在{TGT_SYSTEM.Name}展示军事力量，我们可以替他们办到。",
   "salvagePotential": 12,
   "requirementList": [
     {

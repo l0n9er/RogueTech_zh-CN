@@ -11,7 +11,7 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "我们的一名VIP在{TGT_SYSTEM.name}的一处{TEAM_EMP.FactionDef.Demonym}设施里. 我们需要带她远离那个星球，但这座建筑被{TEAM_TAR.FactionDef.Demonym}的军队包围了. 你需要清除敌方阻力，救出VIP，并将她安全护送到指定的着陆区撤离. 请做好战斗准备——包围大使的{TEAM_TAR.FactionDef.Demonym}部队不会轻易让你带走我们的人员. 等你把我们的VIP平安带出，我们就会付款.",
+  "shortDescription": "我们的一名重要人物在{TGT_SYSTEM.name}的一处{TEAM_EMP.FactionDef.Demonym}设施里. 我们需要带她远离那个星球，但这座建筑被{TEAM_TAR.FactionDef.Demonym}的军队包围了. 你需要清除敌方阻力，救出重要人物，并将她安全护送到指定的着陆区撤离. 请做好战斗准备——包围大使的{TEAM_TAR.FactionDef.Demonym}部队不会轻易让你带走我们的人员. 等你把我们的重要人物平安带出，我们就会付款.",
   "longDescription": "敌人肯定会料到有人要尝试图突破他们的包围，所以会有激烈抵抗.",
   "salvagePotential": 24,
   "requirementList": [
@@ -75,7 +75,7 @@
       "contractObjective": {
         "EncounterObjectGuid": "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
       },
-      "title": "回收VIP并摆脱敌人",
+      "title": "回收重要人物并摆脱敌人",
       "description": "",
       "isPrimary": true,
       "forPlayer": "Player1",
@@ -91,7 +91,7 @@
       "objective": {
         "EncounterObjectGuid": "3a4192be-2a53-4383-94ac-19c08883ea5f"
       },
-      "title": "占领指定区域来回收VIP.",
+      "title": "占领指定区域来回收重要人物.",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [
@@ -204,7 +204,7 @@
       "objective": {
         "EncounterObjectGuid": "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
       },
-      "title": "载有VIP的机甲必须存活",
+      "title": "载有重要人物的机甲必须存活",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [],
@@ -242,7 +242,7 @@
       "objective": {
         "EncounterObjectGuid": "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
       },
-      "title": "拿下B区以回收VIP的助手",
+      "title": "拿下B区以回收重要人物的助手",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -317,7 +317,7 @@
       "objective": {
         "EncounterObjectGuid": "a9f1746b-e990-4c8f-90be-3c4f229da58f"
       },
-      "title": "载有VIP助手的机甲必须存活",
+      "title": "载有重要人物助手的机甲必须存活",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [
@@ -437,7 +437,7 @@
           "revealRadius": -1
         },
         {
-          "words": "你所要回收的目标是名{TEAM_EMP.FactionDef.Demonym}VIP。她正被{TEAM_TAR.FactionDef.Demonym}部队围困在一栋建筑物里--你需要和他们交战并带走她。",
+          "words": "你所要回收的目标是名{TEAM_EMP.FactionDef.Demonym}重要人物。她正被{TEAM_TAR.FactionDef.Demonym}部队围困在一栋建筑物里--你需要和他们交战并带走她。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -453,7 +453,7 @@
           "revealRadius": -1
         },
         {
-          "words": "一旦你掌握了VIP，就带她前往指定的着陆区撤离。",
+          "words": "一旦你掌握了重要人物，就带她前往指定的着陆区撤离。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -494,7 +494,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "VIP安全了，指挥官--做得不错。",
+          "words": "重要人物安全了，指挥官--做得不错。",
           "wordsColor": {
             "r": 1,
             "g": 1,

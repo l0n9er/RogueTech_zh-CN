@@ -12,7 +12,7 @@
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
   "shortDescription": "指挥官，{TEAM_TAR.FactionDef.Name}已经安排一位全息影视明星前往{TGT_SYSTEM.name}，以提升当地民众的士气. 这正是{TEAM_EMP.FactionDef.Demonym}心理战部队发挥作用的好机会，让他们真正明白这片区域有多危险. 派出你的小队，找到目标，消灭他. 如果你想的话，也可以一并消灭他的护卫.",
-  "longDescription": "Have you seen the {TEAM_TAR.FactionDef.Demonym} holo-vid show \"Mercenaries\"? Yes, we're being asked to kill its star, Brock Armstrong. He knows his way around a 'Mech and will have two full lances as escorts.",
+  "longDescription": "你看过{TEAM_TAR.FactionDef.Demonym}的全息影像节目《雇佣兵！》吗? 是的 , 我们被要求杀掉其主演布洛克·阿姆斯特朗. 他精通机甲操作 , 并有两支完整机甲小队护航.",
   "salvagePotential": 16,
   "requirementList": [
     {

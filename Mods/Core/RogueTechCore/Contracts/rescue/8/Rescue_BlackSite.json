@@ -81,7 +81,7 @@
         "EncounterObjectGuid": "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
       },
       "title": "回收解密密钥并安全撤离",
-      "description": "回收VIP并安全撤离",
+      "description": "回收重要人物并安全撤离",
       "isPrimary": true,
       "forPlayer": "Player1",
       "objectiveGuids": [

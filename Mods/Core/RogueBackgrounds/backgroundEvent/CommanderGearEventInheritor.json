@@ -26,7 +26,7 @@
     {
       "Description": {
         "Id": "outcome_0",
-        "Name": "Check out the \"little treasure\".",
+        "Name": "看看这件“小宝贝”。",
         "Details": "继续"
       },
       "RequirementList": [],
@@ -34,7 +34,7 @@
         {
           "Description": {
             "Id": "outcome_0_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "你和杨一路无言地走到机库。到了之后，映入眼帘的是一台莫名眼熟的战斗机甲。眼熟，却又想不起来为什么。"
           },
           "Weight": 100,

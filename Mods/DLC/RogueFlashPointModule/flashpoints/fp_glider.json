@@ -54,6 +54,6 @@
   "RewardCollectionID": "RT_FP_glidertems",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "看来翡翠猎鹰可能在涉足禁忌技术。我们受邀来测试其中一些装备。\n\n<b><color=#f44336>本闪点需要4名LAM飞行员。</color></b>",
+  "FlashpointShortDescription": "看来翡翠猎鹰可能在涉足禁忌技术。我们受邀来测试其中一些装备。 \u003cb\u003e\u003ccolor=#f44336\u003e本闪点需要4名陆空两用机甲飞行员。\u003c/color\u003e\u003c/b\u003e",
   "FlashpointDescriberCastDefId": "castDef_DariusDefault"
 }

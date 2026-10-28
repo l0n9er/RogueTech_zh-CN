@@ -10,7 +10,7 @@
 )
 
 # 事件/闪点正文不经过 strings_zh-CN.csv，必须直接改写 JSON。
-# 本工具只作用于事件类文件和显示字段，避免把 Name 等内部 ID 全局汉化。
+# 本工具只作用于事件、闪点和 RogueTechCore 合同文件的显示字段；合同 JSON 不匹配 Name。
 # 本地化表中的长文本经过 JSON 解码后再匹配，能够正确处理 \r\n、引号和
 # 插值占位符；写回时重新使用 JSON 序列化，避免生成非法 JSON 或字面化换行。
 $ErrorActionPreference = 'Stop'
@@ -100,9 +100,63 @@ function ConvertCsvJsonValue([string]$value) {
     return DecodeControlEscapes $decoded
 }
 
+function NormalizeEventTranslation([string]$value) {
+    if ($null -eq $value) { return $value }
+    $rules = @(
+        @{ Pattern='(?i)\bEasy(?=\s*</color\s*>)'; Replacement='简单' },
+        @{ Pattern='(?i)\bMedium(?=\s*</color\s*>)'; Replacement='中等' },
+        @{ Pattern='(?i)\bHard(?=\s*</color\s*>)'; Replacement='困难' },
+        @{ Pattern='(?i)\bThunderbolt(?:\s+Missiles?|\s+导弹)\b'; Replacement='雷电导弹' },
+        @{ Pattern='(?i)注意\s*(?:Andrew|安德鲁)'; Replacement='安德鲁请注意' },
+        @{ Pattern='(?i)\bCommercial JumpShip Travel Authority\b'; Replacement='商业跳跃飞船运输管理局（CJSTA）' },
+        @{ Pattern='(?i)\bMercenary Review Board\b'; Replacement='雇佣兵评审委员会（MRB）' },
+        @{ Pattern='(?i)\bGhost Beer\b'; Replacement='幽灵熊啤酒' },
+        @{ Pattern='(?i)\bGhost Bear Watch\b'; Replacement='幽灵熊守望组织' },
+        @{ Pattern='(?i)\bGhost Bear MechWarriors?\b'; Replacement='幽灵熊氏族机甲战士' },
+        @{ Pattern='(?i)\bClan Ghost Bear\b'; Replacement='幽灵熊氏族' },
+        @{ Pattern='(?i)\bGhost Bear Clan\b'; Replacement='幽灵熊氏族' },
+        @{ Pattern='(?i)\bGhost Bear\b'; Replacement='幽灵熊氏族' },
+        @{ Pattern='(?i)\bInner Sphere\b'; Replacement='内星区' },
+        @{ Pattern='(?i)\bClan Space\b'; Replacement='氏族空间' },
+        @{ Pattern='(?i)\bAlpha Group\b'; Replacement='阿尔法组' },
+        @{ Pattern='(?i)\bBeta Group\b'; Replacement='贝塔组' },
+        @{ Pattern='(?i)\bBlack Market\b'; Replacement='黑市' },
+        @{ Pattern='(?i)\bDr\.?\s+Murad\b'; Replacement='穆拉德博士' },
+        @{ Pattern='(?i)\bKF Drive\b'; Replacement='KF 引擎' },
+        @{ Pattern='(?i)\bK-F Drive\b'; Replacement='K-F 引擎' },
+        @{ Pattern='(?i)\bCommercial JumpShips?\b'; Replacement='商业跳跃飞船' },
+        @{ Pattern='(?i)\bJumpShips?\b'; Replacement='跳跃飞船' },
+        @{ Pattern='(?i)\bMechWarriors?\b'; Replacement='机甲战士' },
+        @{ Pattern='(?i)\bBattle ?Mechs?\b'; Replacement='战斗机甲' },
+        @{ Pattern='(?i)\bBattle Armou?r\b'; Replacement='战斗装甲' },
+        @{ Pattern='(?i)\bC-Bills?\b'; Replacement='C币' },
+        @{ Pattern='(?i)\bquiaff\b'; Replacement='对吧' },
+        @{ Pattern='(?i)\bQuineg\b'; Replacement='不' },
+        @{ Pattern='(?i)\bAff，来看看'; Replacement='好，来看看' },
+        @{ Pattern='(?i)\bAff，'; Replacement='是，' },
+        @{ Pattern='(?i)\bAff\b'; Replacement='是' },
+        @{ Pattern='(?i)\bNeg，'; Replacement='不，' },
+        @{ Pattern='(?i)\bNeg\b'; Replacement='不' },
+        @{ Pattern='(?i)\bBoss\b'; Replacement='老板' },
+        @{ Pattern='(?i)\bMechBay\b'; Replacement='机甲舱' },
+        @{ Pattern='(?i)\bMercNet\b'; Replacement='雇佣网' },
+        @{ Pattern='(?i)\bArgo\b'; Replacement='阿尔戈号' },
+        @{ Pattern='(?i)\bPeriphery\b'; Replacement='外缘星域' },
+        @{ Pattern='(?i)\b1000''s\b'; Replacement='上千' },
+        @{ Pattern='(?i)(?<![（(])\bMRBC\b(?![）)])'; Replacement='雇佣兵评审与担保委员会（MRBC）' },
+        @{ Pattern='(?i)(?<![（(])\bCJSTA\b(?![）)])'; Replacement='商业跳跃飞船运输管理局（CJSTA）' },
+        @{ Pattern='(?i)(?<![（(])\bMRB\b(?![）)])'; Replacement='雇佣兵评审委员会（MRB）' }
+    )
+    foreach ($rule in $rules) {
+        $value = [regex]::Replace($value, $rule.Pattern, $rule.Replacement)
+    }
+    return $value
+}
+
 function AddPair([string]$en, [string]$zh, [bool]$isEventKey) {
     if ([string]::IsNullOrWhiteSpace($en) -or [string]::IsNullOrWhiteSpace($zh)) { return }
     if ($en -eq $zh -or $zh -notmatch '[\u4e00-\u9fff]') { return }
+    $zh = NormalizeEventTranslation $zh
     # 已确认的旧坏条目不能重新进入自动覆盖通道。
     if ($zh -match 'active 的道路再次交汇') { return }
     $target = if ($isEventKey) { $eventPairs } else { $fallbackPairs }
@@ -129,6 +183,7 @@ if (-not [string]::IsNullOrWhiteSpace($pairs)) {
             if ($i -lt 1) { continue }
             $en = DecodeDictionaryValue ($line.Substring(0, $i))
             $zh = DecodeDictionaryValue ($line.Substring($i + 1))
+            $zh = NormalizeEventTranslation $zh
             if (-not $explicitPairs.ContainsKey($en)) { $explicitPairs[$en] = $zh }
         }
     }
@@ -190,6 +245,13 @@ $fieldAlt = ($targetFields | ForEach-Object { [regex]::Escape($_) }) -join '|'
 $rxPattern = '"(' + $fieldAlt + ')"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"'
 $rx = [System.Text.RegularExpressions.Regex]::new(
     $rxPattern,
+    [System.Text.RegularExpressions.RegexOptions]::None
+)
+$contractFields = @($targetFields | Where-Object { $_ -ne 'Name' })
+$contractFieldAlt = ($contractFields | ForEach-Object { [regex]::Escape($_) }) -join '|'
+$contractRxPattern = '"(' + $contractFieldAlt + ')"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"'
+$contractRx = [System.Text.RegularExpressions.Regex]::new(
+    $contractRxPattern,
     [System.Text.RegularExpressions.RegexOptions]::None
 )
 
@@ -278,6 +340,7 @@ function IsEventFile($file) {
         $rel -match '(?i)(^|[\\/])ModSaves([\\/]|$)' -or
         $rel -match '(?i)(^|[\\/])Localization([\\/]|$)' -or
         [IO.Path]::GetFileName($file.FullName) -ieq 'Localization.json') { return $false }
+    if ($rel -match '(?i)(^|[\\/])RogueTechCore[\\/]Contracts[\\/]') { return $true }
     if ($rel -match '(?i)(^|[\\/])(?:events?|eventualities|backgroundevents?|flashpoints?|flashpoint|forcedevents?)(?:[\\/]|$)') { return $true }
     return ([IO.Path]::GetFileName($file.FullName) -match '(?i)^(?:event|forceevent|backgroundevent|flashpoint|fp_).+\.json$')
 }
@@ -296,10 +359,24 @@ $files = $allFiles | Where-Object { IsEventFile $_ }
 foreach ($f in $files) {
     $stats.files++
     $orig = [IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)
-    $new = $rx.Replace($orig, {
-        param($m)
+    $rel = $f.FullName.Substring($mods.Length).TrimStart([char]92, [char]47)
+    $activeRx = if ($rel -match '(?i)(^|[\\/])RogueTechCore[\\/]Contracts[\\/]') { $contractRx } else { $rx }
+    $matches = $activeRx.Matches($orig)
+    if ($matches.Count -eq 0) { continue }
+    $builder = New-Object System.Text.StringBuilder($orig.Length)
+    $lastIndex = 0
+    foreach ($m in $matches) {
+        [void]$builder.Append($orig.Substring($lastIndex, $m.Index - $lastIndex))
         $raw = $m.Groups[2].Value
         $value = DecodeJsonString $raw
+        $isInternalObjectiveId = $value -match '^(?:Timer)?Objective_[A-Za-z0-9_]+$'
+        $isHiddenObjectiveTitle = ($m.Groups[1].Value -ieq 'title' -and
+            $value -match '(?i)^\s*(?:\(HIDDEN\)|HIDDEN(?:\s|$))')
+        if ($isInternalObjectiveId -or $isHiddenObjectiveTitle) {
+            [void]$builder.Append($m.Value)
+            $lastIndex = $m.Index + $m.Length
+            continue
+        }
         $zh = $null
         $fromCsv = $false
         if ($explicitPairs.ContainsKey($value)) { $zh = $explicitPairs[$value] }
@@ -324,18 +401,32 @@ foreach ($f in $files) {
             }
         }
         if ($fromCsv) { $zh = ConvertCsvJsonValue $zh }
+        if ($null -ne $zh) { $zh = NormalizeEventTranslation $zh }
         if ($null -ne $zh -and $zh -ne $value) {
             $stats.repl++
-            return ('"' + $m.Groups[1].Value + '": ' + (EncodeJsonString $zh))
+            [void]$builder.Append(('"' + $m.Groups[1].Value + '": ' + (EncodeJsonString $zh)))
+            $lastIndex = $m.Index + $m.Length
+            continue
         }
-        if ($value -match '[A-Za-z]{3,}' -and $value -notmatch '(?i)HIDDEN TIMER|HIDDEN KILL OBJECTIVE|NO NEED TO EDIT|USELESS OBJECTIVE') {
+        $normalizedValue = NormalizeEventTranslation $value
+        if ($normalizedValue -ne $value) {
+            $stats.repl++
+            [void]$builder.Append(('"' + $m.Groups[1].Value + '": ' + (EncodeJsonString $normalizedValue)))
+            $lastIndex = $m.Index + $m.Length
+            continue
+        }
+        if ($value -match '[A-Za-z]{3,}' -and
+            $value -notmatch '(?i)HIDDEN TIMER|HIDDEN KILL OBJECTIVE|NO NEED TO EDIT|USELESS OBJECTIVE') {
             $hasChinese = ($value -match '[\u4e00-\u9fff]')
             if ($hasChinese) { $stats.mixed++ } else { $stats.candidates++ }
             $kind = if ($hasChinese) { 'Mixed' } else { 'English' }
             [void]$residuals.Add(($f.FullName + "`t" + $m.Groups[1].Value + "`t" + $kind + "`t" + (NormalizeText $value)))
         }
-        return $m.Value
-    })
+        [void]$builder.Append($m.Value)
+        $lastIndex = $m.Index + $m.Length
+    }
+    [void]$builder.Append($orig.Substring($lastIndex))
+    $new = $builder.ToString()
     if ($new -eq $orig) { continue }
     try { [void]$ser.DeserializeObject($new) }
     catch {

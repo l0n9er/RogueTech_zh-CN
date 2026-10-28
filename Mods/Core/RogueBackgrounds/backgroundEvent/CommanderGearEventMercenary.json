@@ -34,7 +34,7 @@
         {
           "Description": {
             "Id": "outcome_0_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "你肯定地点了点头，杨便转身带你前往停放那台座驾的隔舱。"
           },
           "Weight": 100,

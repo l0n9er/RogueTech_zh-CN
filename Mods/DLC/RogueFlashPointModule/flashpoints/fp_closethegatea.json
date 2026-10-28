@@ -2,7 +2,7 @@
   "Description": {
     "Id": "fp_closethegatea",
     "Name": "关上大门",
-    "Details": "康星终于叫我们上门了。他们需要我们帮忙了结那个失控AI。本闪点<b><color=#ff0d00>非常困难</color></b>",
+    "Details": "康星终于叫我们上门了。他们需要我们帮忙了结那个失控人工智能。本闪点\u003cb\u003e\u003ccolor=#ff0d00\u003e非常困难\u003c/color\u003e\u003c/b\u003e",
     "Icon": "closethegates"
   },
   "Weight": 9000,
@@ -56,6 +56,6 @@
   "RewardCollectionID": "RT_FP_ThreePirateItems3",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "除非你有8名称职的飞行员和6台称职的机甲，否则不建议执行此任务。这个闪点<b><color=#ff0d00>非常困难</color></b>。他们可能对爆头比较脆弱",
+  "FlashpointShortDescription": "除非你有8名合格飞行员和6台性能可靠的机甲，否则不建议执行此任务。本闪点\u003cb\u003e\u003ccolor=#ff0d00\u003e非常困难\u003c/color\u003e\u003c/b\u003e。敌方机甲的头部防护可能较弱。",
   "FlashpointDescriberCastDefId": "castDef_DariusDefault"
 }

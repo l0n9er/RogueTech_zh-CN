@@ -11,7 +11,7 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "我们在找一家雇佣兵公司为我们做些隐蔽工作。我们失去了一处基地，落到了{TEAM_TAR.FactionDef.Name}手里，并相信{TEAM_EMP.FactionDef.Demonym}人员此刻正在受审。我们不能让那些人泄密，但如果被看到是我们自己摧毁了基地，那就难看了。我们需要可否认性。我们需要你把那座基地夷平，尤其是仓储与通讯设施。如果你能确保没有活口，我们将不胜感激；若清除全部抵抗者，我们还会付一笔奖金。<b><color=#e20000>[警告：丧尸]</color></b>",
+  "shortDescription": "我们在找一家雇佣兵公司为我们做些隐蔽工作。我们失去了一处基地，落到了{TEAM_TAR.FactionDef.Name}手里，并相信{TEAM_EMP.FactionDef.Demonym}人员此刻正在接受审讯。我们不能让那些人泄密，但如果被看到是我们自己摧毁了基地，那就难看了。我们需要可否认性。我们需要你把那座基地夷平，尤其是仓储与通讯设施。如果你能确保没有活口，我们将不胜感激；若清除全部抵抗者，我们还会付一笔奖金。\u003cb\u003e\u003ccolor=#e20000\u003e[警告：丧尸]\u003c/color\u003e\u003c/b\u003e",
   "longDescription": "他们在利用我们，这样袭击就无法追究到他们身上. 向自己人开枪......对他们来说是个很糟糕的局面，但没人说过外围是个安全的地方.",
   "salvagePotential": 24,
   "requirementList": [
@@ -616,7 +616,7 @@
       "overrideDialogueBucketId": "DialogBucketDef_Universal_KillConfirmed",
       "dialogueContent": [
         {
-          "words": "Bucket_击杀确认：守军已被消灭。干得好。",
+          "words": "击杀确认：守军已被消灭。干得好。",
           "wordsColor": {
             "r": 1,
             "g": 1,

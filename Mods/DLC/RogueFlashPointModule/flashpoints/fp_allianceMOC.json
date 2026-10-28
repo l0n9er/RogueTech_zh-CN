@@ -1,7 +1,7 @@
 {
   "Description": {
     "Id": "fp_allianceMOC",
-    "Name": "Alliance Magistracy of Canopus",
+    "Name": "坎诺普斯女王国联盟",
     "Details": "卡诺帕斯行政区联盟闪点",
     "Icon": "magistracy_front_image"
   },
@@ -54,6 +54,6 @@
   "RewardCollectionID": "itemcollection_loot_NekoRescue",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "Sir, we have received a message from a peculiar lady known as Patricia Vincent. Her 'band' was captured by Taurian Pirates and she is paying handsomely to rescue them. She said this may be a purrfect contract for us.",
+  "FlashpointShortDescription": "长官，我们收到一位名叫帕特里夏·文森特的古怪女士的留言。她的\"乐队\"被陶里安海盗抓了，她愿意付大价钱把他们救出来。她说这对我们来说可能是一份\"完喵\"的合约。",
   "FlashpointDescriberCastDefId": "castDef_DariusDefault"
 }

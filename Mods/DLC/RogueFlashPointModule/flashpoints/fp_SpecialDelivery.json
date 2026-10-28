@@ -2,7 +2,7 @@
   "Description": {
     "Id": "fp_SpecialDelivery",
     "Name": "特殊快递",
-    "Details": "通讯之星终于来叫我们了。他们需要我们帮忙收拾那台失控的AI。这个闪点<b><color=#ff0d00>非常困难</color></b>",
+    "Details": "通讯之星终于来找我们了。他们需要我们帮忙处理那台失控的人工智能。这个闪点\u003cb\u003e\u003ccolor=#ff0d00\u003e非常困难\u003c/color\u003e\u003c/b\u003e",
     "Icon": "SpecialDelivery"
   },
   "Weight": 909909,

@@ -35,6 +35,7 @@
 | **合约结束评价** | 34 个派系在任务成功/失败时对你说的话 |
 | **特殊单位部位名** | 步兵/原型机甲/机甲小队/载具的部位显示名 |
 | **合约名与闪点简报** | 合约列表标题、闪点简报、地图与环境显示名 |
+| **事件与闪点正文** | 新增收录 2,112 条事件译文映射；安装时扫描事件、闪点及 RogueTechCore 合同 JSON，应用译文、归一常见残留术语并生成残留报告 |
 
 术语以 **官方中文术语表**（terms-13908.json，2,952 条）与项目自建术语表为准，
 并做过全表一致性归一（如 混战→近战、载具→车辆、驾驶员→机师）。
@@ -282,6 +283,9 @@ RtCache\                          启动器缓存副本
   ├─ apply-bonus.ps1              装备特性说明（Short / Long / Full）
   ├─ apply-fields.ps1             通用字段补译（title / description / UIName / 合约简报；
                                    含 Quicsell 事件 Name / Details）
+  ├─ apply-event-localization.ps1 闪点、任务事件与 RogueTechCore 合同补译并输出残留报告
+  ├─ dict-events-auto.tsv         自动整理的完整事件译文词典（本轮新增 2,112 条映射）
+  ├─ dict-events-residual.tsv     扫描补译与复核后的事件残留词典
   ├─ apply-residual-candidates.ps1 扫描并补译已确认的残留机甲/装备详情
   ├─ apply-statdesc.ps1           游戏本体状态说明模板
   ├─ apply-quirk.ps1              Quirk 特性显示名
@@ -293,7 +297,7 @@ RtCache\                          启动器缓存副本
   ├─ check-registry.ps1           内部标识符校验（防误译导致故障）
   ├─ fix-launcher-safe.ps1        禁用启动器哈希校验
   ├─ qa-check.ps1                 汉化质量自检
-  ├─ 打包.ps1                     重新生成发布 zip
+  ├─ 打包.ps1                     检查必需文件并生成、校验发布 zip
   └─ dict-*.tsv                   各字段中英对照词典（含 Quicsell 事件词典）
 ```
 

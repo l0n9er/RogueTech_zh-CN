@@ -400,7 +400,7 @@
       "objective": {
         "EncounterObjectGuid": "ec1afdf8-94ac-4091-a3d2-1d82732ffad2"
       },
-      "title": "Empty Do Additional Forces Primary Autocomplete Flag",
+      "title": "清空额外部队主目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -487,7 +487,7 @@
       "objective": {
         "EncounterObjectGuid": "0eefd1b5-f890-4ad2-b28a-d291c059da7e"
       },
-      "title": "Empty Do Additional Forces Secondary Autocomplete Flag",
+      "title": "清空额外部队次要目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -574,7 +574,7 @@
       "objective": {
         "EncounterObjectGuid": "c1a9059b-4fd1-4def-9419-6dd4a3b3bd4d"
       },
-      "title": "Empty Do Additional Forces 2 Primary Autocomplete Flag",
+      "title": "清空额外部队 2 主目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -661,7 +661,7 @@
       "objective": {
         "EncounterObjectGuid": "ddc899c1-eb4e-47a1-a636-d92813c10571"
       },
-      "title": "Empty Do Additional Forces 2 Secondary Autocomplete Flag",
+      "title": "清空额外部队 2 次要目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -748,7 +748,7 @@
       "objective": {
         "EncounterObjectGuid": "9d26ed13-ed7b-480e-a34d-24e17264eeef"
       },
-      "title": "Empty Do Additional Forces Primary Autocomplete Flag",
+      "title": "清空额外部队主目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -835,7 +835,7 @@
       "objective": {
         "EncounterObjectGuid": "76eb94bb-3e37-4ecc-bad6-a5a9543bf670"
       },
-      "title": "Empty Do Additional Forces Secondary Autocomplete Flag",
+      "title": "清空额外部队次要目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -1023,7 +1023,7 @@
       "objective": {
         "EncounterObjectGuid": "699fc05a-9514-4058-ba39-7a366a09acbf"
       },
-      "title": "VIP的机甲必须存活",
+      "title": "重要人物的机甲必须存活",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [],
@@ -1107,7 +1107,7 @@
       "objective": {
         "EncounterObjectGuid": "51aa5837-b540-42be-b8be-26b37bfcf976"
       },
-      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [
@@ -1151,7 +1151,7 @@
       "objective": {
         "EncounterObjectGuid": "2f1e0162-3ff4-4f73-99d5-cdb2c0d5396b"
       },
-      "title": "Empty_Employer_IsActiveFlag_Primary",
+      "title": "空雇主_是否激活标记_主",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -1171,7 +1171,7 @@
       "objective": {
         "EncounterObjectGuid": "ac4199e4-c42e-4a41-ae0e-cf10f7dfcf8a"
       },
-      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [
@@ -1239,7 +1239,7 @@
       "objective": {
         "EncounterObjectGuid": "25093242-ea45-451c-a189-d3d54f132d26"
       },
-      "title": "Empty_Employer_IsActiveFlag_Secondary",
+      "title": "空雇主_是否激活标记_次",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -1259,7 +1259,7 @@
       "objective": {
         "EncounterObjectGuid": "658372a8-8e43-4f74-af9c-f4d60bb103ec"
       },
-      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [],
@@ -1279,7 +1279,7 @@
       "objective": {
         "EncounterObjectGuid": "eb2cdf1f-7f49-4fca-9f3c-328d653e5169"
       },
-      "title": "Empty_EmployerAlly_IsActiveFlag_Primary",
+      "title": "空雇主盟友_是否激活标记_主",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -1299,7 +1299,7 @@
       "objective": {
         "EncounterObjectGuid": "4222c6f6-975a-45aa-aa3e-cbfaf0c50026"
       },
-      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [
@@ -1367,7 +1367,7 @@
       "objective": {
         "EncounterObjectGuid": "aa4e4b60-369e-43b6-82e3-e9140cfa4d16"
       },
-      "title": "Empty_EmployerAlly_IsActiveFlag_Secondary",
+      "title": "空雇主盟友_是否激活标记_次",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -2248,7 +2248,7 @@
           "revealRadius": -1
         },
         {
-          "words": "该死。他们是敌军的支援部队。指挥官，务必保证VIP的安全。这些新出现的敌人<i>不在</i> 这次任务目标之内。",
+          "words": "该死。他们是敌军的支援部队。指挥官，务必保证重要人物的安全。这些新出现的敌人<i>不在</i> 这次任务目标之内。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2371,7 +2371,7 @@
           "revealRadius": -1
         },
         {
-          "words": "见鬼。情况可能会变得很糟，各位。指挥官，务必保证VIP的安全。这些新出现的敌人并<i>不在</i> 这次任务目标之内。",
+          "words": "见鬼。情况可能会变得很糟，各位。指挥官，务必保证重要人物的安全。这些新出现的敌人并<i>不在</i> 这次任务目标之内。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2726,7 +2726,7 @@
           "revealRadius": -1
         },
         {
-          "words": "该死。他们是敌军的支援部队。指挥官，务必保证VIP的安全。这些新出现的敌人<i>不在</i> 这次任务目标之内。",
+          "words": "该死。他们是敌军的支援部队。指挥官，务必保证重要人物的安全。这些新出现的敌人<i>不在</i> 这次任务目标之内。",
           "wordsColor": {
             "r": 1,
             "g": 1,

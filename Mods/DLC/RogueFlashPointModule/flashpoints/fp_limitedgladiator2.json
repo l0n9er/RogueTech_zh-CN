@@ -1,7 +1,7 @@
 {
   "Description": {
     "Id": "fp_limitedgladiator2",
-    "Name": "限定团队角斗士 <b><color=#f0ff00>中型 </color></b>",
+    "Name": "限定团队角斗士 \u003cb\u003e\u003ccolor=#f0ff00\u003e中等\u003c/color\u003e\u003c/b\u003e",
     "Details": "短拆分模板",
     "Icon": "limitedgladiator"
   },
@@ -40,6 +40,6 @@
   "RewardCollectionID": "RT_FP_ThreeRogueItemsG",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "一场全新的竞赛出现了，你的队伍准备好开打了吗？<b><color=#f0ff00>中型 </color></b> 难度 ",
+  "FlashpointShortDescription": "一场全新的竞赛出现了，你的队伍准备好开打了吗？\u003cb\u003e\u003ccolor=#f0ff00\u003e中等\u003c/color\u003e\u003c/b\u003e 难度",
   "FlashpointDescriberCastDefId": "castDef_FP_Dfisher"
 }

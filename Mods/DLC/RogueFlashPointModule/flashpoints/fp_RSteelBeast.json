@@ -1,7 +1,7 @@
 {
   "Description": {
     "Id": "fp_RSteelBeast",
-    "Name": "Return of the Steel Beast. This is both <b><color=#f0ff00>Long</color></b> and <b><color=#ff0d00>HARD </color></b>",
+    "Name": "钢铁巨兽归来：任务\u003cb\u003e\u003ccolor=#f0ff00\u003e漫长\u003c/color\u003e\u003c/b\u003e且\u003cb\u003e\u003ccolor=#ff0d00\u003e艰难 \u003c/color\u003e\u003c/b\u003e",
     "Details": "钢铁野兽寻求复仇",
     "Icon": "rsteelbeast"
   },
@@ -53,6 +53,6 @@
   "RewardCollectionID": "RT_FP_ThreeClanItemsClanScouts",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "有人在制造麻烦并栽赃给我们。如果我们置之不理，我们可能会在MRBC那里失掉声望。警告：本闪点既<b><color=#f0ff00>漫长</color></b>又<b><color=#ff0d00>困难</color></b>",
+  "FlashpointShortDescription": "有人在制造麻烦并栽赃给我们。如果我们置之不理，我们可能会失去雇佣兵评审与担保委员会（MRBC）的声望。警告：本闪点既<b><color=#f0ff00>漫长</color></b>又<b><color=#ff0d00>困难</color></b>",
   "FlashpointDescriberCastDefId": "castDef_DariusDefault"
 }

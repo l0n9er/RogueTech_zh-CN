@@ -70,6 +70,9 @@ BattleTech_Data\StreamingAssets\Video\Subtitles\    月光石头中文/英文剧
                                      这三个字段此前完全遗漏，合约界面会整段显示英文
 工具\dict-events.tsv                 Quicsell backgroundEvent 字段对照表（5 条）
                                      定向补译可选模组事件的 Name / Details
+工具\apply-event-localization.ps1    自动应用模组与本体任务/闪点译文并生成残留报告
+工具\dict-events-auto.tsv            自动收集的任务与闪点事件译文词典（本轮新增 2,112 条映射）
+工具\dict-events-residual.tsv        全量残留扫描后人工补译的事件词典
 工具\dict-effect.tsv                 RogueMunitions 战斗效果名称对照表（32 条）
                                      定向补译战斗浮动提示中的状态效果 Name
 工具\dict-tags.tsv                   新增机师 tag 与 Quicsell 星球 tag 对照表（7 条）

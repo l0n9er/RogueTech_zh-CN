@@ -1,7 +1,7 @@
 {
   "Description": {
     "Id": "fp_limitedgladiator4b",
-    "Name": "限定角斗士对战 <b><color=#f0ff00>中型 </color></b>",
+    "Name": "限定角斗士对战 \u003cb\u003e\u003ccolor=#f0ff00\u003e中等\u003c/color\u003e\u003c/b\u003e",
     "Details": "短拆分模板",
     "Icon": "limitedgladiator"
   },
@@ -41,6 +41,6 @@
   "RewardCollectionID": "RT_FP_ThreeRogueItemsG",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "一名机甲战士向你叫板。他一定是在当地全息影像上见过你。赞助商正涌向这场对决。<b><color=#f0ff00>中型 </color></b>难度 ",
+  "FlashpointShortDescription": "一名机甲战士向你叫板。他一定是在当地全息影像上见过你。赞助商正涌向这场对决。\u003cb\u003e\u003ccolor=#f0ff00\u003e中等\u003c/color\u003e\u003c/b\u003e 难度",
   "FlashpointDescriberCastDefId": "castDef_FP_justinAllard_AllardDefault"
 }

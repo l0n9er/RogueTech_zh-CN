@@ -85,7 +85,7 @@
         "EncounterObjectGuid": "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
       },
       "title": "回收被捕的佣兵并安全撤离",
-      "description": "回收VIP并安全撤离",
+      "description": "回收重要人物并安全撤离",
       "isPrimary": true,
       "forPlayer": "Player1",
       "objectiveGuids": [
@@ -271,7 +271,7 @@
       "objective": {
         "EncounterObjectGuid": "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
       },
-      "title": "占领次要指定区域来回收VIP的助手.",
+      "title": "占领次要指定区域来回收重要人物的助手.",
       "description": "次要且可选的目标：确保第二个救援目标安全。",
       "isPrimary": false,
       "OnSuccessResults": [],

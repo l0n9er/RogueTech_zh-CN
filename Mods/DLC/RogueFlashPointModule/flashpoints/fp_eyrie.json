@@ -56,6 +56,6 @@
   "RewardCollectionID": "RT_FP_eyrietems",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "我们与翡翠猎鹰的同盟已被证明利润丰厚。他们想请我们协助一个秘密项目。\n\n<b><color=#f44336>本闪点需要4名LAM飞行员。</color></b>",
+  "FlashpointShortDescription": "我们与翡翠猎鹰的同盟已被证明利润丰厚。他们想请我们协助一个秘密项目。 \u003cb\u003e\u003ccolor=#f44336\u003e本闪点需要4名陆空两用机甲飞行员。\u003c/color\u003e\u003c/b\u003e",
   "FlashpointDescriberCastDefId": "castDef_DariusDefault"
 }

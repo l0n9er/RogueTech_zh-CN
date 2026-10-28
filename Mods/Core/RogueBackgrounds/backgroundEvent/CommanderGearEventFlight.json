@@ -48,7 +48,7 @@
         {
           "Description": {
             "Id": "outcome_0_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "里面如约躺着那架把你带到这里的飞船。你把手放在光滑的装甲板上，嘴角浮起一丝微笑。“我向你保证，这完全合法。严格来说。”"
           },
           "Weight": 100,
@@ -117,7 +117,7 @@
     {
       "Description": {
         "Id": "outcome_1",
-        "Name": "你偷了架 VTOL??",
+        "Name": "你偷了架垂直起降飞行器？",
         "Details": "[能驾驶车辆]"
       },
       "RequirementList": [
@@ -139,7 +139,7 @@
         {
           "Description": {
             "Id": "outcome_0_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "里面如约躺着那架把你带到这里的飞船。你把手放在光滑的装甲板上，嘴角浮起一丝微笑。“我向你保证，这完全合法。严格来说。”"
           },
           "Weight": 100,

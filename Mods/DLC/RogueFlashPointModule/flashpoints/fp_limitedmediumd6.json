@@ -40,6 +40,6 @@
   "RewardCollectionID": "RT_FP_ThreeClanItems",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "你需要摧毁一处前沿基地。构造重量限制和振动地雷限制了我方的着陆区。我们可投放210吨，单台机甲最大重量55吨。此任务难度为<b><color=#f0ff00>中等</color></b>",
+  "FlashpointShortDescription": "你需要摧毁一处前沿基地。地表承重上限和震动地雷限制了我方可用的着陆区域。我们可投放210吨，单台机甲最大重量为55吨。此任务难度为\u003cb\u003e\u003ccolor=#f0ff00\u003e中等\u003c/color\u003e\u003c/b\u003e",
   "FlashpointDescriberCastDefId": "castDef_MercenariesDefaultCommander"
 }

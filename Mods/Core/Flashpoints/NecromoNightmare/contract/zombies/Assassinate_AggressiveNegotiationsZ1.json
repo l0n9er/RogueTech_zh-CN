@@ -11,7 +11,7 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "We've been having troubles with {TEAM_TAR.FactionDef.ShortName} here in {TGT_SYSTEM.name} for months now, and our negotiations with them have been stalled by a stubborn {TEAM_TAR.FactionDef.Demonym} diplomat. If he were removed from the equation, through a random attack by \"bandits\" for instance, we might be able to make some headway.<b><color=#e20000>[WARNING: Zombies]</color></b>",
+  "shortDescription": "我们与{TGT_SYSTEM.name}这里的{TEAM_TAR.FactionDef.ShortName}已经纠缠了好几个月，而我们与他们的谈判被一名顽固的{TEAM_TAR.FactionDef.Demonym}外交官拖住了。如果他能从这盘棋上被移走——比如说，通过一次“匪徒“的随机袭击——我们也许就能有所推进。\u003cb\u003e\u003ccolor=#e20000\u003e[警告：丧尸]\u003c/color\u003e\u003c/b\u003e",
   "longDescription": "指挥官，单靠除掉一名外交官无法根本解决问题. 这类局势反而能带来持续的合作机会.",
   "salvagePotential": 20,
   "requirementList": [

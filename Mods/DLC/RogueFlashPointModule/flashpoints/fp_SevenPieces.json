@@ -56,6 +56,6 @@
   "RewardCollectionID": "RT_FP_ThreePirateItems",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "我们收到了发布给我们的一份新合约。上面写着（大劫掠，轻松打捞）。我不知道他们是怎么把这东西通过MRBC的安全线路传过来的。本闪点<b><color=#f0ff00>漫长</color></b>。",
+  "FlashpointShortDescription": "我们收到了一份新合约，上面写着：“大干一票，轻松捞战利品。”我不清楚他们是怎么通过雇佣兵评审与担保委员会（MRBC）的安全线路把这份合约送来的。本闪点\u003cb\u003e\u003ccolor=#f0ff00\u003e漫长\u003c/color\u003e\u003c/b\u003e。",
   "FlashpointDescriberCastDefId": "castDef_DariusDefault"
 }

@@ -247,7 +247,7 @@
       "objective": {
         "EncounterObjectGuid": "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
       },
-      "title": "占领次要指定区域来回收VIP的助手",
+      "title": "占领次要指定区域来回收重要人物的助手",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],

@@ -12,7 +12,7 @@
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
   "shortDescription": "我们探测到一艘隶属于{TEAM_TAR.FactionDef.Name}的来袭空投艇. 我们在预计降落区域的地方防御部队装备不足，难以应对一支机甲小队，但有了你的协助，我们就能确保这次突袭造成的损害降到最低. 我们希望你拦截并消灭这支{TEAM_TAR.FactionDef.Demonym}机甲小队.",
-  "longDescription": "指挥官，{TEAM_TAR.FactionDef.ShortName}要是不打算来真的，是不会派出空投艇的. 所以如果我们接下这份任务，在地面上就必须保持警惕.",
+  "longDescription": "指挥官，{TEAM_TAR.FactionDef.ShortName}若无意认真交战，就不会派出运输舰。因此，如果我们接下这份任务，地面上必须保持警惕。",
   "salvagePotential": 8,
   "requirementList": [
     {

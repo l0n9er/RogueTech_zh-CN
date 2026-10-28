@@ -75,7 +75,7 @@
       "contractObjective": {
         "EncounterObjectGuid": "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
       },
-      "title": "回收{TEAM_EMP.FactionDef.Demonym}VIP并摆脱敌人",
+      "title": "回收{TEAM_EMP.FactionDef.Demonym}重要人物并摆脱敌人",
       "description": "找出那位继承人。她需要搭乘其中一台机甲随行，所以在撤离前保护好那台机甲。",
       "isPrimary": true,
       "forPlayer": "Player1",
@@ -91,7 +91,7 @@
       "objective": {
         "EncounterObjectGuid": "3a4192be-2a53-4383-94ac-19c08883ea5f"
       },
-      "title": "占领指定区域来回收VIP",
+      "title": "占领指定区域来回收重要人物",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [
@@ -204,7 +204,7 @@
       "objective": {
         "EncounterObjectGuid": "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
       },
-      "title": "确保带着VIP的那部机甲存活",
+      "title": "确保带着重要人物的那部机甲存活",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [],
@@ -242,7 +242,7 @@
       "objective": {
         "EncounterObjectGuid": "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
       },
-      "title": "占领次要指定区域来回收VIP的助手",
+      "title": "占领次要指定区域来回收重要人物的助手",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -421,7 +421,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "这是一个简单明了的回收任务。找到VIP然后前往撤离区域。",
+          "words": "这是一个简单明了的回收任务。找到重要人物然后前往撤离区域。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -494,7 +494,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "干得漂亮，指挥官。{TEAM_EMP.FactionDef.Demonym}的VIP在回家的路上了。",
+          "words": "干得漂亮，指挥官。{TEAM_EMP.FactionDef.Demonym}的重要人物在回家的路上了。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -544,7 +544,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "你在最后已知信号的区域里了。坚守阵地，让VIP有机会登上其中一部机甲。",
+          "words": "你在最后已知信号的区域里了。坚守阵地，让重要人物有机会登上其中一部机甲。",
           "wordsColor": {
             "r": 1,
             "g": 1,

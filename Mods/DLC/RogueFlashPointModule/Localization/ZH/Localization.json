@@ -20,7 +20,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -220,7 +220,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -2916,7 +2916,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -5996,7 +5996,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -9796,7 +9796,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -13748,7 +13748,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -14476,7 +14476,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -18540,7 +18540,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -34036,7 +34036,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -41404,7 +41404,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
@@ -47084,7 +47084,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Protect the {TEAM_EMP.FactionDef.Demonym} VIP",
-        "CULTURE_ZH_CN": "保护{TEAM_EMP.FactionDef.Demonym}VIP"
+        "CULTURE_ZH_CN": "保护{TEAM_EMP.FactionDef.Demonym}重要人物"
       }
     },
     {
@@ -47116,7 +47116,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Commander, we need to protect the {TEAM_EMP.FactionDef.Demonym} base and keep the VIP safe.",
-        "CULTURE_ZH_CN": "指挥官，我们需要保护这座{TEAM_EMP.FactionDef.Demonym}基地，确保VIP的安全."
+        "CULTURE_ZH_CN": "指挥官，我们需要保护这座{TEAM_EMP.FactionDef.Demonym}基地，确保重要人物的安全."
       }
     },
     {
@@ -51812,7 +51812,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Part III of the Pirate Trilogy",
-        "CULTURE_ZH_CN": "海盗三部曲第III部"
+        "CULTURE_ZH_CN": "海盗三部曲第三部"
       }
     },
     {
@@ -53108,7 +53108,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Someone is causing Problems and blaming it on us. If we ignore this we may lose rep with the MRBC.Warning this Flashpoint is both <b><color=#f0ff00>Long</color></b> and <b><color=#ff0d00>HARD </color></b>",
-        "CULTURE_ZH_CN": "有人在制造麻烦并栽赃给我们。如果我们置之不理，我们可能会在MRBC那里失掉声望。警告：本闪点既<b><color=#f0ff00>漫长</color></b>又<b><color=#ff0d00>困难</color></b>"
+        "CULTURE_ZH_CN": "有人在制造麻烦并栽赃给我们。如果我们置之不理，我们可能会失去雇佣兵评审与担保委员会（MRBC）的声望。警告：本闪点既<b><color=#f0ff00>漫长</color></b>又<b><color=#ff0d00>困难</color></b>"
       }
     },
     {
@@ -53148,7 +53148,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "We have a new contract posted to us. It says (Big Raid, Easy loot.) How they got this across the secure lines of MRBC I am not sure. This Flashpoint is <b><color=#f0ff00>Long</color></b>.",
-        "CULTURE_ZH_CN": "我们收到了发布给我们的一份新合约。上面写着（大劫掠，轻松打捞）。我不知道他们是怎么把这东西通过MRBC的安全线路传过来的。本闪点<b><color=#f0ff00>漫长</color></b>。"
+        "CULTURE_ZH_CN": "我们收到了一份新合约，上面写着：“大干一票，轻松捞战利品。”我不清楚他们是怎么通过雇佣兵评审与担保委员会（MRBC）的安全线路把这份合约送来的。本闪点<b><color=#f0ff00>漫长</color></b>。"
       }
     },
     {
@@ -56892,7 +56892,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Recover the VIP by Securing the Designated Area.",
-        "CULTURE_ZH_CN": "占领指定区域来回收VIP."
+        "CULTURE_ZH_CN": "占领指定区域来回收重要人物."
       }
     },
     {
@@ -56900,7 +56900,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Retrieve the VIP and Escape",
-        "CULTURE_ZH_CN": "回收VIP并摆脱敌人"
+        "CULTURE_ZH_CN": "回收重要人物并摆脱敌人"
       }
     },
     {
@@ -56940,7 +56940,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "All right, this should be a straightforward retrieval mission: get in, acquire the VIP, and get back out again.",
-        "CULTURE_ZH_CN": "好了，这应该是一次简单明了的回收任务: 进去，找到VIP，然后再撤出来."
+        "CULTURE_ZH_CN": "好了，这应该是一次简单明了的回收任务: 进去，找到重要人物，然后再撤出来."
       }
     },
     {
@@ -56956,7 +56956,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "Once you have the VIP in hand, get her to the designated landing zone for extraction.",
-        "CULTURE_ZH_CN": "一旦你掌握了VIP，就带她前往指定的着陆区撤离."
+        "CULTURE_ZH_CN": "一旦你掌握了重要人物，就带她前往指定的着陆区撤离."
       }
     },
     {
@@ -56964,7 +56964,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The VIP is secure, Commander - well done.",
-        "CULTURE_ZH_CN": "VIP安全了，指挥官--做得不错."
+        "CULTURE_ZH_CN": "重要人物安全了，指挥官--做得不错."
       }
     },
     {

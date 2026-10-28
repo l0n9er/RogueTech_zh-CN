@@ -70,7 +70,7 @@
         "EncounterObjectGuid": "bad503ac-4f47-47b0-a735-a5b13ff0e352"
       },
       "title": "消灭武器车队并摆脱敌人",
-      "description": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。",
+      "description": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。",
       "isPrimary": true,
       "forPlayer": "Player1",
       "objectiveGuids": [

@@ -26,7 +26,7 @@
     {
       "Description": {
         "Id": "outcome_0",
-        "Name": "两门短管 PPC，附双重散热器.",
+        "Name": "两门短管PPC，配有双重散热器。",
         "Details": "[能量武器]"
       },
       "RequirementList": [
@@ -48,7 +48,7 @@
         {
           "Description": {
             "Id": "outcome_0_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "在决定把箱子搬上豹式运回家之前，你觉得先验一下货总没坏处。\n\n你走到垛顶那只箱子前，把人家给的密码敲进键盘。随着一声令人满意的轻响，锁扣松开，箱盖弹起。\n\n里面的东西包装得整整齐齐——比大多数军用装备得到的照料明显要细致得多——是一对战斗机甲用的 [[DM.BaseDescriptionDefs[LoreSNPPC],短管 PPC]]。检查另一只箱子时，你发现了更令人心动的东西——星际联盟时代的 [[DM.BaseDescriptionDefs[LoreDHS],双散热器]]！\n\n“不错，”你自言自语，把箱子重新扣好。“好了，把这些全部搬上豹式，然后离开这里。”"
           },
           "Weight": 100,
@@ -144,7 +144,7 @@
         {
           "Description": {
             "Id": "outcome_1_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "在决定把箱子搬上豹式运回家之前，你觉得先验一下货总没坏处。\n\n你走到垛顶那只箱子前，把人家给的密码敲进键盘。随着一声令人满意的轻响，锁扣松开，箱盖弹起。\n\n里面的东西包装得整整齐齐——比大多数军用装备得到的照料明显要细致得多——是一门星际联盟时代的 [[DM.BaseDescriptionDefs[LoreUAC],超级 AC/5]]。在随附的一只箱子里，你找到了这门武器的弹药。\n\n“不错，”你自言自语，把箱子重新扣好。“好了，把这些全部搬上豹式，然后离开这里。”"
           },
           "Weight": 100,
@@ -212,7 +212,7 @@
     {
       "Description": {
         "Id": "outcome_2",
-        "Name": "两具 LRM-15 发射器与阿尔忒弥斯 IV 火控，附弹药.",
+        "Name": "两具LRM-15发射器、阿尔忒弥斯IV火控系统及配套弹药。",
         "Details": "[导弹武器]"
       },
       "RequirementList": [
@@ -234,7 +234,7 @@
         {
           "Description": {
             "Id": "outcome_2_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "在决定把箱子搬上豹式运回家之前，你觉得先验一下货总没坏处。\n\n你走到垛顶那只箱子前，把人家给的密码敲进键盘。随着一声令人满意的轻响，锁扣松开，箱盖弹起。\n\n里面的东西包装得整整齐齐——比大多数军用装备得到的照料明显要细致得多——是一具 [[DM.BaseDescriptionDefs[LoreLRM],LRM-15]] 发射器和配套的 [[DM.BaseDescriptionDefs[LoreArtemisIV],阿尔忒弥斯 IV 火控系统]]。旁边放着第二只一模一样的箱子。在随附的一只较小的箱子里，你找到了这些武器的弹药。\n\n“不错，”你自言自语，把箱子重新扣好。“好了，把这些全部搬上豹式，然后离开这里。”"
           },
           "Weight": 100,

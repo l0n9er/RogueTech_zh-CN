@@ -1,7 +1,7 @@
 {
   "Description": {
     "Id": "fp_LargeMilitaryBuilding",
-    "Name": "Large Military Building",
+    "Name": "大型军用建筑",
     "Details": "短拆分模板",
     "Icon": "LargeMilitaryBuilding"
   },
@@ -53,6 +53,6 @@
   "RewardCollectionID": "itemCollection_LMRewardSoarece",
   "UnitDropTonnageHint": "None",
   "LanceDropTonnageHint": "None",
-  "FlashpointShortDescription": "Locals have reported seeing a ''moving city'' obliterating other cities. Worried officials Have asked us to help protect a vital area.",
+  "FlashpointShortDescription": "当地人报告看到一座\"移动城市\"在摧毁其他城市。忧心的官员请我们帮忙保护一处关键地区。",
   "FlashpointDescriberCastDefId": "castDef_DariusDefault"
 }

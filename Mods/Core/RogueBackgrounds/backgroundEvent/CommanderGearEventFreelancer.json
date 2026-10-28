@@ -34,7 +34,7 @@
         {
           "Description": {
             "Id": "outcome_0_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "你跟着杨走向机甲库，他喋喋不休地念叨着所有用来让你的机甲恢复战斗状态的高端技术手段和工序。"
           },
           "Weight": 100,

@@ -610,7 +610,7 @@
       "overrideDialogueBucketId": "DialogBucketDef_Universal_KillConfirmed",
       "dialogueContent": [
         {
-          "words": "Bucket_击杀确认：守军已被消灭。干得好。",
+          "words": "击杀确认：守军已被消灭。干得好。",
           "wordsColor": {
             "r": 1,
             "g": 1,

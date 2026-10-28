@@ -12,7 +12,7 @@
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
   "shortDescription": "在过去三个月里，{TEAM_TAR.FactionDef.Name}袭击了我们的设施、人员与补给车队超过六次。我在{TEAM_EMP.FactionDef.Government}领导层的上级希望扳平比分。我们想雇你找到一支{TEAM_TAR.FactionDef.Demonym}分队并将其摧毁，以表明我们在{TGT_SYSTEM.Name}上并非没有军事资源。<b><color=#e20000>[警告：丧尸]</color></b>",
-  "longDescription": "如果他们想在{TGT_SYSTEM.Name}展示军事力量，我们可以替他们办到.",
+  "longDescription": "如果他们想在{TGT_SYSTEM.Name}展示军事力量，我们可以替他们办到。",
   "salvagePotential": 12,
   "requirementList": [
     {

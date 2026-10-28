@@ -422,7 +422,7 @@
           "revealRadius": -1
         },
         {
-          "words": "消灭所有 {TEAM_TAR.FactionDef.Demonym} 守军并控制基地，指挥官。奥利维拉通话结束。",
+          "words": "消灭所有 {TEAM_TAR.FactionDef.Demonym} 守军并控制基地，指挥官。奥利维拉完毕。",
           "wordsColor": {
             "r": 1,
             "g": 1,

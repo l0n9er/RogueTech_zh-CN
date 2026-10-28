@@ -599,9 +599,10 @@ if ([IO.File]::Exists($eventDict)) {
 }
 $eventShortDict = Join-Path $PSScriptRoot 'dict-events-short.tsv'
 $eventAutoDict = Join-Path $PSScriptRoot 'dict-events-auto.tsv'
+$eventResidualDict = Join-Path $PSScriptRoot 'dict-events-residual.tsv'
 # 自动从各模组 Localization/ZH 表覆盖所有事件正文、标题和选项，
-# 同时读取人工事件词典、319 条补译词典和通用短词典，并生成全量残留报告。
-$eventPairs = @($eventDict, $eventShortDict, $eventAutoDict) -join ';'
+# 同时读取人工事件词典、自动事件译文、残留补译词典和通用短词典，并生成全量残留报告。
+$eventPairs = @($eventDict, $eventShortDict, $eventAutoDict, $eventResidualDict) -join ';'
 $eventFallbackDict = @((Join-Path $PSScriptRoot 'dict-runtime-combined.tsv'),
                        (Join-Path $PSScriptRoot 'dict-all.tsv')) -join ';'
 RunTool 'apply-event-localization.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
@@ -830,7 +831,10 @@ Ok "已内置，无需额外选择"
 # 译文里的 {角色.Gender?分支:值} 若留着英文动词, 句子里会半英半中
 # (例: "He acts 起来就像 he's 我的老板似的")。中文无动词变位, 两分支同值。
 Step 21 "修复译文中的性别分支残留英文"
-RunTool 'fix-gender.ps1' @('-mods', (Join-Path $gameRoot 'Mods')) | Out-Null
+RunTool 'fix-gender.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                           '-baseDataRoot', (Join-Path $gameRoot 'BattleTech_Data\StreamingAssets\data'),
+                           '-csv', $csvDst,
+                           '-backupRoot', (Join-Path $backupDir 'gender-branches')) | Out-Null
 Ok "完成"
 
 # 机师个性 tooltip("罪犯"等)的文字来自 MDD 数据库的 Tag 表, 该表由 ModTek

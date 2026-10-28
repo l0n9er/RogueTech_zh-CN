@@ -11,7 +11,7 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "We have an extremely odd assignment for you. We have a manufacturing facility on the planet below, and we've been aware that {TEAM_TAR.FactionDef.Demonym} forces have been scouting in the area. We've expected them to make a move, but we didn't expect them to... send us a warning beforehand? Apparently they've hired a mercenary who contacted us to let us know when the attack would be, because, and I'm quoting, \"professional ethics.\" We have no idea what that means.<b><color=#e20000>[WARNING: Zombies]</color></b>",
+  "shortDescription": "我们有一个极其古怪的任务给你。我们在下面那颗行星上有一处制造设施，我们一直知道{TEAM_TAR.FactionDef.Demonym}部队在附近侦察。我们预计他们会有所动作，但没料到他们会……事先给我们发警告？显然他们雇了一名雇佣兵，那人联系我们告知攻击将在何时进行，因为——我引用原话——“职业操守“。我们完全不明白那是什么意思。\u003cb\u003e\u003ccolor=#e20000\u003e[警告：丧尸]\u003c/color\u003e\u003c/b\u003e",
   "longDescription": "为什么会有人给他们的目标一个警告?“职业道德”又是什么个鬼东西? 这很离奇.",
   "salvagePotential": 20,
   "requirementList": [

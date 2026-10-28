@@ -11,7 +11,7 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "我们一直在监视{TGT_SYSTEM.name}上的通讯流量，并辨认出一种规律。那里有一处防御严密的{TEAM_TAR.FactionDef.Demonym}基地，我们怀疑它是安全数据存储设施。我们希望你的团队降落、夺取该基地，并完整拍摄其数据库内容。一旦{TEAM_TAR.FactionDef.Demonym}部队意识到我们在做什么，他们就会发起反攻，因此我们需要你留在战场直到下载完成。<b><color=#e20000>[警告：丧尸]</color></b>",
+  "shortDescription": "我们一直在监视{TGT_SYSTEM.name}上的通讯流量，并辨认出一种规律。那里有一处防御严密的{TEAM_TAR.FactionDef.Demonym}基地，我们怀疑它是安全数据存储设施。我们希望你的团队降落、夺取该基地，并完整复制其数据库内容。一旦{TEAM_TAR.FactionDef.Demonym}部队意识到我们在做什么，他们就会发起反攻，因此我们需要你留在战场直到下载完成。\u003cb\u003e\u003ccolor=#e20000\u003e[警告：丧尸]\u003c/color\u003e\u003c/b\u003e",
   "longDescription": "这应该不太难，但需要穆拉德博士到现场进行实际的数据侵入工作. 她已经同意和你的队伍一起去了.",
   "salvagePotential": 12,
   "requirementList": [

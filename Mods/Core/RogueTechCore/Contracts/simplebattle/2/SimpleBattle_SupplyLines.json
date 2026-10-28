@@ -12,7 +12,7 @@
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
   "shortDescription": "指挥官，我们正在尝试将受伤人员安全转移到位于{TGT_SYSTEM.Name}上的一处设施. 不幸的是，卫星监控显示有{TEAM_TAR.FactionDef.Demonym}的部队在我们计划经过的区域内活动. 我们需要一支佣兵小队清扫这片区域，消灭所有的{TEAM_TAR.FactionDef.Demonym}单位. 请将这份合约视为一次仁慈之举.",
-  "longDescription": "I don't believe that \"mission of mercy\" line for a second, but there isn't anything here to be concerned about.",
+  "longDescription": "我一点也不相信什么“仁慈之举” , 不过看起来这里倒也没有什么值得担心的.",
   "salvagePotential": 16,
   "requirementList": [
     {

@@ -9182,7 +9182,7 @@ Packrat	林鼠	LocalizationRecovered
 Rotunda Scout Car	圆形大厅侦察车	LocalizationRecovered
 Asset Denial	资产拒止	LocalizationRecovered
 Send a message by not only destroy the convoy, but eliminate their escorts as well.	传递一个信号：不仅摧毁车队，还要消灭他们的护卫。	LocalizationRecovered
-The ENEMYFACTION scum are trying to get from one place to another. Kill them.	ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。	LocalizationRecovered
+The ENEMYFACTION scum are trying to get from one place to another. Kill them.	{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。	LocalizationRecovered
 Commander, the targets will probably be on the slow and squishy side. But the reason we're being asked to hit them in transit, outside entrenched positions, is because they pack a wallop.	指挥官，目标大概是又慢又软的那种。但我们被要求在他们途中、在加固阵地之外打击他们，原因就是他们打击力很强。	LocalizationRecovered
 A {TEAM_TAR.FactionDef.Demonym} detachment of fire support vehicles is on the move to a strategic location. {TEAM_EMP.FactionDef.Name} would prefer that they do not reach their destination.<b><color=#e20000>[WARNING: Zombies]</color></b>	一支{TEAM_TAR.FactionDef.Demonym}火力支援车辆分遣队正在前往一处战略地点。{TEAM_EMP.FactionDef.Name}宁愿他们不要抵达目的地。<b><color=#e20000>[警告：丧尸]</color></b>	LocalizationRecovered
 Employers Ally	雇主的盟友	LocalizationRecovered
@@ -10879,9 +10879,9 @@ We have a VIP at a base on {TGT_SYSTEM.name}, and we've just received a garbled 
 Defend {TEAM_EMP.FactionDef.Name} Base	守卫{TEAM_EMP.FactionDef.Name}基地	LocalizationRecovered
 Destroy {TEAM_TAR.FactionDef.Demonym} Vanguard	摧毁 {TEAM_TAR.FactionDef.Demonym} 先锋	LocalizationRecovered
 Escort Engineer APCs to Base Defenses	护送工兵装甲运兵车前往基地防御设施	LocalizationRecovered
-Protect the {TEAM_EMP.FactionDef.Demonym} VIP	保护{TEAM_EMP.FactionDef.Demonym}VIP	LocalizationRecovered
+Protect the {TEAM_EMP.FactionDef.Demonym} VIP	保护{TEAM_EMP.FactionDef.Demonym}重要人物	LocalizationRecovered
 As expected, we have multiple incoming {TEAM_TAR.FactionDef.Demonym} units.	不出所料，我们遭遇到多个来袭的{TEAM_TAR.FactionDef.Demonym}单位.	LocalizationRecovered
-Commander, we need to protect the {TEAM_EMP.FactionDef.Demonym} base and keep the VIP safe.	指挥官，我们需要保护这座{TEAM_EMP.FactionDef.Demonym}基地，确保VIP的安全.	LocalizationRecovered
+Commander, we need to protect the {TEAM_EMP.FactionDef.Demonym} base and keep the VIP safe.	指挥官，我们需要保护这座{TEAM_EMP.FactionDef.Demonym}基地，确保重要人物的安全.	LocalizationRecovered
 Escort them to the generators and we can boost our firepower and repel the {TEAM_TAR.FactionDef.Demonym} forces.	护送他们安全到达发电站，这样我们可以加强自身火力，击退{TEAM_TAR.FactionDef.Demonym}部队.	LocalizationRecovered
 Hold the base, keep the buildings upright, and eliminate any threats. Oliveira out.	守住基地，保持建筑物屹立不倒，同时消灭任何威胁. 奥利维拉完毕.	LocalizationRecovered
 Our employers are providing us with extra support, Commander.	我们的雇主正在为我们提供额外的支援，指挥官.	LocalizationRecovered
@@ -11077,7 +11077,7 @@ I require your help on a personal matter, Commander. No other mercenary company 
 We have received a secret communication from Jade Falcon. They want us to test one of their new projects.	我们收到了来自玉鹰的秘密通讯. 他们想让我们测试他们的一个新项目.	LocalizationRecovered
 Our Alliance with Clan JadeFalcon has proven lucrative. They would like our help with a SECRET project. \n\n<b><color=#f44336>THIS FLASHPOINT REQUIRES 4 LAM PILOTS.</color></b>	我们与翡翠猎鹰的同盟已被证明利润丰厚。他们想请我们协助一个秘密项目。\n\n<b><color=#f44336>本闪点需要4名LAM飞行员。</color></b>	LocalizationRecovered
 A seditionist group has taken root in the Capellan system of Cavalor. House Liao will handsomely reward any company that will root out and destroy these traitors to the Commonwealth.	一个煽动叛乱的组织已在卡佩拉的卡瓦罗尔上扎根. 任何能铲除并消灭这些共同体叛徒的佣兵公司都将获得廖氏家族的丰厚酬劳.	LocalizationRecovered
-Part III of the Pirate Trilogy	海盗三部曲第III部	LocalizationRecovered
+Part III of the Pirate Trilogy	海盗三部曲第三部	LocalizationRecovered
 The 'Queen' has requested our presence again. Claims we won't want to miss this. This Flashpoint is <b><color=#f0ff00>Long</color></b>	“女王”再次要求我们到场。她说我们不会想错过这个。这个闪点<b><color=#f0ff00>较长</color></b>	LocalizationRecovered
 A Solaris gladiator has murdered my nephew, Arjun. With your help, I will see his killer brought to justice, Commander—make him suffer and I'll make you rich.	一名索拉里斯角斗士谋杀了我的侄子阿尔琼。指挥官，在你的帮助下，我要让凶手受到审判——让他痛苦，我就让你富有。	LocalizationRecovered
 Seems that Jade Falcon may be dabbling in forbiden technology. We have been invited to test some of this equipment out. \n\n<b><color=#f44336>THIS FLASHPOINT REQUIRES 4 LAM PILOTS.</color></b>	看来翡翠猎鹰可能在涉足禁忌技术。我们受邀来测试其中一些装备。\n\n<b><color=#f44336>本闪点需要4名LAM飞行员。</color></b>	LocalizationRecovered
@@ -11266,11 +11266,11 @@ This is the region where the {TEAM_TAR.FactionDef.Demonym} facility is located.	
 Embassy Extraction	撤出大使	LocalizationRecovered
 The enemy has to be expecting an attempt to break their siege, so there will be significant resistance.	敌人肯定会料到有人要尝试图突破他们的包围，所以会有激烈抵抗.	LocalizationRecovered
 One of our VIPs is in a {TEAM_EMP.FactionDef.Demonym} facility on {TGT_SYSTEM.name}. We need to get her offworld, but the building is surrounded by {TEAM_TAR.FactionDef.Demonym} forces. You will sweep aside the opposition, recover our VIP, and transport her to a designated landing zone for extraction. Be prepared for opposition - the {TEAM_TAR.FactionDef.Demonym} units surrounding the embassy won't let you extract our personnel without a fight. Payment will be issued when you deliver our VIP alive and in one piece.<b><color=#e20000>[WARNING: Zombies]</color></b>	我们的一位贵宾在{TGT_SYSTEM.name}上的一处{TEAM_EMP.FactionDef.Demonym}设施里。我们需要把她送出行星，但那栋建筑被{TEAM_TAR.FactionDef.Demonym}部队包围。你要清扫对手，接回我们的贵宾，并把她送到指定着陆区撤离。为遭遇抵抗做好准备——包围使馆的{TEAM_TAR.FactionDef.Demonym}部队不会让你安然带走我们的人员。当贵宾活着、完好地送到时，报酬即行支付。<b><color=#e20000>[警告：丧尸]</color></b>	LocalizationRecovered
-Recover the VIP by Securing the Designated Area.	占领指定区域来回收VIP.	LocalizationRecovered
-Retrieve the VIP and Escape	回收VIP并摆脱敌人	LocalizationRecovered
-All right, this should be a straightforward retrieval mission: get in, acquire the VIP, and get back out again.	好了，这应该是一次简单明了的回收任务: 进去，找到VIP，然后再撤出来.	LocalizationRecovered
-Once you have the VIP in hand, get her to the designated landing zone for extraction.	一旦你掌握了VIP，就带她前往指定的着陆区撤离.	LocalizationRecovered
-The VIP is secure, Commander - well done.	VIP安全了，指挥官--做得不错.	LocalizationRecovered
+Recover the VIP by Securing the Designated Area.	占领指定区域来回收重要人物.	LocalizationRecovered
+Retrieve the VIP and Escape	回收重要人物并摆脱敌人	LocalizationRecovered
+All right, this should be a straightforward retrieval mission: get in, acquire the VIP, and get back out again.	好了，这应该是一次简单明了的回收任务: 进去，找到重要人物，然后再撤出来.	LocalizationRecovered
+Once you have the VIP in hand, get her to the designated landing zone for extraction.	一旦你掌握了重要人物，就带她前往指定的着陆区撤离.	LocalizationRecovered
+The VIP is secure, Commander - well done.	重要人物安全了，指挥官--做得不错.	LocalizationRecovered
 Smash and Grab	强夺行动	LocalizationRecovered
 Commander, if this is the real thing, it's going to be defended like you can't even imagine. This one will be tough.	指挥官，如果这是真货，它的防守会超乎你的想象。这一场会很难。	LocalizationRecovered
 A {TEAM_TAR.FactionDef.Demonym} defector has given us an extremely interesting and time-sensitive piece of information, and we need a fast response. Before joining our side, this defector worked at a {TEAM_TAR.FactionDef.Demonym} facility on this planet. She claims she was responsible for extracting data from a device that sounds, from her descriptions, very much like a Star League era memory core. We don't know what data is on it, but {TEAM_TAR.FactionDef.ShortName} cannot be allowed to keep it.<b><color=#e20000>[WARNING: Zombies]</color></b>	一名{TEAM_TAR.FactionDef.Demonym}叛逃者给了我们一条极其有趣且时效紧迫的情报，我们需要快速反应。在投向我们这边之前，这名叛逃者在这颗行星上的一处{TEAM_TAR.FactionDef.Demonym}设施工作。她声称自己负责从一个装置中提取数据，从她的描述看，那东西非常像星盟时代的记忆核心。我们不知道上面是什么数据，但不能让{TEAM_TAR.FactionDef.ShortName}留着它。<b><color=#e20000>[警告：丧尸]</color></b>	LocalizationRecovered
@@ -24052,8 +24052,8 @@ Destroy {TEAM_TAR.FactionDef.Demonym} Noble	消灭{TEAM_TAR.FactionDef.Demonym}�
 Keep the {TEAM_TAR.FactionDef.Demonym} Noble from Escaping	阻止{TEAM_TAR.FactionDef.Demonym}贵族逃走	LocalizationRecovered
 Do you have anything helpful to offer, Yang?	你有什么有用的建议吗，杨?	LocalizationRecovered
 Good luck and good hunting.	祝你好运，狩猎顺利.	LocalizationRecovered
-If you ask me, boss, anyone who sends their VIPs out in a CDA-2A is asking to be shot.	要是你问我的话，头，任何一个把自己的VIP塞进一部CDA-2A派出去的人都该被枪毙.	LocalizationRecovered
-These little bastards are fast, so watch for the VIP to make a run for it.	这些小混蛋跑得很快，所以注意VIP可能会试图逃跑.	LocalizationRecovered
+If you ask me, boss, anyone who sends their VIPs out in a CDA-2A is asking to be shot.	要是你问我的话，头，任何一个把自己的重要人物塞进一部CDA-2A派出去的人都该被枪毙.	LocalizationRecovered
+These little bastards are fast, so watch for the VIP to make a run for it.	这些小混蛋跑得很快，所以注意重要人物可能会试图逃跑.	LocalizationRecovered
 A hit-and-run operation should be straightforward enough, Commander. Just remember that if you get bogged down in fighting the escorts, escape is always an option.	一次打了就跑的行动，听起来够简单明了的了，指挥官. 只是记住如果你陷入了和护卫队的苦斗，撤退始终是一个选择.	LocalizationRecovered
 Frontier Justice	边地的正义	LocalizationRecovered
 Rogue MechWarrior	恶棍机甲战士	LocalizationRecovered
@@ -27997,13 +27997,13 @@ Lost Heir	失踪的继承人	LocalizationRecovered
 Locate the heir. She'll need to ride along in one of the mechs, so keep that mech safe until extraction.	找出那位继承人。她需要搭乘其中一台机甲随行，所以在撤离前保护好那台机甲。	LocalizationRecovered
 Looks like {TEAM_EMP.FactionDef.Name} is really over a barrel here. My kind of customer.	看来{TEAM_EMP.FactionDef.Name}在这儿真的一筹莫展了. 这种客户正合我胃口.	LocalizationRecovered
 The scion of a {TEAM_EMP.FactionDef.Demonym} mercantile concern has been missing for months. We suspect a kidnapping by {TEAM_TAR.FactionDef.ShortName}, but there's been no ransom demand. A local group of sympathizers on {TGT_SYSTEM.name} recently picked up a garbled message from the scion indicating that she's being held in a {TEAM_TAR.FactionDef.Demonym} facility there. Our intel failed to trace her to {TGT_SYSTEM.name}, so any loyal mechs are several jumps away. We need your help to extract her.	一位{TEAM_EMP.FactionDef.Demonym}商界要人的继承人已失踪数月。我们怀疑是{TEAM_TAR.FactionDef.ShortName}绑架，但一直没有收到赎金要求。{TGT_SYSTEM.name}上一群当地同情者最近收到这位继承人发来的一条含混不清的消息，表明她被关押在那里的某处{TEAM_TAR.FactionDef.Demonym}设施中。我们的情报未能追踪她到{TGT_SYSTEM.name}，所以任何忠诚的机甲都在好几个跳跃之外。我们需要你帮忙把她救出来。	LocalizationRecovered
-Ensure that the Mech Carrying the VIP Survives	确保带着VIP的那部机甲存活	LocalizationRecovered
-Recover the VIP by Securing the Designated Area	占领指定区域来回收VIP	LocalizationRecovered
-Retrieve the {TEAM_EMP.FactionDef.Demonym} VIP and Escape	回收{TEAM_EMP.FactionDef.Demonym}VIP并摆脱敌人	LocalizationRecovered
-... and extract safely. Keep the Mech carrying the VIP in one piece!	......并且安全脱离. 请保障载有VIP的机甲安然无恙!	LocalizationRecovered
-Excellent work, commander. The {TEAM_EMP.FactionDef.Demonym} VIP is on her way home.	干得漂亮，指挥官. {TEAM_EMP.FactionDef.Demonym}的VIP在回家的路上了.	LocalizationRecovered
+Ensure that the Mech Carrying the VIP Survives	确保带着重要人物的那部机甲存活	LocalizationRecovered
+Recover the VIP by Securing the Designated Area	占领指定区域来回收重要人物	LocalizationRecovered
+Retrieve the {TEAM_EMP.FactionDef.Demonym} VIP and Escape	回收{TEAM_EMP.FactionDef.Demonym}重要人物并摆脱敌人	LocalizationRecovered
+... and extract safely. Keep the Mech carrying the VIP in one piece!	......并且安全脱离. 请保障载有重要人物的机甲安然无恙!	LocalizationRecovered
+Excellent work, commander. The {TEAM_EMP.FactionDef.Demonym} VIP is on her way home.	干得漂亮，指挥官. {TEAM_EMP.FactionDef.Demonym}的重要人物在回家的路上了.	LocalizationRecovered
 First step. Find our target in the location of the last known signal...	首先. 在最后一次侦测到目标信号的地点寻找...	LocalizationRecovered
-This is a straightforward retrieval. Locate the VIP and get to the Evac Zone.	这是一个简单明了的回收任务. 找到VIP然后前往撤离区域.	LocalizationRecovered
+This is a straightforward retrieval. Locate the VIP and get to the Evac Zone.	这是一个简单明了的回收任务. 找到重要人物然后前往撤离区域.	LocalizationRecovered
 Locate the painter. He'll need to ride along in one of the mechs, then keep that mech safe until extraction.	找出那位画家。他需要搭乘其中一台机甲随行，然后在撤离前保护好那台机甲。	LocalizationRecovered
 Commander, I don't pretend to understand what's so offensive about this painting, but they take that sort of thing seriously out here. As for retrieving the painting, apparently it's worth even more after all this controversy.	指挥官，我不假装明白这幅画有什么冒犯之处，但这里的人对这类事很认真。至于取回那幅画，显然经过这一番争议之后它更值钱了。	LocalizationRecovered
 A {TEAM_EMP.FactionDef.Demonym} philanthropist is a patron of the arts here in {TGT_SYSTEM.Name}. A favored painter has been accused of heresy by the system's religious police. These zealots are propped up by foreign {TEAM_TAR.FactionDef.Demonym} agents. He'll be extradited to face trial and likely execution in {TEAM_TAR.FactionDef.Demonym} territory. We can't allow that to happen, but we don't want to incur reprisal from the religious leaders. That's where you come in. Locate the painter, rescue him and, at the personal request of the patron, recover the painting that started this whole mess.	一位{TEAM_EMP.FactionDef.Demonym}慈善家是{TGT_SYSTEM.Name}这里的艺术赞助人。他赏识的一位画家被该星系的宗教警察指控为异端。这些狂热分子由外国{TEAM_TAR.FactionDef.Demonym}特工扶持。他会被引渡受审，很可能在{TEAM_TAR.FactionDef.Demonym}领地被处决。我们不能让这种事发生，但又不想招致宗教领袖的报复。这就需要你了。找到那位画家，把他救出来，并且应赞助人本人的请求，找回引发这一连串麻烦的那幅画。	LocalizationRecovered

@@ -31,6 +31,9 @@ $rxDupPunct   = [regex]::new('(' + '[' + '，。、；：？' + ']' + ')\1|' + '
 $rxTrad       = [regex]::new('[' + '體屬機門們個這說為與來時實際發現對開關資網路點線東馬鳥龍風飛飯麵書寫讀語學國會員長問間隊階級軍爭勝敗擊殺傷藥醫護鐵鋼銀錢價貴買賣貨財產業務農場廠驗證據標準確認錯誤檢測設計畫圖樣報導聽見覺記憶練習慣態勢麼' + ']')
 $rxNote       = [regex]::new('翻译' + '[' + ':：' + ']|译者|待译|nonetheless\?|\(TODO')
 $rxEnSent     = [regex]::new('[\u4e00-\u9fff]\s+[a-z]{3,}\s+[a-z]{3,}')
+$rxGenderExpr = [regex]::new('\{[A-Za-z_][A-Za-z0-9_.]*\.Gender\?([^{}]*)\}')
+$rxDynamicFaction = [regex]::new('\bENEMYFACTION\b')
+$rxUntranslatedEventTerm = [regex]::new('ENEMYFACTION|VIPs?|海盗三部曲第III部')
 $rxDupChar    = [regex]::new('的的|在在|了了|你你|我我')
 
 $checks = @(
@@ -39,12 +42,16 @@ $checks = @(
     @{ Name='重复标点';   Rx=$rxDupPunct;   Sev='中'; Fix='运行 apply-norm.ps1' },
     @{ Name='繁体字混入'; Rx=$rxTrad;       Sev='低'; Fix='人工确认后加入 apply-norm.ps1 规则' },
     @{ Name='译者批注';   Rx=$rxNote;       Sev='高'; Fix='删除批注,保留正文' },
+    @{ Name='事件残留英文术语'; Rx=$rxUntranslatedEventTerm; Sev='高'; Fix='检查阵营占位词、重要人物称谓和罗马序数' },
     @{ Name='未译英文句'; Rx=$rxEnSent;     Sev='低'; Fix='人工确认(厂名/型号可保留)' },
     @{ Name='重复字';     Rx=$rxDupChar;    Sev='低'; Fix='人工核对,多数是正常中文' }
 )
 
 # ---- 收集语料 ----
-$fldList = @('Details','YangsThoughts','StockRole','levelName','decription','DisplayName','ErrorMessage','title','description','Text','CULTURE_ZH_CN','UIName')
+$fldList = @('Details','YangsThoughts','StockRole','levelName','decription','DisplayName','ErrorMessage',
+             'title','description','shortDescription','longDescription',
+             'FlashpointShortDescription','FlashpointLongDescription','words','Caption','label',
+             'Text','CULTURE_ZH_CN','UIName')
 $flds = [string]::Join('|', $fldList)
 $fieldRx = [regex]::new('"(' + $flds + ')"\s*:\s*"((?:[^"' + $BS + $BS + ']|' + $BS + $BS + '.)*)"')
 
@@ -111,6 +118,29 @@ foreach ($c in $checks) {
     $sw.WriteLine(('{0,-12} {1,-4} {2,8}  {3}' -f $c.Name, $c.Sev, $n, $c.Fix))
     foreach ($s in $samples) { $sw.WriteLine($s) }
 }
+
+$genderBranchIssueCount = 0
+$genderBranchSamples = New-Object 'System.Collections.Generic.List[string]'
+foreach ($it in $items) {
+    if (-not $rxHan.IsMatch($it.Text)) { continue }
+    foreach ($expr in $rxGenderExpr.Matches($it.Text)) {
+        foreach ($branch in ($expr.Groups[1].Value -split '\|')) {
+            $colon = $branch.IndexOf(':')
+            if ($colon -lt 0) { continue }
+            $value = $branch.Substring($colon + 1).Trim()
+            if ($value -notmatch '[A-Za-z]{2,}') { continue }
+            $genderBranchIssueCount++
+            if ($genderBranchSamples.Count -lt 10) {
+                $sample = $it.Text -replace '\s+', ' '
+                if ($sample.Length -gt 100) { $sample = $sample.Substring(0, 100) }
+                $genderBranchSamples.Add(('    ' + $it.Src + ' :: ' + $expr.Value + ' :: ' + $sample))
+            }
+        }
+    }
+}
+$sw.WriteLine(('未译性别分支英文 {0} {1,8}  动态性别分支内的英文必须翻译' -f '高', $genderBranchIssueCount))
+foreach ($sample in $genderBranchSamples) { $sw.WriteLine($sample) }
+if ($genderBranchIssueCount -gt 0) { $highCount++ }
 
 $placeholderRx = [regex]::new('(?<!\{)\{(\d+)(?:,[^{}]*)?(?::[^{}]*)?\}(?!\})')
 $placeholderIssues = New-Object 'System.Collections.Generic.List[string]'

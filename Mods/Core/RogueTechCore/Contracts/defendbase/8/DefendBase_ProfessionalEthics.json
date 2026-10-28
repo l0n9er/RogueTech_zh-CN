@@ -11,7 +11,7 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "We have an extremely odd assignment for you. We have a manufacturing facility on the planet below, and we've been aware that {TEAM_TAR.FactionDef.Demonym} forces have been scouting in the area. We've expected them to make a move, but we didn't expect them to... send us a warning beforehand? Apparently they've hired a mercenary who contacted us to let us know when the attack would be, because, and I'm quoting, \"professional ethics.\" We have no idea what that means.",
+  "shortDescription": "我们有个极其古怪的任务要交给你. 我们在下方的行星上有一座制造厂 , 并且早已察觉到{TEAM_TAR.FactionDef.Demonym}的部队一直在周边侦察. 我们料到他们会有所行动 , 但万万没想到他们竟然...事先给我们发来了警告? 显然 , 他们的雇佣兵联系了我们 , 告知了攻击时间 , 原因是——我照原话引述——“职业道德”. 我们完全搞不懂那是什么意思.",
   "longDescription": "为什么会有人给他们的目标一个警告?“职业道德”又是什么个鬼东西? 这很离奇.",
   "salvagePotential": 20,
   "requirementList": [

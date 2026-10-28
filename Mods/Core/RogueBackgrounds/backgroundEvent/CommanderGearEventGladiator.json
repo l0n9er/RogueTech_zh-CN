@@ -26,7 +26,7 @@
     {
       "Description": {
         "Id": "outcome_0",
-        "Name": "You were \"Dragonforce\"! You were known for using <b>handheld flamers</b> and <b>industrial TSM</b>.",
+        "Name": "你曾是“Dragonforce”！你以使用\u003cb\u003e手持式火焰喷射器\u003c/b\u003e和\u003cb\u003e工业级 TSM\u003c/b\u003e闻名。",
         "Details": "把玩具打开看看。"
       },
       "RequirementList": [],
@@ -34,7 +34,7 @@
         {
           "Description": {
             "Id": "outcome_0_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "当你走向货舱时，你又向杨多透露了一些自己的过往，包括你的呼号以及你当年主要的对手是谁。\n\n“那是你？”他有些困惑地问道。“好吧，我能理解你为什么会离开了。”"
           },
           "Weight": 100,
@@ -88,7 +88,7 @@
     {
       "Description": {
         "Id": "outcome_1",
-        "Name": "You were \"Slayer\"! Your signatures were <b>large melee weapons</b>, made possible by use of <b>TSM</b>.",
+        "Name": "你曾是“Slayer”！你的标志性装备是\u003cb\u003e大型近战武器\u003c/b\u003e，这要归功于\u003cb\u003eTSM\u003c/b\u003e。",
         "Details": "把玩具打开看看。"
       },
       "RequirementList": [],
@@ -96,7 +96,7 @@
         {
           "Description": {
             "Id": "outcome_1_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "当你走向货舱时，你又向杨多透露了一些自己的过往，包括你的呼号以及你当年主要的对手是谁。\n\n“那是你？”他有些困惑地问道。“好吧，我能理解你为什么会离开了。”"
           },
           "Weight": 100,
@@ -150,7 +150,7 @@
     {
       "Description": {
         "Id": "outcome_2",
-        "Name": "You were \"Iron Maiden\"! Your 'Mechs were adorned with <b>spiked armor</b> and fitted with <b>MASC</b>.",
+        "Name": "你曾是“Iron Maiden”！你的“机甲”装有\u003cb\u003e尖刺装甲\u003c/b\u003e和\u003cb\u003eMASC\u003c/b\u003e。",
         "Details": "把玩具打开看看。"
       },
       "RequirementList": [],
@@ -158,7 +158,7 @@
         {
           "Description": {
             "Id": "outcome_2_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "当你走向货舱时，你又向杨多透露了一些自己的过往，包括你的呼号以及你当年主要的对手是谁。\n\n“那是你？”他有些困惑地问道。“好吧，我能理解你为什么会离开了。”"
           },
           "Weight": 100,
@@ -212,7 +212,7 @@
     {
       "Description": {
         "Id": "outcome_3",
-        "Name": "You were \"Megadeth\"! Your 'Mech carried <b>Thunderbolt missiles</b>.",
+        "Name": "你曾是“Megadeth”！你的“机甲”配备了\u003cb\u003e雷电导弹\u003c/b\u003e。",
         "Details": "把玩具打开看看。"
       },
       "RequirementList": [],
@@ -220,7 +220,7 @@
         {
           "Description": {
             "Id": "outcome_3_0",
-            "Name": "CommanderGearLoot",
+            "Name": "指挥官装备战利品",
             "Details": "当你走向货舱时，你又向杨多透露了一些自己的过往，包括你的呼号以及你当年主要的对手是谁。\n\n“那是你？”他有些困惑地问道。“好吧，我能理解你为什么会离开了。”"
           },
           "Weight": 100,

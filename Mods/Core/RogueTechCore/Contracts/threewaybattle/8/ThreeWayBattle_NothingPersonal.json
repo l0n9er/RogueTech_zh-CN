@@ -1263,7 +1263,7 @@
       "objective": {
         "EncounterObjectGuid": "51aa5837-b540-42be-b8be-26b37bfcf976"
       },
-      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [],
@@ -1311,7 +1311,7 @@
       "objective": {
         "EncounterObjectGuid": "ac4199e4-c42e-4a41-ae0e-cf10f7dfcf8a"
       },
-      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -1385,7 +1385,7 @@
       "objective": {
         "EncounterObjectGuid": "658372a8-8e43-4f74-af9c-f4d60bb103ec"
       },
-      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [],
@@ -1433,7 +1433,7 @@
       "objective": {
         "EncounterObjectGuid": "4222c6f6-975a-45aa-aa3e-cbfaf0c50026"
       },
-      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],

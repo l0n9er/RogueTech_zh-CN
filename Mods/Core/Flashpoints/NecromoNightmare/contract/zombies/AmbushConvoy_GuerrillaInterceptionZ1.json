@@ -11,8 +11,8 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "游击队针对我们设施的袭击越来越多了，根据我们的情报来看，{TEAM_TAR.FactionDef.Name}正在资助游击队，以轻武器、炸药和医疗用品的形式提供后勤支援. 我们需要你拦截{TEAM_TAR.FactionDef.Demonym}的补给车队，并且在它抵达游击队之前就消灭它.",
-  "longDescription": "指挥官，这事透着政治味道，让我很不安。我建议进去、解决车队、再撤出来——别多问。清光所有敌军有额外奖金，但那由你决定。<b><color=#e20000>[警告：僵尸]</color></b>",
+  "shortDescription": "游击队针对我们设施的袭击越来越多了。根据情报，{TEAM_TAR.FactionDef.Name}正在资助游击队，以轻武器、炸药和医疗用品的形式提供后勤支援。我们需要你拦截{TEAM_TAR.FactionDef.Demonym}的补给车队，并在其抵达游击队之前将其消灭。",
+  "longDescription": "指挥官，这事透着政治味道，让我很不安。我建议进去、解决车队、再撤出来——别多问。清光所有敌军有额外奖金，但那由你决定。\u003cb\u003e\u003ccolor=#e20000\u003e[警告：丧尸]\u003c/color\u003e\u003c/b\u003e",
   "salvagePotential": 20,
   "requirementList": [
     {

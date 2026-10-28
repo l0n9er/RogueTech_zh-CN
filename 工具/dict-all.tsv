@@ -13591,7 +13591,7 @@ Satellite unavailable.	卫星不可用。ZH
 ACTION: Attack a point on the ground with selected weapons.    ACTION: Target a friendly unit with Left Alt + click.	动作：用选定武器攻击地面某点。动作：按住左Alt点击以指定一个友方单位为目标。ZH
 ACTION: Fire weapons at up to three separate targets within this unit's current firing arc	动作：向本单位当前射击弧内最多三个不同目标开火	ZH
 Send a message by not only destroy the convoy, but eliminate their escorts as well.	传递一个信号：不仅摧毁车队，还要消灭他们的护卫。ZH
-The ENEMYFACTION scum are trying to get from one place to another. Kill them.	ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。ZH
+The ENEMYFACTION scum are trying to get from one place to another. Kill them.	{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。ZH
 Destroy the {TEAM_TAR.FactionDef.Demonym} Convoy	摧毁 {TEAM_TAR.FactionDef.Demonym} 车队	ZH
 Destroy the {TEAM_TAR.FactionDef.Demonym} Guards	消灭{TEAM_TAR.FactionDef.Demonym}守卫	ZH
 Destroy the Convoy Guards	摧毁车队护卫	ZH
@@ -14004,8 +14004,8 @@ Destroy {TEAM_TAR.FactionDef.Demonym} Noble	消灭{TEAM_TAR.FactionDef.Demonym}�
 Keep the {TEAM_TAR.FactionDef.Demonym} Noble from Escaping	阻止{TEAM_TAR.FactionDef.Demonym}贵族逃走	ZH
 Do you have anything helpful to offer, Yang?	你有什么有用的建议吗，杨?	ZH
 Good luck and good hunting.	祝你好运，狩猎顺利.	ZH
-If you ask me, boss, anyone who sends their VIPs out in a CDA-2A is asking to be shot.	要是你问我的话，头，任何一个把自己的VIP塞进一部CDA-2A派出去的人都该被枪毙.	ZH
-These little bastards are fast, so watch for the VIP to make a run for it.	这些小混蛋跑得很快，所以注意VIP可能会试图逃跑.	ZH
+If you ask me, boss, anyone who sends their VIPs out in a CDA-2A is asking to be shot.	要是你问我的话，头，任何一个把自己的重要人物塞进一部CDA-2A派出去的人都该被枪毙.	ZH
+These little bastards are fast, so watch for the VIP to make a run for it.	这些小混蛋跑得很快，所以注意重要人物可能会试图逃跑.	ZH
 A hit-and-run operation should be straightforward enough, Commander. Just remember that if you get bogged down in fighting the escorts, escape is always an option.	一次打了就跑的行动，听起来够简单明了的了，指挥官. 只是记住如果你陷入了和护卫队的苦斗，撤退始终是一个选择.	ZH
 Frontier Justice	边地的正义	ZH
 Rogue MechWarrior	恶棍机甲战士	ZH
@@ -15840,9 +15840,9 @@ Various VTOL assets are conducting test flights in the AO.	各种垂直起降车
 They've got to be kicking themselves for letting their VIP go out without more security. Their screw-up is our payday, though.	他们一定在懊悔让贵宾没有更多护卫就出门。不过他们的失误就是我们的收获。ZH
 We have a VIP at a base on {TGT_SYSTEM.name}, and we've just received a garbled transmission from a local agent that the base will be attacked by {TEAM_TAR.FactionDef.Name}. They're striking at the VIP, and they know our forces are not in position to come to his aid. We need a team of competent mercenaries to protect the facility and our personnel.	我们在{TGT_SYSTEM.name}的一处基地有一位要人，而我们刚收到当地特工发来的一段错乱传输：该基地将遭到{TEAM_TAR.FactionDef.Name}的攻击。他们的打击目标是那位要人，而且他们知道我方部队无法及时救援。我们需要一支称职的雇佣兵队伍来保护该设施与我们的人员。ZH
 Defend {TEAM_EMP.FactionDef.Name} Base	守卫{TEAM_EMP.FactionDef.Name}基地	ZH
-Protect the {TEAM_EMP.FactionDef.Demonym} VIP	保护{TEAM_EMP.FactionDef.Demonym}VIP	ZH
+Protect the {TEAM_EMP.FactionDef.Demonym} VIP	保护{TEAM_EMP.FactionDef.Demonym}重要人物	ZH
 As expected, we have multiple incoming {TEAM_TAR.FactionDef.Demonym} units.	不出所料，我们遭遇到多个来袭的{TEAM_TAR.FactionDef.Demonym}单位.	ZH
-Commander, we need to protect the {TEAM_EMP.FactionDef.Demonym} base and keep the VIP safe.	指挥官，我们需要保护这座{TEAM_EMP.FactionDef.Demonym}基地，确保VIP的安全.	ZH
+Commander, we need to protect the {TEAM_EMP.FactionDef.Demonym} base and keep the VIP safe.	指挥官，我们需要保护这座{TEAM_EMP.FactionDef.Demonym}基地，确保重要人物的安全.	ZH
 Escort them to the generators and we can boost our firepower and repel the {TEAM_TAR.FactionDef.Demonym} forces.	护送他们安全到达发电站，这样我们可以加强自身火力，击退{TEAM_TAR.FactionDef.Demonym}部队.	ZH
 Hold the base, keep the buildings upright, and eliminate any threats. Oliveira out.	守住基地，保持建筑物屹立不倒，同时消灭任何威胁. 奥利维拉完毕.	ZH
 Our employers are providing us with extra support, Commander.	我们的雇主正在为我们提供额外的支援，指挥官.	ZH
@@ -18306,11 +18306,11 @@ This is the region where the {TEAM_TAR.FactionDef.Demonym} facility is located.	
 Embassy Extraction	撤出大使	ZH
 The enemy has to be expecting an attempt to break their siege, so there will be significant resistance.	敌人肯定会料到有人要尝试图突破他们的包围，所以会有激烈抵抗.	ZH
 One of our VIPs is in a {TEAM_EMP.FactionDef.Demonym} facility on {TGT_SYSTEM.name}. We need to get her offworld, but the building is surrounded by {TEAM_TAR.FactionDef.Demonym} forces. You will sweep aside the opposition, recover our VIP, and transport her to a designated landing zone for extraction. Be prepared for opposition - the {TEAM_TAR.FactionDef.Demonym} units surrounding the embassy won't let you extract our personnel without a fight. Payment will be issued when you deliver our VIP alive and in one piece.	我们的一位贵宾在{TGT_SYSTEM.name}上的一处{TEAM_EMP.FactionDef.Demonym}设施里。我们需要把她送出行星，但那栋建筑被{TEAM_TAR.FactionDef.Demonym}部队包围。你要清扫对手，接回我们的贵宾，并把她送到指定着陆区撤离。为遭遇抵抗做好准备——包围使馆的{TEAM_TAR.FactionDef.Demonym}部队不会让你安然带走我们的人员。当贵宾活着、完好地送到时，报酬即行支付。ZH
-Recover the VIP by Securing the Designated Area.	占领指定区域来回收VIP.	ZH
-Retrieve the VIP and Escape	回收VIP并摆脱敌人	ZH
-All right, this should be a straightforward retrieval mission: get in, acquire the VIP, and get back out again.	好了，这应该是一次简单明了的回收任务: 进去，找到VIP，然后再撤出来.	ZH
-Once you have the VIP in hand, get her to the designated landing zone for extraction.	一旦你掌握了VIP，就带她前往指定的着陆区撤离.	ZH
-The VIP is secure, Commander - well done.	VIP安全了，指挥官--做得不错.	ZH
+Recover the VIP by Securing the Designated Area.	占领指定区域来回收重要人物.	ZH
+Retrieve the VIP and Escape	回收重要人物并摆脱敌人	ZH
+All right, this should be a straightforward retrieval mission: get in, acquire the VIP, and get back out again.	好了，这应该是一次简单明了的回收任务: 进去，找到重要人物，然后再撤出来.	ZH
+Once you have the VIP in hand, get her to the designated landing zone for extraction.	一旦你掌握了重要人物，就带她前往指定的着陆区撤离.	ZH
+The VIP is secure, Commander - well done.	重要人物安全了，指挥官--做得不错.	ZH
 Intelligence Agent	情报特工	ZH
 There shouldn't be any surprises here, Commander. The target is expecting a pickup so she'll be aboard in a matter of moments. The data might be tougher but it's your call if you want to go after it.	指挥官，这里应该不会有什么意外。目标正在等待接应，所以她片刻之后就会登船。数据可能更难搞，但是否要去取由你决定。ZH
 One of our covert operatives was captured by a {TEAM_TAR.FactionDef.Demonym} patrol during a routine data drop, and is being held at a secure facility on {TGT_SYSTEM.name}. We need a rapid response team to raid the facility and get our operative out safely. We will pay a bonus if you're able to secure the data she was trying to deliver, as well. It's being held at a separate facility.	我们的一名卧底人员在一次例行数据交接中被{TEAM_TAR.FactionDef.Demonym}巡逻队抓获，目前被关押在{TGT_SYSTEM.name}上的一处戒备森严的设施中。我们需要一支快速反应小队突袭该设施，把我们的人安全救出。如果你还能找回她当时试图送出的数据，我们会额外支付奖金——那些数据被存放在另一处设施里。ZH
@@ -18331,13 +18331,13 @@ Lost Heir	失踪的继承人	ZH
 Locate the heir. She'll need to ride along in one of the mechs, so keep that mech safe until extraction.	找出那位继承人。她需要搭乘其中一台机甲随行，所以在撤离前保护好那台机甲。ZH
 Looks like {TEAM_EMP.FactionDef.Name} is really over a barrel here. My kind of customer.	看来{TEAM_EMP.FactionDef.Name}在这儿真的一筹莫展了. 这种客户正合我胃口.	ZH
 The scion of a {TEAM_EMP.FactionDef.Demonym} mercantile concern has been missing for months. We suspect a kidnapping by {TEAM_TAR.FactionDef.ShortName}, but there's been no ransom demand. A local group of sympathizers on {TGT_SYSTEM.name} recently picked up a garbled message from the scion indicating that she's being held in a {TEAM_TAR.FactionDef.Demonym} facility there. Our intel failed to trace her to {TGT_SYSTEM.name}, so any loyal mechs are several jumps away. We need your help to extract her.	一位{TEAM_EMP.FactionDef.Demonym}商界要人的继承人已失踪数月。我们怀疑是{TEAM_TAR.FactionDef.ShortName}绑架，但一直没有收到赎金要求。{TGT_SYSTEM.name}上一群当地同情者最近收到这位继承人发来的一条含混不清的消息，表明她被关押在那里的某处{TEAM_TAR.FactionDef.Demonym}设施中。我们的情报未能追踪她到{TGT_SYSTEM.name}，所以任何忠诚的机甲都在好几个跳跃之外。我们需要你帮忙把她救出来。ZH
-Ensure that the Mech Carrying the VIP Survives	确保带着VIP的那部机甲存活	ZH
-Recover the VIP by Securing the Designated Area	占领指定区域来回收VIP	ZH
-Retrieve the {TEAM_EMP.FactionDef.Demonym} VIP and Escape	回收{TEAM_EMP.FactionDef.Demonym}VIP并摆脱敌人	ZH
-... and extract safely. Keep the Mech carrying the VIP in one piece!	......并且安全脱离. 请保障载有VIP的机甲安然无恙!	ZH
-Excellent work, commander. The {TEAM_EMP.FactionDef.Demonym} VIP is on her way home.	干得漂亮，指挥官. {TEAM_EMP.FactionDef.Demonym}的VIP在回家的路上了.	ZH
+Ensure that the Mech Carrying the VIP Survives	确保带着重要人物的那部机甲存活	ZH
+Recover the VIP by Securing the Designated Area	占领指定区域来回收重要人物	ZH
+Retrieve the {TEAM_EMP.FactionDef.Demonym} VIP and Escape	回收{TEAM_EMP.FactionDef.Demonym}重要人物并摆脱敌人	ZH
+... and extract safely. Keep the Mech carrying the VIP in one piece!	......并且安全脱离. 请保障载有重要人物的机甲安然无恙!	ZH
+Excellent work, commander. The {TEAM_EMP.FactionDef.Demonym} VIP is on her way home.	干得漂亮，指挥官. {TEAM_EMP.FactionDef.Demonym}的重要人物在回家的路上了.	ZH
 First step. Find our target in the location of the last known signal...	首先. 在最后一次侦测到目标信号的地点寻找...	ZH
-This is a straightforward retrieval. Locate the VIP and get to the Evac Zone.	这是一个简单明了的回收任务. 找到VIP然后前往撤离区域.	ZH
+This is a straightforward retrieval. Locate the VIP and get to the Evac Zone.	这是一个简单明了的回收任务. 找到重要人物然后前往撤离区域.	ZH
 Locate the painter. He'll need to ride along in one of the mechs, then keep that mech safe until extraction.	找出那位画家。他需要搭乘其中一台机甲随行，然后在撤离前保护好那台机甲。ZH
 Commander, I don't pretend to understand what's so offensive about this painting, but they take that sort of thing seriously out here. As for retrieving the painting, apparently it's worth even more after all this controversy.	指挥官，我不假装明白这幅画有什么冒犯之处，但这里的人对这类事很认真。至于取回那幅画，显然经过这一番争议之后它更值钱了。ZH
 A {TEAM_EMP.FactionDef.Demonym} philanthropist is a patron of the arts here in {TGT_SYSTEM.Name}. A favored painter has been accused of heresy by the system's religious police. These zealots are propped up by foreign {TEAM_TAR.FactionDef.Demonym} agents. He'll be extradited to face trial and likely execution in {TEAM_TAR.FactionDef.Demonym} territory. We can't allow that to happen, but we don't want to incur reprisal from the religious leaders. That's where you come in. Locate the painter, rescue him and, at the personal request of the patron, recover the painting that started this whole mess.	一位{TEAM_EMP.FactionDef.Demonym}慈善家是{TGT_SYSTEM.Name}这里的艺术赞助人。他赏识的一位画家被该星系的宗教警察指控为异端。这些狂热分子由外国{TEAM_TAR.FactionDef.Demonym}特工扶持。他会被引渡受审，很可能在{TEAM_TAR.FactionDef.Demonym}领地被处决。我们不能让这种事发生，但又不想招致宗教领袖的报复。这就需要你了。找到那位画家，把他救出来，并且应赞助人本人的请求，找回引发这一连串麻烦的那幅画。ZH
@@ -21221,7 +21221,7 @@ I require your help on a personal matter, Commander. No other mercenary company 
 We have received a secret communication from Jade Falcon. They want us to test one of their new projects.	我们收到了来自玉鹰的秘密通讯. 他们想让我们测试他们的一个新项目.	ZH
 Our Alliance with Clan JadeFalcon has proven lucrative. They would like our help with a SECRET project.   <b><color=#f44336>THIS FLASHPOINT REQUIRES 4 LAM PILOTS.</color></b>	我们与翡翠猎鹰的同盟已被证明利润丰厚。他们想请我们协助一个秘密项目。<b><color=#f44336>本闪点需要4名LAM机师。</color></b>	ZH
 A seditionist group has taken root in the Capellan system of Cavalor. House Liao will handsomely reward any company that will root out and destroy these traitors to the Commonwealth.	一个煽动叛乱的组织已在卡佩拉的卡瓦罗尔上扎根. 任何能铲除并消灭这些共同体叛徒的佣兵公司都将获得廖氏家族的丰厚酬劳.	ZH
-Part III of the Pirate Trilogy	海盗三部曲第III部	ZH
+Part III of the Pirate Trilogy	海盗三部曲第三部	ZH
 The 'Queen' has requested our presence again. Claims we won't want to miss this. This Flashpoint is <b><color=#f0ff00>Long</color></b>	“女王”再次要求我们到场。她说我们不会想错过这个。这个闪点<b><color=#f0ff00>较长</color></b>	ZH
 A Solaris gladiator has murdered my nephew, Arjun. With your help, I will see his killer brought to justice, Commander—make him suffer and I'll make you rich.	一名索拉里斯角斗士谋杀了我的侄子阿尔琼。指挥官，在你的帮助下，我要让凶手受到审判——让他痛苦，我就让你富有。ZH
 Seems that Jade Falcon may be dabbling in forbiden technology. We have been invited to test some of this equipment out.   <b><color=#f44336>THIS FLASHPOINT REQUIRES 4 LAM PILOTS.</color></b>	看来翡翠猎鹰可能在涉足禁忌技术。我们受邀来测试其中一些装备。<b><color=#f44336>本闪点需要4名LAM机师。</color></b>	ZH

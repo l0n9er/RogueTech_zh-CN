@@ -1,7 +1,7 @@
 {
   "Description": {
     "Id": "fp_SupplyRaid",
-    "Name": "Ammunition Supply Raid",
+    "Name": "袭击弹药补给队",
     "Details": "短拆分模板",
     "Icon": "uixTxrSpot_CampaignOutcomeOutOfFunds"
   },

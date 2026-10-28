@@ -11,8 +11,8 @@
   "missionSuccessStatementOverride": null,
   "badFaithStatementOverride": null,
   "goodFaithStatementOverride": null,
-  "shortDescription": "游击队针对我们设施的袭击越来越多了，根据我们的情报来看，{TEAM_TAR.FactionDef.Name}正在资助游击队，以轻武器、炸药和医疗用品的形式提供后勤支援. 我们需要你拦截{TEAM_TAR.FactionDef.Demonym}的补给车队，并且在它抵达游击队之前就消灭它.",
-  "longDescription": "Commander, this smells political, and that makes me nervous. I suggest we go in, take care of the convoy, and get out again - without asking too many questions. There's a bonus if we clean up all the enemy forces, but that's at your discretion.",
+  "shortDescription": "游击队针对我们设施的袭击越来越多了。根据情报，{TEAM_TAR.FactionDef.Name}正在资助游击队，以轻武器、炸药和医疗用品的形式提供后勤支援。我们需要你拦截{TEAM_TAR.FactionDef.Demonym}的补给车队，并在其抵达游击队之前将其消灭。",
+  "longDescription": "指挥官，这事透着政治的味道，让我很不安。我建议我们进去，解决掉那支车队，然后立刻撤出来——不要多问问题。如果把敌军全部清理干净还有一笔奖金，不过是否动手由你决定。",
   "salvagePotential": 20,
   "requirementList": [
     {

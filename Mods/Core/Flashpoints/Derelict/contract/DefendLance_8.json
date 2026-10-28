@@ -71,7 +71,7 @@
       "contractObjective": {
         "EncounterObjectGuid": "8d7e4513-f6c4-4914-a08f-d7baa89672be"
       },
-      "title": "与Bravo小队会面并清理任务区",
+      "title": "与B组会面并清理任务区",
       "description": "",
       "isPrimary": true,
       "forPlayer": "Player1",
@@ -98,7 +98,7 @@
         "EncounterObjectGuid": "d5ee674b-8993-4804-9fa2-b0a73be466e4"
       },
       "title": "消灭入侵部队",
-      "description": "注意 安德鲁",
+      "description": "安德鲁请注意",
       "isPrimary": true,
       "OnSuccessResults": [],
       "OnFailureResults": []
@@ -108,7 +108,7 @@
         "EncounterObjectGuid": "cb9c173c-89b3-4447-b3a0-26193cbeb601"
       },
       "title": "歼灭突击小队",
-      "description": "注意 安德鲁",
+      "description": "安德鲁请注意",
       "isPrimary": true,
       "OnSuccessResults": [],
       "OnFailureResults": []
@@ -265,7 +265,7 @@
       "objective": {
         "EncounterObjectGuid": "ec1afdf8-94ac-4091-a3d2-1d82732ffad2"
       },
-      "title": "Empty Do Additonal Forces Primary Autocomplete Flag",
+      "title": "清空额外部队主目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -329,7 +329,7 @@
       "objective": {
         "EncounterObjectGuid": "0eefd1b5-f890-4ad2-b28a-d291c059da7e"
       },
-      "title": "Empty Do Additonal Forces Secondary Autocomplete Flag",
+      "title": "清空额外部队次要目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -340,7 +340,7 @@
         "EncounterObjectGuid": "3d9f8ebf-d0a8-4a95-b59d-1919f3b4f11d"
       },
       "title": "消灭援军",
-      "description": "ATTN ANDREW (more Liao)",
+      "description": "安德鲁请注意（更多廖家）",
       "isPrimary": true,
       "OnSuccessResults": [],
       "OnFailureResults": []
@@ -369,7 +369,7 @@
       "objective": {
         "EncounterObjectGuid": "c1a9059b-4fd1-4def-9419-6dd4a3b3bd4d"
       },
-      "title": "Empty Do Additonal Forces 2 Primary Autocomplete Flag",
+      "title": "清空额外部队 2 主目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -433,7 +433,7 @@
       "objective": {
         "EncounterObjectGuid": "ddc899c1-eb4e-47a1-a636-d92813c10571"
       },
-      "title": "Empty Do Additonal Forces 2 Secondary Autocomplete Flag",
+      "title": "清空额外部队 2 次要目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -473,7 +473,7 @@
       "objective": {
         "EncounterObjectGuid": "9d26ed13-ed7b-480e-a34d-24e17264eeef"
       },
-      "title": "Empty Do Additonal Forces Primary Autocomplete Flag",
+      "title": "清空额外部队主目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -537,7 +537,7 @@
       "objective": {
         "EncounterObjectGuid": "76eb94bb-3e37-4ecc-bad6-a5a9543bf670"
       },
-      "title": "Empty Do Additonal Forces Secondary Autocomplete Flag",
+      "title": "清空额外部队次要目标自动完成标记",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -763,7 +763,7 @@
       "objective": {
         "EncounterObjectGuid": "51aa5837-b540-42be-b8be-26b37bfcf976"
       },
-      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": true,
       "OnSuccessResults": [],
@@ -783,7 +783,7 @@
       "objective": {
         "EncounterObjectGuid": "2f1e0162-3ff4-4f73-99d5-cdb2c0d5396b"
       },
-      "title": "Empty_Employer_IsActiveFlag_Primary",
+      "title": "空雇主_是否激活标记_主",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -803,7 +803,7 @@
       "objective": {
         "EncounterObjectGuid": "ac4199e4-c42e-4a41-ae0e-cf10f7dfcf8a"
       },
-      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [
@@ -871,7 +871,7 @@
       "objective": {
         "EncounterObjectGuid": "25093242-ea45-451c-a189-d3d54f132d26"
       },
-      "title": "Empty_Employer_IsActiveFlag_Secondary",
+      "title": "空雇主_是否激活标记_次",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -891,8 +891,8 @@
       "objective": {
         "EncounterObjectGuid": "658372a8-8e43-4f74-af9c-f4d60bb103ec"
       },
-      "title": "支援并保护Bravo小队",
-      "description": "ATTN",
+      "title": "支援并保护B组",
+      "description": "注意",
       "isPrimary": true,
       "OnSuccessResults": [],
       "OnFailureResults": []
@@ -901,8 +901,8 @@
       "objective": {
         "EncounterObjectGuid": "bd721209-539f-4c39-afa9-f6d3a83a0b06"
       },
-      "title": "护送Bravo小队到撤离点",
-      "description": "ATTN",
+      "title": "护送B组到撤离点",
+      "description": "注意",
       "isPrimary": true,
       "OnSuccessResults": [],
       "OnFailureResults": []
@@ -911,7 +911,7 @@
       "objective": {
         "EncounterObjectGuid": "eb2cdf1f-7f49-4fca-9f3c-328d653e5169"
       },
-      "title": "Empty_EmployerAlly_IsActiveFlag_Primary",
+      "title": "空雇主盟友_是否激活标记_主",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -931,7 +931,7 @@
       "objective": {
         "EncounterObjectGuid": "4222c6f6-975a-45aa-aa3e-cbfaf0c50026"
       },
-      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离.",
+      "title": "确保{TEAM_EMP_ALLY.FactionDef.Demonym}小队安全撤离。",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [
@@ -975,7 +975,7 @@
       "objective": {
         "EncounterObjectGuid": "aa4e4b60-369e-43b6-82e3-e9140cfa4d16"
       },
-      "title": "Empty_EmployerAlly_IsActiveFlag_Secondary",
+      "title": "空雇主盟友_是否激活标记_次",
       "description": "",
       "isPrimary": false,
       "OnSuccessResults": [],
@@ -1715,7 +1715,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "Bravo 小队又有一名成员倒下了！看起来他们成功弹射了，但我们不能再冒这个险！",
+          "words": "B组又有一名成员倒下了！看起来他们成功弹射了，但我们不能再冒这个险！",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -1756,7 +1756,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "我们刚失去一名 Bravo 小队成员，指挥官。我标出其弹射舱位置，任务后回收。",
+          "words": "我们刚失去一名 B组成员，指挥官。我标出其弹射舱位置，任务后回收。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2659,7 +2659,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "PLACHEHOLDER (对所有次要目标敌对)。侦测到敌对空投艇正在接近，已标记空投区域。",
+          "words": "占位符（对所有势力敌对·次要）。检测到敌方运输舰接近，空降区已标记。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2684,7 +2684,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "PLACHEHOLDER (主要额外目标部队)。侦测到敌对空投艇正在接近，已标记空投区域。",
+          "words": "占位符（主要目标增援）。检测到敌方运输舰正在接近，已标记空降区域。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2709,7 +2709,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "PLACHEHOLDER (次要额外目标部队)。侦测到敌对空投艇正在接近，已标记空投区域。",
+          "words": "占位符（次要目标增援）。检测到敌方运输舰正在接近，已标记空降区域。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2759,7 +2759,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "PLACHEHOLDER (第2批次要额外目标部队)。侦测到敌对空投艇正在接近，已标记空投区域。",
+          "words": "占位符（第2批次要目标增援）。检测到敌方运输舰正在接近，已标记空降区域。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2784,7 +2784,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "PLACHEHOLDER (敌方盟军主要额外空降部队)。侦测到敌对空投艇正在接近，已标记空投区域。",
+          "words": "占位符（敌方盟军主要空降增援）。检测到敌方运输舰正在接近，已标记空降区域。",
           "wordsColor": {
             "r": 1,
             "g": 1,
@@ -2809,7 +2809,7 @@
       "overrideDialogueBucketId": "",
       "dialogueContent": [
         {
-          "words": "PLACHEHOLDER (敌方盟军次要额外空降部队)。侦测到敌对空投艇正在接近，已标记空投区域。",
+          "words": "占位符（敌方盟军次要空降增援）。检测到敌方运输舰正在接近，已标记空降区域。",
           "wordsColor": {
             "r": 1,
             "g": 1,

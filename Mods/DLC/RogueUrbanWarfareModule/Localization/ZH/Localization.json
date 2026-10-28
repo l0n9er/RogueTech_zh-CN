@@ -12916,7 +12916,7 @@
       "Commentary": "RT-ZH-ADD",
       "Localization": {
         "CULTURE_EN_US": "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
-        "CULTURE_ZH_CN": "ENEMYFACTION 那些渣滓正试图从一处转移到另一处。干掉他们。"
+        "CULTURE_ZH_CN": "{TEAM_TAR.FactionDef.Demonym}的杂碎正试图转移。干掉他们。"
       }
     },
     {
