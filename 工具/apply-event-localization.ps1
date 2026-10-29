@@ -371,8 +371,16 @@ foreach ($f in $files) {
         $value = DecodeJsonString $raw
         $isInternalObjectiveId = $value -match '^(?:Timer)?Objective_[A-Za-z0-9_]+$'
         $isHiddenObjectiveTitle = ($m.Groups[1].Value -ieq 'title' -and
-            $value -match '(?i)^\s*(?:\(HIDDEN\)|HIDDEN(?:\s|$))')
-        if ($isInternalObjectiveId -or $isHiddenObjectiveTitle) {
+            ($value -match '(?i)^\s*(?:\(HIDDEN\)|HIDDEN(?:[_\s]|$))' -or
+             $value -match '(?i)HiddenFlag$'))
+        $isInternalName = ($m.Groups[1].Value -ieq 'Name' -and
+            ($value -match '(?i)HiddenFlag$' -or
+             $value -match '(?i)Internal$' -or
+             $value -match '^\{[A-Za-z0-9_.]+\}$' -or
+             $rel -match '(?i)(^|[\\/])milestoneSets([\\/]|$)' -or
+             [IO.Path]::GetFileName($f.FullName) -ieq 'mod.json' -or
+             [IO.Path]::GetFileName($f.FullName) -ieq 'AmmoCategory.json'))
+        if ($isInternalObjectiveId -or $isHiddenObjectiveTitle -or $isInternalName) {
             [void]$builder.Append($m.Value)
             $lastIndex = $m.Index + $m.Length
             continue
