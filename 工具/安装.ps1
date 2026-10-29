@@ -675,6 +675,16 @@ if ([IO.File]::Exists($descExtra)) {
                                  '-IncludeModJson',
                                  '-backupRoot', (Join-Path $packRoot 'backup\Mods-fields'))
 }
+# 模组管理器会显示 mod.json 的 Description；按文件名限定范围，保留不可翻译的根级 Name。
+$modDescriptionDict = Join-Path $PSScriptRoot 'dict-mod-descriptions.tsv'
+if ([IO.File]::Exists($modDescriptionDict)) {
+    RunTool 'apply-fields.ps1' @('-mods', (Join-Path $gameRoot 'Mods'),
+                                 '-pairs', $modDescriptionDict,
+                                 '-fields', 'Description',
+                                 '-pathLike', 'mod.json',
+                                 '-IncludeModJson',
+                                 '-backupRoot', (Join-Path $packRoot 'backup\Mods-mod-descriptions'))
+}
 Ok "完成"
 
 # ---------- 9d) 模组本地化覆盖表（mod_localized_text.json） ----------

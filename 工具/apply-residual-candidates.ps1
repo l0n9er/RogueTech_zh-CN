@@ -1159,6 +1159,11 @@ function Translate-VisibleEventTerms([string]$rel, [string]$value) {
         $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Bergan Industries(?![A-Za-z])', '贝根工业')
         $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Last Rites(?![A-Za-z])', '临终仪式')
         $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Khaos Theory(?![A-Za-z])', '混沌理论')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Galatea(?![A-Za-z])', '加拉提亚')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Radstadt(?![A-Za-z])', '拉德施塔特')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Vipaava(?![A-Za-z])', '维帕瓦')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Gibbs(?![A-Za-z])', '吉布斯')
+        $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Zoom N Boom(?![A-Za-z])', '轰隆飞速')
     }
 
     if ($rel -match '(?i)(?:^|[\\/])Aircademy[\\/]events[\\/]') {
@@ -1175,8 +1180,22 @@ function Translate-VisibleEventTerms([string]$rel, [string]$value) {
         $value = $value.Replace('超重型合约（Superheavy Contracts）', '超重型合约')
     }
     if ($file -eq 'forcedevent_co_KhaosTheory_Search.json') {
-        $value = [regex]::Replace($value, '(?i)Look for the\s*$', '寻找')
+        # 目标名通常被 <i> 标签包裹；分段处理时分别翻译可见文字和标签内容。
+        $value = [regex]::Replace($value, '(?i)\bLook\s+for\s+the\b', '寻找')
+        $value = [regex]::Replace($value, '(?i)\bSearch\s+for\s+the\b', '寻找')
+        $value = [regex]::Replace($value, '(?i)\bEnlist\s+MechTechs\b', '招募机甲技师')
+        $value = [regex]::Replace($value, '(?i)\bKodiak\b', '科迪亚克')
     }
+    if ($file -eq 'c_fp_RSteelBeast_a1_battle.json') {
+        $value = [regex]::Replace($value, '(?i)^The Steel Beast Rises$', '钢铁野兽归来')
+        $value = [regex]::Replace($value, '(?i)^Kill the Steel Beast$', '消灭钢铁野兽')
+    }
+    if ($file -eq 'chassisdef_rogue_bear_RBR-HR.json' -and $value -eq 'Rogue Bear') {
+        $value = '流浪熊'
+    }
+    $value = [regex]::Replace($value, '(?i)(?<![A-Za-z])Rogue Bear(?![A-Za-z])', '流浪熊')
+    if ($value -eq '流浪熊 (Upgrade)') { $value = '流浪熊（升级型）' }
+    if ($value -eq '流浪熊 (Hybrid)') { $value = '流浪熊（混合型）' }
     if ($file -eq 'fp_NN.json' -and $value -eq '测试 Kickstart NN') {
         $value = '死灵噩梦启动测试'
     }
@@ -1185,6 +1204,9 @@ function Translate-VisibleEventTerms([string]$rel, [string]$value) {
     }
     if ($file -eq 'SimGameStatDesc_ConsoleDelayed.json') {
         $value = [regex]::Replace($value, '(?i)^Stat f或 KF Console Delayed on 阿尔戈号$', '阿尔戈号上 KF 控制台的延期统计')
+    }
+    if ($file -eq 'SimGameStatDesc_ConsoleInstalled.json') {
+        $value = [regex]::Replace($value, '(?i)^Stat f(?:or|或) KF Console (?:installed|在stalled) on (?:ARGO|阿尔戈号)$', '阿尔戈号上 KF 控制台的安装统计')
     }
 
     return $value
@@ -1601,7 +1623,8 @@ function Apply-JsonFile([IO.FileInfo]$file) {
         $value = Read-JsonString $match.Groups[2].Value
         if ($null -eq $value) { return $match.Value }
         if ($field -eq 'Name' -and
-            $rel -notmatch '(?i)(?:^|[\\/])(?:event|forceevent|forcedevent)[^\\/]*\.json$') {
+            $rel -notmatch '(?i)(?:^|[\\/])(?:event|forceevent|forcedevent)[^\\/]*\.json$' -and
+            $value -notmatch '(?i)^Rogue Bear(?:\s|$)') {
             return $match.Value
         }
         if ($field -eq 'Description' -and
@@ -1628,6 +1651,13 @@ if (Test-Path $mods) {
 }
 
 function Translate-CsvValue([string]$key, [string]$value) {
+    $originalValue = $value
+    $value = $value.Replace('PropWash is here', 'PropWash 到此一游')
+    $value = $value.Replace('Wicced FTW', 'Wicced 必胜')
+    $value = $value.Replace('超重型合约（Superheavy Contracts）', '超重型合约')
+    if ($key.StartsWith('firmly^yousay^wemaybemercenaries^butwecanhelpanentireplanetsufferingfromthisplague')) {
+        return '你坚定地说道：“我们也许是雇佣兵，但我们可以帮助一个正遭受这场瘟疫的星球。我们要充分利用这个机会。”\n\n消息传开后，船员们既为能参与拯救整个星球而感到自豪，也深受鼓舞。\n\n这个星球也会以实质性的谢礼表达感激。有些礼物只是简单的现金转账，另一些则更加特别。\n\n杨努力戴上一顶华丽的头饰，达吕斯则欣然举起一瓶琥珀色酒液。“我想，偶尔当个好人也有好处。”'
+    }
     if ($key.StartsWith('arelativenewcomertothesolarisscene')) {
         return $value.Replace('Quick Off The Line', '起步迅捷')
     }
@@ -1676,6 +1706,7 @@ function Translate-CsvValue([string]$key, [string]$value) {
     }
     $eventTerms = Translate-EventTerms '' $value
     if ($null -ne $eventTerms) { return $eventTerms }
+    if ($value -ne $originalValue) { return $value }
     return $null
 }
 

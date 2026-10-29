@@ -1,0 +1,134 @@
+# 玩家可见的 ModTek 模组说明；仅用于 mod.json 的 Description，保留根级 Name。
+Contains all graphical assets created by the community such as assetbundles for mechs/tanks/turrets.	包含社区制作的图像资源，例如机甲、坦克和炮塔的资源包。
+custom map mapArena_riverCrossing_vHigh_test	自定义地图：mapArena_riverCrossing_vHigh_test
+custom map mapGeneral_waterWorld_vJung	自定义地图：mapGeneral_waterWorld_vJung
+Allows for choices between abilities when leveling pilots.	升级驾驶员时可选择要提升的技能。
+Admin Tools.	管理工具。
+Flight School Training	飞行学校训练
+BiggerDrops	扩大空投规模
+BTDebug provides various debug tools for modders to obtain more information about BattleTech.	BTDebug 为模组制作者提供多种调试工具，以获取更多 BattleTech 信息。
+Provides TableTop like behaviors for heat, movement, and more	提供更接近桌面战棋规则的热量、移动等行为。
+Provides little nudges for the AI	为 AI 提供细微的行为调整。
+Randomizes and obfuscates contract names	随机生成并隐藏合约名称。
+Loads your custom PNG,DDS,JPEG and GIF as a Commander avatar and allows voice selection.	将自定义 PNG、DDS、JPEG 和 GIF 图片用作指挥官头像，并允许选择语音。
+Allows for random player 'Mechs to be specified for a contract.	允许为合约指定随机抽选的玩家机甲。
+Loads your custom PNGs as a Commander avatar and allows voice selection.	将自定义 PNG 图片用作指挥官头像，并允许选择语音。
+Activatable equipment	可激活装备
+Activatable equipment experimental gear	可激活装备实验组件
+Custom Ammo Categories - weapon rework. Adding ammo/mode switching mechanics, various fire effects and much more. Special versions of WeaponRalizer and AttackImprovementMod included with permission from their authors	自定义弹药类别：武器系统重制。加入弹药与射击模式切换机制、多种开火效果等内容。经作者许可，整合了 WeaponRalizer 和 AttackImprovementMod 的特别版本。
+Custom intro	自定义开场动画
+CustomLocalization	自定义本地化
+CustomMaps	自定义地图
+custom map mapGeneral_10_bluffs_vHigh	自定义地图：mapGeneral_10_bluffs_vHigh
+CustomPilotDecorator	自定义驾驶员装饰器
+CustomPilotProgression	自定义驾驶员成长系统
+CustomStatisticEffects	自定义统计效果
+CustomUnitDecorator	自定义单位装饰器
+CustomUnits	自定义单位
+CustomUnitSpawn	自定义单位生成
+CustomVoices	自定义语音
+Custom weather effects	自定义天气效果
+Show in skirmish only meches with special tag	仅在遭遇战机甲舱中显示带有特殊标签的机甲。
+Makes hot-withdrawals more realistic	让高压战况下的撤退更加真实。
+Neural Implants Baby	神经植入体，宝贝！
+Extended Conversations is a utility mod to provide more conversation conditions, actions and other functionality	扩展对话是一款工具模组，可提供更多对话触发条件、动作及其他功能。
+Replaces armor damage with random criticals and structure damage representing real damage.	将装甲损伤替换为随机暴击和结构损伤，以更真实地体现实际损害。
+Flashpoint - The Raid: Tiverton wants the Black Market out, are you in?	闪点“突袭”：蒂弗顿想把黑市势力赶出去，你愿意加入吗？
+Hide career mode days after days end or always.	可在每天结束后隐藏生涯模式天数，也可设置为始终隐藏。
+Fixes the lance spawn for overly high difficulty	修复超高难度下的部队生成问题。
+Map of the Inner Sphere	内星区地图
+Utility classes required by other mods	其他模组所需的工具类。
+Miscellaneous Tweaks and Fixes	杂项调整与修复
+Bondsmen, the true spoils of battle	归附战士，才是战斗中真正的战利品
+Makes the tight storage aboard dropships more expensive.	提高降船上狭小储物空间的费用。
+Events added to the game.	为游戏添加事件。
+Create a Locust Stick from LCT-1V.	使用 LCT-1V 制造 Locust Stick。
+Groups salvage of a similar type into a single pick. Provides lore-based employer shenanigans.	将同类回收物合并为一个选择项，并加入符合背景设定的雇主行为变化。
+Implements double-blind semantics and more complex electronic warfare	实现双盲交战规则和更复杂的电子战机制。
+MechEditorMod	机甲编辑器模组
+A HBS BattleTech mod that adds custom contract types and varies the encounter specifics such as encounter boundary size, spawn locations, lance numbers and objectives	一款 HBS《BattleTech》模组，可添加自定义合约类型，并调整遭遇细节，例如战场边界大小、生成位置、部队编组数量和任务目标。
+Builds monster units by mashing bases and turrets	将基地与炮塔拼合，组建怪物单位。
+Adds system search, map mods, and custom routes into the game	为游戏添加星系搜索、地图模组和自定义航线。
+Simulates MechWarrior and vehicle crew panic, and automatic ejections	模拟机甲战士和载具乘员的恐慌，并加入自动弹射机制。
+Adds info popup containing health information after pilot injuries (including enemies)	驾驶员受伤后显示包含伤势信息的弹窗，敌方驾驶员也适用。
+Adds Pilot Fatigue	加入驾驶员疲劳机制。
+What About Me... It isn't fair... I've had enough...	那我呢……这不公平……我受够了……
+Repair multiple mechs per Mech Pod.	每个机甲维修舱可同时维修多台机甲。
+Argo Events	阿尔戈号事件
+Replaces starting questions with more interesting ones. Inspired by LadyAlekto unveiling the related base game jsons, and realized through some heavy lifting DLL magic by T-bone to get it working with non-Commander-only scoped events.	用更有意思的问题替换开局问题。灵感来自 LadyAlekto 公布的相关原版游戏 JSON，并由 T-bone 通过复杂的 DLL 改造实现，使其支持作用范围不限于指挥官的事件。
+Collection of Random Pilots	随机驾驶员合集
+The Tech of RogueTech - Core Module	RogueTech 技术资料 - 核心模块
+RogueTech Pew Pew Files	RogueTech 火力档案
+The Default Portraits of RogueTech	RogueTech 默认头像
+Contains the basic rules of RogueTech - Core Module	包含 RogueTech 核心模块的基础规则。
+Pilots based on the RT Crew	以 RT 船员为原型的驾驶员
+RogueTechs Debug	RogueTech 调试工具
+Shamelessly Shuffles Shells for Shooting Shenanigans	毫不掩饰地打乱炮弹配置，为射击增添乐趣。
+Provides attack modifiers based upon difference in unit sizes	根据单位体型差异提供攻击修正。
+Introduces 30 initiative phases with supporting modifiers	引入 30 个先攻阶段及相应的修正效果。
+Unlocks all equipment shown in skirmish mechbay	解锁遭遇战机甲舱中显示的所有装备。
+Solaris 7	索拉里斯7
+More interesting pilot injuries.	让驾驶员受伤事件更加有趣。
+Adds info tooltips to travel time and cost	为旅行时间和费用添加信息提示。
+Vehicle Pilots	载具驾驶员
+Fix Vehicles evasion and Ace Pilot Fix for Vehicles	修复载具规避值，并修正王牌驾驶员技能对载具的效果。
+LAM School Training	LAM 飞行训练学校
+Module containing Flashpoint stuff	包含闪点内容的模块
+Module containing Heavy Metal stuff	包含《重金属》DLC 内容的模块
+Module containing UrbanWarfare stuff	包含《城市战争》DLC 内容的模块
+Module containing HBS Storline in Flashpoint format	以闪点形式呈现 HBS 主线故事的模块
+Superheavy Mechs and special Mission for RogueTech	RogueTech 的超重型机甲与特殊任务
+ModTek	ModTek
+Units from the Aries Initiative fan TRO. Used with original authors permission. The original work can be found at https://ariesgamesandminis.com/pages/technical-readout-aries-initiative	来自《Aries Initiative》粉丝技术读本的单位，已获原作者许可。原作见：https://ariesgamesandminis.com/pages/technical-readout-aries-initiative
+Squid Game	鱿鱼游戏
+Taco Truck Tacos	塔可餐车与塔可
+Misjump Event Chains	跃迁事故事件链
+Experimental Weapons, mainly made by MXMach, 'CauldronBorn' and most of the portraits by akodoreign, BloodAsp and HSBGR by LadyAlekto. KGC-AL 'Argent Leviathan' portrait and concept by Unit000000000000001 on DeviantArt	实验武器主要由 MXMach 和“CauldronBorn”制作；大部分头像由 akodoreign、BloodAsp 和 LadyAlekto 制作，HSBGR 由 LadyAlekto 制作。KGC-AL“Argent Leviathan”的头像与概念设计由 DeviantArt 用户 Unit000000000000001 创作。
+Flashpoint things for Experimental Weapons	实验武器闪点内容
+A compatibility subfolder for experimental weapons and the Heavy Metal DLC	实验武器与《重金属》DLC 的兼容子模块。
+A compatibility subfolder for experimental weapons and super heavies, for contract generation and variance	实验武器与超重型机甲的兼容子模块，用于合约生成和遭遇变化。
+A compatibility for UW units	UW 单位兼容模块
+Units from the Lost Units of the Star League fan TRO.	来自《失落的星盟单位》粉丝技术读本的单位。
+Superheavy Units from the Lost Units of the Star League fan TRO.	来自《失落的星盟单位》粉丝技术读本的超重型单位。
+Roguetech custom units based on units from the Lost Units of the Star League fan TRO.	基于《失落的星盟单位》粉丝技术读本中的单位制作的 RogueTech 自定义单位。
+Units from the Magistracy Intelligence Report 3160 fan TRO.	来自《治权联邦情报报告 3160》粉丝技术读本的单位。
+Superheavy Units from the Magistracy Intelligence Report 3160 fan TRO.	来自《治权联邦情报报告 3160》粉丝技术读本的超重型单位。
+Nuclear Weapons	核武器
+Superheavy Nuclear Weapons	超重型核武器
+Units from the Operation Revival fan TRO series. Used with original authors permission.	来自《Operation Revival》粉丝技术读本系列的单位，已获原作者许可。
+Contains PirateTech	包含 PirateTech 内容
+RISCTECH Specials	RISC Tech 特殊装备
+Contains Scott	包含 Scott 相关内容
+Contains RiscTech	包含 RiscTech 内容
+Elite Mechs and Pilots plus lances	精英机甲、驾驶员及部队编组
+Elite Mechs and Pilots plus lances for Flashpoints	闪点用精英机甲、驾驶员及部队编组
+Non-Lore OmniMehcs	非正史设定的 OmniMech
+Contains Non-Canon Society Tech	包含非正史的“社会”科技。
+Contains Non-Canon 331 Tech	包含非正史的 331 科技。
+Offline Campaign to unlock Tribes	用于解锁部落的离线战役。
+Contains Superheavy Non-Canon 331 Tech	包含非正史的 331 超重型科技。
+Custom Mechs tied to RTO Legends	与 RTO Legends 相关的自定义机甲
+Custom Mechs tied to RTO Legends - Flashpoint+Pirate Compatibility	与 RTO Legends 相关的自定义机甲 - 闪点与海盗模组兼容内容
+Custom Mechs tied to RTO Legends - Jihad Compatibility	与 RTO Legends 相关的自定义机甲 - 圣战兼容内容
+MiG pilot event	MiG 驾驶员事件
+Custom Mechs tied to RTO Legends - Operation Revival Compatibility	与 RTO Legends 相关的自定义机甲 - Operation Revival 兼容内容
+RTO Jamie Pilot event	RTO Jamie 驾驶员事件
+Custom Mechs tied to RTO Legends - Rogue Society Compatibility	与 RTO Legends 相关的自定义机甲 - Rogue Society 兼容内容
+Superheavy Mechs Heavy Metal DLC	《重金属》DLC 超重型机甲
+Superheavy Mechs a la Quicsell	Quicsell 风格的超重型机甲
+Pirate Urbies	海盗 Urbie 机甲
+RISC Urbies	RISC Urbie 机甲
+Prevents mech armor lost in combat from being automatically replaced for free at the end of battle. Instead generate a work order to replace it, optionally costed by mech tonnage, and optionally creating work orders to repair structure damage as well.	防止机甲在战斗中损失的装甲于战后免费自动补齐，改为生成装甲更换工单；可按机甲吨位计费，也可选择同时为结构损伤生成维修工单。
+Provides fun surprises on urban maps.	在城市地图中加入有趣的惊喜。
+The Emblems i like to use, thanks Callyste for fixing them	我常用的徽章，感谢 Callyste 帮忙修复。
+5th Element Pilots	第五元素驾驶员
+Collection of Random Pilots and the campaign pilot select	随机驾驶员合集及战役驾驶员选择功能。
+A selection of good quality portraits designed to improve the standard range	一组高质量头像，可丰富默认头像的选择范围。
+JarnfolkPilots	Jarnfolk 驾驶员
+Mandalorian Pilots & Emblems	曼达洛人驾驶员与徽章
+Omega Squad Pilots	Omega 小队驾驶员
+Well Knownn RTO Players	知名 RTO 玩家
+RogueTechs AudioReplacement	RogueTech 音效替换包
+Skips the intro splash screens and opening video.	跳过启动闪屏和开场动画。
+Skips the travel cutscenes.	跳过旅行过场动画。
+ClanVoices	氏族语音

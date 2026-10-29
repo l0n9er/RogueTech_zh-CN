@@ -61,3 +61,8 @@ Increases effect of Extravagant Upkeep on MedTechs by {RES_VALUE.ToString}%	奢�
 Increases effect of Generous Upkeep on MedTechs by {RES_VALUE.ToString}%	慷慨维护对医疗技师的加成提高 {RES_VALUE.ToString}%
 Reduces penalty of Restrictive Upkeep on MedTechs by {RES_VALUE.ToString}%	紧缩维护对医疗技师的惩罚降低 {RES_VALUE.ToString}%
 Reduces penalty of Spartan Upkeep on MedTechs by {RES_VALUE.ToString}%	简朴维护对医疗技师的惩罚降低 {RES_VALUE.ToString}%
+Stat for KF Console Built on ARGO	阿尔戈号上 KF 控制台的建造统计
+Stat for KF Console Delayed on ARGO	阿尔戈号上 KF 控制台的延期统计
+Stat for KF Console installed on ARGO	阿尔戈号上 KF 控制台的安装统计
+<color=#FFA500> {RES_VALUE.ToString} KF Console successfully built.</color><color=#39FF14>  Goto Engineering to finish the install process.</color>	<color=#FFA500> {RES_VALUE.ToString} KF 控制台已成功建造。</color><color=#39FF14>  前往工程部完成安装。</color>
+<color=#FFA500> {RES_VALUE.ToString} KF Console successfully installed</color>	<color=#FFA500> {RES_VALUE.ToString} KF 控制台已成功安装。</color>
